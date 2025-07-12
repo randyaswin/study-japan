@@ -1,0 +1,249 @@
+{
+  "type": "N5",
+  "day": 5,
+  "kanji": [
+    {
+      "kanji": "木",
+      "reading_meaning": "<b>On:</b> もく (moku), ぼく (boku)<br><b>Kun:</b> き (ki), こ- (ko-)<br><b>Arti:</b> Pohon, Kayu, Hari Kamis",
+      "mnemonic": "Ini adalah salah satu kanji paling ikonik, bentuknya adalah gambar sederhana dari sebuah pohon dengan batang dan cabang-cabangnya.",
+      "example": {
+        "jp": "これは<ruby>木<rt>き</rt></ruby>のつくえです。",
+        "romaji": "Kore wa ki no tsukue desu.",
+        "id": "Ini adalah meja kayu (meja dari kayu)."
+      }
+    },
+    {
+      "kanji": "金",
+      "reading_meaning": "<b>On:</b> きん (kin), こん (kon)<br><b>Kun:</b> かね (kane)<br><b>Arti:</b> Emas, Uang, Hari Jumat",
+      "mnemonic": "Bayangkan sebuah atap (人) di atas tanah (土) dengan dua bongkahan emas (titik-titik) yang terkubur di bawahnya.",
+      "example": {
+        "jp": "お<ruby>金<rt>かね</rt></ruby>がありません。",
+        "romaji": "O-kane ga arimasen.",
+        "id": "Saya tidak punya uang."
+      }
+    },
+    {
+      "kanji": "土",
+      "reading_meaning": "<b>On:</b> ど (do), と (to)<br><b>Kun:</b> つち (tsuchi)<br><b>Arti:</b> Tanah, Bumi, Hari Sabtu",
+      "mnemonic": "Garis bawah adalah tanah, garis vertikal adalah tanaman yang tumbuh, dan garis atas adalah permukaan tanah.",
+      "example": {
+        "jp": "<ruby>土曜日<rt>どようび</rt></ruby>は<ruby>休<rt>やす</rt></ruby>みです。",
+        "romaji": "Doyoubi wa yasumi desu.",
+        "id": "Hari Sabtu adalah hari libur."
+      }
+    },
+    {
+      "kanji": "本",
+      "reading_meaning": "<b>On:</b> ほん (hon)<br><b>Kun:</b> もと (moto)<br><b>Arti:</b> Buku, Asal",
+      "mnemonic": "Sebuah pohon (木) dengan garis horizontal di bagian bawah yang menandai akarnya. 'Akar' atau 'asal' dari pengetahuan adalah 'buku'.",
+      "example": {
+        "jp": "これは<ruby>日本語<rt>にほんご</rt></ruby>の<ruby>本<rt>ほん</rt></ruby>です。",
+        "romaji": "Kore wa nihongo no hon desu.",
+        "id": "Ini adalah buku bahasa Jepang."
+      }
+    },
+    {
+      "kanji": "何",
+      "reading_meaning": "<b>On:</b> か (ka)<br><b>Kun:</b> なに (nani), なん (nan)<br><b>Arti:</b> Apa",
+      "mnemonic": "Terdiri dari radikal 'orang' (亻) dan kanji 'bisa' (可). Bayangkan seseorang yang bisa bertanya 'apa' saja.",
+      "example": {
+        "jp": "これは<ruby>何<rt>なん</rt></ruby>ですか。",
+        "romaji": "Kore wa nan desu ka.",
+        "id": "Apa ini?"
+      }
+    }
+  ],
+  "vocabulary": [
+    {
+      "vocab": "<ruby>朝<rt>あさ</rt></ruby>",
+      "reading_meaning": "asa (pagi)",
+      "type": "🔵",
+      "mnemonic": "Kalau bangun 'pagi', jangan 'ASAl-asalan', harus semangat!",
+      "example": { "jp": "<ruby>朝<rt>あさ</rt></ruby>ごはんを<ruby>食<rt>た</rt></ruby>べます。", "romaji": "Asa gohan o tabemasu.", "id": "Saya sarapan (makan pagi)." }
+    },
+    {
+      "vocab": "<ruby>昼<rt>ひる</rt></ruby>",
+      "reading_meaning": "hiru (siang)",
+      "type": "🔵",
+      "mnemonic": "Waktu 'siang', matahari sedang 'HI-lang' (tinggi-langit). Atau bayangkan makan 'HIU' di siang hari.",
+      "example": { "jp": "<ruby>昼<rt>ひる</rt></ruby>ごはんは<ruby>何<rt>なに</rt></ruby>を<ruby>食<rt>た</rt></ruby>べますか。", "romaji": "Hirugohan wa nani o tabemasu ka.", "id": "Makan siang mau makan apa?" }
+    },
+    {
+      "vocab": "<ruby>晩<rt>ばん</rt></ruby>",
+      "reading_meaning": "ban (malam)",
+      "type": "🔵",
+      "mnemonic": "Saat 'malam', banyak nyamuk, jadi pakai 'BAN-yak' obat nyamuk.",
+      "example": { "jp": "<ruby>今晩<rt>こんばん</rt></ruby>、<ruby>映画<rt>えいが</rt></ruby>を<ruby>見<rt>み</rt></ruby>ます。", "romaji": "Konban, eiga o mimasu.", "id": "Malam ini, saya akan menonton film." }
+    },
+    {
+      "vocab": "<ruby>家<rt>いえ</rt></ruby> / うち",
+      "reading_meaning": "ie / uchi (rumah)",
+      "type": "🔵",
+      "mnemonic": "'IEy, ini 'rumah'ku!' atau 'UCHI-ha adalah klan yang kuat di rumahnya'.",
+      "example": { "jp": "これは<ruby>私<rt>わたし</rt></ruby>の<ruby>家<rt>いえ</rt></ruby>です。", "romaji": "Kore wa watashi no ie desu.", "id": "Ini adalah rumah saya." }
+    },
+    {
+      "vocab": "<ruby>部屋<rt>へや</rt></ruby>",
+      "reading_meaning": "heya (kamar)",
+      "type": "🔵",
+      "mnemonic": "'HE-YA', jangan berantakan dong 'kamar'nya!",
+      "example": { "jp": "わたしの<ruby>部屋<rt>へや</rt></ruby>は<ruby>広<rt>ひろ</rt></ruby>いです。", "romaji": "Watashi no heya wa hiroi desu.", "id": "Kamar saya luas." }
+    },
+    {
+      "vocab": "<ruby>会社<rt>かいしゃ</rt></ruby>",
+      "reading_meaning": "kaisha (perusahaan)",
+      "type": "🔵",
+      "mnemonic": "'KAI-SHA'yan sekali kalau 'perusahaan' ini bangkrut.",
+      "example": { "jp": "<ruby>父<rt>ちち</rt></ruby>はIMCの<ruby>社員<rt>しゃいん</rt></ruby>です。", "romaji": "Chichi wa IMC no shain desu.", "id": "Ayah saya adalah karyawan perusahaan IMC." }
+    },
+    {
+      "vocab": "<ruby>駅<rt>えき</rt></ruby>",
+      "reading_meaning": "eki (stasiun)",
+      "type": "🔵",
+      "mnemonic": "Di 'stasiun', ada kereta kelas 'EKI-sekutif'.",
+      "example": { "jp": "<ruby>駅<rt>えき</rt></ruby>で<ruby>友達<rt>ともだち</rt></ruby>に<ruby>会<rt>あ</rt></ruby>います。", "romaji": "Eki de tomodachi ni aimasu.", "id": "Saya bertemu teman di stasiun." }
+    },
+    {
+      "vocab": "<ruby>靴<rt>くつ</rt></ruby>",
+      "reading_meaning": "kutsu (sepatu)",
+      "type": "🔵",
+      "mnemonic": "'Sepatu' baruku 'KUTSU-t' (kusut) karena keinjak.",
+      "example": { "jp": "この<ruby>靴<rt>くつ</rt></ruby>は<ruby>高<rt>たか</rt></ruby>いです。", "romaji": "Kono kutsu wa takai desu.", "id": "Sepatu ini mahal." }
+    },
+    {
+      "vocab": "<ruby>手紙<rt>てがみ</rt></ruby>",
+      "reading_meaning": "tegami (surat)",
+      "type": "🔵",
+      "mnemonic": "Gabungan kanji 'tangan' (手) dan 'kertas' (紙). Jadi, 'kertas yang ditulis dengan tangan' adalah 'surat'.",
+      "example": { "jp": "<ruby>母<rt>はは</rt></ruby>に<ruby>手紙<rt>てがみ</rt></ruby>を<ruby>書<rt>か</rt></ruby>きます。", "romaji": "Haha ni tegami o kakimasu.", "id": "Saya menulis surat untuk ibu." }
+    },
+    {
+      "vocab": "<ruby>家族<rt>かぞく</rt></ruby>",
+      "reading_meaning": "kazoku (keluarga)",
+      "type": "🔵",
+      "mnemonic": "'Keluarga' adalah 'KAZOKU', hartaku.",
+      "example": { "jp": "あなたの<ruby>家族<rt>かぞく</rt></ruby>は<ruby>何人<rt>なんにん</rt></ruby>ですか。", "romaji": "Anata no kazoku wa nan-nin desu ka.", "id": "Keluargamu ada berapa orang?" }
+    },
+    {
+      "vocab": "<ruby>兄弟<rt>きょうだい</rt></ruby>",
+      "reading_meaning": "kyoudai (saudara kandung)",
+      "type": "🔵",
+      "mnemonic": "'KYOUDAI' (kyoudai), 'saudara'-ku, ayo main!",
+      "example": { "jp": "<ruby>私<rt>わたし</rt></ruby>は<ruby>兄弟<rt>きょうだい</rt></ruby>がいません。", "romaji": "Watashi wa kyoudai ga imasen.", "id": "Saya tidak punya saudara." }
+    },
+    {
+      "vocab": "<ruby>父<rt>ちち</rt></ruby>",
+      "reading_meaning": "chichi (ayah saya)",
+      "type": "🔵",
+      "mnemonic": "'CHI-CHI'k... 'ayah' pulang!",
+      "example": { "jp": "これは<ruby>父<rt>ちち</rt></ruby>の<ruby>車<rt>くるま</rt></ruby>です。", "romaji": "Kore wa chichi no kuruma desu.", "id": "Ini mobil ayah saya." }
+    },
+    {
+      "vocab": "<ruby>母<rt>はは</rt></ruby>",
+      "reading_meaning": "haha (ibu saya)",
+      "type": "🔵",
+      "mnemonic": "'HAHA'ha... tertawa bersama 'ibu'.",
+      "example": { "jp": "<ruby>母<rt>はは</rt></ruby>は<ruby>料理<rt>りょうり</rt></ruby>が<ruby>上手<rt>じょうず</rt></ruby>です。", "romaji": "Haha wa ryouri ga jouzu desu.", "id": "Ibu saya pandai memasak." }
+    },
+    {
+      "vocab": "<ruby>働<rt>はたら</rt></ruby>きます",
+      "reading_meaning": "hatarakimasu (bekerja)",
+      "type": "🟢",
+      "mnemonic": "'Bekerja' keras demi 'HATARAn' (bayaran) yang layak.",
+      "example": { "jp": "<ruby>毎日<rt>まいにち</rt></ruby>、<ruby>八時<rt>はちじ</rt></ruby>から<ruby>働<rt>はたら</rt></ruby>きます。", "romaji": "Mainichi, hachiji kara hatarakimasu.", "id": "Setiap hari saya bekerja dari jam 8." }
+    },
+    {
+      "vocab": "<ruby>休<rt>やす</rt></ruby>みます",
+      "reading_meaning": "yasumimasu (beristirahat, libur)",
+      "type": "🟢",
+      "mnemonic": "'YASU-dah, MI-num es dulu, 'istirahat' sebentar.",
+      "example": { "jp": "<ruby>明日<rt>あした</rt></ruby>は<ruby>会社<rt>かいしゃ</rt></ruby>を<ruby>休<rt>やす</rt></ruby>みます。", "romaji": "Ashita wa kaisha o yasumimasu.", "id": "Besok saya libur kerja." }
+    },
+    {
+      "vocab": "<ruby>勉強<rt>べんきょう</rt></ruby>します",
+      "reading_meaning": "benkyoushimasu (belajar)",
+      "type": "🟢",
+      "mnemonic": "Kalau 'belajar', jangan sampai 'BENjol KYOrang' (kepala) karena pusing.",
+      "example": { "jp": "<ruby>図書館<rt>としょかん</rt></ruby>で<ruby>勉強<rt>べんきょう</rt></ruby>します。", "romaji": "Toshokan de benkyoushimasu.", "id": "Saya belajar di perpustakaan." }
+    },
+    {
+      "vocab": "<ruby>終<rt>お</rt></ruby>わります",
+      "reading_meaning": "owarimasu (selesai)",
+      "type": "🟢",
+      "mnemonic": "'O, WAR-nya sudah 'selesai' ya?'",
+      "example": { "jp": "<ruby>仕事<rt>しごと</rt></ruby>は<ruby>五時<rt>ごじ</rt></ruby>に<ruby>終<rt>お</rt></ruby>わります。", "romaji": "Shigoto wa goji ni owarimasu.", "id": "Pekerjaan selesai jam 5." }
+    },
+    {
+      "vocab": "ひま",
+      "reading_meaning": "hima (senggang, waktu luang)",
+      "type": "🟣",
+      "mnemonic": "Kalau lagi 'senggang', kadang kita bengong 'HI-lang ingatan seMAsa'.",
+      "example": { "jp": "<ruby>今日<rt>きょう</rt></ruby>は<ruby>暇<rt>ひま</rt></ruby>です。", "romaji": "Kyou wa hima desu.", "id": "Hari ini saya senggang." }
+    },
+    {
+      "vocab": "いそがしい",
+      "reading_meaning": "isogashii (sibuk)",
+      "type": "🟠",
+      "mnemonic": "'I-SOK, GAS-SI', aku 'sibuk' banget, harus cepat!",
+      "example": { "jp": "<ruby>今週<rt>こんしゅう</rt></ruby>はとてもいそがしいです。", "romaji": "Konshuu wa totemo isogashii desu.", "id": "Minggu ini sangat sibuk." }
+    },
+    {
+      "vocab": "たのしい",
+      "reading_meaning": "tanoshii (menyenangkan)",
+      "type": "🟠",
+      "mnemonic": "Pestanya 'TA-k heNti-hentinya O-SHII-k', 'menyenangkan' sekali!",
+      "example": { "jp": "パーティーは<ruby>楽<rt>たの</rt></ruby>しかったです。", "romaji": "Paathii wa tanoshikatta desu.", "id": "Pestanya menyenangkan." }
+    }
+  ],
+  "grammar": [
+    {
+      "pattern": "KB (waktu spesifik) に Aksi",
+      "explanation": "Partikel に (ni) digunakan untuk menunjukkan titik waktu spesifik kapan sebuah aksi terjadi. Ini digunakan untuk jam, hari dalam seminggu, tanggal, bulan, dan tahun. Partikel ini TIDAK digunakan untuk kata keterangan waktu relatif seperti 今日 (hari ini), 明日 (besok), 昨日 (kemarin), 毎週 (setiap minggu), dll.",
+      "visual": "<b>[Jam / Tanggal / Hari] 🕒 に [Aksi Terjadi]</b><br><br>Bayangkan <b>に (ni)</b> sebagai 'jarum jam' yang menunjuk tepat pada satu titik di kalender atau jam dinding.",
+      "examples": [
+        {
+          "jp": "<ruby>六時<rt>ろくじ</rt></ruby>に<ruby>起<rt>お</rt></ruby>きます。",
+          "romaji": "Rokuji ni okimasu.",
+          "id": "Saya bangun pada jam 6."
+        },
+        {
+          "jp": "八<ruby>月<rt>がつ</rt></ruby>十五<ruby>日<rt>にち</rt></ruby>に<ruby>生<rt>う</rt></ruby>まれました。",
+          "romaji": "Hachigatsu juugonichi ni umaremashita.",
+          "id": "Saya lahir pada tanggal 15 Agustus."
+        },
+        {
+          "jp": "<ruby>昨日<rt>きのう</rt></ruby><ruby>勉強<rt>べんきょう</rt></ruby>しました。(Bukan 昨日<strike>に</strike>)",
+          "romaji": "Kinou benkyoushimashita.",
+          "id": "Kemarin saya belajar. (Tanpa に)"
+        }
+      ]
+    },
+    {
+      "pattern": "Bentuk Waktu Kata Kerja (~ます)",
+      "explanation": "Kata kerja bentuk ~ます (masu) memiliki empat bentuk dasar untuk menunjukkan waktu (sekarang/masa depan & lampau) dan afirmasi (positif & negatif). Ini adalah tulang punggung untuk membuat kalimat sederhana.",
+      "visual": "<b>Tabel Konjugasi Bentuk ~ます</b><br><table border='1' style='width:100%; text-align:center;'><tr><td></td><td><b>Positif</b></td><td><b>Negatif</b></td></tr><tr><td><b>Sekarang / Akan Datang</b></td><td>V-ます (masu)</td><td>V-ません (masen)</td></tr><tr><td><b>Lampau</b></td><td>V-ました (mashita)</td><td>V-ませんでした (masen deshita)</td></tr></table>",
+      "examples": [
+        {
+          "jp": "（<ruby>今<rt>いま</rt></ruby>）ごはんを<ruby>食<rt>た</rt></ruby>べます。",
+          "romaji": "(Ima) gohan o tabemasu.",
+          "id": "Saya (sekarang) makan nasi."
+        },
+        {
+          "jp": "（<ruby>明日<rt>あした</rt></ruby>）ごはんを<ruby>食<rt>た</rt></ruby>べません。",
+          "romaji": "(Ashita) gohan o tabemasen.",
+          "id": "Saya tidak akan makan nasi (besok)."
+        },
+        {
+          "jp": "（<ruby>昨日<rt>きのう</rt></ruby>）ごはんを<ruby>食<rt>た</rt></ruby>べました。",
+          "romaji": "(Kinou) gohan o tabemashita.",
+          "id": "Saya (kemarin) sudah makan nasi."
+        },
+        {
+          "jp": "（<ruby>今朝<rt>けさ</rt></ruby>）ごはんを<ruby>食<rt>た</rt></ruby>べませんでした。",
+          "romaji": "(Kesa) gohan o tabemasen deshita.",
+          "id": "Saya (tadi pagi) belum/tidak makan nasi."
+        }
+      ]
+    }
+  ]
+}

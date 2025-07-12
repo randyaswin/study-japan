@@ -1,0 +1,239 @@
+{
+  "type": "N5",
+  "day": 7,
+  "kanji": [
+    {
+      "kanji": "私",
+      "reading_meaning": "<b>On:</b> し (shi)<br><b>Kun:</b> わたくし (watakushi), わたし (watashi)<br><b>Arti:</b> Saya, Privat",
+      "mnemonic": "Kanji ini terdiri dari radikal 'padi' (禾) dan 'pribadi' (ム). Bayangkan padi yang ditanam ini adalah milik 'pribadi' atau milik 'saya'.",
+      "example": {
+        "jp": "<ruby>私<rt>わたし</rt></ruby>はインドネシア<ruby>人<rt>じん</rt></ruby>です。",
+        "romaji": "Watashi wa Indoneshia-jin desu.",
+        "id": "Saya adalah orang Indonesia."
+      }
+    },
+    {
+      "kanji": "男",
+      "reading_meaning": "<b>On:</b> だん (dan), なん (nan)<br><b>Kun:</b> おとこ (otoko)<br><b>Arti:</b> Pria, Laki-laki",
+      "mnemonic": "Gabungan dari kanji 'sawah' (田) dan 'kekuatan' (力). Secara tradisional, 'pria' adalah orang yang menggunakan kekuatannya untuk bekerja di sawah.",
+      "example": {
+        "jp": "あの<ruby>男<rt>おとこ</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>は<ruby>誰<rt>だれ</rt></ruby>ですか。",
+        "romaji": "Ano otoko no hito wa dare desu ka.",
+        "id": "Siapakah pria itu?"
+      }
+    },
+    {
+      "kanji": "女",
+      "reading_meaning": "<b>On:</b> じょ (jo), にょ (nyo)<br><b>Kun:</b> おんな (onna), め (me)<br><b>Arti:</b> Wanita, Perempuan",
+      "mnemonic": "Ini adalah gambar piktograf dari seorang 'wanita' yang sedang duduk berlutut dengan anggun, sebuah postur tradisional.",
+      "example": {
+        "jp": "このクラスに<ruby>女<rt>おんな</rt></ruby>の<ruby>子<rt>こ</rt></ruby>は<ruby>五人<rt>ごにん</rt></ruby>います。",
+        "romaji": "Kono kurasu ni onna no ko wa gonin imasu.",
+        "id": "Di kelas ini ada lima anak perempuan."
+      }
+    },
+    {
+      "kanji": "子",
+      "reading_meaning": "<b>On:</b> し (shi), す (su)<br><b>Kun:</b> こ (ko)<br><b>Arti:</b> Anak",
+      "mnemonic": "Gambar sederhana dari seorang 'anak' kecil dengan kepala besar dan tangan yang terentang, seolah-olah ingin digendong.",
+      "example": {
+        "jp": "<ruby>子<rt>こ</rt></ruby>どもたちは<ruby>公園<rt>こうえん</rt></ruby>で<ruby>遊<rt>あそ</rt></ruby>んでいます。",
+        "romaji": "Kodomotachi wa kouen de asondeimasu.",
+        "id": "Anak-anak sedang bermain di taman."
+      }
+    },
+    {
+      "kanji": "友",
+      "reading_meaning": "<b>On:</b> ゆう (yuu)<br><b>Kun:</b> とも (tomo)<br><b>Arti:</b> Teman",
+      "mnemonic": "Kanji ini terlihat seperti dua tangan (dua goresan atas) yang saling menggenggam atau menopang. Itulah arti dari seorang 'teman'.",
+      "example": {
+        "jp": "<ruby>彼<rt>かれ</rt></ruby>は<ruby>私<rt>わたし</rt></ruby>の<ruby>親友<rt>しんゆう</rt></ruby>です。",
+        "romaji": "Kare wa watashi no shin'yuu desu.",
+        "id": "Dia adalah sahabat saya."
+      }
+    }
+  ],
+  "vocabulary": [
+    {
+      "vocab": "おとうさん",
+      "reading_meaning": "otousan (ayah orang lain, panggilan untuk ayah)",
+      "type": "🔵",
+      "mnemonic": "'O-TO-U-SAN-gat' bijaksana, itulah ayahmu!",
+      "example": { "jp": "これはミラーさんのお<ruby>父<rt>とう</rt></ruby>さんです。", "romaji": "Kore wa Miraa-san no otousan desu.", "id": "Ini adalah ayah Tuan Miller." }
+    },
+    {
+      "vocab": "おかあさん",
+      "reading_meaning": "okaasan (ibu orang lain, panggilan untuk ibu)",
+      "type": "🔵",
+      "mnemonic": "'O-KA-A-SAN-gat' penyayang, itulah ibumu!",
+      "example": { "jp": "お<ruby>母<rt>かあ</rt></ruby>さんはお<ruby>元気<rt>げんき</rt></ruby>ですか。", "romaji": "Okaasan wa o-genki desu ka.", "id": "Apakah ibumu sehat?" }
+    },
+    {
+      "vocab": "おにいさん",
+      "reading_meaning": "oniisan (kakak laki-laki orang lain)",
+      "type": "🔵",
+      "mnemonic": "Kakak laki-lakimu 'O-NI-I-SAN-a', keren ya!",
+      "example": { "jp": "お<ruby>兄<rt>にい</rt></ruby>さんは<ruby>何歳<rt>なんさい</rt></ruby>ですか。", "romaji": "Oniisan wa nansai desu ka.", "id": "Berapa umur kakak laki-lakimu?" }
+    },
+    {
+      "vocab": "おねえさん",
+      "reading_meaning": "oneesan (kakak perempuan orang lain)",
+      "type": "🔵",
+      "mnemonic": "Kakak perempuanmu cantik ya, 'O-NE-E-SAN-jung' deh.",
+      "example": { "jp": "お<ruby>姉<rt>ねえ</rt></ruby>さんは<ruby>学生<rt>がくせい</rt></ruby>ですか。", "romaji": "Oneesan wa gakusei desu ka.", "id": "Apakah kakak perempuanmu seorang pelajar?" }
+    },
+    {
+      "vocab": "おとうと",
+      "reading_meaning": "otouto (adik laki-laki saya)",
+      "type": "🔵",
+      "mnemonic": "Adikku suka main 'O-TO-mo-bil' dan 'O-TO-ped'.",
+      "example": { "jp": "<ruby>弟<rt>おとうと</rt></ruby>は<ruby>高校生<rt>こうこうせい</rt></ruby>です。", "romaji": "Otouto wa koukousei desu.", "id": "Adik laki-laki saya adalah siswa SMA." }
+    },
+    {
+      "vocab": "いもうと",
+      "reading_meaning": "imouto (adik perempuan saya)",
+      "type": "🔵",
+      "mnemonic": "Adikku 'I-MOET-TO' (imut) sekali.",
+      "example": { "jp": "これは<ruby>妹<rt>いもうと</ruby></ruby>の<ruby>写真<rt>しゃしん</rt></ruby>です。", "romaji": "Kore wa imouto no shashin desu.", "id": "Ini adalah foto adik perempuan saya." }
+    },
+    {
+      "vocab": "<ruby>国<rt>くに</rt></ruby>",
+      "reading_meaning": "kuni (negara)",
+      "type": "🔵",
+      "mnemonic": "Warnai 'negara' ini dengan cat 'KUNI-ng'.",
+      "example": { "jp": "お<ruby>国<rt>くに</rt></ruby>はどちらですか。", "romaji": "O-kuni wa dochira desu ka.", "id": "Anda berasal dari negara mana?" }
+    },
+    {
+      "vocab": "<ruby>町<rt>まち</rt></ruby>",
+      "reading_meaning": "machi (kota)",
+      "type": "🔵",
+      "mnemonic": "'Kota' ini sering 'MA-CHI-t' (macet).",
+      "example": { "jp": "この<ruby>町<rt>まち</rt></ruby>はとても<ruby>静<rt>しず</rt></ruby>かです。", "romaji": "Kono machi wa totemo shizuka desu.", "id": "Kota ini sangat sepi." }
+    },
+    {
+      "vocab": "<ruby>犬<rt>いぬ</rt></ruby>",
+      "reading_meaning": "inu (anjing)",
+      "type": "🔵",
+      "mnemonic": "'Anjing' itu lucu, 'I-NU-dah' (ya sudah) aku adopsi.",
+      "example": { "jp": "<ruby>犬<rt>いぬ</rt></ruby>を<ruby>飼<rt>か</rt></ruby>っています。", "romaji": "Inu o katteimasu.", "id": "Saya memelihara anjing." }
+    },
+    {
+      "vocab": "<ruby>猫<rt>ねこ</rt></ruby>",
+      "reading_meaning": "neko (kucing)",
+      "type": "🔵",
+      "mnemonic": "'Kucing' itu manja, suka nempel di 'NE-ng KO-ki'.",
+      "example": { "jp": "<ruby>猫<rt>ねこ</rt></ruby>は<ruby>魚<rt>さかな</rt></ruby>が<ruby>好<rt>す</rt></ruby>きです。", "romaji": "Neko wa sakana ga suki desu.", "id": "Kucing suka ikan." }
+    },
+    {
+      "vocab": "もの",
+      "reading_meaning": "mono (benda, barang)",
+      "type": "🔵",
+      "mnemonic": "Banyak 'benda' di pameran 'MONO-rail' itu.",
+      "example": { "jp": "これは<ruby>食<rt>た</rt></ruby>べ<ruby>物<rt>もの</rt></ruby>ですか。", "romaji": "Kore wa tabemono desu ka.", "id": "Apakah ini makanan (benda untuk dimakan)?" }
+    },
+    {
+      "vocab": "<ruby>時間<rt>じかん</rt></ruby>",
+      "reading_meaning": "jikan (waktu)",
+      "type": "🔵",
+      "mnemonic": "'Waktu' terasa cepat saat 'JI-ka AN-da' bahagia.",
+      "example": { "jp": "<ruby>時間<rt>じかん</rt></ruby>がありません。", "romaji": "Jikan ga arimasen.", "id": "Saya tidak punya waktu." }
+    },
+    {
+      "vocab": "<ruby>曜日<rt>ようび</rt></ruby>",
+      "reading_meaning": "youbi (hari dalam seminggu)",
+      "type": "🔵",
+      "mnemonic": "'YOU-BI-sa tebak ini hari apa?'",
+      "example": { "jp": "<ruby>今日<rt>きょう</rt></ruby>は<ruby>何曜日<rt>なんようび</rt></ruby>ですか。", "romaji": "Kyou wa nan'youbi desu ka.", "id": "Hari ini hari apa?" }
+    },
+    {
+      "vocab": "わかります",
+      "reading_meaning": "wakarimasu (mengerti, paham)",
+      "type": "🟢",
+      "mnemonic": "'WAH, KA-lau begini saya jadi 'mengerti'.",
+      "example": { "jp": "<ruby>日本語<rt>にほんご</rt></ruby>がすこしわかります。", "romaji": "Nihongo ga sukoshi wakarimasu.", "id": "Saya sedikit mengerti bahasa Jepang." }
+    },
+    {
+      "vocab": "あります",
+      "reading_meaning": "arimasu (ada - benda mati; punya)",
+      "type": "🟢",
+      "mnemonic": "Di 'ARI-san' itu 'ada' banyak barang.",
+      "example": { "jp": "つくえの<ruby>上<rt>うえ</rt></ruby>に<ruby>本<rt>ほん</rt></ruby>があります。", "romaji": "Tsukue no ue ni hon ga arimasu.", "id": "Di atas meja ada buku." }
+    },
+    {
+      "vocab": "います",
+      "reading_meaning": "imasu (ada - makhluk hidup)",
+      "type": "🟢",
+      "mnemonic": "'I-h, MAS-nya 'ada' di sana'. Untuk menunjukkan keberadaan orang.",
+      "example": { "jp": "<ruby>教室<rt>きょうしつ</rt></ruby>に<ruby>学生<rt>がくせい</rt></ruby>がいます。", "romaji": "Kyoushitsu ni gakusei ga imasu.", "id": "Di ruang kelas ada murid." }
+    },
+    {
+      "vocab": "<ruby>古<rt>ふる</rt></ruby>い",
+      "reading_meaning": "furui (lama, kuno, bekas)",
+      "type": "🟠",
+      "mnemonic": "'FUR-nitu-I' ini sudah 'lama' sekali.",
+      "example": { "jp": "これは<ruby>古<rt>ふる</rt></ruby>い<ruby>本<rt>ほん</rt></ruby>です。", "romaji": "Kore wa furui hon desu.", "id": "Ini adalah buku lama." }
+    },
+    {
+      "vocab": "つめたい",
+      "reading_meaning": "tsumetai (dingin - untuk benda)",
+      "type": "🟠",
+      "mnemonic": "Minum es 'TSU-MET-AI' (sampai) gigi ngilu karena 'dingin'.",
+      "example": { "jp": "つめたいジュースを<ruby>飲<rt>の</rt></ruby>みたいです。", "romaji": "Tsumetai juusu o nomitai desu.", "id": "Saya ingin minum jus dingin." }
+    },
+    {
+      "vocab": "<ruby>上手<rt>じょうず</rt></ruby>",
+      "reading_meaning": "jouzu (pandai, mahir)",
+      "type": "🟣",
+      "mnemonic": "Dia 'JOU-ara, SU-dah pasti pandai'.",
+      "example": { "jp": "マリアさんは<ruby>歌<rt>うた</rt></ruby>が<ruby>上手<rt>じょうず</rt></ruby>です。", "romaji": "Maria-san wa uta ga jouzu desu.", "id": "Sdri. Maria pandai bernyanyi." }
+    },
+    {
+      "vocab": "<ruby>下手<rt>へた</rt></ruby>",
+      "reading_meaning": "heta (tidak pandai, bodoh)",
+      "type": "🟣",
+      "mnemonic": "'HEH, TA-k bisa dia', 'tidak pandai' sekali.",
+      "example": { "jp": "<ruby>私<rt>わたし</rt></ruby>はスポーツが<ruby>下手<rt>へた</rt></ruby>です。", "romaji": "Watashi wa supootsu ga heta desu.", "id": "Saya tidak pandai olahraga." }
+    }
+  ],
+  "grammar": [
+    {
+      "pattern": "Kalimat 1 から、Kalimat 2",
+      "explanation": "Pola ini digunakan untuk menyatakan hubungan sebab-akibat. Kalimat pertama adalah alasannya, dan diakhiri dengan から (kara) yang berarti 'karena'. Kalimat kedua adalah akibat atau hasil dari alasan tersebut. Ini adalah cara formal untuk menghubungkan dua kalimat.",
+      "visual": "<b>[Kalimat Alasan] から (karena itu) , [Kalimat Akibat]</b><br><br>Bayangkan <b>から</b> sebagai jembatan logika yang menghubungkan 'sebab' ke 'akibat'.",
+      "examples": [
+        {
+          "jp": "<ruby>時間<rt>じかん</rt></ruby>がありませんから、<ruby>新聞<rt>しんぶん</rt></ruby>を<ruby>読<rt>よ</rt></ruby>みません。",
+          "romaji": "Jikan ga arimasen kara, shinbun o yomimasen.",
+          "id": "Karena tidak punya waktu, saya tidak membaca koran."
+        },
+        {
+          "jp": "このレストランは<ruby>有名<rt>ゆうめい</rt></ruby>ですから、いつも<ruby>人<rt>ひと</rt></ruby>が<ruby>多<rt>おお</rt></ruby>いです。",
+          "romaji": "Kono resutoran wa yuumei desu kara, itsumo hito ga ooi desu.",
+          "id": "Karena restoran ini terkenal, selalu banyak orang."
+        },
+        {
+          "jp": "<ruby>明日<rt>あした</rt></ruby>テストがありますから、<ruby>今晩<rt>こんばん</rt></ruby><ruby>勉強<rt>べんきょう</rt></ruby>します。",
+          "romaji": "Ashita tesuto ga arimasu kara, konban benkyoushimasu.",
+          "id": "Karena besok ada ujian, malam ini saya akan belajar."
+        }
+      ]
+    },
+    {
+      "pattern": "どうしてですか / ～から です",
+      "explanation": "Ini adalah pola tanya-jawab standar untuk menanyakan 'mengapa'. Pertanyaannya adalah どうしてですか (doushite desu ka). Jawabannya akan mengulangi alasan dan diakhiri dengan ～から です (...kara desu) untuk menyatakan '...karena.'.",
+      "visual": "<b>Q: どうして ... ですか？ (Kenapa ...?)</b><br><b>A: [Alasan] ... からです。(Karena ... )</b>",
+      "examples": [
+        {
+          "jp": "Q: どうして<ruby>昨日<rt>きのう</rt></ruby><ruby>休<rt>やす</rt></ruby>みましたか。 A: <ruby>頭<rt>あたま</rt></ruby>が<ruby>痛<rt>いた</rt></ruby>かったですから。",
+          "romaji": "Q: Doushite kinou yasumimashita ka. A: Atama ga itakatta desu kara.",
+          "id": "Q: Kenapa kemarin libur? A: Karena kepala saya sakit."
+        },
+        {
+          "jp": "Q: どうして<ruby>日本語<rt>にほんご</rt></ruby>を<ruby>勉強<rt>べんきょう</rt></ruby>しますか。 A: <ruby>日本<rt>にほん</rt></ruby>のアニメが<ruby>好<rt>す</rt></ruby>きだからです。",
+          "romaji": "Q: Doushite nihongo o benkyoushimasu ka. A: Nihon no anime ga suki desu kara.",
+          "id": "Q: Kenapa belajar bahasa Jepang? A: Karena saya suka anime Jepang."
+        }
+      ]
+    }
+  ]
+}
