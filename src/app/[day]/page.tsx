@@ -6,7 +6,7 @@ import fs from 'fs';
 
 // Komponen untuk me-render furigana dengan benar
 // Membuat furigana (rt) di atas kanji (rb) berwarna merah dan bisa diperbesar
-const Furigana = ({ htmlString, className = '', rtClass = '', mainClass = '', boldMain = false }: { htmlString: string | undefined; className?: string; rtClass?: string; mainClass?: string; boldMain?: boolean }) => {
+const Furigana = ({ htmlString, className = '', rtClass = '', boldMain = false }: { htmlString: string | undefined; className?: string; rtClass?: string; mainClass?: string; boldMain?: boolean }) => {
     if (typeof htmlString !== 'string') return null;
     let html = htmlString;
     if (rtClass) {
@@ -35,15 +35,6 @@ const colors = {
     verb: 'green',
     adjective: 'purple',
     grammar: 'yellow',
-};
-
-const getBorderColor = (type: string) => {
-    switch (type) {
-        case '🔵': return `border-${colors.noun}-500`;
-        case '🟢': return `border-${colors.verb}-500`;
-        case '🟣': return `border-${colors.adjective}-500`;
-        default: return 'border-gray-500';
-    }
 };
 
 const getHeaderBgColor = (type: string) => {
@@ -97,9 +88,6 @@ interface SprintData {
     grammar: GrammarItem[];
 }
 
-interface DailySprintPageProps {
-    sprintData: SprintData;
-}
 
 export async function generateStaticParams() {
     // List all sprint_day*.json in ../data
@@ -123,7 +111,7 @@ export default async function DailySprintPage({ params }: { params: Promise<{ da
         const filePath = path.join(dataDir, `sprint_day${day}.json`);
         const fileContent = fs.readFileSync(filePath, 'utf-8');
         sprintData = JSON.parse(fileContent);
-    } catch (err) {
+    } catch {
         notFound();
     }
     if (!sprintData) {
@@ -135,7 +123,6 @@ export default async function DailySprintPage({ params }: { params: Promise<{ da
                 <Head>
                     <title>Sprint Belajar Harian: JLPT - Hari {sprintData.day}</title>
                     <meta name="description" content={`Materi belajar Jepang untuk hari ke-${sprintData.day}`} />
-                    <script src="https://cdn.tailwindcss.com"></script>
                 </Head>
 
                 {/* Navigation */}
