@@ -1,0 +1,214 @@
+{
+  "type": "N5",
+  "day": 2,
+  "kanji": [
+    {
+      "kanji": "四",
+      "reading_meaning": "<b>On:</b> し (shi)<br><b>Kun:</b> よん (yon), よ (yo), よっつ (yottsu)<br><b>Arti:</b> Empat",
+      "mnemonic": "Bayangkan sebuah kotak (口) dengan 'kaki' (儿) di dalamnya. Ini seperti sebuah ruangan dengan empat sudut.",
+      "example": {
+        "jp": "つくえの<ruby>上<rt>うえ</rt></ruby>にりんごが<ruby>四<rt>よっ</rt></ruby>つあります。",
+        "romaji": "Tsukue no ue ni ringo ga yottsu arimasu.",
+        "id": "Di atas meja ada empat buah apel."
+      }
+    },
+    {
+      "kanji": "五",
+      "reading_meaning": "<b>On:</b> ご (go)<br><b>Kun:</b> いつ (itsu), いつ-つ (itsutsu)<br><b>Arti:</b> Lima",
+      "mnemonic": "Terlihat seperti angka 5 yang ditulis dengan gaya. Dua garis atas, garis tengah, dan dua garis bawah, total lima goresan.",
+      "example": {
+        "jp": "この<ruby>本<rt>ほん</rt></ruby>は<ruby>五百円<rt>ごひゃくえん</rt></ruby>です。",
+        "romaji": "Kono hon wa gohyaku-en desu.",
+        "id": "Buku ini harganya 500 Yen."
+      }
+    },
+    {
+      "kanji": "六",
+      "reading_meaning": "<b>On:</b> ろく (roku)<br><b>Kun:</b> むっつ (muttsu), むい (mui)<br><b>Arti:</b> Enam",
+      "mnemonic": "Kanji ini memiliki 'topi' (亠) di atas dan 'kaki' (八) di bawah. Bayangkan seseorang dengan enam lengan atau kaki.",
+      "example": {
+        "jp": "<ruby>六時<rt>ろくじ</rt></ruby>に<ruby>起<rt>お</rt></ruby>きます。",
+        "romaji": "Rokuji ni okimasu.",
+        "id": "Saya bangun jam enam."
+      }
+    },
+    {
+      "kanji": "円",
+      "reading_meaning": "<b>On:</b> えん (en)<br><b>Kun:</b> まるい (marui)<br><b>Arti:</b> Yen, Lingkaran",
+      "mnemonic": "Bentuknya seperti gerbang atau loket bank. Bayangkan Anda masuk ke dalam 'kotak' ini untuk menukarkan uang 'Yen'.",
+      "example": {
+        "jp": "これは<ruby>百円<rt>ひゃくえん</rt></ruby>です。",
+        "romaji": "Kore wa hyaku-en desu.",
+        "id": "Ini harganya 100 Yen."
+      }
+    },
+    {
+      "kanji": "年",
+      "reading_meaning": "<b>On:</b> ねん (nen)<br><b>Kun:</b> とし (toshi)<br><b>Arti:</b> Tahun",
+      "mnemonic": "Kanji ini melambangkan proses panen padi yang terjadi sekali setahun. Setiap 'tahun' panen baru tiba.",
+      "example": {
+        "jp": "<ruby>来年<rt>らいねん</rt></ruby>、<ruby>日本<rt>にほん</rt></ruby>へ<ruby>行<rt>い</rt></ruby>きます。",
+        "romaji": "Rainen, Nihon e ikimasu.",
+        "id": "Tahun depan, saya akan pergi ke Jepang."
+      }
+    }
+  ],
+  "vocabulary": [
+    {
+      "vocab": "それ",
+      "reading_meaning": "sore (itu - dekat lawan bicara)",
+      "type": "🔵",
+      "mnemonic": "Gunakan 'SORE' saat menunjuk sesuatu yang ada di 'SOna RElatif' dekat dengan lawan bicara.",
+      "example": {
+        "jp": "それは<ruby>何<rt>なん</rt></ruby>ですか。",
+        "romaji": "Sore wa nan desu ka.",
+        "id": "Apa itu? (benda yang dekat Anda)"
+      }
+    },
+    {
+      "vocab": "あれ",
+      "reading_meaning": "are (itu - jauh dari pembicara & lwn bicara)",
+      "type": "🔵",
+      "mnemonic": "Gunakan 'ARE' saat menunjuk sesuatu yang jauh sambil berkata 'AREk, itu apa ya?'",
+      "example": {
+        "jp": "あれは<ruby>誰<rt>だれ</rt></ruby>の<ruby>車<rt>くるま</rt></ruby>ですか。",
+        "romaji": "Are wa dare no kuruma desu ka.",
+        "id": "Mobil itu (yang di sana) milik siapa?"
+      }
+    },
+    {
+      "vocab": "<ruby>学校<rt>がっこう</rt></ruby>",
+      "reading_meaning": "gakkou (sekolah)",
+      "type": "🔵",
+      "mnemonic": "Ingat kanji 学 (belajar) dari hari ke-1? Ditambah 校 (sekolah), jadilah 'gedung untuk belajar', yaitu 'sekolah'.",
+      "example": {
+        "jp": "<ruby>学校<rt>がっこう</rt></ruby>は<ruby>八時<rt>はちじ</rt></ruby>からです。",
+        "romaji": "Gakkou wa hachiji kara desu.",
+        "id": "Sekolah mulai dari jam delapan."
+      }
+    },
+    {
+      "vocab": "<ruby>行<rt>い</rt></ruby>きます",
+      "reading_meaning": "ikimasu (pergi)",
+      "type": "🟢",
+      "mnemonic": "Bayangkan Anda berkata 'I-KI-ta mau pergi ke sana'. Bunyinya mirip 'ikimasu'.",
+      "example": {
+        "jp": "<ruby>明日<rt>あした</rt></ruby>、どこへ<ruby>行<rt>い</rt></ruby>きますか。",
+        "romaji": "Ashita, doko e ikimasu ka.",
+        "id": "Besok, mau pergi ke mana?"
+      }
+    },
+    {
+      "vocab": "<ruby>来<rt>き</rt></ruby>ます",
+      "reading_meaning": "kimasu (datang)",
+      "type": "🟢",
+      "mnemonic": "Saat seseorang 'datang', kita bilang 'Oh, KI-ta sambut dia'. Bunyinya mirip 'kimasu'.",
+      "example": {
+        "jp": "パーティーに<ruby>来<rt>き</rt></ruby>ませんか。",
+        "romaji": "Paathii ni kimasen ka.",
+        "id": "Maukah Anda datang ke pesta?"
+      }
+    },
+    {
+      "vocab": "<ruby>帰<rt>かえ</rt></ruby>ります",
+      "reading_meaning": "kaerimasu (pulang)",
+      "type": "🟢",
+      "mnemonic": "Saat mau 'pulang', kita naik 'KAI' (Kereta Api Indonesia) atau kendaraan lain. 'KAI-rimasu' terdengar mirip.",
+      "example": {
+        "jp": "<ruby>今晩<rt>こんばん</rt></ruby>、<ruby>家<rt>うち</rt></ruby>へ<ruby>帰<rt>かえ</rt></ruby>ります。",
+        "romaji": "Konban, uchi e kaerimasu.",
+        "id": "Malam ini, saya akan pulang ke rumah."
+      }
+    },
+    {
+      "vocab": "<ruby>友達<rt>ともだち</rt></ruby>",
+      "reading_meaning": "tomodachi (teman)",
+      "type": "🔵",
+      "mnemonic": "Seorang 'teman' adalah orang yang kita 'TOlong MOdalin DAri CHIna'. Hanya lelucon agar mudah diingat!",
+      "example": {
+        "jp": "これは<ruby>私<rt>わたし</rt></ruby>の<ruby>友達<rt>ともだち</rt></ruby>です。",
+        "romaji": "Kore wa watashi no tomodachi desu.",
+        "id": "Ini adalah teman saya."
+      }
+    },
+    {
+      "vocab": "げんき",
+      "reading_meaning": "genki (sehat, bersemangat)",
+      "type": "🟣",
+      "mnemonic": "Anak 'GENG KI-ta' harus selalu 'sehat dan bersemangat'!",
+      "example": {
+        "jp": "お<ruby>元気<rt>げんき</rt></ruby>ですか。",
+        "romaji": "O-genki desu ka.",
+        "id": "Apa kabar? (Apakah Anda sehat?)"
+      }
+    },
+    {
+      "vocab": "<ruby>新<rt>あたら</rt></ruby>しい",
+      "reading_meaning": "atarashii (baru)",
+      "type": "🟠",
+      "mnemonic": "Saat mendapat barang 'baru', rasanya 'Ah, taraaa! Ini dia!'. 'Atarashii' terdengar seperti itu.",
+      "example": {
+        "jp": "<ruby>新<rt>あたら</rt></ruby>しい<ruby>車<rt>くるま</rt></ruby>を<ruby>買<rt>か</rt></ruby>いました。",
+        "romaji": "Atarashii kuruma o kaimashita.",
+        "id": "Saya telah membeli mobil baru."
+      }
+    },
+    {
+      "vocab": "かばん",
+      "reading_meaning": "kaban (tas)",
+      "type": "🔵",
+      "mnemonic": "Saat membawa 'tas' yang berat, panggil 'KABANg' untuk minta bantuan. Sangat mirip dengan kata 'abang'.",
+      "example": {
+        "jp": "そのかばんは<ruby>誰<rt>だれ</rt></ruby>のですか。",
+        "romaji": "Sono kaban wa dare no desu ka.",
+        "id": "Tas itu milik siapa?"
+      }
+    }
+  ],
+  "grammar": [
+    {
+      "pattern": "Kalimat + か",
+      "explanation": "Menambahkan partikel か (ka) di akhir sebuah kalimat pernyataan akan mengubahnya menjadi kalimat tanya. Ini adalah cara paling umum untuk bertanya dalam bahasa Jepang. Nada bicara di akhir kalimat biasanya sedikit naik.",
+      "visual": "<b>[Pernyataan Lengkap] + ❓(か) = Pertanyaan</b><br><br>Bayangkan <b>か (ka)</b> sebagai tombol 'tanda tanya' yang Anda tekan di akhir kalimat untuk meminta konfirmasi atau informasi.",
+      "examples": [
+        {
+          "jp": "あれは<ruby>学校<rt>がっこう</rt></ruby>です。",
+          "romaji": "Are wa gakkou desu.",
+          "id": "Itu adalah sekolah. (Pernyataan)"
+        },
+        {
+          "jp": "あれは<ruby>学校<rt>がっこう</rt></ruby>ですか。",
+          "romaji": "Are wa gakkou desu ka.",
+          "id": "Apakah itu sekolah? (Pertanyaan)"
+        },
+        {
+          "jp": "サリさんは<ruby>元気<rt>げんき</rt></ruby>ですか。",
+          "romaji": "Sari-san wa genki desu ka.",
+          "id": "Apakah Sdri. Sari sehat?"
+        }
+      ]
+    },
+    {
+      "pattern": "KB も",
+      "explanation": "Partikel も (mo) digunakan untuk menggantikan は (wa) atau が (ga) ketika menyatakan 'juga'. Ini menunjukkan bahwa pernyataan yang sama yang berlaku untuk topik sebelumnya, juga berlaku untuk item yang ditandai dengan も.",
+      "visual": "<b>[Topik 1] は ...です。<br>[Topik 2] も ...です。</b><br><br>Anggap <b>も (mo)</b> sebagai stempel 'SAMA JUGA' atau 'IKUTAN'. Jika Budi adalah siswa, dan Ani juga siswa, maka Ani mendapat stempel も.",
+      "examples": [
+        {
+          "jp": "ブディさんは<ruby>学生<rt>がくせい</rt></ruby>です。アニさんも<ruby>学生<rt>がくせい</rt></ruby>です。",
+          "romaji": "Budi-san wa gakusei desu. Ani-san mo gakusei desu.",
+          "id": "Sdr. Budi adalah siswa. Sdri. Ani juga siswa."
+        },
+        {
+          "jp": "これは<ruby>私<rt>わたし</rt></ruby>のかさです。それも<ruby>私<rt>わたし</rt></ruby>のです。",
+          "romaji": "Kore wa watashi no kasa desu. Sore mo watashi no desu.",
+          "id": "Ini adalah payung saya. Itu juga milik saya."
+        },
+        {
+          "jp": "きのう<ruby>東京<rt>とうきょう</rt></ruby>へ<ruby>行<rt>い</rt></ruby>きました。おとといも<ruby>行<rt>い</rt></ruby>きました。",
+          "romaji": "Kinou Toukyou e ikimashita. Ototoi mo ikimashita.",
+          "id": "Kemarin saya pergi ke Tokyo. Kemarin lusa pun pergi."
+        }
+      ]
+    }
+  ]
+}

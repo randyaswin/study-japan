@@ -1,0 +1,214 @@
+{
+  "type": "N5",
+  "day": 3,
+  "kanji": [
+    {
+      "kanji": "七",
+      "reading_meaning": "<b>On:</b> しち (shichi)<br><b>Kun:</b> なな (nana), なな-つ (nanatsu)<br><b>Arti:</b> Tujuh",
+      "mnemonic": "Kanji ini mirip dengan angka 7 yang ditulis terbalik. Goresan pertama memotong goresan kedua.",
+      "example": {
+        "jp": "<ruby>七月<rt>しちがつ</rt></ruby>は<ruby>暑<rt>あつ</rt></ruby>いです。",
+        "romaji": "Shichigatsu wa atsui desu.",
+        "id": "Bulan Juli (bulan tujuh) itu panas."
+      }
+    },
+    {
+      "kanji": "八",
+      "reading_meaning": "<b>On:</b> はち (hachi)<br><b>Kun:</b> やっつ (yattsu), よう (you)<br><b>Arti:</b> Delapan",
+      "mnemonic": "Bentuknya seperti kumis atau dua garis yang menyebar ke bawah, melambangkan pembagian atau keberuntungan. Angka 8 dianggap angka baik di Jepang.",
+      "example": {
+        "jp": "たこは<ruby>足<rt>あし</rt></ruby>が<ruby>八本<rt>はっぽん</rt></ruby>あります。",
+        "romaji": "Tako wa ashi ga happon arimasu.",
+        "id": "Gurita memiliki delapan kaki."
+      }
+    },
+    {
+      "kanji": "九",
+      "reading_meaning": "<b>On:</b> きゅう (kyuu), く (ku)<br><b>Kun:</b> ここの-つ (kokonotsu)<br><b>Arti:</b> Sembilan",
+      "mnemonic": "Kanji ini terlihat seperti orang yang membungkuk atau sebuah kail pancing. Bayangkan Anda perlu membungkuk sembilan kali atau memancing sembilan ikan.",
+      "example": {
+        "jp": "<ruby>今<rt>いま</rt></ruby>、<ruby>九時<rt>くじ</rt></ruby>です。",
+        "romaji": "Ima, kuji desu.",
+        "id": "Sekarang, jam sembilan."
+      }
+    },
+    {
+      "kanji": "十",
+      "reading_meaning": "<b>On:</b> じゅう (juu)<br><b>Kun:</b> とお (too)<br><b>Arti:</b> Sepuluh",
+      "mnemonic": "Sangat mudah diingat, bentuknya seperti tanda tambah (+). Satu garis horizontal dan satu garis vertikal.",
+      "example": {
+        "jp": "<ruby>十月<rt>じゅうがつ</rt></ruby>に<ruby>祭<rt>まつ</rt></ruby>りがあります。",
+        "romaji": "Juugatsu ni matsuri ga arimasu.",
+        "id": "Pada bulan Oktober (bulan sepuluh) ada festival."
+      }
+    },
+    {
+      "kanji": "百",
+      "reading_meaning": "<b>On:</b> ひゃく (hyaku)<br><b>Kun:</b> もも (momo)<br><b>Arti:</b> Seratus",
+      "mnemonic": "Kanji ini adalah kanji 'putih' (白) dengan satu garis (一) di atasnya. Bayangkan Anda punya seratus kemeja putih, tapi satu di antaranya berbeda.",
+      "example": {
+        "jp": "このTシャツは<ruby>三百円<rt>さんびゃくえん</rt></ruby>です。",
+        "romaji": "Kono T-shatsu wa sanbyaku-en desu.",
+        "id": "Kaos ini harganya 300 Yen."
+      }
+    }
+  ],
+  "vocabulary": [
+    {
+      "vocab": "どこ",
+      "reading_meaning": "doko (di mana)",
+      "type": "🔵",
+      "mnemonic": "Saat mencari sesuatu, Anda bertanya, 'Di mana DOKUmennya?'. 'Doko' untuk menanyakan 'di mana'.",
+      "example": {
+        "jp": "お<ruby>手洗<rt>てあら</rt></ruby>いはどこですか。",
+        "romaji": "O-tearai wa doko desu ka.",
+        "id": "Di manakah toilet?"
+      }
+    },
+    {
+      "vocab": "だれ",
+      "reading_meaning": "dare (siapa)",
+      "type": "🔵",
+      "mnemonic": "Mirip dengan kata 'darah' dalam bahasa Indonesia. Anda bisa bertanya 'Siapa DAREh dagingmu?' untuk mengingat 'dare' adalah 'siapa'.",
+      "example": {
+        "jp": "あの<ruby>人<rt>ひと</rt></ruby>はだれですか。",
+        "romaji": "Ano hito wa dare desu ka.",
+        "id": "Siapakah orang itu?"
+      }
+    },
+    {
+      "vocab": "<ruby>何<rt>なに/なん</rt></ruby>",
+      "reading_meaning": "nani / nan (apa)",
+      "type": "🔵",
+      "mnemonic": "Bayangkan seorang nenek (NANI-NANI) yang kurang pendengarannya selalu bertanya 'APA?'. 'Nani' atau 'Nan' berarti 'apa'.",
+      "example": {
+        "jp": "これは<ruby>何<rt>なん</rt></ruby>ですか。",
+        "romaji": "Kore wa nan desu ka.",
+        "id": "Apa ini?"
+      }
+    },
+    {
+      "vocab": "<ruby>買<rt>か</rt></ruby>います",
+      "reading_meaning": "kaimasu (membeli)",
+      "type": "🟢",
+      "mnemonic": "Untuk 'membeli' sesuatu, kita bisa pakai 'KAI' (kartu). Jadi 'kaimasu' adalah 'membeli'.",
+      "example": {
+        "jp": "スーパーで<ruby>野菜<rt>やさい</rt></ruby>を<ruby>買<rt>か</rt></ruby>います。",
+        "romaji": "Suupaa de yasai o kaimasu.",
+        "id": "Saya membeli sayuran di supermarket."
+      }
+    },
+    {
+      "vocab": "<ruby>読<rt>よ</rt></ruby>みます",
+      "reading_meaning": "yomimasu (membaca)",
+      "type": "🟢",
+      "mnemonic": "Ayo, 'YO, MI'-num kopi sambil 'membaca' koran. 'Yomimasu' untuk 'membaca'.",
+      "example": {
+        "jp": "<ruby>毎晩<rt>まいばん</rt></ruby>、<ruby>本<rt>ほん</rt></ruby>を<ruby>読<rt>よ</rt></ruby>みます。",
+        "romaji": "Maiban, hon o yomimasu.",
+        "id": "Setiap malam saya membaca buku."
+      }
+    },
+    {
+      "vocab": "<ruby>書<rt>か</rt></ruby>きます",
+      "reading_meaning": "kakimasu (menulis)",
+      "type": "🟢",
+      "mnemonic": "Jangan 'menulis' di 'KAKI', tapi 'menulis' lah di kertas. 'Kakimasu' untuk 'menulis'.",
+      "example": {
+        "jp": "レポートを<ruby>書<rt>か</rt></ruby>きます。",
+        "romaji": "Repooto o kakimasu.",
+        "id": "Saya menulis laporan."
+      }
+    },
+    {
+      "vocab": "<ruby>車<rt>くるま</rt></ruby>",
+      "reading_meaning": "kuruma (mobil)",
+      "type": "🔵",
+      "mnemonic": "Jangan sampai 'KURang reMAh' saat mengendarai 'mobil', nanti bahaya!",
+      "example": {
+        "jp": "これは<ruby>父<rt>ちち</rt></ruby>の<ruby>車<rt>くるま</rt></ruby>です。",
+        "romaji": "Kore wa chichi no kuruma desu.",
+        "id": "Ini adalah mobil ayah saya."
+      }
+    },
+    {
+      "vocab": "<ruby>安<rt>やす</rt></ruby>い",
+      "reading_meaning": "yasui (murah)",
+      "type": "🟠",
+      "mnemonic": "Saat melihat harga yang 'murah', Anda berkata 'YASudah, UI-dah, beli saja!'. 'Yasui' terdengar seperti itu.",
+      "example": {
+        "jp": "このかばんは<ruby>安<rt>やす</rt></ruby>いです。",
+        "romaji": "Kono kaban wa yasui desu.",
+        "id": "Tas ini murah."
+      }
+    },
+    {
+      "vocab": "しんせつ",
+      "reading_meaning": "shinsetsu (baik hati, ramah)",
+      "type": "🟣",
+      "mnemonic": "Orang yang 'SHINSETSU' itu 'Selalu INgat SETia' kepada teman-temannya karena dia 'baik hati'.",
+      "example": {
+        "jp": "<ruby>田中<rt>たなか</rt></ruby>さんは<ruby>親切<rt>しんせつ</rt></ruby>な<ruby>人<rt>ひと</rt></ruby>です。",
+        "romaji": "Tanaka-san wa shinsetsu na hito desu.",
+        "id": "Tuan Tanaka adalah orang yang ramah."
+      }
+    },
+    {
+      "vocab": "<ruby>電話<rt>でんわ</rt></ruby>",
+      "reading_meaning": "denwa (telepon)",
+      "type": "🔵",
+      "mnemonic": "Gunakan 'telepon' untuk menghubungi 'DEN WA-hyu'.",
+      "example": {
+        "jp": "<ruby>後<rt>あと</rt></ruby>で<ruby>電話<rt>でんわ</rt></ruby>をします。",
+        "romaji": "Ato de denwa o shimasu.",
+        "id": "Nanti saya telepon."
+      }
+    }
+  ],
+  "grammar": [
+    {
+      "pattern": "KB (tempat) へ V (gerak)",
+      "explanation": "Partikel へ (diucapkan 'e') digunakan untuk menandai arah atau tujuan dari suatu pergerakan. Partikel ini secara eksklusif digunakan dengan kata kerja pergerakan seperti 行きます (pergi), 来ます (datang), dan 帰ります (pulang).",
+      "visual": "<b>[Orang] は [Tujuan] ➡️へ [Kata Kerja Gerakan]</b><br><br>Bayangkan <b>へ (e)</b> sebagai sebuah 'panah penunjuk arah' yang mengarahkan subjek ke lokasinya. `Saya → (panah へ) → Jepang → (Pergi)`.",
+      "examples": [
+        {
+          "jp": "<ruby>私<rt>わたし</rt></ruby>は<ruby>日本<rt>にほん</rt></ruby>へ<ruby>行<rt>い</rt></ruby>きます。",
+          "romaji": "Watashi wa Nihon e ikimasu.",
+          "id": "Saya pergi ke Jepang."
+        },
+        {
+          "jp": "カルロスさんはブラジルへ<ruby>帰<rt>かえ</rt></ruby>りました。",
+          "romaji": "Karurosu-san wa Burajiru e kaerimashita.",
+          "id": "Sdr. Carlos telah pulang ke Brazil."
+        },
+        {
+          "jp": "いつ<ruby>国<rt>くに</rt></ruby>へ<ruby>来<rt>き</rt></ruby>ましたか。",
+          "romaji": "Itsu kuni e kimashita ka.",
+          "id": "Kapan Anda datang ke negara ini?"
+        }
+      ]
+    },
+    {
+      "pattern": "KB (objek) を します",
+      "explanation": "Pola ini menggunakan partikel を (o) untuk menandai objek dari kata kerja します (shimasu), yang berarti 'melakukan'. Pola ini sangat umum digunakan untuk menyatakan melakukan suatu aktivitas seperti olahraga, permainan, acara, pekerjaan rumah, dll.",
+      "visual": "<b>[Objek/Aktivitas] 🎾 を (spotlight) します (melakukan)</b><br><br>Ingat partikel <b>を (o)</b> sebagai 'spotlight' yang menyorot apa yang sedang dikerjakan. `Saya → (spotlight を) → Tenis → (melakukan)`.",
+      "examples": [
+        {
+          "jp": "サッカーをします。",
+          "romaji": "Sakkaa o shimasu.",
+          "id": "Saya bermain sepak bola."
+        },
+        {
+          "jp": "<ruby>日曜日<rt>にちようび</rt></ruby>にパーティーをします。",
+          "romaji": "Nichiyoubi ni paathii o shimasu.",
+          "id": "Saya akan mengadakan pesta pada hari Minggu."
+        },
+        {
+          "jp": "ここで<ruby>宿題<rt>しゅくだい</rt></ruby>をしないでください。",
+          "romaji": "Koko de shukudai o shinaide kudasai.",
+          "id": "Tolong jangan mengerjakan PR di sini."
+        }
+      ]
+    }
+  ]
+}

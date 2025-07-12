@@ -1,0 +1,214 @@
+{
+  "type": "N5",
+  "day": 4,
+  "kanji": [
+    {
+      "kanji": "千",
+      "reading_meaning": "<b>On:</b> せん (sen)<br><b>Kun:</b> ち (chi)<br><b>Arti:</b> Seribu",
+      "mnemonic": "Kanji ini terlihat seperti kanji 'sepuluh' (十) dengan tambahan goresan miring (ノ) di atasnya. Bayangkan sebagai 'sepuluh' yang dinaikkan pangkatnya menjadi 'seribu'.",
+      "example": {
+        "jp": "このかばんは<ruby>三千円<rt>さんぜんえん</rt></ruby>です。",
+        "romaji": "Kono kaban wa sanzen-en desu.",
+        "id": "Tas ini harganya 3000 Yen."
+      }
+    },
+    {
+      "kanji": "万",
+      "reading_meaning": "<b>On:</b> まん (man), ばん (ban)<br><b>Kun:</b> -<br><b>Arti:</b> Sepuluh Ribu",
+      "mnemonic": "Terdiri dari satu (一) dan sebuah kotak. Bayangkan Anda memiliki satu kotak penuh berisi uang senilai sepuluh ribu.",
+      "example": {
+        "jp": "これは<ruby>一万円<rt>いちまんえん</rt></ruby>です。",
+        "romaji": "Kore wa ichiman-en desu.",
+        "id": "Ini adalah (uang) 10.000 Yen."
+      }
+    },
+    {
+      "kanji": "月",
+      "reading_meaning": "<b>On:</b> げつ (getsu), がつ (gatsu)<br><b>Kun:</b> つき (tsuki)<br><b>Arti:</b> Bulan, Hari Senin",
+      "mnemonic": "Bentuknya menyerupai bulan sabit. Dua garis di dalamnya bisa dibayangkan sebagai kawah atau bayangan di permukaan bulan.",
+      "example": {
+        "jp": "<ruby>今日<rt>きょう</rt></ruby>は<ruby>月曜日<rt>げつようび</rt></ruby>です。",
+        "romaji": "Kyou wa getsuyoubi desu.",
+        "id": "Hari ini adalah hari Senin."
+      }
+    },
+    {
+      "kanji": "火",
+      "reading_meaning": "<b>On:</b> か (ka)<br><b>Kun:</b> ひ (hi), -び (-bi)<br><b>Arti:</b> Api, Hari Selasa",
+      "mnemonic": "Mirip dengan kanji 'orang' (人) dengan tambahan dua percikan di sampingnya. Bayangkan seseorang yang dikelilingi oleh kobaran api.",
+      "example": {
+        "jp": "<ruby>火曜日<rt>かようび</rt></ruby>に<ruby>会議<rt>かいぎ</rt></ruby>があります。",
+        "romaji": "Kayoubi ni kaigi ga arimasu.",
+        "id": "Ada rapat pada hari Selasa."
+      }
+    },
+    {
+      "kanji": "水",
+      "reading_meaning": "<b>On:</b> すい (sui)<br><b>Kun:</b> みず (mizu)<br><b>Arti:</b> Air, Hari Rabu",
+      "mnemonic": "Garis vertikal di tengah melambangkan aliran sungai, dan goresan di sampingnya adalah percikan air.",
+      "example": {
+        "jp": "<ruby>水<rt>みず</rt></ruby>を<ruby>飲<rt>の</rt></ruby>みます。",
+        "romaji": "Mizu o nomimasu.",
+        "id": "Saya minum air."
+      }
+    }
+  ],
+  "vocabulary": [
+    {
+      "vocab": "<ruby>昨日<rt>きのう</rt></ruby>",
+      "reading_meaning": "kinou (kemarin)",
+      "type": "🔵",
+      "mnemonic": "Ingat saja, 'KIra-kira NOnton apa kemarin?'. 'Kinou' untuk 'kemarin'.",
+      "example": {
+        "jp": "<ruby>昨日<rt>きのう</rt></ruby>、<ruby>映画<rt>えいが</rt></ruby>を<ruby>見<rt>み</rt></ruby>ました。",
+        "romaji": "Kinou, eiga o mimashita.",
+        "id": "Kemarin, saya menonton film."
+      }
+    },
+    {
+      "vocab": "<ruby>今日<rt>きょう</rt></ruby>",
+      "reading_meaning": "kyou (hari ini)",
+      "type": "🔵",
+      "mnemonic": "'KYOU' (kyo) harus semangat, kan 'hari ini'! Jangan ditunda.",
+      "example": {
+        "jp": "<ruby>今日<rt>きょう</rt></ruby>は<ruby>天気<rt>てんき</rt></ruby>がいいですね。",
+        "romaji": "Kyou wa tenki ga ii desu ne.",
+        "id": "Cuaca hari ini bagus, ya."
+      }
+    },
+    {
+      "vocab": "<ruby>明日<rt>あした</rt></ruby>",
+      "reading_meaning": "ashita (besok)",
+      "type": "🔵",
+      "mnemonic": "'A-SHI-TA' (Ah, Sial, Terlambat) kalau tugas dikerjakan 'besok' terus!",
+      "example": {
+        "jp": "<ruby>明日<rt>あした</rt></ruby>テストがあります。",
+        "romaji": "Ashita tesuto ga arimasu.",
+        "id": "Besok ada ujian."
+      }
+    },
+    {
+      "vocab": "<ruby>銀行<rt>ぎんこう</rt></ruby>",
+      "reading_meaning": "ginkou (bank)",
+      "type": "🔵",
+      "mnemonic": "Pergi ke 'bank' untuk 'GINcang KOper' yang isinya uang.",
+      "example": {
+        "jp": "<ruby>銀行<rt>ぎんこう</rt></ruby>はどこですか。",
+        "romaji": "Ginkou wa doko desu ka.",
+        "id": "Di manakah bank?"
+      }
+    },
+    {
+      "vocab": "<ruby>寝<rt>ね</rt></ruby>ます",
+      "reading_meaning": "nemasu (tidur)",
+      "type": "🟢",
+      "mnemonic": "Bilang ke mama, 'NEk, MAu 'tidur' dulu ya'. 'Nemasu' untuk 'tidur'.",
+      "example": {
+        "jp": "<ruby>毎晩<rt>まいばん</rt></ruby>十一<ruby>時<rt>じ</rt></ruby>に<ruby>寝<rt>ね</rt></ruby>ます。",
+        "romaji": "Maiban juuichi-ji ni nemasu.",
+        "id": "Setiap malam saya tidur jam 11."
+      }
+    },
+    {
+      "vocab": "<ruby>起<rt>お</rt></ruby>きます",
+      "reading_meaning": "okimasu (bangun)",
+      "type": "🟢",
+      "mnemonic": "Saat dibangunkan, kita sering menjawab 'OKI-doki, aku 'bangun' sekarang!'. 'Okimasu' untuk 'bangun'.",
+      "example": {
+        "jp": "<ruby>毎朝<rt>まいあさ</rt></ruby><ruby>何時<rt>なんじ</rt></ruby>に<ruby>起<rt>お</rt></ruby>きますか。",
+        "romaji": "Maiasa nanji ni okimasu ka.",
+        "id": "Setiap pagi bangun jam berapa?"
+      }
+    },
+    {
+      "vocab": "<ruby>高<rt>たか</rt></ruby>い",
+      "reading_meaning": "takai (mahal, tinggi)",
+      "type": "🟠",
+      "mnemonic": "Menunjuk gedung 'tinggi' atau barang 'mahal' sambil bertanya 'TA-KAI-ra-kira harganya berapa?'",
+      "example": {
+        "jp": "あのビルは<ruby>高<rt>たか</rt></ruby>いですね。",
+        "romaji": "Ano biru wa takai desu ne.",
+        "id": "Gedung itu tinggi, ya."
+      }
+    },
+    {
+      "vocab": "おもしろい",
+      "reading_meaning": "omoshiroi (menarik)",
+      "type": "🟠",
+      "mnemonic": "Filmnya 'O MO SHIROI' (Oh, Mas Shiro) ini ternyata 'menarik' sekali ceritanya!",
+      "example": {
+        "jp": "この<ruby>本<rt>ほん</rt></ruby>はとてもおもしろいです。",
+        "romaji": "Kono hon wa totemo omoshiroi desu.",
+        "id": "Buku ini sangat menarik."
+      }
+    },
+    {
+      "vocab": "<ruby>肉<rt>にく</rt></ruby>",
+      "reading_meaning": "niku (daging)",
+      "type": "🔵",
+      "mnemonic": "Makan 'daging' jangan pakai 'SIKU', tidak sopan! 'Niku' mirip 'siku'.",
+      "example": {
+        "jp": "<ruby>牛肉<rt>ぎゅうにく</rt></ruby>と<ruby>豚肉<rt>ぶたにく</rt></ruby>とどちらが<ruby>好<rt>す</rt></ruby>きですか。",
+        "romaji": "Gyuuniku to butaniku to dochira ga suki desu ka.",
+        "id": "Anda lebih suka daging sapi atau daging babi?"
+      }
+    },
+    {
+      "vocab": "<ruby>魚<rt>さかな</rt></ruby>",
+      "reading_meaning": "sakana (ikan)",
+      "type": "🔵",
+      "mnemonic": "Ikan ini ditangkap 'SAKA NA-ng kali' (dari sana, dari kali). 'Sakana' untuk 'ikan'.",
+      "example": {
+        "jp": "<ruby>魚<rt>さかな</rt></ruby>を<ruby>食<rt>た</rt></ruby>べますか。",
+        "romaji": "Sakana o tabemasu ka.",
+        "id": "Apakah kamu makan ikan?"
+      }
+    }
+  ],
+  "grammar": [
+    {
+      "pattern": "KB (tempat) で Aksi",
+      "explanation": "Partikel で (de) digunakan untuk menandai tempat di mana suatu aksi atau kegiatan terjadi. Ini menjawab pertanyaan 'Di mana kamu melakukan...?' Berbeda dengan に (ni) yang menandakan keberadaan (ada di suatu tempat), で (de) menekankan adanya aktivitas di tempat tersebut.",
+      "visual": "<b>[Lokasi Aksi] 📍で [Aktivitas]</b><br><br>Bayangkan <b>で (de)</b> sebagai pin lokasi '📍' yang Anda letakkan di peta untuk menunjukkan, 'Di sinilah kejadiannya berlangsung!'.",
+      "examples": [
+        {
+          "jp": "<ruby>食堂<rt>しょくどう</rt></ruby>で<ruby>昼<rt>ひる</rt></ruby>ごはんを<ruby>食<rt>た</rt></ruby>べます。",
+          "romaji": "Shokudou de hirugohan o tabemasu.",
+          "id": "Saya makan siang di kantin."
+        },
+        {
+          "jp": "<ruby>図書館<rt>としょかん</rt></ruby>で<ruby>本<rt>ほん</rt></ruby>を<ruby>読<rt>よ</rt></ruby>みます。",
+          "romaji": "Toshokan de hon o yomimasu.",
+          "id": "Saya membaca buku di perpustakaan."
+        },
+        {
+          "jp": "どこでそのかばんを<ruby>買<rt>か</rt></ruby>いましたか。",
+          "romaji": "Doko de sono kaban o kaimashita ka.",
+          "id": "Di mana kamu membeli tas itu?"
+        }
+      ]
+    },
+    {
+      "pattern": "KB (alat/cara) で Aksi",
+      "explanation": "Selain menandai lokasi, partikel で (de) juga berfungsi untuk menunjukkan alat, metode, atau cara yang digunakan untuk melakukan suatu aksi. Ini menjawab pertanyaan 'Dengan apa?' atau 'Naik apa?'.",
+      "visual": "<b>[Alat / Metode] 🛠️🚗 で [Aktivitas]</b><br><br>Pikirkan <b>で (de)</b> sebagai kata 'dengan' atau 'pakai'. `(Dengan)  chopsticks で makan`. `(Dengan) bus で pergi`.",
+      "examples": [
+        {
+          "jp": "バスで<ruby>学校<rt>がっこう</rt></ruby>へ<ruby>行<rt>い</rt></ruby>きます。",
+          "romaji": "Basu de gakkou e ikimasu.",
+          "id": "Saya pergi ke sekolah dengan (naik) bus."
+        },
+        {
+          "jp": "はしでごはんを<ruby>食<rt>た</rt></ruby>べます。",
+          "romaji": "Hashi de gohan o tabemasu.",
+          "id": "Saya makan nasi dengan (memakai) sumpit."
+        },
+        {
+          "jp": "<ruby>日本語<rt>にほんご</rt></ruby>でレポートを<ruby>書<rt>か</rt></ruby>きます。",
+          "romaji": "Nihongo de repooto o kakimasu.",
+          "id": "Saya menulis laporan dalam bahasa Jepang."
+        }
+      ]
+    }
+  ]
+}
