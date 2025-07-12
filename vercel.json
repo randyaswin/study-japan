@@ -1,7 +1,4 @@
 {
-  "buildCommand": "npm run build",
-  "outputDirectory": "out",
-  "trailingSlash": true,
   "headers": [
     {
       "source": "/sw.js",
@@ -54,12 +51,6 @@
           "value": "1; mode=block"
         }
       ]
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/sw.js",
-      "destination": "/sw.js"
     }
   ]
 }

@@ -6,14 +6,10 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  // Enable static export for PWA
-  output: 'export',
-  // Disable server-side features for static export
-  distDir: 'out',
-  // Ensure service worker is copied
+  // PWA configuration - use standard build for Vercel
   webpack: (config, { dev, isServer }) => {
     if (!dev && !isServer) {
-      // Copy service worker to output
+      // Ensure service worker is handled properly
       config.resolve.fallback = {
         ...config.resolve.fallback,
         fs: false,
@@ -21,9 +17,55 @@ const nextConfig: NextConfig = {
     }
     return config;
   },
-  // Ensure proper base path for static export
-  basePath: '',
-  assetPrefix: '',
+  // Add security headers for PWA
+  async headers() {
+    return [
+      {
+        source: '/sw.js',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'no-cache, no-store, must-revalidate',
+          },
+          {
+            key: 'Service-Worker-Allowed',
+            value: '/',
+          },
+        ],
+      },
+      {
+        source: '/manifest.json',
+        headers: [
+          {
+            key: 'Content-Type',
+            value: 'application/manifest+json',
+          },
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+      {
+        source: '/icons/(.*)',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+    ];
+  },
+  // Add rewrites for PWA files
+  async rewrites() {
+    return [
+      {
+        source: '/sw.js',
+        destination: '/sw.js',
+      },
+    ];
+  },
 };
 
 export default nextConfig;
