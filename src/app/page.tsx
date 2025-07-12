@@ -3,7 +3,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import path from 'path';
 import fs from 'fs';
-
+import InstallPrompt from '@/components/InstallPrompt';
 
 
 export default function HomePage() {
@@ -47,6 +47,7 @@ export default function HomePage() {
                 </div>
             </main>
             <footer className="text-center text-xs text-gray-400 py-4">&copy; {new Date().getFullYear()} Study Japan Journey</footer>
+            <InstallPrompt />
         </div>
     );
 }
