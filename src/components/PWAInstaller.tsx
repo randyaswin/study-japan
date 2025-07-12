@@ -108,7 +108,7 @@ export default function PWAInstaller() {
   }
 
   return (
-    <div className="fixed bottom-4 left-4 right-4 bg-orange-500 text-white p-4 rounded-lg shadow-lg z-50 max-w-md mx-auto">
+    <div className="fixed bottom-4 left-4 right-4 bg-orange-500 dark:bg-orange-600 text-white p-4 rounded-lg shadow-lg z-50 max-w-md mx-auto">
       <div className="flex items-center justify-between">
         <div className="flex-1">
           <h3 className="font-bold text-sm">Install Study Japan</h3>
@@ -117,7 +117,7 @@ export default function PWAInstaller() {
         <div className="flex gap-2 ml-3">
           <button
             onClick={handleInstallClick}
-            className="bg-white text-orange-500 px-3 py-1 rounded text-sm font-medium hover:bg-orange-50"
+            className="bg-white dark:bg-gray-200 text-orange-500 dark:text-orange-600 px-3 py-1 rounded text-sm font-medium hover:bg-orange-50 dark:hover:bg-gray-300"
           >
             Install
           </button>

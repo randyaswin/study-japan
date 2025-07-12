@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import PWAInstaller from "@/components/PWAInstaller";
+import { ThemeProvider } from "@/contexts/ThemeContext";
+import ThemeToggle from "@/components/ThemeToggle";
 
 // Import Google Fonts via <link> in <head> (Noto Sans JP & Inter)
 
@@ -71,10 +73,13 @@ export default function RootLayout({
         <meta name="msapplication-TileImage" content="/icons/icon-144x144.png" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} font-inter font-sans antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} font-inter font-sans antialiased bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100`}
       >
-        <PWAInstaller />
-        {children}
+        <ThemeProvider>
+          <ThemeToggle />
+          <PWAInstaller />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

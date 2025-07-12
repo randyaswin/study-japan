@@ -10,13 +10,13 @@ const Furigana = ({ htmlString, className = '', rtClass = '', boldMain = false }
     if (typeof htmlString !== 'string') return null;
     let html = htmlString;
     if (rtClass) {
-        html = html.replace(/<rt>(.*?)<\/rt>/g, `<rt style=\"color:black;font-weight:normal;\" class='${rtClass}'>$1</rt>`);
+        html = html.replace(/<rt>(.*?)<\/rt>/g, `<rt style=\"color:rgb(156 163 175);font-weight:normal;\" class='${rtClass} dark:text-gray-400'>$1</rt>`);
     } else {
-        html = html.replace(/<rt>(.*?)<\/rt>/g, '<rt style="color:red">$1</rt>');
+        html = html.replace(/<rt>(.*?)<\/rt>/g, '<rt style="color:red" class="dark:text-red-400">$1</rt>');
     }
     // Improved: wrap all content before <rt> inside <ruby> with span for boldMain (handles tags, spaces, punctuation)
     if (boldMain) {
-        html = html.replace(/<ruby>([\s\S]*?)(<rt>)/g, '<ruby><span style="color:#111 !important;font-weight:bold;">$1</span>$2');
+        html = html.replace(/<ruby>([\s\S]*?)(<rt>)/g, '<ruby><span style="color:#111 !important;font-weight:bold;" class="dark:!text-gray-100">$1</span>$2');
     }
     return (
         <span
@@ -39,10 +39,10 @@ const colors = {
 
 const getHeaderBgColor = (type: string) => {
     switch (type) {
-        case 'kanji': return `bg-${colors.kanji}-100`;
-        case 'vocabulary': return `bg-${colors.noun}-100`;
-        case 'grammar': return `bg-${colors.grammar}-100`;
-        default: return 'bg-gray-100';
+        case 'kanji': return `bg-${colors.kanji}-100 dark:bg-${colors.kanji}-900`;
+        case 'vocabulary': return `bg-${colors.noun}-100 dark:bg-${colors.noun}-900`;
+        case 'grammar': return `bg-${colors.grammar}-100 dark:bg-${colors.grammar}-900`;
+        default: return 'bg-gray-100 dark:bg-gray-800';
     }
 };
 
@@ -118,7 +118,7 @@ export default async function DailySprintPage({ params }: { params: Promise<{ da
         notFound();
     }
     return (
-        <div className="bg-gray-50 min-h-screen">
+        <div className="bg-gray-50 dark:bg-gray-900 min-h-screen">
             <div className="container mx-auto p-4 sm:p-8 font-sans">
                 <Head>
                     <title>Sprint Belajar Harian: JLPT - Hari {sprintData.day}</title>
@@ -139,44 +139,44 @@ export default async function DailySprintPage({ params }: { params: Promise<{ da
                             })
                             .filter(Boolean);
                         return days.map(n => (
-                            <a key={n} href={`/${n}`} className={`px-4 py-2 rounded font-bold border ${day==n ? 'bg-orange-500 text-white border-orange-500' : 'bg-white text-orange-500 border-orange-300 hover:bg-orange-100'}`}>Hari {n}</a>
+                            <a key={n} href={`/${n}`} className={`px-4 py-2 rounded font-bold border ${day==n ? 'bg-orange-500 text-white border-orange-500' : 'bg-white dark:bg-gray-800 text-orange-500 dark:text-orange-400 border-orange-300 dark:border-orange-600 hover:bg-orange-100 dark:hover:bg-gray-700'}`}>Hari {n}</a>
                         ));
                     })()}
                 </nav>
 
                 <header className="text-center mb-10">
-                    <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800">Sprint Belajar Harian</h1>
-                    <p className="text-lg sm:text-xl text-gray-600 mt-2">Hari {sprintData.day} - Membangun Fondasi JLPT {sprintData.type}</p>
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 dark:text-gray-100">Sprint Belajar Harian</h1>
+                    <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 mt-2">Hari {sprintData.day} - Membangun Fondasi JLPT {sprintData.type}</p>
                 </header>
 
                 {/* Sprint Kanji */}
                 <section id="kanji" className="mb-12">
-                    <h2 className="text-2xl sm:text-3xl font-bold mb-4 border-l-8 border-orange-500 pl-4 text-gray-700 flex items-center gap-2">
+                    <h2 className="text-2xl sm:text-3xl font-bold mb-4 border-l-8 border-orange-500 pl-4 text-gray-700 dark:text-gray-300 flex items-center gap-2">
                         <span className="text-orange-500 text-2xl">🟠</span> Sprint Kanji
                     </h2>
                     <div className="flex flex-col gap-6">
                         {sprintData.kanji.map((item, index) => (
-                            <div key={index} className="bg-white rounded-xl shadow flex flex-col sm:flex-row p-5 border-l-8 border-orange-400">
+                            <div key={index} className="bg-white dark:bg-gray-800 rounded-xl shadow flex flex-col sm:flex-row p-5 border-l-8 border-orange-400">
                                 <div className="flex-shrink-0 flex flex-col items-center justify-center mr-6 mb-4 sm:mb-0">
                                     <div className="text-orange-500 text-5xl font-bold jp-font mb-1">{item.kanji}</div>
                                 </div>
                                 <div className="flex-1">
                                     <div className="mb-1">
-                                        <span className="block text-base font-bold text-gray-800 mb-1">Baca: <span className="font-normal text-gray-700"><Furigana htmlString={item.reading_meaning} /></span></span>
-                                        <span className="block text-base text-gray-700 mb-1">Arti: {item.reading_meaning.replace(/<[^>]+>/g, '').replace(/(On:|Kun:|Arti:)/g, '').split('<br>').pop()?.trim()}</span>
+                                        <span className="block text-base font-bold text-gray-800 dark:text-gray-200 mb-1">Baca: <span className="font-normal text-gray-700 dark:text-gray-300"><Furigana htmlString={item.reading_meaning} /></span></span>
+                                        <span className="block text-base text-gray-700 dark:text-gray-300 mb-1">Arti: {item.reading_meaning.replace(/<[^>]+>/g, '').replace(/(On:|Kun:|Arti:)/g, '').split('<br>').pop()?.trim()}</span>
                                     </div>
                                     <div className="mb-2">
-                                        <span className="block text-sm font-bold text-orange-700 mb-1">Jembatan Keledai Visual:</span>
-                                        <span className="text-sm text-gray-700">{item.mnemonic}</span>
+                                        <span className="block text-sm font-bold text-orange-700 dark:text-orange-400 mb-1">Jembatan Keledai Visual:</span>
+                                        <span className="text-sm text-gray-700 dark:text-gray-300">{item.mnemonic}</span>
                                     </div>
-                                    <div className="border-t border-gray-200 pt-2 mt-2">
-                                        <span className="block text-xs font-bold text-gray-500 mb-1">Contoh:</span>
-                                        <div className="text-lg jp-font text-gray-500 font-normal leading-tight">
+                                    <div className="border-t border-gray-200 dark:border-gray-700 pt-2 mt-2">
+                                        <span className="block text-xs font-bold text-gray-500 dark:text-gray-400 mb-1">Contoh:</span>
+                                        <div className="text-lg jp-font text-gray-500 dark:text-gray-400 font-normal leading-tight">
                                             <Furigana htmlString={item.example.jp} className="text-base" rtClass="furigana-bold" boldMain={true} />
                                         </div>
-                                        <div className="text-xs text-gray-600 mt-1">{item.example.romaji}</div>
+                                        <div className="text-xs text-gray-600 dark:text-gray-400 mt-1">{item.example.romaji}</div>
                                         {item.example.id && (
-                                            <div className="text-xs text-green-700 mt-1 italic">{item.example.id}</div>
+                                            <div className="text-xs text-green-700 dark:text-green-400 mt-1 italic">{item.example.id}</div>
                                         )}
                                     </div>
                                 </div>
@@ -186,8 +186,8 @@ export default async function DailySprintPage({ params }: { params: Promise<{ da
                 </section>
 
                 {/* Sprint Kosakata */}
-                <section id="vocabulary" className={`mb-12 rounded-xl p-4 sm:p-6 ${getHeaderBgColor('vocabulary')}`}> 
-                    <h2 className={`text-2xl sm:text-3xl font-bold mb-4 border-l-8 border-${colors.noun}-500 pl-4 text-gray-700`}>🔵🟢🟣 Sprint Kosakata</h2>
+                <section id="vocabulary" className={`mb-12 rounded-xl p-4 sm:p-6 ${getHeaderBgColor('vocabulary')} dark:bg-gray-800`}> 
+                    <h2 className={`text-2xl sm:text-3xl font-bold mb-4 border-l-8 border-${colors.noun}-500 pl-4 text-gray-700 dark:text-gray-300`}>🔵🟢🟣 Sprint Kosakata</h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                         {sprintData.vocabulary.map((item, index) => {
                             let borderColor = '';
@@ -211,27 +211,27 @@ export default async function DailySprintPage({ params }: { params: Promise<{ da
                                 typeLabelColor = 'bg-gray-100 text-gray-700';
                             }
                             return (
-                                <div key={index} className={`relative border-l-8 ${borderColor} bg-white rounded-xl shadow p-5 flex flex-col min-h-[260px]`}>
-                                    <span className={`absolute right-4 top-4 px-3 py-1 rounded-full text-xs font-semibold ${typeLabelColor}`}>{typeLabel}</span>
+                                <div key={index} className={`relative border-l-8 ${borderColor} bg-white dark:bg-gray-800 rounded-xl shadow p-5 flex flex-col min-h-[260px]`}>
+                                    <span className={`absolute right-4 top-4 px-3 py-1 rounded-full text-xs font-semibold ${typeLabelColor} dark:bg-gray-700 dark:text-gray-300`}>{typeLabel}</span>
                                     <div className="mb-2">
-                                        <div className="text-lg jp-font text-gray-500 font-normal leading-tight">
+                                        <div className="text-lg jp-font text-gray-500 dark:text-gray-400 font-normal leading-tight">
                                             <Furigana htmlString={item.vocab} className="text-base" rtClass="furigana-bold" boldMain={true} />
                                         </div>
-                                        <div className="text-sm text-gray-700 mb-1"><Furigana htmlString={item.reading_meaning} /></div>
-                                        <div className="text-base font-semibold text-gray-800 mb-2">Arti: {item.reading_meaning.replace(/\(.+\)/, '').trim()}</div>
+                                        <div className="text-sm text-gray-700 dark:text-gray-300 mb-1"><Furigana htmlString={item.reading_meaning} /></div>
+                                        <div className="text-base font-semibold text-gray-800 dark:text-gray-200 mb-2">Arti: {item.reading_meaning.replace(/\(.+\)/, '').trim()}</div>
                                     </div>
                                     <div className="mb-2">
-                                        <span className="block text-xs font-bold text-gray-500 mb-1">Visual:</span>
-                                        <span className="text-sm text-gray-700">{item.mnemonic}</span>
+                                        <span className="block text-xs font-bold text-gray-500 dark:text-gray-400 mb-1">Visual:</span>
+                                        <span className="text-sm text-gray-700 dark:text-gray-300">{item.mnemonic}</span>
                                     </div>
                                     <div className="mt-auto">
-                                        <span className="block text-xs font-bold text-gray-500 mb-1">Contoh:</span>
-                                        <div className="text-lg jp-font text-gray-500 font-normal leading-tight">
+                                        <span className="block text-xs font-bold text-gray-500 dark:text-gray-400 mb-1">Contoh:</span>
+                                        <div className="text-lg jp-font text-gray-500 dark:text-gray-400 font-normal leading-tight">
                                             <Furigana htmlString={item.example.jp} className="text-base" rtClass="furigana-bold" boldMain={true} />
                                         </div>
-                                        <div className="text-xs text-gray-600 mt-1">{item.example.romaji}</div>
+                                        <div className="text-xs text-gray-600 dark:text-gray-400 mt-1">{item.example.romaji}</div>
                                         {item.example.id && (
-                                            <div className="text-xs text-green-700 mt-1 italic">{item.example.id}</div>
+                                            <div className="text-xs text-green-700 dark:text-green-400 mt-1 italic">{item.example.id}</div>
                                         )}
                                     </div>
                                 </div>
@@ -242,28 +242,28 @@ export default async function DailySprintPage({ params }: { params: Promise<{ da
 
                 {/* Sprint Tata Bahasa */}
                 <section id="grammar" className="mb-12">
-                    <h2 className="text-2xl sm:text-3xl font-bold mb-4 border-l-8 border-yellow-400 pl-4 text-gray-700 flex items-center gap-2">
+                    <h2 className="text-2xl sm:text-3xl font-bold mb-4 border-l-8 border-yellow-400 pl-4 text-gray-700 dark:text-gray-300 flex items-center gap-2">
                         <span className="text-yellow-400 text-2xl">🟡</span> Sprint Tata Bahasa
                     </h2>
                     <div className="flex flex-col gap-8">
                         {sprintData.grammar.map((item, index) => (
-                            <div key={index} className="bg-white rounded-xl shadow p-6 border-t-4 border-yellow-300">
+                            <div key={index} className="bg-white dark:bg-gray-800 rounded-xl shadow p-6 border-t-4 border-yellow-300">
                                 <div className="mb-2">
-                                    <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-1">{item.pattern.replace('KB', '[Objek]').replace('V-masu', '[Kata Kerja]').replace('へ', '[Tempat] へ').replace('行きます/来ます', '[Kata Kerja Gerak]')}</h3>
-                                    <div className="text-base text-gray-700 mb-2 font-semibold">{item.pattern.includes('を') ? 'Partikel を (o) untuk menandai objek langsung dari sebuah aksi.' : 'Partikel へ (e) untuk menandai arah tujuan.'}</div>
+                                    <h3 className="text-lg sm:text-xl font-bold text-gray-800 dark:text-gray-200 mb-1">{item.pattern.replace('KB', '[Objek]').replace('V-masu', '[Kata Kerja]').replace('へ', '[Tempat] へ').replace('行きます/来ます', '[Kata Kerja Gerak]')}</h3>
+                                    <div className="text-base text-gray-700 dark:text-gray-300 mb-2 font-semibold">{item.pattern.includes('を') ? 'Partikel を (o) untuk menandai objek langsung dari sebuah aksi.' : 'Partikel へ (e) untuk menandai arah tujuan.'}</div>
                                 </div>
-                                <div className="bg-yellow-50 border border-yellow-200 rounded p-4 mb-4">
-                                    <span className="block text-sm font-bold text-yellow-700 mb-2">Penjelasan Visual:</span>
-                                    <span className="text-sm text-gray-700" dangerouslySetInnerHTML={{__html: item.visual || ''}} />
+                                <div className="bg-yellow-50 dark:bg-gray-700 border border-yellow-200 dark:border-gray-600 rounded p-4 mb-4">
+                                    <span className="block text-sm font-bold text-yellow-700 dark:text-yellow-400 mb-2">Penjelasan Visual:</span>
+                                    <span className="text-sm text-gray-700 dark:text-gray-300" dangerouslySetInnerHTML={{__html: item.visual || ''}} />
                                     <div className="flex gap-2 mt-3">
                                         {item.visualLabels && item.visualLabels.map((v, idx) => {
                                             let colorClass = '';
-                                            if (v.color === 'blue') colorClass = 'bg-blue-100 text-blue-700';
-                                            else if (v.color === 'green') colorClass = 'bg-green-100 text-green-700';
-                                            else if (v.color === 'yellow') colorClass = 'text-yellow-500 text-2xl font-bold bg-transparent px-0 py-0';
-                                            else if (v.color === 'purple') colorClass = 'bg-purple-100 text-purple-700';
-                                            else if (v.color === 'orange') colorClass = 'bg-orange-100 text-orange-700';
-                                            else colorClass = 'bg-gray-100 text-gray-700';
+                                            if (v.color === 'blue') colorClass = 'bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-300';
+                                            else if (v.color === 'green') colorClass = 'bg-green-100 text-green-700 dark:bg-green-900 dark:text-green-300';
+                                            else if (v.color === 'yellow') colorClass = 'text-yellow-500 dark:text-yellow-400 text-2xl font-bold bg-transparent px-0 py-0';
+                                            else if (v.color === 'purple') colorClass = 'bg-purple-100 text-purple-700 dark:bg-purple-900 dark:text-purple-300';
+                                            else if (v.color === 'orange') colorClass = 'bg-orange-100 text-orange-700 dark:bg-orange-900 dark:text-orange-300';
+                                            else colorClass = 'bg-gray-100 text-gray-700 dark:bg-gray-800 dark:text-gray-300';
                                             // Untuk simbol (を, へ), tampilkan lebih besar dan tanpa background
                                             const isSymbol = v.label === 'を' || v.label === 'へ';
                                             return isSymbol ? (
@@ -275,14 +275,14 @@ export default async function DailySprintPage({ params }: { params: Promise<{ da
                                     </div>
                                 </div>
                                 <div>
-                                    <span className="block text-sm font-bold text-gray-700 mb-2">Contoh Kalimat:</span>
-                                    <ul className="list-disc list-inside space-y-2 text-gray-700">
+                                    <span className="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-2">Contoh Kalimat:</span>
+                                    <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
                                         {item.examples.map((ex, i) => (
                                             <li key={i}>
                                                 <Furigana htmlString={ex.jp} className="text-base" rtClass="furigana-bold" />
-                                                <span className="text-xs text-gray-600 ml-2">({ex.romaji})</span>
+                                                <span className="text-xs text-gray-600 dark:text-gray-400 ml-2">({ex.romaji})</span>
                                                 {ex.id && (
-                                                    <span className="text-xs text-green-700 ml-2 italic">- {ex.id}</span>
+                                                    <span className="text-xs text-green-700 dark:text-green-400 ml-2 italic">- {ex.id}</span>
                                                 )}
                                             </li>
                                         ))}

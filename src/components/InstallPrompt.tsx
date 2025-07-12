@@ -48,26 +48,26 @@ export default function InstallPrompt() {
   if (!showInstallPrompt) return null;
 
   return (
-    <div className="fixed bottom-4 left-4 right-4 bg-white rounded-lg shadow-lg border-2 border-orange-200 p-4 z-50 md:max-w-sm md:left-auto md:right-4">
+    <div className="fixed bottom-4 left-4 right-4 bg-white dark:bg-gray-800 rounded-lg shadow-lg border-2 border-orange-200 dark:border-orange-600 p-4 z-50 md:max-w-sm md:left-auto md:right-4">
       <div className="flex items-start gap-3">
         <div className="flex-shrink-0">
           <span className="text-2xl">📱</span>
         </div>
         <div className="flex-1">
-          <h3 className="font-bold text-gray-800 mb-1">Install Study Japan</h3>
-          <p className="text-sm text-gray-600 mb-3">
+          <h3 className="font-bold text-gray-800 dark:text-gray-100 mb-1">Install Study Japan</h3>
+          <p className="text-sm text-gray-600 dark:text-gray-300 mb-3">
             Install aplikasi ini untuk akses yang lebih mudah dan cepat tanpa browser!
           </p>
           <div className="flex gap-2">
             <button
               onClick={handleInstallClick}
-              className="bg-orange-500 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-orange-600 transition-colors"
+              className="bg-orange-500 dark:bg-orange-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-orange-600 dark:hover:bg-orange-700 transition-colors"
             >
               Install
             </button>
             <button
               onClick={handleDismiss}
-              className="bg-gray-200 text-gray-800 px-4 py-2 rounded-md text-sm font-medium hover:bg-gray-300 transition-colors"
+              className="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 px-4 py-2 rounded-md text-sm font-medium hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors"
             >
               Nanti
             </button>
