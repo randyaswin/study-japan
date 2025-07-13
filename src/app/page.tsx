@@ -34,6 +34,22 @@ export default function HomePage() {
                 <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-800 dark:text-gray-100 mb-4 text-center drop-shadow">Study Japan Journey</h1>
                 <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 mb-8 text-center max-w-2xl">Selamat datang di Sprint Belajar Harian JLPT! Pilih hari untuk mulai belajar kanji, kosakata, dan tata bahasa dengan visualisasi dan contoh kalimat lengkap.</p>
                 <div className="flex flex-wrap gap-6 justify-center">
+                    {/* Link ke halaman Angka */}
+                    <Link
+                        href="/number"
+                        className="block bg-green-50 dark:bg-green-900 rounded-xl shadow-lg px-8 py-6 min-w-[160px] text-center border-4 border-green-200 dark:border-green-600 hover:border-green-400 dark:hover:border-green-500 hover:bg-green-100 dark:hover:bg-green-800 transition-all"
+                    >
+                        <span className="block text-2xl font-bold text-green-600 dark:text-green-300 mb-2">Angka</span>
+                        <span className="text-gray-700 dark:text-gray-300 text-sm">Angka, Counter, Jumlah</span>
+                    </Link>
+                    {/* Link ke halaman Waktu */}
+                    <Link
+                        href="/time"
+                        className="block bg-purple-50 dark:bg-purple-900 rounded-xl shadow-lg px-8 py-6 min-w-[160px] text-center border-4 border-purple-200 dark:border-purple-600 hover:border-purple-400 dark:hover:border-purple-500 hover:bg-purple-100 dark:hover:bg-purple-800 transition-all"
+                    >
+                        <span className="block text-2xl font-bold text-purple-600 dark:text-purple-300 mb-2">Waktu</span>
+                        <span className="text-gray-700 dark:text-gray-300 text-sm">Jam, Hari, Bulan, Tahun</span>
+                    </Link>
                     {/* Link ke halaman Hiragana */}
                     <Link
                         href="/hiragana"
