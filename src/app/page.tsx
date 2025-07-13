@@ -69,12 +69,19 @@ export default function HomePage() {
                     {days.length === 0 ? (
                         <div className="text-gray-500 dark:text-gray-400">Belum ada data hari tersedia.</div>
                     ) : (
-                        days.map(day => (
-                            <Link key={day} href={`/${day}`} className="block bg-white dark:bg-gray-800 rounded-xl shadow-lg px-8 py-6 min-w-[160px] text-center border-4 border-orange-200 dark:border-orange-600 hover:border-orange-400 dark:hover:border-orange-500 hover:bg-orange-50 dark:hover:bg-gray-700 transition-all">
-                                <span className="block text-2xl font-bold text-orange-500 dark:text-orange-400 mb-2">Hari {day}</span>
-                                <span className="text-gray-700 dark:text-gray-300 text-sm">Sprint JLPT</span>
-                            </Link>
-                        ))
+                        days
+                            .slice()
+                            .sort((a, b) => Number(a) - Number(b))
+                            .map(day => (
+                                <Link
+                                    key={day}
+                                    href={`/${day}`}
+                                    className="block bg-white dark:bg-gray-800 rounded-xl shadow-lg px-8 py-6 min-w-[160px] text-center border-4 border-orange-200 dark:border-orange-600 hover:border-orange-400 dark:hover:border-orange-500 hover:bg-orange-50 dark:hover:bg-gray-700 transition-all"
+                                >
+                                    <span className="block text-2xl font-bold text-orange-500 dark:text-orange-400 mb-2">Hari {day}</span>
+                                    <span className="text-gray-700 dark:text-gray-300 text-sm">Sprint JLPT</span>
+                                </Link>
+                            ))
                     )}
                 </div>
             </main>

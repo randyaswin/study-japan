@@ -136,8 +136,8 @@ export default async function DailySprintPage({ params }: { params: Promise<{ da
                 </Head>
 
                 {/* Navigation */}
+                {/* Pagination-style navigation for days */}
                 <nav className="mb-8 flex gap-2 flex-wrap justify-center">
-                    {/* Dynamically generate navigation based on available files */}
                     {(() => {
                         const dataDir = path.join(process.cwd(), 'src', 'data');
                         const files = fs.readdirSync(dataDir);
@@ -147,10 +147,58 @@ export default async function DailySprintPage({ params }: { params: Promise<{ da
                                 const match = f.match(/sprint_day(\d+)\.json/);
                                 return match ? match[1] : null;
                             })
-                            .filter(Boolean);
-                        return days.map(n => (
-                            <a key={n} href={`/${n}`} className={`px-4 py-2 rounded font-bold border ${day==n ? 'bg-orange-500 text-white border-orange-500' : 'bg-white dark:bg-gray-800 text-orange-500 dark:text-orange-400 border-orange-300 dark:border-orange-600 hover:bg-orange-100 dark:hover:bg-gray-700'}`}>Hari {n}</a>
-                        ));
+                            .filter(Boolean)
+                            .map(Number)
+                            .sort((a, b) => a - b);
+
+                        const currentDay = Number(day);
+                        const total = days.length;
+                        const currentIdx = days.indexOf(currentDay);
+
+                        // Always show first, current, last
+                        // Show up to 2 before and after current (if available)
+                        // Insert ellipsis where needed
+                        const navSet = new Set<number>();
+                        navSet.add(days[0]);
+                        navSet.add(currentDay);
+                        navSet.add(days[total - 1]);
+                        for (let offset = -2; offset <= 2; offset++) {
+                            const n = currentDay + offset;
+                            if (n > 0 && days.includes(n)) {
+                                navSet.add(n);
+                            }
+                        }
+                        const uniquePages = Array.from(navSet).sort((a, b) => a - b);
+
+                        // Insert ellipsis where needed
+                        const navItems: (number | 'ellipsis')[] = [];
+                        for (let i = 0; i < uniquePages.length; i++) {
+                            navItems.push(uniquePages[i]);
+                            if (
+                                i < uniquePages.length - 1 &&
+                                uniquePages[i + 1] - uniquePages[i] > 1
+                            ) {
+                                navItems.push('ellipsis');
+                            }
+                        }
+
+                        return navItems.map((n, idx) =>
+                            n === 'ellipsis' ? (
+                                <span key={`ellipsis-${idx}`} className="px-2 text-gray-400 dark:text-gray-500">...</span>
+                            ) : (
+                                <a
+                                    key={n}
+                                    href={`/${n}`}
+                                    className={`px-4 py-2 rounded font-bold border ${
+                                        Number(day) === n
+                                            ? 'bg-orange-500 text-white border-orange-500'
+                                            : 'bg-white dark:bg-gray-800 text-orange-500 dark:text-orange-400 border-orange-300 dark:border-orange-600 hover:bg-orange-100 dark:hover:bg-gray-700'
+                                    }`}
+                                >
+                                    Hari {n}
+                                </a>
+                            )
+                        );
                     })()}
                 </nav>
 
