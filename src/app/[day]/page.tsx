@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import { notFound } from 'next/navigation';
+import Link from 'next/link';
 import path from 'path';
 import fs from 'fs';
 
@@ -125,9 +126,9 @@ export default async function DailySprintPage({ params }: { params: Promise<{ da
             <div className="container mx-auto p-4 sm:p-8 font-sans">
                 {/* Back to Home navigation */}
                 <div className="mb-4 flex justify-start">
-                    <a href="/" className="inline-flex items-center gap-2 px-4 py-2 rounded bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200 font-semibold hover:bg-gray-300 dark:hover:bg-gray-600 transition">
+                    <Link href="/" className="inline-flex items-center gap-2 px-4 py-2 rounded bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200 font-semibold hover:bg-gray-300 dark:hover:bg-gray-600 transition">
                         <span>←</span> Back to Home
-                    </a>
+                    </Link>
                 </div>
                 <Head>
                     <title>Belajar Harian: Hari {sprintData.day}</title>
@@ -317,15 +318,13 @@ export default async function DailySprintPage({ params }: { params: Promise<{ da
                         ))}
                     </div>
                 </section>
-                {/* Back to Top navigation (floating button) */}
+                {/* Back to Top navigation */}
+                <div className="mt-8 flex justify-end">
+                    <a href="#" className="inline-flex items-center gap-2 px-4 py-2 rounded bg-orange-100 dark:bg-orange-900 text-orange-700 dark:text-orange-300 font-semibold hover:bg-orange-200 dark:hover:bg-orange-800 transition">
+                        <span>↑</span> Back to Top
+                    </a>
+                </div>
             </div>
-            <a
-                href="#"
-                className="fixed bottom-6 right-6 z-50 inline-flex items-center gap-2 px-4 py-3 rounded-full shadow-lg bg-orange-500 dark:bg-orange-700 text-white font-semibold hover:bg-orange-600 dark:hover:bg-orange-600 transition"
-                aria-label="Back to Top"
-            >
-                <span>↑</span> Back to Top
-            </a>
         </div>
     );
 }

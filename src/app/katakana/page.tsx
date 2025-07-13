@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import Link from 'next/link';
 
 // Data Katakana + mnemonic (urut baris a, ka, sa, dst)
 const katakanaTable = [
@@ -209,27 +210,6 @@ const katakanaComboTable = [
   ],
 ];
 
-// Warna per baris (background) dan per kolom (teks)
-const rowBgColors = [
-  'bg-blue-50 dark:bg-blue-900',
-  'bg-cyan-50 dark:bg-cyan-900',
-  'bg-teal-50 dark:bg-teal-900',
-  'bg-green-50 dark:bg-green-900',
-  'bg-lime-50 dark:bg-lime-900',
-  'bg-yellow-50 dark:bg-yellow-900',
-  'bg-orange-50 dark:bg-orange-900',
-  'bg-pink-50 dark:bg-pink-900',
-  'bg-purple-50 dark:bg-purple-900',
-  'bg-fuchsia-50 dark:bg-fuchsia-900',
-  'bg-gray-50 dark:bg-gray-800',
-];
-const colTextColors = [
-  'text-blue-600 dark:text-blue-300',
-  'text-cyan-600 dark:text-cyan-300',
-  'text-green-600 dark:text-green-300',
-  'text-yellow-600 dark:text-yellow-300',
-  'text-pink-600 dark:text-pink-300',
-];
 
 // Warna per kolom (background dan teks)
 const colBgColors = [
@@ -249,9 +229,9 @@ export default function KatakanaPage() {
     <div className="bg-gray-50 dark:bg-gray-900 min-h-screen">
       <div className="container mx-auto p-4 sm:p-8 font-sans">
         <div className="mb-4 flex justify-start">
-          <a href="/" className="inline-flex items-center gap-2 px-4 py-2 rounded bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200 font-semibold hover:bg-gray-300 dark:hover:bg-gray-600 transition">
+          <Link href="/" className="inline-flex items-center gap-2 px-4 py-2 rounded bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200 font-semibold hover:bg-gray-300 dark:hover:bg-gray-600 transition">
             <span>←</span> Back to Home
-          </a>
+          </Link>
         </div>
         <Head>
           <title>Katakana - Jembatan Keledai & Mnemonic</title>
