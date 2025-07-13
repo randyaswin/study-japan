@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import path from 'path';
 import fs from 'fs';
+import HandwritingNoteSection from '../../../components/HandwritingNoteSection';
 
 // Komponen untuk me-render furigana dengan benar
 // Membuat furigana (rt) di atas kanji (rb) berwarna merah dan bisa diperbesar
@@ -90,6 +91,9 @@ interface SprintData {
     kanji: KanjiItem[];
     vocabulary: VocabItem[];
     grammar: GrammarItem[];
+    kanjiNote?: string;
+    vocabNote?: string;
+    grammarNote?: string;
 }
 
 
@@ -110,11 +114,17 @@ export default async function DailySprintPage({ params }: { params: Promise<{ da
     const { day } = await params;
     // Dynamic import of JSON data based on day param
     let sprintData: SprintData | null = null;
+    let kanjiNote: string | undefined = undefined;
+    let vocabNote: string | undefined = undefined;
+    let grammarNote: string | undefined = undefined;
     try {
         const dataDir = path.join(process.cwd(), 'src', 'data');
         const filePath = path.join(dataDir, `sprint_day${day}.json`);
         const fileContent = fs.readFileSync(filePath, 'utf-8');
         sprintData = JSON.parse(fileContent);
+        kanjiNote = sprintData?.kanjiNote;
+        vocabNote = sprintData?.vocabNote;
+        grammarNote = sprintData?.grammarNote;
     } catch {
         notFound();
     }
@@ -247,6 +257,9 @@ export default async function DailySprintPage({ params }: { params: Promise<{ da
                             </div>
                         ))}
                     </div>
+                    {Array.isArray(sprintData.kanji) && sprintData.kanji.length > 0 && (
+                        <HandwritingNoteSection noteData={kanjiNote} label="Catatan Kanji" section="kanji" pageId={day} />
+                    )}
                 </section>
 
                 {/* Kosakata */}
@@ -302,6 +315,9 @@ export default async function DailySprintPage({ params }: { params: Promise<{ da
                             );
                         })}
                     </div>
+                    {Array.isArray(sprintData.vocabulary) && sprintData.vocabulary.length > 0 && (
+                        <HandwritingNoteSection noteData={vocabNote} label="Catatan Kosakata" section="vocab" pageId={day} />
+                    )}
                 </section>
 
                 {/* Tata Bahasa */}
@@ -364,6 +380,9 @@ export default async function DailySprintPage({ params }: { params: Promise<{ da
                             </div>
                         ))}
                     </div>
+                    {Array.isArray(sprintData.grammar) && sprintData.grammar.length > 0 && (
+                        <HandwritingNoteSection noteData={grammarNote} label="Catatan Tata Bahasa" section="grammar" pageId={day} />
+                    )}
                 </section>
                 {/* Back to Top navigation (moved to floating button below) */}
             </div>
