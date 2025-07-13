@@ -1,0 +1,211 @@
+{
+  "type": "N5",
+  "day": 21,
+  "kanji": [
+    {
+      "kanji": "字",
+      "onyomi": "じ (ji)",
+      "kunyomi": "あざ (aza)",
+      "arti": "Huruf, Karakter",
+      "mnemonic": "Terdiri dari 'atap' (宀) dan 'anak' (子). Bayangkan seorang 'anak' di bawah 'atap' (sekolah) sedang belajar 'huruf' dan 'karakter'.",
+      "example": {
+        "jp": "きれいな<ruby>字<rt>じ</rt></ruby>を<ruby>書<rt>か</rt></ruby>きますね。",
+        "romaji": "Kirei na ji o kakimasu ne.",
+        "id": "Anda menulis huruf yang indah ya."
+      }
+    },
+    {
+      "kanji": "犬",
+      "onyomi": "けん (ken)",
+      "kunyomi": "いぬ (inu)",
+      "arti": "Anjing",
+      "mnemonic": "Piktograf ini adalah bentuk yang disederhanakan dari seekor 'anjing'. Bayangkan kanji 大 (besar) dengan satu titik di atasnya, seperti seekor anjing besar yang setia.",
+      "example": {
+        "jp": "わたしは<ruby>犬<rt>いぬ</rt></ruby>を<ruby>飼<rt>か</rt></ruby>っています。",
+        "romaji": "Watashi wa inu o katte imasu.",
+        "id": "Saya memelihara anjing."
+      }
+    },
+    {
+      "kanji": "寺",
+      "onyomi": "じ (ji)",
+      "kunyomi": "てら (tera)",
+      "arti": "Kuil",
+      "mnemonic": "Terdiri dari 'tanah' (土) dan 'inci' (寸). Bayangkan sebuah 'kuil' yang dibangun di atas tanah suci yang diukur dengan sangat teliti.",
+      "example": {
+        "jp": "この<ruby>町<rt>まち</rt></ruby>に<ruby>古<rt>ふる</rt></ruby>いお<ruby>寺<rt>てら</rt></ruby>があります。",
+        "romaji": "Kono machi ni furui o-tera ga arimasu.",
+        "id": "Di kota ini ada kuil tua."
+      }
+    },
+    {
+      "kanji": "道",
+      "onyomi": "どう (dou), とう (tou)",
+      "kunyomi": "みち (michi)",
+      "arti": "Jalan, Cara",
+      "mnemonic": "Terdiri dari radikal 'gerakan' (辶) dan 'kepala' (首). Ini melambangkan 'kepala' yang memimpin 'gerakan' ke suatu arah, yaitu menelusuri 'jalan' atau 'cara'.",
+      "example": {
+        "jp": "この<ruby>道<rt>みち</rt></ruby>をまっすぐ<ruby>行<rt>い</rt></ruby>ってください。",
+        "romaji": "Kono michi o massugu itte kudasai.",
+        "id": "Tolong lurus terus di jalan ini."
+      }
+    },
+    {
+      "kanji": "田",
+      "onyomi": "でん (den)",
+      "kunyomi": "た (ta)",
+      "arti": "Sawah",
+      "mnemonic": "Ini adalah piktograf yang sangat jelas dari sepetak 'sawah' yang dibagi menjadi empat bagian untuk ditanami.",
+      "example": {
+        "jp": "わたしの<ruby>国<rt>くに</rt></ruby>には<ruby>田<rt>た</rt></ruby>んぼがたくさんあります。",
+        "romaji": "Watashi no kuni ni wa tanbo ga takusan arimasu.",
+        "id": "Di negara saya ada banyak sawah."
+      }
+    }
+  ],
+  "vocabulary": [
+    {
+      "vocab": "<ruby>道<rt>みち</rt></ruby>",
+      "reading_meaning": "michi (jalan)",
+      "type": "🔵",
+      "mnemonic": "Bayangkan 'MI-num CHI-nchaunya di pinggir JALAN'.",
+      "example": { "jp": "<ruby>道<rt>みち</rt></ruby>がこんでいますから、<ruby>気<rt>き</rt></ruby>をつけてください。", "romaji": "Michi ga konde imasu kara, ki o tsukete kudasai.", "id": "Karena jalannya macet, harap berhati-hati." }
+    },
+    {
+      "vocab": "<ruby>犬<rt>いぬ</rt></ruby>",
+      "reading_meaning": "inu (anjing)",
+      "type": "🔵",
+      "mnemonic": "'I-NU...h, anjingnya lucu sekali'.",
+      "example": { "jp": "わたしは<ruby>犬<rt>いぬ</rt></ruby>より<ruby>猫<rt>ねこ</rt></ruby>のほうが<ruby>好<rt>す</rt></ruby>きです。", "romaji": "Watashi wa inu yori neko no hou ga suki desu.", "id": "Saya lebih suka kucing daripada anjing." }
+    },
+    {
+      "vocab": "<ruby>猫<rt>ねこ</rt></ruby>",
+      "reading_meaning": "neko (kucing)",
+      "type": "🔵",
+      "mnemonic": "Bayangkan 'NEKO-neko, kelakuan kucing ini ada-ada saja'.",
+      "example": { "jp": "あの<ruby>猫<rt>ねこ</rt></ruby>はいつもここで<ruby>寝<rt>ね</rt></ruby>ています。", "romaji": "Ano neko wa itsumo koko de nete imasu.", "id": "Kucing itu selalu tidur di sini." }
+    },
+    {
+      "vocab": "ドア",
+      "reading_meaning": "doa (pintu)",
+      "type": "🔵",
+      "mnemonic": "Kata serapan dari bahasa Inggris 'door'.",
+      "example": { "jp": "ドアを<ruby>開<rt>あ</rt></ruby>けてください。", "romaji": "Doa o akete kudasai.", "id": "Tolong buka pintunya." }
+    },
+    {
+      "vocab": "<ruby>窓<rt>まど</rt></ruby>",
+      "reading_meaning": "mado (jendela)",
+      "type": "🔵",
+      "mnemonic": "Bayangkan 'MA-u DO-ng lihat pemandangan dari JENDELA'.",
+      "example": { "jp": "<ruby>窓<rt>まど</rt></ruby>を<ruby>閉<rt>し</rt></ruby>めてもいいですか。", "romaji": "Mado o shimete mo ii desu ka.", "id": "Bolehkah saya menutup jendelanya?" }
+    },
+    {
+      "vocab": "<ruby>開<rt>あ</rt></ruby>けます",
+      "reading_meaning": "akemasu (membuka)",
+      "type": "🟢",
+      "mnemonic": "Bayangkan 'A-KE-ringnya susah di BUKA'.",
+      "example": { "jp": "だれがこの<ruby>窓<rt>まど</rt></ruby>を<ruby>開<rt>あ</rt></ruby>けましたか。", "romaji": "Dare ga kono mado o akemashita ka.", "id": "Siapa yang membuka jendela ini?" }
+    },
+    {
+      "vocab": "<ruby>閉<rt>し</rt></ruby>めます",
+      "reading_meaning": "shimemasu (menutup)",
+      "type": "🟢",
+      "mnemonic": "Bayangkan 'SHI... ME-mang harus di TUTUP pintunya, MAS'.",
+      "example": { "jp": "<ruby>寝<rt>ね</rt></ruby>る<ruby>前<rt>まえ</rt></ruby>に、ドアを<ruby>閉<rt>し</rt></ruby>めます。", "romaji": "Neru mae ni, doa o shimemasu.", "id": "Sebelum tidur, saya menutup pintu." }
+    },
+    {
+      "vocab": "<ruby>置<rt>お</rt></ruby>きます",
+      "reading_meaning": "okimasu (meletakkan, menaruh)",
+      "type": "🟢",
+      "mnemonic": "Jangan tertukar dengan 起きます (bangun). Bayangkan 'O-KI-rimannya di LETAKKAN di depan pintu'.",
+      "example": { "jp": "かばんをここに<ruby>置<rt>お</rt></ruby>いてもいいですか。", "romaji": "Kaban o koko ni oite mo ii desu ka.", "id": "Bolehkah saya meletakkan tas di sini?" }
+    },
+    {
+      "vocab": "<ruby>遊<rt>あそ</rt></ruby>びます",
+      "reading_meaning": "asobimasu (bermain)",
+      "type": "🟢",
+      "mnemonic": "Bayangkan 'A-SO-re nanti kita BERMAIN bola, MAS'.",
+      "example": { "jp": "こどもたちは<ruby>公園<rt>こうえん</rt></ruby>で<ruby>遊<rt>あそ</rt></ruby>んでいます。", "romaji": "Kodomotachi wa kouen de asonde imasu.", "id": "Anak-anak sedang bermain di taman." }
+    },
+    {
+      "vocab": "<ruby>急<rt>いそ</rt></ruby>ぎます",
+      "reading_meaning": "isogimasu (terburu-buru, cepat)",
+      "type": "🟢",
+      "mnemonic": "Bayangkan 'I-SO-alnya sudah telat, MAS, harus CEPAT'.",
+      "example": { "jp": "<ruby>急<rt>いそ</rt></ruby>がないと、<ruby>電車<rt>でんしゃ</rt></ruby>に<ruby>間<rt>ま</rt></ruby>に<ruby>合<rt>あ</rt></ruby>いませんよ。", "romaji": "Isoganai to, densha ni ma ni aimasen yo.", "id": "Kalau tidak cepat, nanti ketinggalan kereta lho." }
+    }
+  ],
+  "grammar": [
+    {
+      "pattern": "Bentuk Biasa + んです",
+      "explanation": "Pola ini digunakan untuk memberikan penjelasan, menekankan alasan, atau meminta klarifikasi dengan nuansa yang lebih personal. Ini membuat kalimat terdengar lebih natural dan tidak terlalu kaku. Digunakan setelah bentuk biasa dari kata kerja, kata sifat, atau kata benda (untuk KS-na/KB, gunakan なんです).",
+      "visual": "<b>[Pernyataan] ... <b style='color:#FF4500;'>んです</b> (memberi konteks/alasan)</b><br><br>Bayangkan <b>んです</b> sebagai 'lampu sorot' yang menerangi latar belakang atau alasan di balik sebuah pernyataan.",
+      "examples": [
+        {
+          "jp": "A: どうして<ruby>遅<rt>おく</rt></ruby>れたんですか。 B: バスが<ruby>来<rt>こ</rt></ruby>なかっ<b style='color:#FF4500;'>たんです</b>。",
+          "romaji": "A: Doushite okuretan desu ka. B: Basu ga konakattan desu.",
+          "id": "A: Kenapa kamu terlambat? B: (Penjelasannya adalah) busnya tidak datang."
+        },
+        {
+          "jp": "<ruby>頭<rt>あたま</rt></ruby>が<ruby>痛<rt>いた</rt></ruby>いんです。 (Memberi alasan kenapa terlihat tidak sehat)",
+          "romaji": "Atama ga itain desu.",
+          "id": "Kepala saya sakit (makanya saya begini)."
+        },
+        {
+          "jp": "どこでそのカメラを<ruby>買<rt>か</rt></ruby>っ<b style='color:#FF4500;'>たんです</b>か。(Meminta info dengan rasa ingin tahu)",
+          "romaji": "Doko de sono kamera o kattan desu ka.",
+          "id": "Di mana kamu membeli kamera itu? (Saya penasaran)"
+        },
+        {
+          "jp": "<ruby>彼<rt>かれ</rt></ruby>は<ruby>病気<rt>びょうき</rt></ruby>な<b style='color:#FF4500;'>んです</b>。",
+          "romaji": "Kare wa byouki nan desu.",
+          "id": "(Penjelasannya adalah) dia sakit."
+        }
+      ]
+    },
+    {
+      "pattern": "KK-て いただけませんか",
+      "explanation": "Ini adalah cara yang sangat sopan untuk meminta seseorang melakukan sesuatu untuk Anda. Jauh lebih sopan daripada '-te kudasai'. Secara harfiah berarti 'Tidak bisakah saya menerima Anda melakukan (aksi)...?'.",
+      "visual": "<b>[Aksi]-て 🙏✨ いただけませんか</b><br><br>Bayangkan Anda membungkuk dalam-dalam (🙏✨) saat meminta sebuah bantuan besar.",
+      "examples": [
+        {
+          "jp": "すみません、この<ruby>漢字<rt>かんじ</rt></ruby>の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>教<rt>おし</rt></ruby>えていただけませんか。",
+          "romaji": "Sumimasen, kono kanji no yomikata o oshiete itadakemasen ka.",
+          "id": "Permisi, bisakah Anda berbaik hati mengajarkan cara membaca kanji ini?"
+        },
+        {
+          "jp": "もうすこしゆっくり<ruby>話<rt>はな</rt></ruby>していただけませんか。",
+          "romaji": "Mou sukoshi yukkuri hanashite itadakemasen ka.",
+          "id": "Bisakah Anda berbaik hati berbicara sedikit lebih pelan?"
+        },
+        {
+          "jp": "<ruby>駅<rt>えき</rt></ruby>までの<ruby>行<rt>い</rt></ruby>き<ruby>方<rt>かた</rt></ruby>を<ruby>教<rt>おし</rt></ruby>えていただけませんか。",
+          "romaji": "Eki made no ikikata o oshiete itadakemasen ka.",
+          "id": "Bisakah Anda berbaik hati memberitahu cara pergi ke stasiun?"
+        }
+      ]
+    },
+    {
+      "pattern": "Bentuk-た / Bentuk-ない + ほうがいいです",
+      "explanation": "Pola ini digunakan untuk memberikan saran atau nasihat. 'ほうがいいです' (hou ga ii desu) berarti 'lebih baik'. Gunakan bentuk lampau biasa (Ta-form) untuk saran positif ('lebih baik melakukan...') dan bentuk negatif biasa (Nai-form) untuk saran negatif ('lebih baik tidak melakukan...').",
+      "visual": "<b>✅ [Aksi Positif]-た <b style='color:#FF4500;'>ほうがいい</b><br>❌ [Aksi Negatif]-ない <b style='color:#FF4500;'>ほうがいい</b></b><br><br>Bayangkan seorang dokter yang memberikan resep: satu resep untuk 'dilakukan' (✅) dan satu resep untuk 'dihindari' (❌).",
+      "examples": [
+        {
+          "jp": "あなたはもっと<ruby>野菜<rt>やさい</rt></ruby>を<ruby>食<rt>た</rt></ruby>べた<b style='color:#FF4500;'>ほうがいい</b>ですよ。",
+          "romaji": "Anata wa motto yasai o tabeta hou ga ii desu yo.",
+          "id": "Anda lebih baik makan lebih banyak sayuran lho."
+        },
+        {
+          "jp": "そんなにたくさんお<ruby>酒<rt>さけ</rt></ruby>を<ruby>飲<rt>の</rt></ruby>まない<b style='color:#FF4500;'>ほうがいい</b>です。",
+          "romaji": "Sonnani takusan o-sake o nomanai hou ga ii desu.",
+          "id": "Lebih baik tidak minum alkohol sebanyak itu."
+        },
+        {
+          "jp": "<ruby>疲<rt>つか</rt></ruby>れているなら、はやく<ruby>寝<rt>ね</rt></ruby>た<b style='color:#FF4500;'>ほうがいい</b>です。",
+          "romaji": "Tsukareteiru nara, hayaku neta hou ga ii desu.",
+          "id": "Kalau lelah, lebih baik cepat tidur."
+        }
+      ]
+    }
+  ]
+}

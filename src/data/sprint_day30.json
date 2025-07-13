@@ -1,0 +1,218 @@
+{
+  "type": "N5",
+  "day": 30,
+  "kanji": [],
+  "vocabulary": [
+    {
+      "vocab": "<ruby>会議<rt>かいぎ</rt></ruby>",
+      "reading_meaning": "kaigi (rapat)",
+      "type": "🔵",
+      "mnemonic": "Gabungan kanji 'bertemu' (会) dan 'diskusi' (議). Pertemuan untuk berdiskusi.",
+      "example": { "jp": "3<ruby>時<rt>じ</rt></ruby>から<ruby>会議<rt>かいぎ</rt></ruby>があります。", "romaji": "San-ji kara kaigi ga arimasu.", "id": "Ada rapat mulai dari jam 3." }
+    },
+    {
+      "vocab": "<ruby>試験<rt>しけん</rt></ruby>",
+      "reading_meaning": "shiken (ujian)",
+      "type": "🔵",
+      "mnemonic": "'SHI-apa KEN-a jadwal UJIAN besok?'.",
+      "example": { "jp": "<ruby>来週<rt>らいしゅう</rt></ruby>、<ruby>日本語<rt>にほんご</rt></ruby>の<ruby>試験<rt>しけん</rt></ruby>があります。", "romaji": "Raishuu, nihongo no shiken ga arimasu.", "id": "Minggu depan ada ujian bahasa Jepang." }
+    },
+    {
+      "vocab": "<ruby>授業<rt>じゅぎょう</rt></ruby>",
+      "reading_meaning": "jugyou (pelajaran di kelas)",
+      "type": "🔵",
+      "mnemonic": "'JU-stru GYOU-glenya hilang pas PELAJARAN'.",
+      "example": { "jp": "きょうの<ruby>授業<rt>じゅぎょう</rt></ruby>は<ruby>難<rt>むずか</rt></ruby>しかったです。", "romaji": "Kyou no jugyou wa muzukashikatta desu.", "id": "Pelajaran hari ini sulit." }
+    },
+    {
+      "vocab": "しお",
+      "reading_meaning": "shio (garam)",
+      "type": "🔵",
+      "mnemonic": "Bayangkan 'SHI-apa O-rang yang tidak butuh GARAM?'.",
+      "example": { "jp": "すみません、しおをとってください。", "romaji": "Sumimasen, shio o totte kudasai.", "id": "Permisi, tolong ambilkan garam." }
+    },
+    {
+      "vocab": "さとう",
+      "reading_meaning": "satou (gula)",
+      "type": "🔵",
+      "mnemonic": "Bayangkan 'SA-yap TOU-fu ini rasanya manis karena GULA'.",
+      "example": { "jp": "コーヒーにさとうを<ruby>入<rt>い</rt></ruby>れますか。", "romaji": "Koohii ni satou o iremasu ka.", "id": "Apakah Anda mau menambahkan gula ke kopi?" }
+    },
+    {
+      "vocab": "しょうゆ",
+      "reading_meaning": "shouyu (kecap asin)",
+      "type": "🔵",
+      "mnemonic": "Bayangkan 'SHOU-gun YU-dah pasti suka KECAP ASIN'.",
+      "example": { "jp": "すしにしょうゆをつけます。", "romaji": "Sushi ni shouyu o tsukemasu.", "id": "Saya mencelupkan sushi ke kecap asin." }
+    },
+    {
+      "vocab": "バター",
+      "reading_meaning": "bataa (mentega)",
+      "type": "🔵",
+      "mnemonic": "Kata serapan dari bahasa Inggris 'butter'.",
+      "example": { "jp": "パンにバターをぬります。", "romaji": "Pan ni bataa o nurimasu.", "id": "Saya mengoleskan mentega pada roti." }
+    },
+    {
+      "vocab": "パン",
+      "reading_meaning": "pan (roti)",
+      "type": "🔵",
+      "mnemonic": "Kata serapan dari bahasa Portugis 'pão'.",
+      "example": { "jp": "<ruby>朝<rt>あさ</rt></ruby>ごはんはいつもパンを<ruby>食<rt>た</rt></ruby>べます。", "romaji": "Asagohan wa itsumo pan o tabemasu.", "id": "Sarapan saya selalu makan roti." }
+    },
+    {
+      "vocab": "たまご",
+      "reading_meaning": "tamago (telur)",
+      "type": "🔵",
+      "mnemonic": "Bayangkan 'TAMA-n GO-a penuh dengan cangkang TELUR'.",
+      "example": { "jp": "わたしは<ruby>毎日<rt>まいにち</rt></ruby>たまごを<ruby>一<rt>ひと</rt></ruby>つ<ruby>食<rt>た</rt></ruby>べます。", "romaji": "Watashi wa mainichi tamago o hitotsu tabemasu.", "id": "Saya makan sebutir telur setiap hari." }
+    },
+    {
+      "vocab": "お<ruby>湯<rt>ゆ</rt></ruby>",
+      "reading_meaning": "oyu (air panas)",
+      "type": "🔵",
+      "mnemonic": "Bentuk sopan dari 湯 (yu). 'O-YUp, AIR PANASnya sudah siap'.",
+      "example": { "jp": "お<ruby>湯<rt>ゆ</rt></ruby>がわきました。", "romaji": "O-yu ga wakimashita.", "id": "Air panasnya sudah mendidih." }
+    },
+    {
+      "vocab": "こおり",
+      "reading_meaning": "koori (es batu)",
+      "type": "🔵",
+      "mnemonic": "Bayangkan 'KO-pi O-RI-ental ini pakai ES BATU'.",
+      "example": { "jp": "ジュースにこおりを<ruby>入<rt>い</rt></ruby>れてください。", "romaji": "Juusu ni koori o irete kudasai.", "id": "Tolong masukkan es batu ke dalam jus." }
+    },
+    {
+      "vocab": "<ruby>急<rt>いそ</rt></ruby>ぎます",
+      "reading_meaning": "isogimasu (terburu-buru)",
+      "type": "🟢",
+      "mnemonic": "'I-SO-alnya sudah telat, MAS, harus CEPAT'.",
+      "example": { "jp": "<ruby>急<rt>いそ</rt></ruby>いでください。", "romaji": "Isoide kudasai.", "id": "Tolong cepat." }
+    },
+    {
+      "vocab": "<ruby>触<rt>さわ</rt></ruby>ります",
+      "reading_meaning": "sawarimasu (menyentuh)",
+      "type": "🟢",
+      "mnemonic": "'SA-yang, WA-risan ini jangan diSENTUH'.",
+      "example": { "jp": "そのボタンに<ruby>触<rt>さわ</rt></ruby>らないでください。", "romaji": "Sono botan ni sawaranaide kudasai.", "id": "Tolong jangan sentuh tombol itu." }
+    },
+    {
+      "vocab": "しんじます",
+      "reading_meaning": "shinjimasu (percaya)",
+      "type": "🟢",
+      "mnemonic": "'SHIN-chan JI-ka bicara, aku PERCAYA'.",
+      "example": { "jp": "わたしはあなたをしんじます。", "romaji": "Watashi wa anata o shinjimasu.", "id": "Saya percaya kepada Anda." }
+    },
+    {
+      "vocab": "<ruby>迎<rt>むか</rt></ruby>えます",
+      "reading_meaning": "mukaemasu (menyambut, menjemput)",
+      "type": "🟢",
+      "mnemonic": "Bayangkan 'MUKA-nya E-MAS-an saat MENYAMBUT tamu'.",
+      "example": { "jp": "おきゃくさまを<ruby>迎<rt>むか</rt></ruby>えます。", "romaji": "Okyakusama o mukaemasu.", "id": "Saya akan menyambut tamu." }
+    },
+    {
+      "vocab": "きまります",
+      "reading_meaning": "kimarimasu (diputuskan, ditentukan)",
+      "type": "🟢",
+      "mnemonic": "'KI-ta MARI-patkan, sudah DIPUTUSKAN'.",
+      "example": { "jp": "<ruby>旅行<rt>りょこう</rt></ruby>の<ruby>日<rt>ひ</rt></ruby>がきまりました。", "romaji": "Ryokou no hi ga kimarimashita.", "id": "Hari untuk perjalanannya sudah diputuskan." }
+    },
+    {
+      "vocab": "えらびます",
+      "reading_meaning": "erabimasu (memilih)",
+      "type": "🟢",
+      "mnemonic": "Bayangkan 'E-RA-sa-nya BI-ngung, MAS, mau MEMILIH yang mana'.",
+      "example": { "jp": "すきなものをえらんでください。", "romaji": "Suki na mono o erande kudasai.", "id": "Silakan pilih barang yang Anda suka." }
+    },
+    {
+      "vocab": "<ruby>違<rt>ちが</rt></ruby>います",
+      "reading_meaning": "chigaimasu (salah, berbeda)",
+      "type": "🟢",
+      "mnemonic": "'CHI-kayaknya jawabanmu SALAH, MAS'.",
+      "example": { "jp": "それはすこし<ruby>違<rt>ちが</rt></ruby>うと<ruby>思<rt>おも</rt></ruby>います。", "romaji": "Sore wa sukoshi chigau to omoimasu.", "id": "Saya pikir itu sedikit berbeda." }
+    },
+    {
+      "vocab": "<ruby>質問<rt>しつもん</rt></ruby>します",
+      "reading_meaning": "shitsumon shimasu (bertanya)",
+      "type": "🟢",
+      "mnemonic": "'SHITSU-ru MON-ster itu, aku mau BERTANYA'.",
+      "example": { "jp": "<ruby>先生<rt>せんせい</rt></ruby>に<ruby>質問<rt>しつもん</rt></ruby>してもいいですか。", "romaji": "Sensei ni shitsumon shite mo ii desu ka.", "id": "Bolehkah saya bertanya kepada guru?" }
+    },
+    {
+      "vocab": "<ruby>練習<rt>れんしゅう</rt></ruby>します",
+      "reading_meaning": "renshuu shimasu (berlatih)",
+      "type": "🟢",
+      "mnemonic": "Bayangkan 'REN-ang SHUU-t-ing harus terus BERLATIH'.",
+      "example": { "jp": "<ruby>毎日<rt>まいにち</rt></ruby>ピアノを<ruby>練習<rt>れんしゅう</rt></ruby>します。", "romaji": "Mainichi piano o renshuu shimasu.", "id": "Saya berlatih piano setiap hari." }
+    },
+    {
+      "vocab": "<ruby>十分<rt>じゅうぶん</rt></ruby>な",
+      "reading_meaning": "juubun na (cukup)",
+      "type": "🟣",
+      "mnemonic": "Kanji 'sepuluh' (十) + 'bagian' (分). Sepuluh dari sepuluh bagian -> cukup/sempurna.",
+      "example": { "jp": "<ruby>時間<rt>じかん</rt></ruby>は<ruby>十分<rt>じゅうぶん</rt></ruby>ありますから、いそがなくてもいいです。", "romaji": "Jikan wa juubun arimasu kara, isoganakute mo ii desu.", "id": "Karena waktunya cukup, tidak perlu terburu-buru." }
+    },
+    {
+      "vocab": "<ruby>必要<rt>ひつよう</rt></ruby>な",
+      "reading_meaning": "hitsuyou na (perlu, dibutuhkan)",
+      "type": "🟣",
+      "mnemonic": "Bayangkan 'HIT-SU-nganmu YOU-dah pasti DIPERLUKAN'.",
+      "example": { "jp": "<ruby>旅行<rt>りょこう</rt></ruby>に<ruby>何<rt>なに</rt></ruby>が<ruby>必要<rt>ひつよう</rt></ruby>ですか。", "romaji": "Ryokou ni nani ga hitsuyou desu ka.", "id": "Apa yang diperlukan untuk perjalanan?" }
+    },
+    {
+      "vocab": "ぜんぜん",
+      "reading_meaning": "zenzen (sama sekali tidak...)",
+      "type": "🔵",
+      "mnemonic": "Gunakan dengan kalimat negatif. 'ZENZEN aku TIDAK mengerti'.",
+      "example": { "jp": "わたしは<ruby>英語<rt>えいご</rt></ruby>がぜんぜんわかりません。", "romaji": "Watashi wa eigo ga zenzen wakarimasen.", "id": "Saya sama sekali tidak mengerti bahasa Inggris." }
+    },
+    {
+      "vocab": "きっと",
+      "reading_meaning": "kitto (pasti)",
+      "type": "🔵",
+      "mnemonic": "Bayangkan 'KIT-a TO-long, dia PASTI selamat'.",
+      "example": { "jp": "あしたはきっといい<ruby>天気<rt>てんき</rt></ruby>になりますよ。", "romaji": "Ashita wa kitto ii tenki ni narimasu yo.", "id": "Besok pasti akan menjadi cuaca yang baik lho." }
+    },
+    {
+      "vocab": "ぜひ",
+      "reading_meaning": "zehi (tentu, harus)",
+      "type": "🔵",
+      "mnemonic": "Menekankan keinginan kuat. 'ZE-bra ini HI-lang, HARUS kita cari!'.",
+      "example": { "jp": "こんど、ぜひわたしのうちへ<ruby>来<rt>き</rt></ruby>てください。", "romaji": "Kondo, zehi watashi no uchi e kite kudasai.", "id": "Lain kali, Anda harus datang ke rumah saya ya." }
+    },
+    {
+      "vocab": "なるべく",
+      "reading_meaning": "narubeku (sebisa mungkin)",
+      "type": "🔵",
+      "mnemonic": "Bayangkan 'NARU-to BE-la KU-ro, SEBISA MUNGKIN'.",
+      "example": { "jp": "なるべくはやくお<ruby>願<rt>ねが</rt></ruby>いします。", "romaji": "Narubeku hayaku onegai shimasu.", "id": "Tolong sebisa mungkin cepat ya." }
+    },
+    {
+      "vocab": "たぶん",
+      "reading_meaning": "tabun (mungkin)",
+      "type": "🔵",
+      "mnemonic": "Bayangkan 'TA-pi BUN-ga ini MUNGKIN layu besok'.",
+      "example": { "jp": "たぶん、かれは<ruby>来<rt>こ</rt></ruby>ないでしょう。", "romaji": "Tabun, kare wa konai deshou.", "id": "Mungkin, dia (laki-laki) tidak akan datang." }
+    },
+    {
+      "vocab": "しかし",
+      "reading_meaning": "shikashi (tetapi, akan tetapi)",
+      "type": "🔵",
+      "mnemonic": "Bentuk formal dari でも. 'SHI-apa KASHI-h info ini? TETAPI...'.",
+      "example": { "jp": "かれはわかいです。しかし、とてもしっかりしています。", "romaji": "Kare wa wakai desu. Shikashi, totemo shikkari shite imasu.", "id": "Dia muda. Akan tetapi, sangat bisa diandalkan." }
+    },
+    {
+      "vocab": "では",
+      "reading_meaning": "dewa (kalau begitu)",
+      "type": "🔵",
+      "mnemonic": "Bentuk formal dari じゃあ.",
+      "example": { "jp": "では、はじめましょう。", "romaji": "Dewa, hajimemashou.", "id": "Kalau begitu, mari kita mulai." }
+    },
+    {
+      "vocab": "おさきに しつれいします",
+      "reading_meaning": "osaki ni shitsurei shimasu (permisi duluan)",
+      "type": "🔵",
+      "mnemonic": "Ucapan saat meninggalkan kantor/tempat kerja sebelum orang lain.",
+      "example": { "jp": "A: おさきにしつれいします。 B: おつかれさまでした。", "romaji": "A: Osaki ni shitsurei shimasu. B: Otsukaresama deshita.", "id": "A: Saya permisi duluan. B: Terima kasih atas kerja kerasnya." }
+    }
+  ],
+  "grammar": []
+}

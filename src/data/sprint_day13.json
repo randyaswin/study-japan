@@ -1,0 +1,251 @@
+{
+  "type": "N5",
+  "day": 13,
+  "kanji": [
+    {
+      "kanji": "行",
+      "onyomi": "こう (kou), ぎょう (gyou)",
+      "kunyomi": "い.く (i.ku)",
+      "arti": "Pergi",
+      "mnemonic": "Kanji ini adalah piktograf dari sebuah 'persimpangan jalan'. Ini melambangkan perjalanan, barisan, atau aksi 'pergi' ke suatu tempat.",
+      "example": {
+        "jp": "<ruby>銀行<rt>ぎんこう</rt></ruby>へ<ruby>行<rt>い</rt></ruby>きます。",
+        "romaji": "Ginkou e ikimasu.",
+        "id": "Saya pergi ke bank."
+      }
+    },
+    {
+      "kanji": "来",
+      "onyomi": "らい (rai)",
+      "kunyomi": "く.る (ku.ru)",
+      "arti": "Datang",
+      "mnemonic": "Piktograf aslinya menggambarkan sebatang gandum, yang melambangkan panen yang 'datang' setiap tahun. Ini berevolusi menjadi arti 'datang' atau 'masa depan'.",
+      "example": {
+        "jp": "<ruby>来週<rt>らいしゅう</rt></ruby>、<ruby>友<rt>とも</rt></ruby>だちが<ruby>来<rt>き</rt></ruby>ます。",
+        "romaji": "Raishuu, tomodachi ga kimasu.",
+        "id": "Minggu depan, teman saya akan datang."
+      }
+    },
+    {
+      "kanji": "帰",
+      "onyomi": "き (ki)",
+      "kunyomi": "かえ.る (kae.ru)",
+      "arti": "Pulang, Kembali",
+      "mnemonic": "Terdiri dari radikal 'langkah kaki' (彳) dan sebuah bentuk kompleks yang mengandung 'sapu' (帚). Bayangkan setelah melangkah jauh, seseorang 'kembali' atau 'pulang' ke rumah untuk bersih-bersih.",
+      "example": {
+        "jp": "<ruby>毎日<rt>まいにち</rt></ruby><ruby>五時<rt>ごじ</rt></ruby>にうちへ<ruby>帰<rt>かえ</rt></ruby>ります。",
+        "romaji": "Mainichi go-ji ni uchi e kaerimasu.",
+        "id": "Setiap hari saya pulang ke rumah jam 5."
+      }
+    },
+    {
+      "kanji": "見",
+      "onyomi": "けん (ken)",
+      "kunyomi": "み.る (mi.ru)",
+      "arti": "Melihat",
+      "mnemonic": "Kanji ini adalah sebuah 'mata' (目) besar yang ditopang oleh sepasang 'kaki' (儿). Bayangkan sebuah mata raksasa yang berjalan-jalan untuk 'melihat' dunia.",
+      "example": {
+        "jp": "きのう、おもしろい<ruby>映画<rt>えいが</rt></ruby>を<ruby>見<rt>み</rt></ruby>ました。",
+        "romaji": "Kinou, omoshiroi eiga o mimashita.",
+        "id": "Kemarin, saya menonton film yang menarik."
+      }
+    },
+    {
+      "kanji": "言",
+      "onyomi": "げん (gen), ごん (gon)",
+      "kunyomi": "い.う (i.u)",
+      "arti": "Berkata, Kata",
+      "mnemonic": "Piktograf ini menggambarkan sebuah 'mulut' (口) dengan sebuah 'lidah' atau garis di atasnya yang melambangkan suara atau 'kata' yang keluar. Ini adalah dasar dari 'berkata'.",
+      "example": {
+        "jp": "もう<ruby>一度<rt>いちど</rt></ruby><ruby>言<rt>い</rt></ruby>ってください。",
+        "romaji": "Mou ichido itte kudasai.",
+        "id": "Tolong katakan sekali lagi."
+      }
+    }
+  ],
+  "vocabulary": [
+    {
+      "vocab": "お<ruby>兄<rt>にい</rt></ruby>さん",
+      "reading_meaning": "oniisan ((milik Anda/orang lain) kakak laki-laki)",
+      "type": "🔵",
+      "mnemonic": "'O... NII-lai rapor kakakmu bagus ya?'. Digunakan untuk kakak laki-laki orang lain atau saat memanggil kakak sendiri.",
+      "example": {
+        "jp": "お<ruby>兄<rt>にい</rt></ruby>さんは<ruby>何歳<rt>なんさい</rt></ruby>ですか。",
+        "romaji": "Oniisan wa nansai desu ka.",
+        "id": "Berapa umur kakak laki-laki Anda?"
+      }
+    },
+    {
+      "vocab": "<ruby>兄<rt>あに</rt></ruby>",
+      "reading_meaning": "ani ((milik saya) kakak laki-laki)",
+      "type": "🔵",
+      "mnemonic": "'ANI-masi kesukaan kakakku adalah One Piece'. Digunakan saat menceritakan tentang kakak sendiri kepada orang lain.",
+      "example": {
+        "jp": "<ruby>兄<rt>あに</rt></ruby>は<ruby>東京<rt>とうきょう</rt></ruby>に<ruby>住<rt>す</rt></ruby>んでいます。",
+        "romaji": "Ani wa Toukyou ni sunde imasu.",
+        "id": "Kakak laki-laki saya tinggal di Tokyo."
+      }
+    },
+    {
+      "vocab": "お<ruby>姉<rt>ねえ</rt></ruby>さん",
+      "reading_meaning": "oneesan ((milik Anda/orang lain) kakak perempuan)",
+      "type": "🔵",
+      "mnemonic": "'O... NEE-cis sekali kakak perempuanmu'. Digunakan untuk kakak perempuan orang lain atau saat memanggil kakak sendiri.",
+      "example": {
+        "jp": "お<ruby>姉<rt>ねえ</rt></ruby>さんの<ruby>趣味<rt>しゅみ</rt></ruby>はなんですか。",
+        "romaji": "Oneesan no shumi wa nan desu ka.",
+        "id": "Apa hobi kakak perempuan Anda?"
+      }
+    },
+    {
+      "vocab": "<ruby>姉<rt>あね</rt></ruby>",
+      "reading_meaning": "ane ((milik saya) kakak perempuan)",
+      "type": "🔵",
+      "mnemonic": "'ANE-ka ragam masakan kakak perempuanku'. Digunakan saat menceritakan tentang kakak sendiri kepada orang lain.",
+      "example": {
+        "jp": "<ruby>姉<rt>あね</rt></ruby>は<ruby>去年<rt>きょねん</rt></ruby><ruby>結婚<rt>けっこん</rt></ruby>しました。",
+        "romaji": "Ane wa kyonen kekkon shimashita.",
+        "id": "Kakak perempuan saya menikah tahun lalu."
+      }
+    },
+    {
+      "vocab": "<ruby>弟<rt>おとうと</rt></ruby>",
+      "reading_meaning": "otouto ((milik saya) adik laki-laki)",
+      "type": "🔵",
+      "mnemonic": "Bayangkan 'O-TO-matis UT-angku dibayar adikku'. Digunakan untuk adik laki-laki sendiri.",
+      "example": {
+        "jp": "わたしの<ruby>弟<rt>おとうと</rt></ruby>は<ruby>高校生<rt>こうこうせい</rt></ruby>です。",
+        "romaji": "Watashi no otouto wa koukousei desu.",
+        "id": "Adik laki-laki saya adalah siswa SMA."
+      }
+    },
+    {
+      "vocab": "<ruby>妹<rt>いもうと</rt></ruby>",
+      "reading_meaning": "imouto ((milik saya) adik perempuan)",
+      "type": "🔵",
+      "mnemonic": "'IMUT-O, adik perempuanku lucu sekali'. Digunakan untuk adik perempuan sendiri.",
+      "example": {
+        "jp": "<ruby>妹<rt>いもうと</rt></ruby>はピアノを<ruby>習<rt>なら</rt></ruby>っています。",
+        "romaji": "Imouto wa piano o naratte imasu.",
+        "id": "Adik perempuan saya sedang belajar piano."
+      }
+    },
+    {
+      "vocab": "<ruby>入<rt>はい</rt></ruby>ります",
+      "reading_meaning": "hairimasu (masuk)",
+      "type": "🟢",
+      "mnemonic": "Bayangkan Anda berkata 'HAI... RI-nggo, silakan MASUK'.",
+      "example": {
+        "jp": "<ruby>喫茶店<rt>きっさてん</rt></ruby>に<ruby>入<rt>はい</rt></ruby>りましょう。",
+        "romaji": "Kissaten ni hairimashou.",
+        "id": "Ayo kita masuk ke kedai kopi."
+      }
+    },
+    {
+      "vocab": "<ruby>出<rt>で</rt></ruby>ます",
+      "reading_meaning": "demasu (keluar)",
+      "type": "🟢",
+      "mnemonic": "'DE-ngan MAS-alah ini, aku mau KELUAR saja'.",
+      "example": {
+        "jp": "<ruby>九時<rt>くじ</rt></ruby>に<ruby>大学<rt>だいがく</rt></ruby>を<ruby>出<rt>で</rt></ruby>ます。",
+        "romaji": "Ku-ji ni daigaku o demasu.",
+        "id": "Saya keluar dari universitas jam 9."
+      }
+    },
+    {
+      "vocab": "<ruby>結婚<rt>けっこん</rt></ruby>します",
+      "reading_meaning": "kekkon shimasu (menikah)",
+      "type": "🟢",
+      "mnemonic": "Bayangkan 'KEK, KON-disikan tanggal untuk MENIKAH'.",
+      "example": {
+        "jp": "ともだちは<ruby>来年<rt>らいねん</rt></ruby><ruby>結婚<rt>けっこん</rt></ruby>します。",
+        "romaji": "Tomodachi wa rainen kekkon shimasu.",
+        "id": "Teman saya akan menikah tahun depan."
+      }
+    },
+    {
+      "vocab": "<ruby>買<rt>か</rt></ruby>い<ruby>物<rt>もの</rt></ruby>します",
+      "reading_meaning": "kaimono shimasu (berbelanja)",
+      "type": "🟢",
+      "mnemonic": "Gabungan dari 'membeli' (kaimasu) dan 'benda' (mono). Jadi 'kaimono shimasu' adalah melakukan aktivitas membeli barang-barang alias 'berbelanja'.",
+      "example": {
+        "jp": "<ruby>日曜日<rt>にちようび</rt></ruby>、デパートで<ruby>買<rt>か</rt></ruby>い<ruby>物<rt>もの</rt></ruby>しました。",
+        "romaji": "Nichiyoubi, depaato de kaimono shimashita.",
+        "id": "Pada hari Minggu, saya berbelanja di department store."
+      }
+    }
+  ],
+  "grammar": [
+    {
+      "pattern": "KK bentuk-た ことがあります",
+      "explanation": "Pola ini digunakan untuk menceritakan pengalaman di masa lalu. Artinya 'pernah melakukan...'. Gunakan kata kerja bentuk lampau biasa (bentuk-Ta). Ini biasanya tidak digunakan untuk kejadian yang baru saja terjadi atau hal-hal rutin.",
+      "visual": "<b>[Album Kenangan] 🖼️ [Pengalaman] <b style='color:#FF4500;'>たことがある</b></b><br><br>Bayangkan Anda membuka album foto (🖼️) dan menunjuk sebuah foto kenangan sambil berkata 'Ah, aku PERNAH melakukan ini'.",
+      "examples": [
+        {
+          "jp": "わたしはすしを<ruby>食<rt>た</rt></ruby>べたことがあります。",
+          "romaji": "Watashi wa sushi o tabeta koto ga arimasu.",
+          "id": "Saya pernah makan sushi."
+        },
+        {
+          "jp": "<ruby>馬<rt>うま</rt></ruby>に<ruby>乗<rt>の</rt></ruby>ったことがありますか。",
+          "romaji": "Uma ni notta koto ga arimasu ka.",
+          "id": "Apakah Anda pernah naik kuda?"
+        },
+        {
+          "jp": "わたしは<ruby>一度<rt>いちど</rt></ruby>も<ruby>富士山<rt>ふじさん</rt></ruby>に<ruby>登<rt>のぼ</rt></ruby>ったことがありません。",
+          "romaji": "Watashi wa ichido mo Fujisan ni nobotta koto ga arimasen.",
+          "id": "Saya belum pernah sekalipun mendaki Gunung Fuji."
+        }
+      ]
+    },
+    {
+      "pattern": "KK-たり、KK-たり します",
+      "explanation": "Pola ini digunakan untuk menyebutkan beberapa contoh kegiatan tanpa harus menyebutkan semuanya secara berurutan. Ini menyiratkan bahwa ada kegiatan lain yang juga dilakukan. Akhiran 'します/しました' disesuaikan dengan waktu kejadian.",
+      "visual": "<b>[Aksi A]<b style='color:#FF4500;'>たり</b>, [Aksi B]<b style='color:#FF4500;'>たり</b>, ...</b><br><br>Bayangkan keranjang belanjaan. Anda mengambil beberapa barang (<b>-tari</b>) sebagai contoh isi keranjang, tapi tidak menyebutkan semuanya.",
+      "examples": [
+        {
+          "jp": "<ruby>日曜日<rt>にちようび</rt></ruby>はテニスをしたり、<ruby>映画<rt>えいが</rt></ruby>を<ruby>見<rt>み</rt></ruby>たりします。",
+          "romaji": "Nichiyoubi wa tenisu o shitari, eiga o mitari shimasu.",
+          "id": "Pada hari Minggu, saya melakukan hal-hal seperti bermain tenis, menonton film, (dan lain-lain)."
+        },
+        {
+          "jp": "きのうは<ruby>本<rt>ほん</rt></ruby>を<ruby>読<rt>よ</rt></ruby>んだり、<ruby>音楽<rt>おんがく</rt></ruby>を<ruby>聞<rt>き</rt></ruby>いたりしました。",
+          "romaji": "Kinou wa hon o yondari, ongaku o kiitari shimashita.",
+          "id": "Kemarin saya melakukan hal-hal seperti membaca buku, mendengarkan musik, (dan lain-lain)."
+        },
+        {
+          "jp": "デパートでシャツを<ruby>買<rt>か</rt></ruby>ったり、レストランで<ruby>食<rt>た</rt></ruby>べたりしたいです。",
+          "romaji": "Depaato de shatsu o kattari, resutoran de tabetari shitai desu.",
+          "id": "Saya ingin melakukan hal-hal seperti membeli kemeja di department store, makan di restoran, (dan lain-lain)."
+        }
+      ]
+    },
+    {
+      "pattern": "KS-い(<s>-い</s>)く / KS-な に / KB に なります",
+      "explanation": "Pola 'narimasu' digunakan untuk menyatakan perubahan keadaan. Sesuatu 'menjadi' suatu sifat atau benda. Untuk kata sifat-i, hilangkan akhiran 'い' dan tambahkan 'くなります'. Untuk kata sifat-na dan kata benda, tambahkan 'になります'.",
+      "visual": "<b>[Keadaan Awal] ➡️ [Perubahan] <b style='color:#FF4500;'>に/く</b> なります</b><br><br>Bayangkan <b>なります</b> sebagai panah perubahan (➡️) yang mengubah sesuatu dari kondisi awal ke kondisi baru.",
+      "examples": [
+        {
+          "jp": "テレビの<ruby>音<rt>おと</rt></ruby>が<ruby>大<rt>おお</rt></ruby>きくなります。(KS-i)",
+          "romaji": "Terebi no oto ga ookiku narimasu.",
+          "id": "Suara TV menjadi keras."
+        },
+        {
+          "jp": "わたしは<ruby>元気<rt>げんき</rt></ruby>になりました。(KS-na)",
+          "romaji": "Watashi wa genki ni narimashita.",
+          "id": "Saya menjadi sehat."
+        },
+        {
+          "jp": "あしたから<ruby>天気<rt>てんき</rt></ruby>は<ruby>寒<rt>さむ</rt></ruby>くなります。",
+          "romaji": "Ashita kara tenki wa samuku narimasu.",
+          "id": "Mulai besok cuaca akan menjadi dingin."
+        },
+        {
+          "jp": "わたしは25<ruby>歳<rt>さい</rt></ruby>になりました。(KB)",
+          "romaji": "Watashi wa nijuugo-sai ni narimashita.",
+          "id": "Saya telah menjadi (berumur) 25 tahun."
+        }
+      ]
+    }
+  ]
+}

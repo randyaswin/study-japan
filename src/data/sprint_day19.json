@@ -1,0 +1,206 @@
+{
+  "type": "N5",
+  "day": 19,
+  "kanji": [
+    {
+      "kanji": "方",
+      "onyomi": "ほう (hou)",
+      "kunyomi": "かた (kata)",
+      "arti": "Arah, Cara, Orang (sopan)",
+      "mnemonic": "Kanji ini aslinya adalah piktograf dari bajak sawah, yang digunakan untuk menentukan 'arah' saat membajak. Dari situ berkembang arti 'cara' melakukan sesuatu, dan juga bentuk sopan untuk 'orang' (kata).",
+      "example": {
+        "jp": "あちらの<ruby>方<rt>かた</rt></ruby>はどなたですか。",
+        "romaji": "Achira no kata wa donata desu ka.",
+        "id": "Siapakah orang yang di sebelah sana itu (sopan)?"
+      }
+    },
+    {
+      "kanji": "旅",
+      "onyomi": "りょ (ryo)",
+      "kunyomi": "たび (tabi)",
+      "arti": "Perjalanan, Wisata",
+      "mnemonic": "Terdiri dari radikal 'bendera' (方) dan 'orang-orang' (从). Bayangkan sekelompok orang yang melakukan 'perjalanan' bersama di bawah satu panji atau bendera.",
+      "example": {
+        "jp": "<ruby>旅行<rt>りょこう</rt></ruby>の<ruby>準備<rt>じゅんび</rt></ruby>をします。",
+        "romaji": "Ryokou no junbi o shimasu.",
+        "id": "Saya akan melakukan persiapan untuk perjalanan."
+      }
+    },
+    {
+      "kanji": "教",
+      "onyomi": "きょう (kyou)",
+      "kunyomi": "おし.える (oshi.eru)",
+      "arti": "Mengajar",
+      "mnemonic": "Terdiri dari 'berbakti' (孝) dan radikal 'memukul dengan tongkat' (攵). Ini melambangkan proses 'mengajar' di mana seorang guru dengan sabar (berbakti) membimbing muridnya (terkadang dengan tongkat).",
+      "example": {
+        "jp": "<ruby>教室<rt>きょうしつ</rt></ruby>に<ruby>学生<rt>がくせい</rt></ruby>がいます。",
+        "romaji": "Kyoushitsu ni gakusei ga imasu.",
+        "id": "Ada siswa di dalam ruang kelas (ruang mengajar)."
+      }
+    },
+    {
+      "kanji": "室",
+      "onyomi": "しつ (shitsu)",
+      "kunyomi": "むろ (muro)",
+      "arti": "Ruangan",
+      "mnemonic": "Terdiri dari 'atap' (宀) dan 'sampai/tiba' (至). Sebuah 'ruangan' adalah tempat di mana kita 'tiba' di bawah 'atap' sebuah bangunan.",
+      "example": {
+        "jp": "<ruby>会議室<rt>かいぎしつ</rt></ruby>はどこですか。",
+        "romaji": "Kaigishitsu wa doko desu ka.",
+        "id": "Di mana ruang rapat?"
+      }
+    },
+    {
+      "kanji": "漢",
+      "onyomi": "かん (kan)",
+      "kunyomi": "-",
+      "arti": "Han, Tiongkok",
+      "mnemonic": "Terdiri dari radikal 'air' (氵) dan komponen fonetik (漢). Berasal dari nama Sungai Han dan Dinasti Han di Tiongkok. Paling sering muncul dalam kata 'Kanji'.",
+      "example": {
+        "jp": "<ruby>漢字<rt>かんじ</rt></ruby>の<ruby>勉強<rt>べんきょう</rt></ruby>は<ruby>難<rt>むずか</rt></ruby>しいですが、おもしろいです。",
+        "romaji": "Kanji no benkyou wa muzukashii desu ga, omoshiroi desu.",
+        "id": "Belajar Kanji itu sulit, tetapi menarik."
+      }
+    }
+  ],
+  "vocabulary": [
+    {
+      "vocab": "<ruby>教室<rt>きょうしつ</rt></ruby>",
+      "reading_meaning": "kyoushitsu (ruang kelas)",
+      "type": "🔵",
+      "mnemonic": "Gabungan dari kanji 'mengajar' (教) dan 'ruangan' (室). 'Ruangan untuk mengajar'.",
+      "example": { "jp": "この<ruby>教室<rt>きょうしつ</rt></ruby>は<ruby>広<rt>ひろ</rt></ruby>いです。", "romaji": "Kono kyoushitsu wa hiroi desu.", "id": "Ruang kelas ini luas." }
+    },
+    {
+      "vocab": "<ruby>食堂<rt>しょくどう</rt></ruby>",
+      "reading_meaning": "shokudou (kantin, ruang makan)",
+      "type": "🔵",
+      "mnemonic": "Gabungan dari 'makan' (食) dan 'aula/ruang besar' (堂). 'Aula untuk makan'.",
+      "example": { "jp": "お<ruby>昼<rt>ひる</rt></ruby>は<ruby>食堂<rt>しょくどう</rt></ruby>で<ruby>食<rt>た</rt></ruby>べます。", "romaji": "O-hiru wa shokudou de tabemasu.", "id": "Saya makan siang di kantin." }
+    },
+    {
+      "vocab": "<ruby>会議室<rt>かいぎしつ</rt></ruby>",
+      "reading_meaning": "kaigishitsu (ruang rapat)",
+      "type": "🔵",
+      "mnemonic": "Gabungan dari 'rapat' (会議) dan 'ruangan' (室). 'Ruangan untuk rapat'.",
+      "example": { "jp": "<ruby>会議室<rt>かいぎしつ</rt></ruby>は3<ruby>階<rt>かい</rt></ruby>です。", "romaji": "Kaigishitsu wa san-gai desu.", "id": "Ruang rapat ada di lantai 3." }
+    },
+    {
+      "vocab": "<ruby>方<rt>かた</rt></ruby>",
+      "reading_meaning": "kata (orang - bentuk sopan)",
+      "type": "🔵",
+      "mnemonic": "Bentuk sopan dari ひと (hito). 'KATA-nya, ORANG itu adalah direktur'.",
+      "example": { "jp": "あの<ruby>方<rt>かた</rt></ruby>はどなたですか。", "romaji": "Ano kata wa donata desu ka.", "id": "Siapakah orang itu? (sopan)" }
+    },
+    {
+      "vocab": "こちら",
+      "reading_meaning": "kochira (ini, sini, sebelah sini - bentuk sopan)",
+      "type": "🔵",
+      "mnemonic": "Bentuk sopan dari これ (kore), ここ (koko). 'KOCHIRA-dalah tempatnya, silakan'.",
+      "example": { "jp": "お<ruby>手洗<rt>てあら</rt></ruby>いは<ruby>こちら<rt>　</rt></ruby>です。", "romaji": "O-tearai wa kochira desu.", "id": "Toilet ada di sebelah sini." }
+    },
+    {
+      "vocab": "そちら",
+      "reading_meaning": "sochira (itu, situ, sebelah situ - bentuk sopan)",
+      "type": "🔵",
+      "mnemonic": "Bentuk sopan dari それ (sore), そこ (soko).",
+      "example": { "jp": "<ruby>事務所<rt>じむしょ</rt></ruby>はそちらです。", "romaji": "Jimusho wa sochira desu.", "id": "Kantor ada di sebelah situ." }
+    },
+    {
+      "vocab": "あちら",
+      "reading_meaning": "achira (itu, sana, sebelah sana - bentuk sopan)",
+      "type": "🔵",
+      "mnemonic": "Bentuk sopan dari あれ (are), あそこ (asoko).",
+      "example": { "jp": "エレベーターはあちらです。", "romaji": "Erebeetaa wa achira desu.", "id": "Lift ada di sebelah sana." }
+    },
+    {
+      "vocab": "<ruby>始<rt>はじ</rt></ruby>めます",
+      "reading_meaning": "hajimemasu (memulai sesuatu)",
+      "type": "🟢",
+      "mnemonic": "Bentuk transitif (butuh objek) dari 始まります. 'HAJI, MARI kita MEMULAI proyek ini'.",
+      "example": { "jp": "これから<ruby>会議<rt>かいぎ</rt></ruby>を<ruby>始<rt>はじ</rt></ruby>めます。", "romaji": "Korekara kaigi o hajimemasu.", "id": "Mulai sekarang kita akan memulai rapat." }
+    },
+    {
+      "vocab": "おわります",
+      "reading_meaning": "owarimasu (menyelesaikan sesuatu)",
+      "type": "🟢",
+      "mnemonic": "Bentuk transitif dari 終わります. 'O... WAR...isan ini harus segera kita SELESAIKAN pembagiannya'.",
+      "example": { "jp": "レポートを<ruby>書<rt>か</rt></ruby>き<ruby>終<rt>お</rt></ruby>わりました。", "romaji": "Repooto o kakiowarimashita.", "id": "Saya telah selesai menulis laporan." }
+    },
+    {
+      "vocab": "<ruby>押<rt>お</rt></ruby>します",
+      "reading_meaning": "oshimasu (menekan, mendorong)",
+      "type": "🟢",
+      "mnemonic": "Bayangkan 'O-SHI-lahkan, MAS, tombolnya di TEKAN'.",
+      "example": { "jp": "このボタンを<ruby>押<rt>お</rt></ruby>してください。", "romaji": "Kono botan o oshite kudasai.", "id": "Tolong tekan tombol ini." }
+    }
+  ],
+  "grammar": [
+    {
+      "pattern": "[Pemberi] は [Penerima] に KK-て あげます",
+      "explanation": "Pola ini digunakan saat Anda (atau seseorang) melakukan suatu kebaikan/aksi (dalam bentuk-Te) UNTUK orang lain. Arah kebaikannya adalah 'keluar' dari subjek. Ini menunjukkan niat baik dari si pelaku.",
+      "visual": "<b>[Saya/Pelaku] 🎁➡️ [Penerima]</b><br><br>Bayangkan Anda memberikan sebuah 'kado aksi' (🎁) kepada orang lain. Arah panahnya selalu menjauh dari Anda.",
+      "examples": [
+        {
+          "jp": "わたし<b style='color:#FF4500;'>は</b><ruby>木村<rt>きむら</rt></ruby>さん<b style='color:#FF4500;'>に</b><ruby>本<rt>ほん</rt></ruby>を<ruby>貸<rt>か</rt></ruby>してあげました。",
+          "romaji": "Watashi wa Kimura-san ni hon o kashite agemashita.",
+          "id": "Saya meminjamkan buku untuk Sdri. Kimura."
+        },
+        {
+          "jp": "わたし<b style='color:#FF4500;'>は</b><ruby>弟<rt>おとうと</rt></ruby>の<ruby>宿題<rt>しゅくだい</rt></ruby>を<ruby>手伝<rt>てつだ</rt></ruby>ってあげます。",
+          "romaji": "Watashi wa otouto no shukudai o tetsudatte agemasu.",
+          "id": "Saya akan membantu PR adik laki-laki saya."
+        },
+        {
+          "jp": "あなたはだれ<b style='color:#FF4500;'>に</b><ruby>日本語<rt>にほんご</rt></ruby>を<ruby>教<rt>おし</rt></ruby>えてあげますか。",
+          "romaji": "Anata wa dare ni nihongo o oshiete agemasu ka.",
+          "id": "Kepada siapa Anda akan mengajarkan bahasa Jepang?"
+        }
+      ]
+    },
+    {
+      "pattern": "[Penerima] は [Pemberi] に KK-て もらいます",
+      "explanation": "Pola ini digunakan saat Anda (sebagai penerima) mendapatkan kebaikan/aksi dari orang lain. Anda adalah subjek kalimat, dan orang yang melakukan aksi ditandai dengan partikel に. Fokusnya adalah pada fakta bahwa Anda 'menerima' aksi tersebut.",
+      "visual": "<b>[Saya/Penerima] 🎁⬅️ [Pemberi]</b><br><br>Bayangkan sebuah 'kado aksi' (🎁) yang datang dari orang lain ke arah Anda. Anda yang menerima manfaatnya.",
+      "examples": [
+        {
+          "jp": "わたし<b style='color:#FF4500;'>は</b><ruby>山田<rt>やまだ</rt></ruby>さん<b style='color:#FF4500;'>に</b><ruby>事務所<rt>じむしょ</rt></ruby>の<ruby>電話番号<rt>でんわばんごう</rt></ruby>を<ruby>教<rt>おし</rt></ruby>えてもらいました。",
+          "romaji": "Watashi wa Yamada-san ni jimusho no denwa bangou o oshiete moraimashita.",
+          "id": "Saya diberitahu nomor telepon kantor oleh Sdr. Yamada."
+        },
+        {
+          "jp": "わたし<b style='color:#FF4500;'>は</b><ruby>母<rt>はは</rt></ruby><b style='color:#FF4500;'>に</b>セーターを<ruby>送<rt>おく</rt></ruby>ってもらいました。",
+          "romaji": "Watashi wa haha ni seetaa o okutte moraimashita.",
+          "id": "Saya dikirimi sweater oleh ibu saya."
+        },
+        {
+          "jp": "だれ<b style='color:#FF4500;'>に</b><ruby>空港<rt>くうこう</rt></ruby>までむかえに<ruby>来<rt>き</rt></ruby>てもらいますか。",
+          "romaji": "Dare ni kuukou made mukae ni kite moraimasu ka.",
+          "id": "Anda akan dijemput sampai ke bandara oleh siapa?"
+        }
+      ]
+    },
+    {
+      "pattern": "[Pemberi] が (わたしに) KK-て くれます",
+      "explanation": "Pola ini mirip dengan もらいます, yaitu Anda menerima kebaikan dari orang lain. Bedanya, subjek kalimatnya adalah si 'pemberi' aksi, bukan penerima. Ini menekankan kebaikan hati si pemberi yang melakukan sesuatu untuk Anda atau kelompok Anda.",
+      "visual": "<b>[Pemberi] 🎁➡️ [Saya]</b><br><br>Sama seperti もらいます, 'kado aksi' (🎁) bergerak ke arah Anda, tapi kali ini 'kameranya' fokus pada si Pemberi.",
+      "examples": [
+        {
+          "jp": "<ruby>佐藤<rt>さとう</rt></ruby>さん<b style='color:#FF4500;'>が</b>わたし<b style='color:#FF4500;'>に</b><ruby>日本語<rt>にほんご</rt></ruby>を<ruby>教<rt>おし</rt></ruby>えてくれます。",
+          "romaji": "Satou-san ga watashi ni nihongo o oshiete kuremasu.",
+          "id": "Sdri. Sato mengajari saya bahasa Jepang (untuk saya)."
+        },
+        {
+          "jp": "<ruby>友達<rt>ともだち</rt></ruby><b style='color:#FF4500;'>が</b><ruby>引<rt>ひ</rt></ruby>っ<ruby>越<rt>こ</rt></ruby>しを<ruby>手伝<rt>てつだ</rt></ruby>ってくれました。",
+          "romaji": "Tomodachi ga hikkoshi o tetsudatte kuremashita.",
+          "id": "Teman (saya) telah membantu saya pindahan."
+        },
+        {
+          "jp": "だれ<b style='color:#FF4500;'>が</b>あなたを<ruby>駅<rt>えき</rt></ruby>まで<ruby>送<rt>おく</rt></ruby>ってくれますか。",
+          "romaji": "Dare ga anata o eki made okutte kuremasu ka.",
+          "id": "Siapa yang akan mengantarkanmu sampai stasiun?"
+        }
+      ]
+    }
+  ]
+}

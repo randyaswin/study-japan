@@ -1,0 +1,206 @@
+{
+  "type": "N5",
+  "day": 22,
+  "kanji": [
+    {
+      "kanji": "山",
+      "onyomi": "さん (san)",
+      "kunyomi": "やま (yama)",
+      "arti": "Gunung",
+      "mnemonic": "Ini adalah piktograf yang sangat jelas, menggambarkan sebuah 'gunung' dengan tiga puncaknya yang menonjol.",
+      "example": {
+        "jp": "<ruby>富士山<rt>ふじさん</rt></ruby>に<ruby>登<rt>のぼ</rt></ruby>ったことがありますか。",
+        "romaji": "Fujisan ni nobotta koto ga arimasu ka.",
+        "id": "Apakah Anda pernah mendaki Gunung Fuji?"
+      }
+    },
+    {
+      "kanji": "川",
+      "onyomi": "せん (sen)",
+      "kunyomi": "かわ (kawa)",
+      "arti": "Sungai",
+      "mnemonic": "Ini adalah piktograf dari aliran 'sungai'. Tiga garis vertikal yang meliuk-liuk menggambarkan air yang mengalir di antara tepiannya.",
+      "example": {
+        "jp": "この<ruby>川<rt>かわ</rt></ruby>はきれいです。",
+        "romaji": "Kono kawa wa kirei desu.",
+        "id": "Sungai ini bersih/indah."
+      }
+    },
+    {
+      "kanji": "元",
+      "onyomi": "げん (gen), がん (gan)",
+      "kunyomi": "もと (moto)",
+      "arti": "Asal, Sumber",
+      "mnemonic": "Kanji ini menggambarkan 'kaki manusia' (儿) di bawah 'dua' (二). Ini melambangkan fondasi atau 'asal' dari mana sesuatu dimulai.",
+      "example": {
+        "jp": "お<ruby>元気<rt>げんき</rt></ruby>ですか。",
+        "romaji": "O-genki desu ka.",
+        "id": "Apa kabar? (Apakah sumber energi Anda baik?)"
+      }
+    },
+    {
+      "kanji": "花",
+      "onyomi": "か (ka)",
+      "kunyomi": "はな (hana)",
+      "arti": "Bunga",
+      "mnemonic": "Terdiri dari radikal 'tumbuhan' (艹) di atas dan 'perubahan' (化) di bawah. 'Bunga' adalah hasil 'perubahan' dari sebuah 'tumbuhan'.",
+      "example": {
+        "jp": "これはなんの<ruby>花<rt>はな</rt></ruby>ですか。",
+        "romaji": "Kore wa nan no hana desu ka.",
+        "id": "Ini bunga apa?"
+      }
+    },
+    {
+      "kanji": "空",
+      "onyomi": "くう (kuu)",
+      "kunyomi": "そら (sora), あ.く (a.ku)",
+      "arti": "Langit, Kosong",
+      "mnemonic": "Terdiri dari 'lubang' (穴) dan 'pekerjaan' (工). Bayangkan seorang pekerja yang membuat lubang di atap untuk melihat 'langit' atau membuat ruangan menjadi 'kosong'.",
+      "example": {
+        "jp": "<ruby>空<rt>そら</rt></ruby>に<ruby>飛行機<rt>ひこうき</rt></ruby>が<ruby>飛<rt>と</rt></ruby>んでいます。",
+        "romaji": "Sora ni hikouki ga tonde imasu.",
+        "id": "Ada pesawat yang terbang di langit."
+      }
+    }
+  ],
+  "vocabulary": [
+    {
+      "vocab": "<ruby>山<rt>やま</rt></ruby>",
+      "reading_meaning": "yama (gunung)",
+      "type": "🔵",
+      "mnemonic": "Bayangkan 'YAMA-ha motornya kuat untuk naik GUNUNG'.",
+      "example": { "jp": "あの<ruby>山<rt>やま</rt></ruby>の<ruby>名前<rt>なまえ</rt></ruby>は<ruby>何<rt>なん</rt></ruby>ですか。", "romaji": "Ano yama no namae wa nan desu ka.", "id": "Apa nama gunung itu?" }
+    },
+    {
+      "vocab": "<ruby>川<rt>かわ</rt></ruby>",
+      "reading_meaning": "kawa (sungai)",
+      "type": "🔵",
+      "mnemonic": "'KAWA-n, ayo mancing di SUNGAI'.",
+      "example": { "jp": "<ruby>家<rt>いえ</rt></ruby>の<ruby>近<rt>ちか</rt></ruby>くに<ruby>きれい<rt>　</rt></ruby>な<ruby>川<rt>かわ</rt></ruby>があります。", "romaji": "Ie no chikaku ni kirei na kawa ga arimasu.", "id": "Di dekat rumah ada sungai yang indah." }
+    },
+    {
+      "vocab": "<ruby>元気<rt>げんき</rt></ruby>な",
+      "reading_meaning": "genki na (sehat, bersemangat)",
+      "type": "🟣",
+      "mnemonic": "Kanji 'sumber' (元) + 'energi' (気). Penuh dengan sumber energi.",
+      "example": { "jp": "いつも<ruby>元気<rt>げんき</rt></ruby>ですね。", "romaji": "Itsumo genki desu ne.", "id": "Anda selalu bersemangat ya." }
+    },
+    {
+      "vocab": "<ruby>天気<rt>てんき</rt></ruby>",
+      "reading_meaning": "tenki (cuaca)",
+      "type": "🔵",
+      "mnemonic": "Kanji 'langit' (天) + 'energi' (気). Energi dari langit.",
+      "example": { "jp": "あしたの<ruby>天気<rt>てんき</rt></ruby>はどうですか。", "romaji": "Ashita no tenki wa dou desu ka.", "id": "Bagaimana cuaca besok?" }
+    },
+    {
+      "vocab": "<ruby>花<rt>はな</rt></ruby>",
+      "reading_meaning": "hana (bunga)",
+      "type": "🔵",
+      "mnemonic": "'HA-NA...h, indahnya BUNGA ini'. Jangan tertukar dengan 鼻 (hidung).",
+      "example": { "jp": "<ruby>母<rt>はは</rt></ruby>に<ruby>花<rt>はな</rt></ruby>をあげました。", "romaji": "Haha ni hana o agemashita.", "id": "Saya memberi bunga kepada ibu." }
+    },
+    {
+      "vocab": "<ruby>空<rt>そら</rt></ruby>",
+      "reading_meaning": "sora (langit)",
+      "type": "🔵",
+      "mnemonic": "Bayangkan 'SORA-k sorai bergembira, melihat LANGIT yang biru'.",
+      "example": { "jp": "<ruby>空<rt>そら</rt></ruby>が<ruby>青<rt>あお</rt></ruby>いです。", "romaji": "Sora ga aoi desu.", "id": "Langitnya biru." }
+    },
+    {
+      "vocab": "<ruby>海<rt>うみ</rt></ruby>",
+      "reading_meaning": "umi (laut)",
+      "type": "🔵",
+      "mnemonic": "'U-MI...rip dengan aku, sama-sama suka LAUT'.",
+      "example": { "jp": "<ruby>夏<rt>なつ</rt></ruby>に<ruby>海<rt>うみ</rt></ruby>へ<ruby>行<rt>い</rt></ruby>きたいです。", "romaji": "Natsu ni umi e ikitai desu.", "id": "Saya ingin pergi ke laut pada musim panas." }
+    },
+    {
+      "vocab": "<ruby>登<rt>のぼ</rt></ruby>ります",
+      "reading_meaning": "noborimasu (mendaki, memanjat)",
+      "type": "🟢",
+      "mnemonic": "'NO-bor, ayo kita MENDAKI gunung itu, MAS'.",
+      "example": { "jp": "<ruby>山<rt>やま</rt></ruby>に<ruby>登<rt>のぼ</rt></ruby>ります。", "romaji": "Yama ni noborimasu.", "id": "Saya mendaki gunung." }
+    },
+    {
+      "vocab": "<ruby>歩<rt>ある</rt></ruby>きます",
+      "reading_meaning": "arukimasu (berjalan)",
+      "type": "🟢",
+      "mnemonic": "Bayangkan 'ARU-n dan KImA BERJALAN-JALAN di taman'.",
+      "example": { "jp": "<ruby>駅<rt>えき</rt></ruby>まで<ruby>歩<rt>ある</rt></ruby>いて<ruby>行<rt>い</rt></ruby>きます。", "romaji": "Eki made aruite ikimasu.", "id": "Saya akan pergi ke stasiun dengan berjalan kaki." }
+    },
+    {
+      "vocab": "かかります",
+      "reading_meaning": "kakarimasu (memerlukan waktu/uang)",
+      "type": "🟢",
+      "mnemonic": "'KA-lau KA-mu ke RI-au, akan MEMERLUKAN banyak waktu'.",
+      "example": { "jp": "ここから<ruby>空港<rt>くうこう</rt></ruby>までタクシーで１<ruby>時間<rt>じかん</rt></ruby>ぐらいかかります。", "romaji": "Koko kara kuukou made takushii de ichi-jikan gurai kakarimasu.", "id": "Dari sini sampai bandara memerlukan sekitar 1 jam dengan taksi." }
+    }
+  ],
+  "grammar": [
+    {
+      "pattern": "[KK Kamus / KB の] + まえに、...",
+      "explanation": "Pola 'mae ni' berarti 'sebelum'. Digunakan untuk menyatakan suatu aksi yang dilakukan sebelum aksi lainnya. Jika kata kerja, gunakan bentuk kamus. Jika kata benda (yang menyatakan durasi atau kejadian), tambahkan partikel の.",
+      "visual": "<b>[... 2️⃣ ...] 🕒 [Aksi 1]<b style='color:#FF4500;'>まえに</b></b><br><br>Bayangkan sebuah timeline. Anda meletakkan penanda 'SEBELUM' (<b>まえに</b>) pada [Aksi 1], yang berarti [Aksi 2] harus terjadi lebih dulu.",
+      "examples": [
+        {
+          "jp": "<ruby>寝<rt>ね</rt></ruby>る<b style='color:#FF4500;'>まえに</b>、<ruby>歯<rt>は</rt></ruby>をみがきます。",
+          "romaji": "Neru mae ni, ha o migakimasu.",
+          "id": "Sebelum tidur, saya menggosok gigi."
+        },
+        {
+          "jp": "<ruby>食事<rt>しょくじ</rt></ruby>の<b style='color:#FF4500;'>まえに</b>、<ruby>手<rt>て</rt></ruby>を<ruby>洗<rt>あら</rt></ruby>います。",
+          "romaji": "Shokuji no mae ni, te o araimasu.",
+          "id": "Sebelum makan, saya mencuci tangan."
+        },
+        {
+          "jp": "どのくらい<ruby>前<rt>まえ</rt></ruby>に<ruby>日本<rt>にほん</rt></ruby>へ<ruby>来<rt>き</rt></ruby>ましたか。・・・１<ruby>年<rt>ねん</rt></ruby><b style='color:#FF4500;'>まえに</b><ruby>来<rt>き</rt></ruby>ました。",
+          "romaji": "Donokurai mae ni nihon e kimashita ka. ...Ichi-nen mae ni kimashita.",
+          "id": "Berapa lama sebelumnya Anda datang ke Jepang? ...Saya datang 1 tahun yang lalu."
+        }
+      ]
+    },
+    {
+      "pattern": "KK-てから、...",
+      "explanation": "Pola 'te kara' berarti 'setelah'. Ini menekankan bahwa aksi pertama (dalam bentuk-Te) telah selesai sepenuhnya, baru kemudian aksi kedua dimulai. Ini sangat menekankan urutan kejadian.",
+      "visual": "<b>[1. Selesai!] ✅ <b style='color:#FF4500;'>てから</b> ➡️ [2. Mulai]</b><br><br>Bayangkan Anda memberi tanda centang (✅) pada tugas pertama, baru setelah itu (<b>てから</b>) Anda pindah ke tugas kedua (➡️).",
+      "examples": [
+        {
+          "jp": "<ruby>仕事<rt>しごと</rt></ruby>が<ruby>終<rt>お</rt></ruby>わっ<b style='color:#FF4500;'>てから</b>、<ruby>飲<rt>の</rt></ruby>みに<ruby>行<rt>い</rt></ruby>きます。",
+          "romaji": "Shigoto ga owatte kara, nomi ni ikimasu.",
+          "id": "Setelah pekerjaan selesai, saya akan pergi minum-minum."
+        },
+        {
+          "jp": "この<ruby>薬<rt>くすり</rt></ruby>は<ruby>食<rt>た</rt></ruby>べ<b style='color:#FF4500;'>てから</b>、<ruby>飲<rt>の</rt></ruby>んでください。",
+          "romaji": "Kono kusuri wa tabete kara, nonde kudasai.",
+          "id": "Obat ini, tolong minum setelah makan."
+        },
+        {
+          "jp": "<ruby>国<rt>くに</rt></ruby>へ<ruby>帰<rt>かえ</rt></ruby>っ<b style='color:#FF4500;'>てから</b>、<ruby>父<rt>ちち</rt></ruby>の<ruby>会社<rt>かいしゃ</rt></ruby>で<ruby>働<rt>はたら</rt></ruby>きます。",
+          "romaji": "Kuni e kaette kara, chichi no kaisha de hatarakimasu.",
+          "id": "Setelah pulang ke negara asal, saya akan bekerja di perusahaan ayah saya."
+        }
+      ]
+    },
+    {
+      "pattern": "KK-たあとで、...",
+      "explanation": "Pola 'ta ato de' juga berarti 'setelah', mirip dengan 'te kara'. Bedanya, pola ini menggunakan bentuk lampau (Ta-form) dan seringkali menyiratkan adanya jeda waktu antara aksi pertama dan kedua. Lebih formal daripada 'te kara'.",
+      "visual": "<b>[1. Lampau] 🕒 ... <b style='color:#FF4500;'>あとで</b> → [2. Kemudian]</b><br><br>Bayangkan sebuah peristiwa yang sudah lewat (🕒), lalu setelah jeda beberapa waktu (...) barulah peristiwa kedua terjadi.",
+      "examples": [
+        {
+          "jp": "<ruby>運動<rt>うんどう</rt></ruby>し<b style='color:#FF4500;'>たあとで</b>、シャワーを<ruby>浴<rt>あ</rt></ruby>びます。",
+          "romaji": "Undou shita ato de, shawaa o abimasu.",
+          "id": "Setelah berolahraga, saya mandi."
+        },
+        {
+          "jp": "ごはんを<ruby>食<rt>た</rt></ruby>べ<b style='color:#FF4500;'>たあとで</b>、すぐに<ruby>寝<rt>ね</rt></ruby>てはいけません。",
+          "romaji": "Gohan o tabeta ato de, sugu ni nete wa ikemasen.",
+          "id": "Setelah makan, tidak boleh langsung tidur."
+        },
+        {
+          "jp": "コンサートが<ruby>終<rt>お</rt></ruby>わっ<b style='color:#FF4500;'>たあとで</b>、レストランで<ruby>食事<rt>しょくじ</rt></ruby>しました。",
+          "romaji": "Konsaato ga owatta ato de, resutoran de shokuji shimashita.",
+          "id": "Setelah konser selesai, kami makan di restoran."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "type": "N5",
+  "day": 25,
+  "kanji": [],
+  "vocabulary": [
+    {
+      "vocab": "エアコン",
+      "reading_meaning": "eakon (AC, pendingin ruangan)",
+      "type": "🔵",
+      "mnemonic": "Kata serapan dari bahasa Inggris 'air conditioner'.",
+      "example": { "jp": "<ruby>暑<rt>あつ</rt></ruby>いですから、エアコンをつけてください。", "romaji": "Atsui desu kara, eakon o tsukete kudasai.", "id": "Karena panas, tolong nyalakan AC." }
+    },
+    {
+      "vocab": "パスポート",
+      "reading_meaning": "pasupooto (paspor)",
+      "type": "🔵",
+      "mnemonic": "Kata serapan dari bahasa Inggris 'passport'.",
+      "example": { "jp": "<ruby>空港<rt>くうこう</rt></ruby>でパスポートを<ruby>見<rt>み</rt></ruby>せなければなりません。", "romaji": "Kuukou de pasupooto o misenakereba narimasen.", "id": "Di bandara, harus memperlihatkan paspor." }
+    },
+    {
+      "vocab": "ニュース",
+      "reading_meaning": "nyuusu (berita)",
+      "type": "🔵",
+      "mnemonic": "Kata serapan dari bahasa Inggris 'news'.",
+      "example": { "jp": "<ruby>毎晩<rt>まいばん</rt></ruby>、テレビでニュースを<ruby>見<rt>み</rt></ruby>ます。", "romaji": "Maiban, terebi de nyuusu o mimasu.", "id": "Setiap malam saya menonton berita di TV." }
+    },
+    {
+      "vocab": "スポーツ",
+      "reading_meaning": "supootsu (olahraga)",
+      "type": "🔵",
+      "mnemonic": "Kata serapan dari bahasa Inggris 'sports'.",
+      "example": { "jp": "どんなスポーツが<ruby>好<rt>す</rt></ruby>きですか。", "romaji": "Donna supootsu ga suki desu ka.", "id": "Olahraga apa yang kamu suka?" }
+    },
+    {
+      "vocab": "デート",
+      "reading_meaning": "deeto (kencan)",
+      "type": "🔵",
+      "mnemonic": "Kata serapan dari bahasa Inggris 'date'.",
+      "example": { "jp": "<ruby>週末<rt>しゅうまつ</rt></ruby>、<ruby>彼女<rt>かのじょ</rt></ruby>とデートします。", "romaji": "Shuumatsu, kanojo to deeto shimasu.", "id": "Akhir pekan, saya akan berkencan dengan pacar saya." }
+    },
+    {
+      "vocab": "お<ruby>見合<rt>みあ</rt></ruby>い",
+      "reading_meaning": "omiai (perjodohan formal)",
+      "type": "🔵",
+      "mnemonic": "Gabungan dari 'melihat' (見) dan 'bertemu' (会い). Pertemuan untuk saling melihat.",
+      "example": { "jp": "<ruby>姉<rt>あね</rt></ruby>はお<ruby>見合<rt>みあ</rt></ruby>いで<ruby>結婚<rt>けっこん</rt></ruby>しました。", "romaji": "Ane wa omiai de kekkon shimashita.", "id": "Kakak perempuan saya menikah melalui perjodohan." }
+    },
+    {
+      "vocab": "アパート",
+      "reading_meaning": "apaato (apartemen)",
+      "type": "🔵",
+      "mnemonic": "Kata serapan dari bahasa Inggris 'apartment'.",
+      "example": { "jp": "わたしは<ruby>駅<rt>えき</rt></ruby>の<ruby>近<rt>ちか</rt></ruby>くのアパートに<ruby>住<rt>す</rt></ruby>んでいます。", "romaji": "Watashi wa eki no chikaku no apaato ni sunde imasu.", "id": "Saya tinggal di apartemen dekat stasiun." }
+    },
+    {
+      "vocab": "エレベーター",
+      "reading_meaning": "erebeetaa (lift)",
+      "type": "🔵",
+      "mnemonic": "Kata serapan dari bahasa Inggris 'elevator'.",
+      "example": { "jp": "エレベーターはあちらです。", "romaji": "Erebeetaa wa achira desu.", "id": "Lift ada di sebelah sana." }
+    },
+    {
+      "vocab": "ギター",
+      "reading_meaning": "gitaa (gitar)",
+      "type": "🔵",
+      "mnemonic": "Kata serapan dari bahasa Inggris 'guitar'.",
+      "example": { "jp": "ギターを<ruby>弾<rt>ひ</rt></ruby>くことができますか。", "romaji": "Gitaa o hiku koto ga dekimasu ka.", "id": "Apakah kamu bisa bermain gitar?" }
+    },
+    {
+      "vocab": "つけます",
+      "reading_meaning": "tsukemasu (menyalakan)",
+      "type": "🟢",
+      "mnemonic": "'TSU-dah, KE-ringatannya dilap, MAS, ayo NYALAKAN kipasnya'.",
+      "example": { "jp": "テレビをつけてもいいですか。", "romaji": "Terebi o tsukete mo ii desu ka.", "id": "Bolehkah saya menyalakan TV?" }
+    },
+    {
+      "vocab": "けします",
+      "reading_meaning": "keshimasu (mematikan, menghapus)",
+      "type": "🟢",
+      "mnemonic": "'KE-salahan ini harus diHAPUS, MAS'.",
+      "example": { "jp": "<ruby>部屋<rt>へや</rt></ruby>を<ruby>出<rt>で</rt></ruby>る<ruby>前<rt>まえ</rt></ruby>に、<ruby>電気<rt>でんき</rt></ruby>をけしてください。", "romaji": "Heya o deru mae ni, denki o keshite kudasai.", "id": "Sebelum keluar kamar, tolong matikan lampu." }
+    },
+    {
+      "vocab": "<ruby>と<rt>　</rt></ruby>めます",
+      "reading_meaning": "tomemasu (menghentikan, memarkir)",
+      "type": "🟢",
+      "mnemonic": "Bayangkan 'TO-long, MAS, HENTIKAN mobilnya di sini'.",
+      "example": { "jp": "ここに<ruby>車<rt>くるま</rt></ruby>をとめないでください。", "romaji": "Koko ni kuruma o tomenaide kudasai.", "id": "Tolong jangan memarkir mobil di sini." }
+    },
+    {
+      "vocab": "<ruby>曲<rt>ま</rt></ruby>がります",
+      "reading_meaning": "magarimasu (berbelok)",
+      "type": "🟢",
+      "mnemonic": "'MA-u GAR-is lurus atau BELOK, mas?'.",
+      "example": { "jp": "つぎの<ruby>角<rt>かど</rt></ruby>を<ruby>右<rt>みぎ</rt></ruby>に<ruby>曲<rt>ま</rt></ruby>がってください。", "romaji": "Tsugi no kado o migi ni magatte kudasai.", "id": "Tolong berbelok ke kanan di tikungan berikutnya." }
+    },
+    {
+      "vocab": "<ruby>渡<rt>わた</rt></ruby>ります",
+      "reading_meaning": "watarimasu (menyeberang)",
+      "type": "🟢",
+      "mnemonic": "'WATA-kmu harus kuat untuk MENYEBERANG jembatan ini, Ris'.",
+      "example": { "jp": "はしを<ruby>渡<rt>わた</rt></ruby>ります。", "romaji": "Hashi o watarimasu.", "id": "Saya menyeberang jembatan." }
+    },
+    {
+      "vocab": "こわい",
+      "reading_meaning": "kowai (takut, menakutkan)",
+      "type": "🟠",
+      "mnemonic": "'KO-k WAI-risnya seram, aku TAKUT'.",
+      "example": { "jp": "わたしは<ruby>高<rt>たか</rt></ruby>い<ruby>所<rt>ところ</rt></ruby>がこわいです。", "romaji": "Watashi wa takai tokoro ga kowai desu.", "id": "Saya takut ketinggian (tempat yang tinggi)." }
+    },
+    {
+      "vocab": "さびしい",
+      "reading_meaning": "sabishii (kesepian)",
+      "type": "🟠",
+      "mnemonic": "'SA-mpai BI-kin SHII-dia menangis karena KESEPIAN'.",
+      "example": { "jp": "<ruby>友<rt>とも</rt></ruby>だちがいないと、さびしいです。", "romaji": "Tomodachi ga inai to, sabishii desu.", "id": "Kalau tidak ada teman, saya merasa kesepian." }
+    },
+    {
+      "vocab": "いたい",
+      "reading_meaning": "itai (sakit - rasa)",
+      "type": "🟠",
+      "mnemonic": "'I-TAI-nya kena paku, SAKIT'.",
+      "example": { "jp": "きのうから<ruby>歯<rt>は</rt></ruby>がいたいです。", "romaji": "Kinou kara ha ga itai desu.", "id": "Gigi saya sakit sejak kemarin." }
+    },
+    {
+      "vocab": "いちばん",
+      "reading_meaning": "ichiban (paling, nomor satu)",
+      "type": "🔵",
+      "mnemonic": "Gabungan dari 'satu' (一) dan 'giliran' (番). Giliran nomor satu, yang paling.",
+      "example": { "jp": "クラスでだれがいちばん<ruby>背<rt>せ</rt></ruby>が<ruby>高<rt>たか</rt></ruby>いですか。", "romaji": "Kurasu de dare ga ichiban se ga takai desu ka.", "id": "Di kelas, siapa yang paling tinggi?" }
+    },
+    {
+      "vocab": "みんなで",
+      "reading_meaning": "minna de (bersama-sama semua)",
+      "type": "🔵",
+      "mnemonic": "Gabungan dari 'semua' (みんな) dan partikel 'dengan' (で).",
+      "example": { "jp": "みんなで<ruby>写真<rt>しゃしん</rt></ruby>をとりましょう。", "romaji": "Minna de shashin o torimashou.", "id": "Ayo kita semua berfoto bersama." }
+    },
+    {
+      "vocab": "まっすぐ",
+      "reading_meaning": "massugu (lurus)",
+      "type": "🔵",
+      "mnemonic": "'MAS-uk, SU-dah, jalan LURUS saja'.",
+      "example": { "jp": "この<ruby>道<rt>みち</rt></ruby>をまっすぐ<ruby>行<rt>い</rt></ruby>くと、<ruby>駅<rt>えき</rt></ruby>があります。", "romaji": "Kono michi o massugu iku to, eki ga arimasu.", "id": "Kalau lurus terus di jalan ini, ada stasiun." }
+    },
+    {
+      "vocab": "ゆっくり",
+      "reading_meaning": "yukkuri (pelan-pelan)",
+      "type": "🔵",
+      "mnemonic": "'YUK... KURI-ling PELAN-PELAN saja, jangan terburu-buru'.",
+      "example": { "jp": "もっとゆっくり<ruby>話<rt>はな</rt></ruby>してください。", "romaji": "Motto yukkuri hanashite kudasai.", "id": "Tolong berbicara lebih pelan lagi." }
+    },
+    {
+      "vocab": "もう<ruby>一度<rt>いちど</rt></ruby>",
+      "reading_meaning": "mou ichido (sekali lagi)",
+      "type": "🔵",
+      "mnemonic": "Gabungan dari 'lagi' (もう) dan 'satu kali' (一度).",
+      "example": { "jp": "もう<ruby>一度<rt>いちど</rt></ruby><ruby>お願<rt>ねが</rt></ruby>いします。", "romaji": "Mou ichido onegai shimasu.", "id": "Tolong sekali lagi." }
+    },
+    {
+      "vocab": "たぶん",
+      "reading_meaning": "tabun (mungkin)",
+      "type": "🔵",
+      "mnemonic": "Bayangkan 'TA-pi BUN-ga ini MUNGKIN layu besok'.",
+      "example": { "jp": "たぶん、あしたは<ruby>雨<rt>あめ</rt></ruby>でしょう。", "romaji": "Tabun, ashita wa ame deshou.", "id": "Mungkin, besok akan hujan." }
+    },
+    {
+      "vocab": "<ruby>帽子<rt>ぼうし</rt></ruby>",
+      "reading_meaning": "boushi (topi)",
+      "type": "🔵",
+      "mnemonic": "Bayangkan 'BOU-s SHI-apa yang pakai TOPI itu?'.",
+      "example": { "jp": "<ruby>寒<rt>さむ</rt></ruby>いですから、<ruby>帽子<rt>ぼうし</rt></ruby>をかぶります。", "romaji": "Samui desu kara, boushi o kaburimasu.", "id": "Karena dingin, saya memakai topi." }
+    },
+    {
+      "vocab": "めがね",
+      "reading_meaning": "megane (kacamata)",
+      "type": "🔵",
+      "mnemonic": "Bayangkan 'MEGA-h NE-onnya, sampai harus pakai KACAMATA'.",
+      "example": { "jp": "わたしはしごとをするとき、めがねをかけます。", "romaji": "Watashi wa shigoto o suru toki, megane o kakemasu.", "id": "Saya memakai kacamata ketika bekerja." }
+    },
+    {
+      "vocab": "<ruby>洋服<rt>ようふく</rt></ruby>",
+      "reading_meaning": "youfuku (pakaian gaya barat)",
+      "type": "🔵",
+      "mnemonic": "Kanji 'lautan/barat' (洋) + 'pakaian' (服).",
+      "example": { "jp": "あの<ruby>店<rt>みせ</rt></ruby>で<ruby>洋服<rt>ようふく</rt></ruby>を<ruby>買<rt>か</rt></ruby>いました。", "romaji": "Ano mise de youfuku o kaimashita.", "id": "Saya membeli pakaian (gaya barat) di toko itu." }
+    },
+    {
+      "vocab": "コート",
+      "reading_meaning": "kooto (mantel, jas)",
+      "type": "🔵",
+      "mnemonic": "Kata serapan dari bahasa Inggris 'coat'.",
+      "example": { "jp": "<ruby>寒<rt>さむ</rt></ruby>いので、コートを<ruby>着<rt>き</rt></ruby>ます。", "romaji": "Samui node, kooto o kimasu.", "id": "Karena dingin, saya memakai mantel." }
+    },
+    {
+      "vocab": "セーター",
+      "reading_meaning": "seetaa (sweater)",
+      "type": "🔵",
+      "mnemonic": "Kata serapan dari bahasa Inggris 'sweater'.",
+      "example": { "jp": "このセーターは<ruby>暖<rt>あたた</rt></ruby>かいです。", "romaji": "Kono seetaa wa atatakai desu.", "id": "Sweater ini hangat." }
+    },
+    {
+      "vocab": "<ruby>問題<rt>もんだい</rt></ruby>",
+      "reading_meaning": "mondai (soal, masalah)",
+      "type": "🔵",
+      "mnemonic": "'MON-ster DAY-a, banyak sekali MASALAH hari ini'.",
+      "example": { "jp": "この<ruby>問題<rt>もんだい</rt></ruby>の<ruby>答<rt>こた</rt></ruby>えがわかりますか。", "romaji": "Kono mondai no kotae ga wakarimasu ka.", "id": "Apakah Anda tahu jawaban dari soal ini?" }
+    },
+    {
+      "vocab": "もちろん",
+      "reading_meaning": "mochiron (tentu saja)",
+      "type": "🔵",
+      "mnemonic": "Bayangkan 'MO-bil CHI-bi ini, RON-da malam? TENTU SAJA bisa!'.",
+      "example": { "jp": "A: パーティーに<ruby>来<rt>き</rt></ruby>ますか。 B: ええ、もちろん。", "romaji": "A: Paathii ni kimasu ka. B: Ee, mochiron.", "id": "A: Apakah kamu datang ke pesta? B: Ya, tentu saja." }
+    }
+  ],
+  "grammar": []
+}
