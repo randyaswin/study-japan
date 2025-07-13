@@ -126,8 +126,8 @@ export default async function DailySprintPage({ params }: { params: Promise<{ da
             <div className="container mx-auto p-4 sm:p-8 font-sans">
                 {/* Back to Home navigation */}
                 <div className="mb-4 flex justify-start">
-                    <Link href="/" className="inline-flex items-center gap-2 px-4 py-2 rounded bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200 font-semibold hover:bg-gray-300 dark:hover:bg-gray-600 transition">
-                        <span>←</span> Back to Home
+                    <Link href="/n5" className="inline-flex items-center gap-2 px-4 py-2 rounded bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200 font-semibold hover:bg-gray-300 dark:hover:bg-gray-600 transition">
+                        <span>←</span> Back
                     </Link>
                 </div>
                 <Head>
@@ -153,7 +153,6 @@ export default async function DailySprintPage({ params }: { params: Promise<{ da
 
                         const currentDay = Number(day);
                         const total = days.length;
-                        const currentIdx = days.indexOf(currentDay);
 
                         // Always show first, current, last
                         // Show up to 2 before and after current (if available)
@@ -188,7 +187,7 @@ export default async function DailySprintPage({ params }: { params: Promise<{ da
                             ) : (
                                 <a
                                     key={n}
-                                    href={`/${n}`}
+                                    href={`/n5/${n}`}
                                     className={`px-4 py-2 rounded font-bold border ${
                                         Number(day) === n
                                             ? 'bg-orange-500 text-white border-orange-500'

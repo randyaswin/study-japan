@@ -66,23 +66,13 @@ export default function HomePage() {
                         <span className="block text-2xl font-bold text-blue-500 dark:text-blue-300 mb-2">Katakana</span>
                         <span className="text-gray-700 dark:text-gray-300 text-sm">Jembatan Keledai & Mnemonic</span>
                     </Link>
-                    {days.length === 0 ? (
-                        <div className="text-gray-500 dark:text-gray-400">Belum ada data hari tersedia.</div>
-                    ) : (
-                        days
-                            .slice()
-                            .sort((a, b) => Number(a) - Number(b))
-                            .map(day => (
-                                <Link
-                                    key={day}
-                                    href={`/${day}`}
-                                    className="block bg-white dark:bg-gray-800 rounded-xl shadow-lg px-8 py-6 min-w-[160px] text-center border-4 border-orange-200 dark:border-orange-600 hover:border-orange-400 dark:hover:border-orange-500 hover:bg-orange-50 dark:hover:bg-gray-700 transition-all"
-                                >
-                                    <span className="block text-2xl font-bold text-orange-500 dark:text-orange-400 mb-2">Hari {day}</span>
-                                    <span className="text-gray-700 dark:text-gray-300 text-sm">Sprint JLPT</span>
-                                </Link>
-                            ))
-                    )}
+                    <Link
+                        href="/n5"
+                        className="block bg-yellow-50 dark:bg-yellow-900 rounded-xl shadow-lg px-8 py-6 min-w-[160px] text-center border-4 border-yellow-200 dark:border-yellow-600 hover:border-yellow-400 dark:hover:border-yellow-500 hover:bg-yellow-100 dark:hover:bg-yellow-800 transition-all"
+                    >
+                        <span className="block text-2xl font-bold text-yellow-600 dark:text-yellow-300 mb-2">JLPT N5</span>
+                        <span className="text-gray-700 dark:text-gray-300 text-sm">Sprint Harian JLPT N5</span>
+                    </Link>
                 </div>
             </main>
             <footer className="text-center text-xs text-gray-400 dark:text-gray-500 py-4">&copy; {new Date().getFullYear()} Study Japan Journey</footer>
