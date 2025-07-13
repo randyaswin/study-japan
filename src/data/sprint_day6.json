@@ -4,7 +4,9 @@
   "kanji": [
     {
       "kanji": "上",
-      "reading_meaning": "<b>On:</b> じょう (jou)<br><b>Kun:</b> うえ (ue), あ-がる (a-garu)<br><b>Arti:</b> Atas, Naik",
+      "onyomi": "じょう (jou)",
+      "kunyomi": "うえ (ue), あ-がる (a-garu)",
+      "arti": "Atas, Naik",
       "mnemonic": "Garis horizontal bawah melambangkan sebuah permukaan (seperti meja atau tanah), dan dua goresan di atasnya menunjuk ke arah 'atas'.",
       "example": {
         "jp": "つくえの<ruby>上<rt>うえ</rt></ruby>に<ruby>本<rt>ほん</rt></ruby>があります。",
@@ -14,7 +16,9 @@
     },
     {
       "kanji": "下",
-      "reading_meaning": "<b>On:</b> か (ka), げ (ge)<br><b>Kun:</b> した (shita), さ-がる (sa-garu)<br><b>Arti:</b> Bawah, Turun",
+      "onyomi": "か (ka), げ (ge)",
+      "kunyomi": "した (shita), さ-がる (sa-garu)",
+      "arti": "Bawah, Turun",
       "mnemonic": "Ini adalah kebalikan dari kanji 上. Garis horizontal atas adalah permukaan, dan goresan di bawahnya menunjuk ke arah 'bawah'.",
       "example": {
         "jp": "いすの<ruby>下<rt>した</rt></ruby>にねこがいます。",
@@ -24,7 +28,9 @@
     },
     {
       "kanji": "中",
-      "reading_meaning": "<b>On:</b> ちゅう (chuu)<br><b>Kun:</b> なか (naka)<br><b>Arti:</b> Dalam, Tengah",
+      "onyomi": "ちゅう (chuu)",
+      "kunyomi": "なか (naka)",
+      "arti": "Dalam, Tengah",
       "mnemonic": "Sangat mudah, ini adalah gambar sebuah kotak (口) dengan garis vertikal yang membelahnya tepat di 'tengah' atau menunjukkan sesuatu ada di 'dalam'.",
       "example": {
         "jp": "<ruby>箱<rt>はこ</rt></ruby>の<ruby>中<rt>なか</rt></ruby>に<ruby>何<rt>なに</rt></ruby>がありますか。",
@@ -34,7 +40,9 @@
     },
     {
       "kanji": "前",
-      "reading_meaning": "<b>On:</b> ぜん (zen)<br><b>Kun:</b> まえ (mae)<br><b>Arti:</b> Depan, Sebelum",
+      "onyomi": "ぜん (zen)",
+      "kunyomi": "まえ (mae)",
+      "arti": "Depan, Sebelum",
       "mnemonic": "Bayangkan Anda sedang bergerak maju (bagian atas seperti tanduk) sambil membawa pisau (刂) dan melewati bulan (月). Bergerak ke 'depan' bulan.",
       "example": {
         "jp": "<ruby>駅<rt>えき</rt></ruby>の<ruby>前<rt>まえ</rt></ruby>で<ruby>待<rt>ま</rt></ruby>っています。",
@@ -44,7 +52,9 @@
     },
     {
       "kanji": "後",
-      "reading_meaning": "<b>On:</b> ご (go), こう (kou)<br><b>Kun:</b> うしろ (ushiro), あと (ato)<br><b>Arti:</b> Belakang, Setelah",
+      "onyomi": "ご (go), こう (kou)",
+      "kunyomi": "うしろ (ushiro), あと (ato)",
+      "arti": "Belakang, Setelah",
       "mnemonic": "Bagian kiri (彳) berarti 'berjalan'. Jadi bayangkan seseorang berjalan 'di belakang' atau datang 'setelah' yang lain.",
       "example": {
         "jp": "<ruby>私<rt>わたし</rt></ruby>の<ruby>後<rt>うし</rt></ruby>ろに<ruby>誰<rt>だれ</rt></ruby>かいますか。",

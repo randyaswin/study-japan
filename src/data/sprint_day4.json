@@ -4,7 +4,9 @@
   "kanji": [
     {
       "kanji": "千",
-      "reading_meaning": "<b>On:</b> せん (sen)<br><b>Kun:</b> ち (chi)<br><b>Arti:</b> Seribu",
+      "onyomi": "せん (sen)",
+      "kunyomi": "ち (chi)",
+      "arti": "Seribu",
       "mnemonic": "Kanji ini terlihat seperti kanji 'sepuluh' (十) dengan tambahan goresan miring (ノ) di atasnya. Bayangkan sebagai 'sepuluh' yang dinaikkan pangkatnya menjadi 'seribu'.",
       "example": {
         "jp": "このかばんは<ruby>三千円<rt>さんぜんえん</rt></ruby>です。",
@@ -14,7 +16,9 @@
     },
     {
       "kanji": "万",
-      "reading_meaning": "<b>On:</b> まん (man), ばん (ban)<br><b>Kun:</b> -<br><b>Arti:</b> Sepuluh Ribu",
+      "onyomi": "まん (man), ばん (ban)",
+      "kunyomi": "-",
+      "arti": "Sepuluh Ribu",
       "mnemonic": "Terdiri dari satu (一) dan sebuah kotak. Bayangkan Anda memiliki satu kotak penuh berisi uang senilai sepuluh ribu.",
       "example": {
         "jp": "これは<ruby>一万円<rt>いちまんえん</rt></ruby>です。",
@@ -24,7 +28,9 @@
     },
     {
       "kanji": "月",
-      "reading_meaning": "<b>On:</b> げつ (getsu), がつ (gatsu)<br><b>Kun:</b> つき (tsuki)<br><b>Arti:</b> Bulan, Hari Senin",
+      "onyomi": "げつ (getsu), がつ (gatsu)",
+      "kunyomi": "つき (tsuki)",
+      "arti": "Bulan, Hari Senin",
       "mnemonic": "Bentuknya menyerupai bulan sabit. Dua garis di dalamnya bisa dibayangkan sebagai kawah atau bayangan di permukaan bulan.",
       "example": {
         "jp": "<ruby>今日<rt>きょう</rt></ruby>は<ruby>月曜日<rt>げつようび</rt></ruby>です。",
@@ -34,7 +40,9 @@
     },
     {
       "kanji": "火",
-      "reading_meaning": "<b>On:</b> か (ka)<br><b>Kun:</b> ひ (hi), -び (-bi)<br><b>Arti:</b> Api, Hari Selasa",
+      "onyomi": "か (ka)",
+      "kunyomi": "ひ (hi), -び (-bi)",
+      "arti": "Api, Hari Selasa",
       "mnemonic": "Mirip dengan kanji 'orang' (人) dengan tambahan dua percikan di sampingnya. Bayangkan seseorang yang dikelilingi oleh kobaran api.",
       "example": {
         "jp": "<ruby>火曜日<rt>かようび</rt></ruby>に<ruby>会議<rt>かいぎ</rt></ruby>があります。",
@@ -44,7 +52,9 @@
     },
     {
       "kanji": "水",
-      "reading_meaning": "<b>On:</b> すい (sui)<br><b>Kun:</b> みず (mizu)<br><b>Arti:</b> Air, Hari Rabu",
+      "onyomi": "すい (sui)",
+      "kunyomi": "みず (mizu)",
+      "arti": "Air, Hari Rabu",
       "mnemonic": "Garis vertikal di tengah melambangkan aliran sungai, dan goresan di sampingnya adalah percikan air.",
       "example": {
         "jp": "<ruby>水<rt>みず</rt></ruby>を<ruby>飲<rt>の</rt></ruby>みます。",

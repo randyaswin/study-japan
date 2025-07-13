@@ -4,7 +4,9 @@
   "kanji": [
     {
       "kanji": "私",
-      "reading_meaning": "<b>On:</b> し (shi)<br><b>Kun:</b> わたくし (watakushi), わたし (watashi)<br><b>Arti:</b> Saya, Privat",
+      "onyomi": "し (shi)",
+      "kunyomi": "わたくし (watakushi), わたし (watashi)",
+      "arti": "Saya, Privat",
       "mnemonic": "Kanji ini terdiri dari radikal 'padi' (禾) dan 'pribadi' (ム). Bayangkan padi yang ditanam ini adalah milik 'pribadi' atau milik 'saya'.",
       "example": {
         "jp": "<ruby>私<rt>わたし</rt></ruby>はインドネシア<ruby>人<rt>じん</rt></ruby>です。",
@@ -14,7 +16,9 @@
     },
     {
       "kanji": "男",
-      "reading_meaning": "<b>On:</b> だん (dan), なん (nan)<br><b>Kun:</b> おとこ (otoko)<br><b>Arti:</b> Pria, Laki-laki",
+      "onyomi": "だん (dan), なん (nan)",
+      "kunyomi": "おとこ (otoko)",
+      "arti": "Pria, Laki-laki",
       "mnemonic": "Gabungan dari kanji 'sawah' (田) dan 'kekuatan' (力). Secara tradisional, 'pria' adalah orang yang menggunakan kekuatannya untuk bekerja di sawah.",
       "example": {
         "jp": "あの<ruby>男<rt>おとこ</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>は<ruby>誰<rt>だれ</rt></ruby>ですか。",
@@ -24,7 +28,9 @@
     },
     {
       "kanji": "女",
-      "reading_meaning": "<b>On:</b> じょ (jo), にょ (nyo)<br><b>Kun:</b> おんな (onna), め (me)<br><b>Arti:</b> Wanita, Perempuan",
+      "onyomi": "じょ (jo), にょ (nyo)",
+      "kunyomi": "おんな (onna), め (me)",
+      "arti": "Wanita, Perempuan",
       "mnemonic": "Ini adalah gambar piktograf dari seorang 'wanita' yang sedang duduk berlutut dengan anggun, sebuah postur tradisional.",
       "example": {
         "jp": "このクラスに<ruby>女<rt>おんな</rt></ruby>の<ruby>子<rt>こ</rt></ruby>は<ruby>五人<rt>ごにん</rt></ruby>います。",
@@ -34,7 +40,9 @@
     },
     {
       "kanji": "子",
-      "reading_meaning": "<b>On:</b> し (shi), す (su)<br><b>Kun:</b> こ (ko)<br><b>Arti:</b> Anak",
+      "onyomi": "し (shi), す (su)",
+      "kunyomi": "こ (ko)",
+      "arti": "Anak",
       "mnemonic": "Gambar sederhana dari seorang 'anak' kecil dengan kepala besar dan tangan yang terentang, seolah-olah ingin digendong.",
       "example": {
         "jp": "<ruby>子<rt>こ</rt></ruby>どもたちは<ruby>公園<rt>こうえん</rt></ruby>で<ruby>遊<rt>あそ</rt></ruby>んでいます。",
@@ -44,7 +52,9 @@
     },
     {
       "kanji": "友",
-      "reading_meaning": "<b>On:</b> ゆう (yuu)<br><b>Kun:</b> とも (tomo)<br><b>Arti:</b> Teman",
+      "onyomi": "ゆう (yuu)",
+      "kunyomi": "とも (tomo)",
+      "arti": "Teman",
       "mnemonic": "Kanji ini terlihat seperti dua tangan (dua goresan atas) yang saling menggenggam atau menopang. Itulah arti dari seorang 'teman'.",
       "example": {
         "jp": "<ruby>彼<rt>かれ</rt></ruby>は<ruby>私<rt>わたし</rt></ruby>の<ruby>親友<rt>しんゆう</rt></ruby>です。",

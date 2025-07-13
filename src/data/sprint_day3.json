@@ -4,7 +4,9 @@
   "kanji": [
     {
       "kanji": "七",
-      "reading_meaning": "<b>On:</b> しち (shichi)<br><b>Kun:</b> なな (nana), なな-つ (nanatsu)<br><b>Arti:</b> Tujuh",
+      "onyomi": "しち (shichi)",
+      "kunyomi": "なな (nana), なな-つ (nanatsu)",
+      "arti": "Tujuh",
       "mnemonic": "Kanji ini mirip dengan angka 7 yang ditulis terbalik. Goresan pertama memotong goresan kedua.",
       "example": {
         "jp": "<ruby>七月<rt>しちがつ</rt></ruby>は<ruby>暑<rt>あつ</rt></ruby>いです。",
@@ -14,7 +16,9 @@
     },
     {
       "kanji": "八",
-      "reading_meaning": "<b>On:</b> はち (hachi)<br><b>Kun:</b> やっつ (yattsu), よう (you)<br><b>Arti:</b> Delapan",
+      "onyomi": "はち (hachi)",
+      "kunyomi": "やっつ (yattsu), よう (you)",
+      "arti": "Delapan",
       "mnemonic": "Bentuknya seperti kumis atau dua garis yang menyebar ke bawah, melambangkan pembagian atau keberuntungan. Angka 8 dianggap angka baik di Jepang.",
       "example": {
         "jp": "たこは<ruby>足<rt>あし</rt></ruby>が<ruby>八本<rt>はっぽん</rt></ruby>あります。",
@@ -24,7 +28,9 @@
     },
     {
       "kanji": "九",
-      "reading_meaning": "<b>On:</b> きゅう (kyuu), く (ku)<br><b>Kun:</b> ここの-つ (kokonotsu)<br><b>Arti:</b> Sembilan",
+      "onyomi": "きゅう (kyuu), く (ku)",
+      "kunyomi": "ここの-つ (kokonotsu)",
+      "arti": "Sembilan",
       "mnemonic": "Kanji ini terlihat seperti orang yang membungkuk atau sebuah kail pancing. Bayangkan Anda perlu membungkuk sembilan kali atau memancing sembilan ikan.",
       "example": {
         "jp": "<ruby>今<rt>いま</rt></ruby>、<ruby>九時<rt>くじ</rt></ruby>です。",
@@ -34,7 +40,9 @@
     },
     {
       "kanji": "十",
-      "reading_meaning": "<b>On:</b> じゅう (juu)<br><b>Kun:</b> とお (too)<br><b>Arti:</b> Sepuluh",
+      "onyomi": "じゅう (juu)",
+      "kunyomi": "とお (too)",
+      "arti": "Sepuluh",
       "mnemonic": "Sangat mudah diingat, bentuknya seperti tanda tambah (+). Satu garis horizontal dan satu garis vertikal.",
       "example": {
         "jp": "<ruby>十月<rt>じゅうがつ</rt></ruby>に<ruby>祭<rt>まつ</rt></ruby>りがあります。",
@@ -44,7 +52,9 @@
     },
     {
       "kanji": "百",
-      "reading_meaning": "<b>On:</b> ひゃく (hyaku)<br><b>Kun:</b> もも (momo)<br><b>Arti:</b> Seratus",
+      "onyomi": "ひゃく (hyaku)",
+      "kunyomi": "もも (momo)",
+      "arti": "Seratus",
       "mnemonic": "Kanji ini adalah kanji 'putih' (白) dengan satu garis (一) di atasnya. Bayangkan Anda punya seratus kemeja putih, tapi satu di antaranya berbeda.",
       "example": {
         "jp": "このTシャツは<ruby>三百円<rt>さんびゃくえん</rt></ruby>です。",

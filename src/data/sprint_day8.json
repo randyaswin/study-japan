@@ -4,7 +4,9 @@
   "kanji": [
     {
       "kanji": "右",
-      "reading_meaning": "<b>On:</b> う (u), ゆう (yuu)<br><b>Kun:</b> みぎ (migi)<br><b>Arti:</b> Kanan",
+      "onyomi": "う (u), ゆう (yuu)",
+      "kunyomi": "みぎ (migi)",
+      "arti": "Kanan",
       "mnemonic": "Kanji ini memiliki bentuk 'mulut' (口) di bawah. Bayangkan Anda makan dengan tangan 'kanan', jadi tangan 'kanan' (ナ) bergerak ke arah mulut (口).",
       "example": {
         "jp": "はしを<ruby>右手<rt>みぎて</rt></ruby>で<ruby>持<rt>も</rt></ruby>ちます。",
@@ -14,7 +16,9 @@
     },
     {
       "kanji": "左",
-      "reading_meaning": "<b>On:</b> さ (sa)<br><b>Kun:</b> ひだり (hidari)<br><b>Arti:</b> Kiri",
+      "onyomi": "さ (sa)",
+      "kunyomi": "ひだり (hidari)",
+      "arti": "Kiri",
       "mnemonic": "Kanji ini memiliki bentuk 'penggaris' atau 'alat kerja' (工) di bawah. Bayangkan Anda memegang alat kerja dengan tangan 'kiri' Anda.",
       "example": {
         "jp": "<ruby>次<rt>つぎ</rt></ruby>の<ruby>角<rt>かど</rt></ruby>を<ruby>左<rt>ひだり</rt></ruby>に<ruby>曲<rt>ま</rt></ruby>がってください。",
@@ -24,7 +28,9 @@
     },
     {
       "kanji": "東",
-      "reading_meaning": "<b>On:</b> とう (tou)<br><b>Kun:</b> ひがし (higashi)<br><b>Arti:</b> Timur",
+      "onyomi": "とう (tou)",
+      "kunyomi": "ひがし (higashi)",
+      "arti": "Timur",
       "mnemonic": "Ini adalah gambar matahari (日) yang terbit dari balik pohon (木). Matahari terbit dari arah 'timur'.",
       "example": {
         "jp": "<ruby>東京<rt>とうきょう</rt></ruby>は<ruby>日本<rt>にほん</rt></ruby>の<ruby>東<rt>ひがし</rt></ruby>にあります。",
@@ -34,7 +40,9 @@
     },
     {
       "kanji": "西",
-      "reading_meaning": "<b>On:</b> せい (sei), さい (sai)<br><b>Kun:</b> にし (nishi)<br><b>Arti:</b> Barat",
+      "onyomi": "せい (sei), さい (sai)",
+      "kunyomi": "にし (nishi)",
+      "arti": "Barat",
       "mnemonic": "Kanji ini terlihat seperti keranjang. Bayangkan matahari terbenam di 'barat' dan cahayanya masuk ke dalam sebuah keranjang.",
       "example": {
         "jp": "<ruby>太陽<rt>たいよう</rt></ruby>は<ruby>西<rt>にし</rt></ruby>に<ruby>沈<rt>しず</rt></ruby>みます。",
@@ -44,7 +52,9 @@
     },
     {
       "kanji": "北",
-      "reading_meaning": "<b>On:</b> ほく (hoku)<br><b>Kun:</b> きた (kita)<br><b>Arti:</b> Utara",
+      "onyomi": "ほく (hoku)",
+      "kunyomi": "きた (kita)",
+      "arti": "Utara",
       "mnemonic": "Dua orang (匕) duduk saling membelakangi. Di daerah 'utara' yang dingin, orang-orang duduk saling membelakangi untuk menjaga kehangatan.",
       "example": {
         "jp": "<ruby>北海道<rt>ほっかいどう</rt></ruby>は<ruby>日本<rt>にほん</rt></ruby>の<ruby>北<rt>きた</rt></ruby>にあります。",

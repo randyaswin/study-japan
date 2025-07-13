@@ -54,7 +54,9 @@ interface ExampleObj {
 
 interface KanjiItem {
     kanji: string;
-    reading_meaning: string;
+    onyomi: string;
+    kunyomi: string;
+    arti: string;
     mnemonic: string;
     example: ExampleObj;
 }
@@ -74,6 +76,7 @@ interface GrammarVisualLabel {
 
 interface GrammarItem {
     pattern: string;
+    short_explanation?: string; // Penjelasan singkat
     explanation: string;
     visual?: string; // Tambahkan field visual opsional
     visualLabels?: GrammarVisualLabel[];
@@ -121,7 +124,7 @@ export default async function DailySprintPage({ params }: { params: Promise<{ da
         <div className="bg-gray-50 dark:bg-gray-900 min-h-screen">
             <div className="container mx-auto p-4 sm:p-8 font-sans">
                 <Head>
-                    <title>Sprint Belajar Harian: JLPT - Hari {sprintData.day}</title>
+                    <title>Belajar Harian: Hari {sprintData.day}</title>
                     <meta name="description" content={`Materi belajar Jepang untuk hari ke-${sprintData.day}`} />
                 </Head>
 
@@ -145,14 +148,14 @@ export default async function DailySprintPage({ params }: { params: Promise<{ da
                 </nav>
 
                 <header className="text-center mb-10">
-                    <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 dark:text-gray-100">Sprint Belajar Harian</h1>
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 dark:text-gray-100">Belajar Harian</h1>
                     <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 mt-2">Hari {sprintData.day} - Membangun Fondasi JLPT {sprintData.type}</p>
                 </header>
 
-                {/* Sprint Kanji */}
+                {/* Kanji */}
                 <section id="kanji" className="mb-12">
                     <h2 className="text-2xl sm:text-3xl font-bold mb-4 border-l-8 border-orange-500 pl-4 text-gray-700 dark:text-gray-300 flex items-center gap-2">
-                        <span className="text-orange-500 text-2xl">🟠</span> Sprint Kanji
+                        <span className="text-orange-500 text-2xl">🟠</span> Kanji
                     </h2>
                     <div className="flex flex-col gap-6">
                         {sprintData.kanji.map((item, index) => (
@@ -161,9 +164,16 @@ export default async function DailySprintPage({ params }: { params: Promise<{ da
                                     <div className="text-orange-500 text-5xl font-bold jp-font mb-1">{item.kanji}</div>
                                 </div>
                                 <div className="flex-1">
-                                    <div className="mb-1">
-                                        <span className="block text-base font-bold text-gray-800 dark:text-gray-200 mb-1">Baca: <span className="font-normal text-gray-700 dark:text-gray-300"><Furigana htmlString={item.reading_meaning} /></span></span>
-                                        <span className="block text-base text-gray-700 dark:text-gray-300 mb-1">Arti: {item.reading_meaning.replace(/<[^>]+>/g, '').replace(/(On:|Kun:|Arti:)/g, '').split('<br>').pop()?.trim()}</span>
+                                    <div className="mb-1 flex-col flex-wrap gap-2 items-center">
+                                        <span className="block text-base font-bold text-gray-800 dark:text-gray-200">Onyomi:
+                                            <span className="ml-1 px-2 py-0.5 rounded bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 font-mono text-sm">{item.onyomi}</span>
+                                        </span>
+                                        <span className="block text-base font-bold text-gray-800 dark:text-gray-200">Kunyomi:
+                                            <span className="ml-1 px-2 py-0.5 rounded bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300 font-mono text-sm">{item.kunyomi}</span>
+                                        </span>
+                                        <span className="block text-base font-bold text-gray-800 dark:text-gray-200">Arti:
+                                            <span className="ml-1 px-2 py-0.5 rounded bg-yellow-100 dark:bg-yellow-900 text-yellow-700 dark:text-yellow-300 font-mono text-sm">{item.arti}</span>
+                                        </span>
                                     </div>
                                     <div className="mb-2">
                                         <span className="block text-sm font-bold text-orange-700 dark:text-orange-400 mb-1">Jembatan Keledai Visual:</span>
@@ -185,9 +195,9 @@ export default async function DailySprintPage({ params }: { params: Promise<{ da
                     </div>
                 </section>
 
-                {/* Sprint Kosakata */}
+                {/* Kosakata */}
                 <section id="vocabulary" className={`mb-12 rounded-xl p-4 sm:p-6 ${getHeaderBgColor('vocabulary')} dark:bg-gray-800`}> 
-                    <h2 className={`text-2xl sm:text-3xl font-bold mb-4 border-l-8 border-${colors.noun}-500 pl-4 text-gray-700 dark:text-gray-300`}>🔵🟢🟣 Sprint Kosakata</h2>
+                    <h2 className={`text-2xl sm:text-3xl font-bold mb-4 border-l-8 border-${colors.noun}-500 pl-4 text-gray-700 dark:text-gray-300`}>🔵🟢 Kosakata</h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                         {sprintData.vocabulary.map((item, index) => {
                             let borderColor = '';
@@ -240,20 +250,26 @@ export default async function DailySprintPage({ params }: { params: Promise<{ da
                     </div>
                 </section>
 
-                {/* Sprint Tata Bahasa */}
+                {/* Tata Bahasa */}
                 <section id="grammar" className="mb-12">
                     <h2 className="text-2xl sm:text-3xl font-bold mb-4 border-l-8 border-yellow-400 pl-4 text-gray-700 dark:text-gray-300 flex items-center gap-2">
-                        <span className="text-yellow-400 text-2xl">🟡</span> Sprint Tata Bahasa
+                        <span className="text-yellow-400 text-2xl">🟡</span> Tata Bahasa
                     </h2>
                     <div className="flex flex-col gap-8">
                         {sprintData.grammar.map((item, index) => (
                             <div key={index} className="bg-white dark:bg-gray-800 rounded-xl shadow p-6 border-t-4 border-yellow-300">
                                 <div className="mb-2">
-                                    <h3 className="text-lg sm:text-xl font-bold text-gray-800 dark:text-gray-200 mb-1">{item.pattern.replace('KB', '[Objek]').replace('V-masu', '[Kata Kerja]').replace('へ', '[Tempat] へ').replace('行きます/来ます', '[Kata Kerja Gerak]')}</h3>
-                                    <div className="text-base text-gray-700 dark:text-gray-300 mb-2 font-semibold">{item.pattern.includes('を') ? 'Partikel を (o) untuk menandai objek langsung dari sebuah aksi.' : 'Partikel へ (e) untuk menandai arah tujuan.'}</div>
+                                    <h3 className="text-lg sm:text-xl font-bold text-gray-800 dark:text-gray-200 mb-1">{item.pattern}</h3>
+                                    {item.short_explanation ? (
+                                        <div className="text-base text-gray-700 dark:text-gray-300 mb-2 font-semibold">{item.short_explanation}</div>
+                                    ) : null}
                                 </div>
                                 <div className="bg-yellow-50 dark:bg-gray-700 border border-yellow-200 dark:border-gray-600 rounded p-4 mb-4">
-                                    <span className="block text-sm font-bold text-yellow-700 dark:text-yellow-400 mb-2">Penjelasan Visual:</span>
+                                    <span className="block text-sm font-bold text-yellow-700 dark:text-yellow-400 mb-2">Penjelasan:</span>
+                                    <span className="text-sm text-gray-700 dark:text-gray-300" dangerouslySetInnerHTML={{__html: item.explanation}} />
+                                </div>
+                                <div className="bg-yellow-50 dark:bg-gray-700 border border-yellow-200 dark:border-gray-600 rounded p-4 mb-4">
+                                    <span className="block text-sm font-bold text-yellow-700 dark:text-yellow-400 mb-2">Visual:</span>
                                     <span className="text-sm text-gray-700 dark:text-gray-300" dangerouslySetInnerHTML={{__html: item.visual || ''}} />
                                     <div className="flex gap-2 mt-3">
                                         {item.visualLabels && item.visualLabels.map((v, idx) => {

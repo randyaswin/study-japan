@@ -4,7 +4,9 @@
   "kanji": [
     {
       "kanji": "木",
-      "reading_meaning": "<b>On:</b> もく (moku), ぼく (boku)<br><b>Kun:</b> き (ki), こ- (ko-)<br><b>Arti:</b> Pohon, Kayu, Hari Kamis",
+      "onyomi": "もく (moku), ぼく (boku)",
+      "kunyomi": "き (ki), こ- (ko-)",
+      "arti": "Pohon, Kayu, Hari Kamis",
       "mnemonic": "Ini adalah salah satu kanji paling ikonik, bentuknya adalah gambar sederhana dari sebuah pohon dengan batang dan cabang-cabangnya.",
       "example": {
         "jp": "これは<ruby>木<rt>き</rt></ruby>のつくえです。",
@@ -14,7 +16,9 @@
     },
     {
       "kanji": "金",
-      "reading_meaning": "<b>On:</b> きん (kin), こん (kon)<br><b>Kun:</b> かね (kane)<br><b>Arti:</b> Emas, Uang, Hari Jumat",
+      "onyomi": "きん (kin), こん (kon)",
+      "kunyomi": "かね (kane)",
+      "arti": "Emas, Uang, Hari Jumat",
       "mnemonic": "Bayangkan sebuah atap (人) di atas tanah (土) dengan dua bongkahan emas (titik-titik) yang terkubur di bawahnya.",
       "example": {
         "jp": "お<ruby>金<rt>かね</rt></ruby>がありません。",
@@ -24,7 +28,9 @@
     },
     {
       "kanji": "土",
-      "reading_meaning": "<b>On:</b> ど (do), と (to)<br><b>Kun:</b> つち (tsuchi)<br><b>Arti:</b> Tanah, Bumi, Hari Sabtu",
+      "onyomi": "ど (do), と (to)",
+      "kunyomi": "つち (tsuchi)",
+      "arti": "Tanah, Bumi, Hari Sabtu",
       "mnemonic": "Garis bawah adalah tanah, garis vertikal adalah tanaman yang tumbuh, dan garis atas adalah permukaan tanah.",
       "example": {
         "jp": "<ruby>土曜日<rt>どようび</rt></ruby>は<ruby>休<rt>やす</rt></ruby>みです。",
@@ -34,7 +40,9 @@
     },
     {
       "kanji": "本",
-      "reading_meaning": "<b>On:</b> ほん (hon)<br><b>Kun:</b> もと (moto)<br><b>Arti:</b> Buku, Asal",
+      "onyomi": "ほん (hon)",
+      "kunyomi": "もと (moto)",
+      "arti": "Buku, Asal",
       "mnemonic": "Sebuah pohon (木) dengan garis horizontal di bagian bawah yang menandai akarnya. 'Akar' atau 'asal' dari pengetahuan adalah 'buku'.",
       "example": {
         "jp": "これは<ruby>日本語<rt>にほんご</rt></ruby>の<ruby>本<rt>ほん</rt></ruby>です。",
@@ -44,7 +52,9 @@
     },
     {
       "kanji": "何",
-      "reading_meaning": "<b>On:</b> か (ka)<br><b>Kun:</b> なに (nani), なん (nan)<br><b>Arti:</b> Apa",
+      "onyomi": "か (ka)",
+      "kunyomi": "なに (nani), なん (nan)",
+      "arti": "Apa",
       "mnemonic": "Terdiri dari radikal 'orang' (亻) dan kanji 'bisa' (可). Bayangkan seseorang yang bisa bertanya 'apa' saja.",
       "example": {
         "jp": "これは<ruby>何<rt>なん</rt></ruby>ですか。",

@@ -4,7 +4,9 @@
   "kanji": [
     {
       "kanji": "四",
-      "reading_meaning": "<b>On:</b> し (shi)<br><b>Kun:</b> よん (yon), よ (yo), よっつ (yottsu)<br><b>Arti:</b> Empat",
+      "onyomi": "し (shi)",
+      "kunyomi": "よん (yon), よ (yo), よっつ (yottsu)",
+      "arti": "Empat",
       "mnemonic": "Bayangkan sebuah kotak (口) dengan 'kaki' (儿) di dalamnya. Ini seperti sebuah ruangan dengan empat sudut.",
       "example": {
         "jp": "つくえの<ruby>上<rt>うえ</rt></ruby>にりんごが<ruby>四<rt>よっ</rt></ruby>つあります。",
@@ -14,7 +16,9 @@
     },
     {
       "kanji": "五",
-      "reading_meaning": "<b>On:</b> ご (go)<br><b>Kun:</b> いつ (itsu), いつ-つ (itsutsu)<br><b>Arti:</b> Lima",
+      "onyomi": "ご (go)",
+      "kunyomi": "いつ (itsu), いつ-つ (itsutsu)",
+      "arti": "Lima",
       "mnemonic": "Terlihat seperti angka 5 yang ditulis dengan gaya. Dua garis atas, garis tengah, dan dua garis bawah, total lima goresan.",
       "example": {
         "jp": "この<ruby>本<rt>ほん</rt></ruby>は<ruby>五百円<rt>ごひゃくえん</rt></ruby>です。",
@@ -24,7 +28,9 @@
     },
     {
       "kanji": "六",
-      "reading_meaning": "<b>On:</b> ろく (roku)<br><b>Kun:</b> むっつ (muttsu), むい (mui)<br><b>Arti:</b> Enam",
+      "onyomi": "ろく (roku)",
+      "kunyomi": "むっつ (muttsu), むい (mui)",
+      "arti": "Enam",
       "mnemonic": "Kanji ini memiliki 'topi' (亠) di atas dan 'kaki' (八) di bawah. Bayangkan seseorang dengan enam lengan atau kaki.",
       "example": {
         "jp": "<ruby>六時<rt>ろくじ</rt></ruby>に<ruby>起<rt>お</rt></ruby>きます。",
@@ -34,7 +40,9 @@
     },
     {
       "kanji": "円",
-      "reading_meaning": "<b>On:</b> えん (en)<br><b>Kun:</b> まるい (marui)<br><b>Arti:</b> Yen, Lingkaran",
+      "onyomi": "えん (en)",
+      "kunyomi": "まるい (marui)",
+      "arti": "Yen, Lingkaran",
       "mnemonic": "Bentuknya seperti gerbang atau loket bank. Bayangkan Anda masuk ke dalam 'kotak' ini untuk menukarkan uang 'Yen'.",
       "example": {
         "jp": "これは<ruby>百円<rt>ひゃくえん</rt></ruby>です。",
@@ -44,7 +52,9 @@
     },
     {
       "kanji": "年",
-      "reading_meaning": "<b>On:</b> ねん (nen)<br><b>Kun:</b> とし (toshi)<br><b>Arti:</b> Tahun",
+      "onyomi": "ねん (nen)",
+      "kunyomi": "とし (toshi)",
+      "arti": "Tahun",
       "mnemonic": "Kanji ini melambangkan proses panen padi yang terjadi sekali setahun. Setiap 'tahun' panen baru tiba.",
       "example": {
         "jp": "<ruby>来年<rt>らいねん</rt></ruby>、<ruby>日本<rt>にほん</rt></ruby>へ<ruby>行<rt>い</rt></ruby>きます。",
