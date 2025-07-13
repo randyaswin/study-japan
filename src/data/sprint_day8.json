@@ -3,245 +3,247 @@
   "day": 8,
   "kanji": [
     {
-      "kanji": "右",
-      "onyomi": "う (u), ゆう (yuu)",
-      "kunyomi": "みぎ (migi)",
-      "arti": "Kanan",
-      "mnemonic": "Kanji ini memiliki bentuk 'mulut' (口) di bawah. Bayangkan Anda makan dengan tangan 'kanan', jadi tangan 'kanan' (ナ) bergerak ke arah mulut (口).",
+      "kanji": "話",
+      "onyomi": "わ (wa)",
+      "kunyomi": "はな(す) (hanasu), はなし (hanashi)",
+      "arti": "Berbicara, Cerita",
+      "mnemonic": "Bagian kiri adalah 'kata', kanan seperti lidah yang bergerak. Berbicara dengan kata-kata.",
+      "visual_bridge": "Bayangkan seseorang berbicara dengan lidah yang bergerak dan kata-kata keluar dari mulut.",
       "example": {
-        "jp": "はしを<ruby>右手<rt>みぎて</rt></ruby>で<ruby>持<rt>も</rt></ruby>ちます。",
-        "romaji": "Hashi o migite de mochimasu.",
-        "id": "Saya memegang sumpit dengan tangan kanan."
+        "jp": "<ruby>日本語<rt>にほんご</rt></ruby>で<ruby>話<rt>はな</rt></ruby>します。",
+        "romaji": "Nihongo de hanashimasu.",
+        "id": "Saya berbicara dalam bahasa Jepang."
       }
     },
     {
-      "kanji": "左",
-      "onyomi": "さ (sa)",
-      "kunyomi": "ひだり (hidari)",
-      "arti": "Kiri",
-      "mnemonic": "Kanji ini memiliki bentuk 'penggaris' atau 'alat kerja' (工) di bawah. Bayangkan Anda memegang alat kerja dengan tangan 'kiri' Anda.",
+      "kanji": "語",
+      "onyomi": "ご (go)",
+      "kunyomi": "かた(る) (kataru)",
+      "arti": "Bahasa, Kata",
+      "mnemonic": "Bagian kiri adalah 'kata', kanan seperti lima mulut yang berbicara bersama.",
+      "visual_bridge": "Bayangkan banyak mulut berbicara, membentuk sebuah bahasa.",
       "example": {
-        "jp": "<ruby>次<rt>つぎ</rt></ruby>の<ruby>角<rt>かど</rt></ruby>を<ruby>左<rt>ひだり</rt></ruby>に<ruby>曲<rt>ま</rt></ruby>がってください。",
-        "romaji": "Tsugi no kado o hidari ni magatte kudasai.",
-        "id": "Tolong belok kiri di tikungan berikutnya."
+        "jp": "<ruby>英語<rt>えいご</rt></ruby>を<ruby>勉強<rt>べんきょう</rt></ruby>します。",
+        "romaji": "Eigo o benkyou shimasu.",
+        "id": "Saya belajar bahasa Inggris."
       }
     },
     {
-      "kanji": "東",
-      "onyomi": "とう (tou)",
-      "kunyomi": "ひがし (higashi)",
-      "arti": "Timur",
-      "mnemonic": "Ini adalah gambar matahari (日) yang terbit dari balik pohon (木). Matahari terbit dari arah 'timur'.",
+      "kanji": "読",
+      "onyomi": "どく (doku)",
+      "kunyomi": "よ(む) (yomu)",
+      "arti": "Membaca",
+      "mnemonic": "Bagian kiri adalah 'kata', kanan seperti mata yang melihat ke bawah ke buku.",
+      "visual_bridge": "Bayangkan mata yang membaca kata-kata di buku.",
       "example": {
-        "jp": "<ruby>東京<rt>とうきょう</rt></ruby>は<ruby>日本<rt>にほん</rt></ruby>の<ruby>東<rt>ひがし</rt></ruby>にあります。",
-        "romaji": "Toukyou wa Nihon no higashi ni arimasu.",
-        "id": "Tokyo berada di sebelah timur Jepang."
+        "jp": "<ruby>本<rt>ほん</rt></ruby>を<ruby>読<rt>よ</rt></ruby>みます。",
+        "romaji": "Hon o yomimasu.",
+        "id": "Saya membaca buku."
       }
     },
     {
-      "kanji": "西",
-      "onyomi": "せい (sei), さい (sai)",
-      "kunyomi": "にし (nishi)",
-      "arti": "Barat",
-      "mnemonic": "Kanji ini terlihat seperti keranjang. Bayangkan matahari terbenam di 'barat' dan cahayanya masuk ke dalam sebuah keranjang.",
+      "kanji": "書",
+      "onyomi": "しょ (sho)",
+      "kunyomi": "か(く) (kaku)",
+      "arti": "Menulis",
+      "mnemonic": "Bagian atas seperti pena, bawahnya seperti tangan yang menulis.",
+      "visual_bridge": "Bayangkan tangan memegang pena dan menulis di atas kertas.",
       "example": {
-        "jp": "<ruby>太陽<rt>たいよう</rt></ruby>は<ruby>西<rt>にし</rt></ruby>に<ruby>沈<rt>しず</rt></ruby>みます。",
-        "romaji": "Taiyou wa nishi ni shizumimasu.",
-        "id": "Matahari terbenam di barat."
+        "jp": "<ruby>手紙<rt>てがみ</rt></ruby>を<ruby>書<rt>か</rt></ruby>きます。",
+        "romaji": "Tegami o kakimasu.",
+        "id": "Saya menulis surat."
       }
     },
     {
-      "kanji": "北",
-      "onyomi": "ほく (hoku)",
-      "kunyomi": "きた (kita)",
-      "arti": "Utara",
-      "mnemonic": "Dua orang (匕) duduk saling membelakangi. Di daerah 'utara' yang dingin, orang-orang duduk saling membelakangi untuk menjaga kehangatan.",
+      "kanji": "聞",
+      "onyomi": "ぶん (bun), もん (mon)",
+      "kunyomi": "き(く) (kiku)",
+      "arti": "Mendengar, Bertanya",
+      "mnemonic": "Bagian kiri adalah 'telinga', kanan seperti pintu yang terbuka untuk suara.",
+      "visual_bridge": "Bayangkan telinga di depan pintu, siap mendengar suara dari luar.",
       "example": {
-        "jp": "<ruby>北海道<rt>ほっかいどう</rt></ruby>は<ruby>日本<rt>にほん</rt></ruby>の<ruby>北<rt>きた</rt></ruby>にあります。",
-        "romaji": "Hokkaidou wa Nihon no kita ni arimasu.",
-        "id": "Hokkaido berada di sebelah utara Jepang."
+        "jp": "<ruby>音楽<rt>おんがく</rt></ruby>を<ruby>聞<rt>き</rt></ruby>きます。",
+        "romaji": "Ongaku o kikimasu.",
+        "id": "Saya mendengarkan musik."
       }
     }
   ],
   "vocabulary": [
     {
-      "vocab": "だいがく",
-      "reading_meaning": "daigaku (universitas)",
+      "vocab": "<ruby>話<rt>はなし</rt></ruby>",
+      "reading_meaning": "hanashi (cerita, pembicaraan)",
+      "type": "🟢",
+      "mnemonic": "Kata-kata yang keluar dari mulut menjadi cerita.",
+      "example": {
+        "jp": "<ruby>面白<rt>おもしろ</rt></ruby>い<ruby>話<rt>はなし</rt></ruby>です。",
+        "romaji": "Omoshiroi hanashi desu.",
+        "id": "Itu cerita yang menarik."
+      }
+    },
+    {
+      "vocab": "<ruby>日本語<rt>にほんご</rt></ruby>",
+      "reading_meaning": "nihongo (bahasa Jepang)",
       "type": "🔵",
-      "mnemonic": "Tempat 'belajar' (学) yang 'besar' (大) adalah 'universitas'.",
-      "example": { "jp": "さくら<ruby>大学<rt>だいがく</rt></ruby>の<ruby>学生<rt>がくせい</rt></ruby>です。", "romaji": "Sakura daigaku no gakusei desu.", "id": "Saya adalah mahasiswa Universitas Sakura." }
+      "mnemonic": "Nihon (日本) = Jepang, go (語) = bahasa. Bahasa Jepang.",
+      "example": {
+        "jp": "<ruby>日本語<rt>にほんご</rt></ruby>を<ruby>勉強<rt>べんきょう</rt></ruby>します。",
+        "romaji": "Nihongo o benkyou shimasu.",
+        "id": "Saya belajar bahasa Jepang."
+      }
     },
     {
-      "vocab": "びょういん",
-      "reading_meaning": "byouin (rumah sakit)",
+      "vocab": "<ruby>英語<rt>えいご</rt></ruby>",
+      "reading_meaning": "eigo (bahasa Inggris)",
       "type": "🔵",
-      "mnemonic": "Kalau sakit, jangan 'BYOU-IN' (diam saja), cepat ke 'rumah sakit'.",
-      "example": { "jp": "<ruby>病気<rt>びょうき</rt></ruby>ですから、<ruby>病院<rt>びょういん</rt></ruby>へ<ruby>行<rt>い</rt></ruby>きました。", "romaji": "Byouki desu kara, byouin e ikimashita.", "id": "Karena sakit, saya pergi ke rumah sakit." }
+      "mnemonic": "Ei (英) = Inggris, go (語) = bahasa. Bahasa Inggris.",
+      "example": {
+        "jp": "<ruby>英語<rt>えいご</rt></ruby>が<ruby>分<rt>わ</rt></ruby>かります。",
+        "romaji": "Eigo ga wakarimasu.",
+        "id": "Saya mengerti bahasa Inggris."
+      }
     },
     {
-      "vocab": "でんき",
-      "reading_meaning": "denki (listrik, lampu)",
+      "vocab": "<ruby>読む<rt>よむ</rt></ruby>",
+      "reading_meaning": "yomu (membaca)",
+      "type": "🟢",
+      "mnemonic": "Mata yang melihat kata-kata di buku.",
+      "example": {
+        "jp": "<ruby>新聞<rt>しんぶん</rt></ruby>を<ruby>読<rt>よ</rt></ruby>みます。",
+        "romaji": "Shinbun o yomimasu.",
+        "id": "Saya membaca koran."
+      }
+    },
+    {
+      "vocab": "<ruby>書く<rt>かく</rt></ruby>",
+      "reading_meaning": "kaku (menulis)",
+      "type": "🟢",
+      "mnemonic": "Tangan memegang pena dan menulis.",
+      "example": {
+        "jp": "<ruby>ノート<rt>ノート</rt></ruby>に<ruby>書<rt>か</rt></ruby>きます。",
+        "romaji": "Nooto ni kakimasu.",
+        "id": "Saya menulis di buku catatan."
+      }
+    },
+    {
+      "vocab": "<ruby>聞く<rt>きく</rt></ruby>",
+      "reading_meaning": "kiku (mendengar, bertanya)",
+      "type": "🟢",
+      "mnemonic": "Telinga di depan pintu, siap mendengar suara.",
+      "example": {
+        "jp": "<ruby>先生<rt>せんせい</rt></ruby>に<ruby>聞<rt>き</rt></ruby>きます。",
+        "romaji": "Sensei ni kikimasu.",
+        "id": "Saya bertanya kepada guru."
+      }
+    },
+    {
+      "vocab": "<ruby>新聞<rt>しんぶん</rt></ruby>",
+      "reading_meaning": "shinbun (koran)",
       "type": "🔵",
-      "mnemonic": "Kalau 'listrik' mati, 'DEN-KI'ta jadi gelap.",
-      "example": { "jp": "<ruby>電気<rt>でんき</rt></ruby>を<ruby>消<rt>け</rt></ruby>してください。", "romaji": "Denki o keshite kudasai.", "id": "Tolong matikan lampu." }
+      "mnemonic": "Shin (新) = baru, bun (聞) = berita. Koran berisi berita baru.",
+      "example": {
+        "jp": "<ruby>新聞<rt>しんぶん</rt></ruby>を<ruby>読<rt>よ</rt></ruby>みます。",
+        "romaji": "Shinbun o yomimasu.",
+        "id": "Saya membaca koran."
+      }
     },
     {
-      "vocab": "だれか",
-      "reading_meaning": "dareka (seseorang)",
+      "vocab": "<ruby>手紙<rt>てがみ</rt></ruby>",
+      "reading_meaning": "tegami (surat)",
       "type": "🔵",
-      "mnemonic": "Gabungan dari 'dare' (siapa) dan 'ka' (partikel tanya). Artinya 'siapakah', yang bisa diartikan 'seseorang'.",
-      "example": { "jp": "そこにだれかいますか。", "romaji": "Soko ni dareka imasu ka.", "id": "Apakah ada seseorang di sana?" }
+      "mnemonic": "Tangan (手) menulis di kertas (紙). Surat ditulis dengan tangan.",
+      "example": {
+        "jp": "<ruby>手紙<rt>てがみ</rt></ruby>を<ruby>書<rt>か</rt></ruby>きます。",
+        "romaji": "Tegami o kakimasu.",
+        "id": "Saya menulis surat."
+      }
     },
     {
-      "vocab": "なに（か）",
-      "reading_meaning": "nani(ka) (sesuatu)",
+      "vocab": "<ruby>会話<rt>かいわ</rt></ruby>",
+      "reading_meaning": "kaiwa (percakapan)",
       "type": "🔵",
-      "mnemonic": "Gabungan dari 'nani' (apa) dan 'ka'. Artinya 'apakah', yang bisa diartikan 'sesuatu'.",
-      "example": { "jp": "なにか<ruby>食<rt>た</rt></ruby>べたいです。", "romaji": "Nanika tabetai desu.", "id": "Saya ingin makan sesuatu." }
+      "mnemonic": "Kai (会) = bertemu, wa (話) = berbicara. Percakapan terjadi saat bertemu dan berbicara.",
+      "example": {
+        "jp": "<ruby>会話<rt>かいわ</rt></ruby>を<ruby>練習<rt>れんしゅう</rt></ruby>します。",
+        "romaji": "Kaiwa o renshuu shimasu.",
+        "id": "Saya berlatih percakapan."
+      }
     },
     {
-      "vocab": "うえ",
-      "reading_meaning": "ue (atas)",
+      "vocab": "<ruby>物語<rt>ものがたり</rt></ruby>",
+      "reading_meaning": "monogatari (dongeng, cerita)",
       "type": "🔵",
-      "mnemonic": "'UE-naknya' duduk di 'atas'.",
-      "example": { "jp": "ねこはテーブルの<ruby>上<rt>うえ</rt></ruby>にいます。", "romaji": "Neko wa teeburu no ue ni imasu.", "id": "Kucing ada di atas meja." }
-    },
-    {
-      "vocab": "した",
-      "reading_meaning": "shita (bawah)",
-      "type": "🔵",
-      "mnemonic": "Jangan taruh di 'bawah', nanti 'SHI-TA'rik orang.",
-      "example": { "jp": "ベッドの<ruby>下<rt>した</rt></ruby>に<ruby>何<rt>なに</rt></ruby>がありますか。", "romaji": "Beddo no shita ni nani ga arimasu ka.", "id": "Ada apa di bawah tempat tidur?" }
-    },
-    {
-      "vocab": "まえ",
-      "reading_meaning": "mae (depan)",
-      "type": "🔵",
-      "mnemonic": "Kalau jalan ke 'depan', jangan 'MAE-n' handphone terus.",
-      "example": { "jp": "<ruby>家<rt>いえ</rt></ruby>の<ruby>前<rt>まえ</rt></ruby>に<ruby>車<rt>くるま</rt></ruby>があります。", "romaji": "Ie no mae ni kuruma ga arimasu.", "id": "Di depan rumah ada mobil." }
-    },
-    {
-      "vocab": "うしろ",
-      "reading_meaning": "ushiro (belakang)",
-      "type": "🔵",
-      "mnemonic": "'U-SHIRO'm dulu, jangan di 'belakang' terus.",
-      "example": { "jp": "<ruby>私<rt>わたし</rt></ruby>の<ruby>後<rt>うし</rt></ruby>ろに<ruby>立<rt>た</rt></ruby>たないでください。", "romaji": "Watashi no ushiro ni tatanaide kudasai.", "id": "Tolong jangan berdiri di belakang saya." }
-    },
-    {
-      "vocab": "みぎ",
-      "reading_meaning": "migi (kanan)",
-      "type": "🔵",
-      "mnemonic": "Belok 'kanan', jangan 'MI-kir GI-tu' terus.",
-      "example": { "jp": "<ruby>銀行<rt>ぎんこう</rt></ruby>は<ruby>駅<rt>えき</rt></ruby>の<ruby>右<rt>みぎ</rt></ruby>にあります。", "romaji": "Ginkou wa eki no migi ni arimasu.", "id": "Bank ada di sebelah kanan stasiun." }
-    },
-    {
-      "vocab": "ひだり",
-      "reading_meaning": "hidari (kiri)",
-      "type": "🔵",
-      "mnemonic": "Orang kidal 'HI-dup DA-RI' tangan 'kiri'.",
-      "example": { "jp": "<ruby>郵便局<rt>ゆうびんきょく</rt></ruby>は<ruby>左<rt>ひだり</rt></ruby>です。", "romaji": "Yuubinkyoku wa hidari desu.", "id": "Kantor pos ada di sebelah kiri." }
-    },
-    {
-      "vocab": "なか",
-      "reading_meaning": "naka (dalam)",
-      "type": "🔵",
-      "mnemonic": "'NA-KA-l' ya, main di 'dalam' rumah terus.",
-      "example": { "jp": "<ruby>箱<rt>はこ</rt></ruby>の<ruby>中<rt>なか</rt></ruby>にプレゼントがあります。", "romaji": "Hako no naka ni purezento ga arimasu.", "id": "Di dalam kotak ada hadiah." }
-    },
-    {
-      "vocab": "ちかい",
-      "reading_meaning": "chikai (dekat)",
-      "type": "🟠",
-      "mnemonic": "Rumahnya 'dekat', bisa dijangkau dengan 'CHI-kalan' kaki.",
-      "example": { "jp": "<ruby>私<rt>わたし</rt></ruby>の<ruby>家<rt>いえ</rt></ruby>は<ruby>駅<rt>えき</rt></ruby>から<ruby>近<rt>ちか</rt></ruby>いです。", "romaji": "Watashi no ie wa eki kara chikai desu.", "id": "Rumah saya dekat dari stasiun." }
-    },
-    {
-      "vocab": "とおい",
-      "reading_meaning": "tooi (jauh)",
-      "type": "🟠",
-      "mnemonic": "Tempatnya 'jauh', harus naik 'TO-yota' biar cepat sampai.",
-      "example": { "jp": "<ruby>学校<rt>がっこう</rt></ruby>はここから<ruby>遠<rt>とお</rt></ruby>いですか。", "romaji": "Gakkou wa koko kara tooi desu ka.", "id": "Apakah sekolah jauh dari sini?" }
-    },
-    {
-      "vocab": "はやい",
-      "reading_meaning": "hayai (cepat)",
-      "type": "🟠",
-      "mnemonic": "'HAY-A-yo', 'cepat' nanti terlambat!",
-      "example": { "jp": "もう<ruby>六時<rt>ろくじ</rt></ruby>ですか。<ruby>速<rt>はや</rt></ruby>いですね。", "romaji": "Mou rokuji desu ka. Hayai desu ne.", "id": "Sudah jam 6? Cepat ya." }
-    },
-    {
-      "vocab": "おそい",
-      "reading_meaning": "osoi (lambat, terlambat)",
-      "type": "🟠",
-      "mnemonic": "'O-SOI-ya', aku 'terlambat' lagi.",
-      "example": { "jp": "すみません、<ruby>遅<rt>おそ</rt></ruby>くなりました。", "romaji": "Sumimasen, osokunarimashita.", "id": "Maaf, saya terlambat." }
-    },
-    {
-      "vocab": "おおい",
-      "reading_meaning": "ooi (banyak - untuk jumlah)",
-      "type": "🟠",
-      "mnemonic": "'O-OI', kenapa orangnya 'banyak' sekali?",
-      "example": { "jp": "この<ruby>町<rt>まち</rt></ruby>は<ruby>外国人<rt>がいこくじん</rt></ruby>が<ruby>多<rt>おお</rt></ruby>いです。", "romaji": "Kono machi wa gaikokujin ga ooi desu.", "id": "Kota ini banyak orang asingnya." }
-    },
-    {
-      "vocab": "すくない",
-      "reading_meaning": "sukunai (sedikit - untuk jumlah)",
-      "type": "🟠",
-      "mnemonic": "Nasinya 'sedikit' sekali, aku 'SU-ka NA-mbah lagi'.",
-      "example": { "jp": "このクラスは<ruby>学生<rt>がくせい</rt></ruby>が<ruby>少<rt>すく</rt></ruby>ないです。", "romaji": "Kono kurasu wa gakusei ga sukunai desu.", "id": "Kelas ini muridnya sedikit." }
-    },
-    {
-      "vocab": "あたたかい",
-      "reading_meaning": "atatakai (hangat)",
-      "type": "🟠",
-      "mnemonic": "Cuaca 'hangat' enaknya pakai baju 'A-TA-TA-san KAI-n'.",
-      "example": { "jp": "<ruby>今日<rt>きょう</rt></ruby>は<ruby>暖<rt>あたた</rt></ruby>かいですね。", "romaji": "Kyou wa atatakai desu ne.", "id": "Hari ini hangat ya." }
-    },
-    {
-      "vocab": "すずしい",
-      "reading_meaning": "suzushii (sejuk)",
-      "type": "🟠",
-      "mnemonic": "Anginnya 'sejuk', bikin 'SU-asana ZU-per nyaman Siiih'.",
-      "example": { "jp": "<ruby>秋<rt>あき</rt></ruby>は<ruby>涼<rt>すず</rt></ruby>しいです。", "romaji": "Aki wa suzushii desu.", "id": "Musim gugur itu sejuk." }
+      "mnemonic": "Mono (物) = benda, gatari (語) = kata. Cerita tentang benda-benda.",
+      "example": {
+        "jp": "<ruby>日本<rt>にほん</rt></ruby>の<ruby>物語<rt>ものがたり</rt></ruby>を<ruby>読<rt>よ</rt></ruby>みます。",
+        "romaji": "Nihon no monogatari o yomimasu.",
+        "id": "Saya membaca cerita Jepang."
+      }
     }
   ],
   "grammar": [
     {
-      "pattern": "KB1 は KB2 より KS です",
-      "explanation": "Pola ini digunakan untuk membuat kalimat perbandingan. Partikel より (yori) berarti 'daripada', dan diletakkan setelah item yang dijadikan pembanding. Pola ini menyatakan bahwa 'KB1 lebih [Kata Sifat] daripada KB2'.",
-      "visual": "<b>[Item Utama] は [Item Pembanding] より [Sifat Perbandingan]</b><br><br>Bayangkan timbangan. <b>KB1</b> lebih berat/tinggi/mahal (KS) dibandingkan <b>KB2</b>.",
+      "pattern": "KB <b style='color:#FF4500;'>と</b> いいます",
+      "explanation": "Partikel <b style='color:#FF4500;'>と</b> diikuti いいます digunakan untuk menyatakan 'disebut' atau 'berkata'.",
+      "visual": "<b>[Kata] <b style='color:#FF4500;'>と</b> いいます</b><br><br>Bayangkan <b>と</b> sebagai tanda kutip yang mengapit kata yang diucapkan.",
       "examples": [
         {
-          "jp": "この<ruby>車<rt>くるま</rt></ruby>はあの<ruby>車<rt>くるま</rt></ruby>より<ruby>大<rt>おお</rt></ruby>きいです。",
-          "romaji": "Kono kuruma wa ano kuruma yori ookii desu.",
-          "id": "Mobil ini lebih besar daripada mobil itu."
+          "jp": "<ruby>山田<rt>やまだ</rt></ruby><b style='color:#FF4500;'>と</b><ruby>言<rt>い</rt></ruby>います。",
+          "romaji": "Yamada to iimasu.",
+          "id": "Saya bernama Yamada."
         },
         {
-          "jp": "サッカーは野球よりおもしろいです。",
-          "romaji": "Sakkaa wa yakyuu yori omoshiroi desu.",
-          "id": "Sepak bola lebih menarik daripada bisbol."
+          "jp": "<ruby>これは<rt>これは</rt></ruby><b style='color:#FF4500;'>と</b><ruby>言<rt>い</rt></ruby>います。",
+          "romaji": "Kore wa ... to iimasu.",
+          "id": "Ini disebut ...."
         },
         {
-          "jp": "<ruby>飛行機<rt>ひこうき</rt></ruby>は<ruby>船<rt>ふね</rt></ruby>より<ruby>速<rt>はや</rt></ruby>いです。",
-          "romaji": "Hikouki wa fune yori hayai desu.",
-          "id": "Pesawat terbang lebih cepat daripada kapal."
+          "jp": "<ruby>先生<rt>せんせい</rt></ruby>は「がんばって」<b style='color:#FF4500;'>と</b><ruby>言<rt>い</rt></ruby>いました。",
+          "romaji": "Sensei wa 'ganbatte' to iimashita.",
+          "id": "Guru berkata 'semangat'."
         }
       ]
     },
     {
-      "pattern": "KB1 と KB2 と どちらが KS ですか",
-      "explanation": "Ini adalah pola kalimat tanya untuk membandingkan dua hal (KB1 dan KB2). どちら (dochira) berarti 'yang mana (di antara dua)'. Jawabannya akan menggunakan pola 'KB のほうが KS です' yang berarti 'KB lebih [Kata Sifat]'.",
-      "visual": "<b>Q: [Item A] と [Item B] と どちらが [Sifat]?</b><br><b>A: [Item Pilihan] のほうが [Sifat].</b>",
+      "pattern": "KB <b style='color:#FF4500;'>を</b> <ruby>読む<rt>よむ</rt></ruby>/<ruby>書く<rt>かく</rt></ruby>/<ruby>聞く<rt>きく</rt></ruby>",
+      "explanation": "Partikel <b style='color:#FF4500;'>を</b> digunakan untuk menandai objek langsung dari kata kerja seperti membaca, menulis, atau mendengar.",
+      "visual": "<b>[Objek] <b style='color:#FF4500;'>を</b> [Aksi]</b><br><br>Bayangkan <b>を</b> sebagai panah yang menunjuk ke objek yang dikenai aksi.",
       "examples": [
         {
-          "jp": "Q: コーヒーとこうちゃとどちらが<ruby>好<rt>す</rt></ruby>きですか。 A: コーヒーのほうが<ruby>好<rt>す</rt></ruby>きです。",
-          "romaji": "Q: Koohii to koucha to dochira ga suki desu ka. A: Koohii no hou ga suki desu.",
-          "id": "Q: Antara kopi dan teh, mana yang lebih kamu suka? A: Saya lebih suka kopi."
+          "jp": "<ruby>本<rt>ほん</rt></ruby><b style='color:#FF4500;'>を</b><ruby>読<rt>よ</rt></ruby>みます。",
+          "romaji": "Hon o yomimasu.",
+          "id": "Saya membaca buku."
         },
         {
-          "jp": "Q: <ruby>夏<rt>なつ</rt></ruby>と<ruby>冬<rt>ふゆ</rt></ruby>とどちらが<ruby>暑<rt>あつ</rt></ruby>いですか。 A: <ruby>夏<rt>なつ</rt></ruby>のほうが<ruby>暑<rt>あつ</rt></ruby>いです。",
-          "romaji": "Q: Natsu to fuyu to dochira ga atsui desu ka. A: Natsu no hou ga atsui desu.",
-          "id": "Q: Antara musim panas dan musim dingin, mana yang lebih panas? A: Musim panas lebih panas."
+          "jp": "<ruby>手紙<rt>てがみ</rt></ruby><b style='color:#FF4500;'>を</b><ruby>書<rt>か</rt></ruby>きます。",
+          "romaji": "Tegami o kakimasu.",
+          "id": "Saya menulis surat."
+        },
+        {
+          "jp": "<ruby>音楽<rt>おんがく</rt></ruby><b style='color:#FF4500;'>を</b><ruby>聞<rt>き</rt></ruby>きます。",
+          "romaji": "Ongaku o kikimasu.",
+          "id": "Saya mendengarkan musik."
+        }
+      ]
+    },
+    {
+      "pattern": "<ruby>日本語<rt>にほんご</rt></ruby>で <b style='color:#FF4500;'>話<rt>はな</rt></ruby>します",
+      "explanation": "Partikel で digunakan untuk menandai bahasa atau alat yang digunakan untuk melakukan aksi. Dalam pola ini, berarti 'berbicara dalam bahasa Jepang'.",
+      "visual": "<b>[Bahasa/Alat] で [Aksi]</b><br><br>Bayangkan で sebagai mikrofon yang digunakan untuk berbicara.",
+      "examples": [
+        {
+          "jp": "<ruby>日本語<rt>にほんご</rt></ruby>で<ruby>話<rt>はな</rt></ruby>します。",
+          "romaji": "Nihongo de hanashimasu.",
+          "id": "Saya berbicara dalam bahasa Jepang."
+        },
+        {
+          "jp": "<ruby>英語<rt>えいご</rt></ruby>で<ruby>話<rt>はな</rt></ruby>します。",
+          "romaji": "Eigo de hanashimasu.",
+          "id": "Saya berbicara dalam bahasa Inggris."
+        },
+        {
+          "jp": "<ruby>電話<rt>でんわ</rt></ruby>で<ruby>話<rt>はな</rt></ruby>します。",
+          "romaji": "Denwa de hanashimasu.",
+          "id": "Saya berbicara lewat telepon."
         }
       ]
     }

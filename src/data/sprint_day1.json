@@ -5,13 +5,37 @@
     {
       "kanji": "一",
       "onyomi": "いち (ichi), いつ (itsu)",
-      "kunyomi": "ひと (hito-)",
+      "kunyomi": "ひと (hito)",
       "arti": "Satu",
-      "mnemonic": "Kanji ini adalah yang paling dasar, hanya terdiri dari satu garis horizontal. Mudah diingat sebagai representasi angka 1.",
+      "mnemonic": "Kanji ini adalah yang paling dasar, hanya satu garis horizontal (一). Bayangkan Anda sedang menghitung dan membuat satu goresan di kertas untuk menandai angka 'satu'. Tidak ada yang lebih sederhana dari ini.",
       "example": {
-        "jp": "<ruby>一<rt>いち</rt></ruby>じです。",
-        "romaji": "Ichi-ji desu.",
-        "id": "Sekarang jam satu."
+        "jp": "これは<ruby>一つ<rt>ひとつ</rt></ruby>いくらですか。",
+        "romaji": "Kore wa hitotsu ikura desu ka.",
+        "id": "Berapa harga untuk satu ini?"
+      }
+    },
+    {
+      "kanji": "二",
+      "onyomi": "に (ni)",
+      "kunyomi": "ふた (futa)",
+      "arti": "Dua",
+      "mnemonic": "Terdiri dari dua garis horizontal (二). Garis atas sedikit lebih pendek dari yang bawah. Bayangkan ini adalah tanda sama dengan (=) yang sedikit miring, mewakili keseimbangan antara dua hal.",
+      "example": {
+        "jp": "そこに<ruby>猫<rt>ねこ</rt></ruby>が<ruby>二<rt>に</rt></ruby>ひきいます。",
+        "romaji": "Soko ni neko ga ni-hiki imasu.",
+        "id": "Di sana ada dua ekor kucing."
+      }
+    },
+    {
+      "kanji": "三",
+      "onyomi": "さん (san)",
+      "kunyomi": "み (mi)",
+      "arti": "Tiga",
+      "mnemonic": "Terdiri dari tiga garis horizontal (三). Sama seperti kanji satu dan dua, ini adalah representasi langsung dari jumlahnya. Bayangkan tiga benda yang ditumpuk.",
+      "example": {
+        "jp": "<ruby>三<rt>さん</rt></ruby><ruby>月<rt>がつ</rt></ruby>に<ruby>日本<rt>にほん</rt></ruby>へ<ruby>行<rt>い</rt></ruby>きます。",
+        "romaji": "San-gatsu ni nihon e ikimasu.",
+        "id": "Saya akan pergi ke Jepang pada bulan Maret (bulan ketiga)."
       }
     },
     {
@@ -19,82 +43,202 @@
       "onyomi": "じん (jin), にん (nin)",
       "kunyomi": "ひと (hito)",
       "arti": "Orang",
-      "mnemonic": "Bentuknya menyerupai seseorang yang sedang berdiri dan melangkah. Bayangkan ini adalah siluet sederhana dari 'orang'.",
+      "mnemonic": "Bentuknya menyerupai siluet seseorang yang sedang berdiri dan melangkah dengan dua kaki. Kaki kiri dan kanan. Ini adalah gambaran paling sederhana dari 'orang'.",
       "example": {
         "jp": "あの<ruby>人<rt>ひと</rt></ruby>は<ruby>日本人<rt>にほんじん</rt></ruby>です。",
         "romaji": "Ano hito wa nihonjin desu.",
         "id": "Orang itu adalah orang Jepang."
       }
+    },
+    {
+      "kanji": "日",
+      "onyomi": "にち (nichi), じつ (jitsu)",
+      "kunyomi": "ひ (hi), -び (-bi), -か (-ka)",
+      "arti": "Hari, Matahari",
+      "mnemonic": "Kanji ini terlihat seperti jendela (口) dengan garis di tengahnya. Bayangkan Anda melihat matahari (garis tengah) melalui jendela. Ini melambangkan 'hari' atau 'matahari'.",
+      "example": {
+        "jp": "<ruby>今日<rt>きょう</rt></ruby>は<ruby>日曜日<rt>にちようび</rt></ruby>です。",
+        "romaji": "Kyou wa nichiyoubi desu.",
+        "id": "Hari ini adalah hari Minggu."
+      }
     }
   ],
   "vocabulary": [
     {
-      "vocab": "<ruby>私<rt>わたし</rt></ruby>",
+      "vocab": "わたし",
       "reading_meaning": "watashi (saya)",
       "type": "🔵",
-      "mnemonic": "Gabungan dari 'padi' (禾) dan 'pribadi' (厶), awalnya berarti kepemilikan pribadi, yang menjadi 'saya'.",
+      "mnemonic": "Ingat saja, 'WA, TAhu nggak SIapa aku? Aku WATASHI.' Ini adalah cara paling umum untuk mengatakan 'saya'.",
       "example": {
-        "jp": "<ruby>私<rt>わたし</rt></ruby>はインドネシア<ruby>人<rt>じん</rt></ruby>です。",
-        "romaji": "Watashi wa Indonesia-jin desu.",
-        "id": "Saya adalah orang Indonesia."
+        "jp": "わたしは<ruby>学生<rt>がくせい</rt></ruby>です。",
+        "romaji": "Watashi wa gakusei desu.",
+        "id": "Saya adalah seorang siswa."
       }
     },
     {
       "vocab": "<ruby>学生<rt>がくせい</rt></ruby>",
       "reading_meaning": "gakusei (siswa/mahasiswa)",
       "type": "🔵",
-      "mnemonic": "Gabungan dari 'belajar' (学) dan 'kehidupan/lahir' (生). Seseorang yang hidupnya untuk belajar.",
+      "mnemonic": "Terdiri dari kanji 'belajar' (学) dan 'kehidupan/lahir' (生). Jadi, 'gakusei' adalah orang yang 'hidupnya untuk belajar'.",
       "example": {
         "jp": "アリさんは<ruby>学生<rt>がくせい</rt></ruby>ですか。",
         "romaji": "Ari-san wa gakusei desu ka.",
         "id": "Apakah Sdr. Ari seorang siswa?"
       }
+    },
+    {
+      "vocab": "<ruby>先生<rt>せんせい</rt></ruby>",
+      "reading_meaning": "sensei (guru, dokter, panggilan hormat)",
+      "type": "🔵",
+      "mnemonic": "Terdiri dari kanji 'sebelum/duluan' (先) dan 'kehidupan/lahir' (生). Artinya, 'orang yang lahir lebih dulu', sehingga punya lebih banyak pengalaman dan pengetahuan untuk diajarkan.",
+      "example": {
+        "jp": "たなか<ruby>先生<rt>せんせい</rt></ruby>は<ruby>日本人<rt>にほんじん</rt></ruby>です。",
+        "romaji": "Tanaka-sensei wa nihonjin desu.",
+        "id": "Guru Tanaka adalah orang Jepang."
+      }
+    },
+    {
+      "vocab": "<ruby>日本<rt>にほん</rt></ruby>",
+      "reading_meaning": "nihon (Jepang)",
+      "type": "🔵",
+      "mnemonic": "Gabungan kanji 'matahari' (日) dan 'asal/akar' (本). Jadi, Jepang adalah 'Negeri Asal Matahari Terbit'.",
+      "example": {
+        "jp": "わたしは<ruby>日本<rt>にほん</rt></ruby>からきました。",
+        "romaji": "Watashi wa nihon kara kimashita.",
+        "id": "Saya datang dari Jepang."
+      }
+    },
+    {
+      "vocab": "はい",
+      "reading_meaning": "hai (ya)",
+      "type": "🔵",
+      "mnemonic": "Ucapkan dengan tegas sambil mengangguk. Bayangkan memberi 'high-five' sebagai tanda setuju atau 'ya'.",
+      "example": {
+        "jp": "A: <ruby>学生<rt>がくせい</rt></ruby>ですか。 B: はい、<ruby>学生<rt>がくせい</rt></ruby>です。",
+        "romaji": "A: Gakusei desu ka. B: Hai, gakusei desu.",
+        "id": "A: Apakah Anda siswa? B: Ya, saya siswa."
+      }
+    },
+    {
+      "vocab": "いいえ",
+      "reading_meaning": "iie (tidak, bukan)",
+      "type": "🔵",
+      "mnemonic": "Pengucapannya yang panjang 'i-i-e' terdengar seperti keraguan atau sanggahan. 'Iiiih, enggaaak'.",
+      "example": {
+        "jp": "A: <ruby>先生<rt>せんせい</rt></ruby>ですか。 B: いいえ、<ruby>先生<rt>せんせい</rt></ruby>じゃありません。",
+        "romaji": "A: Sensei desu ka. B: Iie, sensei ja arimasen.",
+        "id": "A: Apakah Anda guru? B: Bukan, saya bukan guru."
+      }
+    },
+    {
+      "vocab": "<ruby>食<rt>た</rt></ruby>べます",
+      "reading_meaning": "tabemasu (makan)",
+      "type": "🟢",
+      "mnemonic": "Bayangkan suara orang makan kerupuk, 'TABE... TABE...' lalu MAS-MAS yang makan. Jadi, 'tabemasu'.",
+      "example": {
+        "jp": "<ruby>毎日<rt>まいにち</rt></ruby>パンを<ruby>食<rt>た</rt></ruby>べます。",
+        "romaji": "Mainichi pan o tabemasu.",
+        "id": "Saya makan roti setiap hari."
+      }
+    },
+    {
+      "vocab": "<ruby>飲<rt>の</rt></ruby>みます",
+      "reading_meaning": "nomimasu (minum)",
+      "type": "🟢",
+      "mnemonic": "Ketika haus, Anda bilang, 'NO... MI...nta minum, MAS!'. Jadi, 'nomimasu'.",
+      "example": {
+        "jp": "コーヒーを<ruby>飲<rt>の</rt></ruby>みますか。",
+        "romaji": "Koohii o nomimasu ka.",
+        "id": "Apakah kamu mau minum kopi?"
+      }
+    },
+    {
+      "vocab": "<ruby>大<rt>おお</rt></ruby>きい",
+      "reading_meaning": "ookii (besar)",
+      "type": "🟠",
+      "mnemonic": "Kanji 大 terlihat seperti orang yang merentangkan tangannya lebar-lebar untuk menunjukkan 'BESAR!'. Suaranya 'OOO...' seperti orang yang takjub melihat sesuatu yang besar.",
+      "example": {
+        "jp": "このかばんは<ruby>大<rt>おお</rt></ruby>きいです。",
+        "romaji": "Kono kaban wa ookii desu.",
+        "id": "Tas ini besar."
+      }
+    },
+    {
+      "vocab": "<ruby>小<rt>ちい</rt></ruby>さい",
+      "reading_meaning": "chiisai (kecil)",
+      "type": "🟠",
+      "mnemonic": "Bayangkan sesuatu yang kecil dan lucu, lalu Anda berkata 'CIiii...lucu' atau 'CIiii...kecil'.",
+      "example": {
+        "jp": "わたしのへやは<ruby>小<rt>ちい</rt></ruby>さいです。",
+        "romaji": "Watashi no heya wa chiisai desu.",
+        "id": "Kamar saya kecil."
+      }
     }
   ],
   "grammar": [
     {
-      "pattern": "[KB1] は [KB2] です",
-      "short_explanation": "Pola dasar untuk menyatakan \"[KB1] adalah [KB2]\".",
-      "explanation": "Pola kalimat paling dasar dalam bahasa Jepang untuk menyatakan '[KB1] adalah [KB2]'. Partikel は (diucapkan 'wa') berfungsi sebagai penanda topik kalimat, dan です (desu) adalah kopula (seperti 'adalah') yang membuatnya sopan.",
-      "visual": "<b>[Topik] 🔵は [Deskripsi] 🔵です</b><br><br>Bayangkan <b>は (wa)</b> sebagai tanda 'pembatas' yang mengatakan, 'Oke, sekarang kita akan membicarakan [Topik]'. Lalu <b>です (desu)</b> adalah 'cap persetujuan' yang menyatakan bahwa deskripsi tersebut benar.",
+      "pattern": "KB1 <b style='color:#FF4500;'>は</b> KB2 です",
+      "explanation": "Pola kalimat paling dasar dalam bahasa Jepang. Partikel は (dibaca 'wa') berfungsi sebagai penanda topik. Pola ini digunakan untuk menyatakan 'KB1 adalah KB2' secara sopan. Ini adalah kalimat positif dan afirmatif.",
+      "visual": "<b>[Topik/Subjek] 💬 <b style='color:#FF4500;'>は</b> [Deskripsi/Penjelasan] ✅ です</b><br><br>Bayangkan <b>は</b> sebagai tanda 'sama dengan' (=) yang menyatakan identitas. 'A = B'. 'Watashi = Gakusei'.",
       "examples": [
         {
-          "jp": "<ruby>私<rt>わたし</rt></ruby><b style=\"color:#1976d2\">は</b>マイクです。",
-          "romaji": "Watashi wa Maiku desu.",
-          "id": "Saya adalah Mike."
+          "jp": "わたし<b style='color:#FF4500;'>は</b>マリアです。",
+          "romaji": "Watashi wa Maria desu.",
+          "id": "Saya adalah Maria."
         },
         {
-          "jp": "これ<b style=\"color:#1976d2\">は</b><ruby>本<rt>ほん</rt></ruby>です。",
+          "jp": "これ<b style='color:#FF4500;'>は</b><ruby>本<rt>ほん</rt></ruby>です。",
           "romaji": "Kore wa hon desu.",
           "id": "Ini adalah buku."
         },
         {
-          "jp": "あの<ruby>方<rt>かた</rt></ruby><b style=\"color:#1976d2\">は</b><ruby>先生<rt>せんせい</rt></ruby>です。",
-          "romaji": "Ano kata wa sensei desu.",
-          "id": "Orang itu (sopan) adalah guru."
+          "jp": "サントスさん<b style='color:#FF4500;'>は</b><ruby>先生<rt>せんせい</rt></ruby>です。",
+          "romaji": "Santosu-san wa sensei desu.",
+          "id": "Sdr. Santos adalah seorang guru."
         }
       ]
     },
     {
-      "pattern": "[KB1] の [KB2]",
-      "short_explanation": "Partikel の (no) untuk menunjukkan kepemilikan atau hubungan.",
-      "explanation": "Partikel の (no) digunakan untuk menghubungkan dua kata benda. Fungsi utamanya adalah untuk menunjukkan kepemilikan atau atribut. Bisa diartikan sebagai '...nya...', 'milik...', atau 'yang...'. Urutannya terbalik dari Bahasa Indonesia: yang menerangkan (KB1) diletakkan di depan yang diterangkan (KB2).",
-      "visual": "<b>[Pemilik/Atribut] 🔵の [Milik/Objek] 🔵</b><br><br>Pikirkan <b>の (no)</b> sebagai lem perekat yang menyambungkan dua kata benda. `[Mobil] の [Kunci]` menjadi `Kunci milik Mobil`, bukan sebaliknya.",
+      "pattern": "KB1 <b style='color:#FF4500;'>は</b> KB2 じゃありません",
+      "explanation": "Ini adalah bentuk negatif dari 'KB1 は KB2 です'. Pola 'じゃありません (ja arimasen)' digunakan untuk menyangkal atau menyatakan 'KB1 bukanlah KB2'. Ini adalah bentuk sopan yang umum digunakan.",
+      "visual": "<b>[Topik/Subjek] 💬 <b style='color:#FF4500;'>は</b> [Deskripsi/Penjelasan] ❌ じゃありません</b><br><br>Bayangkan <b>じゃありません</b> sebagai tanda 'coret' atau 'tidak sama dengan' (≠). 'A ≠ B'. 'Watashi ≠ Sensei'.",
       "examples": [
         {
-          "jp": "<ruby>私<rt>わたし</rt></ruby><b style=\"color:#1976d2\">の</b><ruby>名前<rt>なまえ</rt></ruby>はアンナです。",
-          "romaji": "Watashi no namae wa Anna desu.",
-          "id": "Nama saya adalah Anna. (Nama milik saya)"
+          "jp": "わたし<b style='color:#FF4500;'>は</b><ruby>学生<rt>がくせい</rt></ruby>じゃありません。",
+          "romaji": "Watashi wa gakusei ja arimasen.",
+          "id": "Saya bukan seorang siswa."
         },
         {
-          "jp": "これは<ruby>日本語<rt>にほんご</rt></ruby><b style=\"color:#1976d2\">の</b><ruby>本<rt>ほん</rt></ruby>です。",
-          "romaji": "Kore wa nihongo no hon desu.",
-          "id": "Ini adalah buku bahasa Jepang. (Buku yang berbahasa Jepang)"
+          "jp": "あれ<b style='color:#FF4500;'>は</b><ruby>日本<rt>にほん</rt></ruby>のくるまじゃありません。",
+          "romaji": "Are wa nihon no kuruma ja arimasen.",
+          "id": "Itu bukan mobil buatan Jepang."
         },
         {
-          "jp": "トヨタ<b style=\"color:#1976d2\">の</b><ruby>社員<rt>しゃいん</rt></ruby>です。",
-          "romaji": "Toyota no shain desu.",
-          "id": "Saya adalah karyawan Toyota. (Karyawan dari perusahaan Toyota)"
+          "jp": "やまださん<b style='color:#FF4500;'>は</b><ruby>医者<rt>いしゃ</rt></ruby>じゃありません。",
+          "romaji": "Yamada-san wa isha ja arimasen.",
+          "id": "Sdr. Yamada bukan seorang dokter."
+        }
+      ]
+    },
+    {
+      "pattern": "Kalimat + か",
+      "explanation": "Menambahkan partikel 'か' di akhir sebuah kalimat pernyataan akan mengubahnya menjadi kalimat tanya. Tidak perlu mengubah urutan kata seperti dalam bahasa Indonesia atau Inggris. Intonasi saat bertanya biasanya naik di akhir kalimat.",
+      "visual": "<b>[Pernyataan Lengkap] +❓か</b><br><br>Bayangkan partikel <b>か</b> sebagai tanda tanya (?) instan yang bisa ditempelkan di akhir kalimat apapun untuk membuatnya jadi pertanyaan.",
+      "examples": [
+        {
+          "jp": "アンディさん<b style='color:#FF4500;'>は</b><ruby>インドネシア人<rt>じん</rt></ruby>ですか。",
+          "romaji": "Andi-san wa Indonesia-jin desu ka.",
+          "id": "Apakah Sdr. Andi orang Indonesia?"
+        },
+        {
+          "jp": "それ<b style='color:#FF4500;'>は</b>あなたのかさですか。",
+          "romaji": "Sore wa anata no kasa desu ka.",
+          "id": "Apakah itu payung Anda?"
+        },
+        {
+          "jp": "あの<ruby>方<rt>かた</rt></ruby><b style='color:#FF4500;'>は</b>どなたですか。",
+          "romaji": "Ano kata wa donata desu ka.",
+          "id": "Siapakah orang itu (bentuk sopan)?"
         }
       ]
     }

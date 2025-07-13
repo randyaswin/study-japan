@@ -1,218 +1,246 @@
 {
   "type": "N5",
   "day": 9,
-  "kanji": [],
+  "kanji": [
+    {
+      "kanji": "名",
+      "onyomi": "めい (mei), みょう (myou)",
+      "kunyomi": "な (na)",
+      "arti": "Nama, Terkenal",
+      "mnemonic": "Kanji ini gabungan dari 'malam' (夕) dan 'mulut' (口). Bayangkan di 'malam' hari yang gelap, Anda tidak bisa melihat wajah orang, jadi Anda harus memanggil 'nama' mereka dengan 'mulut' untuk identifikasi.",
+      "example": {
+        "jp": "お<ruby>名前<rt>なまえ</rt></ruby>はなんですか。",
+        "romaji": "O-namae wa nan desu ka.",
+        "id": "Siapa nama Anda?"
+      }
+    },
+    {
+      "kanji": "時",
+      "onyomi": "じ (ji)",
+      "kunyomi": "とき (toki)",
+      "arti": "Waktu, Jam",
+      "mnemonic": "Terdiri dari 'matahari' (日) di sebelah kiri dan 'kuil' (寺) di sebelah kanan. Pada zaman dahulu, orang mengukur 'waktu' dengan melihat posisi 'matahari' relatif terhadap 'kuil' atau bangunan lain.",
+      "example": {
+        "jp": "<ruby>時間<rt>じかん</rt></ruby>がありませんから、<ruby>急<rt>いそ</rt></ruby>ぎましょう。",
+        "romaji": "Jikan ga arimasen kara, isogimashou.",
+        "id": "Karena tidak ada waktu, ayo cepat."
+      }
+    },
+    {
+      "kanji": "間",
+      "onyomi": "かん (kan), けん (ken)",
+      "kunyomi": "あいだ (aida), ま (ma)",
+      "arti": "Antara, Selang Waktu",
+      "mnemonic": "Kanji ini menggambarkan 'matahari' (日) atau 'bulan' (月) yang terlihat dari celah 'gerbang' (門). Ini melambangkan 'ruang' atau 'waktu' di 'antara' dua pilar gerbang.",
+      "example": {
+        "jp": "ぎんこうとゆうびんきょくの<ruby>間<rt>あいだ</rt></ruby>にスーパーがあります。",
+        "romaji": "Ginkou to yuubinkyoku no aida ni suupaa ga arimasu.",
+        "id": "Ada supermarket di antara bank dan kantor pos."
+      }
+    },
+    {
+      "kanji": "語",
+      "onyomi": "ご (go)",
+      "kunyomi": "かた.る (kata.ru)",
+      "arti": "Bahasa, Kata",
+      "mnemonic": "Terdiri dari 'kata-kata' (言), 'lima' (五), dan 'mulut' (口). Ini melambangkan 'kata-kata' yang diucapkan dari 'mulut' banyak orang ('lima' melambangkan banyak) yang membentuk sebuah 'bahasa'.",
+      "example": {
+        "jp": "わたしは<ruby>日本語<rt>にほんご</rt></ruby>と<ruby>英語<rt>えいご</rt></ruby>がわかります。",
+        "romaji": "Watashi wa nihongo to eigo ga wakarimasu.",
+        "id": "Saya mengerti bahasa Jepang dan bahasa Inggris."
+      }
+    },
+    {
+      "kanji": "話",
+      "onyomi": "わ (wa)",
+      "kunyomi": "はなし (hanashi), はな.す (hana.su)",
+      "arti": "Bicara, Cerita",
+      "mnemonic": "Terdiri dari radikal 'kata-kata' (言) dan 'lidah' (舌, bentuk yang disederhanakan). Ini secara harfiah menggambarkan proses menghasilkan 'kata-kata' dengan lidah, yaitu 'berbicara'.",
+      "example": {
+        "jp": "ともだちと<ruby>電話<rt>でんわ</rt></ruby>で<ruby>話<rt>はな</rt></ruby>しました。",
+        "romaji": "Tomodachi to denwa de hanashimashita.",
+        "id": "Saya berbicara dengan teman di telepon."
+      }
+    }
+  ],
   "vocabulary": [
     {
-      "vocab": "<ruby>水<rt>みず</rt></ruby>",
-      "reading_meaning": "mizu (air)",
+      "vocab": "たくさん",
+      "reading_meaning": "takusan (banyak)",
       "type": "🔵",
-      "mnemonic": "Habis lari, 'MI-num ZU-su' atau 'air' putih.",
-      "example": { "jp": "<ruby>水<rt>みず</rt></ruby>をください。", "romaji": "Mizu o kudasai.", "id": "Tolong beri saya air." }
+      "mnemonic": "Bayangkan 'TAK USAH AN-tri, barangnya ada BANYAK'.",
+      "example": {
+        "jp": "きのう、しゃしんをたくさんとりました。",
+        "romaji": "Kinou, shashin o takusan torimashita.",
+        "id": "Kemarin saya mengambil banyak foto."
+      }
     },
     {
-      "vocab": "おちゃ",
-      "reading_meaning": "ocha (teh hijau)",
+      "vocab": "<ruby>少<rt>すこ</rt></ruby>し",
+      "reading_meaning": "sukoshi (sedikit)",
       "type": "🔵",
-      "mnemonic": "'O-CHA-ntiknya' minum 'teh' sore-sore.",
-      "example": { "jp": "あたたかいお<ruby>茶<rt>ちゃ</rt></ruby>を<ruby>飲<rt>の</rt></ruby>みます。", "romaji": "Atatakai ocha o nomimasu.", "id": "Saya minum teh hijau hangat." }
+      "mnemonic": "'SUKO-rnya SI-apa yang paling SEDIKIT?'.",
+      "example": {
+        "jp": "すみません、<ruby>塩<rt>しお</rt></ruby>を<ruby>少<rt>すこ</rt></ruby>しください。",
+        "romaji": "Sumimasen, shio o sukoshi kudasai.",
+        "id": "Permisi, tolong berikan sedikit garam."
+      }
     },
     {
-      "vocab": "ぎゅうにゅう",
-      "reading_meaning": "gyuunyuu (susu sapi)",
+      "vocab": "<ruby>全然<rt>ぜんぜん</rt></ruby>",
+      "reading_meaning": "zenzen (sama sekali tidak...)",
       "type": "🔵",
-      "mnemonic": "Susu dari sapi yang 'GI-YU-NYU-s' (genius), pasti enak!",
-      "example": { "jp": "<ruby>毎朝<rt>まいあσα</rt></ruby>、<ruby>牛乳<rt>ぎゅうにゅう</rt></ruby>を<ruby>飲<rt>の</rt></ruby>みます。", "romaji": "Maiasa, gyuunyuu o nomimasu.", "id": "Setiap pagi saya minum susu sapi." }
+      "mnemonic": "Gunakan dengan kalimat negatif. 'ZENZEN aku TIDAK mengerti'.",
+      "example": {
+        "jp": "わたしは漢字が<ruby>全然<rt>ぜんぜん</rt></ruby>わかりません。",
+        "romaji": "Watashi wa kanji ga zenzen wakarimasen.",
+        "id": "Saya sama sekali tidak mengerti kanji."
+      }
     },
     {
-      "vocab": "ジュース",
-      "reading_meaning": "juusu (jus)",
+      "vocab": "よく",
+      "reading_meaning": "yoku (sering, dengan baik)",
       "type": "🔵",
-      "mnemonic": "Kata serapan dari bahasa Inggris 'Juice'.",
-      "example": { "jp": "オレンジジュースが<ruby>好<rt>す</rt></ruby>きです。", "romaji": "Orenji juusu ga suki desu.", "id": "Saya suka jus jeruk." }
+      "mnemonic": "'YOK, kita SERING-SERING main lagi ya!' atau 'Kamu belajar DENGAN BAIK (YOKU)'.",
+      "example": {
+        "jp": "わたしはよくあの<ruby>喫茶店<rt>きっさてん</rt></ruby>へいきます。",
+        "romaji": "Watashi wa yoku ano kissaten e ikimasu.",
+        "id": "Saya sering pergi ke kedai kopi itu."
+      }
     },
     {
-      "vocab": "ビール",
-      "reading_meaning": "biiru (bir)",
-      "type": "🔵",
-      "mnemonic": "Kata serapan dari bahasa Inggris 'Beer'.",
-      "example": { "jp": "<ruby>仕事<rt>しごと</rt></ruby>の<ruby>後<rt>あと</rt></ruby>、ビールを<ruby>飲<rt>の</rt></ruby>みます。", "romaji": "Shigoto no ato, biiru o nomimasu.", "id": "Setelah kerja, saya minum bir." }
+      "vocab": "きれい",
+      "reading_meaning": "kirei (cantik, bersih)",
+      "type": "🟣",
+      "mnemonic": "'KIREI-potan membersihkan kamar, tapi hasilnya jadi CANTIK dan BERSIH'.",
+      "example": {
+        "jp": "この<ruby>公園<rt>こうえん</rt></ruby>はとてもきれいです。",
+        "romaji": "Kono kouen wa totemo kirei desu.",
+        "id": "Taman ini sangat cantik/bersih."
+      }
     },
     {
-      "vocab": "（お）さけ",
-      "reading_meaning": "o-sake (sake, arak Jepang)",
-      "type": "🔵",
-      "mnemonic": "Jangan 'O-SA-lah KE-tika' minum 'sake', nanti mabuk.",
-      "example": { "jp": "これは<ruby>日本<rt>にほん</rt></ruby>のお<ruby>酒<rt>さけ</rt></ruby>です。", "romaji": "Kore wa nihon no osake desu.", "id": "Ini adalah arak Jepang." }
+      "vocab": "ハンサム",
+      "reading_meaning": "hansamu (tampan)",
+      "type": "🟣",
+      "mnemonic": "Serapan dari bahasa Inggris 'handsome'. Sangat mudah diingat.",
+      "example": {
+        "jp": "あの<ruby>俳優<rt>はいゆう</rt></ruby>はハンサムですね。",
+        "romaji": "Ano haiyuu wa hansamu desu ne.",
+        "id": "Aktor itu tampan ya."
+      }
     },
     {
-      "vocab": "ビデオ",
-      "reading_meaning": "bideo (video)",
-      "type": "🔵",
-      "mnemonic": "Kata serapan dari bahasa Inggris 'Video'.",
-      "example": { "jp": "このビデオはおもしろいですか。", "romaji": "Kono bideo wa omoshiroi desu ka.", "id": "Apakah video ini menarik?" }
-    },
-    {
-      "vocab": "<ruby>絵<rt>え</rt></ruby>",
-      "reading_meaning": "e (gambar, lukisan)",
-      "type": "🔵",
-      "mnemonic": "'E-h, bagus sekali 'gambar' ini!",
-      "example": { "jp": "<ruby>絵<rt>え</rt></ruby>をかくのが<ruby>好<rt>す</rt></ruby>きです。", "romaji": "E o kaku no ga suki desu.", "id": "Saya suka menggambar." }
-    },
-    {
-      "vocab": "<ruby>日記<rt>にっき</rt></ruby>",
-      "reading_meaning": "nikki (buku harian)",
-      "type": "🔵",
-      "mnemonic": "Gabungan kanji 'hari' (日) dan 'catatan' (記). Jadi, 'catatan harian'.",
-      "example": { "jp": "<ruby>毎日<rt>まいにち</rt></ruby>、<ruby>日記<rt>にっき</rt></ruby>を<ruby>書<rt>か</rt></ruby>きます。", "romaji": "Mainichi, nikki o kakimasu.", "id": "Setiap hari saya menulis buku harian." }
-    },
-    {
-      "vocab": "<ruby>写真<rt>しゃしん</rt></ruby>",
-      "reading_meaning": "shashin (foto)",
-      "type": "🔵",
-      "mnemonic": "'SHA-ma SI-apa IN-i?' tanya saat melihat 'foto' lama.",
-      "example": { "jp": "<ruby>写真<rt>しゃしん</rt></ruby>を<ruby>撮<rt>と</rt></ruby>りましょう。", "romaji": "Shashin o torimashou.", "id": "Ayo kita ambil foto." }
-    },
-    {
-      "vocab": "さいふ",
-      "reading_meaning": "saifu (dompet)",
-      "type": "🔵",
-      "mnemonic": "'SA-ya FU-lang' dulu, 'dompet' saya ketinggalan.",
-      "example": { "jp": "これはだれのさいふですか。", "romaji": "Kore wa dare no saifu desu ka.", "id": "Ini dompet siapa?" }
-    },
-    {
-      "vocab": "Tシャツ",
-      "reading_meaning": "tiishatsu (kaos oblong)",
-      "type": "🔵",
-      "mnemonic": "Kata serapan dari bahasa Inggris 'T-shirt'.",
-      "example": { "jp": "<ruby>新<rt>あたら</rt></ruby>しいTシャツを<ruby>買<rt>か</rt></ruby>いました。", "romaji": "Atarashii tiishatsu o kaimashita.", "id": "Saya membeli kaos baru." }
-    },
-    {
-      "vocab": "カメラ",
-      "reading_meaning": "kamera (kamera)",
-      "type": "🔵",
-      "mnemonic": "Kata serapan dari bahasa Inggris 'Camera'.",
-      "example": { "jp": "そのカメラは<ruby>高<rt>たか</rt></ruby>いですか。", "romaji": "Sono kamera wa takai desu ka.", "id": "Apakah kamera itu mahal?" }
-    },
-    {
-      "vocab": "パソコン",
-      "reading_meaning": "pasokon (PC, laptop)",
-      "type": "🔵",
-      "mnemonic": "Singkatan dari 'Personal Computer' (パーソナルコンピュータ).",
-      "example": { "jp": "パソコンで<ruby>仕事<rt>しごと</rt></ruby>をします。", "romaji": "Pasokon de shigoto o shimasu.", "id": "Saya bekerja dengan laptop." }
-    },
-    {
-      "vocab": "たばこ",
-      "reading_meaning": "tabako (rokok)",
-      "type": "🔵",
-      "mnemonic": "Kata serapan dari bahasa Portugis/Spanyol 'Tabaco'.",
-      "example": { "jp": "ここでたばこを<ruby>吸<rt>す</rt></ruby>わないでください。", "romaji": "Koko de tabako o suwanaide kudasai.", "id": "Tolong jangan merokok di sini." }
-    },
-    {
-      "vocab": "レストラン",
-      "reading_meaning": "resutoran (restoran)",
-      "type": "🔵",
-      "mnemonic": "Kata serapan dari bahasa Inggris 'Restaurant'.",
-      "example": { "jp": "あのレストランは<ruby>安<rt>やす</rt></ruby>くて、おいしいです。", "romaji": "Ano resutoran wa yasukute, oishii desu.", "id": "Restoran itu murah dan enak." }
-    },
-    {
-      "vocab": "しお",
-      "reading_meaning": "shio (garam)",
-      "type": "🔵",
-      "mnemonic": "Kalau masak, 'SHI-O-pkan' 'garam' secukupnya.",
-      "example": { "jp": "しおを<ruby>少<rt>すこ</rt></ruby>し<ruby>入<rt>い</rt></ruby>れてください。", "romaji": "Shio o sukoshi irete kudasai.", "id": "Tolong masukkan sedikit garam." }
-    },
-    {
-      "vocab": "さとう",
-      "reading_meaning": "satou (gula)",
-      "type": "🔵",
-      "mnemonic": "'SA-yang, TO-long' ambilkan 'gula'.",
-      "example": { "jp": "コーヒーに<ruby>砂糖<rt>さとう</rt></ruby>を<ruby>入<rt>い</rt></ruby>れますか。", "romaji": "Koohii ni satou o iremasu ka.", "id": "Apakah Anda menambahkan gula ke kopi?" }
-    },
-    {
-      "vocab": "<ruby>吸<rt>す</rt></ruby>います",
-      "reading_meaning": "suimasu (merokok, menghisap)",
-      "type": "🟢",
-      "mnemonic": "Jangan 'merokok' terus, 'SUI-MAS'ter (si mas).",
-      "example": { "jp": "おとうさんはたばこを<ruby>吸<rt>す</rt></ruby>います。", "romaji": "Otousan wa tabako o suimasu.", "id": "Ayah (orang lain) merokok." }
-    },
-    {
-      "vocab": "<ruby>撮<rt>と</rt></ruby>ります",
-      "reading_meaning": "torimasu (mengambil foto)",
-      "type": "🟢",
-      "mnemonic": "'TO-long, RI-quest' dong, 'ambil foto' kami.",
-      "example": { "jp": "ここで<ruby>写真<rt>しゃしん</rt></ruby>を<ruby>撮<rt>と</rt></ruby>ってもいいですか。", "romaji": "Koko de shashin o tottemo ii desu ka.", "id": "Bolehkah saya mengambil foto di sini?" }
-    },
-    {
-      "vocab": "<ruby>貸<rt>か</rt></ruby>します",
-      "reading_meaning": "kashimasu (meminjamkan)",
-      "type": "🟢",
-      "mnemonic": "'KASIH-mas' pinjam, deh. 'Kashimasu' itu 'mengasih pinjam' atau 'meminjamkan'.",
-      "example": { "jp": "<ruby>友達<rt>ともだち</rt></ruby>に<ruby>本<rt>ほん</rt></ruby>を<ruby>貸<rt>か</rt></ruby>しました。", "romaji": "Tomodachi ni hon o kashimashita.", "id": "Saya telah meminjamkan buku kepada teman." }
-    },
-    {
-      "vocab": "<ruby>借<rt>か</rt></ruby>ります",
-      "reading_meaning": "karimasu (meminjam dari)",
-      "type": "🟢",
-      "mnemonic": "Saya mau 'CARI MAS-alah' dengan 'meminjam' uang. Ingat 'Kari' untuk 'meminjam'.",
-      "example": { "jp": "<ruby>図書館<rt>としょかん</rt></ruby>で<ruby>本<rt>ほん</rt></ruby>を<ruby>借<rt>か</rt></ruby>ります。", "romaji": "Toshokan de hon o karimasu.", "id": "Saya meminjam buku di perpustakaan." }
-    },
-    {
-      "vocab": "<ruby>教<rt>おし</rt></ruby>えます",
-      "reading_meaning": "oshiemasu (mengajar, memberitahu)",
-      "type": "🟢",
-      "mnemonic": "'O-SHI-E', gitu ya caranya? Terima kasih sudah 'memberitahu'.",
-      "example": { "jp": "<ruby>電話番号<rt>でんわばんごう</rt></ruby>を<ruby>教<rt>おし</rt></ruby>えてください。", "romaji": "Denwa bangou o oshiete kudasai.", "id": "Tolong beritahu saya nomor telepon Anda." }
-    },
-    {
-      "vocab": "<ruby>習<rt>なら</rt></ruby>います",
-      "reading_meaning": "naraimasu (belajar dari seseorang)",
-      "type": "🟢",
-      "mnemonic": "'Belajar' dari guru 'NA-RA-si' yang hebat.",
-      "example": { "jp": "<ruby>私<rt>わたし</rt></ruby>はキムさんに<ruby>韓国語<rt>かんこくご</rt></ruby>を<ruby>習<rt>なら</rt></ruby>います。", "romaji": "Watashi wa Kimu-san ni kankokugo o naraimasu.", "id": "Saya belajar bahasa Korea dari Sdr. Kim." }
-    },
-    {
-      "vocab": "あつい",
-      "reading_meaning": "atsui (panas - cuaca/benda)",
-      "type": "🟠",
-      "mnemonic": "'A-TSUI-h!' teriak saat menyentuh benda 'panas'.",
-      "example": { "jp": "<ruby>今日<rt>きょう</rt></ruby>は<ruby>暑<rt>あつ</rt></ruby>いですね。", "romaji": "Kyou wa atsui desu ne.", "id": "Hari ini panas ya." }
-    },
-    {
-      "vocab": "さむい",
-      "reading_meaning": "samui (dingin - cuaca)",
-      "type": "🟠",
-      "mnemonic": "Di cuaca 'dingin', 'SAMU-pai' menggigil.",
-      "example": { "jp": "<ruby>日本<rt>にほん</rt></ruby>の<ruby>冬<rt>ふゆ</rt></ruby>は<ruby>寒<rt>さむ</rt></ruby>いです。", "romaji": "Nihon no fuyu wa samui desu.", "id": "Musim dingin di Jepang itu dingin." }
-    },
-    {
-      "vocab": "おいしい",
-      "reading_meaning": "oishii (enak)",
-      "type": "🟠",
-      "mnemonic": "'O-ISHII-p' dulu kuahnya, pasti 'enak'!",
-      "example": { "jp": "このケーキはとてもおいしいです。", "romaji": "Kono keeki wa totemo oishii desu.", "id": "Kue ini sangat enak." }
-    },
-    {
-      "vocab": "まずい",
-      "reading_meaning": "mazui (tidak enak)",
-      "type": "🟠",
-      "mnemonic": "Rasanya 'MA-sih ZU-I-lek', 'tidak enak'.",
-      "example": { "jp": "このスープはまずいです。", "romaji": "Kono suupu wa mazui desu.", "id": "Sup ini tidak enak." }
+      "vocab": "<ruby>静<rt>しず</rt></ruby>か",
+      "reading_meaning": "shizuka (tenang, sepi)",
+      "type": "🟣",
+      "mnemonic": "'SHIZU-ka, jangan berisik, di sini TENANG'.",
+      "example": {
+        "jp": "<ruby>図書館<rt>としょかん</rt></ruby>は<ruby>静<rt>しず</rt></ruby>かです。",
+        "romaji": "Toshokan wa shizuka desu.",
+        "id": "Perpustakaan itu tenang."
+      }
     },
     {
       "vocab": "にぎやか",
       "reading_meaning": "nigiyaka (ramai, hidup)",
       "type": "🟣",
-      "mnemonic": "'NI-KI-ta YA-KA-n' ke tempat yang 'ramai' itu.",
-      "example": { "jp": "しぶやはにぎやかな<ruby>町<rt>まち</rt></h>です。", "romaji": "Shibuya wa nigiyaka na machi desu.", "id": "Shibuya adalah kota yang ramai." }
+      "mnemonic": "Bayangkan 'NI-kisah GYA-ng jalanan, YAKA-li ini, RAMAI sekali!'.",
+      "example": {
+        "jp": "この<ruby>町<rt>まち</rt></ruby>はとてもにぎやかです。",
+        "romaji": "Kono machi wa totemo nigiyaka desu.",
+        "id": "Kota ini sangat ramai."
+      }
     },
     {
-      "vocab": "しずか",
-      "reading_meaning": "shizuka (sepi, tenang)",
-      "type": "🟣",
-      "mnemonic": "'SHI-ssst, ZU-KA' (suka) yang 'tenang', jangan berisik.",
-      "example": { "jp": "この<ruby>図書館<rt>としょかん</rt></ruby>はとても<ruby>静<rt>しず</rt></ruby>かです。", "romaji": "Kono toshokan wa totemo shizuka desu.", "id": "Perpustakaan ini sangat tenang." }
+      "vocab": "かかります",
+      "reading_meaning": "kakarimasu (memerlukan waktu/uang)",
+      "type": "🟢",
+      "mnemonic": "'KA-lau KA-mu ke RImba, akan MEMERLUKAN banyak WAKTU dan UANG'.",
+      "example": {
+        "jp": "うちから<ruby>会社<rt>かいしゃ</rt></ruby>までどのくらいかかりますか。",
+        "romaji": "Uchi kara kaisha made donokurai kakarimasu ka.",
+        "id": "Dari rumah sampai kantor memerlukan berapa lama?"
+      }
+    },
+    {
+      "vocab": "あげます",
+      "reading_meaning": "agemasu (memberi)",
+      "type": "🟢",
+      "mnemonic": "Bayangkan Anda berkata 'A... GE-mbolan ini untukmu, MAS', sambil 'memberi' sesuatu.",
+      "example": {
+        "jp": "わたしは<ruby>妹<rt>いもうと</rt></ruby>にプレゼントをあげました。",
+        "romaji": "Watashi wa imouto ni purezento o agemashita.",
+        "id": "Saya memberi hadiah kepada adik perempuan saya."
+      }
     }
   ],
-  "grammar": []
+  "grammar": [
+    {
+      "pattern": "KB (tempat) <b style='color:#FF4500;'>へ</b> KK (bentuk ます-stem) / KB <b style='color:#FF4500;'>に</b> 行く/来る/帰る",
+      "explanation": "Pola ini digunakan untuk menyatakan tujuan dari suatu pergerakan. Anda pergi ke suatu tempat (へ) untuk melakukan sesuatu (に). Tujuannya bisa berupa kata kerja (dihilangkan ます-nya) atau kata benda yang merupakan suatu kegiatan.",
+      "visual": "<b>[Tempat] ➡️<b style='color:#FF4500;'>へ</b> [Tujuan Aksi] 🎯<b style='color:#FF4500;'>に</b> [Pergi/Datang/Pulang]</b><br><br>Bayangkan Anda melempar panah 🎯 (に) ke sebuah target 'Tujuan Aksi', lalu Anda bergerak (へ) menuju target tersebut.",
+      "examples": [
+        {
+          "jp": "デパート<b style='color:#FF4500;'>へ</b>くつを<ruby>買<rt>か</rt></ruby>い<b style='color:#FF4500;'>に</b><ruby>行<rt>い</rt></ruby>きます。",
+          "romaji": "Depaato e kutsu o kai ni ikimasu.",
+          "id": "Saya pergi ke department store untuk membeli sepatu."
+        },
+        {
+          "jp": "<ruby>図書館<rt>としょかん</rt></ruby><b style='color:#FF4500;'>へ</b><ruby>本<rt>ほん</rt></ruby>を<ruby>返<rt>かえ</rt></ruby>し<b style='color:#FF4500;'>に</b><ruby>行<rt>い</rt></ruby>きました。",
+          "romaji": "Toshokan e hon o kaeshi ni ikimashita.",
+          "id": "Saya (telah) pergi ke perpustakaan untuk mengembalikan buku."
+        },
+        {
+          "jp": "あした、<ruby>京都<rt>きょうと</rt></ruby><b style='color:#FF4500;'>へ</b>お<ruby>祭<rt>まつ</rt></ruby>り<b style='color:#FF4500;'>に</b><ruby>行<rt>い</rt></ruby>きます。",
+          "romaji": "Ashita, Kyouto e o-matsuri ni ikimasu.",
+          "id": "Besok saya akan pergi ke Kyoto untuk (melihat) festival."
+        }
+      ]
+    },
+    {
+      "pattern": "[Pemberi] <b style='color:#FF4500;'>は</b> [Penerima] <b style='color:#FF4500;'>に</b> [Benda] を あげます",
+      "explanation": "Pola ini digunakan untuk menyatakan aksi 'memberi'. Pembicara (atau subjek) adalah 'pemberi'. Orang yang menerima ditandai dengan partikel に. Kata kerja 'agemasu' digunakan saat memberi kepada orang lain yang setara atau di bawah kita.",
+      "visual": "<b>[Pemberi] ➡️ [Benda] ➡️ [Penerima] <b style='color:#FF4500;'>に</b></b><br><br>Bayangkan panah (➡️) mengalir dari Pemberi, melalui Benda, dan berhenti di Penerima yang ditandai oleh pin lokasi <b style='color:#FF4500;'>に</b>.",
+      "examples": [
+        {
+          "jp": "わたし<b style='color:#FF4500;'>は</b>キムさん<b style='color:#FF4500;'>に</b><ruby>花<rt>はな</rt></ruby>をあげました。",
+          "romaji": "Watashi wa Kimu-san ni hana o agemashita.",
+          "id": "Saya memberikan bunga kepada Sdr. Kim."
+        },
+        {
+          "jp": "<ruby>父<rt>ちち</rt></ruby><b style='color:#FF4500;'>は</b><ruby>母<rt>はは</rt></ruby><b style='color:#FF4500;'>に</b>プレゼントをあげます。",
+          "romaji": "Chichi wa haha ni purezento o agemasu.",
+          "id": "Ayah (saya) memberikan hadiah kepada ibu (saya)."
+        },
+        {
+          "jp": "あなたはこの<ruby>犬<rt>いぬ</rt></ruby><b style='color:#FF4500;'>に</b>えさをあげますか。",
+          "romaji": "Anata wa kono inu ni esa o agemasu ka.",
+          "id": "Apakah kamu akan memberi makan (kepada) anjing ini?"
+        }
+      ]
+    },
+    {
+      "pattern": "[Penerima] <b style='color:#FF4500;'>は</b> [Pemberi] <b style='color:#FF4500;'>に / から</b> [Benda] を もらいます",
+      "explanation": "Pola ini digunakan untuk menyatakan aksi 'menerima'. Pembicara (atau subjek) adalah 'penerima'. Pemberi ditandai dengan partikel に (jika perorangan) atau から (jika dari sebuah institusi/perusahaan).",
+      "visual": "<b>[Penerima] ⬅️ [Benda] ⬅️ [Pemberi] <b style='color:#FF4500;'>に / から</b></b><br><br>Bayangkan panah (⬅️) bergerak dari Pemberi menuju Penerima. Pemberi adalah 'sumber' yang ditandai <b style='color:#FF4500;'>に</b> atau <b style='color:#FF4500;'>から</b>.",
+      "examples": [
+        {
+          "jp": "わたし<b style='color:#FF4500;'>は</b>やまださん<b style='color:#FF4500;'>に</b>チョコレートをもらいました。",
+          "romaji": "Watashi wa Yamada-san ni chokoreeto o moraimashita.",
+          "id": "Saya menerima cokelat dari Sdr. Yamada."
+        },
+        {
+          "jp": "だれ<b style='color:#FF4500;'>に</b>そのネクタイをもらいましたか。",
+          "romaji": "Dare ni sono nekutai o moraimashita ka.",
+          "id": "Dari siapa kamu menerima dasi itu?"
+        },
+        {
+          "jp": "わたし<b style='color:#FF4500;'>は</b><ruby>会社<rt>かいしゃ</rt></ruby><b style='color:#FF4500;'>から</b>お<ruby>金<rt>かね</rt></ruby>をもらいました。",
+          "romaji": "Watashi wa kaisha kara okane o moraimashita.",
+          "id": "Saya menerima uang dari perusahaan."
+        }
+      ]
+    }
+  ]
 }
