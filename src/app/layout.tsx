@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import PWAInstaller from "@/components/PWAInstaller";
-import { ThemeProvider } from "@/contexts/ThemeContext";
-import ThemeToggle from "@/components/ThemeToggle";
 
 // Import Google Fonts via <link> in <head> (Noto Sans JP & Inter)
 
@@ -62,8 +60,11 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // Gabungkan semua kelas tema ke <html>
+  const htmlClassName = `${geistSans.variable} ${geistMono.variable} font-inter font-sans antialiased bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100`;
+
   return (
-    <html lang="en">
+    <html lang="en" className={htmlClassName} suppressHydrationWarning>
       <head>
         <link
           href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap"
@@ -79,14 +80,9 @@ export default function RootLayout({
         <meta name="msapplication-TileColor" content="#f97316" />
         <meta name="msapplication-TileImage" content="/icons/icon-144x144.png" />
       </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} font-inter font-sans antialiased bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100`}
-      >
-        <ThemeProvider>
-          <ThemeToggle />
-          <PWAInstaller />
-          {children}
-        </ThemeProvider>
+      <body>
+        <PWAInstaller />
+        {children}
       </body>
     </html>
   );
