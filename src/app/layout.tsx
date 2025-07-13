@@ -21,8 +21,6 @@ export const metadata: Metadata = {
   title: "Study Japan Journey - JLPT Sprint",
   description: "Sprint Belajar Harian JLPT - Belajar kanji, kosakata, dan tata bahasa Jepang",
   manifest: "/manifest.json",
-  themeColor: "#f97316",
-  viewport: "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no",
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
@@ -48,6 +46,15 @@ export const metadata: Metadata = {
     "msapplication-TileImage": "/icons/icon-144x144.png",
     "msapplication-config": "/browserconfig.xml",
   },
+};
+
+// Add themeColor to viewport export as required by Next.js
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: "no",
+  themeColor: "#f97316",
 };
 
 export default function RootLayout({

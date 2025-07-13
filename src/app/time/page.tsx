@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import Link from 'next/link';
 
 // Warna untuk baris
 const rowBgColors = [
@@ -71,9 +72,9 @@ export default function TimePage() {
     <div className="bg-gray-50 dark:bg-gray-900 min-h-screen">
       <div className="container mx-auto p-4 sm:p-8 font-sans">
         <div className="mb-4 flex justify-start">
-          <a href="/" className="inline-flex items-center gap-2 px-4 py-2 rounded bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200 font-semibold hover:bg-gray-300 dark:hover:bg-gray-600 transition">
+          <Link href="/" className="inline-flex items-center gap-2 px-4 py-2 rounded bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200 font-semibold hover:bg-gray-300 dark:hover:bg-gray-600 transition">
             <span>←</span> Back to Home
-          </a>
+          </Link>
         </div>
         <Head>
           <title>Waktu Jepang</title>
