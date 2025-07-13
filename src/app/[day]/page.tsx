@@ -318,13 +318,18 @@ export default async function DailySprintPage({ params }: { params: Promise<{ da
                         ))}
                     </div>
                 </section>
-                {/* Back to Top navigation */}
-                <div className="mt-8 flex justify-end">
-                    <a href="#" className="inline-flex items-center gap-2 px-4 py-2 rounded bg-orange-100 dark:bg-orange-900 text-orange-700 dark:text-orange-300 font-semibold hover:bg-orange-200 dark:hover:bg-orange-800 transition">
-                        <span>↑</span> Back to Top
-                    </a>
-                </div>
+                {/* Back to Top navigation (moved to floating button below) */}
             </div>
+            {/* Floating Back to Top Button */}
+            <a
+                href="#"
+                className="fixed z-50 bottom-6 right-6 sm:bottom-10 sm:right-10 inline-flex items-center gap-2 px-4 py-2 rounded-full shadow-lg bg-orange-500 dark:bg-orange-700 text-white font-semibold hover:bg-orange-600 dark:hover:bg-orange-600 transition"
+                style={{ boxShadow: '0 4px 16px rgba(0,0,0,0.15)' }}
+                aria-label="Back to Top"
+            >
+                <span className="text-lg">↑</span>
+                <span className="hidden sm:inline">Back to Top</span>
+            </a>
         </div>
     );
 }
