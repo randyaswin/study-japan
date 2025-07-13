@@ -123,6 +123,12 @@ export default async function DailySprintPage({ params }: { params: Promise<{ da
     return (
         <div className="bg-gray-50 dark:bg-gray-900 min-h-screen">
             <div className="container mx-auto p-4 sm:p-8 font-sans">
+                {/* Back to Home navigation */}
+                <div className="mb-4 flex justify-start">
+                    <a href="/" className="inline-flex items-center gap-2 px-4 py-2 rounded bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200 font-semibold hover:bg-gray-300 dark:hover:bg-gray-600 transition">
+                        <span>←</span> Back to Home
+                    </a>
+                </div>
                 <Head>
                     <title>Belajar Harian: Hari {sprintData.day}</title>
                     <meta name="description" content={`Materi belajar Jepang untuk hari ke-${sprintData.day}`} />
@@ -259,7 +265,10 @@ export default async function DailySprintPage({ params }: { params: Promise<{ da
                         {sprintData.grammar.map((item, index) => (
                             <div key={index} className="bg-white dark:bg-gray-800 rounded-xl shadow p-6 border-t-4 border-yellow-300">
                                 <div className="mb-2">
-                                    <h3 className="text-lg sm:text-xl font-bold text-gray-800 dark:text-gray-200 mb-1">{item.pattern}</h3>
+                                    <h3
+                                        className="text-lg sm:text-xl font-bold text-gray-800 dark:text-gray-200 mb-1"
+                                        dangerouslySetInnerHTML={{ __html: item.pattern }}
+                                    />
                                     {item.short_explanation ? (
                                         <div className="text-base text-gray-700 dark:text-gray-300 mb-2 font-semibold">{item.short_explanation}</div>
                                     ) : null}
@@ -308,8 +317,15 @@ export default async function DailySprintPage({ params }: { params: Promise<{ da
                         ))}
                     </div>
                 </section>
-
+                {/* Back to Top navigation (floating button) */}
             </div>
+            <a
+                href="#"
+                className="fixed bottom-6 right-6 z-50 inline-flex items-center gap-2 px-4 py-3 rounded-full shadow-lg bg-orange-500 dark:bg-orange-700 text-white font-semibold hover:bg-orange-600 dark:hover:bg-orange-600 transition"
+                aria-label="Back to Top"
+            >
+                <span>↑</span> Back to Top
+            </a>
         </div>
     );
 }
