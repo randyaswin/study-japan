@@ -363,22 +363,32 @@ export default function DailySprintClient({ sprintData, day, availableDays, sett
                                 let borderColor = '';
                                 let typeLabel = '';
                                 let typeLabelColor = '';
+                                let textColor = 'text-gray-700 dark:text-gray-300';
                                 if (item.type === '🔵') {
                                     borderColor = 'border-blue-400';
                                     typeLabel = 'Kata Benda';
                                     typeLabelColor = 'bg-blue-100 text-blue-700';
+                                    textColor = 'text-blue-700 dark:text-blue-300';
                                 } else if (item.type === '🟢') {
                                     borderColor = 'border-green-400';
                                     typeLabel = 'Kata Kerja';
                                     typeLabelColor = 'bg-green-100 text-green-700';
+                                    textColor = 'text-green-700 dark:text-green-300';
                                 } else if (item.type === '🟣') {
                                     borderColor = 'border-purple-400';
                                     typeLabel = 'Kata Sifat';
                                     typeLabelColor = 'bg-purple-100 text-purple-700';
+                                    textColor = 'text-purple-700 dark:text-purple-300';
+                                } else if (item.type === '🟠') {
+                                    borderColor = 'border-orange-400';
+                                    typeLabel = 'Kata Sifat';
+                                    typeLabelColor = 'bg-orange-100 text-orange-700';
+                                    textColor = 'text-orange-700 dark:text-orange-300';
                                 } else {
                                     borderColor = 'border-gray-300';
                                     typeLabel = 'Lainnya';
                                     typeLabelColor = 'bg-gray-100 text-gray-700';
+                                    textColor = 'text-gray-700 dark:text-gray-300';
                                 }
                                 return (
                                     <div 
@@ -405,7 +415,7 @@ export default function DailySprintClient({ sprintData, day, availableDays, sett
                                                 <div className="mb-2">
                                                     {isVocabFlipMode ? (
                                                         <div className="mp-2 flex flex-1 flex-col items-center justify-center min-h-[200px]">
-                                                            <div className={`jp-font text-gray-500 dark:text-gray-400 leading-tight text-3xl sm:text-4xl md:text-5xl  font-bold text-center w-full`}> 
+                                                            <div className={`jp-font ${textColor} leading-tight text-3xl sm:text-4xl md:text-5xl  font-bold text-center w-full`}> 
                                                                 <Furigana 
                                                                     htmlString={item.vocab} 
                                                                     className={'text-3xl sm:text-4xl md:text-5xl' } 
@@ -413,6 +423,7 @@ export default function DailySprintClient({ sprintData, day, availableDays, sett
                                                                     boldMain={true} 
                                                                 />
                                                             </div>
+                                                            
                                                             <div className="text-xs text-gray-500 dark:text-gray-400 mt-2">Klik untuk lihat jawaban</div>
                                                         </div>
                                                     ) : (
@@ -429,9 +440,16 @@ export default function DailySprintClient({ sprintData, day, availableDays, sett
                                                     {!isVocabFlipMode && (
                                                         <>
                                                             <div className="text-sm text-gray-700 dark:text-gray-300 mb-1 mt-2">
-                                                                <Furigana htmlString={item.reading_meaning} />
+                                                                <Furigana htmlString={item.reading_meaning.replace(/\(.+\)/, '').trim()} />
                                                             </div>
-                                                            <div className="text-base font-semibold text-gray-800 dark:text-gray-200 mb-2">Arti: {item.reading_meaning.replace(/\(.+\)/, '').trim()}</div>
+                                                            <div className="text-base font-semibold text-gray-800 dark:text-gray-200 mb-2">
+                                                                Arti: {
+                                                                    (() => {
+                                                                        const match = item.reading_meaning.match(/\(([^)]+)\)/);
+                                                                        return match ? match[1] : '';
+                                                                    })()
+                                                                }
+                                                            </div>
                                                         </>
                                                     )}
                                                 </div>
@@ -458,7 +476,7 @@ export default function DailySprintClient({ sprintData, day, availableDays, sett
                                             // Back side - Answer (keep original layout)
                                             <>
                                                 <span className={`absolute right-4 top-4 px-3 py-1 rounded-full text-xs font-semibold ${typeLabelColor} dark:bg-gray-700 dark:text-gray-300`}>{typeLabel}</span>
-                                                <div className={`jp-font text-gray-500 dark:text-gray-400 font-normal leading-tight text-base`}> 
+                                                <div className={`jp-font ${textColor} font-normal leading-tight text-base`}> 
                                                     <Furigana 
                                                         htmlString={item.vocab} 
                                                         className={'text-2xl sm:text-4xl md:text-4xl' } 
