@@ -43,7 +43,12 @@ const urlsToCache = [
   '/data/sprint_day28.json',
   '/data/sprint_day29.json',
   '/data/sprint_day30.json',
-  // Add other static assets as needed
+  // Halaman utama agar bisa offline
+  '/hiragana/',
+  '/katakana/',
+  '/number/',
+  '/time/',
+  '/n5/',
 ];
 
 // Install service worker
