@@ -1,0 +1,1689 @@
+[
+    {
+        "pattern":"KB1 <b style='color:#FF4500;'>は<\/b> KB2 です",
+        "explanation":"Pola kalimat paling dasar dalam bahasa Jepang. Partikel は (dibaca 'wa') berfungsi sebagai penanda topik. Pola ini digunakan untuk menyatakan 'KB1 adalah KB2' secara sopan. Ini adalah kalimat positif dan afirmatif.",
+        "visual":"<b>[Topik\/Subjek] 💬 <b style='color:#FF4500;'>は<\/b> [Deskripsi\/Penjelasan] ✅ です<\/b><br><br>Bayangkan <b>は<\/b> sebagai tanda 'sama dengan' (=) yang menyatakan identitas. 'A = B'. 'Watashi = Gakusei'.",
+        "examples":[
+            {
+                "jp":"わたし<b style='color:#FF4500;'>は<\/b>マリアです。",
+                "romaji":"Watashi wa Maria desu.",
+                "id":"Saya adalah Maria."
+            },
+            {
+                "jp":"これ<b style='color:#FF4500;'>は<\/b><ruby>本<rt>ほん<\/rt><\/ruby>です。",
+                "romaji":"Kore wa hon desu.",
+                "id":"Ini adalah buku."
+            },
+            {
+                "jp":"サントスさん<b style='color:#FF4500;'>は<\/b><ruby>先生<rt>せんせい<\/rt><\/ruby>です。",
+                "romaji":"Santosu-san wa sensei desu.",
+                "id":"Sdr. Santos adalah seorang guru."
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"KB1 <b style='color:#FF4500;'>は<\/b> KB2 じゃありません",
+        "explanation":"Ini adalah bentuk negatif dari 'KB1 は KB2 です'. Pola 'じゃありません (ja arimasen)' digunakan untuk menyangkal atau menyatakan 'KB1 bukanlah KB2'. Ini adalah bentuk sopan yang umum digunakan.",
+        "visual":"<b>[Topik\/Subjek] 💬 <b style='color:#FF4500;'>は<\/b> [Deskripsi\/Penjelasan] ❌ じゃありません<\/b><br><br>Bayangkan <b>じゃありません<\/b> sebagai tanda 'coret' atau 'tidak sama dengan' (≠). 'A ≠ B'. 'Watashi ≠ Sensei'.",
+        "examples":[
+            {
+                "jp":"わたし<b style='color:#FF4500;'>は<\/b><ruby>学生<rt>がくせい<\/rt><\/ruby>じゃありません。",
+                "romaji":"Watashi wa gakusei ja arimasen.",
+                "id":"Saya bukan seorang siswa."
+            },
+            {
+                "jp":"あれ<b style='color:#FF4500;'>は<\/b><ruby>日本<rt>にほん<\/rt><\/ruby>のくるまじゃありません。",
+                "romaji":"Are wa nihon no kuruma ja arimasen.",
+                "id":"Itu bukan mobil buatan Jepang."
+            },
+            {
+                "jp":"やまださん<b style='color:#FF4500;'>は<\/b><ruby>医者<rt>いしゃ<\/rt><\/ruby>じゃありません。",
+                "romaji":"Yamada-san wa isha ja arimasen.",
+                "id":"Sdr. Yamada bukan seorang dokter."
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"Kalimat + か",
+        "explanation":"Menambahkan partikel 'か' di akhir sebuah kalimat pernyataan akan mengubahnya menjadi kalimat tanya. Tidak perlu mengubah urutan kata seperti dalam bahasa Indonesia atau Inggris. Intonasi saat bertanya biasanya naik di akhir kalimat.",
+        "visual":"<b>[Pernyataan Lengkap] +❓か<\/b><br><br>Bayangkan partikel <b>か<\/b> sebagai tanda tanya (?) instan yang bisa ditempelkan di akhir kalimat apapun untuk membuatnya jadi pertanyaan.",
+        "examples":[
+            {
+                "jp":"アンディさん<b style='color:#FF4500;'>は<\/b><ruby>インドネシア人<rt>じん<\/rt><\/ruby>ですか。",
+                "romaji":"Andi-san wa Indonesia-jin desu ka.",
+                "id":"Apakah Sdr. Andi orang Indonesia?"
+            },
+            {
+                "jp":"それ<b style='color:#FF4500;'>は<\/b>あなたのかさですか。",
+                "romaji":"Sore wa anata no kasa desu ka.",
+                "id":"Apakah itu payung Anda?"
+            },
+            {
+                "jp":"あの<ruby>方<rt>かた<\/rt><\/ruby><b style='color:#FF4500;'>は<\/b>どなたですか。",
+                "romaji":"Ano kata wa donata desu ka.",
+                "id":"Siapakah orang itu (bentuk sopan)?"
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"[Pemberi] <b style='color:#FF4500;'>は\/が<\/b> (わたし<b style='color:#FF4500;'>に<\/b>) [Benda] を くれます",
+        "explanation":"Pola ini juga berarti 'memberi', tetapi KHUSUS digunakan ketika seseorang memberi kepada 'saya' atau anggota keluarga\/kelompok saya (sudut pandang pembicara). 'Kuremasu' menunjukkan kebaikan hati dari si pemberi kepada kita. Penerima (saya\/keluarga saya) seringkali dihilangkan karena sudah jelas dari konteks.",
+        "visual":"<b>[Orang Lain] 🎁 ➡️ [Saya \/ Keluarga Saya]<\/b><br><br>Bayangkan sebuah hadiah (🎁) yang bergerak dari Orang Lain menuju ke dalam lingkaran Anda. Arahnya selalu ke 'dalam'.",
+        "examples":[
+            {
+                "jp":"さとうさん<b style='color:#FF4500;'>は<\/b>わたし<b style='color:#FF4500;'>に<\/b>おみやげをくれました。",
+                "romaji":"Satou-san wa watashi ni omiyage o kuremashita.",
+                "id":"Sdri. Sato memberikan oleh-oleh kepada saya."
+            },
+            {
+                "jp":"<ruby>母<rt>はは<\/rt><\/ruby><b style='color:#FF4500;'>が<\/b>セーターを<ruby>送<rt>おく<\/rt><\/ruby>ってくれました。",
+                "romaji":"Haha ga seetaa o okutte kuremashita.",
+                "id":"Ibu (saya) mengirimi saya sweater."
+            },
+            {
+                "jp":"だれ<b style='color:#FF4500;'>が<\/b>あなたにその<ruby>写真<rt>しゃしん<\/rt><\/ruby>をくれましたか。",
+                "romaji":"Dare ga anata ni sono shashin o kuremashita ka.",
+                "id":"Siapa yang memberimu foto itu?"
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"KK bentuk-て (Te-form)",
+        "explanation":"Bentuk 'Te' adalah bentuk konjugasi kata kerja yang sangat penting dan serbaguna. Bentuk ini tidak menunjukkan waktu (lampau\/sekarang) tapi berfungsi untuk menyambung kalimat, membuat permintaan, menyatakan izin, dll. Aturan perubahannya tergantung pada kelompok kata kerja.",
+        "visual":"<b>[Kata Kerja Kamus] 🔧➡️ [Bentuk て\/で]<\/b><br><br>Aturan Umum:<br><b>Grup 1 (berakhiran -i, -chi, -ri):<\/b> jadi -って (e.g., kaimasu → katte)<br><b>Grup 1 (berakhiran -mi, -bi, -ni):<\/b> jadi -んで (e.g., yomimasu → yonde)<br><b>Grup 1 (berakhiran -ki):<\/b> jadi -いて (e.g., kakimasu → kaite)<br><b>Grup 1 (berakhiran -gi):<\/b> jadi -いで (e.g., isogimasu → isoide)<br><b>Grup 1 (berakhiran -shi):<\/b> jadi -して (e.g., kashimasu → kashite)<br><b>Grup 2 (berakhiran -e + masu):<\/b> ganti -masu jadi -て (e.g., tabemasu → tabete)<br><b>Grup 3 (pengecualian):<\/b> kimasu → kite; shimasu → shite",
+        "examples":[
+            {
+                "jp":"<ruby>買<rt>か<\/rt><\/ruby>います (Kel. 1) → <ruby>買<rt>か<\/rt><\/ruby>って",
+                "romaji":"kaimasu → katte",
+                "id":"Membeli → (bentuk-te)"
+            },
+            {
+                "jp":"<ruby>飲<rt>の<\/rt><\/ruby>みます (Kel. 1) → <ruby>飲<rt>の<\/rt><\/ruby>んで",
+                "romaji":"nomimasu → nonde",
+                "id":"Minum → (bentuk-te)"
+            },
+            {
+                "jp":"<ruby>書<rt>か<\/rt><\/ruby>きます (Kel. 1) → <ruby>書<rt>か<\/rt><\/ruby>いて",
+                "romaji":"kakimasu → kaite",
+                "id":"Menulis → (bentuk-te)"
+            },
+            {
+                "jp":"<ruby>食<rt>た<\/rt><\/ruby>べます (Kel. 2) → <ruby>食<rt>た<\/rt><\/ruby>べて",
+                "romaji":"tabemasu → tabete",
+                "id":"Makan → (bentuk-te)"
+            },
+            {
+                "jp":"します (Kel. 3) → して",
+                "romaji":"shimasu → shite",
+                "id":"Melakukan → (bentuk-te)"
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"KK bentuk-て ください",
+        "explanation":"Ini adalah cara paling umum untuk membuat permintaan atau perintah yang sopan. Cukup ubah kata kerja ke dalam bentuk-te dan tambahkan 'kudasai' (tolong).",
+        "visual":"<b>[Aksi]-て 🙏 ください<\/b><br><br>Bayangkan bentuk <b>て<\/b> sebagai jembatan ke kata <b>ください<\/b> yang merupakan simbol tangan memohon (🙏).",
+        "examples":[
+            {
+                "jp":"すみません、ちょっと<ruby>待<rt>ま<\/rt><\/ruby>ってください。",
+                "romaji":"Sumimasen, chotto matte kudasai.",
+                "id":"Permisi, tolong tunggu sebentar."
+            },
+            {
+                "jp":"ここに<ruby>住所<rt>じゅうしょ<\/rt><\/ruby>と<ruby>名前<rt>なまえ<\/rt><\/ruby>を<ruby>書<rt>か<\/rt><\/ruby>いてください。",
+                "romaji":"Koko ni juusho to namae o kaite kudasai.",
+                "id":"Tolong tulis alamat dan nama di sini."
+            },
+            {
+                "jp":"ゆっくり<ruby>話<rt>はな<\/rt><\/ruby>してください。",
+                "romaji":"Yukkuri hanashite kudasai.",
+                "id":"Tolong bicara pelan-pelan."
+            },
+            {
+                "jp":"これをコピーしてください。",
+                "romaji":"Kore o kopii shite kudasai.",
+                "id":"Tolong fotokopi ini."
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"KK-て、KK-て、...",
+        "explanation":"Bentuk-Te digunakan untuk menyambung beberapa kata kerja secara berurutan. Ini menunjukkan rangkaian aksi yang terjadi satu setelah yang lain. Hanya kata kerja terakhir di dalam kalimat yang menentukan tense (lampau atau non-lampau).",
+        "visual":"<b>[Aksi 1]-て ➡️ [Aksi 2]-て ➡️ [Aksi 3]<\/b><br><br>Bayangkan bentuk <b>-て<\/b> sebagai anak panah (➡️) yang menghubungkan satu adegan ke adegan berikutnya dalam sebuah cerita.",
+        "examples":[
+            {
+                "jp":"<ruby>朝<rt>あさ<\/rt><\/ruby>シャワーを<ruby>浴<rt>あ<\/rt><\/ruby>びて、ごはんを<ruby>食<rt>た<\/rt><\/ruby>べて、<ruby>会社<rt>かいしゃ<\/rt><\/ruby>へ<ruby>行<rt>い<\/rt><\/ruby>きます。",
+                "romaji":"Asa shawaa o abite, gohan o tabete, kaisha e ikimasu.",
+                "id":"Pagi hari saya mandi, lalu makan, lalu pergi ke kantor."
+            },
+            {
+                "jp":"デパートへ<ruby>行<rt>い<\/rt><\/ruby>って、かいものをして、<ruby>映画<rt>えいが<\/rt><\/ruby>を<ruby>見<rt>み<\/rt><\/ruby>ました。",
+                "romaji":"Depaato e itte, kaimono o shite, eiga o mimashita.",
+                "id":"Saya (telah) pergi ke department store, lalu berbelanja, lalu menonton film."
+            },
+            {
+                "jp":"このボタンをおして、お<ruby>金<rt>かね<\/rt><\/ruby>を<ruby>入<rt>い<\/rt><\/ruby>れます。",
+                "romaji":"Kono botan o oshite, okane o iremasu.",
+                "id":"Tekan tombol ini, lalu masukkan uang."
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"KK-て います",
+        "explanation":"Pola ini memiliki dua fungsi utama: 1) Menyatakan aksi yang sedang berlangsung (seperti -ing dalam B.Inggris). 2) Menyatakan keadaan yang merupakan hasil dari aksi di masa lalu (misal: saya 'sudah menikah' dan sekarang 'sedang dalam status menikah').",
+        "visual":"<b>1. Aksi Berlangsung: [Aksi]-て 🔄<\/b><br><b>2. Status\/Hasil: [Hasil Aksi]-て ✅<\/b><br><br>Bayangkan <b>-て います<\/b> sebagai kamera. Bisa merekam aksi yang sedang terjadi (🔄), atau memotret sebuah keadaan\/status saat ini (✅).",
+        "examples":[
+            {
+                "jp":"いま<ruby>雨<rt>あめ<\/rt><\/ruby>が<ruby>降<rt>ふ<\/rt><\/ruby>っています。（Aksi Berlangsung）",
+                "romaji":"Ima ame ga futte imasu.",
+                "id":"Sekarang sedang turun hujan."
+            },
+            {
+                "jp":"わたしはけっこんしています。（Status\/Hasil）",
+                "romaji":"Watashi wa kekkon shite imasu.",
+                "id":"Saya sudah menikah (dan sekarang dalam status menikah)."
+            },
+            {
+                "jp":"ミラーさんはIMCで<ruby>働<rt>はたら<\/rt><\/ruby>いています。（Aksi Berlangsung\/Status）",
+                "romaji":"Miraa-san wa IMC de hataraite imasu.",
+                "id":"Sdr. Miller bekerja di IMC."
+            },
+            {
+                "jp":"わたしはカメラを<ruby>持<rt>も<\/rt><\/ruby>っています。（Status\/Hasil）",
+                "romaji":"Watashi wa kamera o motte imasu.",
+                "id":"Saya punya\/sedang membawa kamera."
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"KK-て も いいですか",
+        "explanation":"Pola ini digunakan untuk meminta izin melakukan sesuatu. Secara harfiah berarti 'Apakah baik-baik saja meskipun saya melakukan...?'. Jawabannya bisa 'はい、いいですよ' (Ya, silakan) atau 'すみません、ちょっと…' (Maaf, sepertinya tidak bisa).",
+        "visual":"<b>[Aksi]-て 👍?<\/b><br><br>Bayangkan Anda menunjukkan aksi yang ingin dilakukan (<b>-て<\/b>) sambil bertanya dengan gestur jempol (<b>👍?<\/b>) untuk meminta persetujuan.",
+        "examples":[
+            {
+                "jp":"このカタログをもらってもいいですか。",
+                "romaji":"Kono katarogu o moratte mo ii desu ka.",
+                "id":"Bolehkah saya mengambil katalog ini?"
+            },
+            {
+                "jp":"ここで<ruby>写真<rt>しゃしん<\/rt><\/ruby>を<ruby>撮<rt>と<\/rt><\/ruby>ってもいいですか。",
+                "romaji":"Koko de shashin o totte mo ii desu ka.",
+                "id":"Bolehkah saya mengambil foto di sini?"
+            },
+            {
+                "jp":"タバコを<ruby>吸<rt>す<\/rt><\/ruby>ってもいいですか。・・・すみません、だめです。<ruby>禁煙<rt>きんえん<\/rt><\/ruby>ですから。",
+                "romaji":"Tabako o sutte mo ii desu ka. ...Sumimasen, dame desu. Kin'en desu kara.",
+                "id":"Bolehkah saya merokok? ...Maaf, tidak boleh. Karena ini area dilarang merokok."
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"KK-て は いけません",
+        "explanation":"Pola ini digunakan untuk menyatakan larangan atau 'tidak boleh'. Ini adalah bentuk yang kuat dan biasanya digunakan oleh orang yang memiliki otoritas (guru, orang tua, petugas) kepada orang lain. Secara harfiah berarti 'jika kamu melakukan (aksi ini), itu tidak baik'.",
+        "visual":"<b>[Aksi]-て 🚫 いけません<\/b><br><br>Bayangkan bentuk <b>-て<\/b> sebagai jembatan yang menuju ke rambu 'DILARANG MASUK' (🚫).",
+        "examples":[
+            {
+                "jp":"ここでタバコを<ruby>吸<rt>す<\/rt><\/ruby>ってはいけません。",
+                "romaji":"Koko de tabako o sutte wa ikemasen.",
+                "id":"Tidak boleh merokok di sini."
+            },
+            {
+                "jp":"<ruby>図書館<rt>としょかん<\/rt><\/ruby>で<ruby>話<rt>はな<\/rt><\/ruby>してはいけません。",
+                "romaji":"Toshokan de hanashite wa ikemasen.",
+                "id":"Tidak boleh berbicara di perpustakaan."
+            },
+            {
+                "jp":"お<ruby>酒<rt>さけ<\/rt><\/ruby>を<ruby>飲<rt>の<\/rt><\/ruby>んで<ruby>運転<rt>うんてん<\/rt><\/ruby>してはいけません。",
+                "romaji":"O-sake o nonde unten shite wa ikemasen.",
+                "id":"Tidak boleh mengemudi setelah minum alkohol."
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"Bentuk Kamus + こと が できます",
+        "explanation":"Pola ini digunakan untuk menyatakan kemampuan atau 'bisa melakukan sesuatu'. Kata kerja harus dalam bentuk kamus (misal: taberu, nomu, kaku), lalu diikuti dengan 'koto ga dekimasu'.",
+        "visual":"<b>[Aksi Bentuk Kamus] + ことができる ✅<\/b><br><br>Bayangkan <b>こと<\/b> sebagai 'pembungkus' yang mengubah kata kerja menjadi kata benda, lalu <b>が できます<\/b> memberikan stempel 'BISA' (✅) pada bungkusan tersebut.",
+        "examples":[
+            {
+                "jp":"わたしは<ruby>日本語<rt>にほんご<\/rt><\/ruby>を<ruby>話<rt>はな<\/rt><\/ruby>すことができます。",
+                "romaji":"Watashi wa nihongo o hanasu koto ga dekimasu.",
+                "id":"Saya bisa berbicara bahasa Jepang."
+            },
+            {
+                "jp":"ピアノを<ruby>弾<rt>ひ<\/rt><\/ruby>くことができますか。",
+                "romaji":"Piano o hiku koto ga dekimasu ka.",
+                "id":"Apakah kamu bisa bermain piano?"
+            },
+            {
+                "jp":"ここでカードで<ruby>払<rt>はら<\/rt><\/ruby>うことができます。",
+                "romaji":"Koko de kaado de harau koto ga dekimasu.",
+                "id":"Anda bisa membayar dengan kartu di sini."
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"わたしの<ruby>趣味<rt>しゅみ<\/rt><\/ruby>は KB \/ KK-Bentuk Kamus ことです",
+        "explanation":"Pola ini digunakan untuk menyatakan hobi. Jika hobi adalah kata benda, langsung gunakan KB + です. Jika hobi adalah sebuah kegiatan (kata kerja), ubah kata kerja ke bentuk kamus dan tambahkan 'koto desu' untuk mengubahnya menjadi kata benda.",
+        "visual":"<b>[Hobi Saya] = [KB \/ KK-Bentuk Kamus + こと]<\/b><br><br>Sama seperti pola kemampuan, <b>こと<\/b> 'membungkus' kata kerja aksi menjadi sebuah 'benda' hobi.",
+        "examples":[
+            {
+                "jp":"わたしの<ruby>趣味<rt>しゅみ<\/rt><\/ruby>は<ruby>音楽<rt>おんがく<\/rt><\/ruby>です。",
+                "romaji":"Watashi no shumi wa ongaku desu.",
+                "id":"Hobi saya adalah musik."
+            },
+            {
+                "jp":"わたしの<ruby>趣味<rt>しゅみ<\/rt><\/ruby>は<ruby>映画<rt>えいが<\/rt><\/ruby>を<ruby>見<rt>み<\/rt><\/ruby>ることです。",
+                "romaji":"Watashi no shumi wa eiga o miru koto desu.",
+                "id":"Hobi saya adalah menonton film."
+            },
+            {
+                "jp":"あなたの<ruby>趣味<rt>しゅみ<\/rt><\/ruby>は<ruby>何<rt>なん<\/rt><\/ruby>ですか。・・・<ruby>絵<rt>え<\/rt><\/ruby>を<ruby>描<rt>か<\/rt><\/ruby>くことです。",
+                "romaji":"Anata no shumi wa nan desu ka. ...E o kaku koto desu.",
+                "id":"Apa hobi Anda? ...Hobi saya adalah menggambar."
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"KK bentuk-た ことがあります",
+        "explanation":"Pola ini digunakan untuk menceritakan pengalaman di masa lalu. Artinya 'pernah melakukan...'. Gunakan kata kerja bentuk lampau biasa (bentuk-Ta). Ini biasanya tidak digunakan untuk kejadian yang baru saja terjadi atau hal-hal rutin.",
+        "visual":"<b>[Album Kenangan] 🖼️ [Pengalaman] <b style='color:#FF4500;'>たことがある<\/b><\/b><br><br>Bayangkan Anda membuka album foto (🖼️) dan menunjuk sebuah foto kenangan sambil berkata 'Ah, aku PERNAH melakukan ini'.",
+        "examples":[
+            {
+                "jp":"わたしはすしを<ruby>食<rt>た<\/rt><\/ruby>べたことがあります。",
+                "romaji":"Watashi wa sushi o tabeta koto ga arimasu.",
+                "id":"Saya pernah makan sushi."
+            },
+            {
+                "jp":"<ruby>馬<rt>うま<\/rt><\/ruby>に<ruby>乗<rt>の<\/rt><\/ruby>ったことがありますか。",
+                "romaji":"Uma ni notta koto ga arimasu ka.",
+                "id":"Apakah Anda pernah naik kuda?"
+            },
+            {
+                "jp":"わたしは<ruby>一度<rt>いちど<\/rt><\/ruby>も<ruby>富士山<rt>ふじさん<\/rt><\/ruby>に<ruby>登<rt>のぼ<\/rt><\/ruby>ったことがありません。",
+                "romaji":"Watashi wa ichido mo Fujisan ni nobotta koto ga arimasen.",
+                "id":"Saya belum pernah sekalipun mendaki Gunung Fuji."
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"KK-たり、KK-たり します",
+        "explanation":"Pola ini digunakan untuk menyebutkan beberapa contoh kegiatan tanpa harus menyebutkan semuanya secara berurutan. Ini menyiratkan bahwa ada kegiatan lain yang juga dilakukan. Akhiran 'します\/しました' disesuaikan dengan waktu kejadian.",
+        "visual":"<b>[Aksi A]<b style='color:#FF4500;'>たり<\/b>, [Aksi B]<b style='color:#FF4500;'>たり<\/b>, ...<\/b><br><br>Bayangkan keranjang belanjaan. Anda mengambil beberapa barang (<b>-tari<\/b>) sebagai contoh isi keranjang, tapi tidak menyebutkan semuanya.",
+        "examples":[
+            {
+                "jp":"<ruby>日曜日<rt>にちようび<\/rt><\/ruby>はテニスをしたり、<ruby>映画<rt>えいが<\/rt><\/ruby>を<ruby>見<rt>み<\/rt><\/ruby>たりします。",
+                "romaji":"Nichiyoubi wa tenisu o shitari, eiga o mitari shimasu.",
+                "id":"Pada hari Minggu, saya melakukan hal-hal seperti bermain tenis, menonton film, (dan lain-lain)."
+            },
+            {
+                "jp":"きのうは<ruby>本<rt>ほん<\/rt><\/ruby>を<ruby>読<rt>よ<\/rt><\/ruby>んだり、<ruby>音楽<rt>おんがく<\/rt><\/ruby>を<ruby>聞<rt>き<\/rt><\/ruby>いたりしました。",
+                "romaji":"Kinou wa hon o yondari, ongaku o kiitari shimashita.",
+                "id":"Kemarin saya melakukan hal-hal seperti membaca buku, mendengarkan musik, (dan lain-lain)."
+            },
+            {
+                "jp":"デパートでシャツを<ruby>買<rt>か<\/rt><\/ruby>ったり、レストランで<ruby>食<rt>た<\/rt><\/ruby>べたりしたいです。",
+                "romaji":"Depaato de shatsu o kattari, resutoran de tabetari shitai desu.",
+                "id":"Saya ingin melakukan hal-hal seperti membeli kemeja di department store, makan di restoran, (dan lain-lain)."
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"KS-い(<s>-い<\/s>)く \/ KS-な に \/ KB に なります",
+        "explanation":"Pola 'narimasu' digunakan untuk menyatakan perubahan keadaan. Sesuatu 'menjadi' suatu sifat atau benda. Untuk kata sifat-i, hilangkan akhiran 'い' dan tambahkan 'くなります'. Untuk kata sifat-na dan kata benda, tambahkan 'になります'.",
+        "visual":"<b>[Keadaan Awal] ➡️ [Perubahan] <b style='color:#FF4500;'>に\/く<\/b> なります<\/b><br><br>Bayangkan <b>なります<\/b> sebagai panah perubahan (➡️) yang mengubah sesuatu dari kondisi awal ke kondisi baru.",
+        "examples":[
+            {
+                "jp":"テレビの<ruby>音<rt>おと<\/rt><\/ruby>が<ruby>大<rt>おお<\/rt><\/ruby>きくなります。(KS-i)",
+                "romaji":"Terebi no oto ga ookiku narimasu.",
+                "id":"Suara TV menjadi keras."
+            },
+            {
+                "jp":"わたしは<ruby>元気<rt>げんき<\/rt><\/ruby>になりました。(KS-na)",
+                "romaji":"Watashi wa genki ni narimashita.",
+                "id":"Saya menjadi sehat."
+            },
+            {
+                "jp":"あしたから<ruby>天気<rt>てんき<\/rt><\/ruby>は<ruby>寒<rt>さむ<\/rt><\/ruby>くなります。",
+                "romaji":"Ashita kara tenki wa samuku narimasu.",
+                "id":"Mulai besok cuaca akan menjadi dingin."
+            },
+            {
+                "jp":"わたしは25<ruby>歳<rt>さい<\/rt><\/ruby>になりました。(KB)",
+                "romaji":"Watashi wa nijuugo-sai ni narimashita.",
+                "id":"Saya telah menjadi (berumur) 25 tahun."
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"Bentuk Potensial (KK-られる\/える)",
+        "explanation":"Bentuk Potensial digunakan untuk menyatakan kemampuan atau 'bisa'. Cara mengubahnya: Grup 1 (u → eru, misal: kaku → kakeru), Grup 2 (ru → rareru, misal: taberu → taberareru), Grup 3 (shimasu → dekiru, kimasu → korareru). Objek dalam kalimat potensial sering ditandai dengan が daripada を.",
+        "visual":"<b>[Subjek]は [Objek]<b style='color:#FF4500;'>が<\/b> [Aksi Kemampuan]✨<\/b><br><br>Bayangkan <b>Bentuk Potensial<\/b> sebagai 'tongkat sihir' (✨) yang memberikan kemampuan pada subjek untuk melakukan aksi.",
+        "examples":[
+            {
+                "jp":"わたしは<ruby>漢字<rt>かんじ<\/rt><\/ruby><b style='color:#FF4500;'>が<\/b><ruby>読<rt>よ<\/rt><\/ruby>めます。",
+                "romaji":"Watashi wa kanji ga yomemasu.",
+                "id":"Saya bisa membaca kanji."
+            },
+            {
+                "jp":"あなたは<ruby>刺身<rt>さしみ<\/rt><\/ruby><b style='color:#FF4500;'>が<\/b><ruby>食<rt>た<\/rt><\/ruby>べられますか。",
+                "romaji":"Anata wa sashimi ga taberaremasu ka.",
+                "id":"Apakah kamu bisa makan sashimi?"
+            },
+            {
+                "jp":"ここではドル<b style='color:#FF4500;'>が<\/b><ruby>使<rt>つか<\/rt><\/ruby>えません。",
+                "romaji":"Koko dewa doru ga tsukaemasen.",
+                "id":"Di sini tidak bisa menggunakan dolar."
+            },
+            {
+                "jp":"あした<ruby>来<rt>こ<\/rt><\/ruby>られますか。",
+                "romaji":"Ashita koraremasu ka.",
+                "id":"Apakah besok kamu bisa datang?"
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"KK-ます ながら、Aksi Utama",
+        "explanation":"Pola 'nagara' digunakan untuk menyatakan dua aksi yang dilakukan secara bersamaan oleh orang yang sama. Kata kerja pertama (yang ditempeli 'nagara') adalah aksi sampingan, dan kata kerja kedua adalah aksi utama. 'nagara' ditempelkan pada kata kerja bentuk -masu stem (hilangkan -masu).",
+        "visual":"<b>[Aksi Sampingan]<b style='color:#FF4500;'>ながら<\/b> ⏸️ [Aksi Utama]<\/b><br><br>Bayangkan Anda melakukan dua hal sekaligus. Satu tangan melakukan [Aksi Sampingan], tangan lainnya melakukan [Aksi Utama].",
+        "examples":[
+            {
+                "jp":"<ruby>音楽<rt>おんがく<\/rt><\/ruby>を<ruby>聞<rt>き<\/rt><\/ruby>き<b style='color:#FF4500;'>ながら<\/b>、<ruby>勉強<rt>べんきょう<\/rt><\/ruby>します。",
+                "romaji":"Ongaku o kiki nagara, benkyou shimasu.",
+                "id":"Saya belajar sambil mendengarkan musik."
+            },
+            {
+                "jp":"コーヒーを<ruby>飲<rt>の<\/rt><\/ruby>み<b style='color:#FF4500;'>ながら<\/b>、<ruby>新聞<rt>しんぶん<\/rt><\/ruby>を<ruby>読<rt>よ<\/rt><\/ruby>みます。",
+                "romaji":"Koohii o nomi nagara, shinbun o yomimasu.",
+                "id":"Saya membaca koran sambil minum kopi."
+            },
+            {
+                "jp":"はたらき<b style='color:#FF4500;'>ながら<\/b>、<ruby>日本語<rt>にほんご<\/rt><\/ruby>を<ruby>勉強<rt>べんきょう<\/rt><\/ruby>しています。",
+                "romaji":"Hataraki nagara, nihongo o benkyou shite imasu.",
+                "id":"Saya sedang belajar bahasa Jepang sambil bekerja."
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"どうやって",
+        "explanation":"'Douyatte' adalah frasa tanya yang berarti 'bagaimana caranya?'. Ini digunakan untuk menanyakan metode atau proses melakukan sesuatu. Biasanya diletakkan di awal kalimat tanya.",
+        "visual":"<b>❓<b style='color:#FF4500;'>どうやって<\/b> ➡️ [Proses\/Cara]<\/b><br><br>Bayangkan <b>どうやって<\/b> sebagai sebuah 'kunci inggris' (?) yang digunakan untuk membongkar sebuah proses dan mencari tahu cara kerjanya.",
+        "examples":[
+            {
+                "jp":"A: <ruby>大学<rt>だいがく<\/rt><\/ruby>まで<b style='color:#FF4500;'>どうやって<\/b><ruby>行<rt>い<\/rt><\/ruby>きますか。 B: <ruby>東京駅<rt>とうきょうえき<\/rt><\/ruby>からバスに<ruby>乗<rt>の<\/rt><\/ruby>ります。",
+                "romaji":"A: Daigaku made douyatte ikimasu ka. B: Toukyou-eki kara basu ni norimasu.",
+                "id":"A: Bagaimana caranya pergi sampai ke universitas? B: Dari Stasiun Tokyo, naik bus."
+            },
+            {
+                "jp":"この<ruby>機械<rt>きかい<\/rt><\/ruby>は<b style='color:#FF4500;'>どうやって<\/b><ruby>使<rt>つか<\/rt><\/ruby>いますか。",
+                "romaji":"Kono kikai wa douyatte tsukaimasu ka.",
+                "id":"Bagaimana cara menggunakan mesin ini?"
+            },
+            {
+                "jp":"<b style='color:#FF4500;'>どうやって<\/b>この<ruby>料理<rt>りょうり<\/rt><\/ruby>を<ruby>作<rt>つく<\/rt><\/ruby>りましたか。",
+                "romaji":"Douyatte kono ryouri o tsukurimashita ka.",
+                "id":"Bagaimana caranya kamu membuat masakan ini?"
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"Bentuk Biasa (普通形 - futsuukei)",
+        "explanation":"Bentuk Biasa adalah gaya bicara informal (kasual) yang digunakan dengan teman atau keluarga. Ini adalah bentuk dasar dari semua kata (kata kerja, kata sifat, kata benda) dan menjadi fondasi untuk banyak pola tata bahasa tingkat lanjut. Bentuk sopan (-masu\/-desu) digunakan dalam situasi formal.",
+        "visual":"<b>[Sopan] 🤵 (-masu \/ -desu) ➡️ [Biasa] 👕 (Bentuk Kamus, -nai, -ta, da, dll.)<\/b><br><br>Bayangkan mengganti pakaian formal (jas 🤵) dengan pakaian kasual (kaos 👕).",
+        "examples":[
+            {
+                "jp":"たべます → たべる (KK)",
+                "romaji":"tabemasu → taberu",
+                "id":"(Bentuk Sopan → Bentuk Biasa)"
+            },
+            {
+                "jp":"おいしいです → おいしい (KS-i)",
+                "romaji":"oishii desu → oishii",
+                "id":"(Bentuk Sopan → Bentuk Biasa)"
+            },
+            {
+                "jp":"きれいです → きれいだ (KS-na)",
+                "romaji":"kirei desu → kirei da",
+                "id":"(Bentuk Sopan → Bentuk Biasa)"
+            },
+            {
+                "jp":"がくせいです → がくせいだ (KB)",
+                "romaji":"gakusei desu → gakusei da",
+                "id":"(Bentuk Sopan → Bentuk Biasa)"
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"「Kalimat Bentuk Biasa」 <b style='color:#FF4500;'>と<\/b> 言います",
+        "explanation":"Pola ini digunakan untuk mengutip perkataan seseorang secara langsung atau tidak langsung. Bagian yang dikutip harus dalam bentuk biasa, lalu diikuti dengan partikel と (to) dan kata kerja 言います (iimasu - berkata).",
+        "visual":"<b>💬 \"[Kutipan bentuk biasa]\" <b style='color:#FF4500;'>と<\/b> 言う<\/b><br><br>Bayangkan <b>と<\/b> sebagai tanda kutip pembuka (“) dan <b>言う<\/b> sebagai tanda kutip penutup (”) yang membungkus perkataan seseorang.",
+        "examples":[
+            {
+                "jp":"<ruby>寝<rt>ね<\/rt><\/ruby>る<ruby>前<rt>まえ<\/rt><\/ruby>に、「おやすみなさい」<b style='color:#FF4500;'>と<\/b><ruby>言<rt>い<\/rt><\/ruby>います。",
+                "romaji":"Neru mae ni, 'oyasuminasai' to iimasu.",
+                "id":"Sebelum tidur, (saya) berkata 'selamat tidur'."
+            },
+            {
+                "jp":"ミラーさんは「<ruby>来週<rt>らいしゅう<\/rt><\/ruby><ruby>東京<rt>とうきょう<\/rt><\/ruby>へ<ruby>出張<rt>しゅっちょう<\/rt><\/ruby>する」<b style='color:#FF4500;'>と<\/b><ruby>言<rt>い<\/rt><\/ruby>っていました。",
+                "romaji":"Miraa-san wa 'raishuu Toukyou e shucchou suru' to itte imashita.",
+                "id":"Sdr. Miller berkata bahwa 'minggu depan akan dinas ke Tokyo'."
+            },
+            {
+                "jp":"これは<ruby>日本語<rt>にほんご<\/rt><\/ruby>で<ruby>何<rt>なん<\/rt><\/ruby><b style='color:#FF4500;'>と<\/b><ruby>言<rt>い<\/rt><\/ruby>いますか。",
+                "romaji":"Kore wa nihongo de nan to iimasu ka.",
+                "id":"Ini disebut apa dalam bahasa Jepang?"
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"「Kalimat Bentuk Biasa」 <b style='color:#FF4500;'>と<\/b> 思います",
+        "explanation":"Pola ini digunakan untuk menyatakan pendapat, pemikiran, atau dugaan pribadi. 'Saya pikir...'. Bagian yang dipikirkan harus dalam bentuk biasa, diikuti oleh partikel と (to) dan 思います (omoimasu - berpikir\/merasa).",
+        "visual":"<b>🤔 { [Pikiran bentuk biasa] } <b style='color:#FF4500;'>と<\/b> 思う<\/b><br><br>Bayangkan <b>と 思います<\/b> sebagai 'gelembung pikiran' (🤔) yang berisi opini atau dugaan Anda.",
+        "examples":[
+            {
+                "jp":"わたしはミラーさんは<ruby>合格<rt>ごうかく<\/rt><\/ruby>すると<b style='color:#FF4500;'>と<\/b><ruby>思<rt>おも<\/rt><\/ruby>います。",
+                "romaji":"Watashi wa Miraa-san wa goukaku suru to omoimasu.",
+                "id":"Saya pikir Sdr. Miller akan lulus."
+            },
+            {
+                "jp":"あした<ruby>雨<rt>あめ<\/rt><\/ruby>が<ruby>降<rt>ふ<\/rt><\/ruby>らないと<b style='color:#FF4500;'>と<\/b><ruby>思<rt>おも<\/rt><\/ruby>います。",
+                "romaji":"Ashita ame ga furanai to omoimasu.",
+                "id":"Saya pikir besok tidak akan turun hujan."
+            },
+            {
+                "jp":"このもんだいは<ruby>簡単<rt>かんたん<\/rt><\/ruby>だと<b style='color:#FF4500;'>と<\/b><ruby>思<rt>おも<\/rt><\/ruby>います。",
+                "romaji":"Kono mondai wa kantan da to omoimasu.",
+                "id":"Saya pikir soal ini mudah."
+            },
+            {
+                "jp":"これについてどう<b style='color:#FF4500;'>と<\/b><ruby>思<rt>おも<\/rt><\/ruby>いますか。",
+                "romaji":"Kore ni tsuite dou omoimasu ka.",
+                "id":"Bagaimana pendapat Anda tentang ini?"
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"Bentuk Biasa + でしょう",
+        "explanation":"Pola 'deshou' digunakan untuk menyatakan dugaan atau kemungkinan yang tingkat kepastiannya cukup tinggi (sekitar 70-90%). Ini seperti berkata 'sepertinya...' atau 'pasti...'. Digunakan setelah bentuk biasa dari kata kerja, kata sifat, atau kata benda.",
+        "visual":"<b>[Fakta\/Info] 🧠 → [Dugaan Kuat] <b style='color:#FF4500;'>でしょう<\/b> (80%)<\/b><br><br>Bayangkan seorang detektif yang setelah melihat fakta (🧠), membuat kesimpulan yang hampir pasti (<b>でしょう<\/b>).",
+        "examples":[
+            {
+                "jp":"あしたは<ruby>雨<rt>あめ<\/rt><\/ruby>が<ruby>降<rt>ふ<\/rt><\/ruby>るでしょう。",
+                "romaji":"Ashita wa ame ga furu deshou.",
+                "id":"Besok sepertinya akan turun hujan."
+            },
+            {
+                "jp":"ミラーさんはこのニュースを<ruby>知<rt>し<\/rt><\/ruby>らないでしょう。",
+                "romaji":"Miraa-san wa kono nyuusu o shiranai deshou.",
+                "id":"Sdr. Miller sepertinya tidak tahu berita ini."
+            },
+            {
+                "jp":"テストは<ruby>簡単<rt>かんたん<\/rt><\/ruby>だったでしょう。",
+                "romaji":"Tesuto wa kantan datta deshou.",
+                "id":"Ujiannya sepertinya mudah ya (tadi)."
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"Bentuk Biasa + かもしれません",
+        "explanation":"Pola 'kamoshiremasen' juga digunakan untuk menyatakan kemungkinan, namun tingkat kepastiannya lebih rendah daripada 'deshou' (sekitar 50%). Ini seperti berkata 'mungkin saja...' atau 'bisa jadi...'.",
+        "visual":"<b>[Fakta\/Info]❓→ [Kemungkinan] <b style='color:#FF4500;'>かもしれません<\/b> (50%)<\/b><br><br>Bayangkan seseorang yang melihat langit mendung (❓) dan menebak-nebak, 'MUNGKIN akan hujan'.",
+        "examples":[
+            {
+                "jp":"<ruby>約束<rt>やくそく<\/rt><\/ruby>の<ruby>時間<rt>じかん<\/rt><\/ruby>に<ruby>間<rt>ま<\/rt><\/ruby>に<ruby>合<rt>あ<\/rt><\/ruby>わないかもしれません。",
+                "romaji":"Yakusoku no jikan ni ma ni awanai kamoshiremasen.",
+                "id":"Mungkin saja saya tidak akan tepat waktu untuk janji temu."
+            },
+            {
+                "jp":"たなかさんは<ruby>病気<rt>びょうき<\/rt><\/ruby>かもしれません。",
+                "romaji":"Tanaka-san wa byouki kamoshiremasen.",
+                "id":"Bisa jadi Sdr. Tanaka sakit."
+            },
+            {
+                "jp":"あの<ruby>店<rt>みせ<\/rt><\/ruby>はもう<ruby>閉<rt>し<\/rt><\/ruby>まっているかもしれません。",
+                "romaji":"Ano mise wa mou shimatteiru kamoshiremasen.",
+                "id":"Toko itu mungkin saja sudah tutup."
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"Kalimat Tanya (dengan kata tanya) + <b style='color:#FF4500;'>か<\/b>",
+        "explanation":"Partikel 'ka' dapat digunakan untuk menyisipkan sebuah kalimat tanya (seperti 'kapan', 'di mana', 'apa') ke dalam kalimat yang lebih besar. Kalimat tanya yang disisipkan harus dalam bentuk biasa. Ini berfungsi untuk membicarakan sebuah pertanyaan.",
+        "visual":"<b>[Kalimat Induk] { ... [Pertanyaan] <b style='color:#FF4500;'>か<\/b> ... }<\/b><br><br>Bayangkan <b>か<\/b> sebagai 'pembungkus' yang mengubah sebuah pertanyaan menjadi sebuah 'topik' yang bisa dibicarakan dalam kalimat lain.",
+        "examples":[
+            {
+                "jp":"<ruby>誕生日<rt>たんじょうび<\/rt><\/ruby>のプレゼントは<ruby>何<rt>なに<\/rt><\/ruby>がいい<b style='color:#FF4500;'>か<\/b>、<ruby>考<rt>かんが<\/rt><\/ruby>えています。",
+                "romaji":"Tanjoubi no purezento wa nani ga ii ka, kangaete imasu.",
+                "id":"Saya sedang memikirkan hadiah ulang tahun apa yang bagus."
+            },
+            {
+                "jp":"<ruby>夏休<rt>なつやす<\/rt><\/ruby>みはどこへ<ruby>行<rt>い<\/rt><\/ruby>った<b style='color:#FF4500;'>か<\/b>、<ruby>覚<rt>おぼ<\/rt><\/ruby>えていますか。",
+                "romaji":"Natsuyasumi wa doko e itta ka, oboete imasu ka.",
+                "id":"Apakah kamu ingat ke mana kamu pergi saat liburan musim panas?"
+            },
+            {
+                "jp":"その<ruby>話<rt>はなし<\/rt><\/ruby>がほんとう<b style='color:#FF4500;'>か<\/b>どう<b style='color:#FF4500;'>か<\/b>、わかりません。",
+                "romaji":"Sono hanashi ga hontou ka dou ka, wakarimasen.",
+                "id":"Saya tidak tahu apakah cerita itu benar atau tidak."
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"Bentuk Perintah (命令形 - meireikei)",
+        "explanation":"Bentuk perintah informal yang sangat kuat. Biasanya digunakan dalam situasi darurat, oleh militer, atau oleh pria kepada teman dekat\/keluarga. Penggunaannya sangat terbatas dalam percakapan sehari-hari karena terdengar kasar. Aturan: Grup 1 (u → e), Grup 2 (ru → ro), Grup 3 (suru → shiro, kuru → koi).",
+        "visual":"<b>[Aksi] 📣❗<\/b><br><br>Bayangkan seorang komandan (📣) yang berteriak memberikan perintah tegas (❗).",
+        "examples":[
+            {
+                "jp":"<ruby>走<rt>はし<\/rt><\/ruby>れ！ (hashiru → hashire)",
+                "romaji":"Hashire!",
+                "id":"Lari!"
+            },
+            {
+                "jp":"これを<ruby>食<rt>た<\/b<rt>べ<\/rt>ろ！ (taberu → tabero)",
+                "romaji":"Kore o tabero!",
+                "id":"Makan ini!"
+            },
+            {
+                "jp":"もっと<ruby>勉強<rt>べんきょう<\/rt><\/ruby>しろ！ (benkyou suru → benkyou shiro)",
+                "romaji":"Motto benkyou shiro!",
+                "id":"Belajarlah lebih giat!"
+            },
+            {
+                "jp":"はやく<ruby>来<rt>こ<\/rt><\/ruby>い！ (kuru → koi)",
+                "romaji":"Hayaku koi!",
+                "id":"Cepat datang!"
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"Bentuk Larangan (禁止形 - kinshikei)",
+        "explanation":"Bentuk larangan informal yang kuat, setara dengan 'dilarang' atau 'jangan'. Dibuat dengan menambahkan partikel な (na) setelah kata kerja bentuk kamus. Seperti bentuk perintah, ini juga jarang digunakan dalam percakapan sopan.",
+        "visual":"<b>[Aksi Bentuk Kamus] + 🚫 <b style='color:#FF4500;'>な<\/b><\/b><br><br>Bayangkan rambu lalu lintas dilarang (🚫) dengan tulisan <b>な<\/b> besar di tengahnya.",
+        "examples":[
+            {
+                "jp":"さわるな！ (sawaru → sawaruna)",
+                "romaji":"Sawaruna!",
+                "id":"Jangan sentuh!"
+            },
+            {
+                "jp":"おそくまで<ruby>寝<rt>ね<\/rt><\/ruby>るな！ (neru → neruna)",
+                "romaji":"Osokumade neruna!",
+                "id":"Jangan tidur sampai larut!"
+            },
+            {
+                "jp":"<ruby>心配<rt>しんぱい<\/rt><\/ruby>するな！ (shinpai suru → shinpai suruna)",
+                "romaji":"Shinpai suruna!",
+                "id":"Jangan khawatir!"
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"X は Y <b style='color:#FF4500;'>と<\/b>いう Z です",
+        "explanation":"Pola ini digunakan untuk memberikan nama atau definisi. 'X adalah Z yang disebut Y'. Y adalah nama spesifiknya, dan Z adalah kategori umumnya. Frasa 'という' (to iu) secara harfiah berarti 'yang berkata' dan berfungsi sebagai jembatan antara nama dan kategori.",
+        "visual":"<b>[Objek\/Orang X] = [Nama \"Y\"] <b style='color:#FF4500;'>という<\/b> [Kategori Z]<\/b><br><br>Bayangkan Anda menempelkan label nama (\"Y\") pada sebuah benda, lalu memasukkannya ke dalam kotak kategori [Z].",
+        "examples":[
+            {
+                "jp":"これは「<ruby>寿司<rt>すし<\/rt><\/ruby>」<b style='color:#FF4500;'>と<\/b>いう<ruby>日本<rt>にほん<\/rt><\/ruby>の<ruby>料理<rt>りょうり<\/rt><\/ruby>です。",
+                "romaji":"Kore wa 'sushi' to iu nihon no ryouri desu.",
+                "id":"Ini adalah masakan Jepang yang disebut 'sushi'."
+            },
+            {
+                "jp":"「トトロ」<b style='color:#FF4500;'>と<\/b>いう<ruby>映画<rt>えいが<\/rt><\/ruby>を<ruby>見<rt>み<\/rt><\/ruby>たことがありますか。",
+                "romaji":"'Totoro' to iu eiga o mita koto ga arimasu ka.",
+                "id":"Apakah kamu pernah menonton film yang berjudul 'Totoro'?"
+            },
+            {
+                "jp":"わたしは「さくら」<b style='color:#FF4500;'>と<\/b>いう<ruby>喫茶店<rt>きっさてん<\/rt><\/ruby>でアルバイトをしています。",
+                "romaji":"Watashi wa 'sakura' to iu kissaten de arubaito o shite imasu.",
+                "id":"Saya bekerja paruh waktu di kedai kopi bernama 'Sakura'."
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"Bentuk-た + ら、...",
+        "explanation":"Bentuk kondisional 'tara' adalah yang paling serbaguna. Dibuat dari bentuk lampau biasa (Ta-form), artinya bisa 'jika' atau 'setelah'. Bisa digunakan untuk hipotesis, urutan kejadian, atau bahkan penemuan tak terduga. Ini adalah bentuk kondisional yang paling umum dan aman untuk digunakan.",
+        "visual":"<b>[Kondisi A]<b style='color:#FF4500;'>たら<\/b> ➡️ [Hasil B]<\/b><br><br>Bayangkan <b>たら<\/b> sebagai tombol 'JIKA\/SETELAH'. Anda tekan tombol pada [Kondisi A], maka [Hasil B] akan terjadi.",
+        "examples":[
+            {
+                "jp":"お<ruby>金<rt>かね<\/rt><\/ruby>があっ<b style='color:#FF4500;'>たら<\/b>、<ruby>旅行<rt>りょこう<\/rt><\/ruby>します。",
+                "romaji":"Okane ga attara, ryokou shimasu.",
+                "id":"Jika punya uang, saya akan berwisata."
+            },
+            {
+                "jp":"<ruby>駅<rt>えき<\/rt><\/ruby>に<ruby>着<rt>つ<\/rt><\/ruby>い<b style='color:#FF4500;'>たら<\/b>、<ruby>電話<rt>でんわ<\/rt><\/ruby>してください。",
+                "romaji":"Eki ni tsuitara, denwa shite kudasai.",
+                "id":"Setelah tiba di stasiun, tolong telepon."
+            },
+            {
+                "jp":"<ruby>暇<rt>ひま<\/rt><\/ruby>だっ<b style='color:#FF4500;'>たら<\/b>、<ruby>手伝<rt>てつだ<\/rt><\/ruby>ってください。",
+                "romaji":"Hima dattara, tetsudatte kudasai.",
+                "id":"Jika senggang, tolong bantu."
+            },
+            {
+                "jp":"もうすこし<ruby>安<rt>やす<\/rt><\/ruby>かっ<b style='color:#FF4500;'>たら<\/b>、<ruby>買<rt>か<\/rt><\/ruby>います。",
+                "romaji":"Mou sukoshi yasukattara, kaimasu.",
+                "id":"Jika lebih murah sedikit, saya akan beli."
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"Bentuk Kamus + と、...",
+        "explanation":"Bentuk kondisional 'to' digunakan untuk menyatakan kepastian atau hasil yang alami dan logis. Artinya 'setiap kali A terjadi, B pasti terjadi'. Juga digunakan untuk mesin (jika menekan tombol ini, mesin menyala) dan penemuan ('saat saya melihat ke luar, ternyata hujan').",
+        "visual":"<b>[Penyebab A] ⚙️ <b style='color:#FF4500;'>と<\/b> → [Akibat Pasti B]<\/b><br><br>Bayangkan <b>と<\/b> sebagai sebuah roda gigi (⚙️). Jika gigi A berputar, gigi B PASTI ikut berputar.",
+        "examples":[
+            {
+                "jp":"このボタンをおす<b style='color:#FF4500;'>と<\/b>、おつりが<ruby>出<rt>で<\/rt><\/ruby>ます。",
+                "romaji":"Kono botan o osu to, otsuri ga demasu.",
+                "id":"Jika menekan tombol ini, (maka pasti) akan keluar kembalian."
+            },
+            {
+                "jp":"<ruby>春<rt>はる<\/rt><\/ruby>になる<b style='color:#FF4500;'>と<\/b>、<ruby>桜<rt>さくら<\/rt><\/ruby>がさきます。",
+                "romaji":"Haru ni naru to, sakura ga sakimasu.",
+                "id":"Setiap kali musim semi tiba, bunga sakura mekar."
+            },
+            {
+                "jp":"まどを<ruby>開<rt>あ<\/rt><\/ruby>ける<b style='color:#FF4500;'>と<\/b>、<ruby>海<rt>うみ<\/rt><\/ruby>が<ruby>見<rt>み<\/rt><\/ruby>えました。",
+                "romaji":"Mado o akeru to, umi ga miemashita.",
+                "id":"Ketika saya membuka jendela, (ternyata) laut terlihat."
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"KB \/ KS + なら",
+        "explanation":"Bentuk kondisional 'nara' digunakan untuk merespons perkataan lawan bicara. Ini mengambil topik yang dibicarakan dan memberikan informasi, saran, atau rekomendasi terkait topik tersebut. Artinya 'kalau soal itu...' atau 'berbicara tentang itu...'.",
+        "visual":"<b>A: \"[Topik X]\" 💬<br>B: \"Oh, kalau [Topik X] <b style='color:#FF4500;'>なら<\/b>, ...\"<\/b><br><br>Bayangkan Anda 'menangkap' topik yang dilempar lawan bicara (💬), lalu Anda memberikan info tambahan terkait topik tersebut.",
+        "examples":[
+            {
+                "jp":"A: <ruby>温泉<rt>おんせん<\/rt><\/ruby>へ<ruby>行<rt>い<\/rt><\/ruby>きたいです。 B: <ruby>温泉<rt>おんせん<\/rt><\/ruby><b style='color:#FF4500;'>なら<\/b>、<ruby>箱根<rt>はこね<\/rt><\/ruby>がいいですよ。",
+                "romaji":"A: Onsen e ikitai desu. B: Onsen nara, Hakone ga ii desu yo.",
+                "id":"A: Saya ingin pergi ke pemandian air panas. B: Kalau soal pemandian air panas, Hakone bagus lho."
+            },
+            {
+                "jp":"A: <ruby>日本語<rt>にほんご<\/rt><\/ruby>の<ruby>本<rt>ほん<\/rt><\/ruby>を<ruby>探<rt>さが<\/rt><\/ruby>しています。 B: <ruby>日本語<rt>にほんご<\/rt><\/ruby>の<ruby>本<rt>ほん<\/rt><\/ruby><b style='color:#FF4500;'>なら<\/b>、あそこの<ruby>本屋<rt>ほんや<\/rt><\/ruby>にたくさんあります。",
+                "romaji":"A: Nihongo no hon o sagashite imasu. B: Nihongo no hon nara, asoko no hon'ya ni takusan arimasu.",
+                "id":"A: Saya sedang mencari buku bahasa Jepang. B: Kalau buku bahasa Jepang, ada banyak di toko buku sebelah sana."
+            },
+            {
+                "jp":"<ruby>車<rt>くるま<\/rt><\/ruby>の<ruby>運転<rt>うんてん<\/rt><\/ruby>はできません。でも、じてんしゃ<b style='color:#FF4500;'>なら<\/b><ruby>乗<rt>の<\/rt><\/ruby>れます。",
+                "romaji":"Kuruma no unten wa dekimasen. Demo, jitensha nara noremasu.",
+                "id":"Saya tidak bisa menyetir mobil. Tapi, kalau sepeda sih saya bisa naiki."
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"[Pemberi] は [Penerima] に KK-て あげます",
+        "explanation":"Pola ini digunakan saat Anda (atau seseorang) melakukan suatu kebaikan\/aksi (dalam bentuk-Te) UNTUK orang lain. Arah kebaikannya adalah 'keluar' dari subjek. Ini menunjukkan niat baik dari si pelaku.",
+        "visual":"<b>[Saya\/Pelaku] 🎁➡️ [Penerima]<\/b><br><br>Bayangkan Anda memberikan sebuah 'kado aksi' (🎁) kepada orang lain. Arah panahnya selalu menjauh dari Anda.",
+        "examples":[
+            {
+                "jp":"わたし<b style='color:#FF4500;'>は<\/b><ruby>木村<rt>きむら<\/rt><\/ruby>さん<b style='color:#FF4500;'>に<\/b><ruby>本<rt>ほん<\/rt><\/ruby>を<ruby>貸<rt>か<\/rt><\/ruby>してあげました。",
+                "romaji":"Watashi wa Kimura-san ni hon o kashite agemashita.",
+                "id":"Saya meminjamkan buku untuk Sdri. Kimura."
+            },
+            {
+                "jp":"わたし<b style='color:#FF4500;'>は<\/b><ruby>弟<rt>おとうと<\/rt><\/ruby>の<ruby>宿題<rt>しゅくだい<\/rt><\/ruby>を<ruby>手伝<rt>てつだ<\/rt><\/ruby>ってあげます。",
+                "romaji":"Watashi wa otouto no shukudai o tetsudatte agemasu.",
+                "id":"Saya akan membantu PR adik laki-laki saya."
+            },
+            {
+                "jp":"あなたはだれ<b style='color:#FF4500;'>に<\/b><ruby>日本語<rt>にほんご<\/rt><\/ruby>を<ruby>教<rt>おし<\/rt><\/ruby>えてあげますか。",
+                "romaji":"Anata wa dare ni nihongo o oshiete agemasu ka.",
+                "id":"Kepada siapa Anda akan mengajarkan bahasa Jepang?"
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"[Penerima] は [Pemberi] に KK-て もらいます",
+        "explanation":"Pola ini digunakan saat Anda (sebagai penerima) mendapatkan kebaikan\/aksi dari orang lain. Anda adalah subjek kalimat, dan orang yang melakukan aksi ditandai dengan partikel に. Fokusnya adalah pada fakta bahwa Anda 'menerima' aksi tersebut.",
+        "visual":"<b>[Saya\/Penerima] 🎁⬅️ [Pemberi]<\/b><br><br>Bayangkan sebuah 'kado aksi' (🎁) yang datang dari orang lain ke arah Anda. Anda yang menerima manfaatnya.",
+        "examples":[
+            {
+                "jp":"わたし<b style='color:#FF4500;'>は<\/b><ruby>山田<rt>やまだ<\/rt><\/ruby>さん<b style='color:#FF4500;'>に<\/b><ruby>事務所<rt>じむしょ<\/rt><\/ruby>の<ruby>電話番号<rt>でんわばんごう<\/rt><\/ruby>を<ruby>教<rt>おし<\/rt><\/ruby>えてもらいました。",
+                "romaji":"Watashi wa Yamada-san ni jimusho no denwa bangou o oshiete moraimashita.",
+                "id":"Saya diberitahu nomor telepon kantor oleh Sdr. Yamada."
+            },
+            {
+                "jp":"わたし<b style='color:#FF4500;'>は<\/b><ruby>母<rt>はは<\/rt><\/ruby><b style='color:#FF4500;'>に<\/b>セーターを<ruby>送<rt>おく<\/rt><\/ruby>ってもらいました。",
+                "romaji":"Watashi wa haha ni seetaa o okutte moraimashita.",
+                "id":"Saya dikirimi sweater oleh ibu saya."
+            },
+            {
+                "jp":"だれ<b style='color:#FF4500;'>に<\/b><ruby>空港<rt>くうこう<\/rt><\/ruby>までむかえに<ruby>来<rt>き<\/rt><\/ruby>てもらいますか。",
+                "romaji":"Dare ni kuukou made mukae ni kite moraimasu ka.",
+                "id":"Anda akan dijemput sampai ke bandara oleh siapa?"
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"[Pemberi] が (わたしに) KK-て くれます",
+        "explanation":"Pola ini mirip dengan もらいます, yaitu Anda menerima kebaikan dari orang lain. Bedanya, subjek kalimatnya adalah si 'pemberi' aksi, bukan penerima. Ini menekankan kebaikan hati si pemberi yang melakukan sesuatu untuk Anda atau kelompok Anda.",
+        "visual":"<b>[Pemberi] 🎁➡️ [Saya]<\/b><br><br>Sama seperti もらいます, 'kado aksi' (🎁) bergerak ke arah Anda, tapi kali ini 'kameranya' fokus pada si Pemberi.",
+        "examples":[
+            {
+                "jp":"<ruby>佐藤<rt>さとう<\/rt><\/ruby>さん<b style='color:#FF4500;'>が<\/b>わたし<b style='color:#FF4500;'>に<\/b><ruby>日本語<rt>にほんご<\/rt><\/ruby>を<ruby>教<rt>おし<\/rt><\/ruby>えてくれます。",
+                "romaji":"Satou-san ga watashi ni nihongo o oshiete kuremasu.",
+                "id":"Sdri. Sato mengajari saya bahasa Jepang (untuk saya)."
+            },
+            {
+                "jp":"<ruby>友達<rt>ともだち<\/rt><\/ruby><b style='color:#FF4500;'>が<\/b><ruby>引<rt>ひ<\/rt><\/ruby>っ<ruby>越<rt>こ<\/rt><\/ruby>しを<ruby>手伝<rt>てつだ<\/rt><\/ruby>ってくれました。",
+                "romaji":"Tomodachi ga hikkoshi o tetsudatte kuremashita.",
+                "id":"Teman (saya) telah membantu saya pindahan."
+            },
+            {
+                "jp":"だれ<b style='color:#FF4500;'>が<\/b>あなたを<ruby>駅<rt>えき<\/rt><\/ruby>まで<ruby>送<rt>おく<\/rt><\/ruby>ってくれますか。",
+                "romaji":"Dare ga anata o eki made okutte kuremasu ka.",
+                "id":"Siapa yang akan mengantarkanmu sampai stasiun?"
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"KB1 <b style='color:#FF4500;'>の<\/b> KB2",
+        "explanation":"Partikel の (no) adalah partikel serbaguna yang utamanya berfungsi untuk menunjukkan kepemilikan atau atribut. 'KB1 の KB2' bisa berarti 'KB2 milik KB1' atau 'KB2 yang berhubungan dengan KB1' (misalnya, buku bahasa Jepang). KB1 menerangkan KB2.",
+        "visual":"<b>[Pemilik\/Atribut] 🔗 <b style='color:#FF4500;'>の<\/b> [Milik\/Objek]<\/b><br><br>Bayangkan <b>の<\/b> sebagai sebuah rantai (🔗) yang mengikat dua kata benda. Rantai ini menunjukkan hubungan 'milik' atau 'terbuat dari' atau 'tentang'.",
+        "examples":[
+            {
+                "jp":"これはわたし<b style='color:#FF4500;'>の<\/b><ruby>本<rt>ほん<\/rt><\/ruby>です。",
+                "romaji":"Kore wa watashi no hon desu.",
+                "id":"Ini adalah buku saya."
+            },
+            {
+                "jp":"あれは<ruby>日本<rt>にほん<\/rt><\/ruby><b style='color:#FF4500;'>の<\/b>くるまです。",
+                "romaji":"Are wa nihon no kuruma desu.",
+                "id":"Itu adalah mobil buatan Jepang."
+            },
+            {
+                "jp":"これはコンピューター<b style='color:#FF4500;'>の<\/b><ruby>本<rt>ほん<\/rt><\/ruby>です。",
+                "romaji":"Kore wa konpyuutaa no hon desu.",
+                "id":"Ini adalah buku tentang komputer."
+            },
+            {
+                "jp":"IMC<b style='color:#FF4500;'>の<\/b><ruby>社員<rt>しゃいん<\/rt><\/ruby>はミラーさんです。",
+                "romaji":"IMC no shain wa Miraa-san desu.",
+                "id":"Karyawan dari IMC adalah Sdr. Miller."
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"KB (Orang\/Benda) <b style='color:#FF4500;'>も<\/b>",
+        "explanation":"Partikel も (mo) digunakan untuk menggantikan は (wa) ketika menyatakan 'juga' atau 'pun'. Ini menunjukkan bahwa pernyataan yang sama yang berlaku untuk item sebelumnya, juga berlaku untuk item yang ditandai dengan も.",
+        "visual":"<b>[Item Sebelumnya], [Item Baru] ++<b style='color:#FF4500;'>も<\/b><\/b><br><br>Bayangkan <b>も<\/b> sebagai tanda tambah (++) atau stempel 'SAMA JUGA' yang Anda berikan ke item kedua.",
+        "examples":[
+            {
+                "jp":"サントスさんは<ruby>学生<rt>がくせい<\/rt><\/ruby>です。アリさん<b style='color:#FF4500;'>も<\/b><ruby>学生<rt>がくせい<\/rt><\/ruby>です。",
+                "romaji":"Santosu-san wa gakusei desu. Ari-san mo gakusei desu.",
+                "id":"Sdr. Santos adalah siswa. Sdr. Ari juga siswa."
+            },
+            {
+                "jp":"これはわたしのかさです。あれ<b style='color:#FF4500;'>も<\/b>わたしのかさです。",
+                "romaji":"Kore wa watashi no kasa desu. Are mo watashi no kasa desu.",
+                "id":"Ini payung saya. Itu juga payung saya."
+            },
+            {
+                "jp":"A: <ruby>韓国<rt>かんこく<\/rt><\/ruby>へ<ruby>行<rt>い<\/rt><\/ruby>きます。 B: わたし<b style='color:#FF4500;'>も<\/b><ruby>行<rt>い<\/rt><\/ruby>きます。",
+                "romaji":"A: Kankoku e ikimasu. B: Watashi mo ikimasu.",
+                "id":"A: Saya akan pergi ke Korea. B: Saya juga pergi."
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"KB (tempat) <b style='color:#FF4500;'>へ<\/b> 行きます\/来ます\/帰ります",
+        "explanation":"Partikel へ (e) digunakan untuk menunjukkan arah tujuan dari kata kerja pergerakan seperti 行きます (pergi), 来ます (datang), dan 帰ります (pulang). Ini menjawab pertanyaan 'Ke mana?'. Walaupun に juga bisa digunakan, へ lebih menekankan pada 'arah' pergerakan.",
+        "visual":"<b>[Lokasi Tujuan] ➡️ <b style='color:#FF4500;'>へ<\/b> [Pergerakan]<\/b><br><br>Bayangkan <b>へ<\/b> sebagai tanda panah (➡️) di papan penunjuk jalan yang mengarahkan Anda ke tujuan.",
+        "examples":[
+            {
+                "jp":"わたしは<ruby>日本<rt>にほん<\/rt><\/ruby><b style='color:#FF4500;'>へ<\/b><ruby>行<rt>い<\/rt><\/ruby>きます。",
+                "romaji":"Watashi wa nihon e ikimasu.",
+                "id":"Saya akan pergi ke Jepang."
+            },
+            {
+                "jp":"きのう、どこ<b style='color:#FF4500;'>へ<\/b><ruby>行<rt>い<\/rt><\/ruby>きましたか。",
+                "romaji":"Kinou, doko e ikimashita ka.",
+                "id":"Kemarin, pergi ke mana?"
+            },
+            {
+                "jp":"かれはくに<b style='color:#FF4500;'>へ<\/b><ruby>帰<rt>かえ<\/rt><\/ruby>りました。",
+                "romaji":"Kare wa kuni e kaerimashita.",
+                "id":"Dia (laki-laki) telah pulang ke negaranya."
+            },
+            {
+                "jp":"バスで<ruby>学校<rt>がっこう<\/rt><\/ruby><b style='color:#FF4500;'>へ<\/b><ruby>来<rt>き<\/rt><\/ruby>ます。",
+                "romaji":"Basu de gakkou e kimasu.",
+                "id":"Saya datang ke sekolah dengan bus."
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"KS-い(<s>い<\/s>)くて、...",
+        "explanation":"Ini adalah cara untuk menyambungkan dua atau lebih kata sifat-i dalam satu kalimat. Artinya '...dan...'. Caranya adalah dengan mengganti akhiran い pada kata sifat pertama dengan くて. Kata sifat terakhir dalam rangkaian tetap dalam bentuk aslinya (-i desu).",
+        "visual":"<b>[Sifat A]-<b style='color:#FF4500;'>くて<\/b>、[Sifat B]<\/b><br><br>Bayangkan <b>くて<\/b> sebagai tanda koma (,) dan kata 'dan' yang khusus untuk menyambung kata sifat-i.",
+        "examples":[
+            {
+                "jp":"このへやは<ruby>広<rt>ひろ<\/rt><\/ruby><b style='color:#FF4500;'>くて<\/b>、<ruby>明<rt>あか<\/rt><\/ruby>るいです。",
+                "romaji":"Kono heya wa hirokute, akarui desu.",
+                "id":"Kamar ini luas dan terang."
+            },
+            {
+                "jp":"きのうは<ruby>天気<rt>てんき<\/rt><\/ruby>が<ruby>良<rt>よ<\/rt><\/ruby><b style='color:#FF4500;'>くて<\/b>、<ruby>暑<rt>あつ<\/rt><\/ruby>かったです。",
+                "romaji":"Kinou wa tenki ga yokute, atsukatta desu.",
+                "id":"Kemarin cuacanya bagus dan panas."
+            },
+            {
+                "jp":"あのレストランは<ruby>安<rt>やす<\/rt><\/ruby><b style='color:#FF4500;'>くて<\/b>、おいしいです。",
+                "romaji":"Ano resutoran wa yasukute, oishii desu.",
+                "id":"Restoran itu murah dan enak."
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"KS-な で \/ KB で、...",
+        "explanation":"Ini adalah cara untuk menyambungkan kata sifat-na atau dua kata benda. Cukup tambahkan で setelah kata sifat-na atau kata benda pertama. Ini juga berfungsi seperti '...dan...' atau '...karena...'.",
+        "visual":"<b>[Sifat\/Benda A]-<b style='color:#FF4500;'>で<\/b>、[Sifat\/Benda B]<\/b><br><br>Bayangkan <b>で<\/b> sebagai perekat serbaguna yang bisa menyambungkan kata sifat-na dan kata benda.",
+        "examples":[
+            {
+                "jp":"かれはハンサム<b style='color:#FF4500;'>で<\/b>、<ruby>親切<rt>しんせつ<\/rt><\/ruby>です。(KS-na)",
+                "romaji":"Kare wa hansamu de, shinsetsu desu.",
+                "id":"Dia (laki-laki) tampan dan baik hati."
+            },
+            {
+                "jp":"ミラーさんは<ruby>学生<rt>がくせい<\/rt><\/ruby><b style='color:#FF4500;'>で<\/b>、マリアさんも<ruby>学生<rt>がくせい<\/rt><\/ruby>です。(KB)",
+                "romaji":"Miraa-san wa gakusei de, Maria-san mo gakusei desu.",
+                "id":"Sdr. Miller adalah seorang siswa, dan Sdri. Maria juga seorang siswa."
+            },
+            {
+                "jp":"この<ruby>公園<rt>こうえん<\/rt><\/ruby>は<ruby>静<rt>しず<\/rt><\/ruby>か<b style='color:#FF4500;'>で<\/b>、とてもきれいです。(KS-na)",
+                "romaji":"Kono kouen wa shizuka de, totemo kirei desu.",
+                "id":"Taman ini tenang dan sangat indah."
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"[Topik] は [Atribut] <b style='color:#FF4500;'>が<\/b> [Deskripsi]",
+        "explanation":"Pola ini digunakan untuk mendeskripsikan bagian atau atribut spesifik dari sebuah topik. Topik utamanya ditandai dengan は, sementara bagian atau atribut yang lebih spesifik (seperti hidung, rambut, kecepatan, rasa) ditandai dengan が, lalu diikuti deskripsinya.",
+        "visual":"<b>[Topik Umum] は ... [Detail Spesifik] <b style='color:#FF4500;'>が<\/b> [Penjelasan]<\/b><br><br>Bayangkan Anda melakukan 'zoom-in'. Anda mulai dari Topik Umum (misal: gajah), lalu 'zoom-in' ke Detail Spesifik (hidungnya), lalu beri penjelasan (panjang).",
+        "examples":[
+            {
+                "jp":"ぞう<b style='color:#FF4500;'>は<\/b><ruby>鼻<rt>はな<\/rt><\/ruby><b style='color:#FF4500;'>が<\/b><ruby>長<rt>なが<\/rt><\/ruby>いです。",
+                "romaji":"Zou wa hana ga nagai desu.",
+                "id":"Gajah hidungnya panjang."
+            },
+            {
+                "jp":"あの<ruby>人<rt>ひと<\/rt><\/ruby><b style='color:#FF4500;'>は<\/b><ruby>髪<rt>かみ<\/rt><\/ruby><b style='color:#FF4500;'>が<\/b><ruby>短<rt>みじか<\/rt><\/ruby>いです。",
+                "romaji":"Ano hito wa kami ga mijikai desu.",
+                "id":"Orang itu rambutnya pendek."
+            },
+            {
+                "jp":"この<ruby>町<rt>まち<\/rt><\/ruby><b style='color:#FF4500;'>は<\/b><ruby>交通<rt>こうつう<\/rt><\/ruby><b style='color:#FF4500;'>が<\/b><ruby>便利<rt>べんり<\/rt><\/ruby>です。",
+                "romaji":"Kono machi wa koutsuu ga benri desu.",
+                "id":"Kota ini transportasinya praktis."
+            },
+            {
+                "jp":"ドイツのビール<b style='color:#FF4500;'>は<\/b><ruby>味<rt>あじ<\/rt><\/ruby><b style='color:#FF4500;'>が<\/b>おいしいです。",
+                "romaji":"Doitsu no biiru wa aji ga oishii desu.",
+                "id":"Bir Jerman rasanya enak."
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"Bentuk Biasa + んです",
+        "explanation":"Pola ini digunakan untuk memberikan penjelasan, menekankan alasan, atau meminta klarifikasi dengan nuansa yang lebih personal. Ini membuat kalimat terdengar lebih natural dan tidak terlalu kaku. Digunakan setelah bentuk biasa dari kata kerja, kata sifat, atau kata benda (untuk KS-na\/KB, gunakan なんです).",
+        "visual":"<b>[Pernyataan] ... <b style='color:#FF4500;'>んです<\/b> (memberi konteks\/alasan)<\/b><br><br>Bayangkan <b>んです<\/b> sebagai 'lampu sorot' yang menerangi latar belakang atau alasan di balik sebuah pernyataan.",
+        "examples":[
+            {
+                "jp":"A: どうして<ruby>遅<rt>おく<\/rt><\/ruby>れたんですか。 B: バスが<ruby>来<rt>こ<\/rt><\/ruby>なかっ<b style='color:#FF4500;'>たんです<\/b>。",
+                "romaji":"A: Doushite okuretan desu ka. B: Basu ga konakattan desu.",
+                "id":"A: Kenapa kamu terlambat? B: (Penjelasannya adalah) busnya tidak datang."
+            },
+            {
+                "jp":"<ruby>頭<rt>あたま<\/rt><\/ruby>が<ruby>痛<rt>いた<\/rt><\/ruby>いんです。 (Memberi alasan kenapa terlihat tidak sehat)",
+                "romaji":"Atama ga itain desu.",
+                "id":"Kepala saya sakit (makanya saya begini)."
+            },
+            {
+                "jp":"どこでそのカメラを<ruby>買<rt>か<\/rt><\/ruby>っ<b style='color:#FF4500;'>たんです<\/b>か。(Meminta info dengan rasa ingin tahu)",
+                "romaji":"Doko de sono kamera o kattan desu ka.",
+                "id":"Di mana kamu membeli kamera itu? (Saya penasaran)"
+            },
+            {
+                "jp":"<ruby>彼<rt>かれ<\/rt><\/ruby>は<ruby>病気<rt>びょうき<\/rt><\/ruby>な<b style='color:#FF4500;'>んです<\/b>。",
+                "romaji":"Kare wa byouki nan desu.",
+                "id":"(Penjelasannya adalah) dia sakit."
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"KK-て いただけませんか",
+        "explanation":"Ini adalah cara yang sangat sopan untuk meminta seseorang melakukan sesuatu untuk Anda. Jauh lebih sopan daripada '-te kudasai'. Secara harfiah berarti 'Tidak bisakah saya menerima Anda melakukan (aksi)...?'.",
+        "visual":"<b>[Aksi]-て 🙏✨ いただけませんか<\/b><br><br>Bayangkan Anda membungkuk dalam-dalam (🙏✨) saat meminta sebuah bantuan besar.",
+        "examples":[
+            {
+                "jp":"すみません、この<ruby>漢字<rt>かんじ<\/rt><\/ruby>の<ruby>読<rt>よ<\/rt><\/ruby>み<ruby>方<rt>かた<\/rt><\/ruby>を<ruby>教<rt>おし<\/rt><\/ruby>えていただけませんか。",
+                "romaji":"Sumimasen, kono kanji no yomikata o oshiete itadakemasen ka.",
+                "id":"Permisi, bisakah Anda berbaik hati mengajarkan cara membaca kanji ini?"
+            },
+            {
+                "jp":"もうすこしゆっくり<ruby>話<rt>はな<\/rt><\/ruby>していただけませんか。",
+                "romaji":"Mou sukoshi yukkuri hanashite itadakemasen ka.",
+                "id":"Bisakah Anda berbaik hati berbicara sedikit lebih pelan?"
+            },
+            {
+                "jp":"<ruby>駅<rt>えき<\/rt><\/ruby>までの<ruby>行<rt>い<\/rt><\/ruby>き<ruby>方<rt>かた<\/rt><\/ruby>を<ruby>教<rt>おし<\/rt><\/ruby>えていただけませんか。",
+                "romaji":"Eki made no ikikata o oshiete itadakemasen ka.",
+                "id":"Bisakah Anda berbaik hati memberitahu cara pergi ke stasiun?"
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"Bentuk-た \/ Bentuk-ない + ほうがいいです",
+        "explanation":"Pola ini digunakan untuk memberikan saran atau nasihat. 'ほうがいいです' (hou ga ii desu) berarti 'lebih baik'. Gunakan bentuk lampau biasa (Ta-form) untuk saran positif ('lebih baik melakukan...') dan bentuk negatif biasa (Nai-form) untuk saran negatif ('lebih baik tidak melakukan...').",
+        "visual":"<b>✅ [Aksi Positif]-た <b style='color:#FF4500;'>ほうがいい<\/b><br>❌ [Aksi Negatif]-ない <b style='color:#FF4500;'>ほうがいい<\/b><\/b><br><br>Bayangkan seorang dokter yang memberikan resep: satu resep untuk 'dilakukan' (✅) dan satu resep untuk 'dihindari' (❌).",
+        "examples":[
+            {
+                "jp":"あなたはもっと<ruby>野菜<rt>やさい<\/rt><\/ruby>を<ruby>食<rt>た<\/rt><\/ruby>べた<b style='color:#FF4500;'>ほうがいい<\/b>ですよ。",
+                "romaji":"Anata wa motto yasai o tabeta hou ga ii desu yo.",
+                "id":"Anda lebih baik makan lebih banyak sayuran lho."
+            },
+            {
+                "jp":"そんなにたくさんお<ruby>酒<rt>さけ<\/rt><\/ruby>を<ruby>飲<rt>の<\/rt><\/ruby>まない<b style='color:#FF4500;'>ほうがいい<\/b>です。",
+                "romaji":"Sonnani takusan o-sake o nomanai hou ga ii desu.",
+                "id":"Lebih baik tidak minum alkohol sebanyak itu."
+            },
+            {
+                "jp":"<ruby>疲<rt>つか<\/rt><\/ruby>れているなら、はやく<ruby>寝<rt>ね<\/rt><\/ruby>た<b style='color:#FF4500;'>ほうがいい<\/b>です。",
+                "romaji":"Tsukareteiru nara, hayaku neta hou ga ii desu.",
+                "id":"Kalau lelah, lebih baik cepat tidur."
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"[KK Kamus \/ KB の] + まえに、...",
+        "explanation":"Pola 'mae ni' berarti 'sebelum'. Digunakan untuk menyatakan suatu aksi yang dilakukan sebelum aksi lainnya. Jika kata kerja, gunakan bentuk kamus. Jika kata benda (yang menyatakan durasi atau kejadian), tambahkan partikel の.",
+        "visual":"<b>[... 2️⃣ ...] 🕒 [Aksi 1]<b style='color:#FF4500;'>まえに<\/b><\/b><br><br>Bayangkan sebuah timeline. Anda meletakkan penanda 'SEBELUM' (<b>まえに<\/b>) pada [Aksi 1], yang berarti [Aksi 2] harus terjadi lebih dulu.",
+        "examples":[
+            {
+                "jp":"<ruby>寝<rt>ね<\/rt><\/ruby>る<b style='color:#FF4500;'>まえに<\/b>、<ruby>歯<rt>は<\/rt><\/ruby>をみがきます。",
+                "romaji":"Neru mae ni, ha o migakimasu.",
+                "id":"Sebelum tidur, saya menggosok gigi."
+            },
+            {
+                "jp":"<ruby>食事<rt>しょくじ<\/rt><\/ruby>の<b style='color:#FF4500;'>まえに<\/b>、<ruby>手<rt>て<\/rt><\/ruby>を<ruby>洗<rt>あら<\/rt><\/ruby>います。",
+                "romaji":"Shokuji no mae ni, te o araimasu.",
+                "id":"Sebelum makan, saya mencuci tangan."
+            },
+            {
+                "jp":"どのくらい<ruby>前<rt>まえ<\/rt><\/ruby>に<ruby>日本<rt>にほん<\/rt><\/ruby>へ<ruby>来<rt>き<\/rt><\/ruby>ましたか。・・・１<ruby>年<rt>ねん<\/rt><\/ruby><b style='color:#FF4500;'>まえに<\/b><ruby>来<rt>き<\/rt><\/ruby>ました。",
+                "romaji":"Donokurai mae ni nihon e kimashita ka. ...Ichi-nen mae ni kimashita.",
+                "id":"Berapa lama sebelumnya Anda datang ke Jepang? ...Saya datang 1 tahun yang lalu."
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"KK-てから、...",
+        "explanation":"Pola 'te kara' berarti 'setelah'. Ini menekankan bahwa aksi pertama (dalam bentuk-Te) telah selesai sepenuhnya, baru kemudian aksi kedua dimulai. Ini sangat menekankan urutan kejadian.",
+        "visual":"<b>[1. Selesai!] ✅ <b style='color:#FF4500;'>てから<\/b> ➡️ [2. Mulai]<\/b><br><br>Bayangkan Anda memberi tanda centang (✅) pada tugas pertama, baru setelah itu (<b>てから<\/b>) Anda pindah ke tugas kedua (➡️).",
+        "examples":[
+            {
+                "jp":"<ruby>仕事<rt>しごと<\/rt><\/ruby>が<ruby>終<rt>お<\/rt><\/ruby>わっ<b style='color:#FF4500;'>てから<\/b>、<ruby>飲<rt>の<\/rt><\/ruby>みに<ruby>行<rt>い<\/rt><\/ruby>きます。",
+                "romaji":"Shigoto ga owatte kara, nomi ni ikimasu.",
+                "id":"Setelah pekerjaan selesai, saya akan pergi minum-minum."
+            },
+            {
+                "jp":"この<ruby>薬<rt>くすり<\/rt><\/ruby>は<ruby>食<rt>た<\/rt><\/ruby>べ<b style='color:#FF4500;'>てから<\/b>、<ruby>飲<rt>の<\/rt><\/ruby>んでください。",
+                "romaji":"Kono kusuri wa tabete kara, nonde kudasai.",
+                "id":"Obat ini, tolong minum setelah makan."
+            },
+            {
+                "jp":"<ruby>国<rt>くに<\/rt><\/ruby>へ<ruby>帰<rt>かえ<\/rt><\/ruby>っ<b style='color:#FF4500;'>てから<\/b>、<ruby>父<rt>ちち<\/rt><\/ruby>の<ruby>会社<rt>かいしゃ<\/rt><\/ruby>で<ruby>働<rt>はたら<\/rt><\/ruby>きます。",
+                "romaji":"Kuni e kaette kara, chichi no kaisha de hatarakimasu.",
+                "id":"Setelah pulang ke negara asal, saya akan bekerja di perusahaan ayah saya."
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"KK-たあとで、...",
+        "explanation":"Pola 'ta ato de' juga berarti 'setelah', mirip dengan 'te kara'. Bedanya, pola ini menggunakan bentuk lampau (Ta-form) dan seringkali menyiratkan adanya jeda waktu antara aksi pertama dan kedua. Lebih formal daripada 'te kara'.",
+        "visual":"<b>[1. Lampau] 🕒 ... <b style='color:#FF4500;'>あとで<\/b> → [2. Kemudian]<\/b><br><br>Bayangkan sebuah peristiwa yang sudah lewat (🕒), lalu setelah jeda beberapa waktu (...) barulah peristiwa kedua terjadi.",
+        "examples":[
+            {
+                "jp":"<ruby>運動<rt>うんどう<\/rt><\/ruby>し<b style='color:#FF4500;'>たあとで<\/b>、シャワーを<ruby>浴<rt>あ<\/rt><\/ruby>びます。",
+                "romaji":"Undou shita ato de, shawaa o abimasu.",
+                "id":"Setelah berolahraga, saya mandi."
+            },
+            {
+                "jp":"ごはんを<ruby>食<rt>た<\/rt><\/ruby>べ<b style='color:#FF4500;'>たあとで<\/b>、すぐに<ruby>寝<rt>ね<\/rt><\/ruby>てはいけません。",
+                "romaji":"Gohan o tabeta ato de, sugu ni nete wa ikemasen.",
+                "id":"Setelah makan, tidak boleh langsung tidur."
+            },
+            {
+                "jp":"コンサートが<ruby>終<rt>お<\/rt><\/ruby>わっ<b style='color:#FF4500;'>たあとで<\/b>、レストランで<ruby>食事<rt>しょくじ<\/rt><\/ruby>しました。",
+                "romaji":"Konsaato ga owatta ato de, resutoran de shokuji shimashita.",
+                "id":"Setelah konser selesai, kami makan di restoran."
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"Bentuk Volitional (う\/よう)",
+        "explanation":"Ini adalah bentuk 'kasual' dari ～ましょう (mashou), yang berarti 'Ayo...' atau 'Mari...'. Juga bisa digunakan untuk menyatakan niat sendiri 'Aku akan...'. Aturan: Grup 1 (vokal u → o + う, misal: iku → ikou), Grup 2 (hapus る + よう, misal: taberu → tabeyou), Grup 3 (suru → shiyou, kuru → koyou).",
+        "visual":"<b>[Aksi] 🙋‍♂️\/🙋‍♀️<\/b><br><br>Bayangkan seseorang mengangkat tangan (🙋‍♂️) untuk mengajak teman-temannya melakukan sesuatu bersama.",
+        "examples":[
+            {
+                "jp":"いっしょに<ruby>昼<rt>ひる<\/rt><\/ruby>ごはんを<ruby>食<rt>た<\/rt><\/ruby>べよう。",
+                "romaji":"Issho ni hirugohan o tabeyou.",
+                "id":"Ayo makan siang bersama."
+            },
+            {
+                "jp":"あしたはもっとはやく<ruby>起<rt>お<\/rt><\/ruby>きよう。",
+                "romaji":"Ashita wa motto hayaku okiyou.",
+                "id":"Besok, aku akan bangun lebih pagi."
+            },
+            {
+                "jp":"<ruby>週末<rt>しゅうまつ<\/rt><\/ruby>は<ruby>映画<rt>えいが<\/rt><\/ruby>でも<ruby>見<rt>み<\/rt><\/ruby>にいこうか。",
+                "romaji":"Shuumatsu wa eiga demo mi ni ikou ka.",
+                "id":"Bagaimana kalau kita pergi nonton film atau semacamnya di akhir pekan?"
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"Bentuk Volitional + と<ruby>思<rt>おも<\/rt><\/ruby>っています",
+        "explanation":"Pola ini digunakan untuk menyatakan niat atau rencana yang sudah dipikirkan sejak beberapa waktu lalu (bukan keputusan spontan). Artinya 'Saya berniat untuk...' atau 'Saya berencana untuk...'. Ini menunjukkan niat yang lebih kuat daripada '～とおもいます'.",
+        "visual":"<b>[Rencana] 🗓️ → 🤔 と思っています<\/b><br><br>Bayangkan sebuah rencana yang sudah ada di kalender (🗓️), dan Anda sedang memikirkannya (🤔) untuk dieksekusi.",
+        "examples":[
+            {
+                "jp":"<ruby>来年<rt>らいねん<\/rt><\/ruby>、<ruby>日本<rt>にほん<\/rt><\/ruby>へ<ruby>留学<rt>りゅうがく<\/rt><\/ruby>しようと<ruby>思<rt>おも<\/rt><\/ruby>っています。",
+                "romaji":"Rainen, nihon e ryuugaku shiyou to omotte imasu.",
+                "id":"Saya berencana untuk belajar di luar negeri ke Jepang tahun depan."
+            },
+            {
+                "jp":"<ruby>週末<rt>しゅうまつ<\/rt><\/ruby>は<ruby>家<rt>いえ<\/rt><\/ruby>でゆっくり<ruby>休<rt>やす<\/rt><\/ruby>もうと<ruby>思<rt>おも<\/rt><\/ruby>っています。",
+                "romaji":"Shuumatsu wa ie de yukkuri yasumou to omotte imasu.",
+                "id":"Saya berniat untuk bersantai di rumah pada akhir pekan."
+            },
+            {
+                "jp":"かれは<ruby>会社<rt>かいしゃ<\/rt><\/ruby>をやめようと<ruby>思<rt>おも<\/rt><\/ruby>っているらしいです。",
+                "romaji":"Kare wa kaisha o yameyou to omotte iru rashii desu.",
+                "id":"Sepertinya dia berniat untuk berhenti dari perusahaan."
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"[KK Kamus \/ KB の] + つもりです",
+        "explanation":"Pola 'tsumori desu' juga digunakan untuk menyatakan niat atau rencana yang sudah pasti. Ini menunjukkan keputusan yang kuat dan sudah final. Artinya 'Saya bermaksud...' atau 'Saya berencana...'. Untuk kata kerja, gunakan bentuk kamus. Untuk kata benda, tambahkan partikel の.",
+        "visual":"<b>[Rencana Final] ✅! つもりです<\/b><br><br>Bayangkan sebuah rencana yang sudah diberi stempel 'Pasti Jadi!' (✅!). Ini adalah niat yang sudah bulat.",
+        "examples":[
+            {
+                "jp":"<ruby>大学<rt>だいがく<\/rt><\/ruby>を<ruby>出<rt>で<\/rt><\/ruby>たら、<ruby>国<rt>くに<\/rt><\/ruby>へ<ruby>帰<rt>かえ<\/rt><\/ruby>るつもりです。",
+                "romaji":"Daigaku o detara, kuni e kaeru tsumori desu.",
+                "id":"Setelah lulus universitas, saya bermaksud untuk pulang ke negara asal."
+            },
+            {
+                "jp":"あしたからはタバコを<ruby>吸<rt>す<\/rt><\/ruby>わないつもりです。",
+                "romaji":"Ashita kara wa tabako o suwanai tsumori desu.",
+                "id":"Mulai besok, saya bermaksud untuk tidak merokok."
+            },
+            {
+                "jp":"かれは<ruby>来年<rt>らいねん<\/rt><\/ruby>の<ruby>旅行<rt>りょこう<\/rt><\/ruby>のつもりで、ちょきんしています。",
+                "romaji":"Kare wa rainen no ryokou no tsumori de, chokin shite imasu.",
+                "id":"Dia menabung dengan niat untuk perjalanan tahun depan."
+            },
+            {
+                "jp":"いつまで<ruby>日本<rt>にほん<\/rt><\/ruby>にいるつもりですか。",
+                "romaji":"Itsumade nihon ni iru tsumori desu ka.",
+                "id":"Sampai kapan Anda berencana berada di Jepang?"
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"KB (objek) <b style='color:#FF4500;'>を<\/b> KK (transitif)",
+        "explanation":"Partikel を (dibaca 'o') digunakan untuk menandai objek langsung dari sebuah kata kerja. Ini menjawab pertanyaan 'Apa yang di...?'. Partikel ini selalu mengikuti kata benda yang menjadi 'korban' dari aksi.",
+        "visual":"<b>[Subjek] 🎯 [Objek] <b style='color:#FF4500;'>を<\/b> [Aksi]<\/b><br><br>Bayangkan <b>を<\/b> sebagai anak panah 🎯 yang ditembakkan oleh Subjek menuju Objek, lalu diikuti oleh Aksi yang dilakukan.",
+        "examples":[
+            {
+                "jp":"わたしはジュース<b style='color:#FF4500;'>を<\/b><ruby>飲<rt>の<\/rt><\/ruby>みます。",
+                "romaji":"Watashi wa juusu o nomimasu.",
+                "id":"Saya minum jus."
+            },
+            {
+                "jp":"きのう、<ruby>日本語<rt>にほんご<\/rt><\/ruby><b style='color:#FF4500;'>を<\/b><ruby>勉強<rt>べんきょう<\/rt><\/ruby>しました。",
+                "romaji":"Kinou, nihongo o benkyoushimashita.",
+                "id":"Kemarin, saya belajar bahasa Jepang."
+            },
+            {
+                "jp":"<ruby>毎日<rt>まいにち<\/rt><\/ruby>、テレビ<b style='color:#FF4500;'>を<\/b><ruby>見<rt>み<\/rt><\/ruby>ますか。",
+                "romaji":"Mainichi, terebi o mimasu ka.",
+                "id":"Apakah Anda menonton TV setiap hari?"
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"KB (tempat) <b style='color:#FF4500;'>で<\/b> Aksi",
+        "explanation":"Partikel で digunakan untuk menandai tempat di mana suatu aksi atau kegiatan terjadi. Ini menjawab pertanyaan 'Di mana kamu melakukan...?'. Jangan bingung dengan に yang menandai keberadaan (imasu\/arimasu).",
+        "visual":"<b>[Lokasi Aksi] 📍 <b style='color:#FF4500;'>で<\/b> [Aktivitas]<\/b><br><br>Bayangkan <b>で<\/b> sebagai pin lokasi '📍' yang Anda letakkan di peta untuk menunjukkan, 'Di sinilah kejadiannya berlangsung!'.",
+        "examples":[
+            {
+                "jp":"<ruby>食堂<rt>しょくどう<\/rt><\/ruby><b style='color:#FF4500;'>で<\/b><ruby>昼<rt>ひる<\/rt><\/ruby>ごはんを<ruby>食<rt>た<\/rt><\/ruby>べます。",
+                "romaji":"Shokudou de hirugohan o tabemasu.",
+                "id":"Saya makan siang di kantin."
+            },
+            {
+                "jp":"えき<b style='color:#FF4500;'>で<\/b>しんぶんを<ruby>買<rt>か<\/rt><\/ruby>います。",
+                "romaji":"Eki de shinbun o kaimasu.",
+                "id":"Saya membeli koran di stasiun."
+            },
+            {
+                "jp":"どこ<b style='color:#FF4500;'>で<\/b>そのかばんを<ruby>買<rt>か<\/rt><\/ruby>いましたか。",
+                "romaji":"Doko de sono kaban o kaimashita ka.",
+                "id":"Di mana kamu membeli tas itu?"
+            },
+            {
+                "jp":"<ruby>図書館<rt>としょかん<\/rt><\/ruby><b style='color:#FF4500;'>で<\/b><ruby>勉強<rt>べんきょう<\/rt><\/ruby>しないでください。",
+                "romaji":"Toshokan de benkyou shinaide kudasai.",
+                "id":"Tolong jangan belajar di perpustakaan."
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"KB (alat\/cara) <b style='color:#FF4500;'>で<\/b> KK",
+        "explanation":"Selain tempat, partikel で juga digunakan untuk menunjukkan alat, metode, atau cara sesuatu dilakukan. Ini menjawab pertanyaan 'Dengan apa?' atau 'Naik apa?'.",
+        "visual":"<b>[Alat\/Kendaraan] 🛠️ <b style='color:#FF4500;'>で<\/b> [Aksi]<\/b><br><br>Bayangkan <b>で<\/b> sebagai sebuah perkakas 🛠️ atau kunci pas yang menghubungkan cara\/alat dengan tindakan yang dihasilkan.",
+        "examples":[
+            {
+                "jp":"バス<b style='color:#FF4500;'>で<\/b><ruby>学校<rt>がっこう<\/rt><\/ruby>へ<ruby>行<rt>い<\/rt><\/ruby>きます。",
+                "romaji":"Basu de gakkou e ikimasu.",
+                "id":"Saya pergi ke sekolah dengan (naik) bus."
+            },
+            {
+                "jp":"はし<b style='color:#FF4500;'>で<\/b>ごはんを<ruby>食<rt>た<\/rt><\/ruby>べます。",
+                "romaji":"Hashi de gohan o tabemasu.",
+                "id":"Saya makan nasi dengan sumpit."
+            },
+            {
+                "jp":"<ruby>日本語<rt>にほんご<\/rt><\/ruby><b style='color:#FF4500;'>で<\/b>レポートを<ruby>書<rt>か<\/rt><\/ruby>きます。",
+                "romaji":"Nihongo de repooto o kakimasu.",
+                "id":"Saya menulis laporan dalam bahasa Jepang."
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"KB (waktu) <b style='color:#FF4500;'>に<\/b> Aksi",
+        "explanation":"Partikel に digunakan untuk menandai titik waktu yang spesifik kapan sebuah aksi terjadi. Ini digunakan untuk jam, hari, tanggal, dan tahun yang spesifik, tetapi tidak untuk kata keterangan waktu seperti 'hari ini' (今日) atau 'besok' (明日).",
+        "visual":"<b>[Kalender\/Jam] 🎯 <b style='color:#FF4500;'>に<\/b> [Aksi]<\/b><br><br>Bayangkan <b>に<\/b> sebagai pin 🎯 yang Anda tancapkan pada waktu yang tepat di kalender atau jam untuk menandai sebuah kejadian.",
+        "examples":[
+            {
+                "jp":"わたしは<ruby>七時<rt>しちじ<\/rt><\/ruby><b style='color:#FF4500;'>に<\/b><ruby>起<rt>お<\/rt><\/ruby>きます。",
+                "romaji":"Watashi wa shichiji ni okimasu.",
+                "id":"Saya bangun pada jam tujuh."
+            },
+            {
+                "jp":"<ruby>日曜日<rt>にちようび<\/rt><\/ruby><b style='color:#FF4500;'>に<\/b><ruby>奈良<rt>なら<\/rt><\/ruby>へ<ruby>行<rt>い<\/rt><\/ruby>きます。",
+                "romaji":"Nichiyoubi ni Nara e ikimasu.",
+                "id":"Saya akan pergi ke Nara pada hari Minggu."
+            },
+            {
+                "jp":"2023<ruby>年<rt>ねん<\/rt><\/ruby>10<ruby>月<rt>がつ<\/rt><\/ruby><b style='color:#FF4500;'>に<\/b><ruby>日本<rt>にほん<\/rt><\/ruby>へ<ruby>来<rt>き<\/rt><\/ruby>ました。",
+                "romaji":"Nisen-nijuu-san-nen juu-gatsu ni Nihon e kimashita.",
+                "id":"Saya datang ke Jepang pada bulan Oktober 2023."
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"KB (Tempat) <b style='color:#FF4500;'>に<\/b> KB <b style='color:#FF4500;'>が<\/b> あります\/います",
+        "explanation":"Pola ini digunakan untuk menyatakan keberadaan sesuatu. Partikel に menandai lokasi, dan が menandai subjek yang ada. 'あります' (arimasu) untuk benda mati (buku, meja, pohon) dan 'います' (imasu) untuk makhluk hidup (orang, kucing, ikan).",
+        "visual":"<b>[Lokasi] 📍 <b style='color:#FF4500;'>に<\/b> [Benda\/Makhluk Hidup] <b style='color:#FF4500;'>が<\/b> [Ada ✅]<\/b><br><br>Pikirkan sebagai: Di lokasi 📍 (に), subjek (が) ini 'ada'.",
+        "examples":[
+            {
+                "jp":"つくえの<ruby>上<rt>うえ<\/rt><\/ruby><b style='color:#FF4500;'>に<\/b><ruby>本<rt>ほん<\/rt><\/ruby><b style='color:#FF4500;'>が<\/b>あります。",
+                "romaji":"Tsukue no ue ni hon ga arimasu.",
+                "id":"Di atas meja ada buku."
+            },
+            {
+                "jp":"<ruby>教室<rt>きょうしつ<\/rt><\/ruby><b style='color:#FF4500;'>に<\/b><ruby>先生<rt>せんせい<\/rt><\/ruby><b style='color:#FF4500;'>が<\/b>います。",
+                "romaji":"Kyoushitsu ni sensei ga imasu.",
+                "id":"Di ruang kelas ada guru."
+            },
+            {
+                "jp":"<ruby>公園<rt>こうえん<\/rt><\/ruby><b style='color:#FF4500;'>に<\/b>だれ<b style='color:#FF4500;'>が<\/b>いますか。",
+                "romaji":"Kouen ni dare ga imasu ka.",
+                "id":"Siapa yang ada di taman?"
+            },
+            {
+                "jp":"あそこ<b style='color:#FF4500;'>に<\/b>コンビニ<b style='color:#FF4500;'>が<\/b>あります。",
+                "romaji":"Asoko ni konbini ga arimasu.",
+                "id":"Di sana ada minimarket."
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"KB1 <b style='color:#FF4500;'>から<\/b> KB2 <b style='color:#FF4500;'>まで<\/b>",
+        "explanation":"Pola ini digunakan untuk menandai sebuah rentang, bisa waktu maupun tempat. 'から' (kara) berarti 'dari' atau 'mulai', dan 'まで' (made) berarti 'sampai' atau 'hingga'.",
+        "visual":"<b>[Titik Awal] ▶️ <b style='color:#FF4500;'>から<\/b> ... ⏹️ <b style='color:#FF4500;'>まで<\/b> [Titik Akhir]<\/b><br><br>Bayangkan tombol 'play' (から) untuk memulai dan tombol 'stop' (まで) untuk mengakhiri.",
+        "examples":[
+            {
+                "jp":"<ruby>銀行<rt>ぎんこう<\/rt><\/ruby>は<ruby>九時<rt>くじ<\/rt><\/ruby><b style='color:#FF4500;'>から<\/b><ruby>三時<rt>さんじ<\/rt><\/ruby><b style='color:#FF4500;'>まで<\/b>です。",
+                "romaji":"Ginkou wa ku-ji kara san-ji made desu.",
+                "id":"Bank buka dari jam 9 sampai jam 3."
+            },
+            {
+                "jp":"ジャカルタ<b style='color:#FF4500;'>から<\/b>バンドン<b style='color:#FF4500;'>まで<\/b><ruby>三時間<rt>さんじかん<\/rt><\/ruby>かかります。",
+                "romaji":"Jakarta kara Bandung made san-jikan kakarimasu.",
+                "id":"Dari Jakarta sampai Bandung memakan waktu 3 jam."
+            },
+            {
+                "jp":"<ruby>月曜日<rt>げつようび<\/rt><\/ruby><b style='color:#FF4500;'>から<\/b><ruby>金曜日<rt>きんようび<\/rt><\/ruby><b style='color:#FF4500;'>まで<\/b><ruby>働<rt>はたら<\/rt><\/ruby>きます。",
+                "romaji":"Getsuyoubi kara kin'youbi made hatarakimasu.",
+                "id":"Saya bekerja dari hari Senin sampai hari Jumat."
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"KK-ます → KK-ました",
+        "explanation":"Ini adalah cara mengubah kata kerja bentuk sopan (masu-form) ke bentuk lampau positif. Cukup ganti akhiran 'ます (masu)' menjadi 'ました (mashita)'. Untuk bentuk lampau negatif, 'ません (masen)' menjadi 'ませんでした (masen deshita)'.",
+        "visual":"<b>[Aksi Sekarang] -ます ➡️ [Aksi Lampau] -<b style='color:#FF4500;'>ました<\/b> ✅<\/b><br><b>[Aksi Sekarang] -ません ➡️ [Aksi Lampau] -<b style='color:#FF4500;'>ませんでした<\/b> ❌<\/b><br><br>Bayangkan <b>ました<\/b> sebagai stempel 'SUDAH TERJADI' yang ditempelkan pada kata kerja.",
+        "examples":[
+            {
+                "jp":"<ruby>昨日<rt>きのう<\/rt><\/ruby>、<ruby>日本語<rt>にほんご<\/rt><\/ruby>を<ruby>勉強<rt>べんきょう<\/rt><\/ruby>しました。",
+                "romaji":"Kinou, nihongo o benkyou shimashita.",
+                "id":"Kemarin, saya (telah) belajar bahasa Jepang."
+            },
+            {
+                "jp":"けさ、なにも<ruby>食<rt>た<\/rt><\/ruby>べませんでした。",
+                "romaji":"Kesa, nani mo tabemasen deshita.",
+                "id":"Tadi pagi, saya tidak makan apa-apa."
+            },
+            {
+                "jp":"せんしゅう、<ruby>映画<rt>えいが<\/rt><\/ruby>を<ruby>見<rt>み<\/rt><\/ruby>ましたか。",
+                "romaji":"Senshuu, eiga o mimashita ka.",
+                "id":"Apakah kamu menonton film minggu lalu?"
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"KS-い (-い) → KS-かったです",
+        "explanation":"Untuk mengubah kata sifat-i ke bentuk lampau, buang akhiran 'い (i)' dan ganti dengan 'かったです (katta desu)'. Untuk bentuk lampau negatif, ubah menjadi 'くなかったです (kunakatta desu)'.",
+        "visual":"<b>[Sifat-i] (-い) + かったです ✅<\/b><br><b>[Sifat-i] (-い) + くなかったです ❌<\/b><br><br>Bayangkan <b>かった<\/b> sebagai 'kapsul waktu' yang membawa sifat itu ke masa lalu.",
+        "examples":[
+            {
+                "jp":"きのうのパーティーは<ruby>楽<rt>たの<\/rt><\/ruby>しかったです。",
+                "romaji":"Kinou no paathii wa tanoshikatta desu.",
+                "id":"Pesta kemarin menyenangkan."
+            },
+            {
+                "jp":"せんしゅうはあまり<ruby>暑<rt>あつ<\/rt><\/ruby>くなかったです。",
+                "romaji":"Senshuu wa amari atsukatta desu.",
+                "id":"Minggu lalu tidak begitu panas."
+            },
+            {
+                "jp":"テストは<ruby>難<rt>むずか<\/rt><\/ruby>しかったですか。",
+                "romaji":"Tesuto wa muzukashikatta desu ka.",
+                "id":"Apakah ujiannya sulit?"
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"KB \/ KS-な + でした",
+        "explanation":"Untuk kata benda dan kata sifat-na, mengubahnya ke bentuk lampau sangat mudah. Cukup ganti 'です (desu)' menjadi 'でした (deshita)'. Untuk bentuk lampau negatif, ganti 'じゃありません (ja arimasen)' menjadi 'じゃありませんでした (ja arimasen deshita)'.",
+        "visual":"<b>[KB\/KS-na] + です ➡️ [KB\/KS-na] + <b style='color:#FF4500;'>でした<\/b> ✅<\/b><br><b>[KB\/KS-na] + じゃありません ➡️ [KB\/KS-na] + <b style='color:#FF4500;'>じゃありませんでした<\/b> ❌<\/b><br><br>Cukup ganti 'mesin waktu'-nya dari です ke でした.",
+        "examples":[
+            {
+                "jp":"きのうは<ruby>雨<rt>あめ<\/rt><\/ruby>でした。",
+                "romaji":"Kinou wa ame deshita.",
+                "id":"Kemarin hujan."
+            },
+            {
+                "jp":"<ruby>奈良<rt>なら<\/rt><\/ruby>はきれいなまちでした。",
+                "romaji":"Nara wa kirei na machi deshita.",
+                "id":"Nara adalah kota yang cantik."
+            },
+            {
+                "jp":"きのうは<ruby>日曜日<rt>にちようび<\/rt><\/ruby>じゃありませんでした。",
+                "romaji":"Kinou wa nichiyoubi ja arimasen deshita.",
+                "id":"Kemarin bukan hari Minggu."
+            },
+            {
+                "jp":"あの<ruby>人<rt>ひと<\/rt><\/ruby>は<ruby>先生<rt>せんせい<\/rt><\/ruby>でしたか。",
+                "romaji":"Ano hito wa sensei deshita ka.",
+                "id":"Apakah orang itu (dulu) seorang guru?"
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"KB (orang) <b style='color:#FF4500;'>と<\/b> Aksi",
+        "explanation":"Partikel と (to) digunakan untuk menandai teman atau partner dalam melakukan sebuah aksi. Ini berarti 'dengan (seseorang)'. Aksi tersebut dilakukan bersama-sama.",
+        "visual":"<b>[Saya] 🤝 [Orang Lain] <b style='color:#FF4500;'>と<\/b> [Aksi Bersama]<\/b><br><br>Bayangkan <b>と<\/b> sebagai jabat tangan (🤝) yang menghubungkan Anda dengan orang lain dalam satu kegiatan.",
+        "examples":[
+            {
+                "jp":"わたしは<ruby>家族<rt>かぞく<\/rt><\/ruby><b style='color:#FF4500;'>と<\/b><ruby>日本<rt>にほん<\/rt><\/ruby>へ<ruby>来<rt>き<\/rt><\/ruby>ました。",
+                "romaji":"Watashi wa kazoku to nihon e kimashita.",
+                "id":"Saya datang ke Jepang bersama keluarga."
+            },
+            {
+                "jp":"<ruby>彼女<rt>かのじょ<\/rt><\/ruby><b style='color:#FF4500;'>と<\/b><ruby>映画<rt>えいが<\/rt><\/ruby>を<ruby>見<rt>み<\/rt><\/ruby>ました。",
+                "romaji":"Kanojo to eiga o mimashita.",
+                "id":"Saya menonton film dengan dia (perempuan)."
+            },
+            {
+                "jp":"だれ<b style='color:#FF4500;'>と<\/b><ruby>図書館<rt>としょかん<\/rt><\/ruby>へ<ruby>行<rt>い<\/rt><\/ruby>きましたか。",
+                "romaji":"Dare to toshokan e ikimashita ka.",
+                "id":"Dengan siapa kamu pergi ke perpustakaan?"
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"KB1 <b style='color:#FF4500;'>と<\/b> KB2 <b style='color:#FF4500;'>と<\/b> ...",
+        "explanation":"Selain sebagai partner, partikel と (to) juga berfungsi sebagai kata 'dan' untuk menyambungkan kata benda. Penggunaan と menyiratkan bahwa daftar yang disebutkan sudah lengkap dan tidak ada lagi yang lain.",
+        "visual":"<b>[Benda 1] 🔗 <b style='color:#FF4500;'>と<\/b> [Benda 2] 🔗 <b style='color:#FF4500;'>と<\/b> [Benda 3]<\/b><br><br>Bayangkan <b>と<\/b> sebagai rantai (🔗) yang mengikat semua benda dalam daftar menjadi satu kesatuan yang utuh.",
+        "examples":[
+            {
+                "jp":"<ruby>机<rt>つくえ<\/rt><\/ruby>の<ruby>上<rt>うえ<\/rt><\/ruby>に<ruby>本<rt>ほん<\/rt><\/ruby><b style='color:#FF4500;'>と<\/b>ペンがあります。",
+                "romaji":"Tsukue no ue ni hon to pen ga arimasu.",
+                "id":"Di atas meja ada buku dan pulpen."
+            },
+            {
+                "jp":"<ruby>休み<rt>やすみ<\/rt><\/ruby>は<ruby>土曜日<rt>どようび<\/rt><\/ruby><b style='color:#FF4500;'>と<\/b><ruby>日曜日<rt>にちようび<\/rt><\/ruby>です。",
+                "romaji":"Yasumi wa doyoubi to nichiyoubi desu.",
+                "id":"Hari libur adalah hari Sabtu dan Minggu."
+            },
+            {
+                "jp":"わたしはパン<b style='color:#FF4500;'>と<\/b>たまごを<ruby>食<rt>た<\/rt><\/ruby>べました。",
+                "romaji":"Watashi wa pan to tamago o tabemashita.",
+                "id":"Saya makan roti dan telur."
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"KB1 <b style='color:#FF4500;'>は<\/b> KB2 <b style='color:#FF4500;'>より<\/b> KS です",
+        "explanation":"Pola kalimat ini digunakan untuk membandingkan dua hal. KB1 adalah topik yang dibicarakan, KB2 adalah pembandingnya, dan KS adalah kata sifat yang menjadi dasar perbandingan. Partikel より (yori) berarti 'daripada'.",
+        "visual":"<b>[KB1] > [KB2] <b style='color:#FF4500;'>より<\/b><\/b><br><br>Bayangkan <b>より<\/b> sebagai penanda 'level di bawah'. Jadi, 'KB1 lebih [sifat] DARIPADA level KB2'.",
+        "examples":[
+            {
+                "jp":"この<ruby>車<rt>くるま<\/rt><\/ruby><b style='color:#FF4500;'>は<\/b>あの<ruby>車<rt>くるま<\/rt><\/ruby><b style='color:#FF4500;'>より<\/b><ruby>大<rt>おお<\/rt><\/ruby>きいです。",
+                "romaji":"Kono kuruma wa ano kuruma yori ookii desu.",
+                "id":"Mobil ini lebih besar daripada mobil itu."
+            },
+            {
+                "jp":"<ruby>飛行機<rt>ひこうき<\/rt><\/ruby><b style='color:#FF4500;'>は<\/b><ruby>船<rt>ふね<\/rt><\/ruby><b style='color:#FF4500;'>より<\/b><ruby>速<rt>はや<\/rt><\/ruby>いです。",
+                "romaji":"Hikouki wa fune yori hayai desu.",
+                "id":"Pesawat lebih cepat daripada kapal."
+            },
+            {
+                "jp":"<ruby>日本語<rt>にほんご<\/rt><\/ruby><b style='color:#FF4500;'>は<\/b><ruby>英語<rt>えいご<\/rt><\/ruby><b style='color:#FF4500;'>より<\/b><ruby>難<rt>むずか<\/rt><\/ruby>しいですか。",
+                "romaji":"Nihongo wa eigo yori muzukashii desu ka.",
+                "id":"Apakah bahasa Jepang lebih sulit daripada bahasa Inggris?"
+            },
+            {
+                "jp":"ことし<b style='color:#FF4500;'>は<\/b>きょねん<b style='color:#FF4500;'>より<\/b><ruby>暑<rt>あつ<\/rt><\/ruby>いです。",
+                "romaji":"Kotoshi wa kyonen yori atsui desu.",
+                "id":"Tahun ini lebih panas daripada tahun lalu."
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"KB1 <b style='color:#FF4500;'>と<\/b> KB2 <b style='color:#FF4500;'>と<\/b>、どちら<b style='color:#FF4500;'>が<\/b> KS ですか",
+        "explanation":"Pola ini digunakan untuk menanyakan perbandingan antara dua benda (KB1 dan KB2). 'どちら' (dochira) berarti 'yang mana'. Pertanyaan ini meminta untuk memilih salah satu dari dua opsi berdasarkan kata sifat (KS) yang diberikan.",
+        "visual":"<b>[Opsi A] <b style='color:#FF4500;'>と<\/b> [Opsi B] ❔ どちら<b style='color:#FF4500;'>が<\/b> [Sifat]?<\/b><br><br>Bayangkan sebuah timbangan. Di satu sisi ada A, di sisi lain B. Pertanyaannya adalah, 'sisi mana yang lebih berat\/ringan\/dll?'",
+        "examples":[
+            {
+                "jp":"サッカー<b style='color:#FF4500;'>と<\/b>やきゅう<b style='color:#FF4500;'>と<\/b>、どちら<b style='color:#FF4500;'>が<\/b>おもしろいですか。",
+                "romaji":"Sakkaa to yakyuu to, dochira ga omoshiroi desu ka.",
+                "id":"Antara sepak bola dan bisbol, mana yang lebih menarik?"
+            },
+            {
+                "jp":"このかばん<b style='color:#FF4500;'>と<\/b>そのかばん<b style='color:#FF4500;'>と<\/b>、どちら<b style='color:#FF4500;'>が<\/b><ruby>好<rt>す<\/rt><\/ruby>きですか。",
+                "romaji":"Kono kaban to sono kaban to, dochira ga suki desu ka.",
+                "id":"Antara tas ini dan tas itu, mana yang lebih kamu suka?"
+            },
+            {
+                "jp":"バス<b style='color:#FF4500;'>と<\/b><ruby>電車<rt>でんしゃ<\/rt><\/ruby><b style='color:#FF4500;'>と<\/b>、どちら<b style='color:#FF4500;'>が<\/b><ruby>速<rt>はや<\/rt><\/ruby>いですか。",
+                "romaji":"Basu to densha to, dochira ga hayai desu ka.",
+                "id":"Antara bus dan kereta, mana yang lebih cepat?"
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"KB1 <b style='color:#FF4500;'>のほう が<\/b> (KB2 <b style='color:#FF4500;'>より<\/b>) KS です",
+        "explanation":"Ini adalah jawaban untuk pertanyaan perbandingan di atas. 'のほうが' (no hou ga) digunakan untuk menekankan pilihan Anda (KB1). Bagian '(KB2 より)' bersifat opsional, tetapi jika disertakan akan memperjelas perbandingannya.",
+        "visual":"<b>[Pilihan A] ✅<b style='color:#FF4500;'>のほう が<\/b> ( > [Pilihan B] <b style='color:#FF4500;'>より<\/b>) [Sifat].<\/b><br><br>Bayangkan Anda menunjuk satu pilihan dan berkata, 'YANG INI, lho, yang lebih...'",
+        "examples":[
+            {
+                "jp":"サッカー<b style='color:#FF4500;'>のほう が<\/b>おもしろいです。",
+                "romaji":"Sakkaa no hou ga omoshiroi desu.",
+                "id":"Sepak bola lebih menarik."
+            },
+            {
+                "jp":"<ruby>電車<rt>でんしゃ<\/rt><\/ruby><b style='color:#FF4500;'>のほう が<\/b>バス<b style='color:#FF4500;'>より<\/b><ruby>速<rt>はや<\/rt><\/ruby>いです。",
+                "romaji":"Densha no hou ga basu yori hayai desu.",
+                "id":"Kereta lebih cepat daripada bus."
+            },
+            {
+                "jp":"わたしは<ruby>犬<rt>いぬ<\/rt><\/ruby><b style='color:#FF4500;'>のほう が<\/b><ruby>好<rt>す<\/rt><\/ruby>きです。",
+                "romaji":"Watashi wa inu no hou ga suki desu.",
+                "id":"Saya lebih suka anjing."
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"KB (kategori) <b style='color:#FF4500;'>の<\/b><b style='color:#FF4500;'>中<\/b><b style='color:#FF4500;'>で<\/b>、[KB\/KS Tanya] <b style='color:#FF4500;'>が<\/b> いちばん KS ですか",
+        "explanation":"Pola ini digunakan untuk menanyakan 'yang paling' (superlatif) dalam suatu kategori atau kelompok. 'の中で' (no naka de) berarti 'di antara'. 'いちばん' (ichiban) berarti 'paling' atau 'nomor satu'.",
+        "visual":"<b>🏆 [Kategori] <b style='color:#FF4500;'>の中<\/b><b style='color:#FF4500;'>で<\/b> ... [Pemenang] <b style='color:#FF4500;'>が<\/b> いちばん [Sifat]?<\/b><br><br>Bayangkan sebuah podium juara. Pertanyaan ini menanyakan siapa atau apa yang ada di podium nomor satu (いちばん).",
+        "examples":[
+            {
+                "jp":"スポーツ<b style='color:#FF4500;'>の<\/b><b style='color:#FF4500;'>中<\/b><b style='color:#FF4500;'>で<\/b>、なに<b style='color:#FF4500;'>が<\/b>いちばんおもしろいですか。",
+                "romaji":"Supootsu no naka de, nani ga ichiban omoshiroi desu ka.",
+                "id":"Di antara olahraga, apa yang paling menarik?"
+            },
+            {
+                "jp":"<ruby>家族<rt>かぞく<\/rt><\/ruby><b style='color:#FF4500;'>の<\/b><b style='color:#FF4500;'>中<\/b><b style='color:#FF4500;'>で<\/b>、だれ<b style='color:#FF4500;'>が<\/b>いちばん<ruby>背<rt>せ<\/rt><\/ruby>が<ruby>高<rt>たか<\/rt><\/ruby>いですか。",
+                "romaji":"Kazoku no naka de, dare ga ichiban se ga takai desu ka.",
+                "id":"Di antara keluarga, siapa yang paling tinggi?"
+            },
+            {
+                "jp":"<ruby>日本<rt>にほん<\/rt><\/ruby>りょうり<b style='color:#FF4500;'>の<\/b><b style='color:#FF4500;'>中<\/b><b style='color:#FF4500;'>で<\/b>、なに<b style='color:#FF4500;'>が<\/b>いちばん<ruby>好<rt>す<\/rt><\/ruby>きですか。・・・てんぷら<b style='color:#FF4500;'>が<\/b>いちばん<ruby>好<rt>す<\/rt><\/ruby>きです。",
+                "romaji":"Nihon ryouri no naka de, nani ga ichiban suki desu ka. ...Tenpura ga ichiban suki desu.",
+                "id":"Di antara masakan Jepang, apa yang paling kamu suka? ...Saya paling suka tempura."
+            },
+            {
+                "jp":"せかい<b style='color:#FF4500;'>で<\/b>どこ<b style='color:'##FF4500;'>が<\/b>いちばんきれいですか。(Untuk skala besar seperti 'dunia', 'di antara' bisa disingkat menjadi で saja)",
+                "romaji":"Sekai de doko ga ichiban kirei desu ka.",
+                "id":"Di dunia, di mana yang paling indah?"
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"KB <b style='color:#FF4500;'>と<\/b> いいます",
+        "explanation":"Partikel <b style='color:#FF4500;'>と<\/b> diikuti いいます digunakan untuk menyatakan 'disebut' atau 'berkata'.",
+        "visual":"<b>[Kata] <b style='color:#FF4500;'>と<\/b> いいます<\/b><br><br>Bayangkan <b>と<\/b> sebagai tanda kutip yang mengapit kata yang diucapkan.",
+        "examples":[
+            {
+                "jp":"<ruby>山田<rt>やまだ<\/rt><\/ruby><b style='color:#FF4500;'>と<\/b><ruby>言<rt>い<\/rt><\/ruby>います。",
+                "romaji":"Yamada to iimasu.",
+                "id":"Saya bernama Yamada."
+            },
+            {
+                "jp":"<ruby>これは<rt>これは<\/rt><\/ruby><b style='color:#FF4500;'>と<\/b><ruby>言<rt>い<\/rt><\/ruby>います。",
+                "romaji":"Kore wa ... to iimasu.",
+                "id":"Ini disebut ...."
+            },
+            {
+                "jp":"<ruby>先生<rt>せんせい<\/rt><\/ruby>は「がんばって」<b style='color:#FF4500;'>と<\/b><ruby>言<rt>い<\/rt><\/ruby>いました。",
+                "romaji":"Sensei wa 'ganbatte' to iimashita.",
+                "id":"Guru berkata 'semangat'."
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"KB <b style='color:#FF4500;'>を<\/b> <ruby>読む<rt>よむ<\/rt><\/ruby>\/<ruby>書く<rt>かく<\/rt><\/ruby>\/<ruby>聞く<rt>きく<\/rt><\/ruby>",
+        "explanation":"Partikel <b style='color:#FF4500;'>を<\/b> digunakan untuk menandai objek langsung dari kata kerja seperti membaca, menulis, atau mendengar.",
+        "visual":"<b>[Objek] <b style='color:#FF4500;'>を<\/b> [Aksi]<\/b><br><br>Bayangkan <b>を<\/b> sebagai panah yang menunjuk ke objek yang dikenai aksi.",
+        "examples":[
+            {
+                "jp":"<ruby>本<rt>ほん<\/rt><\/ruby><b style='color:#FF4500;'>を<\/b><ruby>読<rt>よ<\/rt><\/ruby>みます。",
+                "romaji":"Hon o yomimasu.",
+                "id":"Saya membaca buku."
+            },
+            {
+                "jp":"<ruby>手紙<rt>てがみ<\/rt><\/ruby><b style='color:#FF4500;'>を<\/b><ruby>書<rt>か<\/rt><\/ruby>きます。",
+                "romaji":"Tegami o kakimasu.",
+                "id":"Saya menulis surat."
+            },
+            {
+                "jp":"<ruby>音楽<rt>おんがく<\/rt><\/ruby><b style='color:#FF4500;'>を<\/b><ruby>聞<rt>き<\/rt><\/ruby>きます。",
+                "romaji":"Ongaku o kikimasu.",
+                "id":"Saya mendengarkan musik."
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"<ruby>日本語<rt>にほんご<\/rt><\/ruby>で <b style='color:#FF4500;'>話<rt>はな<\/rt><\/ruby>します",
+        "explanation":"Partikel で digunakan untuk menandai bahasa atau alat yang digunakan untuk melakukan aksi. Dalam pola ini, berarti 'berbicara dalam bahasa Jepang'.",
+        "visual":"<b>[Bahasa\/Alat] で [Aksi]<\/b><br><br>Bayangkan で sebagai mikrofon yang digunakan untuk berbicara.",
+        "examples":[
+            {
+                "jp":"<ruby>日本語<rt>にほんご<\/rt><\/ruby>で<ruby>話<rt>はな<\/rt><\/ruby>します。",
+                "romaji":"Nihongo de hanashimasu.",
+                "id":"Saya berbicara dalam bahasa Jepang."
+            },
+            {
+                "jp":"<ruby>英語<rt>えいご<\/rt><\/ruby>で<ruby>話<rt>はな<\/rt><\/ruby>します。",
+                "romaji":"Eigo de hanashimasu.",
+                "id":"Saya berbicara dalam bahasa Inggris."
+            },
+            {
+                "jp":"<ruby>電話<rt>でんわ<\/rt><\/ruby>で<ruby>話<rt>はな<\/rt><\/ruby>します。",
+                "romaji":"Denwa de hanashimasu.",
+                "id":"Saya berbicara lewat telepon."
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"KB (tempat) <b style='color:#FF4500;'>へ<\/b> KK (bentuk ます-stem) \/ KB <b style='color:#FF4500;'>に<\/b> 行く\/来る\/帰る",
+        "explanation":"Pola ini digunakan untuk menyatakan tujuan dari suatu pergerakan. Anda pergi ke suatu tempat (へ) untuk melakukan sesuatu (に). Tujuannya bisa berupa kata kerja (dihilangkan ます-nya) atau kata benda yang merupakan suatu kegiatan.",
+        "visual":"<b>[Tempat] ➡️<b style='color:#FF4500;'>へ<\/b> [Tujuan Aksi] 🎯<b style='color:#FF4500;'>に<\/b> [Pergi\/Datang\/Pulang]<\/b><br><br>Bayangkan Anda melempar panah 🎯 (に) ke sebuah target 'Tujuan Aksi', lalu Anda bergerak (へ) menuju target tersebut.",
+        "examples":[
+            {
+                "jp":"デパート<b style='color:#FF4500;'>へ<\/b>くつを<ruby>買<rt>か<\/rt><\/ruby>い<b style='color:#FF4500;'>に<\/b><ruby>行<rt>い<\/rt><\/ruby>きます。",
+                "romaji":"Depaato e kutsu o kai ni ikimasu.",
+                "id":"Saya pergi ke department store untuk membeli sepatu."
+            },
+            {
+                "jp":"<ruby>図書館<rt>としょかん<\/rt><\/ruby><b style='color:#FF4500;'>へ<\/b><ruby>本<rt>ほん<\/rt><\/ruby>を<ruby>返<rt>かえ<\/rt><\/ruby>し<b style='color:#FF4500;'>に<\/b><ruby>行<rt>い<\/rt><\/ruby>きました。",
+                "romaji":"Toshokan e hon o kaeshi ni ikimashita.",
+                "id":"Saya (telah) pergi ke perpustakaan untuk mengembalikan buku."
+            },
+            {
+                "jp":"あした、<ruby>京都<rt>きょうと<\/rt><\/ruby><b style='color:#FF4500;'>へ<\/b>お<ruby>祭<rt>まつ<\/rt><\/ruby>り<b style='color:#FF4500;'>に<\/b><ruby>行<rt>い<\/rt><\/ruby>きます。",
+                "romaji":"Ashita, Kyouto e o-matsuri ni ikimasu.",
+                "id":"Besok saya akan pergi ke Kyoto untuk (melihat) festival."
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"[Pemberi] <b style='color:#FF4500;'>は<\/b> [Penerima] <b style='color:#FF4500;'>に<\/b> [Benda] を あげます",
+        "explanation":"Pola ini digunakan untuk menyatakan aksi 'memberi'. Pembicara (atau subjek) adalah 'pemberi'. Orang yang menerima ditandai dengan partikel に. Kata kerja 'agemasu' digunakan saat memberi kepada orang lain yang setara atau di bawah kita.",
+        "visual":"<b>[Pemberi] ➡️ [Benda] ➡️ [Penerima] <b style='color:#FF4500;'>に<\/b><\/b><br><br>Bayangkan panah (➡️) mengalir dari Pemberi, melalui Benda, dan berhenti di Penerima yang ditandai oleh pin lokasi <b style='color:#FF4500;'>に<\/b>.",
+        "examples":[
+            {
+                "jp":"わたし<b style='color:#FF4500;'>は<\/b>キムさん<b style='color:#FF4500;'>に<\/b><ruby>花<rt>はな<\/rt><\/ruby>をあげました。",
+                "romaji":"Watashi wa Kimu-san ni hana o agemashita.",
+                "id":"Saya memberikan bunga kepada Sdr. Kim."
+            },
+            {
+                "jp":"<ruby>父<rt>ちち<\/rt><\/ruby><b style='color:#FF4500;'>は<\/b><ruby>母<rt>はは<\/rt><\/ruby><b style='color:#FF4500;'>に<\/b>プレゼントをあげます。",
+                "romaji":"Chichi wa haha ni purezento o agemasu.",
+                "id":"Ayah (saya) memberikan hadiah kepada ibu (saya)."
+            },
+            {
+                "jp":"あなたはこの<ruby>犬<rt>いぬ<\/rt><\/ruby><b style='color:#FF4500;'>に<\/b>えさをあげますか。",
+                "romaji":"Anata wa kono inu ni esa o agemasu ka.",
+                "id":"Apakah kamu akan memberi makan (kepada) anjing ini?"
+            }
+        ],
+        "level":"N5"
+    },
+    {
+        "pattern":"[Penerima] <b style='color:#FF4500;'>は<\/b> [Pemberi] <b style='color:#FF4500;'>に \/ から<\/b> [Benda] を もらいます",
+        "explanation":"Pola ini digunakan untuk menyatakan aksi 'menerima'. Pembicara (atau subjek) adalah 'penerima'. Pemberi ditandai dengan partikel に (jika perorangan) atau から (jika dari sebuah institusi\/perusahaan).",
+        "visual":"<b>[Penerima] ⬅️ [Benda] ⬅️ [Pemberi] <b style='color:#FF4500;'>に \/ から<\/b><\/b><br><br>Bayangkan panah (⬅️) bergerak dari Pemberi menuju Penerima. Pemberi adalah 'sumber' yang ditandai <b style='color:#FF4500;'>に<\/b> atau <b style='color:#FF4500;'>から<\/b>.",
+        "examples":[
+            {
+                "jp":"わたし<b style='color:#FF4500;'>は<\/b>やまださん<b style='color:#FF4500;'>に<\/b>チョコレートをもらいました。",
+                "romaji":"Watashi wa Yamada-san ni chokoreeto o moraimashita.",
+                "id":"Saya menerima cokelat dari Sdr. Yamada."
+            },
+            {
+                "jp":"だれ<b style='color:#FF4500;'>に<\/b>そのネクタイをもらいましたか。",
+                "romaji":"Dare ni sono nekutai o moraimashita ka.",
+                "id":"Dari siapa kamu menerima dasi itu?"
+            },
+            {
+                "jp":"わたし<b style='color:#FF4500;'>は<\/b><ruby>会社<rt>かいしゃ<\/rt><\/ruby><b style='color:#FF4500;'>から<\/b>お<ruby>金<rt>かね<\/rt><\/ruby>をもらいました。",
+                "romaji":"Watashi wa kaisha kara okane o moraimashita.",
+                "id":"Saya menerima uang dari perusahaan."
+            }
+        ],
+        "level":"N5"
+    }
+]

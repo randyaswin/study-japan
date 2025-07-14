@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 
 // Komponen untuk me-render furigana dengan benar
@@ -97,14 +97,50 @@ interface DailySprintClientProps {
     sprintData: SprintData;
     day: string;
     availableDays: number[];
+    settings?: {
+        kanjiPerPage: number;
+        vocabularyPerPage: number;
+        grammarPerPage: number;
+    };
 }
 
-export default function DailySprintClient({ sprintData, day, availableDays }: DailySprintClientProps) {
+export default function DailySprintClient({ sprintData, day, availableDays, settings }: DailySprintClientProps) {
     // State untuk flip cards
     const [isKanjiFlipMode, setIsKanjiFlipMode] = useState(false);
     const [isVocabFlipMode, setIsVocabFlipMode] = useState(false);
     const [flippedKanjiCards, setFlippedKanjiCards] = useState<Set<number>>(new Set());
     const [flippedVocabCards, setFlippedVocabCards] = useState<Set<number>>(new Set());
+
+    // Load settings from localStorage if not provided as prop
+    const [currentSettings, setCurrentSettings] = useState(settings || {
+        kanjiPerPage: 5,
+        vocabularyPerPage: 20,
+        grammarPerPage: 3
+    });
+
+    // Effect to sync with localStorage settings
+    useEffect(() => {
+        if (typeof window !== 'undefined' && !settings) {
+            const savedSettings = localStorage.getItem('n5-settings');
+            if (savedSettings) {
+                try {
+                    const parsed = JSON.parse(savedSettings);
+                    setCurrentSettings(parsed);
+                } catch (error) {
+                    console.error('Error parsing saved settings:', error);
+                }
+            }
+        }
+    }, [settings]);
+
+    // Function to create page URL with settings
+    const createPageUrl = (pageNumber: number) => {
+        const params = new URLSearchParams();
+        params.set('kanjiPerPage', currentSettings.kanjiPerPage.toString());
+        params.set('vocabularyPerPage', currentSettings.vocabularyPerPage.toString());
+        params.set('grammarPerPage', currentSettings.grammarPerPage.toString());
+        return `/n5/${pageNumber}?${params.toString()}`;
+    };
 
     return (
         <div className="bg-gray-50 dark:bg-gray-900 min-h-screen">
@@ -157,14 +193,14 @@ export default function DailySprintClient({ sprintData, day, availableDays }: Da
                             ) : (
                                 <a
                                     key={n}
-                                    href={`/n5/${n}`}
+                                    href={createPageUrl(n)}
                                     className={`px-4 py-2 rounded font-bold border ${
                                         Number(day) === n
                                             ? 'bg-orange-500 text-white border-orange-500'
                                             : 'bg-white dark:bg-gray-800 text-orange-500 dark:text-orange-400 border-orange-300 dark:border-orange-600 hover:bg-orange-100 dark:hover:bg-gray-700'
                                     }`}
                                 >
-                                    Hari {n}
+                                    Halaman {n}
                                 </a>
                             )
                         );
@@ -172,8 +208,8 @@ export default function DailySprintClient({ sprintData, day, availableDays }: Da
                 </nav>
 
                 <header className="text-center mb-10">
-                    <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 dark:text-gray-100">Belajar Harian</h1>
-                    <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 mt-2">Hari {sprintData.day} - Membangun Fondasi JLPT {sprintData.type}</p>
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 dark:text-gray-100">Belajar JLPT N5</h1>
+                    <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 mt-2">Halaman {sprintData.day} - Membangun Fondasi JLPT {sprintData.type}</p>
                 </header>
 
                 {/* Kanji */}
