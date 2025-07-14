@@ -1,6 +1,11 @@
-import React from 'react';
+"use client";
+
+import React, { useState } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
+
+// CardData type for flipcard props
+type CardData = { char: string; romaji: string; mnemonic: string };
 
 // Data Katakana + mnemonic (urut baris a, ka, sa, dst)
 const katakanaTable = [
@@ -221,17 +226,26 @@ const colBgColors = [
 ];
 
 export default function KatakanaPage() {
-  // Hitung jumlah kolom (5) dan tentukan width dinamis agar tabel selalu full width
-  // Gunakan 100% / 5 = 20% per kolom
+  const [mode, setMode] = useState<'table' | 'flipcard'>('table');
   const colWidth = "w-[20%] min-w-[120px]";
+
+  // Flatten table for flipcard mode, filter out nulls and type
+  const flatKatakana: CardData[] = katakanaTable.flat().filter((cell): cell is CardData => !!cell);
+  const flatCombo: CardData[] = katakanaComboTable.flat().filter((cell): cell is CardData => !!cell);
 
   return (
     <div className="bg-gray-50 dark:bg-gray-900 min-h-screen">
       <div className="container mx-auto p-4 sm:p-8 font-sans">
-        <div className="mb-4 flex justify-start">
+        <div className="mb-4 flex flex-col sm:flex-row gap-2 justify-between items-start sm:items-center">
           <Link href="/" className="inline-flex items-center gap-2 px-4 py-2 rounded bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200 font-semibold hover:bg-gray-300 dark:hover:bg-gray-600 transition">
             <span>←</span> Back to Home
           </Link>
+          <button
+            onClick={() => setMode(mode === 'table' ? 'flipcard' : 'table')}
+            className="inline-flex items-center gap-2 px-4 py-2 rounded bg-blue-200 dark:bg-blue-800 text-blue-800 dark:text-blue-100 font-semibold hover:bg-blue-300 dark:hover:bg-blue-700 transition"
+          >
+            {mode === 'table' ? 'Switch to Flipcard Mode' : 'Switch to Table Mode'}
+          </button>
         </div>
         <Head>
           <title>Katakana - Jembatan Keledai & Mnemonic</title>
@@ -241,89 +255,114 @@ export default function KatakanaPage() {
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 dark:text-gray-100">Katakana</h1>
           <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 mt-2">Jembatan Keledai & Mnemonic Visual</p>
         </header>
-        {/* Tabel Katakana */}
-        <section className="mb-12 overflow-x-auto">
-          <div className="inline-block w-full">
-            <table className="border-separate border-spacing-2 text-center w-full table-fixed">
-              <colgroup>
-                <col className="w-1/5" />
-                <col className="w-1/5" />
-                <col className="w-1/5" />
-                <col className="w-1/5" />
-                <col className="w-1/5" />
-              </colgroup>
-              <thead>
-                <tr>
-                  {['A', 'I', 'U', 'E', 'O'].map((col, idx) => (
-                    <th key={col} className={`px-2 py-2 ${colBgColors[idx % colBgColors.length]} text-lg rounded-lg ${colWidth}`}>{col}</th>
-                  ))}
-                </tr>
-              </thead>
-              <tbody>
-                {katakanaTable.map((row, ridx) => (
-                  <tr key={ridx}>
-                    {row.map((cell, cidx) => (
-                      <td
-                        key={cidx}
-                        className={`align-top border border-blue-100 dark:border-blue-900 px-2 py-2 ${colBgColors[cidx % colBgColors.length]} rounded-xl ${colWidth}`}
-                      >
-                        {cell ? (
-                          <div className="flex flex-col items-center">
-                            <span className={`text-3xl font-bold jp-font`}>{cell.char}</span>
-                            <span className="text-base font-semibold text-gray-800 dark:text-gray-100 uppercase">{cell.romaji}</span>
-                            <span className="text-xs text-gray-600 dark:text-gray-300 text-center">{cell.mnemonic}</span>
-                          </div>
-                        ) : null}
-                      </td>
+        {mode === 'table' ? (
+          <>
+            {/* Tabel Katakana */}
+            <section className="mb-12 overflow-x-auto">
+              <div className="inline-block w-full">
+                <table className="border-separate border-spacing-2 text-center w-full table-fixed">
+                  <colgroup>
+                    <col className="w-1/5" />
+                    <col className="w-1/5" />
+                    <col className="w-1/5" />
+                    <col className="w-1/5" />
+                    <col className="w-1/5" />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      {['A', 'I', 'U', 'E', 'O'].map((col, idx) => (
+                        <th key={col} className={`px-2 py-2 ${colBgColors[idx % colBgColors.length]} text-lg rounded-lg ${colWidth}`}>{col}</th>
+                      ))}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {katakanaTable.map((row, ridx) => (
+                      <tr key={ridx}>
+                        {row.map((cell, cidx) => (
+                          <td
+                            key={cidx}
+                            className={`align-top border border-blue-100 dark:border-blue-900 px-2 py-2 ${colBgColors[cidx % colBgColors.length]} rounded-xl ${colWidth}`}
+                          >
+                            {cell ? (
+                              <div className="flex flex-col items-center">
+                                <span className={`text-3xl font-bold jp-font`}>{cell.char}</span>
+                                <span className="text-base font-semibold text-gray-800 dark:text-gray-100 uppercase">{cell.romaji}</span>
+                                <span className="text-xs text-gray-600 dark:text-gray-300 text-center">{cell.mnemonic}</span>
+                              </div>
+                            ) : null}
+                          </td>
+                        ))}
+                      </tr>
                     ))}
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </section>
-        {/* Katakana Gabungan */}
-        <section className="mb-12 overflow-x-auto">
-          <h2 className="text-xl sm:text-2xl font-bold mb-4 border-l-8 border-blue-400 pl-4 text-blue-700 dark:text-blue-300">Katakana Gabungan</h2>
-          <div className="inline-block w-full">
-            <table className="border-separate border-spacing-2 text-center w-full table-fixed">
-              <colgroup>
-                <col className="w-1/5" />
-                <col className="w-1/5" />
-                <col className="w-1/5" />
-                <col className="w-1/5" />
-                <col className="w-1/5" />
-              </colgroup>
-              <thead>
-                <tr>
-                  {['A', 'I', 'U', 'E', 'O'].map((col, idx) => (
-                    <th key={col} className={`px-2 py-2 ${colBgColors[idx % colBgColors.length]} text-lg rounded-lg ${colWidth}`}>{col}</th>
-                  ))}
-                </tr>
-              </thead>
-              <tbody>
-                {katakanaComboTable.map((row, ridx) => (
-                  <tr key={ridx}>
-                    {row.map((cell, cidx) => (
-                      <td
-                        key={cidx}
-                        className={`align-top border border-blue-100 dark:border-blue-900 px-2 py-2 ${colBgColors[cidx % colBgColors.length]} rounded-xl ${colWidth}`}
-                      >
-                        {cell ? (
-                          <div className="flex flex-col items-center">
-                            <span className="text-2xl font-bold jp-font">{cell.char}</span>
-                            <span className="text-base font-semibold text-gray-800 dark:text-gray-100 uppercase">{cell.romaji}</span>
-                            <span className="text-xs text-gray-600 dark:text-gray-300 text-center">{cell.mnemonic}</span>
-                          </div>
-                        ) : null}
-                      </td>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+            {/* Katakana Gabungan */}
+            <section className="mb-12 overflow-x-auto">
+              <h2 className="text-xl sm:text-2xl font-bold mb-4 border-l-8 border-blue-400 pl-4 text-blue-700 dark:text-blue-300">Katakana Gabungan</h2>
+              <div className="inline-block w-full">
+                <table className="border-separate border-spacing-2 text-center w-full table-fixed">
+                  <colgroup>
+                    <col className="w-1/5" />
+                    <col className="w-1/5" />
+                    <col className="w-1/5" />
+                    <col className="w-1/5" />
+                    <col className="w-1/5" />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      {['A', 'I', 'U', 'E', 'O'].map((col, idx) => (
+                        <th key={col} className={`px-2 py-2 ${colBgColors[idx % colBgColors.length]} text-lg rounded-lg ${colWidth}`}>{col}</th>
+                      ))}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {katakanaComboTable.map((row, ridx) => (
+                      <tr key={ridx}>
+                        {row.map((cell, cidx) => (
+                          <td
+                            key={cidx}
+                            className={`align-top border border-blue-100 dark:border-blue-900 px-2 py-2 ${colBgColors[cidx % colBgColors.length]} rounded-xl ${colWidth}`}
+                          >
+                            {cell ? (
+                              <div className="flex flex-col items-center">
+                                <span className="text-2xl font-bold jp-font">{cell.char}</span>
+                                <span className="text-base font-semibold text-gray-800 dark:text-gray-100 uppercase">{cell.romaji}</span>
+                                <span className="text-xs text-gray-600 dark:text-gray-300 text-center">{cell.mnemonic}</span>
+                              </div>
+                            ) : null}
+                          </td>
+                        ))}
+                      </tr>
                     ))}
-                  </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          </>
+        ) : (
+          <>
+            {/* Flipcard Katakana */}
+            <section className="mb-12">
+              <h2 className="text-xl sm:text-2xl font-bold mb-4 border-l-8 border-blue-400 pl-4 text-blue-700 dark:text-blue-300">Katakana Flipcards</h2>
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
+                {flatKatakana.map((cell, idx) => (
+                  <FlipCard key={idx} char={cell.char} romaji={cell.romaji} mnemonic={cell.mnemonic} />
                 ))}
-              </tbody>
-            </table>
-          </div>
-        </section>
+              </div>
+            </section>
+            {/* Flipcard Gabungan */}
+            <section className="mb-12">
+              <h2 className="text-xl sm:text-2xl font-bold mb-4 border-l-8 border-blue-400 pl-4 text-blue-700 dark:text-blue-300">Katakana Gabungan Flipcards</h2>
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
+                {flatCombo.map((cell, idx) => (
+                  <FlipCard key={idx} char={cell.char} romaji={cell.romaji} mnemonic={cell.mnemonic} />
+                ))}
+              </div>
+            </section>
+          </>
+        )}
       </div>
       <a
         href="#"
@@ -335,3 +374,37 @@ export default function KatakanaPage() {
     </div>
   );
 }
+
+// FlipCard component
+function FlipCard({ char, romaji, mnemonic }: CardData) {
+  const [flipped, setFlipped] = useState(false);
+  return (
+    <div
+      className="relative w-full h-36 cursor-pointer perspective"
+      onClick={() => setFlipped(f => !f)}
+      tabIndex={0}
+      onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') setFlipped(f => !f); }}
+      aria-label={`Flip card for ${char}`}
+    >
+      <div className={`absolute inset-0 transition-transform duration-500 transform ${flipped ? 'rotate-y-180' : ''}`}
+        style={{ transformStyle: 'preserve-3d' }}
+      >
+        {/* Front */}
+        <div className="absolute inset-0 flex flex-col items-center justify-center bg-blue-100 dark:bg-blue-900 rounded-xl shadow-lg backface-hidden">
+          <span className="text-4xl font-bold jp-font">{char}</span>
+        </div>
+        {/* Back */}
+        <div className="absolute inset-0 flex flex-col items-center justify-center bg-white dark:bg-gray-800 rounded-xl shadow-lg backface-hidden rotate-y-180 p-2">
+          <span className="text-base font-semibold text-blue-700 dark:text-blue-300 uppercase">{romaji}</span>
+          <span className="text-xs text-gray-600 dark:text-gray-300 text-center mt-2">{mnemonic}</span>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// Add flipcard CSS
+// In your global CSS (e.g., globals.css), add:
+// .perspective { perspective: 800px; }
+// .backface-hidden { backface-visibility: hidden; }
+// .rotate-y-180 { transform: rotateY(180deg); }

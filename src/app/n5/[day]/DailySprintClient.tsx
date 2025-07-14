@@ -2,7 +2,6 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import HandwritingNoteSection from '../../../components/HandwritingNoteSection';
 
 // Komponen untuk me-render furigana dengan benar
 // Membuat furigana (rt) di atas kanji (rb) berwarna merah dan bisa diperbesar
@@ -106,10 +105,6 @@ export default function DailySprintClient({ sprintData, day, availableDays }: Da
     const [isVocabFlipMode, setIsVocabFlipMode] = useState(false);
     const [flippedKanjiCards, setFlippedKanjiCards] = useState<Set<number>>(new Set());
     const [flippedVocabCards, setFlippedVocabCards] = useState<Set<number>>(new Set());
-
-    const kanjiNote = sprintData?.kanjiNote;
-    const vocabNote = sprintData?.vocabNote;
-    const grammarNote = sprintData?.grammarNote;
 
     return (
         <div className="bg-gray-50 dark:bg-gray-900 min-h-screen">
@@ -302,9 +297,6 @@ export default function DailySprintClient({ sprintData, day, availableDays }: Da
                                 </div>
                             ))}
                         </div>
-                        {Array.isArray(sprintData.kanji) && sprintData.kanji.length > 0 && (
-                            <HandwritingNoteSection noteData={kanjiNote} label="Catatan Kanji" section="kanji" pageId={day} />
-                        )}
                     </section>
                 )}
 
@@ -375,15 +367,20 @@ export default function DailySprintClient({ sprintData, day, availableDays }: Da
                                             <>
                                                 <span className={`absolute right-4 top-4 px-3 py-1 rounded-full text-xs font-semibold ${typeLabelColor} dark:bg-gray-700 dark:text-gray-300`}>{typeLabel}</span>
                                                 <div className="mb-2">
-                                                    <div className="text-lg jp-font text-gray-500 dark:text-gray-400 font-normal leading-tight">
-                                                        <Furigana htmlString={item.vocab} className="text-base" rtClass="furigana-bold" boldMain={true} />
+                                                    <div className={`jp-font text-gray-500 dark:text-gray-400 font-normal leading-tight ${isVocabFlipMode ? 'text-3xl sm:text-4xl md:text-5xl text-gray-800 dark:text-gray-100 font-bold text-center w-full' : 'text-base'}`}> 
+                                                        <Furigana 
+                                                            htmlString={item.vocab} 
+                                                            className={isVocabFlipMode ? 'text-3xl sm:text-4xl md:text-5xl' : 'text-base'} 
+                                                            rtClass="furigana-bold" 
+                                                            boldMain={true} 
+                                                        />
                                                     </div>
                                                     {isVocabFlipMode && (
                                                         <div className="text-xs text-gray-500 dark:text-gray-400 mt-2">Klik untuk lihat jawaban</div>
                                                     )}
                                                     {!isVocabFlipMode && (
                                                         <>
-                                                            <div className="text-sm text-gray-700 dark:text-gray-300 mb-1"><Furigana htmlString={item.reading_meaning} /></div>
+                                                            <div className="text-sm text-gray-700 dark:text-gray-300 mb-1 mt-2"><Furigana htmlString={item.reading_meaning} /></div>
                                                             <div className="text-base font-semibold text-gray-800 dark:text-gray-200 mb-2">Arti: {item.reading_meaning.replace(/\(.+\)/, '').trim()}</div>
                                                         </>
                                                     )}
@@ -411,9 +408,9 @@ export default function DailySprintClient({ sprintData, day, availableDays }: Da
                                             // Back side - Answer (keep original layout)
                                             <>
                                                 <span className={`absolute right-4 top-4 px-3 py-1 rounded-full text-xs font-semibold ${typeLabelColor} dark:bg-gray-700 dark:text-gray-300`}>{typeLabel}</span>
-                                                <div className="mb-2">
-                                                    <div className="text-lg jp-font text-gray-500 dark:text-gray-400 font-normal leading-tight">
-                                                        <Furigana htmlString={item.vocab} className="text-base" rtClass="furigana-bold" boldMain={true} />
+                                                <div className="flex-1 flex flex-col justify-center items-center mb-2 min-h-[120px]">
+                                                    <div className="text-3xl sm:text-4xl md:text-5xl jp-font text-gray-800 dark:text-gray-100 font-bold text-center w-full">
+                                                        <Furigana htmlString={item.vocab} className="text-3xl sm:text-4xl md:text-5xl" rtClass="furigana-bold" boldMain={true} />
                                                     </div>
                                                     <div className="text-xs text-gray-500 dark:text-gray-400 mt-2">Klik lagi untuk kembali</div>
                                                     <div className="text-sm text-gray-700 dark:text-gray-300 mb-1 mt-2"><Furigana htmlString={item.reading_meaning} /></div>
@@ -439,9 +436,6 @@ export default function DailySprintClient({ sprintData, day, availableDays }: Da
                                 );
                             })}
                         </div>
-                        {Array.isArray(sprintData.vocabulary) && sprintData.vocabulary.length > 0 && (
-                            <HandwritingNoteSection noteData={vocabNote} label="Catatan Kosakata" section="vocab" pageId={day} />
-                        )}
                     </section>
                 )}
 
@@ -506,9 +500,6 @@ export default function DailySprintClient({ sprintData, day, availableDays }: Da
                                 </div>
                             ))}
                         </div>
-                        {Array.isArray(sprintData.grammar) && sprintData.grammar.length > 0 && (
-                            <HandwritingNoteSection noteData={grammarNote} label="Catatan Tata Bahasa" section="grammar" pageId={day} />
-                        )}
                     </section>
                 )}
                 {/* Back to Top navigation (moved to floating button below) */}
