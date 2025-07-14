@@ -698,7 +698,7 @@
     {
         "vocab":"<ruby>便利<rt>べんり<\/rt><\/ruby>",
         "reading_meaning":"benri (praktis, nyaman)",
-        "type":"🟣",
+        "type":"🟠",
         "mnemonic":"Bayangkan 'BEN-ar-benar RI-ngan, PRAKTIS sekali alat ini'.",
         "example":{
             "jp":"このアプリはとても<ruby>便利<rt>べんり<\/rt><\/ruby>です。",
@@ -710,7 +710,7 @@
     {
         "vocab":"<ruby>不便<rt>ふべん<\/rt><\/ruby>",
         "reading_meaning":"fuben (tidak praktis, tidak nyaman)",
-        "type":"🟣",
+        "type":"🟠",
         "mnemonic":"Kebalikan dari benri. Awalan 不 (fu) berarti 'tidak'. Jadi 'fuben' adalah 'tidak praktis'.",
         "example":{
             "jp":"わたしの<ruby>村<rt>むら<\/rt><\/ruby>は<ruby>交通<rt>こうつう<\/rt><\/ruby>が<ruby>不便<rt>ふべん<\/rt><\/ruby>です。",
@@ -794,7 +794,7 @@
     {
         "vocab":"<ruby>親切<rt>しんせつ<\/rt><\/ruby>",
         "reading_meaning":"shinsetsu (baik hati)",
-        "type":"🟣",
+        "type":"🟠",
         "mnemonic":"Gabungan kanji 'orang tua' (親) dan 'memotong' (切). Kebaikan orang tua yang tulus 'memotong' langsung ke hati. 'SHIN-chan SET-ia kawan dan BAIK HATI'.",
         "example":{
             "jp":"きのう、<ruby>親切<rt>しんせつ<\/rt><\/ruby>な<ruby>人<rt>ひと<\/rt><\/ruby>に<ruby>助<rt>たす<\/rt><\/ruby>けてもらいました。",
@@ -806,7 +806,7 @@
     {
         "vocab":"<ruby>大変<rt>たいへん<\/rt><\/ruby>",
         "reading_meaning":"taihen (sulit, berat, gawat)",
-        "type":"🟣",
+        "type":"🟠",
         "mnemonic":"Bayangkan 'TAI-fun datang, ini situasi yang HEN-ing dan GAWAT'.",
         "example":{
             "jp":"<ruby>子育<rt>こそだ<\/rt><\/ruby>ては<ruby>大変<rt>たいへん<\/rt><\/ruby>な<ruby>仕事<rt>しごと<\/rt><\/ruby>です。",
@@ -818,7 +818,7 @@
     {
         "vocab":"<ruby>大丈夫<rt>だいじょうぶ<\/rt><\/ruby>",
         "reading_meaning":"daijoubu (baik-baik saja, tidak apa-apa)",
-        "type":"🟣",
+        "type":"🟠",
         "mnemonic":"Frasa yang sangat umum. 'DAI... JOU... BU-atku tidak apa-apa'.",
         "example":{
             "jp":"A: <ruby>頭<rt>あたま<\/rt><\/ruby>が<ruby>痛<rt>いた<\/rt><\/ruby>いですか。 B: いいえ、<ruby>大丈夫<rt>だいじょうぶ<\/rt><\/ruby>です。",
@@ -1154,7 +1154,7 @@
     {
         "vocab":"<ruby>暇<rt>ひま<\/rt><\/ruby>",
         "reading_meaning":"hima (senggang, waktu luang)",
-        "type":"🟣",
+        "type":"🟠",
         "mnemonic":"'HIMA-wan, kalau ada waktu luang, ayo main'.",
         "example":{
             "jp":"きょうは<ruby>暇<rt>ひま<\/rt><\/ruby>ですか。",
@@ -1166,7 +1166,7 @@
     {
         "vocab":"いろいろ",
         "reading_meaning":"iroiro (bermacam-macam)",
-        "type":"🟣",
+        "type":"🟠",
         "mnemonic":"Dari kata 'iro' (warna). Berbagai warna -> bermacam-macam.",
         "example":{
             "jp":"デパートにはいろいろな<ruby>物<rt>もの<\/rt><\/ruby>があります。",
@@ -1238,7 +1238,7 @@
     {
         "vocab":"<ruby>上手<rt>じょうず<\/rt><\/ruby>",
         "reading_meaning":"jouzu (pandai, mahir)",
-        "type":"🟣",
+        "type":"🟠",
         "mnemonic":"Kanji 'atas' (上) + 'tangan' (手). Tangan di atas, lebih unggul. 'JOU-stru ZU-dah pasti dia PANDAI'.",
         "example":{
             "jp":"あなたは<ruby>日本語<rt>にほんご<\/rt><\/ruby>が<ruby>上手<rt>じょうず<\/rt><\/ruby>ですね。",
@@ -1250,7 +1250,7 @@
     {
         "vocab":"<ruby>下手<rt>へた<\/rt><\/ruby>",
         "reading_meaning":"heta (tidak pandai, payah)",
-        "type":"🟣",
+        "type":"🟠",
         "mnemonic":"Kanji 'bawah' (下) + 'tangan' (手). Tangan di bawah, kurang terampil. 'HE-bat TA-pi bohong, aslinya payah'.",
         "example":{
             "jp":"わたしは<ruby>絵<rt>え<\/rt><\/ruby>を<ruby>描<rt>か<\/rt><\/ruby>くのが<ruby>下手<rt>へた<\/rt><\/ruby>です。",
@@ -1418,7 +1418,7 @@
     {
         "vocab":"<ruby>大切<rt>たいせつ<\/rt><\/ruby>",
         "reading_meaning":"taisetsu (penting)",
-        "type":"🟣",
+        "type":"🟠",
         "mnemonic":"Kanji 'besar' (大) + 'memotong' (切). Sesuatu yang 'penting' adalah potongan besar dalam hidup.",
         "example":{
             "jp":"それは<ruby>大切<rt>たいせつ<\/rt><\/ruby>な<ruby>書類<rt>しょるい<\/rt><\/ruby>です。",
@@ -1946,7 +1946,7 @@
     {
         "vocab":"<ruby>元気<rt>げんき<\/rt><\/ruby>な",
         "reading_meaning":"genki na (sehat, bersemangat)",
-        "type":"🟣",
+        "type":"🟠",
         "mnemonic":"Kanji 'sumber' (元) + 'energi' (気). Penuh dengan sumber energi.",
         "example":{
             "jp":"いつも<ruby>元気<rt>げんき<\/rt><\/ruby>ですね。",
@@ -2438,7 +2438,7 @@
     {
         "vocab":"じょうぶな",
         "reading_meaning":"joubu na (kuat, kokoh - untuk benda)",
-        "type":"🟣",
+        "type":"🟠",
         "mnemonic":"'JOU-stru BU-atan lama, makanya KOKOH'.",
         "example":{
             "jp":"このいすはとてもじょうぶです。",
@@ -3434,7 +3434,7 @@
     {
         "vocab":"へんな",
         "reading_meaning":"hen na (aneh, aneh)",
-        "type":"🟣",
+        "type":"🟠",
         "mnemonic":"Bayangkan 'HEN-daknya jangan bersikap ANEH'.",
         "example":{
             "jp":"きのう、へんな<ruby>夢<rt>ゆめ<\/rt><\/ruby>を<ruby>見<rt>み<\/rt><\/ruby>ました。",
@@ -3770,7 +3770,7 @@
     {
         "vocab":"むりな",
         "reading_meaning":"muri na (mustahil, berlebihan)",
-        "type":"🟣",
+        "type":"🟠",
         "mnemonic":"'MURI-d ini disuruh mengerjakan soal MUSTAHIL'.",
         "example":{
             "jp":"そんなむりな<ruby>計画<rt>けいかく<\/rt><\/ruby>はやめたほうがいい。",
@@ -3782,7 +3782,7 @@
     {
         "vocab":"<ruby>安全<rt>あんぜん<\/rt><\/ruby>な",
         "reading_meaning":"anzen na (aman)",
-        "type":"🟣",
+        "type":"🟠",
         "mnemonic":"Kanji 'damai' (安) + 'seluruh' (全). Damai seluruhnya -> aman.",
         "example":{
             "jp":"ここは<ruby>安全<rt>あんぜん<\/rt><\/ruby>な<ruby>場所<rt>ばしょ<\/rt><\/ruby>です。",
@@ -3794,7 +3794,7 @@
     {
         "vocab":"<ruby>危険<rt>きけん<\/rt><\/ruby>な",
         "reading_meaning":"kiken na (berbahaya)",
-        "type":"🟣",
+        "type":"🟠",
         "mnemonic":"'KI-ta KEN-a batunya, BERBAHAYA'.",
         "example":{
             "jp":"この<ruby>川<rt>かわ<\/rt><\/ruby>で<ruby>泳<rt>およ<\/rt><\/ruby>ぐのは<ruby>危険<rt>きけん<\/rt><\/ruby>です。",
@@ -3818,7 +3818,7 @@
     {
         "vocab":"ねっしんな",
         "reading_meaning":"nesshin na (antusias, tekun)",
-        "type":"🟣",
+        "type":"🟠",
         "mnemonic":"Kanji 'panas' (熱) + 'hati' (心). Hati yang panas -> antusias.",
         "example":{
             "jp":"<ruby>彼<rt>かれ<\/rt><\/ruby>は<ruby>仕事<rt>しごと<\/rt><\/ruby>にとてもねっしんです。",
@@ -4082,7 +4082,7 @@
     {
         "vocab":"<ruby>特別<rt>とくべつ<\/rt><\/ruby>な",
         "reading_meaning":"tokubetsu na (spesial, khusus)",
-        "type":"🟣",
+        "type":"🟠",
         "mnemonic":"'TOKU-nan ini diBET-ulkan secara SPESIAL'.",
         "example":{
             "jp":"きょうは<ruby>母<rt>はは<\/rt><\/ruby>の<ruby>誕生日<rt>たんじょうび<\/rt><\/ruby>ですから、<ruby>特別<rt>とくべつ<\/rt><\/ruby>な日です。",
@@ -4094,7 +4094,7 @@
     {
         "vocab":"まじめな",
         "reading_meaning":"majime na (rajin, serius)",
-        "type":"🟣",
+        "type":"🟠",
         "mnemonic":"'MA-u JI-ka ingin sukses, ME-mang harus RAJIN'.",
         "example":{
             "jp":"たなかさんはまじめな<ruby>学生<rt>がくせい<\/rt><\/ruby>です。",
@@ -4106,7 +4106,7 @@
     {
         "vocab":"おなじ",
         "reading_meaning":"onaji (sama)",
-        "type":"🟣",
+        "type":"🟠",
         "mnemonic":"'O-NA-ma JI-ka SAMA, sering tertukar'.",
         "example":{
             "jp":"わたしと<ruby>彼<rt>かれ<\/rt><\/ruby>は<ruby>同<rt>おな<\/rt><\/ruby>じ<ruby>年<rt>とし<\/rt><\/ruby>です。",
@@ -4118,7 +4118,7 @@
     {
         "vocab":"かんたんな",
         "reading_meaning":"kantan na (mudah, simpel)",
-        "type":"🟣",
+        "type":"🟠",
         "mnemonic":"'KAN-TONG-AN ini cara buatnya MUDAH'.",
         "example":{
             "jp":"きのうのテストはかんたんでした。",
@@ -4130,7 +4130,7 @@
     {
         "vocab":"ふくざつな",
         "reading_meaning":"fukuzatsu na (rumit, kompleks)",
-        "type":"🟣",
+        "type":"🟠",
         "mnemonic":"Bayangkan 'FUKU-si ZAT SU-per ini RUMIT sekali'.",
         "example":{
             "jp":"この<ruby>機械<rt>きかい<\/rt><\/ruby>の<ruby>使<rt>つか<\/rt><\/ruby>い<ruby>方<rt>かた<\/rt><\/ruby>はふくざつです。",
@@ -4142,7 +4142,7 @@
     {
         "vocab":"じゆうな",
         "reading_meaning":"jiyuu na (bebas, kebebasan)",
-        "type":"🟣",
+        "type":"🟠",
         "mnemonic":"'JI-ka YU-dah selesai, kamu BEBAS'.",
         "example":{
             "jp":"あしたは<ruby>一日<rt>いちにち<\/rt><\/ruby>じゆうです。",
@@ -4154,7 +4154,7 @@
     {
         "vocab":"ていねいな",
         "reading_meaning":"teinei na (sopan)",
-        "type":"🟣",
+        "type":"🟠",
         "mnemonic":"'TEI-na, kalau bicara dengan orang tua harus SOPAN'.",
         "example":{
             "jp":"<ruby>彼<rt>かれ<\/rt><\/ruby>の<ruby>日本語<rt>にほんご<\/rt><\/ruby>はとてもていねいです。",
@@ -4646,7 +4646,7 @@
     {
         "vocab":"<ruby>十分<rt>じゅうぶん<\/rt><\/ruby>な",
         "reading_meaning":"juubun na (cukup)",
-        "type":"🟣",
+        "type":"🟠",
         "mnemonic":"Kanji 'sepuluh' (十) + 'bagian' (分). Sepuluh dari sepuluh bagian -> cukup\/sempurna.",
         "example":{
             "jp":"<ruby>時間<rt>じかん<\/rt><\/ruby>は<ruby>十分<rt>じゅうぶん<\/rt><\/ruby>ありますから、いそがなくてもいいです。",
@@ -4658,7 +4658,7 @@
     {
         "vocab":"<ruby>必要<rt>ひつよう<\/rt><\/ruby>な",
         "reading_meaning":"hitsuyou na (perlu, dibutuhkan)",
-        "type":"🟣",
+        "type":"🟠",
         "mnemonic":"Bayangkan 'HIT-SU-nganmu YOU-dah pasti DIPERLUKAN'.",
         "example":{
             "jp":"<ruby>旅行<rt>りょこう<\/rt><\/ruby>に<ruby>何<rt>なに<\/rt><\/ruby>が<ruby>必要<rt>ひつよう<\/rt><\/ruby>ですか。",
@@ -5210,7 +5210,7 @@
     {
         "vocab":"<ruby>元気<rt>げんき<\/rt><\/ruby>",
         "reading_meaning":"genki (sehat, bersemangat)",
-        "type":"🟣",
+        "type":"🟠",
         "mnemonic":"Terdiri dari kanji 'asal\/sumber' (元) dan 'spirit\/energi' (気). Jadi 'genki' adalah 'sumber energi' atau sehat. 'GENG-kita harus selalu KI-elihatan bersemangat!'.",
         "example":{
             "jp":"おばあさんはとても<ruby>元気<rt>げんき<\/rt><\/ruby>です。",
@@ -5366,7 +5366,7 @@
     {
         "vocab":"きれい",
         "reading_meaning":"kirei (cantik, bersih)",
-        "type":"🟣",
+        "type":"🟠",
         "mnemonic":"'KIREI-potan membersihkan kamar, tapi hasilnya jadi CANTIK dan BERSIH'.",
         "example":{
             "jp":"この<ruby>公園<rt>こうえん<\/rt><\/ruby>はとてもきれいです。",
@@ -5378,7 +5378,7 @@
     {
         "vocab":"ハンサム",
         "reading_meaning":"hansamu (tampan)",
-        "type":"🟣",
+        "type":"🟠",
         "mnemonic":"Serapan dari bahasa Inggris 'handsome'. Sangat mudah diingat.",
         "example":{
             "jp":"あの<ruby>俳優<rt>はいゆう<\/rt><\/ruby>はハンサムですね。",
@@ -5390,7 +5390,7 @@
     {
         "vocab":"<ruby>静<rt>しず<\/rt><\/ruby>か",
         "reading_meaning":"shizuka (tenang, sepi)",
-        "type":"🟣",
+        "type":"🟠",
         "mnemonic":"'SHIZU-ka, jangan berisik, di sini TENANG'.",
         "example":{
             "jp":"<ruby>図書館<rt>としょかん<\/rt><\/ruby>は<ruby>静<rt>しず<\/rt><\/ruby>かです。",
@@ -5402,7 +5402,7 @@
     {
         "vocab":"にぎやか",
         "reading_meaning":"nigiyaka (ramai, hidup)",
-        "type":"🟣",
+        "type":"🟠",
         "mnemonic":"Bayangkan 'NI-kisah GYA-ng jalanan, YAKA-li ini, RAMAI sekali!'.",
         "example":{
             "jp":"この<ruby>町<rt>まち<\/rt><\/ruby>はとてもにぎやかです。",
