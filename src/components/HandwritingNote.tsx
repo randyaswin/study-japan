@@ -1,19 +1,20 @@
 "use client";
 
 import React, { useRef, useState, useEffect } from 'react';
+import { ChevronDownIcon, ChevronRightIcon } from '@heroicons/react/24/solid';
 
 interface HandwritingNoteProps {
   noteData?: string; // serialized image data (base64)
   onChange?: (data: string) => void;
   label?: string;
-  section?: string; // e.g. 'kanji', 'vocab', 'grammar'
-  pageId?: string | number; // e.g. day number
+  section?: string // e.g. 'kanji', 'vocab', 'grammar'
+  pageId?: string | number // e.g. day number
 }
 
 const PEN_COLORS = [
   '#111', '#e11d48', '#2563eb', '#059669', '#f59e42', '#fbbf24', '#a21caf', '#64748b', '#fff'
 ];
-const PEN_SIZES = [2, 4, 6, 10];
+const PEN_SIZES = [1, 2, 4, 6, 10];
 
 const CANVAS_HEIGHT = 220;
 const CANVAS_WIDTH = 600;
@@ -27,6 +28,7 @@ const HandwritingNote: React.FC<HandwritingNoteProps> = ({ noteData, onChange, l
   const [history, setHistory] = useState<string[]>([]);
   const [redoStack, setRedoStack] = useState<string[]>([]);
   const [localNote, setLocalNote] = useState<string | undefined>(undefined);
+  const [collapsed, setCollapsed] = useState(true);
 
   // Key for localStorage
   const storageKey = `handwriting_note_${pageId}_${section}`;
@@ -116,6 +118,9 @@ const HandwritingNote: React.FC<HandwritingNoteProps> = ({ noteData, onChange, l
     setDrawing(false);
     const canvas = canvasRef.current;
     if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return;
+    ctx.stroke(); // Ensure the last segment is drawn
     const data = canvas.toDataURL();
     setLocalNote(data);
     if (typeof window !== 'undefined') {
@@ -219,46 +224,68 @@ const HandwritingNote: React.FC<HandwritingNoteProps> = ({ noteData, onChange, l
 
   return (
     <div className="my-4">
-      {label && <div className="mb-2 font-semibold text-gray-700 dark:text-gray-200">{label}</div>}
-      <div className="flex items-center gap-2 mb-2 flex-wrap">
-        <span className="text-xs">Warna:</span>
-        {PEN_COLORS.map(c => (
+      <div className="flex items-center mb-2">
+        {label && <div className="font-semibold text-gray-700 dark:text-gray-200 mr-2">{label}</div>}
+        {/* Chevron toggle only when empty */}
+        {(!localNote) && (
           <button
-            key={c}
-            className={`w-6 h-6 rounded-full border-2 ${penColor === c ? 'border-black' : 'border-gray-300'}`}
-            style={{ background: c }}
-            onClick={() => setPenColor(c)}
-            aria-label={`Pilih warna ${c}`}
-          />
-        ))}
-        <span className="ml-4 text-xs">Ukuran:</span>
-        {PEN_SIZES.map(s => (
-          <button
-            key={s}
-            className={`w-6 h-6 rounded-full border-2 flex items-center justify-center ${penSize === s ? 'border-black' : 'border-gray-300'}`}
-            onClick={() => setPenSize(s)}
-            aria-label={`Pilih ukuran ${s}`}
+            className="p-1 rounded hover:bg-gray-100 dark:hover:bg-gray-700"
+            onClick={() => setCollapsed(c => !c)}
+            aria-label={collapsed ? 'Buka catatan' : 'Tutup catatan'}
+            type="button"
           >
-            <div style={{ width: s, height: s, background: penColor, borderRadius: '50%' }} />
+            {collapsed ? (
+              <ChevronRightIcon className="w-5 h-5 text-gray-500" />
+            ) : (
+              <ChevronDownIcon className="w-5 h-5 text-gray-500" />
+            )}
           </button>
-        ))}
-        <button className="ml-4 px-2 py-1 rounded bg-gray-200 text-xs" onClick={handleUndo}>Undo</button>
-        <button className="px-2 py-1 rounded bg-gray-200 text-xs" onClick={handleRedo}>Redo</button>
-        <button className="px-2 py-1 rounded bg-red-200 text-xs" onClick={handleClear}>Hapus</button>
+        )}
       </div>
-      <div className="border rounded-lg overflow-hidden bg-white dark:bg-gray-900 shadow">
-        <canvas
-          ref={canvasRef}
-          width={CANVAS_WIDTH}
-          height={CANVAS_HEIGHT}
-          style={{ touchAction: 'none', width: '100%', height: CANVAS_HEIGHT, background: '#fff', display: 'block' }}
-          onPointerDown={handlePointerDown}
-          onPointerMove={handlePointerMove}
-          onPointerUp={handlePointerUp}
-          onPointerLeave={handlePointerUp}
-        />
-      </div>
-      <div className="text-xs text-gray-400 mt-1">Tulis catatan bebas di sini. Mendukung touchscreen & mouse. Catatan akan otomatis tersimpan di perangkat ini.</div>
+      {/* Show note area if not collapsed or if there is content */}
+      {((!collapsed) ) && (
+        <>
+          <div className="flex items-center gap-2 mb-2 flex-wrap">
+            <span className="text-xs">Warna:</span>
+            {PEN_COLORS.map(c => (
+              <button
+                key={c}
+                className={`w-6 h-6 rounded-full border-2 ${penColor === c ? 'border-black' : 'border-gray-300'}`}
+                style={{ background: c }}
+                onClick={() => setPenColor(c)}
+                aria-label={`Pilih warna ${c}`}
+              />
+            ))}
+            <span className="ml-4 text-xs">Ukuran:</span>
+            {PEN_SIZES.map(s => (
+              <button
+                key={s}
+                className={`w-6 h-6 rounded-full border-2 flex items-center justify-center ${penSize === s ? 'border-black' : 'border-gray-300'}`}
+                onClick={() => setPenSize(s)}
+                aria-label={`Pilih ukuran ${s}`}
+              >
+                <div style={{ width: s, height: s, background: penColor, borderRadius: '50%' }} />
+              </button>
+            ))}
+            <button className="ml-4 px-2 py-1 rounded bg-gray-200 text-xs" onClick={handleUndo}>Undo</button>
+            <button className="px-2 py-1 rounded bg-gray-200 text-xs" onClick={handleRedo}>Redo</button>
+            <button className="px-2 py-1 rounded bg-red-200 text-xs" onClick={handleClear}>Hapus</button>
+          </div>
+          <div className="border rounded-lg overflow-hidden bg-white dark:bg-gray-900 shadow">
+            <canvas
+              ref={canvasRef}
+              width={CANVAS_WIDTH}
+              height={CANVAS_HEIGHT}
+              style={{ touchAction: 'none', width: '100%', height: CANVAS_HEIGHT + 'px', background: '#fff', display: 'block' }}
+              onPointerDown={handlePointerDown}
+              onPointerMove={handlePointerMove}
+              onPointerUp={handlePointerUp}
+              onPointerLeave={handlePointerUp}
+            />
+          </div>
+          <div className="text-xs text-gray-400 mt-1">Tulis catatan bebas di sini. Mendukung touchscreen & mouse. Catatan akan otomatis tersimpan di perangkat ini.</div>
+        </>
+      )}
     </div>
   );
 };
