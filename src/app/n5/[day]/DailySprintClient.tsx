@@ -484,6 +484,17 @@ export default function DailySprintClient({ sprintData, day, availableDays, sett
                                                         boldMain={true} 
                                                     />
                                                 </div>
+                                                <div className="text-sm text-gray-700 dark:text-gray-300 mb-1 mt-2">
+                                                    <Furigana htmlString={item.reading_meaning.replace(/\(.+\)/, '').trim()} />
+                                                </div>
+                                                <div className="text-base font-semibold text-gray-800 dark:text-gray-200 mb-2">
+                                                    Arti: {
+                                                        (() => {
+                                                            const match = item.reading_meaning.match(/\(([^)]+)\)/);
+                                                            return match ? match[1] : '';
+                                                        })()
+                                                    }
+                                                </div>
                                                 <div className="mb-2">
                                                     <span className="block text-xs font-bold text-gray-500 dark:text-gray-400 mb-1">Visual:</span>
                                                     <span className="text-sm text-gray-700 dark:text-gray-300">{item.mnemonic}</span>
