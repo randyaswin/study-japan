@@ -403,20 +403,34 @@ export default function DailySprintClient({ sprintData, day, availableDays, sett
                                             <>
                                                 <span className={`absolute right-4 top-4 px-3 py-1 rounded-full text-xs font-semibold ${typeLabelColor} dark:bg-gray-700 dark:text-gray-300`}>{typeLabel}</span>
                                                 <div className="mb-2">
-                                                    <div className={`jp-font text-gray-500 dark:text-gray-400 font-normal leading-tight ${isVocabFlipMode ? 'text-3xl sm:text-4xl md:text-5xl text-gray-800 dark:text-gray-100 font-bold text-center w-full' : 'text-base'}`}> 
-                                                        <Furigana 
-                                                            htmlString={item.vocab} 
-                                                            className={isVocabFlipMode ? 'text-3xl sm:text-4xl md:text-5xl' : 'text-base'} 
-                                                            rtClass="furigana-bold" 
-                                                            boldMain={true} 
-                                                        />
-                                                    </div>
-                                                    {isVocabFlipMode && (
-                                                        <div className="text-xs text-gray-500 dark:text-gray-400 mt-2">Klik untuk lihat jawaban</div>
+                                                    {isVocabFlipMode ? (
+                                                        <div className="mp-2 flex flex-1 flex-col items-center justify-center min-h-[200px]">
+                                                            <div className={`jp-font text-gray-500 dark:text-gray-400 leading-tight text-3xl sm:text-4xl md:text-5xl  font-bold text-center w-full`}> 
+                                                                <Furigana 
+                                                                    htmlString={item.vocab} 
+                                                                    className={'text-3xl sm:text-4xl md:text-5xl' } 
+                                                                    rtClass="furigana-bold" 
+                                                                    boldMain={true} 
+                                                                />
+                                                            </div>
+                                                            <div className="text-xs text-gray-500 dark:text-gray-400 mt-2">Klik untuk lihat jawaban</div>
+                                                        </div>
+                                                    ) : (
+                                                        <div className={`jp-font text-gray-500 dark:text-gray-400 font-normal leading-tight text-base`}> 
+                                                            <Furigana 
+                                                                htmlString={item.vocab} 
+                                                                className={ 'text-base'} 
+                                                                rtClass="furigana-bold" 
+                                                                boldMain={true} 
+                                                            />
+                                                        </div>
                                                     )}
+                                                    {/* </div> */}
                                                     {!isVocabFlipMode && (
                                                         <>
-                                                            <div className="text-sm text-gray-700 dark:text-gray-300 mb-1 mt-2"><Furigana htmlString={item.reading_meaning} /></div>
+                                                            <div className="text-sm text-gray-700 dark:text-gray-300 mb-1 mt-2">
+                                                                <Furigana htmlString={item.reading_meaning} />
+                                                            </div>
                                                             <div className="text-base font-semibold text-gray-800 dark:text-gray-200 mb-2">Arti: {item.reading_meaning.replace(/\(.+\)/, '').trim()}</div>
                                                         </>
                                                     )}
@@ -444,13 +458,13 @@ export default function DailySprintClient({ sprintData, day, availableDays, sett
                                             // Back side - Answer (keep original layout)
                                             <>
                                                 <span className={`absolute right-4 top-4 px-3 py-1 rounded-full text-xs font-semibold ${typeLabelColor} dark:bg-gray-700 dark:text-gray-300`}>{typeLabel}</span>
-                                                <div className="flex-1 flex flex-col justify-center items-center mb-2 min-h-[120px]">
-                                                    <div className="text-3xl sm:text-4xl md:text-5xl jp-font text-gray-800 dark:text-gray-100 font-bold text-center w-full">
-                                                        <Furigana htmlString={item.vocab} className="text-3xl sm:text-4xl md:text-5xl" rtClass="furigana-bold" boldMain={true} />
-                                                    </div>
-                                                    <div className="text-xs text-gray-500 dark:text-gray-400 mt-2">Klik lagi untuk kembali</div>
-                                                    <div className="text-sm text-gray-700 dark:text-gray-300 mb-1 mt-2"><Furigana htmlString={item.reading_meaning} /></div>
-                                                    <div className="text-base font-semibold text-gray-800 dark:text-gray-200 mb-2">Arti: {item.reading_meaning.replace(/\(.+\)/, '').trim()}</div>
+                                                <div className={`jp-font text-gray-500 dark:text-gray-400 font-normal leading-tight text-base`}> 
+                                                    <Furigana 
+                                                        htmlString={item.vocab} 
+                                                        className={'text-2xl sm:text-4xl md:text-4xl' } 
+                                                        rtClass="furigana-bold" 
+                                                        boldMain={true} 
+                                                    />
                                                 </div>
                                                 <div className="mb-2">
                                                     <span className="block text-xs font-bold text-gray-500 dark:text-gray-400 mb-1">Visual:</span>
