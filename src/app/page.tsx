@@ -67,11 +67,18 @@ export default function HomePage() {
                         <span className="text-gray-700 dark:text-gray-300 text-sm">Jembatan Keledai & Mnemonic</span>
                     </Link>
                     <Link
+                        href="/kaiwa"
+                        className="block bg-teal-50 dark:bg-teal-900 rounded-xl shadow-lg px-8 py-6 min-w-[160px] text-center border-4 border-teal-200 dark:border-teal-600 hover:border-teal-400 dark:hover:border-teal-500 hover:bg-teal-100 dark:hover:bg-teal-800 transition-all"
+                    >
+                        <span className="block text-2xl font-bold text-teal-600 dark:text-teal-300 mb-2">Kaiwa</span>
+                        <span className="text-gray-700 dark:text-gray-300 text-sm">会話 - Percakapan</span>
+                    </Link>
+                    <Link
                         href="/n5"
                         className="block bg-yellow-50 dark:bg-yellow-900 rounded-xl shadow-lg px-8 py-6 min-w-[160px] text-center border-4 border-yellow-200 dark:border-yellow-600 hover:border-yellow-400 dark:hover:border-yellow-500 hover:bg-yellow-100 dark:hover:bg-yellow-800 transition-all"
                     >
                         <span className="block text-2xl font-bold text-yellow-600 dark:text-yellow-300 mb-2">JLPT N5</span>
-                        <span className="text-gray-700 dark:text-gray-300 text-sm">Sprint Harian JLPT N5</span>
+                        <span className="text-gray-700 dark:text-gray-300 text-sm">Materi JLPT N5</span>
                     </Link>
                 </div>
             </main>

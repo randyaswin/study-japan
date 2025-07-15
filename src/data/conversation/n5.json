@@ -1,0 +1,332 @@
+{
+  "conversations": [
+    {
+      "id": 1,
+      "title": "Salam dan Perkenalan",
+      "level": "N5",
+      "description": "Percakapan dasar perkenalan diri",
+      "scenario": "Pertemuan pertama di kantor",
+      "conversation": [
+        {
+          "speaker": "田中 (Tanaka)",
+          "japanese": "はじめまして。田中です。",
+          "furigana": "はじめまして。[田中|たなか]です。",
+          "romaji": "Hajimemashite. Tanaka desu.",
+          "indonesian": "Senang bertemu Anda. Saya Tanaka.",
+          "notes": "Salam formal untuk pertemuan pertama"
+        },
+        {
+          "speaker": "佐藤 (Sato)",
+          "japanese": "はじめまして。佐藤と申します。よろしくお願いします。",
+          "furigana": "はじめまして。[佐藤|さとう]と[申|もう]します。よろしくお[願|ねが]いします。",
+          "romaji": "Hajimemashite. Sato to mōshimasu. Yoroshiku onegaishimasu.",
+          "indonesian": "Senang bertemu Anda. Saya Sato. Mohon bantuannya.",
+          "notes": "Versi lebih formal menggunakan 'mōshimasu'"
+        },
+        {
+          "speaker": "田中 (Tanaka)",
+          "japanese": "こちらこそ、よろしくお願いします。",
+          "furigana": "こちらこそ、よろしくお[願|ねが]いします。",
+          "romaji": "Kochira koso, yoroshiku onegaishimasu.",
+          "indonesian": "Saya juga mohon bantuannya.",
+          "notes": "Respon balik yang sopan"
+        }
+      ],
+      "keyPhrases": [
+        {
+          "phrase": "はじめまして",
+          "reading": "hajimemashite",
+          "meaning": "Senang bertemu Anda (untuk pertama kali)",
+          "usage": "Digunakan saat bertemu seseorang untuk pertama kali"
+        },
+        {
+          "phrase": "と申します",
+          "reading": "to mōshimasu",
+          "meaning": "Saya bernama... (formal)",
+          "usage": "Versi formal dari 'desu' untuk memperkenalkan nama"
+        },
+        {
+          "phrase": "よろしくお願いします",
+          "reading": "yoroshiku onegaishimasu",
+          "meaning": "Mohon bantuannya / Salam kenal",
+          "usage": "Ungkapan untuk meminta bantuan atau kerjasama"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Berbelanja di Toko",
+      "level": "N5",
+      "description": "Percakapan saat berbelanja",
+      "scenario": "Di toko kelontong",
+      "conversation": [
+        {
+          "speaker": "店員 (Tenin)",
+          "japanese": "いらっしゃいませ。",
+          "furigana": "いらっしゃいませ。",
+          "romaji": "Irasshaimase.",
+          "indonesian": "Selamat datang.",
+          "notes": "Sapaan standar di toko"
+        },
+        {
+          "speaker": "客 (Kyaku)",
+          "japanese": "すみません。りんごはどこですか。",
+          "furigana": "すみません。りんごはどこですか。",
+          "romaji": "Sumimasen. Ringo wa doko desu ka.",
+          "indonesian": "Permisi. Apel ada di mana?",
+          "notes": "Menanyakan lokasi barang"
+        },
+        {
+          "speaker": "店員 (Tenin)",
+          "japanese": "りんごは野菜売り場にあります。",
+          "furigana": "りんごは[野菜|やさい][売|う]り[場|ば]にあります。",
+          "romaji": "Ringo wa yasai uriba ni arimasu.",
+          "indonesian": "Apel ada di bagian sayuran.",
+          "notes": "Menunjukkan lokasi barang"
+        },
+        {
+          "speaker": "客 (Kyaku)",
+          "japanese": "ありがとうございます。",
+          "furigana": "ありがとうございます。",
+          "romaji": "Arigatō gozaimasu.",
+          "indonesian": "Terima kasih.",
+          "notes": "Ucapan terima kasih formal"
+        }
+      ],
+      "keyPhrases": [
+        {
+          "phrase": "いらっしゃいませ",
+          "reading": "irasshaimase",
+          "meaning": "Selamat datang (di toko)",
+          "usage": "Sapaan standar pelayan toko kepada pelanggan"
+        },
+        {
+          "phrase": "どこですか",
+          "reading": "doko desu ka",
+          "meaning": "Di mana?",
+          "usage": "Untuk menanyakan lokasi atau tempat"
+        },
+        {
+          "phrase": "にあります",
+          "reading": "ni arimasu",
+          "meaning": "Ada di...",
+          "usage": "Menunjukkan lokasi benda mati"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Memesan Makanan",
+      "level": "N5",
+      "description": "Percakapan di restoran",
+      "scenario": "Di restoran Jepang",
+      "conversation": [
+        {
+          "speaker": "店員 (Tenin)",
+          "japanese": "いらっしゃいませ。何名様ですか。",
+          "furigana": "いらっしゃいませ。[何名|なんめい][様|さま]ですか。",
+          "romaji": "Irasshaimase. Nanmei-sama desu ka.",
+          "indonesian": "Selamat datang. Berapa orang?",
+          "notes": "Menanyakan jumlah orang"
+        },
+        {
+          "speaker": "客 (Kyaku)",
+          "japanese": "二人です。",
+          "furigana": "[二人|ふたり]です。",
+          "romaji": "Futari desu.",
+          "indonesian": "Dua orang.",
+          "notes": "Menyebutkan jumlah orang"
+        },
+        {
+          "speaker": "店員 (Tenin)",
+          "japanese": "こちらへどうぞ。ご注文はお決まりですか。",
+          "furigana": "こちらへどうぞ。ご[注文|ちゅうもん]はお[決|き]まりですか。",
+          "romaji": "Kochira e dōzo. Go-chūmon wa okimari desu ka.",
+          "indonesian": "Silakan ke sini. Sudah memutuskan pesanan?",
+          "notes": "Menanyakan apakah sudah siap memesan"
+        },
+        {
+          "speaker": "客 (Kyaku)",
+          "japanese": "ラーメンを一つお願いします。",
+          "furigana": "ラーメンを[一|ひと]つお[願|ねが]いします。",
+          "romaji": "Rāmen o hitotsu onegaishimasu.",
+          "indonesian": "Satu ramen, tolong.",
+          "notes": "Memesan makanan"
+        }
+      ],
+      "keyPhrases": [
+        {
+          "phrase": "何名様ですか",
+          "reading": "nanmei-sama desu ka",
+          "meaning": "Berapa orang?",
+          "usage": "Pertanyaan standar di restoran untuk menanyakan jumlah tamu"
+        },
+        {
+          "phrase": "ご注文はお決まりですか",
+          "reading": "go-chūmon wa okimari desu ka",
+          "meaning": "Sudah memutuskan pesanan?",
+          "usage": "Pertanyaan pelayan apakah tamu sudah siap memesan"
+        },
+        {
+          "phrase": "をお願いします",
+          "reading": "o onegaishimasu",
+          "meaning": "Tolong... / Saya minta...",
+          "usage": "Pola untuk memesan atau meminta sesuatu"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Menanyakan Waktu",
+      "level": "N5",
+      "description": "Percakapan tentang waktu",
+      "scenario": "Bertanya waktu di jalan",
+      "conversation": [
+        {
+          "speaker": "A",
+          "japanese": "すみません。今何時ですか。",
+          "furigana": "すみません。[今|いま][何時|なんじ]ですか。",
+          "romaji": "Sumimasen. Ima nanji desu ka.",
+          "indonesian": "Permisi. Sekarang jam berapa?",
+          "notes": "Cara sopan menanyakan waktu"
+        },
+        {
+          "speaker": "B",
+          "japanese": "三時半です。",
+          "furigana": "[三時|さんじ][半|はん]です。",
+          "romaji": "Sanji han desu.",
+          "indonesian": "Jam setengah empat.",
+          "notes": "Menyatakan waktu dengan 'han' (setengah)"
+        },
+        {
+          "speaker": "A",
+          "japanese": "ありがとうございます。",
+          "furigana": "ありがとうございます。",
+          "romaji": "Arigatō gozaimasu.",
+          "indonesian": "Terima kasih.",
+          "notes": "Ucapan terima kasih formal"
+        }
+      ],
+      "keyPhrases": [
+        {
+          "phrase": "今何時ですか",
+          "reading": "ima nanji desu ka",
+          "meaning": "Sekarang jam berapa?",
+          "usage": "Menanyakan waktu saat ini"
+        },
+        {
+          "phrase": "三時半",
+          "reading": "sanji han",
+          "meaning": "Jam setengah empat",
+          "usage": "Menyatakan waktu setengah jam"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Menanyakan Arah",
+      "level": "N5",
+      "description": "Percakapan menanyakan jalan",
+      "scenario": "Tersesat di kota",
+      "conversation": [
+        {
+          "speaker": "観光客 (Kankōkyaku)",
+          "japanese": "すみません。駅はどこですか。",
+          "furigana": "すみません。[駅|えき]はどこですか。",
+          "romaji": "Sumimasen. Eki wa doko desu ka.",
+          "indonesian": "Permisi. Stasiun ada di mana?",
+          "notes": "Menanyakan lokasi stasiun"
+        },
+        {
+          "speaker": "地元の人 (Jimoto no hito)",
+          "japanese": "あの信号を右に曲がってください。",
+          "furigana": "あの[信号|しんごう]を[右|みぎ]に[曲|ま]がってください。",
+          "romaji": "Ano shingō o migi ni magatte kudasai.",
+          "indonesian": "Belok kanan di lampu merah itu.",
+          "notes": "Memberikan petunjuk arah"
+        },
+        {
+          "speaker": "観光客 (Kankōkyaku)",
+          "japanese": "わかりました。どうもありがとうございます。",
+          "furigana": "わかりました。どうもありがとうございます。",
+          "romaji": "Wakarimashita. Dōmo arigatō gozaimasu.",
+          "indonesian": "Mengerti. Terima kasih banyak.",
+          "notes": "Menunjukkan pemahaman dan berterima kasih"
+        }
+      ],
+      "keyPhrases": [
+        {
+          "phrase": "はどこですか",
+          "reading": "wa doko desu ka",
+          "meaning": "... ada di mana?",
+          "usage": "Menanyakan lokasi suatu tempat"
+        },
+        {
+          "phrase": "を右に曲がってください",
+          "reading": "o migi ni magatte kudasai",
+          "meaning": "Belok kanan di...",
+          "usage": "Memberikan petunjuk arah belok kanan"
+        },
+        {
+          "phrase": "わかりました",
+          "reading": "wakarimashita",
+          "meaning": "Mengerti/Paham",
+          "usage": "Menunjukkan pemahaman terhadap informasi"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Telepon Kantor",
+      "level": "N5",
+      "description": "Percakapan telepon bisnis",
+      "scenario": "Menelepon kantor",
+      "conversation": [
+        {
+          "speaker": "受付 (Uketsuke)",
+          "japanese": "はい、田中商事です。",
+          "furigana": "はい、[田中|たなか][商事|しょうじ]です。",
+          "romaji": "Hai, Tanaka Shōji desu.",
+          "indonesian": "Ya, Tanaka Trading.",
+          "notes": "Menjawab telepon kantor"
+        },
+        {
+          "speaker": "客 (Kyaku)",
+          "japanese": "山田と申します。佐藤部長はいらっしゃいますか。",
+          "furigana": "[山田|やまだ]と[申|もう]します。[佐藤|さとう][部長|ぶちょう]はいらっしゃいますか。",
+          "romaji": "Yamada to mōshimasu. Satō buchō wa irasshaimasu ka.",
+          "indonesian": "Saya Yamada. Apakah Manajer Sato ada?",
+          "notes": "Memperkenalkan diri dan menanyakan keberadaan seseorang"
+        },
+        {
+          "speaker": "受付 (Uketsuke)",
+          "japanese": "少々お待ちください。",
+          "furigana": "[少々|しょうしょう]お[待|ま]ちください。",
+          "romaji": "Shōshō omachi kudasai.",
+          "indonesian": "Mohon tunggu sebentar.",
+          "notes": "Meminta menunggu di telepon"
+        }
+      ],
+      "keyPhrases": [
+        {
+          "phrase": "と申します",
+          "reading": "to mōshimasu",
+          "meaning": "Saya bernama... (formal)",
+          "usage": "Memperkenalkan diri secara formal"
+        },
+        {
+          "phrase": "はいらっしゃいますか",
+          "reading": "wa irasshaimasu ka",
+          "meaning": "Apakah ... ada? (hormat)",
+          "usage": "Menanyakan keberadaan seseorang dengan hormat"
+        },
+        {
+          "phrase": "少々お待ちください",
+          "reading": "shōshō omachi kudasai",
+          "meaning": "Mohon tunggu sebentar",
+          "usage": "Meminta seseorang menunggu dengan sopan"
+        }
+      ]
+    }
+  ]
+}

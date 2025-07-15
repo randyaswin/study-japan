@@ -1,0 +1,57 @@
+{
+  "conversations": [
+    {
+      "id": 8,
+      "title": "Wawancara Kerja",
+      "level": "N3",
+      "description": "Percakapan wawancara kerja formal",
+      "scenario": "Wawancara kerja di perusahaan Jepang",
+      "conversation": [
+        {
+          "speaker": "面接官 (Mensetsukan)",
+          "japanese": "本日はお忙しい中、お時間をいただき、ありがとうございます。",
+          "furigana": "[本日|ほんじつ]はお[忙|いそが]しい[中|なか]、お[時間|じかん]をいただき、ありがとうございます。",
+          "romaji": "Honjitsu wa oisogashii naka, ojikan o itadaki, arigatō gozaimasu.",
+          "indonesian": "Terima kasih telah meluangkan waktu di tengah kesibukan Anda hari ini.",
+          "notes": "Ungkapan formal untuk berterima kasih atas waktu yang diberikan"
+        },
+        {
+          "speaker": "応募者 (Ōbosha)",
+          "japanese": "こちらこそ、貴重なお時間をいただき、ありがとうございます。",
+          "furigana": "こちらこそ、[貴重|きちょう]なお[時間|じかん]をいただき、ありがとうございます。",
+          "romaji": "Kochira koso, kichō na ojikan o itadaki, arigatō gozaimasu.",
+          "indonesian": "Sebaliknya, terima kasih telah memberikan waktu yang berharga.",
+          "notes": "Respon balik yang sopan dalam situasi formal"
+        },
+        {
+          "speaker": "面接官 (Mensetsukan)",
+          "japanese": "まず、簡単に自己紹介をお願いします。",
+          "furigana": "まず、[簡単|かんたん]に[自己紹介|じこしょうかい]をお[願|ねが]いします。",
+          "romaji": "Mazu, kantan ni jikoshōkai o onegaishimasu.",
+          "indonesian": "Pertama, mohon perkenalkan diri Anda secara singkat.",
+          "notes": "Permintaan untuk memperkenalkan diri"
+        }
+      ],
+      "keyPhrases": [
+        {
+          "phrase": "お忙しい中",
+          "reading": "oisogashii naka",
+          "meaning": "Di tengah kesibukan",
+          "usage": "Ungkapan formal untuk mengakui kesibukan orang lain"
+        },
+        {
+          "phrase": "貴重なお時間",
+          "reading": "kichō na ojikan",
+          "meaning": "Waktu yang berharga",
+          "usage": "Cara formal menyebut waktu seseorang"
+        },
+        {
+          "phrase": "自己紹介をお願いします",
+          "reading": "jikoshōkai o onegaishimasu",
+          "meaning": "Mohon perkenalkan diri",
+          "usage": "Meminta seseorang untuk memperkenalkan diri"
+        }
+      ]
+    }
+  ]
+}

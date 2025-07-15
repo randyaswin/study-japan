@@ -43,6 +43,9 @@ export const metadata: Metadata = {
     "msapplication-TileColor": "#f97316",
     "msapplication-TileImage": "/icons/icon-144x144.png",
     "msapplication-config": "/browserconfig.xml",
+    // Mobile audio support
+    "format-detection": "telephone=no",
+    "apple-mobile-web-app-status-bar-style": "default",
   },
 };
 
@@ -53,6 +56,8 @@ export const viewport = {
   maximumScale: 1,
   userScalable: "no",
   themeColor: "#f97316",
+  // Additional mobile optimizations
+  viewportFit: "cover",
 };
 
 export default function RootLayout({

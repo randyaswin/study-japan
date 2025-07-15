@@ -1,0 +1,57 @@
+{
+  "conversations": [
+    {
+      "id": 7,
+      "title": "Di Bank",
+      "level": "N4",
+      "description": "Percakapan di bank untuk membuka rekening",
+      "scenario": "Di bank untuk membuka rekening baru",
+      "conversation": [
+        {
+          "speaker": "銀行員 (Ginkōin)",
+          "japanese": "お疲れ様です。どのようなご用件でしょうか。",
+          "furigana": "お[疲|つか]れ[様|さま]です。どのようなご[用件|ようけん]でしょうか。",
+          "romaji": "Otsukaresama desu. Dono yōna go-yōken deshō ka.",
+          "indonesian": "Terima kasih atas kerja kerasnya. Ada keperluan apa?",
+          "notes": "Salam formal di tempat kerja dan menanyakan keperluan"
+        },
+        {
+          "speaker": "客 (Kyaku)",
+          "japanese": "普通預金口座を開設したいのですが。",
+          "furigana": "[普通|ふつう][預金|よきん][口座|こうざ]を[開設|かいせつ]したいのですが。",
+          "romaji": "Futsū yokin kōza o kaisetsu shitai no desu ga.",
+          "indonesian": "Saya ingin membuka rekening tabungan biasa.",
+          "notes": "Mengungkapkan keinginan dengan 'tai' + 'no desu ga'"
+        },
+        {
+          "speaker": "銀行員 (Ginkōin)",
+          "japanese": "承知いたしました。こちらの書類にご記入をお願いします。",
+          "furigana": "[承知|しょうち]いたしました。こちらの[書類|しょるい]にご[記入|きにゅう]をお[願|ねが]いします。",
+          "romaji": "Shōchi itashimashita. Kochira no shorui ni go-kinyū o onegaishimasu.",
+          "indonesian": "Baik, saya mengerti. Mohon mengisi formulir ini.",
+          "notes": "Keigo (bahasa hormat) dalam pelayanan formal"
+        }
+      ],
+      "keyPhrases": [
+        {
+          "phrase": "どのようなご用件でしょうか",
+          "reading": "dono yōna go-yōken deshō ka",
+          "meaning": "Ada keperluan apa?",
+          "usage": "Pertanyaan formal untuk menanyakan keperluan"
+        },
+        {
+          "phrase": "したいのですが",
+          "reading": "shitai no desu ga",
+          "meaning": "Saya ingin... (sopan)",
+          "usage": "Mengungkapkan keinginan dengan sopan"
+        },
+        {
+          "phrase": "承知いたしました",
+          "reading": "shōchi itashimashita",
+          "meaning": "Baik, saya mengerti (sangat formal)",
+          "usage": "Ungkapan keigo untuk menunjukkan pemahaman"
+        }
+      ]
+    }
+  ]
+}
