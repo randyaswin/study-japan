@@ -110,6 +110,18 @@ export default function DailySprintClient({ sprintData, day, availableDays, sett
     const [isVocabFlipMode, setIsVocabFlipMode] = useState(false);
     const [flippedKanjiCards, setFlippedKanjiCards] = useState<Set<number>>(new Set());
     const [flippedVocabCards, setFlippedVocabCards] = useState<Set<number>>(new Set());
+    
+    // State untuk multiple choice mode
+    const [isKanjiMultipleChoice, setIsKanjiMultipleChoice] = useState(false);
+    const [isVocabMultipleChoice, setIsVocabMultipleChoice] = useState(false);
+    const [kanjiAnswers, setKanjiAnswers] = useState<{[key: number]: string}>({});
+    const [vocabAnswers, setVocabAnswers] = useState<{[key: number]: string}>({});
+    const [showKanjiResults, setShowKanjiResults] = useState<{[key: number]: boolean}>({});
+    const [showVocabResults, setShowVocabResults] = useState<{[key: number]: boolean}>({});
+    
+    // State untuk menyimpan options yang sudah di-generate agar tidak berubah-ubah
+    const [kanjiOptions, setKanjiOptions] = useState<{[key: number]: string[]}>({});
+    const [vocabOptions, setVocabOptions] = useState<{[key: number]: string[]}>({});
 
     // Load settings from localStorage if not provided as prop
     const [currentSettings, setCurrentSettings] = useState(settings || {
@@ -133,6 +145,27 @@ export default function DailySprintClient({ sprintData, day, availableDays, sett
         }
     }, [settings]);
 
+    // Effect untuk generate options saat mode multiple choice diaktifkan
+    useEffect(() => {
+        if (isKanjiMultipleChoice) {
+            const newKanjiOptions: {[key: number]: string[]} = {};
+            sprintData.kanji.forEach((item, index) => {
+                newKanjiOptions[index] = generateKanjiOptions(item, sprintData.kanji);
+            });
+            setKanjiOptions(newKanjiOptions);
+        }
+    }, [isKanjiMultipleChoice, sprintData.kanji]);
+
+    useEffect(() => {
+        if (isVocabMultipleChoice) {
+            const newVocabOptions: {[key: number]: string[]} = {};
+            sprintData.vocabulary.forEach((item, index) => {
+                newVocabOptions[index] = generateVocabOptions(item, sprintData.vocabulary);
+            });
+            setVocabOptions(newVocabOptions);
+        }
+    }, [isVocabMultipleChoice, sprintData.vocabulary]);
+
     // Function to create page URL with settings
     const createPageUrl = (pageNumber: number) => {
         const params = new URLSearchParams();
@@ -140,6 +173,52 @@ export default function DailySprintClient({ sprintData, day, availableDays, sett
         params.set('vocabularyPerPage', currentSettings.vocabularyPerPage.toString());
         params.set('grammarPerPage', currentSettings.grammarPerPage.toString());
         return `/n5/${pageNumber}?${params.toString()}`;
+    };
+
+    // Helper function to generate multiple choice options for kanji
+    const generateKanjiOptions = (correctItem: KanjiItem, allItems: KanjiItem[]) => {
+        const options = [correctItem.arti];
+        const otherItems = allItems.filter(item => item.kanji !== correctItem.kanji);
+        
+        // Shuffle and pick 3 random incorrect options
+        const shuffled = [...otherItems].sort(() => 0.5 - Math.random());
+        const incorrectOptions = shuffled.slice(0, 3).map(item => item.arti);
+        
+        options.push(...incorrectOptions);
+        return options.sort(() => 0.5 - Math.random()); // Shuffle the final options
+    };
+
+    // Helper function to generate multiple choice options for vocabulary
+    const generateVocabOptions = (correctItem: VocabItem, allItems: VocabItem[]) => {
+        // Extract meaning from reading_meaning field
+        const correctMeaning = (() => {
+            const match = correctItem.reading_meaning.match(/\(([^)]+)\)/);
+            return match ? match[1] : '';
+        })();
+        
+        const options = [correctMeaning];
+        const otherItems = allItems.filter(item => item.vocab !== correctItem.vocab);
+        
+        // Shuffle and pick 3 random incorrect options
+        const shuffled = [...otherItems].sort(() => 0.5 - Math.random());
+        const incorrectOptions = shuffled.slice(0, 3).map(item => {
+            const match = item.reading_meaning.match(/\(([^)]+)\)/);
+            return match ? match[1] : '';
+        }).filter(meaning => meaning); // Remove empty meanings
+        
+        options.push(...incorrectOptions.slice(0, 3));
+        return options.sort(() => 0.5 - Math.random()); // Shuffle the final options
+    };
+
+    // Handle multiple choice answer selection
+    const handleKanjiAnswer = (itemIndex: number, selectedAnswer: string) => {
+        setKanjiAnswers(prev => ({ ...prev, [itemIndex]: selectedAnswer }));
+        setShowKanjiResults(prev => ({ ...prev, [itemIndex]: true }));
+    };
+
+    const handleVocabAnswer = (itemIndex: number, selectedAnswer: string) => {
+        setVocabAnswers(prev => ({ ...prev, [itemIndex]: selectedAnswer }));
+        setShowVocabResults(prev => ({ ...prev, [itemIndex]: true }));
     };
 
     return (
@@ -219,52 +298,188 @@ export default function DailySprintClient({ sprintData, day, availableDays, sett
                             <h2 className="text-2xl sm:text-3xl font-bold border-l-8 border-orange-500 pl-4 text-gray-700 dark:text-gray-300 flex items-center gap-2">
                                 <span className="text-orange-500 text-2xl">🟠</span> Kanji
                             </h2>
-                            <div className="flex items-center gap-2">
-                                <span className="text-sm text-gray-600 dark:text-gray-400">Mode Hafalan:</span>
-                                <button
-                                    onClick={() => {
-                                        setIsKanjiFlipMode(!isKanjiFlipMode);
-                                        setFlippedKanjiCards(new Set());
-                                    }}
-                                    className={`px-4 py-2 rounded-lg font-semibold transition ${
-                                        isKanjiFlipMode
-                                            ? 'bg-orange-500 text-white'
-                                            : 'bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300'
-                                    }`}
-                                >
-                                    {isKanjiFlipMode ? 'Aktif' : 'Nonaktif'}
-                                </button>
+                            <div className="flex items-center gap-4">
+                                <div className="flex items-center gap-2">
+                                    <span className="text-sm text-gray-600 dark:text-gray-400">Mode Hafalan:</span>
+                                    <button
+                                        onClick={() => {
+                                            setIsKanjiFlipMode(!isKanjiFlipMode);
+                                            setFlippedKanjiCards(new Set());
+                                            setIsKanjiMultipleChoice(false);
+                                            setKanjiAnswers({});
+                                            setShowKanjiResults({});
+                                            setKanjiOptions({});
+                                        }}
+                                        className={`px-4 py-2 rounded-lg font-semibold transition ${
+                                            isKanjiFlipMode
+                                                ? 'bg-orange-500 text-white'
+                                                : 'bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300'
+                                        }`}
+                                    >
+                                        {isKanjiFlipMode ? 'Aktif' : 'Nonaktif'}
+                                    </button>
+                                </div>
+                                <div className="flex items-center gap-2">
+                                    <span className="text-sm text-gray-600 dark:text-gray-400">Pilihan Ganda:</span>
+                                    <button
+                                        onClick={() => {
+                                            setIsKanjiMultipleChoice(!isKanjiMultipleChoice);
+                                            setIsKanjiFlipMode(false);
+                                            setFlippedKanjiCards(new Set());
+                                            setKanjiAnswers({});
+                                            setShowKanjiResults({});
+                                            setKanjiOptions({});
+                                        }}
+                                        className={`px-4 py-2 rounded-lg font-semibold transition ${
+                                            isKanjiMultipleChoice
+                                                ? 'bg-orange-500 text-white'
+                                                : 'bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300'
+                                        }`}
+                                    >
+                                        {isKanjiMultipleChoice ? 'Aktif' : 'Nonaktif'}
+                                    </button>
+                                </div>
                             </div>
                         </div>
                         <div className="flex flex-col gap-6">
-                            {sprintData.kanji.map((item, index) => (
-                                <div 
-                                    key={index} 
-                                    className={`bg-white dark:bg-gray-800 rounded-xl shadow flex flex-col sm:flex-row p-5 border-l-8 border-orange-400 ${
-                                        isKanjiFlipMode ? 'cursor-pointer hover:shadow-lg transition-shadow' : ''
-                                    }`}
-                                    onClick={() => {
-                                        if (isKanjiFlipMode) {
-                                            const newFlipped = new Set(flippedKanjiCards);
-                                            if (newFlipped.has(index)) {
-                                                newFlipped.delete(index);
-                                            } else {
-                                                newFlipped.add(index);
+                            {sprintData.kanji.map((item, index) => {
+                                const multipleChoiceOptions = kanjiOptions[index] || [];
+                                
+                                return (
+                                    <div 
+                                        key={index} 
+                                        className={`bg-white dark:bg-gray-800 rounded-xl shadow flex flex-col sm:flex-row p-5 border-l-8 border-orange-400 ${
+                                            isKanjiFlipMode ? 'cursor-pointer hover:shadow-lg transition-shadow' : ''
+                                        }`}
+                                        onClick={() => {
+                                            if (isKanjiFlipMode) {
+                                                const newFlipped = new Set(flippedKanjiCards);
+                                                if (newFlipped.has(index)) {
+                                                    newFlipped.delete(index);
+                                                } else {
+                                                    newFlipped.add(index);
+                                                }
+                                                setFlippedKanjiCards(newFlipped);
                                             }
-                                            setFlippedKanjiCards(newFlipped);
-                                        }
-                                    }}
-                                >
-                                    {!isKanjiFlipMode || !flippedKanjiCards.has(index) ? (
-                                        // Front side - Kanji
-                                        <>
-                                            <div className="flex-shrink-0 flex flex-col items-center justify-center mr-6 mb-4 sm:mb-0">
-                                                <div className="text-orange-500 text-5xl font-bold jp-font mb-1">{item.kanji}</div>
-                                                {isKanjiFlipMode && (
-                                                    <div className="text-xs text-gray-500 dark:text-gray-400 mt-2">Klik untuk lihat jawaban</div>
+                                        }}
+                                    >
+                                        {isKanjiMultipleChoice && multipleChoiceOptions.length > 0 ? (
+                                            // Multiple Choice Mode
+                                            <>
+                                                <div className="flex-shrink-0 flex flex-col items-center justify-center mr-6 mb-4 sm:mb-0">
+                                                    <div className="text-orange-500 text-5xl font-bold jp-font mb-1">{item.kanji}</div>
+                                                    <div className="text-xs text-gray-500 dark:text-gray-400 mt-2">Pilih arti yang benar</div>
+                                                </div>
+                                                <div className="flex-1">
+                                                    <div className="mb-4">
+                                                        <span className="block text-base font-bold text-gray-800 dark:text-gray-200 mb-3">Apa arti dari kanji ini?</span>
+                                                        <div className="grid grid-cols-1 gap-2">
+                                                            {multipleChoiceOptions.map((option, optionIndex) => {
+                                                                const isSelected = kanjiAnswers[index] === option;
+                                                                const isCorrect = option === item.arti;
+                                                                const showResult = showKanjiResults[index];
+                                                                
+                                                                let buttonClass = 'w-full text-left p-3 rounded-lg border transition-all ';
+                                                                if (!showResult) {
+                                                                    buttonClass += isSelected 
+                                                                        ? 'bg-orange-100 dark:bg-orange-900 border-orange-300 dark:border-orange-600 text-orange-700 dark:text-orange-300' 
+                                                                        : 'bg-gray-50 dark:bg-gray-700 border-gray-200 dark:border-gray-600 hover:bg-gray-100 dark:hover:bg-gray-600';
+                                                                } else {
+                                                                    if (isCorrect) {
+                                                                        buttonClass += 'bg-green-100 dark:bg-green-900 border-green-300 dark:border-green-600 text-green-700 dark:text-green-300';
+                                                                    } else if (isSelected) {
+                                                                        buttonClass += 'bg-red-100 dark:bg-red-900 border-red-300 dark:border-red-600 text-red-700 dark:text-red-300';
+                                                                    } else {
+                                                                        buttonClass += 'bg-gray-50 dark:bg-gray-700 border-gray-200 dark:border-gray-600 opacity-50';
+                                                                    }
+                                                                }
+                                                                
+                                                                return (
+                                                                    <button
+                                                                        key={optionIndex}
+                                                                        onClick={(e) => {
+                                                                            e.stopPropagation();
+                                                                            if (!showResult) {
+                                                                                handleKanjiAnswer(index, option);
+                                                                            }
+                                                                        }}
+                                                                        className={buttonClass}
+                                                                        disabled={showResult}
+                                                                    >
+                                                                        <div className="flex items-center justify-between">
+                                                                            <span>{option}</span>
+                                                                            {showResult && isCorrect && <span className="text-green-600 dark:text-green-400">✓</span>}
+                                                                            {showResult && isSelected && !isCorrect && <span className="text-red-600 dark:text-red-400">✗</span>}
+                                                                        </div>
+                                                                    </button>
+                                                                );
+                                                            })}
+                                                        </div>
+                                                    </div>
+                                                    {showKanjiResults[index] && (
+                                                        <div className="mt-4 p-4 bg-blue-50 dark:bg-blue-900 rounded-lg">
+                                                            <div className="mb-1 flex-col flex-wrap gap-2">
+                                                                <span className="block text-sm font-bold text-gray-800 dark:text-gray-200">Onyomi:
+                                                                    <span className="ml-1 px-2 py-0.5 rounded bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 font-mono text-xs">{item.onyomi}</span>
+                                                                </span>
+                                                                <span className="block text-sm font-bold text-gray-800 dark:text-gray-200">Kunyomi:
+                                                                    <span className="ml-1 px-2 py-0.5 rounded bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300 font-mono text-xs">{item.kunyomi}</span>
+                                                                </span>
+                                                            </div>
+                                                            <div className="mt-2">
+                                                                <span className="block text-xs font-bold text-orange-700 dark:text-orange-400 mb-1">Jembatan Keledai Visual:</span>
+                                                                <span className="text-xs text-gray-700 dark:text-gray-300">{item.mnemonic}</span>
+                                                            </div>
+                                                        </div>
+                                                    )}
+                                                </div>
+                                            </>
+                                        ) : !isKanjiFlipMode || !flippedKanjiCards.has(index) ? (
+                                            // Front side - Kanji (Normal mode)
+                                            <>
+                                                <div className="flex-shrink-0 flex flex-col items-center justify-center mr-6 mb-4 sm:mb-0">
+                                                    <div className="text-orange-500 text-5xl font-bold jp-font mb-1">{item.kanji}</div>
+                                                    {isKanjiFlipMode && (
+                                                        <div className="text-xs text-gray-500 dark:text-gray-400 mt-2">Klik untuk lihat jawaban</div>
+                                                    )}
+                                                </div>
+                                                {!isKanjiFlipMode && (
+                                                    <div className="flex-1">
+                                                        <div className="mb-1 flex-col flex-wrap gap-2 items-center">
+                                                            <span className="block text-base font-bold text-gray-800 dark:text-gray-200">Onyomi:
+                                                                <span className="ml-1 px-2 py-0.5 rounded bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 font-mono text-sm">{item.onyomi}</span>
+                                                            </span>
+                                                            <span className="block text-base font-bold text-gray-800 dark:text-gray-200">Kunyomi:
+                                                                <span className="ml-1 px-2 py-0.5 rounded bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300 font-mono text-sm">{item.kunyomi}</span>
+                                                            </span>
+                                                            <span className="block text-base font-bold text-gray-800 dark:text-gray-200">Arti:
+                                                                <span className="ml-1 px-2 py-0.5 rounded bg-yellow-100 dark:bg-yellow-900 text-yellow-700 dark:text-yellow-300 font-mono text-sm">{item.arti}</span>
+                                                            </span>
+                                                        </div>
+                                                        <div className="mb-2">
+                                                            <span className="block text-sm font-bold text-orange-700 dark:text-orange-400 mb-1">Jembatan Keledai Visual:</span>
+                                                            <span className="text-sm text-gray-700 dark:text-gray-300">{item.mnemonic}</span>
+                                                        </div>
+                                                        <div className="border-t border-gray-200 dark:border-gray-700 pt-2 mt-2">
+                                                            <span className="block text-xs font-bold text-gray-500 dark:text-gray-400 mb-1">Contoh:</span>
+                                                            <div className="text-lg jp-font text-gray-500 dark:text-gray-400 font-normal leading-tight">
+                                                                <Furigana htmlString={item.example.jp} className="text-base" rtClass="furigana-bold" boldMain={true} />
+                                                            </div>
+                                                            <div className="text-xs text-gray-600 dark:text-gray-400 mt-1">{item.example.romaji}</div>
+                                                            {item.example.id && (
+                                                                <div className="text-xs text-green-700 dark:text-green-400 mt-1 italic">{item.example.id}</div>
+                                                            )}
+                                                        </div>
+                                                    </div>
                                                 )}
-                                            </div>
-                                            {!isKanjiFlipMode && (
+                                            </>
+                                        ) : (
+                                            // Back side - Answer (keep original layout)
+                                            <>
+                                                <div className="flex-shrink-0 flex flex-col items-center justify-center mr-6 mb-4 sm:mb-0">
+                                                    <div className="text-orange-500 text-3xl font-bold jp-font mb-1">{item.kanji}</div>
+                                                    <div className="text-xs text-gray-500 dark:text-gray-400 mt-2">Klik lagi untuk kembali</div>
+                                                </div>
                                                 <div className="flex-1">
                                                     <div className="mb-1 flex-col flex-wrap gap-2 items-center">
                                                         <span className="block text-base font-bold text-gray-800 dark:text-gray-200">Onyomi:
@@ -292,46 +507,11 @@ export default function DailySprintClient({ sprintData, day, availableDays, sett
                                                         )}
                                                     </div>
                                                 </div>
-                                            )}
-                                        </>
-                                    ) : (
-                                        // Back side - Answer (keep original layout)
-                                        <>
-                                            <div className="flex-shrink-0 flex flex-col items-center justify-center mr-6 mb-4 sm:mb-0">
-                                                <div className="text-orange-500 text-3xl font-bold jp-font mb-1">{item.kanji}</div>
-                                                <div className="text-xs text-gray-500 dark:text-gray-400 mt-2">Klik lagi untuk kembali</div>
-                                            </div>
-                                            <div className="flex-1">
-                                                <div className="mb-1 flex-col flex-wrap gap-2 items-center">
-                                                    <span className="block text-base font-bold text-gray-800 dark:text-gray-200">Onyomi:
-                                                        <span className="ml-1 px-2 py-0.5 rounded bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 font-mono text-sm">{item.onyomi}</span>
-                                                    </span>
-                                                    <span className="block text-base font-bold text-gray-800 dark:text-gray-200">Kunyomi:
-                                                        <span className="ml-1 px-2 py-0.5 rounded bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300 font-mono text-sm">{item.kunyomi}</span>
-                                                    </span>
-                                                    <span className="block text-base font-bold text-gray-800 dark:text-gray-200">Arti:
-                                                        <span className="ml-1 px-2 py-0.5 rounded bg-yellow-100 dark:bg-yellow-900 text-yellow-700 dark:text-yellow-300 font-mono text-sm">{item.arti}</span>
-                                                    </span>
-                                                </div>
-                                                <div className="mb-2">
-                                                    <span className="block text-sm font-bold text-orange-700 dark:text-orange-400 mb-1">Jembatan Keledai Visual:</span>
-                                                    <span className="text-sm text-gray-700 dark:text-gray-300">{item.mnemonic}</span>
-                                                </div>
-                                                <div className="border-t border-gray-200 dark:border-gray-700 pt-2 mt-2">
-                                                    <span className="block text-xs font-bold text-gray-500 dark:text-gray-400 mb-1">Contoh:</span>
-                                                    <div className="text-lg jp-font text-gray-500 dark:text-gray-400 font-normal leading-tight">
-                                                        <Furigana htmlString={item.example.jp} className="text-base" rtClass="furigana-bold" boldMain={true} />
-                                                    </div>
-                                                    <div className="text-xs text-gray-600 dark:text-gray-400 mt-1">{item.example.romaji}</div>
-                                                    {item.example.id && (
-                                                        <div className="text-xs text-green-700 dark:text-green-400 mt-1 italic">{item.example.id}</div>
-                                                    )}
-                                                </div>
-                                            </div>
-                                        </>
-                                    )}
-                                </div>
-                            ))}
+                                            </>
+                                        )}
+                                    </div>
+                                );
+                            })}
                         </div>
                     </section>
                 )}
@@ -341,21 +521,47 @@ export default function DailySprintClient({ sprintData, day, availableDays, sett
                     <section id="vocabulary" className={`mb-12 rounded-xl p-4 sm:p-6 ${getHeaderBgColor('vocabulary')} dark:bg-gray-800`}> 
                         <div className="flex items-center justify-between mb-4">
                             <h2 className={`text-2xl sm:text-3xl font-bold border-l-8 border-${colors.noun}-500 pl-4 text-gray-700 dark:text-gray-300`}>🔵🟢 Kosakata</h2>
-                            <div className="flex items-center gap-2">
-                                <span className="text-sm text-gray-600 dark:text-gray-400">Mode Hafalan:</span>
-                                <button
-                                    onClick={() => {
-                                        setIsVocabFlipMode(!isVocabFlipMode);
-                                        setFlippedVocabCards(new Set());
-                                    }}
-                                    className={`px-4 py-2 rounded-lg font-semibold transition ${
-                                        isVocabFlipMode
-                                            ? 'bg-blue-500 text-white'
-                                            : 'bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300'
-                                    }`}
-                                >
-                                    {isVocabFlipMode ? 'Aktif' : 'Nonaktif'}
-                                </button>
+                            <div className="flex items-center gap-4">
+                                <div className="flex items-center gap-2">
+                                    <span className="text-sm text-gray-600 dark:text-gray-400">Mode Hafalan:</span>
+                                    <button
+                                        onClick={() => {
+                                            setIsVocabFlipMode(!isVocabFlipMode);
+                                            setFlippedVocabCards(new Set());
+                                            setIsVocabMultipleChoice(false);
+                                            setVocabAnswers({});
+                                            setShowVocabResults({});
+                                            setVocabOptions({});
+                                        }}
+                                        className={`px-4 py-2 rounded-lg font-semibold transition ${
+                                            isVocabFlipMode
+                                                ? 'bg-blue-500 text-white'
+                                                : 'bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300'
+                                        }`}
+                                    >
+                                        {isVocabFlipMode ? 'Aktif' : 'Nonaktif'}
+                                    </button>
+                                </div>
+                                <div className="flex items-center gap-2">
+                                    <span className="text-sm text-gray-600 dark:text-gray-400">Pilihan Ganda:</span>
+                                    <button
+                                        onClick={() => {
+                                            setIsVocabMultipleChoice(!isVocabMultipleChoice);
+                                            setIsVocabFlipMode(false);
+                                            setFlippedVocabCards(new Set());
+                                            setVocabAnswers({});
+                                            setShowVocabResults({});
+                                            setVocabOptions({});
+                                        }}
+                                        className={`px-4 py-2 rounded-lg font-semibold transition ${
+                                            isVocabMultipleChoice
+                                                ? 'bg-blue-500 text-white'
+                                                : 'bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300'
+                                        }`}
+                                    >
+                                        {isVocabMultipleChoice ? 'Aktif' : 'Nonaktif'}
+                                    </button>
+                                </div>
                             </div>
                         </div>
                         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
@@ -390,6 +596,13 @@ export default function DailySprintClient({ sprintData, day, availableDays, sett
                                     typeLabelColor = 'bg-gray-100 text-gray-700';
                                     textColor = 'text-gray-700 dark:text-gray-300';
                                 }
+                                
+                                const multipleChoiceOptions = vocabOptions[index] || [];
+                                const correctMeaning = (() => {
+                                    const match = item.reading_meaning.match(/\(([^)]+)\)/);
+                                    return match ? match[1] : '';
+                                })();
+                                
                                 return (
                                     <div 
                                         key={index} 
@@ -408,8 +621,83 @@ export default function DailySprintClient({ sprintData, day, availableDays, sett
                                             }
                                         }}
                                     >
-                                        {!isVocabFlipMode || !flippedVocabCards.has(index) ? (
-                                            // Front side - Vocabulary
+                                        {isVocabMultipleChoice && multipleChoiceOptions.length > 0 ? (
+                                            // Multiple Choice Mode
+                                            <>
+                                                <span className={`absolute right-4 top-4 px-3 py-1 rounded-full text-xs font-semibold ${typeLabelColor} dark:bg-gray-700 dark:text-gray-300`}>{typeLabel}</span>
+                                                <div className="mb-2">
+                                                    <div className={`jp-font ${textColor} leading-tight text-2xl sm:text-3xl font-bold text-center w-full mb-2`}> 
+                                                        <Furigana 
+                                                            htmlString={item.vocab} 
+                                                            className={'text-2xl sm:text-3xl' } 
+                                                            rtClass="furigana-bold" 
+                                                            boldMain={true} 
+                                                        />
+                                                    </div>
+                                                    <div className="text-xs text-gray-500 dark:text-gray-400 mb-3 text-center">Pilih arti yang benar</div>
+                                                </div>
+                                                
+                                                <div className="flex-1 flex flex-col">
+                                                    <div className="grid grid-cols-1 gap-2 mb-4">
+                                                        {multipleChoiceOptions.map((option, optionIndex) => {
+                                                            const isSelected = vocabAnswers[index] === option;
+                                                            const isCorrect = option === correctMeaning;
+                                                            const showResult = showVocabResults[index];
+                                                            
+                                                            let buttonClass = 'w-full text-left p-2 rounded-lg border transition-all text-sm ';
+                                                            if (!showResult) {
+                                                                buttonClass += isSelected 
+                                                                    ? 'bg-blue-100 dark:bg-blue-900 border-blue-300 dark:border-blue-600 text-blue-700 dark:text-blue-300' 
+                                                                    : 'bg-gray-50 dark:bg-gray-700 border-gray-200 dark:border-gray-600 hover:bg-gray-100 dark:hover:bg-gray-600';
+                                                            } else {
+                                                                if (isCorrect) {
+                                                                    buttonClass += 'bg-green-100 dark:bg-green-900 border-green-300 dark:border-green-600 text-green-700 dark:text-green-300';
+                                                                } else if (isSelected) {
+                                                                    buttonClass += 'bg-red-100 dark:bg-red-900 border-red-300 dark:border-red-600 text-red-700 dark:text-red-300';
+                                                                } else {
+                                                                    buttonClass += 'bg-gray-50 dark:bg-gray-700 border-gray-200 dark:border-gray-600 opacity-50';
+                                                                }
+                                                            }
+                                                            
+                                                            return (
+                                                                <button
+                                                                    key={optionIndex}
+                                                                    onClick={(e) => {
+                                                                        e.stopPropagation();
+                                                                        if (!showResult) {
+                                                                            handleVocabAnswer(index, option);
+                                                                        }
+                                                                    }}
+                                                                    className={buttonClass}
+                                                                    disabled={showResult}
+                                                                >
+                                                                    <div className="flex items-center justify-between">
+                                                                        <span>{option}</span>
+                                                                        {showResult && isCorrect && <span className="text-green-600 dark:text-green-400">✓</span>}
+                                                                        {showResult && isSelected && !isCorrect && <span className="text-red-600 dark:text-red-400">✗</span>}
+                                                                    </div>
+                                                                </button>
+                                                            );
+                                                        })}
+                                                    </div>
+                                                    
+                                                    {showVocabResults[index] && (
+                                                        <div className="mt-auto p-3 bg-blue-50 dark:bg-blue-900 rounded-lg">
+                                                            <div className="text-xs text-gray-700 dark:text-gray-300 mb-1">
+                                                                <Furigana htmlString={item.reading_meaning.replace(/\(.+\)/, '').trim()} />
+                                                            </div>
+                                                            <div className="text-xs text-gray-600 dark:text-gray-400 mb-2">
+                                                                Visual: {item.mnemonic}
+                                                            </div>
+                                                            <div className="text-xs text-gray-600 dark:text-gray-400">
+                                                                Contoh: {item.example.romaji}
+                                                            </div>
+                                                        </div>
+                                                    )}
+                                                </div>
+                                            </>
+                                        ) : !isVocabFlipMode || !flippedVocabCards.has(index) ? (
+                                            // Front side - Vocabulary (Normal mode)
                                             <>
                                                 <span className={`absolute right-4 top-4 px-3 py-1 rounded-full text-xs font-semibold ${typeLabelColor} dark:bg-gray-700 dark:text-gray-300`}>{typeLabel}</span>
                                                 <div className="mb-2">
@@ -443,12 +731,7 @@ export default function DailySprintClient({ sprintData, day, availableDays, sett
                                                                 <Furigana htmlString={item.reading_meaning.replace(/\(.+\)/, '').trim()} />
                                                             </div>
                                                             <div className="text-base font-semibold text-gray-800 dark:text-gray-200 mb-2">
-                                                                Arti: {
-                                                                    (() => {
-                                                                        const match = item.reading_meaning.match(/\(([^)]+)\)/);
-                                                                        return match ? match[1] : '';
-                                                                    })()
-                                                                }
+                                                                Arti: {correctMeaning}
                                                             </div>
                                                         </>
                                                     )}
@@ -488,12 +771,7 @@ export default function DailySprintClient({ sprintData, day, availableDays, sett
                                                     <Furigana htmlString={item.reading_meaning.replace(/\(.+\)/, '').trim()} />
                                                 </div>
                                                 <div className="text-base font-semibold text-gray-800 dark:text-gray-200 mb-2">
-                                                    Arti: {
-                                                        (() => {
-                                                            const match = item.reading_meaning.match(/\(([^)]+)\)/);
-                                                            return match ? match[1] : '';
-                                                        })()
-                                                    }
+                                                    Arti: {correctMeaning}
                                                 </div>
                                                 <div className="mb-2">
                                                     <span className="block text-xs font-bold text-gray-500 dark:text-gray-400 mb-1">Visual:</span>
