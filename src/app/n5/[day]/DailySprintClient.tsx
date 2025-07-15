@@ -294,13 +294,13 @@ export default function DailySprintClient({ sprintData, day, availableDays, sett
                 {/* Kanji */}
                 {sprintData.kanji && sprintData.kanji.length > 0 && (
                     <section id="kanji" className="mb-12">
-                        <div className="flex items-center justify-between mb-4">
-                            <h2 className="text-2xl sm:text-3xl font-bold border-l-8 border-orange-500 pl-4 text-gray-700 dark:text-gray-300 flex items-center gap-2">
+                        <div className="mb-4">
+                            <h2 className="text-2xl sm:text-3xl font-bold border-l-8 border-orange-500 pl-4 text-gray-700 dark:text-gray-300 flex items-center gap-2 mb-4">
                                 <span className="text-orange-500 text-2xl">🟠</span> Kanji
                             </h2>
-                            <div className="flex items-center gap-4">
+                            <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4">
                                 <div className="flex items-center gap-2">
-                                    <span className="text-sm text-gray-600 dark:text-gray-400">Mode Hafalan:</span>
+                                    <span className="text-sm text-gray-600 dark:text-gray-400 hidden sm:inline">Mode Hafalan:</span>
                                     <button
                                         onClick={() => {
                                             setIsKanjiFlipMode(!isKanjiFlipMode);
@@ -310,17 +310,18 @@ export default function DailySprintClient({ sprintData, day, availableDays, sett
                                             setShowKanjiResults({});
                                             setKanjiOptions({});
                                         }}
-                                        className={`px-4 py-2 rounded-lg font-semibold transition ${
+                                        className={`px-3 py-2 rounded-lg font-semibold transition text-sm ${
                                             isKanjiFlipMode
                                                 ? 'bg-orange-500 text-white'
                                                 : 'bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300'
                                         }`}
                                     >
-                                        {isKanjiFlipMode ? 'Aktif' : 'Nonaktif'}
+                                        <span className="sm:hidden">🔄 </span>
+                                        {isKanjiFlipMode ? 'Hafalan ON' : 'Hafalan OFF'}
                                     </button>
                                 </div>
                                 <div className="flex items-center gap-2">
-                                    <span className="text-sm text-gray-600 dark:text-gray-400">Pilihan Ganda:</span>
+                                    <span className="text-sm text-gray-600 dark:text-gray-400 hidden sm:inline">Pilihan Ganda:</span>
                                     <button
                                         onClick={() => {
                                             setIsKanjiMultipleChoice(!isKanjiMultipleChoice);
@@ -330,13 +331,14 @@ export default function DailySprintClient({ sprintData, day, availableDays, sett
                                             setShowKanjiResults({});
                                             setKanjiOptions({});
                                         }}
-                                        className={`px-4 py-2 rounded-lg font-semibold transition ${
+                                        className={`px-3 py-2 rounded-lg font-semibold transition text-sm ${
                                             isKanjiMultipleChoice
                                                 ? 'bg-orange-500 text-white'
                                                 : 'bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300'
                                         }`}
                                     >
-                                        {isKanjiMultipleChoice ? 'Aktif' : 'Nonaktif'}
+                                        <span className="sm:hidden">📝 </span>
+                                        {isKanjiMultipleChoice ? 'Quiz ON' : 'Quiz OFF'}
                                     </button>
                                 </div>
                             </div>
@@ -519,11 +521,11 @@ export default function DailySprintClient({ sprintData, day, availableDays, sett
                 {/* Kosakata */}
                 {sprintData.vocabulary && sprintData.vocabulary.length > 0 && (
                     <section id="vocabulary" className={`mb-12 rounded-xl p-4 sm:p-6 ${getHeaderBgColor('vocabulary')} dark:bg-gray-800`}> 
-                        <div className="flex items-center justify-between mb-4">
-                            <h2 className={`text-2xl sm:text-3xl font-bold border-l-8 border-${colors.noun}-500 pl-4 text-gray-700 dark:text-gray-300`}>🔵🟢 Kosakata</h2>
-                            <div className="flex items-center gap-4">
+                        <div className="mb-4">
+                            <h2 className={`text-2xl sm:text-3xl font-bold border-l-8 border-${colors.noun}-500 pl-4 text-gray-700 dark:text-gray-300 mb-4`}>🔵🟢 Kosakata</h2>
+                            <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4">
                                 <div className="flex items-center gap-2">
-                                    <span className="text-sm text-gray-600 dark:text-gray-400">Mode Hafalan:</span>
+                                    <span className="text-sm text-gray-600 dark:text-gray-400 hidden sm:inline">Mode Hafalan:</span>
                                     <button
                                         onClick={() => {
                                             setIsVocabFlipMode(!isVocabFlipMode);
@@ -533,17 +535,18 @@ export default function DailySprintClient({ sprintData, day, availableDays, sett
                                             setShowVocabResults({});
                                             setVocabOptions({});
                                         }}
-                                        className={`px-4 py-2 rounded-lg font-semibold transition ${
+                                        className={`px-3 py-2 rounded-lg font-semibold transition text-sm ${
                                             isVocabFlipMode
                                                 ? 'bg-blue-500 text-white'
                                                 : 'bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300'
                                         }`}
                                     >
-                                        {isVocabFlipMode ? 'Aktif' : 'Nonaktif'}
+                                        <span className="sm:hidden">🔄 </span>
+                                        {isVocabFlipMode ? 'Hafalan ON' : 'Hafalan OFF'}
                                     </button>
                                 </div>
                                 <div className="flex items-center gap-2">
-                                    <span className="text-sm text-gray-600 dark:text-gray-400">Pilihan Ganda:</span>
+                                    <span className="text-sm text-gray-600 dark:text-gray-400 hidden sm:inline">Pilihan Ganda:</span>
                                     <button
                                         onClick={() => {
                                             setIsVocabMultipleChoice(!isVocabMultipleChoice);
@@ -553,13 +556,14 @@ export default function DailySprintClient({ sprintData, day, availableDays, sett
                                             setShowVocabResults({});
                                             setVocabOptions({});
                                         }}
-                                        className={`px-4 py-2 rounded-lg font-semibold transition ${
+                                        className={`px-3 py-2 rounded-lg font-semibold transition text-sm ${
                                             isVocabMultipleChoice
                                                 ? 'bg-blue-500 text-white'
                                                 : 'bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300'
                                         }`}
                                     >
-                                        {isVocabMultipleChoice ? 'Aktif' : 'Nonaktif'}
+                                        <span className="sm:hidden">📝 </span>
+                                        {isVocabMultipleChoice ? 'Quiz ON' : 'Quiz OFF'}
                                     </button>
                                 </div>
                             </div>
