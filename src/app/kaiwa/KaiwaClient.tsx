@@ -128,7 +128,6 @@ export default function KaiwaClient({ conversationData }: KaiwaClientProps) {
   const [showRomaji, setShowRomaji] = useState<{[key: number]: boolean}>({});
   const [autoPlay, setAutoPlay] = useState(false);
   const [playSpeed, setPlaySpeed] = useState(1.0);
-  const [currentLineIndex, setCurrentLineIndex] = useState(0);
   const [selectedLevel, setSelectedLevel] = useState<string>('All');
   const [searchTerm, setSearchTerm] = useState<string>('');
   const [availableVoices, setAvailableVoices] = useState<SpeechSynthesisVoice[]>([]);
@@ -390,7 +389,6 @@ export default function KaiwaClient({ conversationData }: KaiwaClientProps) {
     const conversation = conversationData.find(c => c.id === selectedConversation);
     if (!conversation) return;
 
-    setCurrentLineIndex(0);
     playAudio(conversation.conversation[0].japanese, 0);
   }, [selectedConversation, conversationData, playAudio]);
 
