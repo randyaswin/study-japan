@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import PWAInstaller from "@/components/PWAInstaller";
+import { StudyProvider } from "@/lib/StudyContext";
 
 // Import Google Fonts via <link> in <head> (Noto Sans JP & Inter)
 
@@ -87,7 +88,9 @@ export default function RootLayout({
       </head>
       <body>
         <PWAInstaller />
-        {children}
+        <StudyProvider>
+          {children}
+        </StudyProvider>
       </body>
     </html>
   );
