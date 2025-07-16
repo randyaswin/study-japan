@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useCallback } from 'react';
-
+import Link from 'next/link';
 import { useSettings, useN5, useFlipMode, useMultipleChoice } from '@/lib/StudyContext';
 
 // Komponen untuk me-render furigana dengan benar
@@ -298,6 +298,7 @@ export default function N5HomeClient({ kanjiData, vocabData, grammarData }: N5Ho
                                         <button
                                             onClick={() => {
                                                 toggleKanjiFlipMode();
+                                                toggleKanjiMultipleChoice(false); // Turn off multiple choice when switching to flip mode
                                                 resetKanjiAnswers();
                                                 setKanjiOptions({});
                                             }}
@@ -316,6 +317,7 @@ export default function N5HomeClient({ kanjiData, vocabData, grammarData }: N5Ho
                                         <button
                                             onClick={() => {
                                                 toggleKanjiMultipleChoice();
+                                                toggleKanjiFlipMode(false); // Turn off flip mode when switching to multiple choice
                                                 resetKanjiAnswers();
                                                 setKanjiOptions({});
                                             }}
@@ -485,6 +487,7 @@ export default function N5HomeClient({ kanjiData, vocabData, grammarData }: N5Ho
                                         <button
                                             onClick={() => {
                                                 toggleVocabFlipMode();
+                                                toggleVocabMultipleChoice(false); // Turn off multiple choice when switching to flip mode
                                                 resetVocabAnswers();
                                                 setVocabOptions({});
                                             }}
@@ -503,6 +506,7 @@ export default function N5HomeClient({ kanjiData, vocabData, grammarData }: N5Ho
                                         <button
                                             onClick={() => {
                                                 toggleVocabMultipleChoice();
+                                                toggleVocabFlipMode(false); // Turn off flip mode when switching to multiple choice
                                                 resetVocabAnswers();
                                                 setVocabOptions({});
                                             }}
@@ -568,7 +572,7 @@ export default function N5HomeClient({ kanjiData, vocabData, grammarData }: N5Ho
                                                 <>
                                                     <span className={`absolute right-4 top-4 px-3 py-1 rounded-full text-xs font-semibold ${typeLabelColor} `}>{typeLabel}</span>
                                                     <div className="mb-2">
-                                                        <div className={`jp-font ${textColor} leading-tight text-2xl sm:text-3xl font-bold text-center w-full mb-2`}> 
+                                                        <div className={`jp-font ${textColor} leading-tight text-2xl sm:text-3xl font-bold w-full mb-2 mt-6`}> 
                                                             <Furigana 
                                                                 htmlString={item.vocab} 
                                                                 className={'text-2xl sm:text-3xl' } 
@@ -792,30 +796,37 @@ export default function N5HomeClient({ kanjiData, vocabData, grammarData }: N5Ho
     // Home view - page selection and settings
     return (
         <div className="bg-gray-50 dark:bg-gray-900 min-h-screen">
+            
             <div className="container mx-auto p-4 sm:p-8 font-sans">
                 <header className="text-center mb-10">
                     <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 dark:text-gray-100">Belajar JLPT N5</h1>
                     <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 mt-2">Pilih halaman dan pengaturan untuk mulai belajar</p>
                 </header>
+                {/* Back to Home navigation */}
+                <div className="mb-6 flex justify-start">
+                <Link href="/" className="inline-flex items-center gap-2 px-4 py-2 rounded bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200 font-semibold hover:bg-gray-300 dark:hover:bg-gray-600 transition">
+                    <span>←</span> Back to Home
+                </Link>
+                </div>
 
                 {/* Settings Section */}
-                <div className="mb-8 flex justify-center">
-                    <div className="bg-white dark:bg-gray-800 rounded-xl shadow p-6 border-t-4 border-orange-300 max-w-4xl w-full">
+                <div className="mb-8 flex justify-left">
+                    <div className="bg-white dark:bg-gray-800 shadow p-2 w-2xs">
                         <button
                             onClick={() => setIsSettingsCollapsed(!isSettingsCollapsed)}
-                            className="w-full flex items-center justify-between text-left focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 rounded-lg p-2 -m-2"
+                            className="w-full flex items-center justify-between text-left focus:outline-none focus:ring-2 rounded-lg p-2 -m-2"
                         >
                             <h2 className="text-xl font-bold text-gray-700 dark:text-gray-300">
-                                <span className="text-orange-500">⚙️</span> Pengaturan Studi
+                                <span className="text-orange-500">⚙️</span> Pengaturan
                             </h2>
-                            <span className={`transform transition-transform duration-200 text-gray-500 dark:text-gray-400 ${isSettingsCollapsed ? 'rotate-180' : ''}`}>
+                            <span className={`transform transition-transform duration-200 text-gray-500 dark:text-gray-400 ${isSettingsCollapsed ? 'rotate-270' : ''}`}>
                                 ▼
                             </span>
                         </button>
                         
                         {!isSettingsCollapsed && (
                             <div className="mt-4 pt-4 border-t border-gray-200 dark:border-gray-700">
-                                <div className="flex flex-wrap gap-6 items-end justify-center">
+                                <div className="flex flex-col gap-6 items-left justify-center">
                                     <div className="flex items-center gap-2">
                                         <label className="text-sm font-medium text-gray-700 dark:text-gray-300 whitespace-nowrap">
                                             Kanji:

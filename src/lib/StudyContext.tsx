@@ -71,12 +71,12 @@ type StudyAction =
     | { type: 'SET_N5_DATA'; payload: Partial<StudyState['n5Data']> }
     | { type: 'SET_N5_CURRENT_PAGE'; payload: number }
     | { type: 'SET_N5_VIEW_MODE'; payload: 'home' | 'study' }
-    | { type: 'TOGGLE_KANJI_FLIP_MODE' }
-    | { type: 'TOGGLE_VOCAB_FLIP_MODE' }
+    | { type: 'TOGGLE_KANJI_FLIP_MODE'; payload?: boolean | undefined }
+    | { type: 'TOGGLE_VOCAB_FLIP_MODE'; payload?: boolean | undefined }
     | { type: 'TOGGLE_KANJI_CARD'; payload: number }
     | { type: 'TOGGLE_VOCAB_CARD'; payload: number }
-    | { type: 'TOGGLE_KANJI_MULTIPLE_CHOICE' }
-    | { type: 'TOGGLE_VOCAB_MULTIPLE_CHOICE' }
+    | { type: 'TOGGLE_KANJI_MULTIPLE_CHOICE'; payload: boolean | undefined }
+    | { type: 'TOGGLE_VOCAB_MULTIPLE_CHOICE'; payload: boolean | undefined }
     | { type: 'SET_KANJI_ANSWER'; payload: { cardIndex: number; answer: string } }
     | { type: 'SET_VOCAB_ANSWER'; payload: { cardIndex: number; answer: string } }
     | { type: 'RESET_KANJI_ANSWERS' }
@@ -227,7 +227,7 @@ function studyReducer(state: StudyState, action: StudyAction): StudyState {
                 ...state,
                 flipModes: {
                     ...state.flipModes,
-                    kanjiFlipMode: !state.flipModes.kanjiFlipMode,
+                    kanjiFlipMode: action.payload !== undefined ? action.payload : !state.flipModes.kanjiFlipMode,  
                     flippedKanjiCards: new Set() // Reset flipped cards
                 }
             };
@@ -237,7 +237,7 @@ function studyReducer(state: StudyState, action: StudyAction): StudyState {
                 ...state,
                 flipModes: {
                     ...state.flipModes,
-                    vocabFlipMode: !state.flipModes.vocabFlipMode,
+                    vocabFlipMode: action.payload !== undefined ? action.payload : !state.flipModes.vocabFlipMode,
                     flippedVocabCards: new Set() // Reset flipped cards
                 }
             };
@@ -277,7 +277,7 @@ function studyReducer(state: StudyState, action: StudyAction): StudyState {
                 ...state,
                 multipleChoiceModes: {
                     ...state.multipleChoiceModes,
-                    kanjiMultipleChoice: !state.multipleChoiceModes.kanjiMultipleChoice,
+                    kanjiMultipleChoice: action.payload !== undefined ? action.payload : !state.multipleChoiceModes.kanjiMultipleChoice,
                     kanjiAnswers: {},
                     showKanjiResults: {}
                 }
@@ -288,7 +288,7 @@ function studyReducer(state: StudyState, action: StudyAction): StudyState {
                 ...state,
                 multipleChoiceModes: {
                     ...state.multipleChoiceModes,
-                    vocabMultipleChoice: !state.multipleChoiceModes.vocabMultipleChoice,
+                    vocabMultipleChoice: action.payload !== undefined ? action.payload : !state.multipleChoiceModes.vocabMultipleChoice,
                     vocabAnswers: {},
                     showVocabResults: {}
                 }
@@ -514,12 +514,12 @@ export function usePagination() {
 export function useFlipMode() {
     const { state, dispatch } = useStudy();
     
-    const toggleKanjiFlipMode = useCallback(() => {
-        dispatch({ type: 'TOGGLE_KANJI_FLIP_MODE' });
+    const toggleKanjiFlipMode = useCallback((payload?: boolean) => {
+        dispatch({ type: 'TOGGLE_KANJI_FLIP_MODE', payload });
     }, [dispatch]);
-    
-    const toggleVocabFlipMode = useCallback(() => {
-        dispatch({ type: 'TOGGLE_VOCAB_FLIP_MODE' });
+
+    const toggleVocabFlipMode = useCallback((payload?: boolean) => {
+        dispatch({ type: 'TOGGLE_VOCAB_FLIP_MODE', payload });
     }, [dispatch]);
     
     const toggleKanjiCard = useCallback((cardIndex: number) => {
@@ -548,12 +548,12 @@ export function useFlipMode() {
 export function useMultipleChoice() {
     const { state, dispatch } = useStudy();
     
-    const toggleKanjiMultipleChoice = useCallback(() => {
-        dispatch({ type: 'TOGGLE_KANJI_MULTIPLE_CHOICE' });
+    const toggleKanjiMultipleChoice = useCallback((payload?: boolean) => {
+        dispatch({ type: 'TOGGLE_KANJI_MULTIPLE_CHOICE', payload });
     }, [dispatch]);
     
-    const toggleVocabMultipleChoice = useCallback(() => {
-        dispatch({ type: 'TOGGLE_VOCAB_MULTIPLE_CHOICE' });
+    const toggleVocabMultipleChoice = useCallback((payload?: boolean) => {
+        dispatch({ type: 'TOGGLE_VOCAB_MULTIPLE_CHOICE', payload });
     }, [dispatch]);
     
     const setKanjiAnswer = useCallback((cardIndex: number, answer: string) => {
