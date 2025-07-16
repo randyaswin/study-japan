@@ -145,6 +145,13 @@ export default async function DailySprintPage({
         grammar: paginatedGrammar
     };
     
+    // Extract meanings from full datasets for multiple choice options (lightweight approach)
+    const allKanjiMeanings = kanjiData.map(item => item.arti);
+    const allVocabMeanings = vocabData.map(item => {
+        const match = item.reading_meaning.match(/\((.*)\)/);
+        return match ? match[1] : '';
+    }).filter(meaning => meaning); // Remove empty meanings
+    
     // Generate available pages for navigation based on vocabulary count
     const availableDays = Array.from({ length: totalPages }, (_, i) => i + 1);
     
@@ -167,6 +174,8 @@ export default async function DailySprintPage({
                 day={day} 
                 availableDays={availableDays}
                 settings={settings}
+                allKanjiMeanings={allKanjiMeanings}
+                allVocabMeanings={allVocabMeanings}
             />
         </>
     );

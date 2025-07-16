@@ -102,9 +102,11 @@ interface DailySprintClientProps {
         vocabularyPerPage: number;
         grammarPerPage: number;
     };
+    allKanjiMeanings?: string[];
+    allVocabMeanings?: string[];
 }
 
-export default function DailySprintClient({ sprintData, day, availableDays, settings }: DailySprintClientProps) {
+export default function DailySprintClient({ sprintData, day, availableDays, settings, allKanjiMeanings, allVocabMeanings }: DailySprintClientProps) {
     // State untuk flip cards
     const [isKanjiFlipMode, setIsKanjiFlipMode] = useState(false);
     const [isVocabFlipMode, setIsVocabFlipMode] = useState(false);
@@ -149,22 +151,29 @@ export default function DailySprintClient({ sprintData, day, availableDays, sett
     useEffect(() => {
         if (isKanjiMultipleChoice) {
             const newKanjiOptions: {[key: number]: string[]} = {};
+            // Use all kanji meanings if available, otherwise fallback to current page meanings
+            const meaningSource = allKanjiMeanings || sprintData.kanji.map(item => item.arti);
             sprintData.kanji.forEach((item, index) => {
-                newKanjiOptions[index] = generateKanjiOptions(item, sprintData.kanji);
+                newKanjiOptions[index] = generateKanjiOptions(item, meaningSource);
             });
             setKanjiOptions(newKanjiOptions);
         }
-    }, [isKanjiMultipleChoice, sprintData.kanji]);
+    }, [isKanjiMultipleChoice, sprintData.kanji, allKanjiMeanings]);
 
     useEffect(() => {
         if (isVocabMultipleChoice) {
             const newVocabOptions: {[key: number]: string[]} = {};
+            // Use all vocab meanings if available, otherwise fallback to current page meanings
+            const meaningSource = allVocabMeanings || sprintData.vocabulary.map(item => {
+                const match = item.reading_meaning.match(/\((.*)\)/);
+                return match ? match[1] : '';
+            }).filter(meaning => meaning);
             sprintData.vocabulary.forEach((item, index) => {
-                newVocabOptions[index] = generateVocabOptions(item, sprintData.vocabulary);
+                newVocabOptions[index] = generateVocabOptions(item, meaningSource);
             });
             setVocabOptions(newVocabOptions);
         }
-    }, [isVocabMultipleChoice, sprintData.vocabulary]);
+    }, [isVocabMultipleChoice, sprintData.vocabulary, allVocabMeanings]);
 
     // Function to create page URL with settings
     const createPageUrl = (pageNumber: number) => {
@@ -176,37 +185,36 @@ export default function DailySprintClient({ sprintData, day, availableDays, sett
     };
 
     // Helper function to generate multiple choice options for kanji
-    const generateKanjiOptions = (correctItem: KanjiItem, allItems: KanjiItem[]) => {
+    const generateKanjiOptions = (correctItem: KanjiItem, allKanjiMeanings: string[]) => {
         const options = [correctItem.arti];
-        const otherItems = allItems.filter(item => item.kanji !== correctItem.kanji);
+        // Use all kanji meanings for incorrect options for increased difficulty (lightweight approach)
+        const otherMeanings = allKanjiMeanings.filter(meaning => meaning !== correctItem.arti);
         
         // Shuffle and pick 3 random incorrect options
-        const shuffled = [...otherItems].sort(() => 0.5 - Math.random());
-        const incorrectOptions = shuffled.slice(0, 3).map(item => item.arti);
+        const shuffled = [...otherMeanings].sort(() => 0.5 - Math.random());
+        const incorrectOptions = shuffled.slice(0, 3);
         
         options.push(...incorrectOptions);
         return options.sort(() => 0.5 - Math.random()); // Shuffle the final options
     };
 
     // Helper function to generate multiple choice options for vocabulary
-    const generateVocabOptions = (correctItem: VocabItem, allItems: VocabItem[]) => {
+    const generateVocabOptions = (correctItem: VocabItem, allVocabMeanings: string[]) => {
         // Extract meaning from reading_meaning field
         const correctMeaning = (() => {
-            const match = correctItem.reading_meaning.match(/\(([^)]+)\)/);
+            const match = correctItem.reading_meaning.match(/\((.*)\)/);
             return match ? match[1] : '';
         })();
         
         const options = [correctMeaning];
-        const otherItems = allItems.filter(item => item.vocab !== correctItem.vocab);
+        // Use all vocab meanings for incorrect options for increased difficulty (lightweight approach)
+        const otherMeanings = allVocabMeanings.filter(meaning => meaning !== correctMeaning);
         
         // Shuffle and pick 3 random incorrect options
-        const shuffled = [...otherItems].sort(() => 0.5 - Math.random());
-        const incorrectOptions = shuffled.slice(0, 3).map(item => {
-            const match = item.reading_meaning.match(/\(([^)]+)\)/);
-            return match ? match[1] : '';
-        }).filter(meaning => meaning); // Remove empty meanings
+        const shuffled = [...otherMeanings].sort(() => 0.5 - Math.random());
+        const incorrectOptions = shuffled.slice(0, 3);
         
-        options.push(...incorrectOptions.slice(0, 3));
+        options.push(...incorrectOptions);
         return options.sort(() => 0.5 - Math.random()); // Shuffle the final options
     };
 
@@ -603,7 +611,7 @@ export default function DailySprintClient({ sprintData, day, availableDays, sett
                                 
                                 const multipleChoiceOptions = vocabOptions[index] || [];
                                 const correctMeaning = (() => {
-                                    const match = item.reading_meaning.match(/\(([^)]+)\)/);
+                                    const match = item.reading_meaning.match(/\((.*)\)/);
                                     return match ? match[1] : '';
                                 })();
                                 
