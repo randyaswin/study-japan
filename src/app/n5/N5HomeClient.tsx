@@ -540,12 +540,12 @@ export default function N5HomeClient({ kanjiData, vocabData, grammarData }: N5Ho
                                         textColor = 'text-green-700 dark:text-green-300';
                                     } else if (item.type === '🟣') {
                                         borderColor = 'border-purple-400';
-                                        typeLabel = 'Kata Sifat';
+                                        typeLabel = 'Kata Sifat-na';
                                         typeLabelColor = 'bg-purple-100 text-purple-700';
                                         textColor = 'text-purple-700 dark:text-purple-300';
                                     } else if (item.type === '🟠') {
                                         borderColor = 'border-orange-400';
-                                        typeLabel = 'Kata Sifat';
+                                        typeLabel = 'Kata Sifat-i';
                                         typeLabelColor = 'bg-orange-100 text-orange-700';
                                         textColor = 'text-orange-700 dark:text-orange-300';
                                     } else {
