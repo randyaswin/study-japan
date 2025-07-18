@@ -80,6 +80,14 @@ export default function HomePage() {
                         <span className="block text-2xl font-bold text-yellow-600 dark:text-yellow-300 mb-2">JLPT N5</span>
                         <span className="text-gray-700 dark:text-gray-300 text-sm">Materi JLPT N5</span>
                     </Link>
+                    {/* Link ke halaman Quiz */}
+                    <Link
+                        href="/quiz"
+                        className="block bg-red-50 dark:bg-red-900 rounded-xl shadow-lg px-8 py-6 min-w-[160px] text-center border-4 border-red-200 dark:border-red-600 hover:border-red-400 dark:hover:border-red-500 hover:bg-red-100 dark:hover:bg-red-800 transition-all"
+                    >
+                        <span className="block text-2xl font-bold text-red-600 dark:text-red-300 mb-2">Simulasi Tes JLPT</span>
+                        <span className="text-gray-700 dark:text-gray-300 text-sm">Simulasi Tes JLPT N1-N5</span>
+                    </Link>
                 </div>
             </main>
             <footer className="text-center text-xs text-gray-400 dark:text-gray-500 py-4">&copy; {new Date().getFullYear()} Study Japan Journey</footer>

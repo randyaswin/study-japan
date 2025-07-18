@@ -11,7 +11,7 @@ interface Settings {
 
 interface StudyState {
     // Navigation state
-    currentSection: 'hiragana' | 'katakana' | 'n5' | 'kaiwa' | 'number' | 'time' | 'home';
+    currentSection: 'hiragana' | 'katakana' | 'n5' | 'kaiwa' | 'number' | 'time' | 'home' | 'quiz';
     currentPage: number;
     
     // Settings
@@ -32,6 +32,21 @@ interface StudyState {
         error: string | null;
         currentPage: number;
         viewMode: 'home' | 'study'; // 'home' shows page selection, 'study' shows study content
+    };
+    
+    // Quiz specific state
+    quiz: {
+        selectedLevel: 'N1' | 'N2' | 'N3' | 'N4' | 'N5' | null;
+        selectedYear: string | null;
+        selectedSection: 'letters' | 'grammar' | 'listening' | null;
+        currentQuestionGroup: number;
+        currentQuestion: number;
+        answers: { [key: string]: string };
+        showResults: boolean;
+        score: number;
+        totalQuestions: number;
+        isLoading: boolean;
+        error: string | null;
     };
     
     // Interactive modes
@@ -71,6 +86,16 @@ type StudyAction =
     | { type: 'SET_N5_DATA'; payload: Partial<StudyState['n5Data']> }
     | { type: 'SET_N5_CURRENT_PAGE'; payload: number }
     | { type: 'SET_N5_VIEW_MODE'; payload: 'home' | 'study' }
+    | { type: 'SET_QUIZ_LEVEL'; payload: 'N1' | 'N2' | 'N3' | 'N4' | 'N5' | null }
+    | { type: 'SET_QUIZ_YEAR'; payload: string | null }
+    | { type: 'SET_QUIZ_SECTION'; payload: 'letters' | 'grammar' | 'listening' | null }
+    | { type: 'SET_QUIZ_CURRENT_QUESTION_GROUP'; payload: number }
+    | { type: 'SET_QUIZ_CURRENT_QUESTION'; payload: number }
+    | { type: 'SET_QUIZ_ANSWER'; payload: { questionKey: string; answer: string } }
+    | { type: 'SET_QUIZ_RESULTS'; payload: { showResults: boolean; score: number; totalQuestions: number } }
+    | { type: 'RESET_QUIZ_ANSWERS' }
+    | { type: 'RESET_QUIZ_STATE' }
+    | { type: 'SET_QUIZ_LOADING'; payload: { isLoading: boolean; error?: string | null } }
     | { type: 'TOGGLE_KANJI_FLIP_MODE'; payload?: boolean | undefined }
     | { type: 'TOGGLE_VOCAB_FLIP_MODE'; payload?: boolean | undefined }
     | { type: 'TOGGLE_KANJI_CARD'; payload: number }
@@ -109,6 +134,19 @@ const initialState: StudyState = {
         error: null,
         currentPage: 1,
         viewMode: 'home'
+    },
+    quiz: {
+        selectedLevel: null,
+        selectedYear: null,
+        selectedSection: null,
+        currentQuestionGroup: 0,
+        currentQuestion: 0,
+        answers: {},
+        showResults: false,
+        score: 0,
+        totalQuestions: 0,
+        isLoading: false,
+        error: null
     },
     flipModes: {
         kanjiFlipMode: false,
@@ -220,6 +258,93 @@ function studyReducer(state: StudyState, action: StudyAction): StudyState {
             return {
                 ...state,
                 n5Data: { ...state.n5Data, viewMode: action.payload }
+            };
+            
+        case 'SET_QUIZ_LEVEL':
+            return {
+                ...state,
+                quiz: { ...state.quiz, selectedLevel: action.payload }
+            };
+            
+        case 'SET_QUIZ_YEAR':
+            return {
+                ...state,
+                quiz: { ...state.quiz, selectedYear: action.payload }
+            };
+            
+        case 'SET_QUIZ_SECTION':
+            return {
+                ...state,
+                quiz: { ...state.quiz, selectedSection: action.payload }
+            };
+            
+        case 'SET_QUIZ_CURRENT_QUESTION_GROUP':
+            return {
+                ...state,
+                quiz: { ...state.quiz, currentQuestionGroup: action.payload }
+            };
+            
+        case 'SET_QUIZ_CURRENT_QUESTION':
+            return {
+                ...state,
+                quiz: { ...state.quiz, currentQuestion: action.payload }
+            };
+            
+        case 'SET_QUIZ_ANSWER':
+            return {
+                ...state,
+                quiz: {
+                    ...state.quiz,
+                    answers: {
+                        ...state.quiz.answers,
+                        [action.payload.questionKey]: action.payload.answer
+                    }
+                }
+            };
+            
+        case 'SET_QUIZ_RESULTS':
+            return {
+                ...state,
+                quiz: {
+                    ...state.quiz,
+                    showResults: action.payload.showResults,
+                    score: action.payload.score,
+                    totalQuestions: action.payload.totalQuestions
+                }
+            };
+            
+        case 'RESET_QUIZ_ANSWERS':
+            return {
+                ...state,
+                quiz: { ...state.quiz, answers: {} }
+            };
+            
+        case 'RESET_QUIZ_STATE':
+            return {
+                ...state,
+                quiz: {
+                    selectedLevel: null,
+                    selectedYear: null,
+                    selectedSection: null,
+                    currentQuestionGroup: 0,
+                    currentQuestion: 0,
+                    answers: {},
+                    showResults: false,
+                    score: 0,
+                    totalQuestions: 0,
+                    isLoading: false,
+                    error: null
+                }
+            };
+            
+        case 'SET_QUIZ_LOADING':
+            return {
+                ...state,
+                quiz: {
+                    ...state.quiz,
+                    isLoading: action.payload.isLoading,
+                    error: action.payload.error || null
+                }
             };
             
         case 'TOGGLE_KANJI_FLIP_MODE':
@@ -634,5 +759,64 @@ export function useN5() {
         setN5Data,
         goToStudyPage,
         goToHomePage
+    };
+}
+
+// Custom hook for Quiz functionality
+export function useQuiz() {
+    const { state, dispatch } = useStudy();
+    
+    const setQuizLevel = useCallback((level: 'N1' | 'N2' | 'N3' | 'N4' | 'N5' | null) => {
+        dispatch({ type: 'SET_QUIZ_LEVEL', payload: level });
+    }, [dispatch]);
+    
+    const setQuizYear = useCallback((year: string | null) => {
+        dispatch({ type: 'SET_QUIZ_YEAR', payload: year });
+    }, [dispatch]);
+    
+    const setQuizSection = useCallback((section: 'letters' | 'grammar' | 'listening' | null) => {
+        dispatch({ type: 'SET_QUIZ_SECTION', payload: section });
+    }, [dispatch]);
+    
+    const setCurrentQuestionGroup = useCallback((group: number) => {
+        dispatch({ type: 'SET_QUIZ_CURRENT_QUESTION_GROUP', payload: group });
+    }, [dispatch]);
+    
+    const setCurrentQuestion = useCallback((question: number) => {
+        dispatch({ type: 'SET_QUIZ_CURRENT_QUESTION', payload: question });
+    }, [dispatch]);
+    
+    const setQuizAnswer = useCallback((questionKey: string, answer: string) => {
+        dispatch({ type: 'SET_QUIZ_ANSWER', payload: { questionKey, answer } });
+    }, [dispatch]);
+    
+    const setQuizResults = useCallback((showResults: boolean, score: number, totalQuestions: number) => {
+        dispatch({ type: 'SET_QUIZ_RESULTS', payload: { showResults, score, totalQuestions } });
+    }, [dispatch]);
+    
+    const resetQuizAnswers = useCallback(() => {
+        dispatch({ type: 'RESET_QUIZ_ANSWERS' });
+    }, [dispatch]);
+    
+    const resetQuizState = useCallback(() => {
+        dispatch({ type: 'RESET_QUIZ_STATE' });
+    }, [dispatch]);
+    
+    const setQuizLoading = useCallback((isLoading: boolean, error?: string | null) => {
+        dispatch({ type: 'SET_QUIZ_LOADING', payload: { isLoading, error } });
+    }, [dispatch]);
+    
+    return {
+        quiz: state.quiz,
+        setQuizLevel,
+        setQuizYear,
+        setQuizSection,
+        setCurrentQuestionGroup,
+        setCurrentQuestion,
+        setQuizAnswer,
+        setQuizResults,
+        resetQuizAnswers,
+        resetQuizState,
+        setQuizLoading
     };
 }
