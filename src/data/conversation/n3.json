@@ -52,6 +52,826 @@
           "usage": "Meminta seseorang untuk memperkenalkan diri"
         }
       ]
+    },
+    {
+      "id": 9,
+      "title": "Mencari Apartemen",
+      "level": "N3",
+      "description": "Percakapan mencari apartemen di Jepang",
+      "scenario": "Calon penyewa bertanya kepada agen properti tentang apartemen",
+      "conversation": [
+        {
+          "speaker": "応募者 (Ōbosha)",
+          "japanese": "すみません、アパートを探しているのですが。",
+          "furigana": "すみません、アパートを[探|さが]しているのですが。",
+          "romaji": "Sumimasen, apāto o sagashite iru no desu ga.",
+          "indonesian": "Permisi, saya sedang mencari apartemen.",
+          "notes": "Ungkapan sopan saat meminta bantuan"
+        },
+        {
+          "speaker": "不動産屋 (Fudōsanya)",
+          "japanese": "どのような条件をご希望ですか？",
+          "furigana": "どのような[条件|じょうけん]をご[希望|きぼう]ですか？",
+          "romaji": "Dono yō na jōken o go kibō desu ka?",
+          "indonesian": "Kriteria seperti apa yang Anda inginkan?",
+          "notes": "Menanyakan preferensi pelanggan"
+        },
+        {
+          "speaker": "応募者 (Ōbosha)",
+          "japanese": "駅から近いところがいいです。",
+          "furigana": "[駅|えき]から[近|ちか]いところがいいです。",
+          "romaji": "Eki kara chikai tokoro ga ii desu.",
+          "indonesian": "Saya ingin yang dekat dengan stasiun.",
+          "notes": "Menyebutkan preferensi lokasi"
+        },
+        {
+          "speaker": "不動産屋 (Fudōsanya)",
+          "japanese": "ご予算はどれくらいですか？",
+          "furigana": "ご[予算|よさん]はどれくらいですか？",
+          "romaji": "Go yosan wa dore kurai desu ka?",
+          "indonesian": "Berapa kisaran anggaran Anda?",
+          "notes": "Menanyakan anggaran"
+        },
+        {
+          "speaker": "応募者 (Ōbosha)",
+          "japanese": "月8万円まででお願いします。",
+          "furigana": "[月|つき]8[万円|まんえん]まででお[願|ねが]いします。",
+          "romaji": "Tsuki hachi man-en made de onegaishimasu.",
+          "indonesian": "Sampai 80.000 yen per bulan, tolong.",
+          "notes": "Menyebutkan batas anggaran"
+        },
+        {
+          "speaker": "不動産屋 (Fudōsanya)",
+          "japanese": "かしこまりました。いくつかご案内しますので、こちらへどうぞ。",
+          "furigana": "かしこまりました。いくつかご[案内|あんない]しますので、こちらへどうぞ。",
+          "romaji": "Kashikomarimashita. Ikutsuka go-annai shimasu node, kochira e dōzo.",
+          "indonesian": "Baik, saya akan menunjukkan beberapa pilihan. Silakan ke sini.",
+          "notes": "Respon sopan dari petugas"
+        }
+      ],
+      "keyPhrases": [
+        {
+          "phrase": "アパートを探している",
+          "reading": "apāto o sagashite iru",
+          "meaning": "Sedang mencari apartemen",
+          "usage": "Digunakan saat mencari tempat tinggal"
+        },
+        {
+          "phrase": "駅から近い",
+          "reading": "eki kara chikai",
+          "meaning": "Dekat dengan stasiun",
+          "usage": "Menyatakan preferensi lokasi"
+        },
+        {
+          "phrase": "ご予算",
+          "reading": "go yosan",
+          "meaning": "Anggaran",
+          "usage": "Menanyakan atau menyebutkan anggaran"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Memesan di Restoran",
+      "level": "N3",
+      "description": "Percakapan saat memesan makanan di restoran Jepang",
+      "scenario": "Pelanggan memesan makanan kepada pelayan",
+      "conversation": [
+        {
+          "speaker": "店員 (Ten'in)",
+          "japanese": "いらっしゃいませ。ご注文はお決まりですか？",
+          "furigana": "いらっしゃいませ。ご[注文|ちゅうもん]はお[決|き]まりですか？",
+          "romaji": "Irasshaimase. Gochūmon wa okimari desu ka?",
+          "indonesian": "Selamat datang. Apakah Anda sudah siap memesan?",
+          "notes": "Sambutan umum di restoran"
+        },
+        {
+          "speaker": "客 (Kyaku)",
+          "japanese": "はい、天ぷら定食を一つお願いします。",
+          "furigana": "はい、[天ぷら|てんぷら][定食|ていしょく]を一つお[願|ねが]いします。",
+          "romaji": "Hai, tenpura teishoku o hitotsu onegaishimasu.",
+          "indonesian": "Ya, satu set menu tempura, tolong.",
+          "notes": "Cara memesan makanan"
+        },
+        {
+          "speaker": "店員 (Ten'in)",
+          "japanese": "かしこまりました。他にご注文はございますか？",
+          "furigana": "かしこまりました。[他|ほか]にご[注文|ちゅうもん]はございますか？",
+          "romaji": "Kashikomarimashita. Hoka ni gochūmon wa gozaimasu ka?",
+          "indonesian": "Baik, ada pesanan lain?",
+          "notes": "Menanyakan pesanan tambahan"
+        },
+        {
+          "speaker": "客 (Kyaku)",
+          "japanese": "お水をお願いします。",
+          "furigana": "お[水|みず]をお[願|ねが]いします。",
+          "romaji": "Omizu o onegaishimasu.",
+          "indonesian": "Tolong air putih juga.",
+          "notes": "Meminta air minum"
+        },
+        {
+          "speaker": "店員 (Ten'in)",
+          "japanese": "承知しました。少々お待ちください。",
+          "furigana": "[承知|しょうち]しました。少々お[待|ま]ちください。",
+          "romaji": "Shōchi shimashita. Shōshō omachi kudasai.",
+          "indonesian": "Baik, mohon tunggu sebentar.",
+          "notes": "Ungkapan sopan meminta menunggu"
+        },
+        {
+          "speaker": "客 (Kyaku)",
+          "japanese": "ありがとうございます。",
+          "furigana": "ありがとうございます。",
+          "romaji": "Arigatō gozaimasu.",
+          "indonesian": "Terima kasih.",
+          "notes": "Ucapan terima kasih"
+        }
+      ],
+      "keyPhrases": [
+        {
+          "phrase": "ご注文はお決まりですか",
+          "reading": "gochūmon wa okimari desu ka",
+          "meaning": "Sudah siap memesan?",
+          "usage": "Pertanyaan umum di restoran"
+        },
+        {
+          "phrase": "天ぷら定食",
+          "reading": "tenpura teishoku",
+          "meaning": "Set menu tempura",
+          "usage": "Nama menu makanan"
+        },
+        {
+          "phrase": "少々お待ちください",
+          "reading": "shōshō omachi kudasai",
+          "meaning": "Mohon tunggu sebentar",
+          "usage": "Meminta pelanggan menunggu"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Membuka Rekening Bank",
+      "level": "N3",
+      "description": "Percakapan saat membuka rekening di bank Jepang",
+      "scenario": "Nasabah baru datang ke bank untuk membuka rekening",
+      "conversation": [
+        {
+          "speaker": "銀行員 (Ginkōin)",
+          "japanese": "いらっしゃいませ。本日はどのようなご用件でしょうか？",
+          "furigana": "いらっしゃいませ。[本日|ほんじつ]はどのようなご[用件|ようけん]でしょうか？",
+          "romaji": "Irasshaimase. Honjitsu wa dono yō na goyōken deshō ka?",
+          "indonesian": "Selamat datang. Ada keperluan apa hari ini?",
+          "notes": "Sambutan dan menanyakan keperluan nasabah"
+        },
+        {
+          "speaker": "お客様 (Okyakusama)",
+          "japanese": "口座を開きたいのですが。",
+          "furigana": "[口座|こうざ]を[開|ひら]きたいのですが。",
+          "romaji": "Kōza o hirakitai no desu ga.",
+          "indonesian": "Saya ingin membuka rekening.",
+          "notes": "Mengutarakan tujuan datang ke bank"
+        },
+        {
+          "speaker": "銀行員 (Ginkōin)",
+          "japanese": "かしこまりました。ご本人確認のため、身分証明書をお持ちですか？",
+          "furigana": "かしこまりました。ご[本人|ほんにん][確認|かくにん]のため、[身分証明書|みぶんしょうめいしょ]をお[持|も]ちですか？",
+          "romaji": "Kashikomarimashita. Gohonnin kakunin no tame, mibun shōmeisho o omochi desu ka?",
+          "indonesian": "Baik. Apakah Anda membawa kartu identitas untuk verifikasi?",
+          "notes": "Meminta dokumen identitas"
+        },
+        {
+          "speaker": "お客様 (Okyakusama)",
+          "japanese": "はい、パスポートを持っています。",
+          "furigana": "はい、パスポートを[持|も]っています。",
+          "romaji": "Hai, pasupōto o motteimasu.",
+          "indonesian": "Ya, saya membawa paspor.",
+          "notes": "Menunjukkan dokumen identitas"
+        },
+        {
+          "speaker": "銀行員 (Ginkōin)",
+          "japanese": "ありがとうございます。こちらの申込書にご記入をお願いします。",
+          "furigana": "ありがとうございます。こちらの[申込書|もうしこみしょ]にご[記入|きにゅう]をお[願|ねが]いします。",
+          "romaji": "Arigatō gozaimasu. Kochira no mōshikomisho ni gokinyū o onegaishimasu.",
+          "indonesian": "Terima kasih. Silakan isi formulir ini.",
+          "notes": "Memberikan formulir pendaftaran"
+        },
+        {
+          "speaker": "お客様 (Okyakusama)",
+          "japanese": "わかりました。書き終わったらどうすればいいですか？",
+          "furigana": "わかりました。[書|か]き[終|お]わったらどうすればいいですか？",
+          "romaji": "Wakarimashita. Kaki owattara dō sureba ii desu ka?",
+          "indonesian": "Baik. Setelah selesai menulis, apa yang harus saya lakukan?",
+          "notes": "Menanyakan langkah selanjutnya"
+        },
+        {
+          "speaker": "銀行員 (Ginkōin)",
+          "japanese": "書き終わりましたら、こちらにお持ちください。",
+          "furigana": "[書|か]き[終|お]わりましたら、こちらにお[持|も]ちください。",
+          "romaji": "Kaki owarimashitara, kochira ni omochi kudasai.",
+          "indonesian": "Setelah selesai, silakan bawa ke sini.",
+          "notes": "Instruksi setelah mengisi formulir"
+        }
+      ],
+      "keyPhrases": [
+        {
+          "phrase": "口座を開きたい",
+          "reading": "kōza o hirakitai",
+          "meaning": "Ingin membuka rekening",
+          "usage": "Digunakan saat ingin membuka rekening bank"
+        },
+        {
+          "phrase": "身分証明書",
+          "reading": "mibun shōmeisho",
+          "meaning": "Kartu identitas",
+          "usage": "Dokumen untuk verifikasi identitas"
+        },
+        {
+          "phrase": "申込書に記入する",
+          "reading": "mōshikomisho ni kinyū suru",
+          "meaning": "Mengisi formulir pendaftaran",
+          "usage": "Instruksi saat mendaftar sesuatu"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Mengurus Surat Izin Tinggal",
+      "level": "N3",
+      "description": "Percakapan di kantor imigrasi untuk mengurus izin tinggal",
+      "scenario": "Pendatang mengurus perpanjangan izin tinggal di kantor imigrasi",
+      "conversation": [
+        {
+          "speaker": "職員 (Shokuin)",
+          "japanese": "こんにちは。今日はどうされましたか？",
+          "furigana": "こんにちは。[今日|きょう]はどうされましたか？",
+          "romaji": "Konnichiwa. Kyō wa dō saremashita ka?",
+          "indonesian": "Halo. Ada keperluan apa hari ini?",
+          "notes": "Sapaan dan menanyakan keperluan"
+        },
+        {
+          "speaker": "申請者 (Shinseisha)",
+          "japanese": "在留カードの更新をしたいです。",
+          "furigana": "[在留|ざいりゅう]カードの[更新|こうしん]をしたいです。",
+          "romaji": "Zairyū kādo no kōshin o shitai desu.",
+          "indonesian": "Saya ingin memperpanjang kartu izin tinggal.",
+          "notes": "Mengutarakan tujuan"
+        },
+        {
+          "speaker": "職員 (Shokuin)",
+          "japanese": "必要な書類はお持ちですか？",
+          "furigana": "[必要|ひつよう]な[書類|しょるい]はお[持|も]ちですか？",
+          "romaji": "Hitsuyō na shorui wa omochi desu ka?",
+          "indonesian": "Apakah Anda membawa dokumen yang diperlukan?",
+          "notes": "Memastikan kelengkapan dokumen"
+        },
+        {
+          "speaker": "申請者 (Shinseisha)",
+          "japanese": "はい、こちらです。",
+          "furigana": "はい、こちらです。",
+          "romaji": "Hai, kochira desu.",
+          "indonesian": "Ya, ini dokumennya.",
+          "notes": "Menyerahkan dokumen"
+        },
+        {
+          "speaker": "職員 (Shokuin)",
+          "japanese": "ありがとうございます。申請書もご記入いただけますか？",
+          "furigana": "ありがとうございます。[申請書|しんせいしょ]もご[記入|きにゅう]いただけますか？",
+          "romaji": "Arigatō gozaimasu. Shinseisho mo gokinyū itadakemasu ka?",
+          "indonesian": "Terima kasih. Bisakah Anda juga mengisi formulir permohonan?",
+          "notes": "Meminta mengisi formulir"
+        },
+        {
+          "speaker": "申請者 (Shinseisha)",
+          "japanese": "わかりました。すぐに書きます。",
+          "furigana": "わかりました。すぐに[書|か]きます。",
+          "romaji": "Wakarimashita. Sugu ni kakimasu.",
+          "indonesian": "Baik, akan saya isi sekarang.",
+          "notes": "Menyanggupi permintaan"
+        },
+        {
+          "speaker": "職員 (Shokuin)",
+          "japanese": "ご不明な点があれば、お気軽にお尋ねください。",
+          "furigana": "ご[不明|ふめい]な[点|てん]があれば、お[気軽|きがる]にお[尋|たず]ねください。",
+          "romaji": "Gofumei na ten ga areba, okigaru ni otazune kudasai.",
+          "indonesian": "Jika ada yang kurang jelas, silakan bertanya.",
+          "notes": "Memberikan bantuan"
+        }
+      ],
+      "keyPhrases": [
+        {
+          "phrase": "在留カードの更新",
+          "reading": "zairyū kādo no kōshin",
+          "meaning": "Perpanjangan kartu izin tinggal",
+          "usage": "Digunakan di kantor imigrasi"
+        },
+        {
+          "phrase": "必要な書類",
+          "reading": "hitsuyō na shorui",
+          "meaning": "Dokumen yang diperlukan",
+          "usage": "Memastikan kelengkapan dokumen"
+        },
+        {
+          "phrase": "ご不明な点があれば",
+          "reading": "gofumei na ten ga areba",
+          "meaning": "Jika ada yang kurang jelas",
+          "usage": "Menawarkan bantuan"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Mengatur Jadwal Bertemu Teman",
+      "level": "N3",
+      "description": "Percakapan mengatur jadwal bertemu dengan teman di Jepang",
+      "scenario": "Dua teman mengatur waktu dan tempat untuk bertemu",
+      "conversation": [
+        {
+          "speaker": "友達A (Tomodachi A)",
+          "japanese": "今週末、時間ありますか？",
+          "furigana": "[今週末|こんしゅうまつ]、[時間|じかん]ありますか？",
+          "romaji": "Konshūmatsu, jikan arimasu ka?",
+          "indonesian": "Akhir pekan ini, kamu ada waktu?"
+        },
+        {
+          "speaker": "友達B (Tomodachi B)",
+          "japanese": "はい、土曜日なら大丈夫です。",
+          "furigana": "はい、[土曜日|どようび]なら[大丈夫|だいじょうぶ]です。",
+          "romaji": "Hai, doyōbi nara daijōbu desu.",
+          "indonesian": "Ya, kalau hari Sabtu tidak masalah."
+        },
+        {
+          "speaker": "友達A (Tomodachi A)",
+          "japanese": "何時ごろがいいですか？",
+          "furigana": "[何時|なんじ]ごろがいいですか？",
+          "romaji": "Nanji goro ga ii desu ka?",
+          "indonesian": "Jam berapa yang cocok?"
+        },
+        {
+          "speaker": "友達B (Tomodachi B)",
+          "japanese": "午後2時ごろはどうですか？",
+          "furigana": "[午後|ごご]2[時|じ]ごろはどうですか？",
+          "romaji": "Gogo ni-ji goro wa dō desu ka?",
+          "indonesian": "Bagaimana kalau sekitar jam 2 siang?"
+        },
+        {
+          "speaker": "友達A (Tomodachi A)",
+          "japanese": "いいですね。どこで会いましょうか？",
+          "furigana": "いいですね。どこで[会|あ]いましょうか？",
+          "romaji": "Ii desu ne. Doko de aimashō ka?",
+          "indonesian": "Bagus. Di mana kita bertemu?"
+        },
+        {
+          "speaker": "友達B (Tomodachi B)",
+          "japanese": "駅前のカフェにしましょう。",
+          "furigana": "[駅前|えきまえ]のカフェにしましょう。",
+          "romaji": "Ekimae no kafe ni shimashō.",
+          "indonesian": "Mari bertemu di kafe depan stasiun."
+        },
+        {
+          "speaker": "友達A (Tomodachi A)",
+          "japanese": "わかりました。楽しみにしています！",
+          "furigana": "わかりました。[楽し|たの]しみにしています！",
+          "romaji": "Wakarimashita. Tanoshimi ni shiteimasu!",
+          "indonesian": "Baik, aku tunggu!"
+        }
+      ],
+      "keyPhrases": [
+        {
+          "phrase": "今週末",
+          "reading": "konshūmatsu",
+          "meaning": "Akhir pekan ini",
+          "usage": "Menanyakan waktu"
+        },
+        {
+          "phrase": "大丈夫です",
+          "reading": "daijōbu desu",
+          "meaning": "Tidak masalah",
+          "usage": "Menyatakan persetujuan"
+        },
+        {
+          "phrase": "楽しみにしています",
+          "reading": "tanoshimi ni shiteimasu",
+          "meaning": "Aku menantikan",
+          "usage": "Mengungkapkan antisipasi"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "title": "Bertanya Tentang Cuaca",
+      "level": "N3",
+      "description": "Percakapan tentang cuaca dan rencana keluar rumah",
+      "scenario": "Dua orang membicarakan cuaca sebelum pergi keluar",
+      "conversation": [
+        {
+          "speaker": "A",
+          "japanese": "今日はいい天気ですね。",
+          "furigana": "[今日|きょう]はいい[天気|てんき]ですね。",
+          "romaji": "Kyō wa ii tenki desu ne.",
+          "indonesian": "Hari ini cuacanya bagus ya."
+        },
+        {
+          "speaker": "B",
+          "japanese": "そうですね。散歩に行きませんか？",
+          "furigana": "そうですね。[散歩|さんぽ]に[行|い]きませんか？",
+          "romaji": "Sō desu ne. Sanpo ni ikimasen ka?",
+          "indonesian": "Iya. Mau jalan-jalan?"
+        },
+        {
+          "speaker": "A",
+          "japanese": "いいですね。でも、午後から雨が降るそうですよ。",
+          "furigana": "いいですね。でも、[午後|ごご]から[雨|あめ]が[降|ふ]るそうですよ。",
+          "romaji": "Ii desu ne. Demo, gogo kara ame ga furu sō desu yo.",
+          "indonesian": "Boleh juga. Tapi katanya siang nanti akan hujan."
+        },
+        {
+          "speaker": "B",
+          "japanese": "本当ですか？傘を持っていきましょう。",
+          "furigana": "[本当|ほんとう]ですか？[傘|かさ]を[持|も]っていきましょう。",
+          "romaji": "Hontō desu ka? Kasa o motte ikimashō.",
+          "indonesian": "Benarkah? Mari bawa payung."
+        },
+        {
+          "speaker": "A",
+          "japanese": "そうしましょう。何時に出かけますか？",
+          "furigana": "そうしましょう。[何時|なんじ]に[出|で]かけますか？",
+          "romaji": "Sō shimashō. Nanji ni dekakemasu ka?",
+          "indonesian": "Ayo. Jam berapa kita berangkat?"
+        },
+        {
+          "speaker": "B",
+          "japanese": "10時ごろはどうですか？",
+          "furigana": "10[時|じ]ごろはどうですか？",
+          "romaji": "Jū-ji goro wa dō desu ka?",
+          "indonesian": "Bagaimana kalau sekitar jam 10?"
+        }
+      ],
+      "keyPhrases": [
+        {
+          "phrase": "天気",
+          "reading": "tenki",
+          "meaning": "Cuaca",
+          "usage": "Membicarakan cuaca"
+        },
+        {
+          "phrase": "傘を持っていく",
+          "reading": "kasa o motte iku",
+          "meaning": "Membawa payung",
+          "usage": "Persiapan saat hujan"
+        },
+        {
+          "phrase": "出かけます",
+          "reading": "dekakemasu",
+          "meaning": "Berangkat/keluar rumah",
+          "usage": "Membicarakan rencana pergi"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "title": "Membeli Tiket Kereta",
+      "level": "N3",
+      "description": "Percakapan membeli tiket kereta di stasiun Jepang",
+      "scenario": "Seorang penumpang membeli tiket di loket stasiun",
+      "conversation": [
+        {
+          "speaker": "乗客 (Jōkyaku)",
+          "japanese": "すみません、新宿までの切符をください。",
+          "furigana": "すみません、[新宿|しんじゅく]までの[切符|きっぷ]をください。",
+          "romaji": "Sumimasen, Shinjuku made no kippu o kudasai.",
+          "indonesian": "Permisi, tolong tiket ke Shinjuku."
+        },
+        {
+          "speaker": "駅員 (Ekiin)",
+          "japanese": "はい、お一人ですか？",
+          "furigana": "はい、お[一人|ひとり]ですか？",
+          "romaji": "Hai, ohitori desu ka?",
+          "indonesian": "Baik, untuk satu orang?"
+        },
+        {
+          "speaker": "乗客 (Jōkyaku)",
+          "japanese": "はい、一人です。",
+          "furigana": "はい、[一人|ひとり]です。",
+          "romaji": "Hai, hitori desu.",
+          "indonesian": "Ya, satu orang."
+        },
+        {
+          "speaker": "駅員 (Ekiin)",
+          "japanese": "片道ですか、往復ですか？",
+          "furigana": "[片道|かたみち]ですか、[往復|おうふく]ですか？",
+          "romaji": "Katamichi desu ka, ōfuku desu ka?",
+          "indonesian": "Sekali jalan atau pulang-pergi?"
+        },
+        {
+          "speaker": "乗客 (Jōkyaku)",
+          "japanese": "片道でお願いします。",
+          "furigana": "[片道|かたみち]でお[願|ねが]いします。",
+          "romaji": "Katamichi de onegaishimasu.",
+          "indonesian": "Sekali jalan saja, tolong."
+        },
+        {
+          "speaker": "駅員 (Ekiin)",
+          "japanese": "220円になります。",
+          "furigana": "220[円|えん]になります。",
+          "romaji": "Nihyaku nijū en ni narimasu.",
+          "indonesian": "Jadi 220 yen."
+        },
+        {
+          "speaker": "乗客 (Jōkyaku)",
+          "japanese": "はい、どうぞ。",
+          "furigana": "はい、どうぞ。",
+          "romaji": "Hai, dōzo.",
+          "indonesian": "Ini, silakan."
+        },
+        {
+          "speaker": "駅員 (Ekiin)",
+          "japanese": "ありがとうございます。こちらが切符です。",
+          "furigana": "ありがとうございます。こちらが[切符|きっぷ]です。",
+          "romaji": "Arigatō gozaimasu. Kochira ga kippu desu.",
+          "indonesian": "Terima kasih. Ini tiketnya."
+        }
+      ],
+      "keyPhrases": [
+        {
+          "phrase": "切符をください",
+          "reading": "kippu o kudasai",
+          "meaning": "Tolong tiketnya",
+          "usage": "Meminta tiket di stasiun"
+        },
+        {
+          "phrase": "片道",
+          "reading": "katamichi",
+          "meaning": "Sekali jalan",
+          "usage": "Jenis tiket kereta"
+        },
+        {
+          "phrase": "往復",
+          "reading": "ōfuku",
+          "meaning": "Pulang-pergi",
+          "usage": "Jenis tiket kereta"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "title": "Membeli Pakaian di Toko",
+      "level": "N3",
+      "description": "Percakapan saat membeli pakaian di toko Jepang",
+      "scenario": "Pelanggan bertanya tentang ukuran dan mencoba pakaian",
+      "conversation": [
+        {
+          "speaker": "店員 (Ten'in)",
+          "japanese": "いらっしゃいませ。何かお探しですか？",
+          "furigana": "いらっしゃいませ。何かお[探|さが]しですか？",
+          "romaji": "Irasshaimase. Nanika osagashi desu ka?",
+          "indonesian": "Selamat datang. Sedang mencari sesuatu?"
+        },
+        {
+          "speaker": "客 (Kyaku)",
+          "japanese": "このシャツのMサイズはありますか？",
+          "furigana": "このシャツのMサイズはありますか？",
+          "romaji": "Kono shatsu no M saizu wa arimasu ka?",
+          "indonesian": "Apakah ada kemeja ini ukuran M?"
+        },
+        {
+          "speaker": "店員 (Ten'in)",
+          "japanese": "少々お待ちください。確認します。",
+          "furigana": "少々お[待|ま]ちください。[確認|かくにん]します。",
+          "romaji": "Shōshō omachi kudasai. Kakunin shimasu.",
+          "indonesian": "Mohon tunggu sebentar. Akan saya cek."
+        },
+        {
+          "speaker": "店員 (Ten'in)",
+          "japanese": "お待たせしました。Mサイズございます。",
+          "furigana": "お[待|ま]たせしました。Mサイズございます。",
+          "romaji": "Omatase shimashita. M saizu gozaimasu.",
+          "indonesian": "Terima kasih menunggu. Ukuran M tersedia."
+        },
+        {
+          "speaker": "客 (Kyaku)",
+          "japanese": "試着できますか？",
+          "furigana": "[試着|しちゃく]できますか？",
+          "romaji": "Shichaku dekimasu ka?",
+          "indonesian": "Boleh dicoba?"
+        },
+        {
+          "speaker": "店員 (Ten'in)",
+          "japanese": "はい、どうぞ。試着室はあちらです。",
+          "furigana": "はい、どうぞ。[試着室|しちゃくしつ]はあちらです。",
+          "romaji": "Hai, dōzo. Shichakushitsu wa achira desu.",
+          "indonesian": "Silakan. Ruang ganti di sana."
+        },
+        {
+          "speaker": "客 (Kyaku)",
+          "japanese": "ありがとうございます。",
+          "furigana": "ありがとうございます。",
+          "romaji": "Arigatō gozaimasu.",
+          "indonesian": "Terima kasih."
+        }
+      ],
+      "keyPhrases": [
+        {
+          "phrase": "試着できますか",
+          "reading": "shichaku dekimasu ka",
+          "meaning": "Boleh dicoba?",
+          "usage": "Meminta izin mencoba pakaian"
+        },
+        {
+          "phrase": "少々お待ちください",
+          "reading": "shōshō omachi kudasai",
+          "meaning": "Mohon tunggu sebentar",
+          "usage": "Meminta pelanggan menunggu"
+        },
+        {
+          "phrase": "サイズ",
+          "reading": "saizu",
+          "meaning": "Ukuran",
+          "usage": "Menyebutkan ukuran pakaian"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "title": "Mengunjungi Dokter",
+      "level": "N3",
+      "description": "Percakapan saat berkunjung ke dokter di Jepang",
+      "scenario": "Pasien datang ke klinik untuk memeriksakan diri",
+      "conversation": [
+        {
+          "speaker": "受付 (Uketsuke)",
+          "japanese": "こんにちは。どうされましたか？",
+          "furigana": "こんにちは。どうされましたか？",
+          "romaji": "Konnichiwa. Dō saremashita ka?",
+          "indonesian": "Halo. Ada keluhan apa?"
+        },
+        {
+          "speaker": "患者 (Kanja)",
+          "japanese": "熱があって、のども痛いです。",
+          "furigana": "[熱|ねつ]があって、のども[痛|いた]いです。",
+          "romaji": "Netsu ga atte, nodo mo itai desu.",
+          "indonesian": "Saya demam dan tenggorokan juga sakit."
+        },
+        {
+          "speaker": "受付 (Uketsuke)",
+          "japanese": "わかりました。こちらの問診票にご記入ください。",
+          "furigana": "わかりました。こちらの[問診票|もんしんひょう]にご[記入|きにゅう]ください。",
+          "romaji": "Wakarimashita. Kochira no monshinhyō ni gokinyū kudasai.",
+          "indonesian": "Baik. Silakan isi formulir ini."
+        },
+        {
+          "speaker": "患者 (Kanja)",
+          "japanese": "はい、わかりました。",
+          "furigana": "はい、わかりました。",
+          "romaji": "Hai, wakarimashita.",
+          "indonesian": "Ya, baik."
+        },
+        {
+          "speaker": "医者 (Isha)",
+          "japanese": "こんにちは。どのくらい前から症状がありますか？",
+          "furigana": "こんにちは。どのくらい[前|まえ]から[症状|しょうじょう]がありますか？",
+          "romaji": "Konnichiwa. Dono kurai mae kara shōjō ga arimasu ka?",
+          "indonesian": "Halo. Sejak kapan gejalanya muncul?"
+        },
+        {
+          "speaker": "患者 (Kanja)",
+          "japanese": "昨日からです。",
+          "furigana": "[昨日|きのう]からです。",
+          "romaji": "Kinō kara desu.",
+          "indonesian": "Sejak kemarin."
+        },
+        {
+          "speaker": "医者 (Isha)",
+          "japanese": "わかりました。少し口を開けてください。",
+          "furigana": "わかりました。少し[口|くち]を[開|あ]けてください。",
+          "romaji": "Wakarimashita. Sukoshi kuchi o akete kudasai.",
+          "indonesian": "Baik. Tolong buka mulut sedikit."
+        },
+        {
+          "speaker": "患者 (Kanja)",
+          "japanese": "あーん。",
+          "furigana": "あーん。",
+          "romaji": "Ān.",
+          "indonesian": "Aaa."
+        },
+        {
+          "speaker": "医者 (Isha)",
+          "japanese": "のどが赤いですね。お薬を出しますので、ゆっくり休んでください。",
+          "furigana": "のどが[赤|あか]いですね。お[薬|くすり]を[出|だ]しますので、ゆっくり[休|やす]んでください。",
+          "romaji": "Nodo ga akai desu ne. Okusuri o dashimasu node, yukkuri yasunde kudasai.",
+          "indonesian": "Tenggorokan Anda merah. Akan saya berikan obat, silakan istirahat."
+        }
+      ],
+      "keyPhrases": [
+        {
+          "phrase": "問診票",
+          "reading": "monshinhyō",
+          "meaning": "Formulir pemeriksaan",
+          "usage": "Formulir yang diisi sebelum konsultasi"
+        },
+        {
+          "phrase": "症状",
+          "reading": "shōjō",
+          "meaning": "Gejala",
+          "usage": "Menyebutkan keluhan kesehatan"
+        },
+        {
+          "phrase": "お薬を出します",
+          "reading": "okusuri o dashimasu",
+          "meaning": "Akan diberikan obat",
+          "usage": "Ungkapan dokter saat memberi resep"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "title": "Mengirim Paket di Kantor Pos",
+      "level": "N3",
+      "description": "Percakapan saat mengirim paket di kantor pos Jepang",
+      "scenario": "Pelanggan datang ke kantor pos untuk mengirim paket ke luar kota",
+      "conversation": [
+        {
+          "speaker": "窓口 (Madoguchi)",
+          "japanese": "いらっしゃいませ。ご用件をお伺いします。",
+          "furigana": "いらっしゃいませ。ご[用件|ようけん]をお[伺|うかが]いします。",
+          "romaji": "Irasshaimase. Goyōken o ukagai shimasu.",
+          "indonesian": "Selamat datang. Ada keperluan apa?"
+        },
+        {
+          "speaker": "客 (Kyaku)",
+          "japanese": "この荷物を大阪まで送りたいです。",
+          "furigana": "この[荷物|にもつ]を[大阪|おおさか]まで[送|おく]りたいです。",
+          "romaji": "Kono nimotsu o Ōsaka made okuritai desu.",
+          "indonesian": "Saya ingin mengirim paket ini ke Osaka."
+        },
+        {
+          "speaker": "窓口 (Madoguchi)",
+          "japanese": "はい、発送方法はどうなさいますか？",
+          "furigana": "はい、[発送方法|はっそうほうほう]はどうなさいますか？",
+          "romaji": "Hai, hassō hōhō wa dō nasaimasu ka?",
+          "indonesian": "Baik, ingin menggunakan metode pengiriman apa?"
+        },
+        {
+          "speaker": "客 (Kyaku)",
+          "japanese": "一番早い方法でお願いします。",
+          "furigana": "一番[早|はや]い[方法|ほうほう]でお[願|ねが]いします。",
+          "romaji": "Ichiban hayai hōhō de onegaishimasu.",
+          "indonesian": "Tolong yang paling cepat."
+        },
+        {
+          "speaker": "窓口 (Madoguchi)",
+          "japanese": "かしこまりました。こちらの伝票にご記入ください。",
+          "furigana": "かしこまりました。こちらの[伝票|でんぴょう]にご[記入|きにゅう]ください。",
+          "romaji": "Kashikomarimashita. Kochira no denpyō ni gokinyū kudasai.",
+          "indonesian": "Baik. Silakan isi formulir ini."
+        },
+        {
+          "speaker": "客 (Kyaku)",
+          "japanese": "はい、書きました。",
+          "furigana": "はい、[書|か]きました。",
+          "romaji": "Hai, kakimashita.",
+          "indonesian": "Sudah saya isi."
+        },
+        {
+          "speaker": "窓口 (Madoguchi)",
+          "japanese": "ありがとうございます。送料は800円です。",
+          "furigana": "ありがとうございます。[送料|そうりょう]は800[円|えん]です。",
+          "romaji": "Arigatō gozaimasu. Sōryō wa happyaku en desu.",
+          "indonesian": "Terima kasih. Ongkos kirimnya 800 yen."
+        },
+        {
+          "speaker": "客 (Kyaku)",
+          "japanese": "はい、どうぞ。",
+          "furigana": "はい、どうぞ。",
+          "romaji": "Hai, dōzo.",
+          "indonesian": "Ini, silakan."
+        },
+        {
+          "speaker": "窓口 (Madoguchi)",
+          "japanese": "領収書はこちらです。ありがとうございました。",
+          "furigana": "[領収書|りょうしゅうしょ]はこちらです。ありがとうございました。",
+          "romaji": "Ryōshūsho wa kochira desu. Arigatō gozaimashita.",
+          "indonesian": "Ini tanda terimanya. Terima kasih."
+        }
+      ],
+      "keyPhrases": [
+        {
+          "phrase": "発送方法",
+          "reading": "hassō hōhō",
+          "meaning": "Metode pengiriman",
+          "usage": "Menanyakan cara pengiriman paket"
+        },
+        {
+          "phrase": "伝票",
+          "reading": "denpyō",
+          "meaning": "Formulir pengiriman",
+          "usage": "Formulir yang diisi saat mengirim paket"
+        },
+        {
+          "phrase": "送料",
+          "reading": "sōryō",
+          "meaning": "Ongkos kirim",
+          "usage": "Biaya pengiriman"
+        }
+      ]
     }
   ]
 }

@@ -1242,6 +1242,746 @@
           "usage": "Menanyakan durasi dalam hari"
         }
       ]
-    }
+    },
+    {
+      "id": 22,
+      "title": "Di Kantor Pos",
+      "level": "N5",
+      "description": "Percakapan mengirim surat di kantor pos",
+      "scenario": "Mengirim surat ke luar negeri",
+      "conversation": [
+      {
+        "speaker": "客 (Kyaku)",
+        "japanese": "すみません。この手紙をアメリカに送りたいです。",
+        "furigana": "すみません。この[手紙|てがみ]をアメリカに[送|おく]りたいです。",
+        "romaji": "Sumimasen. Kono tegami o Amerika ni okuritai desu.",
+        "indonesian": "Permisi. Saya ingin mengirim surat ini ke Amerika.",
+        "notes": "Menyatakan keinginan untuk mengirim surat"
+      },
+      {
+        "speaker": "郵便局員 (Yūbinkyokuin)",
+        "japanese": "航空便ですか、船便ですか。",
+        "furigana": "[航空便|こうくうびん]ですか、[船便|ふなびん]ですか。",
+        "romaji": "Kōkūbin desu ka, funabin desu ka.",
+        "indonesian": "Lewat pos udara atau pos laut?",
+        "notes": "Menanyakan jenis pengiriman"
+      },
+      {
+        "speaker": "客 (Kyaku)",
+        "japanese": "航空便でお願いします。いくらですか。",
+        "furigana": "[航空便|こうくうびん]でお[願|ねが]いします。いくらですか。",
+        "romaji": "Kōkūbin de onegaishimasu. Ikura desu ka.",
+        "indonesian": "Tolong lewat pos udara. Berapa harganya?",
+        "notes": "Memilih jenis pengiriman dan menanyakan harga"
+      },
+      {
+        "speaker": "郵便局員 (Yūbinkyokuin)",
+        "japanese": "百十円です。",
+        "furigana": "[百十円|ひゃくじゅうえん]です。",
+        "romaji": "Hyakujū-en desu.",
+        "indonesian": "Seratus sepuluh yen.",
+        "notes": "Menyebutkan harga"
+      }
+      ],
+      "keyPhrases": [
+      {
+        "phrase": "を送りたいです",
+        "reading": "o okuritai desu",
+        "meaning": "Ingin mengirim...",
+        "usage": "Menyatakan keinginan untuk mengirim sesuatu"
+      },
+      {
+        "phrase": "航空便",
+        "reading": "kōkūbin",
+        "meaning": "Pos udara",
+        "usage": "Jenis pengiriman melalui pesawat"
+      },
+      {
+        "phrase": "船便",
+        "reading": "funabin",
+        "meaning": "Pos laut",
+        "usage": "Jenis pengiriman melalui kapal laut"
+      }
+      ]
+    },
+    {
+      "id": 23,
+      "title": "Meminta Izin",
+      "level": "N5",
+      "description": "Percakapan meminta izin melakukan sesuatu",
+      "scenario": "Meminta izin menggunakan komputer di kantor",
+      "conversation": [
+      {
+        "speaker": "A",
+        "japanese": "すみません、このパソコンを使ってもいいですか。",
+        "furigana": "すみません、このパソコンを[使|つか]ってもいいですか。",
+        "romaji": "Sumimasen, kono pasokon o tsukatte mo ii desu ka.",
+        "indonesian": "Permisi, bolehkah saya menggunakan komputer ini?",
+        "notes": "Pola kalimat untuk meminta izin"
+      },
+      {
+        "speaker": "B",
+        "japanese": "はい、いいですよ。どうぞ。",
+        "furigana": "はい、いいですよ。どうぞ。",
+        "romaji": "Hai, ii desu yo. Dōzo.",
+        "indonesian": "Ya, boleh. Silakan.",
+        "notes": "Memberikan izin"
+      },
+      {
+        "speaker": "A",
+        "japanese": "ありがとうございます。",
+        "furigana": "ありがとうございます。",
+        "romaji": "Arigatō gozaimasu.",
+        "indonesian": "Terima kasih.",
+        "notes": "Ucapan terima kasih"
+      }
+      ],
+      "keyPhrases": [
+      {
+        "phrase": "〜てもいいですか",
+        "reading": "-te mo ii desu ka",
+        "meaning": "Bolehkah saya...?",
+        "usage": "Bentuk kalimat untuk meminta izin melakukan sesuatu"
+      },
+      {
+        "phrase": "いいですよ",
+        "reading": "ii desu yo",
+        "meaning": "Boleh / Tentu",
+        "usage": "Cara umum untuk memberikan izin"
+      },
+      {
+        "phrase": "どうぞ",
+        "reading": "dōzo",
+        "meaning": "Silakan",
+        "usage": "Kata untuk mempersilakan seseorang melakukan sesuatu"
+      }
+      ]
+    },
+    {
+      "id": 24,
+      "title": "Di Perpustakaan",
+      "level": "N5",
+      "description": "Percakapan di perpustakaan",
+      "scenario": "Meminjam buku di perpustakaan",
+      "conversation": [
+      {
+        "speaker": "利用者 (Riyōsha)",
+        "japanese": "この本を借りたいです。",
+        "furigana": "この[本|ほん]を[借|か]りたいです。",
+        "romaji": "Kono hon o karitai desu.",
+        "indonesian": "Saya ingin meminjam buku ini.",
+        "notes": "Menyatakan keinginan untuk meminjam buku"
+      },
+      {
+        "speaker": "図書館員 (Toshokan'in)",
+        "japanese": "カードをお願いします。",
+        "furigana": "カードをお[願|ねが]いします。",
+        "romaji": "Kādo o onegaishimasu.",
+        "indonesian": "Tolong kartu (anggota) Anda.",
+        "notes": "Meminta kartu perpustakaan"
+      },
+      {
+        "speaker": "利用者 (Riyōsha)",
+        "japanese": "はい、どうぞ。いつまでに返しますか。",
+        "furigana": "はい、どうぞ。いつまでに[返|かえ]しますか。",
+        "romaji": "Hai, dōzo. Itsu made ni kaeshimasu ka.",
+        "indonesian": "Ya, ini. Kapan harus dikembalikan?",
+        "notes": "Menanyakan batas waktu pengembalian"
+      },
+      {
+        "speaker": "図書館員 (Toshokan'in)",
+        "japanese": "二週間後です。",
+        "furigana": "[二週間|にしゅうかん][後|ご]です。",
+        "romaji": "Nishūkan-go desu.",
+        "indonesian": "Dua minggu lagi.",
+        "notes": "Menyebutkan batas waktu pengembalian"
+      }
+      ],
+      "keyPhrases": [
+      {
+        "phrase": "を借りたいです",
+        "reading": "o karitai desu",
+        "meaning": "Ingin meminjam...",
+        "usage": "Menyatakan keinginan untuk meminjam sesuatu"
+      },
+      {
+        "phrase": "いつまでに",
+        "reading": "itsu made ni",
+        "meaning": "Paling lambat kapan",
+        "usage": "Menanyakan batas waktu"
+      },
+      {
+        "phrase": "返します",
+        "reading": "kaeshimasu",
+        "meaning": "Mengembalikan",
+        "usage": "Kata kerja untuk mengembalikan barang"
+      }
+      ]
+    },
+    {
+      "id": 25,
+      "title": "Mengundang Makan Malam",
+      "level": "N5",
+      "description": "Percakapan mengundang seseorang untuk makan malam",
+      "scenario": "Mengundang teman ke rumah",
+      "conversation": [
+      {
+        "speaker": "A",
+        "japanese": "今晩、私のうちで晩ご飯を食べませんか。",
+        "furigana": "[今晩|こんばん]、わたしのうちで[晩|ばん]ご[飯|はん]を[食|た]べませんか。",
+        "romaji": "Konban, watashi no uchi de bangohan o tabemasen ka.",
+        "indonesian": "Malam ini, mau makan malam di rumah saya?",
+        "notes": "Mengundang makan malam di rumah"
+      },
+      {
+        "speaker": "B",
+        "japanese": "いいですね。ありがとうございます。何時に行きますか。",
+        "furigana": "いいですね。ありがとうございます。[何時|なんじ]に[行|い]きますか。",
+        "romaji": "Ii desu ne. Arigatō gozaimasu. Nanji ni ikimasu ka.",
+        "indonesian": "Boleh. Terima kasih. Saya pergi jam berapa?",
+        "notes": "Menerima undangan dan menanyakan waktu"
+      },
+      {
+        "speaker": "A",
+        "japanese": "七時ごろ来てください。",
+        "furigana": "[七時|しちじ]ごろ[来|き]てください。",
+        "romaji": "Shichiji-goro kite kudasai.",
+        "indonesian": "Tolong datang sekitar jam tujuh.",
+        "notes": "Menentukan waktu"
+      },
+      {
+        "speaker": "B",
+        "japanese": "わかりました。何か持っていきましょうか。",
+        "furigana": "わかりました。[何|なに]か[持|も]っていきましょうか。",
+        "romaji": "Wakarimashita. Nani ka motte ikimashō ka.",
+        "indonesian": "Baik. Perlu saya bawa sesuatu?",
+        "notes": "Menawarkan untuk membawa sesuatu"
+      }
+      ],
+      "keyPhrases": [
+      {
+        "phrase": "食べませんか",
+        "reading": "tabemasen ka",
+        "meaning": "Maukah makan...?",
+        "usage": "Bentuk ajakan untuk makan bersama"
+      },
+      {
+        "phrase": "ごろ",
+        "reading": "goro",
+        "meaning": "Sekitar (waktu)",
+        "usage": "Digunakan setelah penunjuk waktu untuk menyatakan perkiraan"
+      },
+      {
+        "phrase": "持っていきましょうか",
+        "reading": "motte ikimashō ka",
+        "meaning": "Perlukah saya bawa...?",
+        "usage": "Menawarkan diri untuk membawa sesuatu"
+      }
+      ]
+    },
+    {
+      "id": 26,
+      "title": "Membicarakan Hewan Peliharaan",
+      "level": "N5",
+      "description": "Percakapan tentang hewan peliharaan",
+      "scenario": "Bertemu teman yang membawa anjing",
+      "conversation": [
+      {
+        "speaker": "A",
+        "japanese": "かわいい犬ですね。名前は何ですか。",
+        "furigana": "かわいい[犬|いぬ]ですね。[名前|なまえ]は[何|なん]ですか。",
+        "romaji": "Kawaii inu desu ne. Namae wa nan desu ka.",
+        "indonesian": "Anjing yang lucu ya. Siapa namanya?",
+        "notes": "Memuji hewan peliharaan dan menanyakan nama"
+      },
+      {
+        "speaker": "B",
+        "japanese": "ポチです。二歳です。",
+        "furigana": "ポチです。[二歳|にさい]です。",
+        "romaji": "Pochi desu. Ni-sai desu.",
+        "indonesian": "Namanya Pochi. Umurnya dua tahun.",
+        "notes": "Menyebutkan nama dan umur hewan"
+      },
+      {
+        "speaker": "A",
+        "japanese": "田中さんもペットがいますか。",
+        "furigana": "[田中|たなか]さんもペットがいますか。",
+        "romaji": "Tanaka-san mo petto ga imasu ka.",
+        "indonesian": "Apakah Tanaka-san juga punya hewan peliharaan?",
+        "notes": "Balik bertanya tentang hewan peliharaan"
+      },
+      {
+        "speaker": "B",
+        "japanese": "いいえ、いません。でも猫が好きです。",
+        "furigana": "いいえ、いません。でも[猫|ねこ]が[好|す]きです。",
+        "romaji": "Iie, imasen. Demo neko ga suki desu.",
+        "indonesian": "Tidak, tidak punya. Tapi saya suka kucing.",
+        "notes": "Menjawab tidak punya tapi menyebutkan hewan yang disukai"
+      }
+      ],
+      "keyPhrases": [
+      {
+        "phrase": "かわいい",
+        "reading": "kawaii",
+        "meaning": "Lucu / Imut",
+        "usage": "Kata sifat untuk memuji sesuatu yang lucu atau menggemaskan"
+      },
+      {
+        "phrase": "ペットがいますか",
+        "reading": "petto ga imasu ka",
+        "meaning": "Apakah punya hewan peliharaan?",
+        "usage": "Menanyakan kepemilikan hewan peliharaan"
+      },
+      {
+        "phrase": "が好きです",
+        "reading": "ga suki desu",
+        "meaning": "Suka...",
+        "usage": "Menyatakan kesukaan terhadap sesuatu"
+      }
+      ]
+    },
+    {
+      "id": 27,
+      "title": "Di Bank",
+      "level": "N5",
+      "description": "Percakapan membuka rekening bank",
+      "scenario": "Membuka rekening baru di bank",
+      "conversation": [
+        {
+          "speaker": "客 (Kyaku)",
+          "japanese": "すみません。口座を開きたいです。",
+          "furigana": "すみません。[口座|こうざ]を[開|ひら]きたいです。",
+          "romaji": "Sumimasen. Kōza o hirakitai desu.",
+          "indonesian": "Permisi. Saya ingin membuka rekening.",
+          "notes": "Menyatakan keinginan untuk membuka rekening bank"
+        },
+        {
+          "speaker": "銀行員 (Ginkōin)",
+          "japanese": "はい、どうぞ。身分証明書はお持ちですか。",
+          "furigana": "はい、どうぞ。[身分|みぶん][証明|しょうめい][書|しょ]はお[持|も]ちですか。",
+          "romaji": "Hai, dōzo. Mibun shōmeisho wa omochi desu ka.",
+          "indonesian": "Baik, silakan. Apakah Anda membawa kartu identitas?",
+          "notes": "Meminta dokumen identifikasi"
+        },
+        {
+          "speaker": "客 (Kyaku)",
+          "japanese": "はい、あります。これです。",
+          "furigana": "はい、あります。これです。",
+          "romaji": "Hai, arimasu. Kore desu.",
+          "indonesian": "Ya, ada. Ini dia.",
+          "notes": "Memberikan dokumen"
+        },
+        {
+          "speaker": "銀行員 (Ginkōin)",
+          "japanese": "ありがとうございます。この書類に記入してください。",
+          "furigana": "ありがとうございます。この[書類|しょるい]に[記入|きにゅう]してください。",
+          "romaji": "Arigatō gozaimasu. Kono shorui ni kinyū shite kudasai.",
+          "indonesian": "Terima kasih. Silakan isi formulir ini.",
+          "notes": "Meminta untuk mengisi formulir"
+        }
+      ],
+      "keyPhrases": [
+        {
+          "phrase": "口座を開きたいです",
+          "reading": "kōza o hirakitai desu",
+          "meaning": "Ingin membuka rekening",
+          "usage": "Menyatakan keinginan untuk membuka rekening bank"
+        },
+        {
+          "phrase": "身分証明書",
+          "reading": "mibun shōmeisho",
+          "meaning": "Kartu identitas",
+          "usage": "Dokumen untuk membuktikan identitas diri"
+        },
+        {
+          "phrase": "記入してください",
+          "reading": "kinyū shite kudasai",
+          "meaning": "Tolong isi",
+          "usage": "Permintaan sopan untuk mengisi dokumen"
+        }
+      ]
+        },
+        {
+      "id": 28,
+      "title": "Menanyakan Pendapat",
+      "level": "N5",
+      "description": "Percakapan menanyakan pendapat tentang sesuatu",
+      "scenario": "Membicarakan film yang baru ditonton",
+      "conversation": [
+        {
+          "speaker": "A",
+          "japanese": "昨日の映画はどうでしたか。",
+          "furigana": "[昨日|きのう]の[映画|えいが]はどうでしたか。",
+          "romaji": "Kinō no eiga wa dō deshita ka.",
+          "indonesian": "Bagaimana film kemarin?",
+          "notes": "Menanyakan pendapat tentang sesuatu di masa lampau"
+        },
+        {
+          "speaker": "B",
+          "japanese": "とても面白かったです。",
+          "furigana": "とても[面白|おもしろ]かったです。",
+          "romaji": "Totemo omoshirokatta desu.",
+          "indonesian": "Sangat menarik.",
+          "notes": "Memberikan pendapat positif (bentuk lampau)"
+        },
+        {
+          "speaker": "A",
+          "japanese": "そうですか。私も見たかったです。",
+          "furigana": "そうですか。[私|わたし]も[見|み]たかったです。",
+          "romaji": "Sō desu ka. Watashi mo mitakatta desu.",
+          "indonesian": "Begitu ya. Saya juga ingin menontonnya.",
+          "notes": "Menyatakan keinginan yang tidak terwujud"
+        },
+        {
+          "speaker": "B",
+          "japanese": "田中さんはこの映画が好きだと思います。",
+          "furigana": "[田中|たなか]さんはこの[映画|えいが]が[好|す]きだと[思|おも]います。",
+          "romaji": "Tanaka-san wa kono eiga ga suki da to omoimasu.",
+          "indonesian": "Saya pikir Tanaka-san akan suka film ini.",
+          "notes": "Menyatakan pendapat atau pemikiran"
+        }
+      ],
+      "keyPhrases": [
+        {
+          "phrase": "どうでしたか",
+          "reading": "dō deshita ka",
+          "meaning": "Bagaimana?",
+          "usage": "Menanyakan pendapat atau kesan tentang sesuatu di masa lampau"
+        },
+        {
+          "phrase": "面白かったです",
+          "reading": "omoshirokatta desu",
+          "meaning": "Menarik (lampau)",
+          "usage": "Bentuk lampau dari 'omoshiroi desu'"
+        },
+        {
+          "phrase": "と思います",
+          "reading": "to omoimasu",
+          "meaning": "Saya pikir...",
+          "usage": "Digunakan untuk menyatakan pendapat atau pemikiran"
+        }
+      ]
+        },
+        {
+      "id": 29,
+      "title": "Izin Sakit",
+      "level": "N5",
+      "description": "Percakapan menelepon kantor karena sakit",
+      "scenario": "Memberitahu atasan tidak bisa masuk kerja",
+      "conversation": [
+        {
+          "speaker": "田中 (Tanaka)",
+          "japanese": "もしもし、田中です。おはようございます。",
+          "furigana": "もしもし、[田中|たなか]です。おはようございます。",
+          "romaji": "Moshimoshi, Tanaka desu. Ohayō gozaimasu.",
+          "indonesian": "Halo, saya Tanaka. Selamat pagi.",
+          "notes": "Salam pembuka di telepon"
+        },
+        {
+          "speaker": "上司 (Jōshi)",
+          "japanese": "おはようございます。どうしましたか。",
+          "furigana": "おはようございます。どうしましたか。",
+          "romaji": "Ohayō gozaimasu. Dō shimashita ka.",
+          "indonesian": "Selamat pagi. Ada apa?",
+          "notes": "Menanyakan keadaan"
+        },
+        {
+          "speaker": "田中 (Tanaka)",
+          "japanese": "すみません。熱がありますから、今日休みます。",
+          "furigana": "すみません。[熱|ねつ]がありますから、[今日|きょう][休|やす]みます。",
+          "romaji": "Sumimasen. Netsu ga arimasu kara, kyō yasumimasu.",
+          "indonesian": "Maaf. Karena saya demam, hari ini saya izin tidak masuk.",
+          "notes": "Memberikan alasan dan meminta izin"
+        },
+        {
+          "speaker": "上司 (Jōshi)",
+          "japanese": "わかりました。お大事に。",
+          "furigana": "わかりました。お[大事|だいじ]に。",
+          "romaji": "Wakarimashita. O-daiji ni.",
+          "indonesian": "Baik. Semoga lekas sembuh.",
+          "notes": "Ucapan agar cepat sembuh"
+        }
+      ],
+      "keyPhrases": [
+        {
+          "phrase": "どうしましたか",
+          "reading": "dō shimashita ka",
+          "meaning": "Ada apa? / Kenapa?",
+          "usage": "Menanyakan apa yang terjadi, seringkali saat melihat seseorang tampak tidak baik"
+        },
+        {
+          "phrase": "〜から、休みます",
+          "reading": "-kara, yasumimasu",
+          "meaning": "Karena..., saya izin tidak masuk",
+          "usage": "Pola untuk memberikan alasan izin tidak masuk kerja/sekolah"
+        },
+        {
+          "phrase": "お大事に",
+          "reading": "o-daiji ni",
+          "meaning": "Semoga lekas sembuh",
+          "usage": "Ucapan yang ditujukan kepada orang yang sakit"
+        }
+      ]
+        },
+        {
+      "id": 30,
+      "title": "Memberi dan Menerima",
+      "level": "N5",
+      "description": "Percakapan tentang memberi dan menerima hadiah",
+      "scenario": "Membicarakan hadiah ulang tahun",
+      "conversation": [
+        {
+          "speaker": "A",
+          "japanese": "この時計、素敵ですね。",
+          "furigana": "この[時計|とけい]、[素敵|すてき]ですね。",
+          "romaji": "Kono tokei, suteki desu ne.",
+          "indonesian": "Jam tangan ini bagus ya.",
+          "notes": "Memuji barang milik orang lain"
+        },
+        {
+          "speaker": "B",
+          "japanese": "ありがとうございます。誕生日に母にもらいました。",
+          "furigana": "ありがとうございます。[誕生日|たんじょうび]に[母|はは]にもらいました。",
+          "romaji": "Arigatō gozaimasu. Tanjōbi ni haha ni moraimashita.",
+          "indonesian": "Terima kasih. Saya menerimanya dari ibu saat ulang tahun.",
+          "notes": "Menjelaskan bahwa barang tersebut adalah pemberian"
+        },
+        {
+          "speaker": "A",
+          "japanese": "そうですか。私は父にネクタイをあげました。",
+          "furigana": "そうですか。[私|わたし]は[父|ちち]にネクタイをあげました。",
+          "romaji": "Sō desu ka. Watashi wa chichi ni nekutai o agemashita.",
+          "indonesian": "Begitu ya. Saya memberikan dasi kepada ayah saya.",
+          "notes": "Menjelaskan bahwa ia memberikan sesuatu kepada orang lain"
+        },
+        {
+          "speaker": "B",
+          "japanese": "お父さんは喜びましたか。",
+          "furigana": "お[父|とう]さんは[喜|よろこ]びましたか。",
+          "romaji": "Otōsan wa yorokobimashita ka.",
+          "indonesian": "Apakah ayah Anda senang?",
+          "notes": "Menanyakan reaksi penerima hadiah"
+        }
+      ],
+      "keyPhrases": [
+        {
+          "phrase": "もらいました",
+          "reading": "moraimashita",
+          "meaning": "Menerima",
+          "usage": "Kata kerja untuk menerima sesuatu dari seseorang (dari sudut pandang penerima)"
+        },
+        {
+          "phrase": "あげました",
+          "reading": "agemashita",
+          "meaning": "Memberi",
+          "usage": "Kata kerja untuk memberikan sesuatu kepada orang lain (dari sudut pandang pemberi)"
+        },
+        {
+          "phrase": "素敵ですね",
+          "reading": "suteki desu ne",
+          "meaning": "Bagus ya / Keren ya",
+          "usage": "Ungkapan untuk memuji penampilan atau benda"
+        }
+      ]
+        },
+        {
+      "id": 31,
+      "title": "Membandingkan Barang",
+      "level": "N5",
+      "description": "Percakapan membandingkan dua barang atau lebih",
+      "scenario": "Memilih kamera di toko elektronik",
+      "conversation": [
+        {
+          "speaker": "客 (Kyaku)",
+          "japanese": "このカメラとあのカメラと、どちらが高いですか。",
+          "furigana": "このカメラとあのカメラと、どちらが[高|たか]いですか。",
+          "romaji": "Kono kamera to ano kamera to, dochira ga takai desu ka.",
+          "indonesian": "Antara kamera ini dan kamera itu, mana yang lebih mahal?",
+          "notes": "Membandingkan dua barang"
+        },
+        {
+          "speaker": "店員 (Tenin)",
+          "japanese": "こちらのほうが高いです。でも、性能がいいですよ。",
+          "furigana": "こちらのほうが[高|たか]いです。でも、[性能|せいのう]がいいですよ。",
+          "romaji": "Kochira no hō ga takai desu. Demo, seinō ga ii desu yo.",
+          "indonesian": "Yang ini lebih mahal. Tapi, performanya bagus.",
+          "notes": "Menjawab perbandingan dan memberi informasi tambahan"
+        },
+        {
+          "speaker": "客 (Kyaku)",
+          "japanese": "そうですか。じゃあ、これにします。",
+          "furigana": "そうですか。じゃあ、これにします。",
+          "romaji": "Sō desu ka. Jā, kore ni shimasu.",
+          "indonesian": "Begitu ya. Kalau begitu, saya pilih yang ini.",
+          "notes": "Membuat keputusan pembelian"
+        }
+      ],
+      "keyPhrases": [
+        {
+          "phrase": "AとBと、どちらが〜ですか",
+          "reading": "A to B to, dochira ga ... desu ka",
+          "meaning": "Antara A dan B, mana yang lebih...?",
+          "usage": "Pola kalimat untuk membandingkan dua hal"
+        },
+        {
+          "phrase": "〜のほうが...",
+          "reading": "...no hō ga...",
+          "meaning": "Yang ... lebih ...",
+          "usage": "Pola kalimat untuk menyatakan satu hal lebih unggul dari yang lain"
+        },
+        {
+          "phrase": "これにします",
+          "reading": "kore ni shimasu",
+          "meaning": "Saya pilih yang ini",
+          "usage": "Ungkapan untuk menyatakan keputusan pilihan"
+        }
+      ]
+        },
+        {
+      "id": 32,
+      "title": "Pengalaman Masa Lalu",
+      "level": "N5",
+      "description": "Percakapan tentang pengalaman yang pernah dilakukan",
+      "scenario": "Membicarakan pengalaman bepergian",
+      "conversation": [
+        {
+          "speaker": "A",
+          "japanese": "京都へ行ったことがありますか。",
+          "furigana": "[京都|きょうと]へ[行|い]ったことがありますか。",
+          "romaji": "Kyōto e itta koto ga arimasu ka.",
+          "indonesian": "Apakah Anda pernah pergi ke Kyoto?",
+          "notes": "Menanyakan pengalaman"
+        },
+        {
+          "speaker": "B",
+          "japanese": "はい、あります。去年行きました。",
+          "furigana": "はい、あります。[去年|きょねん][行|い]きました。",
+          "romaji": "Hai, arimasu. Kyonen ikimashita.",
+          "indonesian": "Ya, pernah. Saya pergi tahun lalu.",
+          "notes": "Menjawab pernah dan menyebutkan waktunya"
+        },
+        {
+          "speaker": "A",
+          "japanese": "そうですか。私はまだありません。",
+          "furigana": "そうですか。[私|わたし]はまだありません。",
+          "romaji": "Sō desu ka. Watashi wa mada arimasen.",
+          "indonesian": "Begitu ya. Saya belum pernah.",
+          "notes": "Menjawab belum pernah"
+        },
+        {
+          "speaker": "B",
+          "japanese": "とてもきれいな所ですよ。",
+          "furigana": "とてもきれいな[所|ところ]ですよ。",
+          "romaji": "Totemo kirei na tokoro desu yo.",
+          "indonesian": "Tempatnya sangat indah lho.",
+          "notes": "Memberikan kesan tentang tempat tersebut"
+        }
+      ],
+      "keyPhrases": [
+        {
+          "phrase": "〜たことがありますか",
+          "reading": "-ta koto ga arimasu ka",
+          "meaning": "Apakah pernah...?",
+          "usage": "Pola kalimat untuk menanyakan pengalaman melakukan sesuatu"
+        },
+        {
+          "phrase": "去年",
+          "reading": "kyonen",
+          "meaning": "Tahun lalu",
+          "usage": "Menunjukkan waktu di masa lampau"
+        },
+        {
+          "phrase": "まだありません",
+          "reading": "mada arimasen",
+          "meaning": "Belum pernah",
+          "usage": "Jawaban negatif untuk pertanyaan pengalaman"
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "title": "Memperkenalkan Teman",
+      "level": "N5",
+      "description": "Percakapan saat memperkenalkan seorang teman kepada teman yang lain.",
+      "scenario": "Bertemu secara tidak sengaja di jalan.",
+      "conversation": [
+        {
+          "speaker": "田中 (Tanaka)",
+          "japanese": "あ、佐藤さん。こんにちは。",
+          "furigana": "あ、[佐藤|さとう]さん。こんにちは。",
+          "romaji": "A, Satō-san. Konnichiwa.",
+          "indonesian": "Ah, Sato-san. Halo.",
+          "notes": "Menyapa teman yang ditemui."
+        },
+        {
+          "speaker": "佐藤 (Sato)",
+          "japanese": "あ、田中さん。こんにちは。お元気ですか。",
+          "furigana": "あ、[田中|たなか]さん。こんにちは。お[元気|げんき]ですか。",
+          "romaji": "A, Tanaka-san. Konnichiwa. O-genki desu ka.",
+          "indonesian": "Ah, Tanaka-san. Halo. Apa kabar?",
+          "notes": "Membalas sapaan dan menanyakan kabar."
+        },
+        {
+          "speaker": "田中 (Tanaka)",
+          "japanese": "はい、元気です。佐藤さん、こちらは友達のキムさんです。",
+          "furigana": "はい、[元気|げんき]です。[佐藤|さとう]さん、こちらは[友達|ともだち]のキムさんです。",
+          "romaji": "Hai, genki desu. Satō-san, kochira wa tomodachi no Kimu-san desu.",
+          "indonesian": "Ya, baik. Sato-san, ini teman saya, Kim-san.",
+          "notes": "Memperkenalkan teman."
+        },
+        {
+          "speaker": "キム (Kim)",
+          "japanese": "はじめまして。キムです。どうぞよろしくお願いします。",
+          "furigana": "はじめまして。キムです。どうぞよろしくお[願|ねが]いします。",
+          "romaji": "Hajimemashite. Kimu desu. Dōzo yoroshiku onegaishimasu.",
+          "indonesian": "Senang bertemu Anda. Saya Kim. Mohon bantuannya.",
+          "notes": "Perkenalan diri kepada orang baru."
+        },
+        {
+          "speaker": "佐藤 (Sato)",
+          "japanese": "はじめまして。佐藤です。こちらこそ、よろしくお願いします。",
+          "furigana": "はじめまして。[佐藤|さとう]です。こちらこそ、よろしくお[願|ねが]いします。",
+          "romaji": "Hajimemashite. Satō desu. Kochira koso, yoroshiku onegaishimasu.",
+          "indonesian": "Senang bertemu Anda. Saya Sato. Saya juga mohon bantuannya.",
+          "notes": "Membalas perkenalan."
+        },
+        {
+          "speaker": "田中 (Tanaka)",
+          "japanese": "キムさんは韓国からの留学生です。",
+          "furigana": "キムさんは[韓国|かんこく]からの[留学生|りゅうがくせい]です。",
+          "romaji": "Kimu-san wa Kankoku kara no ryūgakusei desu.",
+          "indonesian": "Kim-san adalah mahasiswa pertukaran dari Korea.",
+          "notes": "Memberikan informasi tambahan tentang teman."
+        },
+        {
+          "speaker": "佐藤 (Sato)",
+          "japanese": "そうですか。日本語がお上手ですね。",
+          "furigana": "そうですか。[日本語|にほんご]がお[上手|じょうず]ですね。",
+          "romaji": "Sō desu ka. Nihongo ga o-jōzu desu ne.",
+          "indonesian": "Oh begitu. Bahasa Jepang Anda bagus ya.",
+          "notes": "Memberikan pujian."
+        }
+      ],
+      "keyPhrases": [
+        {
+          "phrase": "こちらは〜です",
+          "reading": "kochira wa ... desu",
+          "meaning": "Ini adalah...",
+          "usage": "Cara sopan untuk memperkenalkan seseorang."
+        },
+        {
+          "phrase": "〜からの留学生",
+          "reading": "...kara no ryūgakusei",
+          "meaning": "Mahasiswa pertukaran dari...",
+          "usage": "Menjelaskan asal negara seorang mahasiswa pertukaran."
+        },
+        {
+          "phrase": "お上手ですね",
+          "reading": "o-jōzu desu ne",
+          "meaning": "Anda mahir/pintar ya",
+          "usage": "Pujian yang sopan untuk keahlian seseorang (biasanya tidak untuk diri sendiri)."
+        }
+      ]
+        }
   ]
 }
