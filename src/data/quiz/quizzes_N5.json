@@ -455,7 +455,12 @@
         "questions": [
           {
             "question": "31. <u>わたしの先生はとても熱心な先生です</u>。",
-            "options": [],
+            "options": [
+              "1) わたしの　先生は　とても　ユーモアが　ある先生です。",
+              "2) わたしの　先生は　一生懸命　教えて　くれる先生です。",
+              "3) わたしの　先生は　まじめな　先生です。",
+              "4) わたしの　先生は　とても　りっぱな　先生です。"
+            ],
             "correct": "2",
             "image_url": null,
             "audio_url": null,
@@ -464,7 +469,12 @@
           },
           {
             "question": "32. <u>さいふに一円も入っていません</u>。",
-            "options": [],
+            "options": [
+              "1) さいふに　おかねが　たくさん　あります。",
+              "2) さいふに　おかねが　ありません。",
+              "3) さいふに　おかねが　いちえんしか　ありません。",
+              "4) さいふに　おかねが　すこし　あります。"
+            ],
             "correct": "2",
             "image_url": null,
             "audio_url": null,
@@ -473,7 +483,12 @@
           },
           {
             "question": "33. <u>田中さんはげんかんをでました</u>。",
-            "options": [],
+            "options": [
+              "1) 田中さんは　でんわに　でました。",
+              "2) 田中さんは　かいしゃに　でました。",
+              "3) 田中さんは　いえを　でました。",
+              "4) 田中さんは　テストに　でました。"
+            ],
             "correct": "3",
             "image_url": null,
             "audio_url": null,
@@ -482,7 +497,12 @@
           },
           {
             "question": "34. <u>すずしい　かぜを　いれましょう</u>。",
-            "options": [],
+            "options": [
+              "1) まどを　しめましょう。",
+              "2) まどを　あけましょう。",
+              "3) ストーブを　けしましょう。",
+              "4) ストーブを　つけましょう。"
+            ],
             "correct": "2",
             "image_url": null,
             "audio_url": null,
@@ -491,7 +511,12 @@
           },
           {
             "question": "35. <u>わたしは　先生に　レポートを　わたしました</u>。",
-            "options": [],
+            "options": [
+              "1) レポートを　ききました。",
+              "2) レポートを　かきました。",
+              "3) レポートを　わすれました。",
+              "4) レポートを　だしました。"
+            ],
             "correct": "4",
             "image_url": null,
             "audio_url": null,
@@ -938,7 +963,7 @@
             "correct": "2",
             "image_url": "https://dethitiengnhat.com/en/de_thi_thu/N5/1/image/N5-D1-1.jpg",
             "audio_url": null,
-            "image_file": "image\\quiz2_q29_N5-D1-1.jpeg",
+            "image_file": "image\\quiz2_q29_N5-D1-1..jpeg",
             "audio_file": null
           },
           {
@@ -952,7 +977,7 @@
             "correct": "4",
             "image_url": "https://dethitiengnhat.com/en/de_thi_thu/N5/1/image/N5-D1-16.jpg",
             "audio_url": null,
-            "image_file": "image\\quiz2_q30_N5-D1-16.jpeg",
+            "image_file": "image\\quiz2_q30_N5-D1-16..jpeg",
             "audio_file": null
           }
         ]
@@ -964,7 +989,12 @@
         "questions": [
           {
             "question": "(れい) ここは でぐちです。いりぐちは あちらです。\n(かいとうようし) (れい) 〇 〇 ● 〇",
-            "options": [],
+            "options": [
+              "1) あちらからでてください。",
+              "2) あちらからおりてください。",
+              "3) あちらからはいってください。",
+              "4) あちらからわたってください。"
+            ],
             "correct": "",
             "image_url": null,
             "audio_url": null,
@@ -973,7 +1003,12 @@
           },
           {
             "question": "29. <u>まいばんくにの かぞくにでんわします</u>。",
-            "options": [],
+            "options": [
+              "1) よるはときどきくにのかぞくにでんわします。",
+              "2) あさはときどきくにのかぞくにでんわします。",
+              "3) よるはいつもくにのかぞくにでんわします。",
+              "4) あさはいつもくにのかぞくにでんわします。"
+            ],
             "correct": "3",
             "image_url": null,
             "audio_url": null,
@@ -982,7 +1017,12 @@
           },
           {
             "question": "30. <u>このまちには ゆうめいな たてものがあります</u>。",
-            "options": [],
+            "options": [
+              "1) このまちにはゆうめいなビルがあります。",
+              "2) このまちにはゆうめいなおちゃがあります。",
+              "3)このまちにはゆうめいなケーキがあります。",
+              "4) このまちにはゆうめいなこうえんがあります。"
+            ],
             "correct": "1",
             "image_url": null,
             "audio_url": null,
@@ -991,7 +1031,12 @@
           },
           {
             "question": "31. <u>その えいがは おもしろくなかったです</u>。",
-            "options": [],
+            "options": [
+              "1) そのえいがはたのしかったです。",
+              "2) そのえいがはつまらなかったです。",
+              "3) そのえいがはみじかかったです。",
+              "4) そのえいがはながかったです。"
+            ],
             "correct": "2",
             "image_url": null,
             "audio_url": null,
@@ -1000,7 +1045,12 @@
           },
           {
             "question": "32. <u>たんじょうびは 6がつ15にちです</u>。",
-            "options": [],
+            "options": [
+              "1) 6がつ15にちにけっこんしました。",
+              "2) 6がつ15にちにテストがはじまりました。",
+              "3) 6がつ15にちにうまれました。",
+              "4) 6がつ15にちにくにへかえりました。"
+            ],
             "correct": "3",
             "image_url": null,
             "audio_url": null,
@@ -1009,7 +1059,12 @@
           },
           {
             "question": "33. <u>にねんまえに きょうとへいきました</u>。",
-            "options": [],
+            "options": [
+              "1) きのうきょうとへいきました。",
+              "2) おとといきょうとへいきました。",
+              "3) きょねんきょうとへいきました。",
+              "4) おととしきょうとへいきました。"
+            ],
             "correct": "4",
             "image_url": null,
             "audio_url": null,
@@ -1105,7 +1160,12 @@
           },
           {
             "question": "5. わたしの　部屋は あまり　( )。",
-            "options": [],
+            "options": [
+              "1) きれくないです",
+              "2) きれいじゃありません",
+              "3) きれいありません",
+              "4) きれくありません"
+            ],
             "correct": "2",
             "image_url": null,
             "audio_url": null,
@@ -1212,7 +1272,12 @@
           },
           {
             "question": "13. A: 「住所は( )　いいですか」\nB:「いいえ、お願い します」",
-            "options": [],
+            "options": [
+              "1) 書かなくては",
+              "2) 書かなくても",
+              "3) 書かない",
+              "4) 書かないで"
+            ],
             "correct": "2",
             "image_url": null,
             "audio_url": null,
@@ -1221,7 +1286,12 @@
           },
           {
             "question": "14. 危ないから、そんなことを　( )　いけません。",
-            "options": [],
+            "options": [
+              "1) しては",
+              "2) しないで",
+              "3) しても",
+              "4) しなくては"
+            ],
             "correct": "1",
             "image_url": null,
             "audio_url": null,
@@ -1384,7 +1454,12 @@
           },
           {
             "question": "【24】",
-            "options": [],
+            "options": [
+              "1) わたしたちは　本屋へ 　行きます。",
+              "2) わたしたちは　本屋へ　行きません。",
+              "3) わたしたちは　本屋へ　行きました。",
+              "4) わたしたちは　本屋へ 　行きませんでした。"
+            ],
             "correct": "3",
             "image_url": null,
             "audio_url": null,
@@ -1393,7 +1468,12 @@
           },
           {
             "question": "【25】",
-            "options": [],
+            "options": [
+              "1) 680円かしました。",
+              "2) 680円なくしました。",
+              "3) 680円かいました。",
+              "4) 680円かかりました。"
+            ],
             "correct": "4",
             "image_url": null,
             "audio_url": null,
@@ -1423,7 +1503,12 @@
         "questions": [
           {
             "question": "27. どうして　田中さんは　ジョンさんに　メールを　しましたか。",
-            "options": [],
+            "options": [
+              "1) ジョンさんと　アカーア祭りに、もれたから。",
+              "2) ジョンさんと　アカシア祭りに　行きたいからです。",
+              "3) ジョンさんと　サッカーの試合を　見たいからです。",
+              "4) ジョンさんと　サッカーの試合を　見たからです。"
+            ],
             "correct": "2",
             "image_url": null,
             "audio_url": null,
@@ -1432,7 +1517,12 @@
           },
           {
             "question": "28 . <u>「こんな　どうぶつです」</u>とあるが、どんな　どうぶつですか。",
-            "options": [],
+            "options": [
+              "1) テレビを　つくる　どうぶつです。",
+              "2) ことばを　つくる　どうぶつです。",
+              "3) べんりな　ものを　つくる　どうぶつです。",
+              "4) 「PK」などを　つくる　どうぶつです。"
+            ],
             "correct": "3",
             "image_url": null,
             "audio_url": null,
@@ -1441,7 +1531,12 @@
           },
           {
             "question": "29. ペットをかっても　いいですか",
-            "options": [],
+            "options": [
+              "1) ねこも　いぬも　だめです。",
+              "2) ねこが　きらいから、だめです。",
+              "3) いぬは　かっても　いいです。",
+              "4) なんでも　いいです。"
+            ],
             "correct": "4",
             "image_url": null,
             "audio_url": null,
@@ -1457,7 +1552,12 @@
         "questions": [
           {
             "question": "30. どうして「<u>インターネットは　ほんとうに　べんりな　もの</u>」といってし",
-            "options": [],
+            "options": [
+              "1) インターネットでべんきょうができますから。",
+              "2) インターネットでやりたいことができますから。",
+              "3) インターネットがないと、かいものができません。",
+              "4) インターネットがあるから、がっこうがもういりませんから。"
+            ],
             "correct": "2",
             "image_url": null,
             "audio_url": null,
@@ -1466,7 +1566,12 @@
           },
           {
             "question": "31.  ただしい　ものは　どれですか。",
-            "options": [],
+            "options": [
+              "1) インターネットには　わるいことしか　ありません。",
+              "2) インターネットは　とても　べんりです。",
+              "3) インターネットの　つかいかたは　むずかしいです。",
+              "4) インターネットの　つかいかたには　もんだいが　あります。"
+            ],
             "correct": "2",
             "image_url": null,
             "audio_url": null,
@@ -1912,7 +2017,12 @@
         "questions": [
           {
             "question": "27. 「わたし」は 今日、何をしましたか。",
-            "options": [],
+            "options": [
+              "1) 友だちとえいがを見に行きました。",
+              "2) 友だちとDVDを買いに行きました。",
+              "3) 妹とえいがを見に行きました。",
+              "4) 姉とDVDを買いに行きました。"
+            ],
             "correct": "2",
             "image_url": null,
             "audio_url": null,
@@ -1930,7 +2040,7 @@
             "correct": "3",
             "image_url": "https://dethitiengnhat.com/en/de_thi_thu/N5/1/image/N5-D1-15.jpg",
             "audio_url": null,
-            "image_file": "image\\quiz4_q29_N5-D1-15.jpeg",
+            "image_file": "image\\quiz4_q29_N5-D1-15..jpeg",
             "audio_file": null
           },
           {
@@ -1956,7 +2066,12 @@
         "questions": [
           {
             "question": "30. どうして <u>こまりました</u>か。",
-            "options": [],
+            "options": [
+              "1) おそい時間に駅に着いたから",
+              "2) しごとがたくさんあったから",
+              "3) とてもつかれたから",
+              "4) かさがなかったから"
+            ],
             "correct": "4",
             "image_url": null,
             "audio_url": null,
@@ -1965,7 +2080,12 @@
           },
           {
             "question": "31. 「わたし」は、あした どうしますか。",
-            "options": [],
+            "options": [
+              "1) かさをはこの中に入れます。",
+              "2) かさを駅の人にわたします。",
+              "3) お金をはこの中に入れます。",
+              "4) お金を駅の人にわたします。"
+            ],
             "correct": "1",
             "image_url": null,
             "audio_url": null,
@@ -1981,7 +2101,12 @@
         "questions": [
           {
             "question": "32. あらきやで トイレットペーパーと にくと やさいを 同じ 日に買いたいです。いつが 安いですか。",
-            "options": [],
+            "options": [
+              "1) 6月11日(月)と12日(火)",
+              "2) 6月13日(水)と14日(木)",
+              "3) 6月15日(金)と16日(土)",
+              "4) 6月17日(日)と18日(月)"
+            ],
             "correct": "2",
             "image_url": null,
             "audio_url": null,
@@ -2016,7 +2141,7 @@
             "correct": "3",
             "image_url": "https://dethitiengnhat.com/image/N52-1.png",
             "audio_url": null,
-            "image_file": "image\\quiz5_q1_N52-1.png",
+            "image_file": "image\\quiz5_q1_N52-1..png",
             "audio_file": null
           },
           {
@@ -2121,7 +2246,7 @@
             "correct": "3",
             "image_url": "https://dethitiengnhat.com/image/N52-2.png",
             "audio_url": null,
-            "image_file": "image\\quiz5_q8_N52-2.png",
+            "image_file": "image\\quiz5_q8_N52-2..png",
             "audio_file": null
           },
           {
@@ -2135,7 +2260,7 @@
             "correct": "2",
             "image_url": "https://dethitiengnhat.com/image/N52-3.png",
             "audio_url": null,
-            "image_file": "image\\quiz5_q9_N52-3.png",
+            "image_file": "image\\quiz5_q9_N52-3..png",
             "audio_file": null
           },
           {
@@ -2149,7 +2274,7 @@
             "correct": "3",
             "image_url": "https://dethitiengnhat.com/image/N52-4.png",
             "audio_url": null,
-            "image_file": "image\\quiz5_q10_N52-4.png",
+            "image_file": "image\\quiz5_q10_N52-4..png",
             "audio_file": null
           },
           {
@@ -2163,7 +2288,7 @@
             "correct": "1",
             "image_url": "https://dethitiengnhat.com/image/N52-5.png",
             "audio_url": null,
-            "image_file": "image\\quiz5_q11_N52-5.png",
+            "image_file": "image\\quiz5_q11_N52-5..png",
             "audio_file": null
           },
           {
@@ -2177,12 +2302,17 @@
             "correct": "3",
             "image_url": "https://dethitiengnhat.com/image/N52-6.png",
             "audio_url": null,
-            "image_file": "image\\quiz5_q12_N52-6.png",
+            "image_file": "image\\quiz5_q12_N52-6..png",
             "audio_file": null
           },
           {
             "question": "6ばん",
-            "options": [],
+            "options": [
+              "1) 女の人のカメラを取ります。",
+              "3) 女の人に写真をあげます。",
+              "2) 女の写真を取ります。",
+              "4) 女の人にカメラを貸します。"
+            ],
             "correct": "2",
             "image_url": null,
             "audio_url": null,
@@ -2206,7 +2336,7 @@
             "correct": "3",
             "image_url": "https://dethitiengnhat.com/image/N52-7.png",
             "audio_url": null,
-            "image_file": "image\\quiz5_q14_N52-7.png",
+            "image_file": "image\\quiz5_q14_N52-7..png",
             "audio_file": null
           },
           {
@@ -2219,7 +2349,7 @@
             "correct": "2",
             "image_url": "https://dethitiengnhat.com/image/N52-8.png",
             "audio_url": null,
-            "image_file": "image\\quiz5_q15_N52-8.png",
+            "image_file": "image\\quiz5_q15_N52-8..png",
             "audio_file": null
           },
           {
@@ -2232,7 +2362,7 @@
             "correct": "3",
             "image_url": "https://dethitiengnhat.com/image/N52-9.png",
             "audio_url": null,
-            "image_file": "image\\quiz5_q16_N52-9.png",
+            "image_file": "image\\quiz5_q16_N52-9..png",
             "audio_file": null
           },
           {
@@ -2245,7 +2375,7 @@
             "correct": "2",
             "image_url": "https://dethitiengnhat.com/image/N52-10.png",
             "audio_url": null,
-            "image_file": "image\\quiz5_q17_N52-10.png",
+            "image_file": "image\\quiz5_q17_N52-10..png",
             "audio_file": null
           },
           {
@@ -2258,7 +2388,7 @@
             "correct": "2",
             "image_url": "https://dethitiengnhat.com/image/N52-11.png",
             "audio_url": null,
-            "image_file": "image\\quiz5_q18_N52-11.png",
+            "image_file": "image\\quiz5_q18_N52-11..png",
             "audio_file": null
           }
         ]
@@ -2374,7 +2504,7 @@
             "correct": "3",
             "image_url": "https://dethitiengnhat.com/en/de_thi_thu/N5/1/image/N5-D1-3.jpg",
             "audio_url": null,
-            "image_file": "image\\quiz6_q1_N5-D1-3.jpeg",
+            "image_file": "image\\quiz6_q1_N5-D1-3..jpeg",
             "audio_file": null
           },
           {
@@ -2388,7 +2518,7 @@
             "correct": "2",
             "image_url": "https://dethitiengnhat.com/en/de_thi_thu/N5/1/image/N5-D1-4.jpg",
             "audio_url": null,
-            "image_file": "image\\quiz6_q2_N5-D1-4.jpeg",
+            "image_file": "image\\quiz6_q2_N5-D1-4..jpeg",
             "audio_file": null
           },
           {
@@ -2416,7 +2546,7 @@
             "correct": "3",
             "image_url": "https://dethitiengnhat.com/en/de_thi_thu/N5/1/image/N5-D1-5.jpg",
             "audio_url": null,
-            "image_file": "image\\quiz6_q4_N5-D1-5.jpeg",
+            "image_file": "image\\quiz6_q4_N5-D1-5..jpeg",
             "audio_file": null
           },
           {
@@ -2430,7 +2560,7 @@
             "correct": "3",
             "image_url": "https://dethitiengnhat.com/en/de_thi_thu/N5/1/image/N5-D1-6.jpg",
             "audio_url": null,
-            "image_file": "image\\quiz6_q5_N5-D1-6.jpeg",
+            "image_file": "image\\quiz6_q5_N5-D1-6..jpeg",
             "audio_file": null
           },
           {
@@ -2444,7 +2574,7 @@
             "correct": "1",
             "image_url": "https://dethitiengnhat.com/en/de_thi_thu/N5/1/image/N5-D1-7.jpg",
             "audio_url": null,
-            "image_file": "image\\quiz6_q6_N5-D1-7.jpeg",
+            "image_file": "image\\quiz6_q6_N5-D1-7..jpeg",
             "audio_file": null
           },
           {
@@ -2458,7 +2588,7 @@
             "correct": "4",
             "image_url": "https://dethitiengnhat.com/en/de_thi_thu/N5/1/image/N5-D1-8.jpg",
             "audio_url": null,
-            "image_file": "image\\quiz6_q7_N5-D1-8.jpeg",
+            "image_file": "image\\quiz6_q7_N5-D1-8..jpeg",
             "audio_file": null
           },
           {
@@ -2597,7 +2727,7 @@
             "correct": "3",
             "image_url": "https://dethitiengnhat.com/en/de_thi_thu/N5/1/image/N5-D1-9.jpg",
             "audio_url": null,
-            "image_file": "image\\quiz6_q16_N5-D1-9.jpeg",
+            "image_file": "image\\quiz6_q16_N5-D1-9..jpeg",
             "audio_file": null
           },
           {
@@ -2610,7 +2740,7 @@
             "correct": "1",
             "image_url": "https://dethitiengnhat.com/en/de_thi_thu/N5/1/image/N5-D1-10.jpg",
             "audio_url": null,
-            "image_file": "image\\quiz6_q17_N5-D1-10.jpeg",
+            "image_file": "image\\quiz6_q17_N5-D1-10..jpeg",
             "audio_file": null
           },
           {
@@ -2623,7 +2753,7 @@
             "correct": "3",
             "image_url": "https://dethitiengnhat.com/en/de_thi_thu/N5/1/image/N5-D1-11.jpg",
             "audio_url": null,
-            "image_file": "image\\quiz6_q18_N5-D1-11.jpeg",
+            "image_file": "image\\quiz6_q18_N5-D1-11..jpeg",
             "audio_file": null
           },
           {
@@ -2636,7 +2766,7 @@
             "correct": "2",
             "image_url": "https://dethitiengnhat.com/en/de_thi_thu/N5/1/image/N5-D1-12.jpg",
             "audio_url": null,
-            "image_file": "image\\quiz6_q19_N5-D1-12.jpeg",
+            "image_file": "image\\quiz6_q19_N5-D1-12..jpeg",
             "audio_file": null
           },
           {
@@ -2649,7 +2779,7 @@
             "correct": "3",
             "image_url": "https://dethitiengnhat.com/en/de_thi_thu/N5/1/image/N5-D1-13.jpg",
             "audio_url": null,
-            "image_file": "image\\quiz6_q20_N5-D1-13.jpeg",
+            "image_file": "image\\quiz6_q20_N5-D1-13..jpeg",
             "audio_file": null
           },
           {
@@ -2662,7 +2792,7 @@
             "correct": "2",
             "image_url": "https://dethitiengnhat.com/en/de_thi_thu/N5/1/image/N5-D1-14.jpg",
             "audio_url": null,
-            "image_file": "image\\quiz6_q21_N5-D1-14.jpeg",
+            "image_file": "image\\quiz6_q21_N5-D1-14..jpeg",
             "audio_file": null
           }
         ]

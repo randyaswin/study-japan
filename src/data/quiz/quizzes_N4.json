@@ -308,7 +308,12 @@
           },
           {
             "question": "21. もりさんを デートに （ ）が、行けないと 言われました。",
-            "options": [],
+            "options": [
+              "1)  さそいました",
+              "2) つたえました",
+              "3)  あんないしました",
+              "4) しょうかいしました"
+            ],
             "correct": "1",
             "image_url": null,
             "audio_url": null,
@@ -317,7 +322,12 @@
           },
           {
             "question": "22. わたしの むすこは、年で \t（ ）くらい せが 高く なりました。",
-            "options": [],
+            "options": [
+              "1) グラム",
+              "2) ばん",
+              "3) けん",
+              "4) センチ"
+            ],
             "correct": "4",
             "image_url": null,
             "audio_url": null,
@@ -326,7 +336,12 @@
           },
           {
             "question": "23. お店で だいの パソコンを （ ）、いちばん かるい パソコンを\nえらびました。",
-            "options": [],
+            "options": [
+              "1) かたづけて",
+              "2) かぞえて",
+              "3) くらべて",
+              "4) はらって"
+            ],
             "correct": "3",
             "image_url": null,
             "audio_url": null,
@@ -335,7 +350,12 @@
           },
           {
             "question": "24. たなかさんの いえの 電気が ついて いませんね。たなかさんは\n（ ）の ようです。",
-            "options": [],
+            "options": [
+              "1) うそ",
+              "2) じゆう",
+              "3) ちゅうし",
+              "4) るす"
+            ],
             "correct": "4",
             "image_url": null,
             "audio_url": null,
@@ -344,7 +364,12 @@
           },
           {
             "question": "25. へやの かぎを さがして いますが、まだ （ ）。",
-            "options": [],
+            "options": [
+              "1) 見つかりません",
+              "2) つかまえません",
+              "3)  しりません",
+              "4) さわりません"
+            ],
             "correct": "1",
             "image_url": null,
             "audio_url": null,
@@ -360,7 +385,12 @@
         "questions": [
           {
             "question": "26. <u>おとうとは あの きっさてんで アルバイトを して います</u>。",
-            "options": [],
+            "options": [
+              "1) おとうとは あの きっさてんで まって います。",
+              "2) おとうとは あの きっさてんで はたらいて います。",
+              "3)  おとうとは あの きっさてんで コーヒーを 飲んで います。",
+              "4)  おとうとは あの きっさてんで 友だちと 話して います。"
+            ],
             "correct": "2",
             "image_url": null,
             "audio_url": null,
@@ -369,7 +399,12 @@
           },
           {
             "question": "27. <u>わたしは すいえいが すきです</u>。",
-            "options": [],
+            "options": [
+              "1) わたしは はしるのが すきです。",
+              "2) わたしは およぐのが すきです。",
+              "3)  わたしは ごはんを 食べるのが すきです。",
+              "4)  わたしは 本を 読むのが すきです。"
+            ],
             "correct": "2",
             "image_url": null,
             "audio_url": null,
@@ -378,7 +413,12 @@
           },
           {
             "question": "28. <u>それを 聞いて びっくりしました</u>。",
-            "options": [],
+            "options": [
+              "1)  それを 聞いて わらいました。",
+              "2) それを 聞いて こまりました。",
+              "3)  それを 聞いて おこりました。",
+              "4)  それを 聞いて おどろきました。"
+            ],
             "correct": "4",
             "image_url": null,
             "audio_url": null,
@@ -401,7 +441,12 @@
           },
           {
             "question": "30. <u>この 国は こめを ゆにゅうして います</u>。",
-            "options": [],
+            "options": [
+              "1) この 国は こめを ほかの 国に うって います。",
+              "2) この 国は こめを ほかの 国から もらって います。",
+              "3)  この 国は こめを ほかの 国から 買って います。",
+              "4)  この 国は こめを ほかの 国に あげて います。"
+            ],
             "correct": "3",
             "image_url": null,
             "audio_url": null,
@@ -417,7 +462,12 @@
         "questions": [
           {
             "question": "31. <u>さいきん</u>",
-            "options": [],
+            "options": [
+              "1)さいきんりょうりが できたので、いっしょに 食べましょう。",
+              "2)さいきんしゅくだいを 出して ください。",
+              "3)  きむらさんはさいきんけっこんした そうです。",
+              "4)さいきん電車が 来ますから、いそいで えきに 行きましょう。"
+            ],
             "correct": "3",
             "image_url": null,
             "audio_url": null,
@@ -426,7 +476,12 @@
           },
           {
             "question": "32. <u>おと</u>",
-            "options": [],
+            "options": [
+              "1) ラジオのおとが 大きいので、もう 少し 小さく して ください。",
+              "2) 日本語のおとが じょうずに なりたいので、毎日 たくさん 話します。",
+              "3)  店の 人に 大きなおとで 名前を よばれました。",
+              "4)  すずきさんが ギターで ゆうめいなおとを ひいて くれました。"
+            ],
             "correct": "1",
             "image_url": null,
             "audio_url": null,
@@ -435,7 +490,12 @@
           },
           {
             "question": "33. <u>けんがく</u>",
-            "options": [],
+            "options": [
+              "1) かばんが ほしいので、デパートに 行ってけんがくします。",
+              "2) わからない かんじは じしょでけんがくして ください。",
+              "3) 先生や 友だちと こうじょうをけんがくしました。",
+              "4) まいばん テレビで ニュースをけんがくして います。"
+            ],
             "correct": "3",
             "image_url": null,
             "audio_url": null,
@@ -444,7 +504,12 @@
           },
           {
             "question": "34. <u>かざる</u>",
-            "options": [],
+            "options": [
+              "1) やまだ先生は テストの おしらせを きょうしつにかざりました。",
+              "2) おきゃくさんが 来ますから、へやに 花をかざりましょう。",
+              "3) 天気が わるいので、せんたくものは うちの 中にかざります。",
+              "4) こっちの エアコンは、となりの へやの かべにかざってください。"
+            ],
             "correct": "2",
             "image_url": null,
             "audio_url": null,
@@ -453,7 +518,12 @@
           },
           {
             "question": "35. <u>こうじ</u>",
-            "options": [],
+            "options": [
+              "1) はが いたかったので、はいしゃでこうじを して もらいました。",
+              "2) この セーターは 古いですが、こうじを して、ずっと きて います。",
+              "3)  ほんだなが こわれて しまったので、こうじを しました。",
+              "4)  この みちはこうじを して いるので、とおれません。"
+            ],
             "correct": "4",
             "image_url": null,
             "audio_url": null,
@@ -878,7 +948,12 @@
         "questions": [
           {
             "question": "(例) でんしゃの 中で さわがないでください。",
-            "options": [],
+            "options": [
+              "1) でんしゃの中でものをたべないでください。",
+              "2) でんしゃの中でうるさくしないでください。",
+              "3) でんしゃの中でたばこをすわないでください。",
+              "4) でんしゃの中できたなくしないでください。"
+            ],
             "correct": "",
             "image_url": null,
             "audio_url": null,
@@ -887,7 +962,12 @@
           },
           {
             "question": "25. <u>バスが しゅっぱつしました。</u>",
-            "options": [],
+            "options": [
+              "1) バスがとまりました。",
+              "2) バスがつきました。",
+              "3) バスがでました。",
+              "4) バスがまがりました。"
+            ],
             "correct": "3",
             "image_url": null,
             "audio_url": null,
@@ -896,7 +976,12 @@
           },
           {
             "question": "26. <u>もっと ていねいに かいてください。</u>",
-            "options": [],
+            "options": [
+              "1) もっとおおきくかいてください。",
+              "2) もっときれいにかいてください。",
+              "3) もっと ふとくかいてください。",
+              "4) もっとかんたんにかいてください。"
+            ],
             "correct": "2",
             "image_url": null,
             "audio_url": null,
@@ -905,7 +990,12 @@
           },
           {
             "question": "27. <u>あには えが うまいです。 </u>",
-            "options": [],
+            "options": [
+              "1) にはえがじょうずです。",
+              "2) あにはえがきらいです。",
+              "3) あにはえがへたです。",
+              "4) あにはえがすきです。"
+            ],
             "correct": "1",
             "image_url": null,
             "audio_url": null,
@@ -914,7 +1004,12 @@
           },
           {
             "question": "28 <u>きのうは ねぼうしました。</u>",
-            "options": [],
+            "options": [
+              "1) きのうはねるのがおそくなってしまいました。",
+              "2) きのうははやくねてしまいました。",
+              "3) きのうはおさるのがおそくなってしまいました。",
+              "4) きのうははやくおきてしまいました。"
+            ],
             "correct": "3",
             "image_url": null,
             "audio_url": null,
@@ -923,7 +1018,12 @@
           },
           {
             "question": "29. <u>たなかさんは 先生にほめられました。</u>",
-            "options": [],
+            "options": [
+              "1) 先生はたなかさんに「気をつけてね」と言いました。",
+              "2) 先生はたなかさんに「とてもよかったですよ」と言いました。",
+              "3) 先生はたなかさんに「ちょっと休みましょう」と言いました。",
+              "4) 先生はたなかさんに「たいへんですね」と言いました。"
+            ],
             "correct": "2",
             "image_url": null,
             "audio_url": null,
@@ -939,7 +1039,12 @@
         "questions": [
           {
             "question": "(例) すてる",
-            "options": [],
+            "options": [
+              "1) ヘやをぜんぶすててください。",
+              "2) ひどいことをするのはすててください。",
+              "3) ここにいらないものをすててください。",
+              "4) 学校の本をかばんにすててください。"
+            ],
             "correct": "",
             "image_url": null,
             "audio_url": null,
@@ -948,7 +1053,12 @@
           },
           {
             "question": "30. るす",
-            "options": [],
+            "options": [
+              "1) さいきんいそがしくて、しごとがるすになりません。",
+              "2) あのデパートはきょうはるすです。",
+              "3) このひこうきにはるすのせきがありません。",
+              "4) ともだちのいえに行ったらるすでした。"
+            ],
             "correct": "4",
             "image_url": null,
             "audio_url": null,
@@ -957,7 +1067,12 @@
           },
           {
             "question": "31. しんせつ",
-            "options": [],
+            "options": [
+              "1) このりょうりはからだにとてもしんせつですよ。",
+              "2) コンビニは何でも買えるのでとてもしんせつです。",
+              "3) このびょういんのおいしゃさんはとてもしんせつですよ。",
+              "4) わたしの母はにわの花にとてもしんせつです。"
+            ],
             "correct": "3",
             "image_url": null,
             "audio_url": null,
@@ -966,7 +1081,12 @@
           },
           {
             "question": "32. にがいい",
-            "options": [],
+            "options": [
+              "1) かぜをひいたので、こえがにがいです。",
+              "2) くらいみちを一人であるくのはにがいです。",
+              "3) にもつがおもかったので、うでがにがいです。",
+              "4) このくすりはとてもにがいです。"
+            ],
             "correct": "4",
             "image_url": null,
             "audio_url": null,
@@ -975,7 +1095,12 @@
           },
           {
             "question": "33. わる",
-            "options": [],
+            "options": [
+              "1) おさらをおとして、わってしまいました。",
+              "2) しんぶんをわってかばんに入れました。",
+              "3) ようふくをわって、母におこられました。",
+              "4) このジャムを三本のびんにわってください。"
+            ],
             "correct": "1",
             "image_url": null,
             "audio_url": null,
@@ -984,7 +1109,12 @@
           },
           {
             "question": "34. ちこく",
-            "options": [],
+            "options": [
+              "1) あのとけいはちょっとちこくしています。",
+              "2) じゅぎょうにちこくしてすみません。",
+              "3) 10時のでんしゃにちこくしてしまいました。",
+              "4) れんらくがちこくしてすみません。"
+            ],
             "correct": "2",
             "image_url": null,
             "audio_url": null,
@@ -1038,7 +1168,12 @@
           },
           {
             "question": "3. 弟 は 小さいとき よく けがを して、両親 （ ） 心配させました。",
-            "options": [],
+            "options": [
+              "1) で",
+              "2) を",
+              "3) の",
+              "4) や"
+            ],
             "correct": "2",
             "image_url": null,
             "audio_url": null,
@@ -1264,7 +1399,12 @@
           },
           {
             "question": "19. 私は さいの たんじょうびに そふが ___ ___ _★_ ___ います。",
-            "options": [],
+            "options": [
+              "1)  大切に",
+              "2) くれた",
+              "3) 使って",
+              "4) カメラを"
+            ],
             "correct": "1",
             "image_url": null,
             "audio_url": null,
@@ -1273,7 +1413,12 @@
           },
           {
             "question": "20. 林 「来週、野球の 試合を 見に 行こうと 思って いるんですが、リーさんも いっしょに どうですか。」\nリー「えっ、野球の 試合ですか。いいですね。 ___ ___ _★_ ___ です。」",
-            "options": [],
+            "options": [
+              "1)  ぜひ 行きたい",
+              "2) ことが ない",
+              "3) 見に 行った",
+              "4) ので"
+            ],
             "correct": "4",
             "image_url": null,
             "audio_url": null,
@@ -1303,7 +1448,12 @@
           },
           {
             "question": "【22】",
-            "options": [],
+            "options": [
+              "1) 教えて いました",
+              "2) 教えて あげました",
+              "3) 教えて くれました",
+              "4) 教えて もらいました"
+            ],
             "correct": "1",
             "image_url": null,
             "audio_url": null,
@@ -1312,7 +1462,12 @@
           },
           {
             "question": "【23】",
-            "options": [],
+            "options": [
+              "1) 泳いで おきました",
+              "2) 泳げるように なりました",
+              "3) 泳いで しまいました",
+              "4) 泳げることに なりました"
+            ],
             "correct": "4",
             "image_url": null,
             "audio_url": null,
@@ -1335,7 +1490,12 @@
           },
           {
             "question": "【25】",
-            "options": [],
+            "options": [
+              "1) 練習するためです",
+              "2) 練習したようです",
+              "3) 練習したいです",
+              "4) 練習するそうです"
+            ],
             "correct": "3",
             "image_url": null,
             "audio_url": null,
@@ -1351,7 +1511,12 @@
         "questions": [
           {
             "question": "26. 試験中3日間に忘れ物を取りに行きたい人は、どうしなければなりませんか。",
-            "options": [],
+            "options": [
+              "1) 試験が終わるまで待ちます。",
+              "2) 先生たちの部屋へ取りに行きます。",
+              "3) 忘れ物があった場所へ取りに行きます。",
+              "4) 教室で、自分のクラスの先生に話します。"
+            ],
             "correct": "4",
             "image_url": null,
             "audio_url": null,
@@ -1360,7 +1525,12 @@
           },
           {
             "question": "27. <u>私の楽しみ</u>は何ですか。",
-            "options": [],
+            "options": [
+              "1) 冬に暖かい部屋で毎日アイスクリームを食べること",
+              "2) 冬に暖かい部屋で高いアイスクリームを食べること",
+              "3) 夏に毎日アイスクリームを食べること",
+              "4) 夏に高いアイスクリームを食べること"
+            ],
             "correct": "2",
             "image_url": null,
             "audio_url": null,
@@ -1369,7 +1539,12 @@
           },
           {
             "question": "28. このメモを読んで、高田先生は林さんに何を知らせなければなりませんか。",
-            "options": [],
+            "options": [
+              "1) 工場見学に行く人の数だけ",
+              "2) 工場見学に行く日と時間だけ",
+              "3) 工場見学に行く日と時間と、行く人の数",
+              "4) 工場見学に行く日と時間が、いつごろ決まるか"
+            ],
             "correct": "3",
             "image_url": null,
             "audio_url": null,
@@ -1378,7 +1553,12 @@
           },
           {
             "question": "29.「私」はどうして黒い消しゴムを買いましたか。",
-            "options": [],
+            "options": [
+              "1) 黒い消しゴムは、使った後で消しゴムが黒く汚れないから",
+              "2) 黒い消しゴムを買う人が多いと店の人に聞いたから",
+              "3) 黒い消しゴムのほうが字をきれいに消せるから",
+              "4) 黒い消しゴムは、色がかっこいいと思ったから"
+            ],
             "correct": "4",
             "image_url": null,
             "audio_url": null,
@@ -1394,7 +1574,12 @@
         "questions": [
           {
             "question": "30. なぜ ①<u>「どうしよう。」</u>と思いましたか。",
-            "options": [],
+            "options": [
+              "1) 友達が見つからないから",
+              "2) 間違えて東京駅で電車を降りてしまったから",
+              "3)  乗りたい電車の場所がわからないから",
+              "4)  知らない女の人に声をかけられたから"
+            ],
             "correct": "3",
             "image_url": null,
             "audio_url": null,
@@ -1403,7 +1588,12 @@
           },
           {
             "question": "31. なぜ山田さんは「私」に声をかけましたか。",
-            "options": [],
+            "options": [
+              "1) 「私」が行ったり来たりしているのを見たから",
+              "2) 「私」と一緒にお茶を飲みたいと思ったから",
+              "3)  「私」を山田さんの友達と間違えたから",
+              "4)  「私」が落としたメモを拾ったから"
+            ],
             "correct": "1",
             "image_url": null,
             "audio_url": null,
@@ -1412,7 +1602,12 @@
           },
           {
             "question": "32. なぜ② <u>お礼を言いました</u>か。",
-            "options": [],
+            "options": [
+              "1) 山田さんが、京都に行く新幹線がたくさんあると「私」に教えてくれたから",
+              "2) 山田さんが、帰りが遅くなるかもしれないのに、「私」を案内してくれたから",
+              "3)  山田さんが、「私」が乗る予定の電車の時間のことを心配してくれたから",
+              "4)  山田さんが、「私」の国のいろいろな人に親切にしてくれたと聞いたから"
+            ],
             "correct": "2",
             "image_url": null,
             "audio_url": null,
@@ -1421,7 +1616,12 @@
           },
           {
             "question": "33.（ ）に入れるのに、いちばんいい文はどれですか。",
-            "options": [],
+            "options": [
+              "1) 仕事を頑張ろう",
+              "2) 外国に住んでみたい",
+              "3)  困っている人に親切にしよう",
+              "4)  東京駅のことをよく知りたい"
+            ],
             "correct": "3",
             "image_url": null,
             "audio_url": null,
@@ -1790,7 +1990,12 @@
         "questions": [
           {
             "question": "21",
-            "options": [],
+            "options": [
+              "1) かうでしょう",
+              "2) かっています",
+              "3) かっていますか",
+              "4) かっていました"
+            ],
             "correct": "2",
             "image_url": null,
             "audio_url": null,
@@ -1813,7 +2018,12 @@
           },
           {
             "question": "23",
-            "options": [],
+            "options": [
+              "1) さびしくなります",
+              "2) さびしくなくなりました",
+              "3) さびしくなるかもしれません",
+              "4) さびしくなくなったそうです"
+            ],
             "correct": "2",
             "image_url": null,
             "audio_url": null,
@@ -1857,7 +2067,12 @@
         "questions": [
           {
             "question": "26. 石川さんは、来週、何をすると言っていますか。",
-            "options": [],
+            "options": [
+              "1) アリさんに本を2冊返します。",
+              "2) アリさんに本を3冊返します。",
+              "3) アリさんに本を2冊貸しま",
+              "4) アリさんに本を3冊貸します。"
+            ],
             "correct": "4",
             "image_url": null,
             "audio_url": null,
@@ -1866,7 +2081,12 @@
           },
           {
             "question": "27. このお知らせから、公園についてわかることは何ですか。",
-            "options": [],
+            "options": [
+              "1) 午後10時に公園に入ってもいいです。",
+              "2) 入リロにオートバイをとめてはいけません。",
+              "3) サッカーの練習をしてはいけません。",
+              "4) たばこを吸ってもいいです。"
+            ],
             "correct": "3",
             "image_url": null,
             "audio_url": null,
@@ -1875,7 +2095,12 @@
           },
           {
             "question": "28. トムさんは、山田先生に何を知らせなければなりませんか。",
-            "options": [],
+            "options": [
+              "1) 約束を明日に変えられるかどうか",
+              "2) 約束をあさってに変えられるかどうか",
+              "3) トムさんの明日の午後の都合",
+              "4) トムさんのあさっての午前の都合"
+            ],
             "correct": "2",
             "image_url": null,
             "audio_url": null,
@@ -1884,7 +2109,12 @@
           },
           {
             "question": "29. 石田さんの仕事<u>ではない</u>ものはどれですか。",
-            "options": [],
+            "options": [
+              "1) 相談に来た人に本について紹介します。",
+              "2) 本を置く場所はどこがいいか、考えます。",
+              "3) 新聞にのっている、よい本の紹介文をさがします。",
+              "4) 小さな子どもたちに、いろいろな絵本を読みます。"
+            ],
             "correct": "3",
             "image_url": null,
             "audio_url": null,
@@ -1900,7 +2130,12 @@
         "questions": [
           {
             "question": "30. どんな①<u>ホテル</u>に泊まりましたか。",
-            "options": [],
+            "options": [
+              "1) 山の中の大きなホテル",
+              "2) 古いが、中はきれいなホテル",
+              "3) テレビやゲームが楽しめるホテル",
+              "4) いろいろなものがあって、便利なホテル"
+            ],
             "correct": "2",
             "image_url": null,
             "audio_url": null,
@@ -1909,7 +2144,12 @@
           },
           {
             "question": "31. 駅からホテルまでどうやって行きましたか。",
-            "options": [],
+            "options": [
+              "1) 駅から30分バスに乗って、バス停から2時間以上歩きました。",
+              "2) 駅から30分バス停まで歩いて、バスに2時間以上乗りました。",
+              "3) 駅から2時間近くバスに乗って、バス停から30分以上歩きました。",
+              "4) 駅から2時間以上バスに乗って、バス停から30分近く歩きました。"
+            ],
             "correct": "4",
             "image_url": null,
             "audio_url": null,
@@ -1918,7 +2158,12 @@
           },
           {
             "question": "32. ホテルに着いてから、何をしましたか。",
-            "options": [],
+            "options": [
+              "1) 部屋に行かないで、すぐに湖に行きました。",
+              "2) 部屋に行って、夜までずっと休みました。",
+              "3) 部屋でテレビを見てから、星を見に外へ出ました。",
+              "4) 部屋で少し休んでから、散歩に行きました。"
+            ],
             "correct": "4",
             "image_url": null,
             "audio_url": null,
@@ -1927,7 +2172,12 @@
           },
           {
             "question": "33.  ②<u>こんな生活</u>とありますが、どんな生活ですか。",
-            "options": [],
+            "options": [
+              "1) 山で遊んだり、昼寝をしたりする生活",
+              "2) ゲームをしたり、虫をとったりする生活",
+              "3) 散歩をしたり、テレビを見たりする生活",
+              "4) おいしいものを食べて、何もしない生活"
+            ],
             "correct": "1",
             "image_url": null,
             "audio_url": null,
@@ -1957,7 +2207,12 @@
           },
           {
             "question": "35. バスケットボールのルールや、やり方を習ってから試合に出たい人は、まず 「どうしなければなりませんか。",
-            "options": [],
+            "options": [
+              "1) 10:00までに受付に行きます。",
+              "2) 10:00までに体育館に行きます。",
+              "3) 13:00までに受付に行きます。",
+              "4) 13:00までに体育館に行きます。"
+            ],
             "correct": "2",
             "image_url": null,
             "audio_url": null,
@@ -1992,7 +2247,7 @@
             "correct": "1",
             "image_url": "https://dethitiengnhat.com/en/de_thi_thu/N4/2/image/D2N41-1.png",
             "audio_url": null,
-            "image_file": "image\\quiz11_q1_D2N41-1.png",
+            "image_file": "image\\quiz11_q1_D2N41-1..png",
             "audio_file": null
           },
           {
@@ -2006,7 +2261,7 @@
             "correct": "3",
             "image_url": "https://dethitiengnhat.com/en/de_thi_thu/N4/2/image/D2N41-2.png",
             "audio_url": null,
-            "image_file": "image\\quiz11_q2_D2N41-2.png",
+            "image_file": "image\\quiz11_q2_D2N41-2..png",
             "audio_file": null
           },
           {
@@ -2020,7 +2275,7 @@
             "correct": "2",
             "image_url": "https://dethitiengnhat.com/en/de_thi_thu/N4/2/image/D2N41-3.png",
             "audio_url": null,
-            "image_file": "image\\quiz11_q3_D2N41-3.png",
+            "image_file": "image\\quiz11_q3_D2N41-3..png",
             "audio_file": null
           },
           {
@@ -2034,7 +2289,7 @@
             "correct": "4",
             "image_url": "https://dethitiengnhat.com/en/de_thi_thu/N4/2/image/D2N41-4.png",
             "audio_url": null,
-            "image_file": "image\\quiz11_q4_D2N41-4.png",
+            "image_file": "image\\quiz11_q4_D2N41-4..png",
             "audio_file": null
           },
           {
@@ -2048,7 +2303,7 @@
             "correct": "3",
             "image_url": "https://dethitiengnhat.com/en/de_thi_thu/N4/2/image/D2N41-5.png",
             "audio_url": null,
-            "image_file": "image\\quiz11_q5_D2N41-5.png",
+            "image_file": "image\\quiz11_q5_D2N41-5..png",
             "audio_file": null
           },
           {
@@ -2062,7 +2317,7 @@
             "correct": "3",
             "image_url": "https://dethitiengnhat.com/en/de_thi_thu/N4/2/image/D2N41-6.png",
             "audio_url": null,
-            "image_file": "image\\quiz11_q6_D2N41-6.png",
+            "image_file": "image\\quiz11_q6_D2N41-6..png",
             "audio_file": null
           },
           {
@@ -2090,7 +2345,7 @@
             "correct": "1",
             "image_url": "https://dethitiengnhat.com/en/de_thi_thu/N4/2/image/D2N41-8.png",
             "audio_url": null,
-            "image_file": "image\\quiz11_q8_D2N41-8.png",
+            "image_file": "image\\quiz11_q8_D2N41-8..png",
             "audio_file": null
           }
         ]
@@ -2215,7 +2470,7 @@
             "correct": "2",
             "image_url": "https://dethitiengnhat.com/en/de_thi_thu/N4/2/image/D2N43-1.png",
             "audio_url": null,
-            "image_file": "image\\quiz11_q16_D2N43-1.png",
+            "image_file": "image\\quiz11_q16_D2N43-1..png",
             "audio_file": null
           },
           {
@@ -2228,7 +2483,7 @@
             "correct": "2",
             "image_url": "https://dethitiengnhat.com/en/de_thi_thu/N4/2/image/D2N43-2.png",
             "audio_url": null,
-            "image_file": "image\\quiz11_q17_D2N43-2.png",
+            "image_file": "image\\quiz11_q17_D2N43-2..png",
             "audio_file": null
           },
           {
@@ -2241,7 +2496,7 @@
             "correct": "1",
             "image_url": "https://dethitiengnhat.com/en/de_thi_thu/N4/2/image/D2N43-3.png",
             "audio_url": null,
-            "image_file": "image\\quiz11_q18_D2N43-3.png",
+            "image_file": "image\\quiz11_q18_D2N43-3..png",
             "audio_file": null
           },
           {
@@ -2254,7 +2509,7 @@
             "correct": "3",
             "image_url": "https://dethitiengnhat.com/en/de_thi_thu/N4/2/image/D2N43-4.png",
             "audio_url": null,
-            "image_file": "image\\quiz11_q19_D2N43-4.png",
+            "image_file": "image\\quiz11_q19_D2N43-4..png",
             "audio_file": null
           },
           {
@@ -2267,7 +2522,7 @@
             "correct": "2",
             "image_url": "https://dethitiengnhat.com/en/de_thi_thu/N4/2/image/D2N43-5.png",
             "audio_url": null,
-            "image_file": "image\\quiz11_q20_D2N43-5.png",
+            "image_file": "image\\quiz11_q20_D2N43-5..png",
             "audio_file": null
           }
         ]
