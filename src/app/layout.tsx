@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import PWAInstaller from "@/components/PWAInstaller";
+import OfflineCacheHelper from "@/components/OfflineCacheHelper";
+import OfflineIndicator from "@/components/OfflineIndicator";
 import { StudyProvider } from "@/lib/StudyContext";
 
 // Import Google Fonts via <link> in <head> (Noto Sans JP & Inter)
@@ -87,7 +89,9 @@ export default function RootLayout({
         <meta name="msapplication-TileImage" content="/icons/icon-144x144.png" />
       </head>
       <body>
+        <OfflineIndicator />
         <PWAInstaller />
+        <OfflineCacheHelper />
         <StudyProvider>
           {children}
         </StudyProvider>

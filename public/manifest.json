@@ -60,6 +60,37 @@
   ],
   "categories": ["education", "productivity"],
   "lang": "id",
+  "prefer_related_applications": false,
+  "shortcuts": [
+    {
+      "name": "Hiragana",
+      "short_name": "Hiragana",
+      "description": "Belajar Hiragana",
+      "url": "/hiragana/",
+      "icons": [{ "src": "/icons/icon-96x96.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Katakana", 
+      "short_name": "Katakana",
+      "description": "Belajar Katakana",
+      "url": "/katakana/",
+      "icons": [{ "src": "/icons/icon-96x96.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "JLPT N5",
+      "short_name": "N5",
+      "description": "Materi JLPT N5",
+      "url": "/n5/",
+      "icons": [{ "src": "/icons/icon-96x96.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Quiz",
+      "short_name": "Quiz",
+      "description": "Latihan Quiz",
+      "url": "/quiz/",
+      "icons": [{ "src": "/icons/icon-96x96.png", "sizes": "96x96" }]
+    }
+  ],
   "screenshots": [
     {
       "src": "/screenshots/desktop.png",
@@ -68,7 +99,7 @@
       "form_factor": "wide"
     },
     {
-      "src": "/screenshots/mobile.png",
+      "src": "/screenshots/mobile.png", 
       "sizes": "375x667",
       "type": "image/png",
       "form_factor": "narrow"
