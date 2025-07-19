@@ -19759,7 +19759,7 @@
             "audio_file": null
           },
           {
-            "question": "3. 課長: 「 林さん、急で悪いんだけど、 出張のレポートと明日の会議の資料、今日のお昼ごろまでにできる?」\r\n林: 「両方は 難しそうです。会議の資料（ ）できると思いますが.............。」",
+            "question": "3. 課長: 「 林さん、急で悪いんだけど、 出張のレポートと明日の会議の資料、今日のお昼ごろまでにできる?」\r\n林: 「両方は 難しそうです。会議の資料（ ）できると思いますが.......。」",
             "options": [
               "1)  とでも",
               "2) となら",
@@ -28880,7 +28880,7 @@
             "audio_file": null
           },
           {
-            "question": "7. 学生「中し訳ありません。先週、本田先生に貸して( )本を家に忘れてきてしまって...」 本田先生「ああ、あしたでも大丈夫ですよ。」",
+            "question": "7. 学生「中し訳ありません。先週、本田先生に貸して( )本を家に忘れてきてしまって..」 本田先生「ああ、あしたでも大丈夫ですよ。」",
             "options": [
               "1)さしあげた",
               "2) いただいた",
@@ -30674,7 +30674,7 @@
             "audio_file": null
           },
           {
-            "question": "6. (デパートでシャツを選びながら) 山田 「明るい色のシャツが欲しいんだけど...」田中 「だったら、これ(  )どう?山田さんにすごく似合うと思うよ。」",
+            "question": "6. (デパートでシャツを選びながら) 山田 「明るい色のシャツが欲しいんだけど..」田中 「だったら、これ(  )どう?山田さんにすごく似合うと思うよ。」",
             "options": [
               "1)  なんか",
               "2) ばかり",
@@ -31852,7 +31852,7 @@
             "correct": "1",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/202412/image/202412N31.png",
             "audio_url": null,
-            "image_file": "image\\quiz69_q3_202412N31..png",
+            "image_file": "image\\quiz69_q3_202412N31.png",
             "audio_file": null
           },
           {
@@ -32055,7 +32055,7 @@
             "correct": "3",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/202412/image/202412N32.png",
             "audio_url": null,
-            "image_file": "image\\quiz69_q16_202412N32..png",
+            "image_file": "image\\quiz69_q16_202412N32.png",
             "audio_file": null
           },
           {
@@ -32069,7 +32069,7 @@
             "correct": "2",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/202412/image/202412N33.png",
             "audio_url": null,
-            "image_file": "image\\quiz69_q17_202412N33..png",
+            "image_file": "image\\quiz69_q17_202412N33.png",
             "audio_file": null
           },
           {
@@ -32083,7 +32083,7 @@
             "correct": "2",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/202412/image/202412N34.png",
             "audio_url": null,
-            "image_file": "image\\quiz69_q18_202412N34..png",
+            "image_file": "image\\quiz69_q18_202412N34.png",
             "audio_file": null
           },
           {
@@ -32097,7 +32097,7 @@
             "correct": "1",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/202412/image/202412N35.png",
             "audio_url": null,
-            "image_file": "image\\quiz69_q19_202412N35..png",
+            "image_file": "image\\quiz69_q19_202412N35.png",
             "audio_file": null
           }
         ]
@@ -32252,7 +32252,7 @@
             "correct": "2",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/202407/image/202407N301.png",
             "audio_url": null,
-            "image_file": "image\\quiz70_q1_202407N301..png",
+            "image_file": "image\\quiz70_q1_202407N301.png",
             "audio_file": null
           },
           {
@@ -32483,7 +32483,7 @@
             "correct": "1",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/202407/image/202407N302.png",
             "audio_url": null,
-            "image_file": "image\\quiz70_q16_202407N302..png",
+            "image_file": "image\\quiz70_q16_202407N302.png",
             "audio_file": null
           },
           {
@@ -32497,7 +32497,7 @@
             "correct": "3",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/202407/image/202407N303.png",
             "audio_url": null,
-            "image_file": "image\\quiz70_q17_202407N303..png",
+            "image_file": "image\\quiz70_q17_202407N303.png",
             "audio_file": null
           },
           {
@@ -32511,7 +32511,7 @@
             "correct": "2",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/202407/image/202407N304.png",
             "audio_url": null,
-            "image_file": "image\\quiz70_q18_202407N304..png",
+            "image_file": "image\\quiz70_q18_202407N304.png",
             "audio_file": null
           },
           {
@@ -32525,7 +32525,7 @@
             "correct": "1",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/202407/image/202407N305.png",
             "audio_url": null,
-            "image_file": "image\\quiz70_q19_202407N305..png",
+            "image_file": "image\\quiz70_q19_202407N305.png",
             "audio_file": null
           }
         ]
@@ -32667,7 +32667,7 @@
       {
         "instruction": "問題1では、まず質問を聞いてください。 それから話を聞いて、問題用紙の1から4の中から、 最 もよいものを一つえらんでください。",
         "audio_url": "https://drive.google.com/uc?export=download&id=1o_zTWyotgljXWqlj4xJtjuHt9AOZhLyF",
-        "audio_file": "sound\\quiz71_group1_uc..mp4",
+        "audio_file": "sound\\quiz71_group1_uc.mp4",
         "questions": [
           {
             "question": "1番 ",
@@ -32680,7 +32680,7 @@
             "correct": "3",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/202312/image/202312N3-0.png",
             "audio_url": null,
-            "image_file": "image\\quiz71_q1_202312N3-0..png",
+            "image_file": "image\\quiz71_q1_202312N3-0.png",
             "audio_file": null
           },
           {
@@ -32722,7 +32722,7 @@
             "correct": "2",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/202312/image/202312N3-1.png",
             "audio_url": null,
-            "image_file": "image\\quiz71_q4_202312N3-1..png",
+            "image_file": "image\\quiz71_q4_202312N3-1.png",
             "audio_file": null
           },
           {
@@ -32758,7 +32758,7 @@
       {
         "instruction": "問題2では、まず質問を聞いてください。 そのあと、問題用紙を見てください。 読む時間がありま す。 それから話を聞いて、問題用紙の1から4の中から、最もよいものを一つえらんでください。",
         "audio_url": "https://drive.google.com/uc?export=download&id=1vkLa0xPo56nx7xHTYmCHZRGbqfLOjQhs",
-        "audio_file": "sound\\quiz71_group2_uc..mp4",
+        "audio_file": "sound\\quiz71_group2_uc.mp4",
         "questions": [
           {
             "question": "1番",
@@ -32849,7 +32849,7 @@
       {
         "instruction": "問題3では、問題用紙に何もいんさつされていません。 この問題は、ぜんたいとしてどんなないよ うかを聞く問題です。話の前に質問はありません。 まず話を聞いてください。 それから、質問とせ んたくしを聞いて、 1から4の中から、最もよいものを一つえらんでください。 メモー",
         "audio_url": "https://drive.google.com/uc?export=download&id=1Dxka6fhcKmuLXWApwj8B6OoaNb94D38I",
-        "audio_file": "sound\\quiz71_group3_uc..mp4",
+        "audio_file": "sound\\quiz71_group3_uc.mp4",
         "questions": [
           {
             "question": "1番",
@@ -32898,7 +32898,7 @@
       {
         "instruction": "問題4では、えを見ながら質問を聞いてください。 やじるし(→)の人は何と言いますか。 1から3 の中から、最もよいものを一つえらんでください。",
         "audio_url": "https://drive.google.com/uc?export=download&id=1pNqagtekFUmN1rXaNYILgukTwBOiTEC6",
-        "audio_file": "sound\\quiz71_group4_uc..mp4",
+        "audio_file": "sound\\quiz71_group4_uc.mp4",
         "questions": [
           {
             "question": "1番 ",
@@ -32910,7 +32910,7 @@
             "correct": "2",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/202312/image/202312N3-2.png",
             "audio_url": null,
-            "image_file": "image\\quiz71_q16_202312N3-2..png",
+            "image_file": "image\\quiz71_q16_202312N3-2.png",
             "audio_file": null
           },
           {
@@ -32923,7 +32923,7 @@
             "correct": "3",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/202312/image/202312N3-3.png",
             "audio_url": null,
-            "image_file": "image\\quiz71_q17_202312N3-3..png",
+            "image_file": "image\\quiz71_q17_202312N3-3.png",
             "audio_file": null
           },
           {
@@ -32936,7 +32936,7 @@
             "correct": "1",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/202312/image/202312N3-4.png",
             "audio_url": null,
-            "image_file": "image\\quiz71_q18_202312N3-4..png",
+            "image_file": "image\\quiz71_q18_202312N3-4.png",
             "audio_file": null
           },
           {
@@ -32949,7 +32949,7 @@
             "correct": "3",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/202312/image/202312N3-5.png",
             "audio_url": null,
-            "image_file": "image\\quiz71_q19_202312N3-5..png",
+            "image_file": "image\\quiz71_q19_202312N3-5.png",
             "audio_file": null
           }
         ]
@@ -32957,7 +32957,7 @@
       {
         "instruction": "問題5では、問題用紙に何もいんさつされていません。 まず文を聞いてください。 それから、その へんじを聞いて、1から3の中から、最もよいものを一つえらんでください。 メモー",
         "audio_url": "https://drive.google.com/uc?export=download&id=1gnxQN8gn2PUlts6hFIx0Mj-PjTohL7Em",
-        "audio_file": "sound\\quiz71_group5_uc..mp4",
+        "audio_file": "sound\\quiz71_group5_uc.mp4",
         "questions": [
           {
             "question": "1番",
@@ -33091,7 +33091,7 @@
       {
         "instruction": "問題1では、まず質問を聞いてください。 それから話を聞いて、問題用紙の1から4の中から、 最 もよいものを一つえらんでください。",
         "audio_url": "https://drive.google.com/uc?export=download&id=1_okbIZdL8X-wr3FD7vJ8vPPZR8B8Kvp1",
-        "audio_file": "sound\\quiz72_group1_uc..mp4",
+        "audio_file": "sound\\quiz72_group1_uc.mp4",
         "questions": [
           {
             "question": "1番",
@@ -33132,7 +33132,7 @@
             "correct": "2",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/202307/image/202307N3-3.png",
             "audio_url": null,
-            "image_file": "image\\quiz72_q3_202307N3-3..png",
+            "image_file": "image\\quiz72_q3_202307N3-3.png",
             "audio_file": null
           },
           {
@@ -33146,7 +33146,7 @@
             "correct": "4",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/202307/image/202307N3-4.png",
             "audio_url": null,
-            "image_file": "image\\quiz72_q4_202307N3-4..png",
+            "image_file": "image\\quiz72_q4_202307N3-4.png",
             "audio_file": null
           },
           {
@@ -33182,7 +33182,7 @@
       {
         "instruction": "問題2では、まず質問を聞いてください。 そのあと、問題用紙を見てください。 読む時間がありま す。 それから話を聞いて、問題用紙の1から4の中から、最もよいものを一つえらんでください。",
         "audio_url": "https://drive.google.com/uc?export=download&id=1qtwjNVZAtQCcMUzu2VuOBAF7tstPQu0e",
-        "audio_file": "sound\\quiz72_group2_uc..mp4",
+        "audio_file": "sound\\quiz72_group2_uc.mp4",
         "questions": [
           {
             "question": "1番",
@@ -33273,7 +33273,7 @@
       {
         "instruction": "問題3では、問題用紙に何もいんさつされていません。 この問題は、ぜんたいとしてどんなないよ うかを聞く問題です。話の前に質問はありません。 まず話を聞いてください。 それから、質問とせ んたくしを聞いて、 1から4の中から、最もよいものを一つえらんでください。 メモー",
         "audio_url": "https://drive.google.com/uc?export=download&id=14SYpjIVlI_vU9vyJH6H5VVQPLdvsTgtY",
-        "audio_file": "sound\\quiz72_group3_uc..mp4",
+        "audio_file": "sound\\quiz72_group3_uc.mp4",
         "questions": [
           {
             "question": "1番",
@@ -33322,7 +33322,7 @@
       {
         "instruction": "問題4では、えを見ながら質問を聞いてください。 やじるし(→)の人は何と言いますか。 1から3 の中から、最もよいものを一つえらんでください。",
         "audio_url": "https://drive.google.com/uc?export=download&id=1_V8k0drvQyyTIucANx07xzyHwZmA4FkS",
-        "audio_file": "sound\\quiz72_group4_uc..mp4",
+        "audio_file": "sound\\quiz72_group4_uc.mp4",
         "questions": [
           {
             "question": "1番 ",
@@ -33334,7 +33334,7 @@
             "correct": "1",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/202307/image/202307N3-5.png",
             "audio_url": null,
-            "image_file": "image\\quiz72_q16_202307N3-5..png",
+            "image_file": "image\\quiz72_q16_202307N3-5.png",
             "audio_file": null
           },
           {
@@ -33347,7 +33347,7 @@
             "correct": "1",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/202307/image/202307N3-6.png",
             "audio_url": null,
-            "image_file": "image\\quiz72_q17_202307N3-6..png",
+            "image_file": "image\\quiz72_q17_202307N3-6.png",
             "audio_file": null
           },
           {
@@ -33360,7 +33360,7 @@
             "correct": "2",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/202307/image/202307N3-7.png",
             "audio_url": null,
-            "image_file": "image\\quiz72_q18_202307N3-7..png",
+            "image_file": "image\\quiz72_q18_202307N3-7.png",
             "audio_file": null
           },
           {
@@ -33373,7 +33373,7 @@
             "correct": "3",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/202307/image/202307N3-8.png",
             "audio_url": null,
-            "image_file": "image\\quiz72_q19_202307N3-8..png",
+            "image_file": "image\\quiz72_q19_202307N3-8.png",
             "audio_file": null
           }
         ]
@@ -33381,7 +33381,7 @@
       {
         "instruction": "問題5では、問題用紙に何もいんさつされていません。 まず文を聞いてください。 それから、その へんじを聞いて、1から3の中から、最もよいものを一つえらんでください。 メモー",
         "audio_url": "https://drive.google.com/uc?export=download&id=1kBKq6X7-_iHVbySeviWPcwa90p3856xU",
-        "audio_file": "sound\\quiz72_group5_uc..mp4",
+        "audio_file": "sound\\quiz72_group5_uc.mp4",
         "questions": [
           {
             "question": "1番",
@@ -33556,7 +33556,7 @@
             "correct": "1",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/202212/image/202212N31.png",
             "audio_url": null,
-            "image_file": "image\\quiz73_q3_202212N31..png",
+            "image_file": "image\\quiz73_q3_202212N31.png",
             "audio_file": null
           },
           {
@@ -33758,7 +33758,7 @@
             "correct": "2",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/202212/image/202212N32.png",
             "audio_url": null,
-            "image_file": "image\\quiz73_q16_202212N32..png",
+            "image_file": "image\\quiz73_q16_202212N32.png",
             "audio_file": null
           },
           {
@@ -33771,7 +33771,7 @@
             "correct": "1",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/202212/image/202212N33.png",
             "audio_url": null,
-            "image_file": "image\\quiz73_q17_202212N33..png",
+            "image_file": "image\\quiz73_q17_202212N33.png",
             "audio_file": null
           },
           {
@@ -33784,7 +33784,7 @@
             "correct": "3",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/202212/image/202212N34.png",
             "audio_url": null,
-            "image_file": "image\\quiz73_q18_202212N34..png",
+            "image_file": "image\\quiz73_q18_202212N34.png",
             "audio_file": null
           },
           {
@@ -33797,7 +33797,7 @@
             "correct": "2",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/202212/image/202212N35.png",
             "audio_url": null,
-            "image_file": "image\\quiz73_q19_202212N35..png",
+            "image_file": "image\\quiz73_q19_202212N35.png",
             "audio_file": null
           }
         ]
@@ -33952,7 +33952,7 @@
             "correct": "3",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/202207/image/202207n31.png",
             "audio_url": null,
-            "image_file": "image\\quiz74_q1_202207n31..png",
+            "image_file": "image\\quiz74_q1_202207n31.png",
             "audio_file": null
           },
           {
@@ -34008,7 +34008,7 @@
             "correct": "2",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/202207/image/202207n35.png",
             "audio_url": null,
-            "image_file": "image\\quiz74_q5_202207n35..png",
+            "image_file": "image\\quiz74_q5_202207n35.png",
             "audio_file": null
           },
           {
@@ -34404,7 +34404,7 @@
             "correct": "4",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/202112/image/202112N35.png",
             "audio_url": null,
-            "image_file": "image\\quiz75_q3_202112N35..png",
+            "image_file": "image\\quiz75_q3_202112N35.png",
             "audio_file": null
           },
           {
@@ -34446,7 +34446,7 @@
             "correct": "2",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/202112/image/202112N310.png",
             "audio_url": null,
-            "image_file": "image\\quiz75_q6_202112N310..png",
+            "image_file": "image\\quiz75_q6_202112N310.png",
             "audio_file": null
           }
         ]
@@ -34606,7 +34606,7 @@
             "correct": "1",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/202112/image/202112N311.png",
             "audio_url": null,
-            "image_file": "image\\quiz75_q16_202112N311..png",
+            "image_file": "image\\quiz75_q16_202112N311.png",
             "audio_file": null
           },
           {
@@ -34619,7 +34619,7 @@
             "correct": "1",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/202112/image/202112N312.png",
             "audio_url": null,
-            "image_file": "image\\quiz75_q17_202112N312..png",
+            "image_file": "image\\quiz75_q17_202112N312.png",
             "audio_file": null
           },
           {
@@ -34632,7 +34632,7 @@
             "correct": "3",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/202112/image/202112N313.png",
             "audio_url": null,
-            "image_file": "image\\quiz75_q18_202112N313..png",
+            "image_file": "image\\quiz75_q18_202112N313.png",
             "audio_file": null
           },
           {
@@ -34645,7 +34645,7 @@
             "correct": "2",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/202112/image/202112N314.png",
             "audio_url": null,
-            "image_file": "image\\quiz75_q19_202112N314..png",
+            "image_file": "image\\quiz75_q19_202112N314.png",
             "audio_file": null
           }
         ]
@@ -35030,7 +35030,7 @@
             "correct": "3",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/202107/image/202107n3-41.png",
             "audio_url": null,
-            "image_file": "image\\quiz76_q16_202107n3-41..png",
+            "image_file": "image\\quiz76_q16_202107n3-41.png",
             "audio_file": null
           },
           {
@@ -35043,7 +35043,7 @@
             "correct": "1",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/202107/image/202107n3-42.png",
             "audio_url": null,
-            "image_file": "image\\quiz76_q17_202107n3-42..png",
+            "image_file": "image\\quiz76_q17_202107n3-42.png",
             "audio_file": null
           },
           {
@@ -35056,7 +35056,7 @@
             "correct": "1",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/202107/image/202107n3-43.png",
             "audio_url": null,
-            "image_file": "image\\quiz76_q18_202107n3-43..png",
+            "image_file": "image\\quiz76_q18_202107n3-43.png",
             "audio_file": null
           },
           {
@@ -35069,7 +35069,7 @@
             "correct": "3",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/202107/image/202107n3-44.png",
             "audio_url": null,
-            "image_file": "image\\quiz76_q19_202107n3-44..png",
+            "image_file": "image\\quiz76_q19_202107n3-44.png",
             "audio_file": null
           }
         ]
@@ -35454,7 +35454,7 @@
             "correct": "2",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/202012/image/202012N341.png",
             "audio_url": null,
-            "image_file": "image\\quiz77_q16_202012N341..png",
+            "image_file": "image\\quiz77_q16_202012N341.png",
             "audio_file": null
           },
           {
@@ -35467,7 +35467,7 @@
             "correct": "2",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/202012/image/202012N342.png",
             "audio_url": null,
-            "image_file": "image\\quiz77_q17_202012N342..png",
+            "image_file": "image\\quiz77_q17_202012N342.png",
             "audio_file": null
           },
           {
@@ -35480,7 +35480,7 @@
             "correct": "3",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/202012/image/202012N343.png",
             "audio_url": null,
-            "image_file": "image\\quiz77_q18_202012N343..png",
+            "image_file": "image\\quiz77_q18_202012N343.png",
             "audio_file": null
           },
           {
@@ -35493,7 +35493,7 @@
             "correct": "2",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/202012/image/202012N344.png",
             "audio_url": null,
-            "image_file": "image\\quiz77_q19_202012N344..png",
+            "image_file": "image\\quiz77_q19_202012N344.png",
             "audio_file": null
           }
         ]
@@ -35718,7 +35718,7 @@
             "correct": "3",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201912/image/201912N33.png",
             "audio_url": null,
-            "image_file": "image\\quiz78_q6_201912N33..png",
+            "image_file": "image\\quiz78_q6_201912N33.png",
             "audio_file": null
           }
         ]
@@ -35878,7 +35878,7 @@
             "correct": "2",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201912/image/201912N34.png",
             "audio_url": null,
-            "image_file": "image\\quiz78_q16_201912N34..png",
+            "image_file": "image\\quiz78_q16_201912N34.png",
             "audio_file": null
           },
           {
@@ -35891,7 +35891,7 @@
             "correct": "3",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201912/image/201912N35.png",
             "audio_url": null,
-            "image_file": "image\\quiz78_q17_201912N35..png",
+            "image_file": "image\\quiz78_q17_201912N35.png",
             "audio_file": null
           },
           {
@@ -35904,7 +35904,7 @@
             "correct": "1",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201912/image/201912N36.png",
             "audio_url": null,
-            "image_file": "image\\quiz78_q18_201912N36..png",
+            "image_file": "image\\quiz78_q18_201912N36.png",
             "audio_file": null
           },
           {
@@ -35917,7 +35917,7 @@
             "correct": "1",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201912/image/201912N37.png",
             "audio_url": null,
-            "image_file": "image\\quiz78_q19_201912N37..png",
+            "image_file": "image\\quiz78_q19_201912N37.png",
             "audio_file": null
           }
         ]
@@ -36059,7 +36059,7 @@
       {
         "instruction": "問題1では、まず質問を聞いてください。 それから話を聞いて、問題用紙の1から4の中から、 最 もよいものを一つえらんでください。",
         "audio_url": "https://drive.google.com/uc?export=download&id=1plRIVoR8l2oA67_IYqaFAtC_BhmODwst",
-        "audio_file": "sound\\quiz79_group1_uc..mp4",
+        "audio_file": "sound\\quiz79_group1_uc.mp4",
         "questions": [
           {
             "question": "1番",
@@ -36150,7 +36150,7 @@
       {
         "instruction": "問題2では、まず質問を聞いてください。 そのあと、問題用紙を見てください。 読む時間がありま す。 それから話を聞いて、問題用紙の1から4の中から、最もよいものを一つえらんでください。",
         "audio_url": "https://drive.google.com/uc?export=download&id=1fB2OPKIWmaFCVcJF04CVBvbfmUP1df6b",
-        "audio_file": "sound\\quiz79_group2_uc..mp4",
+        "audio_file": "sound\\quiz79_group2_uc.mp4",
         "questions": [
           {
             "question": "1番",
@@ -36241,7 +36241,7 @@
       {
         "instruction": "問題3では、問題用紙に何もいんさつされていません。 この問題は、ぜんたいとしてどんなないよ うかを聞く問題です。話の前に質問はありません。 まず話を聞いてください。 それから、質問とせ んたくしを聞いて、 1から4の中から、最もよいものを一つえらんでください。",
         "audio_url": "https://drive.google.com/uc?export=download&id=18EwzcLacPqkz8V-t9L30PCbHmiNS6NcR",
-        "audio_file": "sound\\quiz79_group3_uc..mp4",
+        "audio_file": "sound\\quiz79_group3_uc.mp4",
         "questions": [
           {
             "question": "1番",
@@ -36290,7 +36290,7 @@
       {
         "instruction": "問題4では、えを見ながら質問を聞いてください。 やじるし(→)の人は何と言いますか。 1から3 の中から、最もよいものを一つえらんでください。",
         "audio_url": "https://drive.google.com/uc?export=download&id=1rON5eKzTvijw0eQ8VmV5Pu5MDjka-xhD",
-        "audio_file": "sound\\quiz79_group4_uc..mp4",
+        "audio_file": "sound\\quiz79_group4_uc.mp4",
         "questions": [
           {
             "question": "1番 ",
@@ -36302,7 +36302,7 @@
             "correct": "2",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201907/image/201907N3-41.png",
             "audio_url": null,
-            "image_file": "image\\quiz79_q16_201907N3-41..png",
+            "image_file": "image\\quiz79_q16_201907N3-41.png",
             "audio_file": null
           },
           {
@@ -36315,7 +36315,7 @@
             "correct": "1",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201907/image/201907N3-42.png",
             "audio_url": null,
-            "image_file": "image\\quiz79_q17_201907N3-42..png",
+            "image_file": "image\\quiz79_q17_201907N3-42.png",
             "audio_file": null
           },
           {
@@ -36328,7 +36328,7 @@
             "correct": "1",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201907/image/201907N3-43.png",
             "audio_url": null,
-            "image_file": "image\\quiz79_q18_201907N3-43..png",
+            "image_file": "image\\quiz79_q18_201907N3-43.png",
             "audio_file": null
           },
           {
@@ -36341,7 +36341,7 @@
             "correct": "3",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201907/image/201907N3-44.png",
             "audio_url": null,
-            "image_file": "image\\quiz79_q19_201907N3-44..png",
+            "image_file": "image\\quiz79_q19_201907N3-44.png",
             "audio_file": null
           }
         ]
@@ -36349,7 +36349,7 @@
       {
         "instruction": "問題5では、問題用紙に何もいんさつされていません。 まず文を聞いてください。 それから、その へんじを聞いて、1から3の中から、最もよいものを一つえらんでください。",
         "audio_url": "https://drive.google.com/uc?export=download&id=1f7f2bJuEdlHw-vz0Ir3Cu3gNKHL65nfI",
-        "audio_file": "sound\\quiz79_group5_uc..mp4",
+        "audio_file": "sound\\quiz79_group5_uc.mp4",
         "questions": [
           {
             "question": "1番",
@@ -36489,7 +36489,7 @@
       {
         "instruction": "問題1: この問題では、まず質問を聞いてください。それから話を聞いて、問題用紙の1から4の中から、最もよいものを一つ選らんでください。",
         "audio_url": "https://drive.google.com/uc?export=download&id=1aXBkxEil1G03snZ9qZMi683uCegW6_FU",
-        "audio_file": "sound\\quiz80_group2_uc..mp4",
+        "audio_file": "sound\\quiz80_group2_uc.mp4",
         "questions": [
           {
             "question": "１番",
@@ -36558,7 +36558,7 @@
             "correct": "3",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201812/image/1812N3Nghe5_1.png",
             "audio_url": null,
-            "image_file": "image\\quiz80_q5_1812N3Nghe5_1..png",
+            "image_file": "image\\quiz80_q5_1812N3Nghe5_1.png",
             "audio_file": null
           },
           {
@@ -36580,7 +36580,7 @@
       {
         "instruction": "問題2: この問題では、まず質問を聞いてください。そのあと、問題用紙の選択肢を読んでください。読む時間があります。それから、話を聞いて、問題用紙の1から4の中から、最もよいものを一つ選らんでください。",
         "audio_url": "https://drive.google.com/uc?export=download&id=1srfUR9o13ubqNxtK94Z7dzS7t9ASQHKI",
-        "audio_file": "sound\\quiz80_group3_uc..mp4",
+        "audio_file": "sound\\quiz80_group3_uc.mp4",
         "questions": [
           {
             "question": "1番",
@@ -36671,7 +36671,7 @@
       {
         "instruction": "問題3: この問題では、問題用紙に何も印刷されていません。この問題は、全体としてどんな内容かを聞く問題です。話の前に質問はありません。まず話を聞いてください。それから、質問と選択肢を聞いて、1から4の中から、最もよいものを一つ選らんでください。",
         "audio_url": "https://drive.google.com/uc?export=download&id=1MCbPyt2IFbJPn04KK4eRk8ZWC7wiCw5u",
-        "audio_file": "sound\\quiz80_group4_uc..mp4",
+        "audio_file": "sound\\quiz80_group4_uc.mp4",
         "questions": [
           {
             "question": "１番",
@@ -36720,7 +36720,7 @@
       {
         "instruction": "問題4: この問題では、絵を　見ながら　質問を　聞いて　ください。やじるし（→）の　人は　何と　言いますか。1から3の　中から、いちばん　いいものを　ひとつ　選んで　ください。",
         "audio_url": "https://drive.google.com/uc?export=download&id=1iEoxyn7ZAi3cWzXzpFxdL3S5JhZbEm3j",
-        "audio_file": "sound\\quiz80_group5_uc..mp4",
+        "audio_file": "sound\\quiz80_group5_uc.mp4",
         "questions": [
           {
             "question": "１番 ",
@@ -36732,7 +36732,7 @@
             "correct": "1",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201812/image/1812N3Nghe5-1.png",
             "audio_url": null,
-            "image_file": "image\\quiz80_q16_1812N3Nghe5-1..png",
+            "image_file": "image\\quiz80_q16_1812N3Nghe5-1.png",
             "audio_file": null
           },
           {
@@ -36745,7 +36745,7 @@
             "correct": "3",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201812/image/1812N3Nghe5-2.png",
             "audio_url": null,
-            "image_file": "image\\quiz80_q17_1812N3Nghe5-2..png",
+            "image_file": "image\\quiz80_q17_1812N3Nghe5-2.png",
             "audio_file": null
           },
           {
@@ -36758,7 +36758,7 @@
             "correct": "2",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201812/image/1812N3Nghe5-3.png",
             "audio_url": null,
-            "image_file": "image\\quiz80_q18_1812N3Nghe5-3..png",
+            "image_file": "image\\quiz80_q18_1812N3Nghe5-3.png",
             "audio_file": null
           },
           {
@@ -36771,7 +36771,7 @@
             "correct": "1",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201812/image/1812N3Nghe5-4.png",
             "audio_url": null,
-            "image_file": "image\\quiz80_q19_1812N3Nghe5-4..png",
+            "image_file": "image\\quiz80_q19_1812N3Nghe5-4.png",
             "audio_file": null
           }
         ]
@@ -36779,7 +36779,7 @@
       {
         "instruction": "問題5: この問題では、問題用紙に何も印刷されていません。まず文を聞いてください。それから、それに対する返事を聞いて、1から3の中から、最もよいものを一つ選らんでください。",
         "audio_url": "https://drive.google.com/uc?export=download&id=1-agbNPQctkzsbRXvR3Ak6k9AXdQohc5p",
-        "audio_file": "sound\\quiz80_group6_uc..mp4",
+        "audio_file": "sound\\quiz80_group6_uc.mp4",
         "questions": [
           {
             "question": "１番",
@@ -36913,7 +36913,7 @@
       {
         "instruction": "問題1では、まず質問を聞いてください。それから話を聞いて、問題用紙の1から4の中から、最もよいも のを一つえらんでください。",
         "audio_url": "https://drive.google.com/uc?export=download&id=1zX_mcfZ1KcBK-AaLA6h5qMVMWsmZJu4g",
-        "audio_file": "sound\\quiz81_group1_uc..mp4",
+        "audio_file": "sound\\quiz81_group1_uc.mp4",
         "questions": [
           {
             "question": "1番",
@@ -37004,7 +37004,7 @@
       {
         "instruction": "問題2では、まず質問を聞いてください。そのあと、問題用紙を見てください。読む時間があります。それ から話を聞いて、問題用紙の1から4の中から、最もよいものを一つえらんでください。",
         "audio_url": "https://drive.google.com/uc?export=download&id=1-tn6C5sMG8ON7CuoNHGSKZBAgN7oobI_",
-        "audio_file": "sound\\quiz81_group2_uc..mp4",
+        "audio_file": "sound\\quiz81_group2_uc.mp4",
         "questions": [
           {
             "question": "1番",
@@ -37095,7 +37095,7 @@
       {
         "instruction": "問題3では、問題用紙に何もいんさつされていません。この問題は、ぜんたいとしてどんなないようかを聞 く問題です。話の前に質問はありません。まず話を聞いてください。それから、質問とせんたくしを聞いて、 1から4の中から、最もよいものを一つえらんでください。",
         "audio_url": "https://drive.google.com/uc?export=download&id=1qFb_WnJlRIl1YrBG3MTiW8BkUOxe5kdB",
-        "audio_file": "sound\\quiz81_group3_uc..mp4",
+        "audio_file": "sound\\quiz81_group3_uc.mp4",
         "questions": []
       },
       {
@@ -37150,7 +37150,7 @@
       {
         "instruction": "問題4 では、えを見ながら質問を聞いてください。やじるし(→)の人は何と言いますか。1から3の中か ら、最もよいものを一つえらんでください。",
         "audio_url": "https://drive.google.com/uc?export=download&id=1j21-Ks9um5pjF7OizAzmMShBDsDCqRx0",
-        "audio_file": "sound\\quiz81_group5_uc..mp4",
+        "audio_file": "sound\\quiz81_group5_uc.mp4",
         "questions": [
           {
             "question": "1番  ",
@@ -37162,7 +37162,7 @@
             "correct": "2",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201807/image/1807n31.png",
             "audio_url": null,
-            "image_file": "image\\quiz81_q16_1807n31..png",
+            "image_file": "image\\quiz81_q16_1807n31.png",
             "audio_file": null
           },
           {
@@ -37175,7 +37175,7 @@
             "correct": "1",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201807/image/1807n32.png",
             "audio_url": null,
-            "image_file": "image\\quiz81_q17_1807n32..png",
+            "image_file": "image\\quiz81_q17_1807n32.png",
             "audio_file": null
           },
           {
@@ -37188,7 +37188,7 @@
             "correct": "2",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201807/image/1807n33.png",
             "audio_url": null,
-            "image_file": "image\\quiz81_q18_1807n33..png",
+            "image_file": "image\\quiz81_q18_1807n33.png",
             "audio_file": null
           },
           {
@@ -37201,7 +37201,7 @@
             "correct": "3",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201807/image/1807n34.png",
             "audio_url": null,
-            "image_file": "image\\quiz81_q19_1807n34..png",
+            "image_file": "image\\quiz81_q19_1807n34.png",
             "audio_file": null
           }
         ]
@@ -37209,7 +37209,7 @@
       {
         "instruction": "問題5では、問題用紙に何もいんさつされていません。まず話を聞いてください。それから、そのへんじを聞いて質問とせんたくしを聞いて、 1から3の中か ら、最もよいものを一つえらんでください。",
         "audio_url": "https://drive.google.com/uc?export=download&id=1keDsdjL2C82wNHWWARp61H2Qxia_IkZx",
-        "audio_file": "sound\\quiz81_group6_uc..mp4",
+        "audio_file": "sound\\quiz81_group6_uc.mp4",
         "questions": [
           {
             "question": "1番",
@@ -37343,7 +37343,7 @@
       {
         "instruction": "問題1では、まず質問を聞いてください。それから話を聞いて、問題用紙の1から4の中から、最もよいも のを一つえらんでください。",
         "audio_url": "https://drive.google.com/uc?export=download&id=1Z_aIGWVFOKe6FH4Yp2yruqNIQlEhK7Cf",
-        "audio_file": "sound\\quiz82_group1_uc..mp4",
+        "audio_file": "sound\\quiz82_group1_uc.mp4",
         "questions": [
           {
             "question": "1番  ",
@@ -37356,7 +37356,7 @@
             "correct": "3",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201712/image/201712N311.png",
             "audio_url": null,
-            "image_file": "image\\quiz82_q1_201712N311..png",
+            "image_file": "image\\quiz82_q1_201712N311.png",
             "audio_file": null
           },
           {
@@ -37398,7 +37398,7 @@
             "correct": "2",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201712/image/201712N314.png",
             "audio_url": null,
-            "image_file": "image\\quiz82_q4_201712N314..png",
+            "image_file": "image\\quiz82_q4_201712N314.png",
             "audio_file": null
           },
           {
@@ -37434,7 +37434,7 @@
       {
         "instruction": "問題2では、まず質問を聞いてください。そのあと、問題用紙を見てください。読む時間があります。それ から話を聞いて、問題用紙の1から4の中から、最もよいものを一つえらんでください。",
         "audio_url": "https://drive.google.com/uc?export=download&id=1dWWDtgz3-umtScjHYWeiNN-dxPqPymtA",
-        "audio_file": "sound\\quiz82_group2_uc..mp4",
+        "audio_file": "sound\\quiz82_group2_uc.mp4",
         "questions": [
           {
             "question": "1番",
@@ -37525,7 +37525,7 @@
       {
         "instruction": "問題3では、問題用紙に何もいんさつされていません。この問題は、ぜんたいとしてどんなないようかを聞 く問題です。話の前に質問はありません。まず話を聞いてください。それから、質問とせんたくしを聞いて、 1から4の中から、最もよいものを一つえらんでください。",
         "audio_url": "https://drive.google.com/uc?export=download&id=1PD_ZzyqYQkwYAhOxJ4PVdv204Km8cpdL",
-        "audio_file": "sound\\quiz82_group3_uc..mp4",
+        "audio_file": "sound\\quiz82_group3_uc.mp4",
         "questions": [
           {
             "question": "1番",
@@ -37574,7 +37574,7 @@
       {
         "instruction": "問題4 では、えを見ながら質問を聞いてください。やじるし(➡)の人は何と言いますか。 1から3の中か ら、最もよいものを一つえらんでください。",
         "audio_url": "https://drive.google.com/uc?export=download&id=1aOrSmYBjvgdIXzTDGQKrth5fFroz_QK3",
-        "audio_file": "sound\\quiz82_group4_uc..mp4",
+        "audio_file": "sound\\quiz82_group4_uc.mp4",
         "questions": [
           {
             "question": "1番  ",
@@ -37586,7 +37586,7 @@
             "correct": "2",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201712/image/201712N341.png",
             "audio_url": null,
-            "image_file": "image\\quiz82_q16_201712N341..png",
+            "image_file": "image\\quiz82_q16_201712N341.png",
             "audio_file": null
           },
           {
@@ -37599,7 +37599,7 @@
             "correct": "1",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201712/image/201712N342.png",
             "audio_url": null,
-            "image_file": "image\\quiz82_q17_201712N342..png",
+            "image_file": "image\\quiz82_q17_201712N342.png",
             "audio_file": null
           },
           {
@@ -37612,7 +37612,7 @@
             "correct": "3",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201712/image/201712N343.png",
             "audio_url": null,
-            "image_file": "image\\quiz82_q18_201712N343..png",
+            "image_file": "image\\quiz82_q18_201712N343.png",
             "audio_file": null
           },
           {
@@ -37625,7 +37625,7 @@
             "correct": "2",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201712/image/201712N344.png",
             "audio_url": null,
-            "image_file": "image\\quiz82_q19_201712N344..png",
+            "image_file": "image\\quiz82_q19_201712N344.png",
             "audio_file": null
           }
         ]
@@ -37633,7 +37633,7 @@
       {
         "instruction": "問題 5では、問題用紙に何もいんさつされていません。まず文を聞いてください。それから、そのへんじを 聞いて、1から3の中から、最もよいものを一つえらんでください。 -メモー",
         "audio_url": "https://drive.google.com/uc?export=download&id=1gWFzkH0zYkhag2lIMUcUN1UxB4vQoAYX",
-        "audio_file": "sound\\quiz82_group5_uc..mp4",
+        "audio_file": "sound\\quiz82_group5_uc.mp4",
         "questions": [
           {
             "question": "1番",
@@ -37767,7 +37767,7 @@
       {
         "instruction": "問題1では、まず質問を聞いてください。それから話を聞いて、問題用紙の(1)から(4)の中から、最もよいものを一 つ選んでください。",
         "audio_url": "https://drive.google.com/uc?export=download&id=1WJOh3pSF2mJHtjsLFjA_VVvq9MDGiLk5",
-        "audio_file": "sound\\quiz83_group1_uc..mp4",
+        "audio_file": "sound\\quiz83_group1_uc.mp4",
         "questions": [
           {
             "question": "1番",
@@ -37794,7 +37794,7 @@
             "correct": "3",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201707/image/201707N31.png",
             "audio_url": null,
-            "image_file": "image\\quiz83_q2_201707N31..png",
+            "image_file": "image\\quiz83_q2_201707N31.png",
             "audio_file": null
           },
           {
@@ -37858,7 +37858,7 @@
       {
         "instruction": "問題2 では、まず質問を聞いてください。そのあと、問題用紙を見てください。読む時間があります。それから話を聞い、問題用紙の1から4の中から、最もよいものを一つえらんでください。",
         "audio_url": "https://drive.google.com/uc?export=download&id=1iqILgZzcsZQpfVzftECrWDjoGqxAfxd4",
-        "audio_file": "sound\\quiz83_group2_uc..mp4",
+        "audio_file": "sound\\quiz83_group2_uc.mp4",
         "questions": [
           {
             "question": "1番",
@@ -37949,7 +37949,7 @@
       {
         "instruction": "問題3 では、問題用紙に何もいんさつされていません。この問題は、ぜんたいとしてどんなないようかを聞く問題です。話 の前に質問はありません。まず話を聞いてください。それから、質問とせんたくしを聞いて、(1)から(4)の中から、 ーメモー",
         "audio_url": "https://drive.google.com/uc?export=download&id=1Zp7bxkNLJKQEIsJbRvrsMxjaqjXJTbMu",
-        "audio_file": "sound\\quiz83_group3_uc..mp4",
+        "audio_file": "sound\\quiz83_group3_uc.mp4",
         "questions": [
           {
             "question": "1番",
@@ -37998,7 +37998,7 @@
       {
         "instruction": "問題4 問題4では、えを見ながら質問を聞いてください。やじるし(➡)の人は何と言いますか。1から3の中から、最もよい ものを一つえらんでください。",
         "audio_url": "https://drive.google.com/uc?export=download&id=1cazAwINRgoWqEMFZ5k26Lio6T6zB4n2m",
-        "audio_file": "sound\\quiz83_group4_uc..mp4",
+        "audio_file": "sound\\quiz83_group4_uc.mp4",
         "questions": [
           {
             "question": "1番 ",
@@ -38010,7 +38010,7 @@
             "correct": "1",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201707/image/201707N32.png",
             "audio_url": null,
-            "image_file": "image\\quiz83_q16_201707N32..png",
+            "image_file": "image\\quiz83_q16_201707N32.png",
             "audio_file": null
           },
           {
@@ -38023,7 +38023,7 @@
             "correct": "2",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201707/image/201707N33.png",
             "audio_url": null,
-            "image_file": "image\\quiz83_q17_201707N33..png",
+            "image_file": "image\\quiz83_q17_201707N33.png",
             "audio_file": null
           },
           {
@@ -38036,7 +38036,7 @@
             "correct": "2",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201707/image/201707N34.png",
             "audio_url": null,
-            "image_file": "image\\quiz83_q18_201707N34..png",
+            "image_file": "image\\quiz83_q18_201707N34.png",
             "audio_file": null
           },
           {
@@ -38049,7 +38049,7 @@
             "correct": "1",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201707/image/201707N35.png",
             "audio_url": null,
-            "image_file": "image\\quiz83_q19_201707N35..png",
+            "image_file": "image\\quiz83_q19_201707N35.png",
             "audio_file": null
           }
         ]
@@ -38057,7 +38057,7 @@
       {
         "instruction": "問題5 では、問題用紙に何もいんさつされていません。まず文を聞いてください。それから、そのへんじを聞いて、(1)か ら(3)の中から、最もよいものを一つえらんでください。",
         "audio_url": "https://drive.google.com/uc?export=download&id=1Y0Kv-mAGzwc2KXPo_tp4oskIyPn0mIjD",
-        "audio_file": "sound\\quiz83_group5_uc..mp4",
+        "audio_file": "sound\\quiz83_group5_uc.mp4",
         "questions": [
           {
             "question": "1番",
@@ -38197,7 +38197,7 @@
       {
         "instruction": "問題1: この問題では、まず質問を聞いてください。それから話を聞いて、問題用紙の1から4の中から、最もよいものを一つ選らんでください。",
         "audio_url": "https://drive.google.com/uc?export=download&id=1outKmYCTQw23X0wBAf2cYLYHHNhdzA5Z",
-        "audio_file": "sound\\quiz84_group2_uc..mp4",
+        "audio_file": "sound\\quiz84_group2_uc.mp4",
         "questions": [
           {
             "question": "1番 ",
@@ -38210,7 +38210,7 @@
             "correct": "2",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201612/image/201612n35.png",
             "audio_url": null,
-            "image_file": "image\\quiz84_q1_201612n35..png",
+            "image_file": "image\\quiz84_q1_201612n35.png",
             "audio_file": null
           },
           {
@@ -38288,7 +38288,7 @@
       {
         "instruction": "問題2: この問題では、まず質問を聞いてください。そのあと、問題用紙の選択肢を読んでください。読む時間があります。それから、話を聞いて、問題用紙の1から4の中から、最もよいものを一つ選らんでください。",
         "audio_url": "https://drive.google.com/uc?export=download&id=13LzgJRNEUxCKWWw1BcYNkSSn_vhqZ8uY",
-        "audio_file": "sound\\quiz84_group3_uc..mp4",
+        "audio_file": "sound\\quiz84_group3_uc.mp4",
         "questions": [
           {
             "question": "1番",
@@ -38379,7 +38379,7 @@
       {
         "instruction": "問題3: この問題では、問題用紙に何も印刷されていません。この問題は、全体としてどんな内容かを聞く問題です。話の前に質問はありません。まず話を聞いてください。それから、質問と選択肢を聞いて、1から4の中から、最もよいものを一つ選らんでください。",
         "audio_url": "https://drive.google.com/uc?export=download&id=1hSqgKlKjPXDfoIQIYeC3TevYd_jXVdIJ",
-        "audio_file": "sound\\quiz84_group4_uc..mp4",
+        "audio_file": "sound\\quiz84_group4_uc.mp4",
         "questions": [
           {
             "question": "1番",
@@ -38428,7 +38428,7 @@
       {
         "instruction": "問題4: この問題では、絵を　見ながら　質問を　聞いて　ください。やじるし（→）の　人は　何と　言いますか。1から3の　中から、いちばん　いいものを　ひとつ　選んで　ください。",
         "audio_url": "https://drive.google.com/uc?export=download&id=1jdXM-tLxU257Gqy4zLXE4svCVpFGgygT",
-        "audio_file": "sound\\quiz84_group5_uc..mp4",
+        "audio_file": "sound\\quiz84_group5_uc.mp4",
         "questions": [
           {
             "question": "1番 ",
@@ -38440,7 +38440,7 @@
             "correct": "1",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201612/image/201612n31.png",
             "audio_url": null,
-            "image_file": "image\\quiz84_q16_201612n31..png",
+            "image_file": "image\\quiz84_q16_201612n31.png",
             "audio_file": null
           },
           {
@@ -38453,7 +38453,7 @@
             "correct": "2",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201612/image/201612n32.png",
             "audio_url": null,
-            "image_file": "image\\quiz84_q17_201612n32..png",
+            "image_file": "image\\quiz84_q17_201612n32.png",
             "audio_file": null
           },
           {
@@ -38466,7 +38466,7 @@
             "correct": "3",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201612/image/201612n33.png",
             "audio_url": null,
-            "image_file": "image\\quiz84_q18_201612n33..png",
+            "image_file": "image\\quiz84_q18_201612n33.png",
             "audio_file": null
           },
           {
@@ -38479,7 +38479,7 @@
             "correct": "3",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201612/image/201612n34.png",
             "audio_url": null,
-            "image_file": "image\\quiz84_q19_201612n34..png",
+            "image_file": "image\\quiz84_q19_201612n34.png",
             "audio_file": null
           }
         ]
@@ -38487,7 +38487,7 @@
       {
         "instruction": "問題5: この問題では、問題用紙に何も印刷されていません。まず文を聞いてください。それから、それに対する返事を聞いて、1から3の中から、最もよいものを一つ選らんでください。",
         "audio_url": "https://drive.google.com/uc?export=download&id=1x2PiF6qrYIgxzZqbCM0l-EYCu6p4RLFN",
-        "audio_file": "sound\\quiz84_group6_uc..mp4",
+        "audio_file": "sound\\quiz84_group6_uc.mp4",
         "questions": [
           {
             "question": "1番",
@@ -38621,7 +38621,7 @@
       {
         "instruction": "問題1では、まず質問を聞いてください。それから話を聞いて、問題用紙の1から4の中から、最もよいものを一つえらんでください。",
         "audio_url": "https://drive.google.com/uc?export=download&id=1EfrBYbNH6yFJTSlXN5m7T0PQtZmzv7I0",
-        "audio_file": "sound\\quiz85_group1_uc..mp4",
+        "audio_file": "sound\\quiz85_group1_uc.mp4",
         "questions": [
           {
             "question": "1番",
@@ -38712,7 +38712,7 @@
       {
         "instruction": "問題2では、まず質問を聞いてください。そのあと、問題用紙を見てください。読む時間があります。それ から話を聞いて、問題用紙の1から4の中から、最もよいものを一つえらんでください。",
         "audio_url": "https://drive.google.com/uc?export=download&id=1o_VV8cUF_iEZ1Zeg1ebPRrIFk0RXzaad",
-        "audio_file": "sound\\quiz85_group2_uc..mp4",
+        "audio_file": "sound\\quiz85_group2_uc.mp4",
         "questions": [
           {
             "question": "1番",
@@ -38803,7 +38803,7 @@
       {
         "instruction": "問題3では、問題用紙に何もいんさつされていません。この問題は、ぜんたいとしてどんなないようかを聞 く問題です。話の前に質問はありません。まず話を聞いてください。それから、質問とせんたくしを聞いて、 1から4の中から、最もよいものを一つえらんでください。",
         "audio_url": "https://drive.google.com/uc?export=download&id=1dIkKVf9BkJGfaabL51OziNH7H7iPoRTY",
-        "audio_file": "sound\\quiz85_group3_uc..mp4",
+        "audio_file": "sound\\quiz85_group3_uc.mp4",
         "questions": []
       },
       {
@@ -38858,7 +38858,7 @@
       {
         "instruction": "問題4 では、えを見ながら質問を聞いてください。やじるし(ー)の人は何と言いますか。1から3の中か ら、最もよいものを一つえらんでください。",
         "audio_url": "https://drive.google.com/uc?export=download&id=1idN2Yvzh1aiFcgpOcx-epi0ivrDoIq3U",
-        "audio_file": "sound\\quiz85_group5_uc..mp4",
+        "audio_file": "sound\\quiz85_group5_uc.mp4",
         "questions": [
           {
             "question": "1番 ",
@@ -38870,7 +38870,7 @@
             "correct": "1",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201607/image/201607N32.png",
             "audio_url": null,
-            "image_file": "image\\quiz85_q16_201607N32..png",
+            "image_file": "image\\quiz85_q16_201607N32.png",
             "audio_file": null
           },
           {
@@ -38883,7 +38883,7 @@
             "correct": "1",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201607/image/201607N31.png",
             "audio_url": null,
-            "image_file": "image\\quiz85_q17_201607N31..png",
+            "image_file": "image\\quiz85_q17_201607N31.png",
             "audio_file": null
           },
           {
@@ -38896,7 +38896,7 @@
             "correct": "3",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201607/image/201607N33.png",
             "audio_url": null,
-            "image_file": "image\\quiz85_q18_201607N33..png",
+            "image_file": "image\\quiz85_q18_201607N33.png",
             "audio_file": null
           },
           {
@@ -38909,7 +38909,7 @@
             "correct": "2",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201607/image/201607N34.png",
             "audio_url": null,
-            "image_file": "image\\quiz85_q19_201607N34..png",
+            "image_file": "image\\quiz85_q19_201607N34.png",
             "audio_file": null
           }
         ]
@@ -38917,7 +38917,7 @@
       {
         "instruction": "問題5では、問題用紙に何もいんさつされていません。まず話を聞いてください。それから、そのへんじを聞いて質問とせんたくしを聞いて、 1から3の中か ら、最もよいものを一つえらんでください。",
         "audio_url": "https://drive.google.com/uc?export=download&id=1dUky9dlhjZMxp0nYYkQhAwJha3QtwA2_",
-        "audio_file": "sound\\quiz85_group6_uc..mp4",
+        "audio_file": "sound\\quiz85_group6_uc.mp4",
         "questions": [
           {
             "question": "1番",
@@ -39051,7 +39051,7 @@
       {
         "instruction": "問題1では、まず質問を聞いてください。それから話を聞いて、問題用紙の1から4の中から、最もよいも のを一つえらんでください。",
         "audio_url": "https://drive.google.com/uc?export=download&id=1Sj_cS_xxmMgDAL6TKolA6kO3p3we6dtL",
-        "audio_file": "sound\\quiz86_group1_uc..mp4",
+        "audio_file": "sound\\quiz86_group1_uc.mp4",
         "questions": [
           {
             "question": "1番 ",
@@ -39064,7 +39064,7 @@
             "correct": "4",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201512/image/201512N311.png",
             "audio_url": null,
-            "image_file": "image\\quiz86_q1_201512N311..png",
+            "image_file": "image\\quiz86_q1_201512N311.png",
             "audio_file": null
           },
           {
@@ -39142,7 +39142,7 @@
       {
         "instruction": "問題2では、まず質問を聞いてください。そのあと、問題用紙を見てください。読む時間があります。それ から話を聞いて、問題用紙の1から4の中から、最もよいものを一つえらんでください。",
         "audio_url": "https://drive.google.com/uc?export=download&id=1IBchJZuvfRsV3jgkvi-qHp9qL95BTnMi",
-        "audio_file": "sound\\quiz86_group2_uc..mp4",
+        "audio_file": "sound\\quiz86_group2_uc.mp4",
         "questions": [
           {
             "question": "1番",
@@ -39233,7 +39233,7 @@
       {
         "instruction": "問題3では、問題用紙に何もいんさつされていません。この問題は、ぜんたいとしてどんなないようかを聞 く問題です。話の前に質問はありません。まず話を聞いてください。それから、質問とせんたくしを聞いて、 1から4の中から、最もよいものを一つえらんでください。",
         "audio_url": "https://drive.google.com/uc?export=download&id=1vkAteKSBlOhZxQYqOkQCP1A2DRaQTuyf",
-        "audio_file": "sound\\quiz86_group3_uc..mp4",
+        "audio_file": "sound\\quiz86_group3_uc.mp4",
         "questions": []
       },
       {
@@ -39288,7 +39288,7 @@
       {
         "instruction": "問題4 では、えを見ながら質問を聞いてください。やじるし(ー)の人は何と言いますか。1から3の中か ら、最もよいものを一つえらんでください。",
         "audio_url": "https://drive.google.com/uc?export=download&id=18c_CRKaOSxSnAXBCyyT3zZHrcoaP0nrb",
-        "audio_file": "sound\\quiz86_group5_uc..mp4",
+        "audio_file": "sound\\quiz86_group5_uc.mp4",
         "questions": [
           {
             "question": "1番 ",
@@ -39300,7 +39300,7 @@
             "correct": "2",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201512/image/201512N31.png",
             "audio_url": null,
-            "image_file": "image\\quiz86_q16_201512N31..png",
+            "image_file": "image\\quiz86_q16_201512N31.png",
             "audio_file": null
           },
           {
@@ -39313,7 +39313,7 @@
             "correct": "3",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201512/image/201512N32.png",
             "audio_url": null,
-            "image_file": "image\\quiz86_q17_201512N32..png",
+            "image_file": "image\\quiz86_q17_201512N32.png",
             "audio_file": null
           },
           {
@@ -39326,7 +39326,7 @@
             "correct": "1",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201512/image/201512N33.png",
             "audio_url": null,
-            "image_file": "image\\quiz86_q18_201512N33..png",
+            "image_file": "image\\quiz86_q18_201512N33.png",
             "audio_file": null
           },
           {
@@ -39339,7 +39339,7 @@
             "correct": "1",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201512/image/201512N34.png",
             "audio_url": null,
-            "image_file": "image\\quiz86_q19_201512N34..png",
+            "image_file": "image\\quiz86_q19_201512N34.png",
             "audio_file": null
           }
         ]
@@ -39347,7 +39347,7 @@
       {
         "instruction": "問題5では、問題用紙に何もいんさつされていません。まず話を聞いてください。それから、そのへんじを聞いて質問とせんたくしを聞いて、 1から3の中か ら、最もよいものを一つえらんでください。",
         "audio_url": "https://drive.google.com/uc?export=download&id=1AvdYjYiH9f-q9LG64_5QwvsL5ktNKEM3",
-        "audio_file": "sound\\quiz86_group6_uc..mp4",
+        "audio_file": "sound\\quiz86_group6_uc.mp4",
         "questions": [
           {
             "question": "1番",
@@ -39490,7 +39490,7 @@
       {
         "instruction": "問題1では、まず質問を聞いてください。それから話を聞いて、問題用紙の1から4の中から、最もよいも のを一つえらんでください。",
         "audio_url": "https://drive.google.com/uc?export=download&id=1N6_xgn7Y6Irsy0hMmbayfG8L3Dvoimjj",
-        "audio_file": "sound\\quiz88_group1_uc..mp4",
+        "audio_file": "sound\\quiz88_group1_uc.mp4",
         "questions": [
           {
             "question": "1番",
@@ -39573,7 +39573,7 @@
             "correct": "4",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201412/image/201412N35.png",
             "audio_url": null,
-            "image_file": "image\\quiz88_q6_201412N35..png",
+            "image_file": "image\\quiz88_q6_201412N35.png",
             "audio_file": null
           }
         ]
@@ -39739,7 +39739,7 @@
             "correct": "2",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201412/image/201412N36.png",
             "audio_url": null,
-            "image_file": "image\\quiz88_q16_201412N36..png",
+            "image_file": "image\\quiz88_q16_201412N36.png",
             "audio_file": null
           },
           {
@@ -39752,7 +39752,7 @@
             "correct": "1",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201412/image/201412N37.png",
             "audio_url": null,
-            "image_file": "image\\quiz88_q17_201412N37..png",
+            "image_file": "image\\quiz88_q17_201412N37.png",
             "audio_file": null
           },
           {
@@ -39765,7 +39765,7 @@
             "correct": "2",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201412/image/201412N38.png",
             "audio_url": null,
-            "image_file": "image\\quiz88_q18_201412N38..png",
+            "image_file": "image\\quiz88_q18_201412N38.png",
             "audio_file": null
           },
           {
@@ -39778,7 +39778,7 @@
             "correct": "3",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201412/image/201412N39.png",
             "audio_url": null,
-            "image_file": "image\\quiz88_q19_201412N39..png",
+            "image_file": "image\\quiz88_q19_201412N39.png",
             "audio_file": null
           }
         ]
@@ -39920,7 +39920,7 @@
       {
         "instruction": "問題1では、まず質問を聞いてください。それから話を聞いて、問題用紙の1から4の中から、最もよいも のを一つえらんでください。",
         "audio_url": "https://drive.google.com/uc?export=download&id=11wWFto9--G3nA7mmMi3GhV14owHRONHI",
-        "audio_file": "sound\\quiz89_group1_uc..mp4",
+        "audio_file": "sound\\quiz89_group1_uc.mp4",
         "questions": [
           {
             "question": "1番",
@@ -40011,7 +40011,7 @@
       {
         "instruction": "問題2では、まず質問を聞いてください。そのあと、問題用紙を見てください。読む時間があります。それ から話を聞いて、問題用紙の1から4の中から、最もよいものを一つえらんでください。",
         "audio_url": "https://drive.google.com/uc?export=download&id=1V7z5ZbCTEwXXlSgTDZgveWvdYHFFvBbU",
-        "audio_file": "sound\\quiz89_group2_uc..mp4",
+        "audio_file": "sound\\quiz89_group2_uc.mp4",
         "questions": [
           {
             "question": "1番",
@@ -40108,7 +40108,7 @@
       {
         "instruction": "-メモー",
         "audio_url": "https://drive.google.com/uc?export=download&id=1xghrUwTOeMpDIjR6xEZ_npxxkwFf98s4",
-        "audio_file": "sound\\quiz89_group4_uc..mp4",
+        "audio_file": "sound\\quiz89_group4_uc.mp4",
         "questions": [
           {
             "question": "1番",
@@ -40157,7 +40157,7 @@
       {
         "instruction": "問題4 では、えを見ながら質問を聞いてください。やじるし(ー>)の人は何と言いますか。1から3の中か ら、最もよいものを一つえらんでください。",
         "audio_url": "https://drive.google.com/uc?export=download&id=1rMDC2iksDJfXJnSCiP6DHdJljzgF7COJ",
-        "audio_file": "sound\\quiz89_group5_uc..mp4",
+        "audio_file": "sound\\quiz89_group5_uc.mp4",
         "questions": [
           {
             "question": "1番 ",
@@ -40169,7 +40169,7 @@
             "correct": "3",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201407/image/201407N31.png",
             "audio_url": null,
-            "image_file": "image\\quiz89_q16_201407N31..png",
+            "image_file": "image\\quiz89_q16_201407N31.png",
             "audio_file": null
           },
           {
@@ -40182,7 +40182,7 @@
             "correct": "3",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201407/image/201407N32.png",
             "audio_url": null,
-            "image_file": "image\\quiz89_q17_201407N32..png",
+            "image_file": "image\\quiz89_q17_201407N32.png",
             "audio_file": null
           },
           {
@@ -40195,7 +40195,7 @@
             "correct": "1",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201407/image/201407N33.png",
             "audio_url": null,
-            "image_file": "image\\quiz89_q18_201407N33..png",
+            "image_file": "image\\quiz89_q18_201407N33.png",
             "audio_file": null
           },
           {
@@ -40208,7 +40208,7 @@
             "correct": "2",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201407/image/201407N34.png",
             "audio_url": null,
-            "image_file": "image\\quiz89_q19_201407N34..png",
+            "image_file": "image\\quiz89_q19_201407N34.png",
             "audio_file": null
           }
         ]
@@ -40216,7 +40216,7 @@
       {
         "instruction": "問題5では、問題用紙に何もいんさつされていません。まず話を聞いてください。それから、そのへんじを聞いて質問とせんたくしを聞いて、 1から3の中か ら、最もよいものを一つえらんでください。",
         "audio_url": "https://drive.google.com/uc?export=download&id=1JS0DHSMJy_VZkCceyWq0RXrzcbUc3kna",
-        "audio_file": "sound\\quiz89_group6_uc..mp4",
+        "audio_file": "sound\\quiz89_group6_uc.mp4",
         "questions": [
           {
             "question": "1番",
@@ -40350,7 +40350,7 @@
       {
         "instruction": "問題1では、まず質問を聞いてください。それから話を聞いて、問題用紙の1から4の中から、最もよいも のを一つえらんでください。",
         "audio_url": "https://drive.google.com/uc?export=download&id=156uRuVJl7zs5WN4HNamlL-Df6-CUV_9n",
-        "audio_file": "sound\\quiz90_group1_uc..mp4",
+        "audio_file": "sound\\quiz90_group1_uc.mp4",
         "questions": [
           {
             "question": "1番",
@@ -40391,7 +40391,7 @@
             "correct": "1",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201312/image/201312N35.png",
             "audio_url": null,
-            "image_file": "image\\quiz90_q3_201312N35..png",
+            "image_file": "image\\quiz90_q3_201312N35.png",
             "audio_file": null
           },
           {
@@ -40599,7 +40599,7 @@
             "correct": "1",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201312/image/201312N39.png",
             "audio_url": null,
-            "image_file": "image\\quiz90_q16_201312N39..png",
+            "image_file": "image\\quiz90_q16_201312N39.png",
             "audio_file": null
           },
           {
@@ -40612,7 +40612,7 @@
             "correct": "3",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201312/image/201312N310.png",
             "audio_url": null,
-            "image_file": "image\\quiz90_q17_201312N310..png",
+            "image_file": "image\\quiz90_q17_201312N310.png",
             "audio_file": null
           },
           {
@@ -40625,7 +40625,7 @@
             "correct": "2",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201312/image/201312N311.png",
             "audio_url": null,
-            "image_file": "image\\quiz90_q18_201312N311..png",
+            "image_file": "image\\quiz90_q18_201312N311.png",
             "audio_file": null
           },
           {
@@ -40638,7 +40638,7 @@
             "correct": "1",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201312/image/201312N312.png",
             "audio_url": null,
-            "image_file": "image\\quiz90_q19_201312N312..png",
+            "image_file": "image\\quiz90_q19_201312N312.png",
             "audio_file": null
           }
         ]
@@ -40780,7 +40780,7 @@
       {
         "instruction": "問題1では、まず質問を聞いてください。それから話を聞いて、問題用紙の1から4の中から、最もよいも のを一つえらんでください。",
         "audio_url": "https://drive.google.com/uc?export=download&id=1FjjqFxfhGPctwfiySxvBUQJj3Kd_vgy4",
-        "audio_file": "sound\\quiz91_group1_uc..mp4",
+        "audio_file": "sound\\quiz91_group1_uc.mp4",
         "questions": [
           {
             "question": "1番",
@@ -40849,7 +40849,7 @@
             "correct": "3",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201307/image/201307N35.png",
             "audio_url": null,
-            "image_file": "image\\quiz91_q5_201307N35..png",
+            "image_file": "image\\quiz91_q5_201307N35.png",
             "audio_file": null
           },
           {
@@ -41029,7 +41029,7 @@
             "correct": "3",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201307/image/201307N36.png",
             "audio_url": null,
-            "image_file": "image\\quiz91_q16_201307N36..png",
+            "image_file": "image\\quiz91_q16_201307N36.png",
             "audio_file": null
           },
           {
@@ -41042,7 +41042,7 @@
             "correct": "1",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201307/image/201307N37.png",
             "audio_url": null,
-            "image_file": "image\\quiz91_q17_201307N37..png",
+            "image_file": "image\\quiz91_q17_201307N37.png",
             "audio_file": null
           },
           {
@@ -41055,7 +41055,7 @@
             "correct": "2",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201307/image/201307N38.png",
             "audio_url": null,
-            "image_file": "image\\quiz91_q18_201307N38..png",
+            "image_file": "image\\quiz91_q18_201307N38.png",
             "audio_file": null
           },
           {
@@ -41068,7 +41068,7 @@
             "correct": "1",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201307/image/201307N39.png",
             "audio_url": null,
-            "image_file": "image\\quiz91_q19_201307N39..png",
+            "image_file": "image\\quiz91_q19_201307N39.png",
             "audio_file": null
           }
         ]
@@ -41210,7 +41210,7 @@
       {
         "instruction": "問題1: この問題では、まず質問を聞いてください。それから話を聞いて、問題用紙の1から4の中から、最もよいものを一つ選らんでください。",
         "audio_url": "https://drive.google.com/uc?export=download&id=1S8k0ENAKPyS5L0FHRC9d5xEBIgI_EVvp",
-        "audio_file": "sound\\quiz92_group1_uc..mp4",
+        "audio_file": "sound\\quiz92_group1_uc.mp4",
         "questions": [
           {
             "question": "1番",
@@ -41223,7 +41223,7 @@
             "correct": "4",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201212/image/201212N31.png",
             "audio_url": null,
-            "image_file": "image\\quiz92_q1_201212N31..png",
+            "image_file": "image\\quiz92_q1_201212N31.png",
             "audio_file": null
           },
           {
@@ -41279,7 +41279,7 @@
             "correct": "1",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201212/image/201212N32.png",
             "audio_url": null,
-            "image_file": "image\\quiz92_q5_201212N32..png",
+            "image_file": "image\\quiz92_q5_201212N32.png",
             "audio_file": null
           },
           {
@@ -41453,7 +41453,7 @@
             "correct": "3",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201212/image/201212N33.png",
             "audio_url": null,
-            "image_file": "image\\quiz92_q16_201212N33..png",
+            "image_file": "image\\quiz92_q16_201212N33.png",
             "audio_file": null
           },
           {
@@ -41466,7 +41466,7 @@
             "correct": "3",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201212/image/201212N34.png",
             "audio_url": null,
-            "image_file": "image\\quiz92_q17_201212N34..png",
+            "image_file": "image\\quiz92_q17_201212N34.png",
             "audio_file": null
           },
           {
@@ -41479,7 +41479,7 @@
             "correct": "1",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201212/image/201212N35.png",
             "audio_url": null,
-            "image_file": "image\\quiz92_q18_201212N35..png",
+            "image_file": "image\\quiz92_q18_201212N35.png",
             "audio_file": null
           },
           {
@@ -41492,7 +41492,7 @@
             "correct": "2",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201212/image/201212N36.png",
             "audio_url": null,
-            "image_file": "image\\quiz92_q19_201212N36..png",
+            "image_file": "image\\quiz92_q19_201212N36.png",
             "audio_file": null
           }
         ]
@@ -41634,7 +41634,7 @@
       {
         "instruction": "問題1では、まず質問を聞いてください。それから話を聞いて、問題用紙の1から4の中から、最もよいも のを一つえらんでください。",
         "audio_url": "https://drive.google.com/uc?export=download&id=1EgR8ftrP1mvzGj6ECPi3Bpoy7FOrJDne",
-        "audio_file": "sound\\quiz93_group1_uc..mp4",
+        "audio_file": "sound\\quiz93_group1_uc.mp4",
         "questions": [
           {
             "question": "1番",
@@ -41883,7 +41883,7 @@
             "correct": "1",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201207/image/201207N31.png",
             "audio_url": null,
-            "image_file": "image\\quiz93_q16_201207N31..png",
+            "image_file": "image\\quiz93_q16_201207N31.png",
             "audio_file": null
           },
           {
@@ -41896,7 +41896,7 @@
             "correct": "2",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201207/image/201207N32.png",
             "audio_url": null,
-            "image_file": "image\\quiz93_q17_201207N32..png",
+            "image_file": "image\\quiz93_q17_201207N32.png",
             "audio_file": null
           },
           {
@@ -41909,7 +41909,7 @@
             "correct": "3",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201207/image/201207N33.png",
             "audio_url": null,
-            "image_file": "image\\quiz93_q18_201207N33..png",
+            "image_file": "image\\quiz93_q18_201207N33.png",
             "audio_file": null
           },
           {
@@ -41922,7 +41922,7 @@
             "correct": "1",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201207/image/201207N34.png",
             "audio_url": null,
-            "image_file": "image\\quiz93_q19_201207N34..png",
+            "image_file": "image\\quiz93_q19_201207N34.png",
             "audio_file": null
           }
         ]
@@ -42064,7 +42064,7 @@
       {
         "instruction": "問題1: この問題では、まず質問を聞いてください。それから話を聞いて、問題用紙の1から4の中から、最もよいものを一つ選らんでください。",
         "audio_url": "https://drive.google.com/uc?export=download&id=13GKOH4emQ9t2PxLMFCVdg6qkVh3u8Qxk",
-        "audio_file": "sound\\quiz94_group1_uc..mp4",
+        "audio_file": "sound\\quiz94_group1_uc.mp4",
         "questions": [
           {
             "question": "1番",
@@ -42091,7 +42091,7 @@
             "correct": "4",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201112/image/201112N31.png",
             "audio_url": null,
-            "image_file": "image\\quiz94_q2_201112N31..png",
+            "image_file": "image\\quiz94_q2_201112N31.png",
             "audio_file": null
           },
           {
@@ -42105,7 +42105,7 @@
             "correct": "3",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201112/image/201112N32.png",
             "audio_url": null,
-            "image_file": "image\\quiz94_q3_201112N32..png",
+            "image_file": "image\\quiz94_q3_201112N32.png",
             "audio_file": null
           },
           {
@@ -42133,7 +42133,7 @@
             "correct": "1",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201112/image/201112N33.png",
             "audio_url": null,
-            "image_file": "image\\quiz94_q5_201112N33..png",
+            "image_file": "image\\quiz94_q5_201112N33.png",
             "audio_file": null
           },
           {
@@ -42307,7 +42307,7 @@
             "correct": "3",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201112/image/201112N34.png",
             "audio_url": null,
-            "image_file": "image\\quiz94_q16_201112N34..png",
+            "image_file": "image\\quiz94_q16_201112N34.png",
             "audio_file": null
           },
           {
@@ -42320,7 +42320,7 @@
             "correct": "1",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201112/image/201112N35.png",
             "audio_url": null,
-            "image_file": "image\\quiz94_q17_201112N35..png",
+            "image_file": "image\\quiz94_q17_201112N35.png",
             "audio_file": null
           },
           {
@@ -42333,7 +42333,7 @@
             "correct": "2",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201112/image/201112N36.png",
             "audio_url": null,
-            "image_file": "image\\quiz94_q18_201112N36..png",
+            "image_file": "image\\quiz94_q18_201112N36.png",
             "audio_file": null
           },
           {
@@ -42346,7 +42346,7 @@
             "correct": "3",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201112/image/201112N37.png",
             "audio_url": null,
-            "image_file": "image\\quiz94_q19_201112N37..png",
+            "image_file": "image\\quiz94_q19_201112N37.png",
             "audio_file": null
           }
         ]
@@ -42475,7 +42475,7 @@
       {
         "instruction": "問題1: この問題では、まず質問を聞いてください。それから話を聞いて、問題用紙の1から4の中から、最もよいものを一つ選らんでください。",
         "audio_url": "https://drive.google.com/uc?export=download&id=1bY3Fe2ydnchJwCwEWhX1GF2mQ7Gha2A6",
-        "audio_file": "sound\\quiz95_group1_uc..mp4",
+        "audio_file": "sound\\quiz95_group1_uc.mp4",
         "questions": [
           {
             "question": "1番",
@@ -42488,7 +42488,7 @@
             "correct": "2",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201107/image/201107N31.png",
             "audio_url": null,
-            "image_file": "image\\quiz95_q1_201107N31..png",
+            "image_file": "image\\quiz95_q1_201107N31.png",
             "audio_file": null
           },
           {
@@ -42718,7 +42718,7 @@
             "correct": "2",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201107/image/201107N32.png",
             "audio_url": null,
-            "image_file": "image\\quiz95_q16_201107N32..png",
+            "image_file": "image\\quiz95_q16_201107N32.png",
             "audio_file": null
           },
           {
@@ -42731,7 +42731,7 @@
             "correct": "3",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201107/image/201107N33.png",
             "audio_url": null,
-            "image_file": "image\\quiz95_q17_201107N33..png",
+            "image_file": "image\\quiz95_q17_201107N33.png",
             "audio_file": null
           },
           {
@@ -42744,7 +42744,7 @@
             "correct": "2",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201107/image/201107N34.png",
             "audio_url": null,
-            "image_file": "image\\quiz95_q18_201107N34..png",
+            "image_file": "image\\quiz95_q18_201107N34.png",
             "audio_file": null
           },
           {
@@ -42757,7 +42757,7 @@
             "correct": "1",
             "image_url": "https://dethitiengnhat.com/en/jlpt/N3/201107/image/201107N35.png",
             "audio_url": null,
-            "image_file": "image\\quiz95_q19_201107N35..png",
+            "image_file": "image\\quiz95_q19_201107N35.png",
             "audio_file": null
           }
         ]
