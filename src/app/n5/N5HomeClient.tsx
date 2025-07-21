@@ -3,30 +3,8 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
 import { useSettings, useN5, useFlipMode, useMultipleChoice } from '@/lib/StudyContext';
+import Furigana from '@/components/Furigana';
 
-// Komponen untuk me-render furigana dengan benar
-// Membuat furigana (rt) di atas kanji (rb) berwarna merah dan bisa diperbesar
-const Furigana = ({ htmlString, className = '', rtClass = '', boldMain = false }: { htmlString: string | undefined; className?: string; rtClass?: string; mainClass?: string; boldMain?: boolean }) => {
-    if (typeof htmlString !== 'string') return null;
-    let html = htmlString;
-    if (rtClass) {
-        html = html.replace(/<rt>(.*?)<\/rt>/g, `<rt style=\"color:rgb(156 163 175);font-weight:normal;\" class='${rtClass} dark:text-gray-400'>$1</rt>`);
-    } else {
-        html = html.replace(/<rt>(.*?)<\/rt>/g, '<rt style="color:red" class="dark:text-red-400">$1</rt>');
-    }
-    // Improved: wrap all content before <rt> inside <ruby> with span for boldMain (handles tags, spaces, punctuation)
-    if (boldMain) {
-        html = html.replace(/<ruby>([\s\S]*?)(<rt>)/g, '<ruby><span style="color:#111 !important;font-weight:bold;" class="dark:!text-gray-100">$1</span>$2');
-    }
-    return (
-        <span
-            className={`font-[\'Noto Sans JP\'], jp-font font-bold ${className}`}
-            dangerouslySetInnerHTML={{
-                __html: html,
-            }}
-        />
-    );
-};
 
 // Palet warna untuk konsistensi
 const colors = {

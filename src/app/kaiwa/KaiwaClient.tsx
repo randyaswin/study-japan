@@ -2,6 +2,7 @@
 
 import React, { useState, useRef, useEffect, useMemo, useCallback } from 'react';
 import { ChevronDownIcon, ChevronRightIcon, PlayIcon, PauseIcon } from '@heroicons/react/24/solid';
+import Furigana from '@/components/Furigana';
 
 interface ConversationLine {
   speaker: string;
@@ -33,16 +34,6 @@ interface KaiwaClientProps {
   conversationData: ConversationData[];
 }
 
-// Helper component for furigana rendering - Memoized for performance
-const Furigana = React.memo<{ htmlString: string; className?: string }>(({ htmlString, className = '' }) => {
-  const processedHtml = useMemo(() => 
-    htmlString.replace(/\[([^\|]+)\|([^\]]+)\]/g, '<ruby>$1<rt>$2</rt></ruby>'), 
-    [htmlString]
-  );
-  return <span className={`jp-font ${className}`} dangerouslySetInnerHTML={{ __html: processedHtml }} />;
-});
-
-Furigana.displayName = 'Furigana';
 
 // Memoized conversation card component
 const ConversationCard = React.memo<{
@@ -886,7 +877,7 @@ export default function KaiwaClient({ conversationData }: KaiwaClientProps) {
                       </div>
                       
                       <div className="text-lg sm:text-xl mb-2 jp-font leading-relaxed">
-                        <Furigana htmlString={line.furigana} />
+                        <Furigana htmlString={line.furigana.replace(/\[([^\|]+)\|([^\]]+)\]/g, '<ruby>$1<rt>$2</rt></ruby>')} className="text-base" rtClass="furigana-bold"/>
                       </div>
                       
                       {showRomaji[index] && (
