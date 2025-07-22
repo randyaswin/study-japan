@@ -11,6 +11,8 @@
             "id":"Berapa harga untuk satu ini?"
         },
         "level":"N5",
+        "bushu":"一",
+        "bushu_position":"kamae",
         "visual_bridge":null
     },
     {
@@ -25,6 +27,8 @@
             "id":"Di sana ada dua ekor kucing."
         },
         "level":"N5",
+        "bushu":"二",
+        "bushu_position":"kamae",
         "visual_bridge":null
     },
     {
@@ -39,6 +43,8 @@
             "id":"Saya akan pergi ke Jepang pada bulan Maret (bulan ketiga)."
         },
         "level":"N5",
+        "bushu":"一",
+        "bushu_position":"kamae",
         "visual_bridge":null
     },
     {
@@ -53,6 +59,8 @@
             "id":"Orang itu adalah orang Jepang."
         },
         "level":"N5",
+        "bushu":"人",
+        "bushu_position":"kamae",
         "visual_bridge":null
     },
     {
@@ -67,6 +75,8 @@
             "id":"Hari ini adalah hari Minggu."
         },
         "level":"N5",
+        "bushu":"日",
+        "bushu_position":"kamae",
         "visual_bridge":null
     },
     {
@@ -81,6 +91,8 @@
             "id":"Sekarang jam setengah sepuluh (9:30)."
         },
         "level":"N5",
+        "bushu":"十",
+        "bushu_position":"tare",
         "visual_bridge":null
     },
     {
@@ -95,6 +107,8 @@
             "id":"Pekerjaan ini akan selesai dalam 10 menit."
         },
         "level":"N5",
+        "bushu":"刀",
+        "bushu_position":"tsukuri",
         "visual_bridge":null
     },
     {
@@ -109,6 +123,8 @@
             "id":"Negara Anda di mana?"
         },
         "level":"N5",
+        "bushu":"囗",
+        "bushu_position":"kamae",
         "visual_bridge":null
     },
     {
@@ -123,6 +139,8 @@
             "id":"Saya pergi ke kantor dengan kereta listrik."
         },
         "level":"N5",
+        "bushu":"車",
+        "bushu_position":"kamae",
         "visual_bridge":null
     },
     {
@@ -137,6 +155,8 @@
             "id":"Ini apa?"
         },
         "level":"N5",
+        "bushu":"亻",
+        "bushu_position":"hen",
         "visual_bridge":null
     },
     {
@@ -151,6 +171,8 @@
             "id":"Cuacanya bagus ya."
         },
         "level":"N5",
+        "bushu":"大",
+        "bushu_position":"kamae",
         "visual_bridge":null
     },
     {
@@ -165,6 +187,8 @@
             "id":"Saya sehat\/baik-baik saja."
         },
         "level":"N5",
+        "bushu":"气",
+        "bushu_position":"kamae",
         "visual_bridge":null
     },
     {
@@ -179,6 +203,8 @@
             "id":"Hujan sedang turun."
         },
         "level":"N5",
+        "bushu":"雨",
+        "bushu_position":"kamae",
         "visual_bridge":null
     },
     {
@@ -193,6 +219,8 @@
             "id":"Bolehkah saya menelepon?"
         },
         "level":"N5",
+        "bushu":"雨",
+        "bushu_position":"kanmuri",
         "visual_bridge":null
     },
     {
@@ -207,6 +235,8 @@
             "id":"Kantin ini murah dan enak."
         },
         "level":"N5",
+        "bushu":"食",
+        "bushu_position":"kamae",
         "visual_bridge":null
     },
     {
@@ -221,6 +251,8 @@
             "id":"Bagaimana kalau minum sesuatu?"
         },
         "level":"N5",
+        "bushu":"食",
+        "bushu_position":"hen",
         "visual_bridge":null
     },
     {
@@ -235,6 +267,8 @@
             "id":"Besok ada rapat (pertemuan untuk diskusi)."
         },
         "level":"N5",
+        "bushu":"人",
+        "bushu_position":"kanmuri",
         "visual_bridge":null
     },
     {
@@ -249,6 +283,8 @@
             "id":"Apakah kamu sudah membaca koran ini? (Koran berisi hal-hal yang baru didengar)."
         },
         "level":"N5",
+        "bushu":"門",
+        "bushu_position":"kamae",
         "visual_bridge":null
     },
     {
@@ -263,6 +299,8 @@
             "id":"Membaca buku adalah hobi saya."
         },
         "level":"N5",
+        "bushu":"言",
+        "bushu_position":"hen",
         "visual_bridge":null
     },
     {
@@ -277,6 +315,8 @@
             "id":"Saya meminjam buku (benda tulisan) di perpustakaan."
         },
         "level":"N5",
+        "bushu":"曰",
+        "bushu_position":"kanmuri",
         "visual_bridge":null
     },
     {
@@ -291,6 +331,8 @@
             "id":"Saya pergi ke bank."
         },
         "level":"N5",
+        "bushu":"行",
+        "bushu_position":"kamae",
         "visual_bridge":null
     },
     {
@@ -305,6 +347,8 @@
             "id":"Minggu depan, teman saya akan datang."
         },
         "level":"N5",
+        "bushu":"木",
+        "bushu_position":"kamae",
         "visual_bridge":null
     },
     {
@@ -319,6 +363,8 @@
             "id":"Setiap hari saya pulang ke rumah jam 5."
         },
         "level":"N5",
+        "bushu":"巾",
+        "bushu_position":"tsukuri",
         "visual_bridge":null
     },
     {
@@ -333,6 +379,8 @@
             "id":"Kemarin, saya menonton film yang menarik."
         },
         "level":"N5",
+        "bushu":"見",
+        "bushu_position":"kamae",
         "visual_bridge":null
     },
     {
@@ -347,6 +395,8 @@
             "id":"Tolong katakan sekali lagi."
         },
         "level":"N5",
+        "bushu":"言",
+        "bushu_position":"kamae",
         "visual_bridge":null
     },
     {
@@ -361,6 +411,8 @@
             "id":"Kota ini tenang dan bersih."
         },
         "level":"N5",
+        "bushu":"田",
+        "bushu_position":"hen",
         "visual_bridge":null
     },
     {
@@ -375,6 +427,8 @@
             "id":"Di mana Anda tinggal?"
         },
         "level":"N5",
+        "bushu":"亻",
+        "bushu_position":"hen",
         "visual_bridge":null
     },
     {
@@ -389,6 +443,8 @@
             "id":"Mereka menjual bunga di toko dekat stasiun."
         },
         "level":"N5",
+        "bushu":"士",
+        "bushu_position":"kanmuri",
         "visual_bridge":null
     },
     {
@@ -403,6 +459,8 @@
             "id":"Siapa orang yang sedang berdiri di sana?"
         },
         "level":"N5",
+        "bushu":"立",
+        "bushu_position":"kamae",
         "visual_bridge":null
     },
     {
@@ -417,6 +475,8 @@
             "id":"Semua karyawan (anggota perusahaan) IMC baik hati."
         },
         "level":"N5",
+        "bushu":"口",
+        "bushu_position":"kanmuri",
         "visual_bridge":null
     },
     {
@@ -431,6 +491,8 @@
             "id":"Tolong jaga baik-baik tubuh Anda."
         },
         "level":"N5",
+        "bushu":"亻",
+        "bushu_position":"hen",
         "visual_bridge":null
     },
     {
@@ -445,6 +507,8 @@
             "id":"Dia (laki-laki) pintar (kepalanya bagus)."
         },
         "level":"N5",
+        "bushu":"頁",
+        "bushu_position":"tsukuri",
         "visual_bridge":null
     },
     {
@@ -459,6 +523,8 @@
             "id":"Setiap pagi saya mencuci muka."
         },
         "level":"N5",
+        "bushu":"顔",
+        "bushu_position":"kamae",
         "visual_bridge":null
     },
     {
@@ -473,6 +539,8 @@
             "id":"Kakak laki-laki saya badannya tinggi."
         },
         "level":"N5",
+        "bushu":"高",
+        "bushu_position":"kamae",
         "visual_bridge":null
     },
     {
@@ -487,6 +555,8 @@
             "id":"Roti di toko ini murah dan enak."
         },
         "level":"N5",
+        "bushu":"宀",
+        "bushu_position":"kanmuri",
         "visual_bridge":null
     },
     {
@@ -501,6 +571,8 @@
             "id":"Kemarin saya pergi ke rumah sakit."
         },
         "level":"N5",
+        "bushu":"阝",
+        "bushu_position":"hen",
         "visual_bridge":null
     },
     {
@@ -515,6 +587,8 @@
             "id":"Obat ini berkhasiat baik untuk penyakit."
         },
         "level":"N5",
+        "bushu":"疒",
+        "bushu_position":"tare",
         "visual_bridge":null
     },
     {
@@ -529,6 +603,8 @@
             "id":"Setiap hari saya belajar selama 3 jam."
         },
         "level":"N5",
+        "bushu":"力",
+        "bushu_position":"tsukuri",
         "visual_bridge":null
     },
     {
@@ -543,6 +619,8 @@
             "id":"Belajar itu penting (usaha yang kuat)."
         },
         "level":"N5",
+        "bushu":"弓",
+        "bushu_position":"hen",
         "visual_bridge":null
     },
     {
@@ -557,6 +635,8 @@
             "id":"Saya menonton film di bioskop."
         },
         "level":"N5",
+        "bushu":"日",
+        "bushu_position":"hen",
         "visual_bridge":null
     },
     {
@@ -571,6 +651,8 @@
             "id":"Kedua orang tua saya tinggal di Osaka."
         },
         "level":"N5",
+        "bushu":"見",
+        "bushu_position":"tsukuri",
         "visual_bridge":null
     },
     {
@@ -585,6 +667,8 @@
             "id":"Kami adalah saudara (laki-laki)."
         },
         "level":"N5",
+        "bushu":"儿",
+        "bushu_position":"ashi",
         "visual_bridge":null
     },
     {
@@ -599,6 +683,8 @@
             "id":"Kakak perempuan saya adalah pegawai bank."
         },
         "level":"N5",
+        "bushu":"女",
+        "bushu_position":"hen",
         "visual_bridge":null
     },
     {
@@ -613,6 +699,8 @@
             "id":"Adik laki-laki saya masih seorang pelajar."
         },
         "level":"N5",
+        "bushu":"弓",
+        "bushu_position":"kamae",
         "visual_bridge":null
     },
     {
@@ -627,6 +715,8 @@
             "id":"Saya punya seorang adik perempuan."
         },
         "level":"N5",
+        "bushu":"女",
+        "bushu_position":"hen",
         "visual_bridge":null
     },
     {
@@ -641,6 +731,8 @@
             "id":"Tolong tunggu sebentar di sini."
         },
         "level":"N5",
+        "bushu":"彳",
+        "bushu_position":"hen",
         "visual_bridge":null
     },
     {
@@ -655,6 +747,8 @@
             "id":"Perlukah saya bawakan barang bawaan Anda?"
         },
         "level":"N5",
+        "bushu":"扌",
+        "bushu_position":"hen",
         "visual_bridge":null
     },
     {
@@ -669,6 +763,8 @@
             "id":"Baiklah, ayo kita mulai."
         },
         "level":"N5",
+        "bushu":"女",
+        "bushu_position":"hen",
         "visual_bridge":null
     },
     {
@@ -683,6 +779,8 @@
             "id":"Dengan ini, pelajaran selesai."
         },
         "level":"N5",
+        "bushu":"糸",
+        "bushu_position":"hen",
         "visual_bridge":null
     },
     {
@@ -697,6 +795,8 @@
             "id":"Tolong minum obat ini tiga kali sehari."
         },
         "level":"N5",
+        "bushu":"艹",
+        "bushu_position":"kanmuri",
         "visual_bridge":null
     },
     {
@@ -711,6 +811,8 @@
             "id":"Siapakah orang yang di sebelah sana itu (sopan)?"
         },
         "level":"N5",
+        "bushu":"方",
+        "bushu_position":"kamae",
         "visual_bridge":null
     },
     {
@@ -725,6 +827,8 @@
             "id":"Saya akan melakukan persiapan untuk perjalanan."
         },
         "level":"N5",
+        "bushu":"方",
+        "bushu_position":"hen",
         "visual_bridge":null
     },
     {
@@ -739,6 +843,8 @@
             "id":"Ada siswa di dalam ruang kelas (ruang mengajar)."
         },
         "level":"N5",
+        "bushu":"攵",
+        "bushu_position":"tsukuri",
         "visual_bridge":null
     },
     {
@@ -753,6 +859,8 @@
             "id":"Di mana ruang rapat?"
         },
         "level":"N5",
+        "bushu":"宀",
+        "bushu_position":"kanmuri",
         "visual_bridge":null
     },
     {
@@ -767,6 +875,8 @@
             "id":"Belajar Kanji itu sulit, tetapi menarik."
         },
         "level":"N5",
+        "bushu":"氵",
+        "bushu_position":"hen",
         "visual_bridge":null
     },
     {
@@ -781,6 +891,8 @@
             "id":"Di ruangan ini ada empat kursi."
         },
         "level":"N5",
+        "bushu":"囗",
+        "bushu_position":"kamae",
         "visual_bridge":null
     },
     {
@@ -795,6 +907,8 @@
             "id":"Saya akan pulang jam lima."
         },
         "level":"N5",
+        "bushu":"二",
+        "bushu_position":"kamae",
         "visual_bridge":null
     },
     {
@@ -809,6 +923,8 @@
             "id":"Tolong beri saya enam buah pensil."
         },
         "level":"N5",
+        "bushu":"八",
+        "bushu_position":"kanmuri",
         "visual_bridge":null
     },
     {
@@ -823,6 +939,8 @@
             "id":"Bulan Juli (bulan ketujuh) itu panas."
         },
         "level":"N5",
+        "bushu":"一",
+        "bushu_position":"kamae",
         "visual_bridge":null
     },
     {
@@ -837,6 +955,8 @@
             "id":"Umur saya delapan tahun."
         },
         "level":"N5",
+        "bushu":"八",
+        "bushu_position":"kamae",
         "visual_bridge":null
     },
     {
@@ -851,6 +971,8 @@
             "id":"Saya suka daging ayam."
         },
         "level":"N5",
+        "bushu":"肉",
+        "bushu_position":"kamae",
         "visual_bridge":null
     },
     {
@@ -865,6 +987,8 @@
             "id":"Ayo kita minum teh."
         },
         "level":"N5",
+        "bushu":"艹",
+        "bushu_position":"kanmuri",
         "visual_bridge":null
     },
     {
@@ -879,6 +1003,8 @@
             "id":"Apakah kamu sudah makan (nasi)?"
         },
         "level":"N5",
+        "bushu":"食",
+        "bushu_position":"hen",
         "visual_bridge":null
     },
     {
@@ -893,6 +1019,8 @@
             "id":"Antara daging sapi dan daging babi, mana yang lebih kamu suka?"
         },
         "level":"N5",
+        "bushu":"牛",
+        "bushu_position":"hen",
         "visual_bridge":null
     },
     {
@@ -907,6 +1035,8 @@
             "id":"Di sana ada burung yang cantik."
         },
         "level":"N5",
+        "bushu":"鳥",
+        "bushu_position":"kamae",
         "visual_bridge":null
     },
     {
@@ -921,6 +1051,8 @@
             "id":"Anda menulis huruf yang indah ya."
         },
         "level":"N5",
+        "bushu":"子",
+        "bushu_position":"tsukuri",
         "visual_bridge":null
     },
     {
@@ -935,6 +1067,8 @@
             "id":"Saya memelihara anjing."
         },
         "level":"N5",
+        "bushu":"犬",
+        "bushu_position":"kamae",
         "visual_bridge":null
     },
     {
@@ -949,6 +1083,8 @@
             "id":"Di kota ini ada kuil tua."
         },
         "level":"N5",
+        "bushu":"寸",
+        "bushu_position":"tsukuri",
         "visual_bridge":null
     },
     {
@@ -963,6 +1099,8 @@
             "id":"Tolong lurus terus di jalan ini."
         },
         "level":"N5",
+        "bushu":"辶",
+        "bushu_position":"nyou",
         "visual_bridge":null
     },
     {
@@ -977,6 +1115,8 @@
             "id":"Di negara saya ada banyak sawah."
         },
         "level":"N5",
+        "bushu":"田",
+        "bushu_position":"kamae",
         "visual_bridge":null
     },
     {
@@ -991,6 +1131,8 @@
             "id":"Apakah Anda pernah mendaki Gunung Fuji?"
         },
         "level":"N5",
+        "bushu":"山",
+        "bushu_position":"kamae",
         "visual_bridge":null
     },
     {
@@ -998,13 +1140,15 @@
         "onyomi":"せん (sen)",
         "kunyomi":"かわ (kawa)",
         "arti":"Sungai",
-        "mnemonic":"Ini adalah piktograf dari aliran 'sungai'. Tiga garis vertikal yang meliuk-liuk menggambarkan air yang mengalir di antara tepiannya.",
+        "mnemonic":"Ini adalah piktograf dari aliran 'sungai' dengan tiga garis vertikal yang melambangkan air yang mengalir.",
         "example":{
             "jp":"この<ruby>川<rt>かわ<\/rt><\/ruby>はきれいです。",
             "romaji":"Kono kawa wa kirei desu.",
-            "id":"Sungai ini bersih\/indah."
+            "id":"Sungai ini bersih."
         },
         "level":"N5",
+        "bushu":"川",
+        "bushu_position":"kamae",
         "visual_bridge":null
     },
     {
@@ -1019,6 +1163,8 @@
             "id":"Apa kabar? (Apakah sumber energi Anda baik?)"
         },
         "level":"N5",
+        "bushu":"二",
+        "bushu_position":"kamae",
         "visual_bridge":null
     },
     {
@@ -1026,13 +1172,15 @@
         "onyomi":"か (ka)",
         "kunyomi":"はな (hana)",
         "arti":"Bunga",
-        "mnemonic":"Terdiri dari radikal 'tumbuhan' (艹) di atas dan 'perubahan' (化) di bawah. 'Bunga' adalah hasil 'perubahan' dari sebuah 'tumbuhan'.",
+        "mnemonic":"Terdiri dari radikal 'tumbuhan' (艹) dan 'perubahan' (化). Ini melambangkan 'perubahan' dari kuncup menjadi 'bunga' pada sebuah 'tumbuhan'.",
         "example":{
-            "jp":"これはなんの<ruby>花<rt>はな<\/rt><\/ruby>ですか。",
-            "romaji":"Kore wa nan no hana desu ka.",
-            "id":"Ini bunga apa?"
+            "jp":"<ruby>庭<rt>にわ<\/rt><\/ruby>にきれいな<ruby>花<rt>はな<\/rt><\/ruby>がさいています。",
+            "romaji":"Niwa ni kirei na hana ga saite imasu.",
+            "id":"Di taman sedang mekar bunga yang cantik."
         },
         "level":"N5",
+        "bushu":"艹",
+        "bushu_position":"kanmuri",
         "visual_bridge":null
     },
     {
@@ -1042,11 +1190,13 @@
         "arti":"Langit, Kosong",
         "mnemonic":"Terdiri dari 'lubang' (穴) dan 'pekerjaan' (工). Bayangkan seorang pekerja yang membuat lubang di atap untuk melihat 'langit' atau membuat ruangan menjadi 'kosong'.",
         "example":{
-            "jp":"<ruby>空<rt>そら<\/rt><\/ruby>に<ruby>飛行機<rt>ひこうき<\/rt><\/ruby>が<ruby>飛<rt>と<\/rt><\/ruby>んでいます。",
+            "jp":"<ruby>空<rt>そら<\/rt><\/ruby>に<ruby>飛行機<rt>ひこうき<\/rt><\/ruby>がとんでいます。",
             "romaji":"Sora ni hikouki ga tonde imasu.",
-            "id":"Ada pesawat yang terbang di langit."
+            "id":"Di langit ada pesawat yang sedang terbang."
         },
         "level":"N5",
+        "bushu":"穴",
+        "bushu_position":"kanmuri",
         "visual_bridge":null
     },
     {
@@ -1061,6 +1211,8 @@
             "id":"Siapakah laki-laki itu?"
         },
         "level":"N5",
+        "bushu":"口",
+        "bushu_position":"tsukuri",
         "visual_bridge":null
     },
     {
@@ -1075,6 +1227,8 @@
             "id":"Di kelas ini ada banyak anak perempuan."
         },
         "level":"N5",
+        "bushu":"女",
+        "bushu_position":"kamae",
         "visual_bridge":null
     },
     {
@@ -1089,6 +1243,8 @@
             "id":"Saya punya dua orang anak."
         },
         "level":"N5",
+        "bushu":"子",
+        "bushu_position":"tsukuri",
         "visual_bridge":null
     },
     {
@@ -1103,6 +1259,8 @@
             "id":"Ayah saya adalah seorang dokter."
         },
         "level":"N5",
+        "bushu":"父",
+        "bushu_position":"kamae",
         "visual_bridge":null
     },
     {
@@ -1117,6 +1275,8 @@
             "id":"Saya akan memberikan hadiah pada hari Ibu."
         },
         "level":"N5",
+        "bushu":"女",
+        "bushu_position":"hen",
         "visual_bridge":null
     },
     {
@@ -1131,6 +1291,8 @@
             "id":"Di nomor telepon saya ada angka sembilan."
         },
         "level":"N5",
+        "bushu":"九",
+        "bushu_position":"kamae",
         "visual_bridge":null
     },
     {
@@ -1145,6 +1307,8 @@
             "id":"Di kelas ini ada sepuluh orang siswa."
         },
         "level":"N5",
+        "bushu":"十",
+        "bushu_position":"kamae",
         "visual_bridge":null
     },
     {
@@ -1159,6 +1323,8 @@
             "id":"Buku ini harganya tiga ratus yen."
         },
         "level":"N5",
+        "bushu":"白",
+        "bushu_position":"kamae",
         "visual_bridge":null
     },
     {
@@ -1173,6 +1339,8 @@
             "id":"Tas ini harganya delapan ribu yen."
         },
         "level":"N5",
+        "bushu":"千",
+        "bushu_position":"kamae",
         "visual_bridge":null
     },
     {
@@ -1187,6 +1355,8 @@
             "id":"Kopi harganya lima ratus yen."
         },
         "level":"N5",
+        "bushu":"囗",
+        "bushu_position":"kamae",
         "visual_bridge":null
     },
     {
@@ -1201,6 +1371,8 @@
             "id":"Kamera ini harganya sepuluh ribu yen."
         },
         "level":"N5",
+        "bushu":"十",
+        "bushu_position":"kamae",
         "visual_bridge":null
     },
     {
@@ -1215,6 +1387,8 @@
             "id":"Berapa jumlah penduduknya? (Mulut orang)"
         },
         "level":"N5",
+        "bushu":"口",
+        "bushu_position":"kamae",
         "visual_bridge":null
     },
     {
@@ -1229,6 +1403,8 @@
             "id":"Ini urutan keberapa?"
         },
         "level":"N5",
+        "bushu":"目",
+        "bushu_position":"kamae",
         "visual_bridge":null
     },
     {
@@ -1243,6 +1419,8 @@
             "id":"Hari ini tanggal berapa bulan apa?"
         },
         "level":"N5",
+        "bushu":"月",
+        "bushu_position":"kamae",
         "visual_bridge":null
     },
     {
@@ -1257,6 +1435,8 @@
             "id":"Ada ujian pada hari Selasa."
         },
         "level":"N5",
+        "bushu":"火",
+        "bushu_position":"kamae",
         "visual_bridge":null
     },
     {
@@ -1271,6 +1451,8 @@
             "id":"Saya minum air."
         },
         "level":"N5",
+        "bushu":"水",
+        "bushu_position":"kamae",
         "visual_bridge":null
     },
     {
@@ -1285,6 +1467,8 @@
             "id":"Ayo bertemu di hari Kamis."
         },
         "level":"N5",
+        "bushu":"木",
+        "bushu_position":"kamae",
         "visual_bridge":null
     },
     {
@@ -1299,6 +1483,8 @@
             "id":"Apakah kamu punya uang?"
         },
         "level":"N5",
+        "bushu":"金",
+        "bushu_position":"kamae",
         "visual_bridge":null
     },
     {
@@ -1313,6 +1499,8 @@
             "id":"Hari Sabtu adalah hari libur."
         },
         "level":"N5",
+        "bushu":"土",
+        "bushu_position":"kamae",
         "visual_bridge":null
     },
     {
@@ -1327,6 +1515,8 @@
             "id":"Ini adalah buku bahasa Jepang."
         },
         "level":"N5",
+        "bushu":"木",
+        "bushu_position":"kamae",
         "visual_bridge":null
     },
     {
@@ -1341,6 +1531,8 @@
             "id":"Saya lahir pada tahun 1998."
         },
         "level":"N5",
+        "bushu":"禾",
+        "bushu_position":"kamae",
         "visual_bridge":null
     },
     {
@@ -1355,6 +1547,8 @@
             "id":"Nama saya adalah Anna."
         },
         "level":"N5",
+        "bushu":"禾",
+        "bushu_position":"kamae",
         "visual_bridge":null
     },
     {
@@ -1369,6 +1563,8 @@
             "id":"Guru, saya permisi duluan."
         },
         "level":"N5",
+        "bushu":"土",
+        "bushu_position":"kamae",
         "visual_bridge":null
     },
     {
@@ -1383,6 +1579,8 @@
             "id":"Ada berapa banyak siswa? (Orang yang hidup untuk belajar)"
         },
         "level":"N5",
+        "bushu":"生",
+        "bushu_position":"kamae",
         "visual_bridge":null
     },
     {
@@ -1397,6 +1595,8 @@
             "id":"Saya belajar bahasa Jepang di universitas."
         },
         "level":"N5",
+        "bushu":"宀",
+        "bushu_position":"kanmuri",
         "visual_bridge":null
     },
     {
@@ -1411,6 +1611,8 @@
             "id":"Ada buku di atas meja."
         },
         "level":"N5",
+        "bushu":"一",
+        "bushu_position":"kamae",
         "visual_bridge":null
     },
     {
@@ -1425,6 +1627,8 @@
             "id":"Ada kucing di bawah kursi."
         },
         "level":"N5",
+        "bushu":"一",
+        "bushu_position":"kamae",
         "visual_bridge":null
     },
     {
@@ -1432,13 +1636,15 @@
         "onyomi":"ちゅう (chuu)",
         "kunyomi":"なか (naka)",
         "arti":"Dalam, Tengah",
-        "mnemonic":"Piktograf ini sangat jelas: sebuah kotak (口) dengan garis vertikal yang membelahnya tepat 'di tengah'. Ini melambangkan 'di dalam' atau 'tengah'.",
+        "mnemonic":"Sebuah garis vertikal (丨) yang membelah sebuah 'mulut' atau 'kotak' (口) tepat di 'tengah'-nya.",
         "example":{
-            "jp":"かばんの<ruby>中<rt>なか<\/rt><\/ruby>に<ruby>何<rt>なに<\/rt><\/ruby>がありますか。",
-            "romaji":"Kaban no naka ni nani ga arimasu ka.",
-            "id":"Ada apa di dalam tas?"
+            "jp":"<ruby>箱<rt>はこ<\/rt><\/ruby>の<ruby>中<rt>なか<\/rt><\/ruby>に<ruby>何<rt>なに<\/rt><\/ruby>がありますか。",
+            "romaji":"Hako no naka ni nani ga arimasu ka.",
+            "id":"Di dalam kotak ada apa?"
         },
         "level":"N5",
+        "bushu":"口",
+        "bushu_position":"kamae",
         "visual_bridge":null
     },
     {
@@ -1453,6 +1659,8 @@
             "id":"Saya adalah dosen universitas (sekolah besar)."
         },
         "level":"N5",
+        "bushu":"大",
+        "bushu_position":"kamae",
         "visual_bridge":null
     },
     {
@@ -1460,13 +1668,15 @@
         "onyomi":"しょう (shou)",
         "kunyomi":"ちい.さい (chii.sai), こ (ko)",
         "arti":"Kecil",
-        "mnemonic":"Terdiri dari tiga goresan kecil yang seolah-olah adalah butiran pasir atau debu. Ini melambangkan sesuatu yang 'kecil' atau tidak signifikan.",
+        "mnemonic":"Kanji ini terlihat seperti kanji 大 (besar) yang 'terbelah' atau 'terbagi' menjadi bagian-bagian yang lebih 'kecil' oleh garis di tengah.",
         "example":{
-            "jp":"この<ruby>町<rt>まち<\/rt><\/ruby>に<ruby>小学校<rt>しょうがっこう<\/rt><\/ruby>があります。",
-            "romaji":"Kono machi ni shougakkou ga arimasu.",
-            "id":"Di kota ini ada sekolah dasar (sekolah kecil)."
+            "jp":"わたしは<ruby>小<rt>ちい<\/rt><\/ruby>さい<ruby>家<rt>いえ<\/rt><\/ruby>に<ruby>住<rt>す<\/rt><\/ruby>んでいます。",
+            "romaji":"Watashi wa chiisai ie ni sunde imasu.",
+            "id":"Saya tinggal di rumah yang kecil."
         },
         "level":"N5",
+        "bushu":"小",
+        "bushu_position":"kamae",
         "visual_bridge":null
     },
     {
@@ -1480,6 +1690,8 @@
             "romaji":"Nihongo de hanashimasu.",
             "id":"Saya berbicara dalam bahasa Jepang."
         },
+        "bushu": "言",
+        "bushu_position":"kamae",
         "level":"N5",
         "visual_bridge":"Bayangkan seseorang berbicara dengan lidah yang bergerak dan kata-kata keluar dari mulut."
     },
@@ -1494,6 +1706,8 @@
             "romaji":"Eigo o benkyou shimasu.",
             "id":"Saya belajar bahasa Inggris."
         },
+        "bushu":"言",
+        "bushu_position":"kamae",
         "level":"N5",
         "visual_bridge":"Bayangkan banyak mulut berbicara, membentuk sebuah bahasa."
     },
@@ -1509,6 +1723,8 @@
             "id":"Siapa nama Anda?"
         },
         "level":"N5",
+        "bushu":"夕",
+        "bushu_position":"kamae",
         "visual_bridge":null
     },
     {
@@ -1523,6 +1739,8 @@
             "id":"Karena tidak ada waktu, ayo cepat."
         },
         "level":"N5",
+        "bushu":"日",
+        "bushu_position":"hen",
         "visual_bridge":null
     },
     {
@@ -1537,6 +1755,8 @@
             "id":"Ada supermarket di antara bank dan kantor pos."
         },
         "level":"N5",
+        "bushu":"門",
+        "bushu_position":"kamae",
         "visual_bridge":null
     }
 ]

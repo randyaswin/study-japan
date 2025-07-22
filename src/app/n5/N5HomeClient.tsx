@@ -4,6 +4,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
 import { useSettings, useN5, useFlipMode, useMultipleChoice } from '@/lib/StudyContext';
 import Furigana from '@/components/Furigana';
+import BushuPosition from '@/components/BushuPosition';
 
 
 // Palet warna untuk konsistensi
@@ -37,6 +38,8 @@ interface KanjiItem {
     arti: string;
     mnemonic: string;
     example: ExampleObj;
+    bushu?: string;
+    bushu_position?: 'hen' | 'tsukuri' | 'kanmuri' | 'ashi' | 'kamae' | 'tare' | 'nyou';
 }
 
 interface VocabItem {
@@ -400,6 +403,14 @@ export default function N5HomeClient({ kanjiData, vocabData, grammarData }: N5Ho
                                                                 <span className="block text-base font-bold text-gray-800 dark:text-gray-200">Onyomi: <span className="ml-1 px-2 py-0.5 rounded bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 font-mono text-sm">{item.onyomi}</span></span>
                                                                 <span className="block text-base font-bold text-gray-800 dark:text-gray-200">Kunyomi: <span className="ml-1 px-2 py-0.5 rounded bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300 font-mono text-sm">{item.kunyomi}</span></span>
                                                                 <span className="block text-base font-bold text-gray-800 dark:text-gray-200">Arti: <span className="ml-1 px-2 py-0.5 rounded bg-yellow-100 dark:bg-yellow-900 text-yellow-700 dark:text-yellow-300 font-mono text-sm">{item.arti}</span></span>
+                                                                {item.bushu && item.bushu_position && (
+                                                                    <div className="flex items-center gap-2 mt-2">
+                                                                        <span className="text-sm font-bold text-gray-800 dark:text-gray-200">Bushu:</span>
+                                                                        <span className="font-mono text-sm px-2 py-0.5 rounded bg-gray-200 dark:bg-gray-700">{item.bushu}</span>
+                                                                        <BushuPosition position={item.bushu_position} className="w-5 h-5 text-gray-500" />
+                                                                        <span className="text-xs text-gray-500 dark:text-gray-400">({item.bushu_position})</span>
+                                                                    </div>
+                                                                )}
                                                             </div>
                                                             <div className="mb-2">
                                                                 <span className="block text-sm font-bold text-orange-700 dark:text-orange-400 mb-1">Jembatan Keledai Visual:</span>
@@ -430,6 +441,14 @@ export default function N5HomeClient({ kanjiData, vocabData, grammarData }: N5Ho
                                                             <span className="block text-base font-bold text-gray-800 dark:text-gray-200">Onyomi: <span className="ml-1 px-2 py-0.5 rounded bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 font-mono text-sm">{item.onyomi}</span></span>
                                                             <span className="block text-base font-bold text-gray-800 dark:text-gray-200">Kunyomi: <span className="ml-1 px-2 py-0.5 rounded bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300 font-mono text-sm">{item.kunyomi}</span></span>
                                                             <span className="block text-base font-bold text-gray-800 dark:text-gray-200">Arti: <span className="ml-1 px-2 py-0.5 rounded bg-yellow-100 dark:bg-yellow-900 text-yellow-700 dark:text-yellow-300 font-mono text-sm">{item.arti}</span></span>
+                                                            {item.bushu && item.bushu_position && (
+                                                                <div className="flex items-center gap-2 mt-2">
+                                                                    <span className="text-sm font-bold text-gray-800 dark:text-gray-200">Bushu:</span>
+                                                                    <span className="font-mono text-sm px-2 py-0.5 rounded bg-gray-200 dark:bg-gray-700">{item.bushu}</span>
+                                                                    <BushuPosition position={item.bushu_position} className="w-5 h-5 text-gray-500" />
+                                                                    <span className="text-xs text-gray-500 dark:text-gray-400">({item.bushu_position})</span>
+                                                                </div>
+                                                            )}
                                                         </div>
                                                         <div className="mb-2">
                                                             <span className="block text-sm font-bold text-orange-700 dark:text-orange-400 mb-1">Jembatan Keledai Visual:</span>
