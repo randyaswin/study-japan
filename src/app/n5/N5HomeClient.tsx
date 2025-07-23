@@ -99,15 +99,42 @@ export default function N5HomeClient({ kanjiData, vocabData, grammarData }: N5Ho
     const [kanjiOptions, setKanjiOptions] = useState<{[key: number]: string[]}>({});
     const [vocabOptions, setVocabOptions] = useState<{[key: number]: string[]}>({});
     const [isSettingsCollapsed, setIsSettingsCollapsed] = useState(true);
+    const [selectedBushu, setSelectedBushu] = useState<string>('all');
+    const [sortByBushu, setSortByBushu] = useState<boolean>(false);
+
+    const allBushu = React.useMemo(() => {
+        const bushuSet = new Set<string>();
+        kanjiData.forEach(item => {
+            if (item.bushu) {
+                bushuSet.add(item.bushu);
+            }
+        });
+        return ['all', ...Array.from(bushuSet).sort()];
+    }, [kanjiData]);
 
     // Calculate current page data based on settings and current page
     const getCurrentPageData = useCallback((): SprintData => {
         const currentPage = n5Data.currentPage;
         
+        let filteredKanji = selectedBushu === 'all' 
+            ? [...kanjiData] 
+            : kanjiData.filter(k => k.bushu === selectedBushu);
+
+        if (sortByBushu) {
+            filteredKanji.sort((a, b) => {
+                if (a.bushu && b.bushu) {
+                    return a.bushu.localeCompare(b.bushu);
+                }
+                if (a.bushu) return -1;
+                if (b.bushu) return 1;
+                return 0;
+            });
+        }
+
         // Get paginated data for each section
         const kanjiStartIndex = (currentPage - 1) * settings.kanjiPerPage;
         const kanjiEndIndex = kanjiStartIndex + settings.kanjiPerPage;
-        const paginatedKanji = kanjiData.slice(kanjiStartIndex, kanjiEndIndex);
+        const paginatedKanji = filteredKanji.slice(kanjiStartIndex, kanjiEndIndex);
         
         const vocabularyStartIndex = (currentPage - 1) * settings.vocabularyPerPage;
         const vocabularyEndIndex = vocabularyStartIndex + settings.vocabularyPerPage;
@@ -124,7 +151,7 @@ export default function N5HomeClient({ kanjiData, vocabData, grammarData }: N5Ho
             vocabulary: paginatedVocab,
             grammar: paginatedGrammar
         };
-    }, [n5Data.currentPage, settings.kanjiPerPage, settings.vocabularyPerPage, settings.grammarPerPage, kanjiData, vocabData, grammarData]);
+    }, [n5Data.currentPage, settings.kanjiPerPage, settings.vocabularyPerPage, settings.grammarPerPage, kanjiData, vocabData, grammarData, selectedBushu, sortByBushu]);
 
     // Helper function to generate multiple choice options for kanji
     const generateKanjiOptions = (correctItem: KanjiItem, allKanjiMeanings: string[]) => {
@@ -407,8 +434,11 @@ export default function N5HomeClient({ kanjiData, vocabData, grammarData }: N5Ho
                                                                     <div className="flex items-center gap-2 mt-2">
                                                                         <span className="text-sm font-bold text-gray-800 dark:text-gray-200">Bushu:</span>
                                                                         <span className="font-mono text-sm px-2 py-0.5 rounded bg-gray-200 dark:bg-gray-700">{item.bushu}</span>
-                                                                        <BushuPosition position={item.bushu_position} className="w-5 h-5 text-gray-500" />
-                                                                        <span className="text-xs text-gray-500 dark:text-gray-400">({item.bushu_position})</span>
+                                                                        <BushuPosition 
+                                                                            position={item.bushu_position} 
+                                                                            className="w-5 h-5"
+                                                                        />
+                                                                        <span className="text-xs text-orange-500 dark:text-orange-400">({item.bushu_position})</span>
                                                                     </div>
                                                                 )}
                                                             </div>
@@ -445,8 +475,11 @@ export default function N5HomeClient({ kanjiData, vocabData, grammarData }: N5Ho
                                                                 <div className="flex items-center gap-2 mt-2">
                                                                     <span className="text-sm font-bold text-gray-800 dark:text-gray-200">Bushu:</span>
                                                                     <span className="font-mono text-sm px-2 py-0.5 rounded bg-gray-200 dark:bg-gray-700">{item.bushu}</span>
-                                                                    <BushuPosition position={item.bushu_position} className="w-5 h-5 text-gray-500" />
-                                                                    <span className="text-xs text-gray-500 dark:text-gray-400">({item.bushu_position})</span>
+                                                                    <BushuPosition 
+                                                                        position={item.bushu_position} 
+                                                                        className="w-5 h-5"
+                                                                    />
+                                                                    <span className="text-xs text-orange-500 dark:text-orange-400">({item.bushu_position})</span>
                                                                 </div>
                                                             )}
                                                         </div>
@@ -624,7 +657,7 @@ export default function N5HomeClient({ kanjiData, vocabData, grammarData }: N5Ho
                                                         <div className={`jp-font text-gray-500 dark:text-gray-400 font-normal leading-tight text-base`}> 
                                                             <Furigana 
                                                                 htmlString={item.vocab} 
-                                                                className={ 'text-base'} 
+                                                                className={'text-2xl sm:text-3xl' } 
                                                                 rtClass="furigana-bold" 
                                                                 boldMain={true} 
                                                             />
@@ -837,6 +870,33 @@ export default function N5HomeClient({ kanjiData, vocabData, grammarData }: N5Ho
                                             onChange={(e) => updateSettings({ kanjiPerPage: parseInt(e.target.value) || 5 })}
                                             className="w-20 px-2 py-1 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent text-center"
                                         />
+                                    </div>
+                                    <div className="flex items-center gap-2">
+                                        <label className="text-sm font-medium text-gray-700 dark:text-gray-300 whitespace-nowrap">
+                                            Urutkan Bushu:
+                                        </label>
+                                        <input
+                                            type="checkbox"
+                                            checked={sortByBushu}
+                                            onChange={(e) => setSortByBushu(e.target.checked)}
+                                            className="h-5 w-5 rounded border-gray-300 text-orange-600 focus:ring-orange-500"
+                                        />
+                                    </div>
+                                    <div className="flex items-center gap-2">
+                                        <label className="text-sm font-medium text-gray-700 dark:text-gray-300 whitespace-nowrap">
+                                            Filter Bushu:
+                                        </label>
+                                        <select
+                                            value={selectedBushu}
+                                            onChange={(e) => setSelectedBushu(e.target.value)}
+                                            className="w-full px-2 py-1 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                                        >
+                                            {allBushu.map(bushu => (
+                                                <option key={bushu} value={bushu}>
+                                                    {bushu === 'all' ? 'Semua Bushu' : bushu}
+                                                </option>
+                                            ))}
+                                        </select>
                                     </div>
                                     <div className="flex items-center gap-2">
                                         <label className="text-sm font-medium text-gray-700 dark:text-gray-300 whitespace-nowrap">
