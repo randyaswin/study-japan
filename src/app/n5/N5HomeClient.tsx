@@ -1370,12 +1370,6 @@ const KanjiVocabDiagram: React.FC<KanjiVocabDiagramProps> = ({
             // Calculate translation to keep pinch center in place
             const container = document.querySelector('[data-diagram-container]');
             if (container) {
-                const containerRect = container.getBoundingClientRect();
-                const centerInContainer = {
-                    x: currentCenter.x - containerRect.left,
-                    y: currentCenter.y - containerRect.top
-                };
-                
                 setPanZoomState(prev => ({
                     ...prev,
                     scale: newScale,
