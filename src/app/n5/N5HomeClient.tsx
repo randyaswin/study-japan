@@ -1236,13 +1236,194 @@ const KanjiVocabDiagram: React.FC<KanjiVocabDiagramProps> = ({
         startPosition: { x: 0, y: 0 }
     });
 
-    // Handle card click - expand/collapse (only if not dragging)
+    // Pan/zoom state for entire diagram
+    const [panZoomState, setPanZoomState] = useState({
+        scale: 1,
+        translateX: 0,
+        translateY: 0,
+        isPanning: false,
+        startPanPosition: { x: 0, y: 0 },
+        lastPanPosition: { x: 0, y: 0 }
+    });
+
+    // Mobile detection hook
+    const [isMobile, setIsMobile] = useState(false);
+    
+    useEffect(() => {
+        const checkMobile = () => {
+            setIsMobile(window.innerWidth <= 768);
+        };
+        
+        checkMobile();
+        window.addEventListener('resize', checkMobile);
+        
+        return () => window.removeEventListener('resize', checkMobile);
+    }, []);
+    const [touchState, setTouchState] = useState({
+        isTouching: false,
+        touchStartTime: 0,
+        touchTarget: null as string | null, // 'card' | 'diagram' | null
+        initialTouchPos: { x: 0, y: 0 },
+        lastTouchPos: { x: 0, y: 0 },
+        touchCardId: null as string | null,
+        touchCardOffset: { x: 0, y: 0 },
+        hasTouchMoved: false
+    });
+
+    // Handle card click - expand/collapse (only if not dragging/touching)
     const handleCardClick = (vocabId: string) => {
-        // Only expand/collapse if the card wasn't being dragged
-        if (!dragState.hasMoved) {
+        // Only expand/collapse if the card wasn't being dragged or touched
+        if (!dragState.hasMoved && !touchState.hasTouchMoved) {
             setExpandedCard(expandedCard === vocabId ? null : vocabId);
         }
     };
+
+    // Touch event handlers for cards
+    const handleTouchStart = (e: React.TouchEvent, cardId: string) => {
+        e.stopPropagation();
+        const touch = e.touches[0];
+        const card = e.currentTarget as HTMLElement;
+        const cardRect = card.getBoundingClientRect();
+        
+        // Calculate offset from touch to card center
+        const cardCenterX = cardRect.left + cardRect.width / 2;
+        const cardCenterY = cardRect.top + cardRect.height / 2;
+        
+        const offsetX = touch.clientX - cardCenterX;
+        const offsetY = touch.clientY - cardCenterY;
+        
+        setTouchState({
+            isTouching: true,
+            touchStartTime: Date.now(),
+            touchTarget: 'card',
+            initialTouchPos: { x: touch.clientX, y: touch.clientY },
+            lastTouchPos: { x: touch.clientX, y: touch.clientY },
+            touchCardId: cardId,
+            touchCardOffset: { x: offsetX, y: offsetY },
+            hasTouchMoved: false
+        });
+    };
+
+    const handleTouchMove = useCallback((e: TouchEvent) => {
+        if (!touchState.isTouching) return;
+        
+        e.preventDefault(); // Prevent scrolling
+        const touch = e.touches[0];
+        
+        // Calculate movement distance
+        const distance = Math.sqrt(
+            Math.pow(touch.clientX - touchState.initialTouchPos.x, 2) + 
+            Math.pow(touch.clientY - touchState.initialTouchPos.y, 2)
+        );
+        
+        // Mark as moved if distance > 10 pixels
+        if (distance > 10 && !touchState.hasTouchMoved) {
+            setTouchState(prev => ({ ...prev, hasTouchMoved: true }));
+        }
+        
+        if (touchState.touchTarget === 'card' && touchState.touchCardId) {
+            // Handle card dragging
+            const container = document.querySelector('[data-diagram-container]');
+            if (container) {
+                const containerRect = container.getBoundingClientRect();
+                
+                // Calculate new position relative to container, accounting for offset
+                const newX = touch.clientX - containerRect.left - touchState.touchCardOffset.x;
+                const newY = touch.clientY - containerRect.top - touchState.touchCardOffset.y;
+                
+                // Constrain to container bounds
+                const margin = 75;
+                const maxX = containerRect.width - margin;
+                const maxY = containerRect.height - margin;
+                const minX = margin;
+                const minY = margin;
+                
+                setCardPositions(prev => ({
+                    ...prev,
+                    [touchState.touchCardId!]: {
+                        x: Math.max(minX, Math.min(newX, maxX)),
+                        y: Math.max(minY, Math.min(newY, maxY))
+                    }
+                }));
+            }
+        } else if (touchState.touchTarget === 'diagram') {
+            // Handle diagram panning
+            const deltaX = touch.clientX - touchState.lastTouchPos.x;
+            const deltaY = touch.clientY - touchState.lastTouchPos.y;
+            
+            setPanZoomState(prev => ({
+                ...prev,
+                translateX: prev.translateX + deltaX,
+                translateY: prev.translateY + deltaY,
+                isPanning: true
+            }));
+        }
+        
+        setTouchState(prev => ({
+            ...prev,
+            lastTouchPos: { x: touch.clientX, y: touch.clientY }
+        }));
+    }, [touchState, setCardPositions]);
+
+    const handleTouchEnd = useCallback(() => {
+        if (!touchState.isTouching) return;
+        
+        const touchDuration = Date.now() - touchState.touchStartTime;
+        const wasTap = !touchState.hasTouchMoved && touchDuration < 300;
+        
+        // If it was a tap on a card, handle click
+        if (wasTap && touchState.touchTarget === 'card' && touchState.touchCardId) {
+            setTimeout(() => {
+                handleCardClick(touchState.touchCardId!);
+            }, 10);
+        }
+        
+        // Reset touch state
+        setTouchState({
+            isTouching: false,
+            touchStartTime: 0,
+            touchTarget: null,
+            initialTouchPos: { x: 0, y: 0 },
+            lastTouchPos: { x: 0, y: 0 },
+            touchCardId: null,
+            touchCardOffset: { x: 0, y: 0 },
+            hasTouchMoved: false
+        });
+        
+        // Reset panning state
+        setPanZoomState(prev => ({ ...prev, isPanning: false }));
+    }, [touchState, handleCardClick]);
+
+    // Touch event handlers for diagram panning
+    const handleDiagramTouchStart = (e: React.TouchEvent) => {
+        // Only handle if no card is being touched
+        if (touchState.isTouching) return;
+        
+        const touch = e.touches[0];
+        setTouchState({
+            isTouching: true,
+            touchStartTime: Date.now(),
+            touchTarget: 'diagram',
+            initialTouchPos: { x: touch.clientX, y: touch.clientY },
+            lastTouchPos: { x: touch.clientX, y: touch.clientY },
+            touchCardId: null,
+            touchCardOffset: { x: 0, y: 0 },
+            hasTouchMoved: false
+        });
+    };
+
+    // Add global touch event listeners
+    useEffect(() => {
+        if (touchState.isTouching) {
+            document.addEventListener('touchmove', handleTouchMove, { passive: false });
+            document.addEventListener('touchend', handleTouchEnd, { passive: false });
+            
+            return () => {
+                document.removeEventListener('touchmove', handleTouchMove);
+                document.removeEventListener('touchend', handleTouchEnd);
+            };
+        }
+    }, [touchState.isTouching, handleTouchMove, handleTouchEnd]);
 
     // Drag functionality
     const handleMouseDown = (e: React.MouseEvent, cardId: string) => {
@@ -1491,7 +1672,14 @@ const KanjiVocabDiagram: React.FC<KanjiVocabDiagramProps> = ({
             {/* Diagram Container */}
             <div 
                 data-diagram-container 
-                className="relative bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 rounded-xl p-8 min-h-[700px] overflow-hidden"
+                className={`relative bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 rounded-xl p-8 min-h-[700px] overflow-hidden diagram-container ${
+                    panZoomState.isPanning ? 'pan-zoom-container dragging' : 'pan-zoom-container'
+                }`}
+                style={{
+                    transform: `translate(${panZoomState.translateX}px, ${panZoomState.translateY}px) scale(${panZoomState.scale})`,
+                    transformOrigin: 'center center'
+                }}
+                onTouchStart={handleDiagramTouchStart}
             >
                 
                 {/* SVG for connection lines */}
@@ -1529,7 +1717,7 @@ const KanjiVocabDiagram: React.FC<KanjiVocabDiagramProps> = ({
 
                 {/* Central Kanji */}
                 <div 
-                    className="absolute transform -translate-x-1/2 -translate-y-1/2 z-20"
+                    className={`absolute transform -translate-x-1/2 -translate-y-1/2 z-20 ${isMobile ? 'kanji-central-mobile' : ''}`}
                     style={{ left: centerX, top: centerY }}
                 >
                     <div className="bg-orange-100 dark:bg-orange-900 border-4 border-orange-400 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all kanji-central">
@@ -1557,17 +1745,23 @@ const KanjiVocabDiagram: React.FC<KanjiVocabDiagramProps> = ({
                     return (
                         <div
                             key={index}
-                            className={`absolute z-30 transition-all duration-200 select-none ${
-                                isDraggedCard ? 'cursor-grabbing z-50 scale-105' : 'cursor-grab hover:scale-105'
+                            className={`absolute z-30 transition-all duration-200 select-none touch-draggable ${
+                                isDraggedCard || touchState.touchCardId === pos.id ? 'cursor-grabbing z-50 scale-105 touch-feedback' : 'cursor-grab hover:scale-105'
+                            } ${
+                                // Add mobile-specific classes
+                                isMobile ? 'vocab-card-mobile' : ''
+                            } ${
+                                isExpanded && isMobile ? 'expanded' : ''
                             }`}
                             style={{ 
                                 left: finalPosition.x, 
                                 top: finalPosition.y,
                                 transform: `translate(-50%, -50%) ${isExpanded ? 'scale(1.15)' : 'scale(1)'}`,
-                                zIndex: isDraggedCard ? 1000 : (isExpanded ? 50 : 30),
-                                transition: isDraggedCard ? 'none' : 'all 0.2s ease'
+                                zIndex: isDraggedCard || touchState.touchCardId === pos.id ? 1000 : (isExpanded ? 50 : 30),
+                                transition: isDraggedCard || touchState.touchCardId === pos.id ? 'none' : 'all 0.2s ease'
                             }}
                             onMouseDown={(e) => handleMouseDown(e, pos.id)}
+                            onTouchStart={(e) => handleTouchStart(e, pos.id)}
                             onMouseUp={() => {
                                 // Handle click only if card wasn't dragged
                                 setTimeout(() => {
@@ -1583,9 +1777,9 @@ const KanjiVocabDiagram: React.FC<KanjiVocabDiagramProps> = ({
                                 
                                 {/* Drag handle indicator */}
                                 <div className={`absolute top-1 right-1 transition-opacity ${
-                                    isDraggedCard ? 'opacity-100' : 'opacity-30 hover:opacity-70'
-                                }`}>
-                                    <svg width="14" height="14" viewBox="0 0 14 14" className="text-gray-500">
+                                    isDraggedCard || touchState.touchCardId === pos.id ? 'opacity-100' : 'opacity-30 hover:opacity-70'
+                                } ${isMobile ? 'drag-handle-mobile' : ''}`}>
+                                    <svg width={isMobile ? "20" : "14"} height={isMobile ? "20" : "14"} viewBox="0 0 14 14" className="text-gray-500">
                                         <circle cx="3" cy="3" r="1.5" fill="currentColor"/>
                                         <circle cx="10" cy="3" r="1.5" fill="currentColor"/>
                                         <circle cx="3" cy="10" r="1.5" fill="currentColor"/>
@@ -1694,7 +1888,9 @@ const KanjiVocabDiagram: React.FC<KanjiVocabDiagramProps> = ({
 
                 {/* Legend */}
                 <div className="absolute bottom-4 left-4 z-40">
-                    <div className="bg-white dark:bg-gray-800 rounded-lg p-3 shadow-lg border border-gray-200 dark:border-gray-700">
+                    <div className={`bg-white dark:bg-gray-800 rounded-lg p-3 shadow-lg border border-gray-200 dark:border-gray-700 ${
+                        isMobile ? 'legend-mobile' : ''
+                    }`}>
                         <div className="text-sm font-bold text-gray-700 dark:text-gray-300 mb-2">Legenda:</div>
                         <div className="space-y-1 text-xs">
                             {Object.entries(typeColors).map(([type, color]) => (
@@ -1706,16 +1902,31 @@ const KanjiVocabDiagram: React.FC<KanjiVocabDiagramProps> = ({
                         </div>
                         <div className="mt-2 pt-2 border-t border-gray-200 dark:border-gray-600">
                             <div className="text-xs text-gray-500 dark:text-gray-400 mb-2">
-                                💡 Klik card untuk detail lengkap
+                                💡 {isMobile ? 'Tap' : 'Klik'} card untuk detail lengkap
                             </div>
                             <div className="text-xs text-gray-500 dark:text-gray-400 mb-2">
-                                🖱️ Drag card untuk menggeser posisi
+                                🖱️ {isMobile ? 'Tap & drag' : 'Drag'} card untuk menggeser posisi
                             </div>
+                            {isMobile && (
+                                <div className="text-xs text-gray-500 dark:text-gray-400 mb-2">
+                                    👆 Drag area kosong untuk menggeser diagram
+                                </div>
+                            )}
                             <button
-                                onClick={() => setCardPositions({})}
+                                onClick={() => {
+                                    setCardPositions({});
+                                    setPanZoomState({
+                                        scale: 1,
+                                        translateX: 0,
+                                        translateY: 0,
+                                        isPanning: false,
+                                        startPanPosition: { x: 0, y: 0 },
+                                        lastPanPosition: { x: 0, y: 0 }
+                                    });
+                                }}
                                 className="text-xs bg-orange-100 dark:bg-orange-900 text-orange-700 dark:text-orange-300 px-2 py-1 rounded hover:bg-orange-200 dark:hover:bg-orange-800 transition-colors"
                             >
-                                🔄 Reset Posisi
+                                🔄 Reset Semua
                             </button>
                         </div>
                     </div>
