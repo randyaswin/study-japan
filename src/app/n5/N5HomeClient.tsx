@@ -308,23 +308,11 @@ export default function N5HomeClient({ kanjiData, vocabData, grammarData }: N5Ho
         }
     }, [selectedBushu, kanjiData, sortByBushu, settings.kanjiPerPage, setN5CurrentPage]);
 
-    // Enhanced kanji select handler for diagram
+    // Enhanced kanji select handler for diagram - stay in diagram tab
     const handleKanjiSelectFromDiagram = useCallback((kanji: string) => {
-        if (kanji === 'all') {
-            setSelectedKanjiBushu(kanji);
-        } else {
-            // Check if this kanji exists in our kanji data
-            const kanjiExists = kanjiData.some(k => k.kanji === kanji);
-            
-            if (kanjiExists) {
-                // Navigate to the kanji section
-                navigateToKanji(kanji);
-            } else {
-                // Just update the diagram view if kanji not in our main data
-                setSelectedKanjiBushu(kanji);
-            }
-        }
-    }, [kanjiData, navigateToKanji]);
+        // Always update the selected kanji in diagram without changing tabs
+        setSelectedKanjiBushu(kanji);
+    }, []);
 
     if (n5Data.viewMode === 'study') {
         const sprintData = getCurrentPageData();
@@ -1231,14 +1219,138 @@ const KanjiVocabDiagram: React.FC<KanjiVocabDiagramProps> = ({
     onKanjiSelect
 }) => {
     const filteredVocab = getFilteredData();
+    // Enhanced state for drag functionality and better positioning
+    const [expandedCard, setExpandedCard] = useState<string | null>(null);
+    const [cardPositions, setCardPositions] = useState<Record<string, { x: number; y: number }>>({});
+    const [dragState, setDragState] = useState<{ 
+        isDragging: boolean; 
+        cardId: string | null; 
+        offset: { x: number; y: number };
+        hasMoved: boolean;
+        startPosition: { x: number; y: number };
+    }>({
+        isDragging: false,
+        cardId: null,
+        offset: { x: 0, y: 0 },
+        hasMoved: false,
+        startPosition: { x: 0, y: 0 }
+    });
+
+    // Handle card click - expand/collapse (only if not dragging)
+    const handleCardClick = (vocabId: string) => {
+        // Only expand/collapse if the card wasn't being dragged
+        if (!dragState.hasMoved) {
+            setExpandedCard(expandedCard === vocabId ? null : vocabId);
+        }
+    };
+
+    // Drag functionality
+    const handleMouseDown = (e: React.MouseEvent, cardId: string) => {
+        e.preventDefault();
+        e.stopPropagation();
+        
+        const card = e.currentTarget as HTMLElement;
+        const cardRect = card.getBoundingClientRect();
+        const container = document.querySelector('[data-diagram-container]');
+        
+        if (container) {
+            
+            // Calculate offset from mouse to card center
+            const cardCenterX = cardRect.left + cardRect.width / 2;
+            const cardCenterY = cardRect.top + cardRect.height / 2;
+            
+            const offsetX = e.clientX - cardCenterX;
+            const offsetY = e.clientY - cardCenterY;
+            
+            setDragState({
+                isDragging: true,
+                cardId,
+                offset: {
+                    x: offsetX,
+                    y: offsetY
+                },
+                hasMoved: false,
+                startPosition: {
+                    x: e.clientX,
+                    y: e.clientY
+                }
+            });
+        }
+    };
+
+    const handleMouseMove = useCallback((e: MouseEvent) => {
+        if (dragState.isDragging && dragState.cardId) {
+            // Calculate movement distance to determine if user is dragging
+            const distance = Math.sqrt(
+                Math.pow(e.clientX - dragState.startPosition.x, 2) + 
+                Math.pow(e.clientY - dragState.startPosition.y, 2)
+            );
+            
+            // If moved more than 5 pixels, consider it a drag
+            if (distance > 5 && !dragState.hasMoved) {
+                setDragState(prev => ({ ...prev, hasMoved: true }));
+            }
+            
+            const container = document.querySelector('[data-diagram-container]');
+            if (container) {
+                const containerRect = container.getBoundingClientRect();
+                
+                // Calculate new position relative to container, accounting for offset
+                const newX = e.clientX - containerRect.left - dragState.offset.x;
+                const newY = e.clientY - containerRect.top - dragState.offset.y;
+                
+                // Constrain to container bounds (with margins for card size)
+                const margin = 75; // Half of card width/height
+                const maxX = containerRect.width - margin;
+                const maxY = containerRect.height - margin;
+                const minX = margin;
+                const minY = margin;
+                
+                setCardPositions(prev => ({
+                    ...prev,
+                    [dragState.cardId!]: {
+                        x: Math.max(minX, Math.min(newX, maxX)),
+                        y: Math.max(minY, Math.min(newY, maxY))
+                    }
+                }));
+            }
+        }
+    }, [dragState]);
+
+    const handleMouseUp = useCallback(() => {
+        if (dragState.isDragging) {
+            setTimeout(() => {
+                setDragState({
+                    isDragging: false,
+                    cardId: null,
+                    offset: { x: 0, y: 0 },
+                    hasMoved: false,
+                    startPosition: { x: 0, y: 0 }
+                });
+            }, 100); // Small delay to prevent click event
+        }
+    }, [dragState.isDragging]);
+
+    // Add global mouse event listeners
+    useEffect(() => {
+        if (dragState.isDragging) {
+            document.addEventListener('mousemove', handleMouseMove);
+            document.addEventListener('mouseup', handleMouseUp);
+            
+            return () => {
+                document.removeEventListener('mousemove', handleMouseMove);
+                document.removeEventListener('mouseup', handleMouseUp);
+            };
+        }
+    }, [dragState.isDragging, handleMouseMove, handleMouseUp]);
 
     // Color mapping for vocabulary types
     const typeColors = {
-        '🟢': { bg: 'bg-green-100 dark:bg-green-900', border: 'border-green-400', text: 'text-green-700 dark:text-green-300', name: 'Verba' },
-        '🔵': { bg: 'bg-blue-100 dark:bg-blue-900', border: 'border-blue-400', text: 'text-blue-700 dark:text-blue-300', name: 'Nomina' },
-        '🟠': { bg: 'bg-orange-100 dark:bg-orange-900', border: 'border-orange-400', text: 'text-orange-700 dark:text-orange-300', name: 'Adjektiva' },
-        '🟣': { bg: 'bg-purple-100 dark:bg-purple-900', border: 'border-purple-400', text: 'text-purple-700 dark:text-purple-300', name: 'Adverbia' },
-        '🟡': { bg: 'bg-yellow-100 dark:bg-yellow-900', border: 'border-yellow-400', text: 'text-yellow-700 dark:text-yellow-300', name: 'Lainnya' }
+        '🟢': { bg: 'bg-green-100 dark:bg-green-900', border: 'border-green-400', text: 'text-green-700 dark:text-green-300', name: 'Verba', color: '#10b981' },
+        '🔵': { bg: 'bg-blue-100 dark:bg-blue-900', border: 'border-blue-400', text: 'text-blue-700 dark:text-blue-300', name: 'Nomina', color: '#3b82f6' },
+        '🟠': { bg: 'bg-orange-100 dark:bg-orange-900', border: 'border-orange-400', text: 'text-orange-700 dark:text-orange-300', name: 'Adjektiva', color: '#f97316' },
+        '🟣': { bg: 'bg-purple-100 dark:bg-purple-900', border: 'border-purple-400', text: 'text-purple-700 dark:text-purple-300', name: 'Adverbia', color: '#8b5cf6' },
+        '🟡': { bg: 'bg-yellow-100 dark:bg-yellow-900', border: 'border-yellow-400', text: 'text-yellow-700 dark:text-yellow-300', name: 'Lainnya', color: '#eab308' }
     };
 
     if (selectedKanji === 'all') {
@@ -1319,7 +1431,7 @@ const KanjiVocabDiagram: React.FC<KanjiVocabDiagramProps> = ({
         );
     }
 
-    // Detailed view for selected kanji
+    // Detailed view for selected kanji with visual diagram and connecting lines
     const vocabByType = filteredVocab.reduce((acc, item) => {
         const type = item.type;
         if (!acc[type]) acc[type] = [];
@@ -1327,124 +1439,313 @@ const KanjiVocabDiagram: React.FC<KanjiVocabDiagramProps> = ({
         return acc;
     }, {} as Record<string, VocabItem[]>);
 
+    // Calculate positions for circular diagram layout
+    const getVocabPositions = () => {
+        const centerX = 400;
+        const centerY = 300;
+        const baseRadius = 200;
+        
+        const positions: Array<{
+            vocab: VocabItem;
+            type: string;
+            x: number;
+            y: number;
+            color: string;
+            id: string;
+        }> = [];
+
+        const typeEntries = Object.entries(vocabByType);
+        const totalTypes = typeEntries.length;
+
+        typeEntries.forEach(([type, vocabs], typeIndex) => {
+            const typeColor = typeColors[type as keyof typeof typeColors] || typeColors['🟡'];
+            const anglePerType = (2 * Math.PI) / totalTypes;
+            const typeStartAngle = anglePerType * typeIndex - Math.PI / 2; // Start from top
+            
+            vocabs.forEach((vocab, vocabIndex) => {
+                const radius = baseRadius + (vocabIndex % 3) * 60; // Stagger in rings
+                const angleOffset = (vocabIndex / vocabs.length) * anglePerType;
+                const angle = typeStartAngle + angleOffset;
+                
+                const x = centerX + Math.cos(angle) * radius;
+                const y = centerY + Math.sin(angle) * radius;
+                
+                positions.push({
+                    vocab,
+                    type,
+                    x,
+                    y,
+                    color: typeColor.color,
+                    id: `${type}-${vocabIndex}`
+                });
+            });
+        });
+
+        return { positions, centerX, centerY };
+    };
+
+    const { positions, centerX, centerY } = getVocabPositions();
+
     return (
         <div className="p-6">
-            {/* Central Kanji */}
-            <div className="text-center mb-8">
-                <div className="inline-block bg-orange-100 dark:bg-orange-900 border-4 border-orange-400 rounded-xl p-6">
-                    <div className="text-6xl font-bold text-orange-500 mb-2">{selectedKanji}</div>
-                    <div className="text-sm text-gray-600 dark:text-gray-400">
-                        漢字 ({filteredVocab.length} kosakata)
+            {/* Diagram Container */}
+            <div 
+                data-diagram-container 
+                className="relative bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 rounded-xl p-8 min-h-[700px] overflow-hidden"
+            >
+                
+                {/* SVG for connection lines */}
+                <svg 
+                    className="absolute inset-0 w-full h-full pointer-events-none z-10" 
+                    style={{ zIndex: 1 }}
+                >
+                    {/* Connection lines from kanji to vocabulary */}
+                    {positions.map((pos, index) => {
+                        const finalPosition = cardPositions[pos.id] || { x: pos.x, y: pos.y };
+                        return (
+                            <g key={index}>
+                                <line
+                                    x1={centerX}
+                                    y1={centerY}
+                                    x2={finalPosition.x}
+                                    y2={finalPosition.y}
+                                    stroke={pos.color}
+                                    strokeWidth="2"
+                                    strokeDasharray="8,4"
+                                    className="diagram-connection"
+                                    opacity="0.6"
+                                />
+                                <circle
+                                    cx={finalPosition.x}
+                                    cy={finalPosition.y}
+                                    r="3"
+                                    fill={pos.color}
+                                    className="connection-point"
+                                />
+                            </g>
+                        );
+                    })}
+                </svg>
+
+                {/* Central Kanji */}
+                <div 
+                    className="absolute transform -translate-x-1/2 -translate-y-1/2 z-20"
+                    style={{ left: centerX, top: centerY }}
+                >
+                    <div className="bg-orange-100 dark:bg-orange-900 border-4 border-orange-400 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all kanji-central">
+                        <div className="text-5xl font-bold text-orange-500 text-center mb-2">{selectedKanji}</div>
+                        <div className="text-sm text-gray-600 dark:text-gray-400 text-center">
+                            漢字 ({filteredVocab.length})
+                        </div>
+                    </div>
+                </div>
+
+                {/* Vocabulary Cards positioned around the kanji */}
+                {positions.map((pos, index) => {
+                    const meaning = (() => {
+                        const match = pos.vocab.reading_meaning.match(/\((.*)\)/);
+                        return match ? match[1] : pos.vocab.reading_meaning;
+                    })();
+
+                    const typeColor = typeColors[pos.type as keyof typeof typeColors] || typeColors['🟡'];
+                    const isExpanded = expandedCard === pos.id;
+                    const isDraggedCard = dragState.cardId === pos.id && dragState.isDragging;
+                    
+                    // Use dragged position if available, otherwise use calculated position
+                    const finalPosition = cardPositions[pos.id] || { x: pos.x, y: pos.y };
+
+                    return (
+                        <div
+                            key={index}
+                            className={`absolute z-30 transition-all duration-200 select-none ${
+                                isDraggedCard ? 'cursor-grabbing z-50 scale-105' : 'cursor-grab hover:scale-105'
+                            }`}
+                            style={{ 
+                                left: finalPosition.x, 
+                                top: finalPosition.y,
+                                transform: `translate(-50%, -50%) ${isExpanded ? 'scale(1.15)' : 'scale(1)'}`,
+                                zIndex: isDraggedCard ? 1000 : (isExpanded ? 50 : 30),
+                                transition: isDraggedCard ? 'none' : 'all 0.2s ease'
+                            }}
+                            onMouseDown={(e) => handleMouseDown(e, pos.id)}
+                            onMouseUp={() => {
+                                // Handle click only if card wasn't dragged
+                                setTimeout(() => {
+                                    if (!dragState.hasMoved) {
+                                        handleCardClick(pos.id);
+                                    }
+                                }, 10);
+                            }}
+                        >
+                            <div className={`${typeColor.bg} ${typeColor.border} border-2 rounded-lg shadow-lg hover:shadow-xl transition-all ${
+                                isExpanded ? 'min-w-[300px] max-w-[350px]' : 'min-w-[120px] max-w-[150px]'
+                            } ${isDraggedCard ? 'shadow-2xl scale-105' : ''}`}>
+                                
+                                {/* Drag handle indicator */}
+                                <div className={`absolute top-1 right-1 transition-opacity ${
+                                    isDraggedCard ? 'opacity-100' : 'opacity-30 hover:opacity-70'
+                                }`}>
+                                    <svg width="14" height="14" viewBox="0 0 14 14" className="text-gray-500">
+                                        <circle cx="3" cy="3" r="1.5" fill="currentColor"/>
+                                        <circle cx="10" cy="3" r="1.5" fill="currentColor"/>
+                                        <circle cx="3" cy="10" r="1.5" fill="currentColor"/>
+                                        <circle cx="10" cy="10" r="1.5" fill="currentColor"/>
+                                        <circle cx="6.5" cy="6.5" r="1.5" fill="currentColor"/>
+                                    </svg>
+                                </div>
+                                
+                                {/* Compact view - always visible */}
+                                <div className="p-3">
+                                    <div className="flex items-center justify-between mb-2">
+                                        <span className="text-lg">{pos.type}</span>
+                                        <div className={`w-3 h-3 rounded-full`} style={{ backgroundColor: pos.color }}></div>
+                                    </div>
+                                    
+                                    {/* Vocabulary with furigana */}
+                                    <div className={`text-sm font-bold ${typeColor.text} jp-font leading-tight mb-1`}>
+                                        <Furigana 
+                                            htmlString={pos.vocab.vocab} 
+                                            className="text-base" 
+                                            rtClass="furigana-bold" 
+                                            boldMain={true} 
+                                        />
+                                    </div>
+                                    
+                                    {/* Meaning */}
+                                    <div className={`text-xs ${typeColor.text} mb-2`}>
+                                        {meaning}
+                                    </div>
+
+                                    {/* Expand indicator */}
+                                    <div className="text-center">
+                                        <svg 
+                                            className={`w-4 h-4 mx-auto transition-transform ${isExpanded ? 'rotate-180' : ''}`} 
+                                            fill="none" 
+                                            stroke="currentColor" 
+                                            viewBox="0 0 24 24"
+                                        >
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                {/* Expanded details - conditional */}
+                                {isExpanded && (
+                                    <div className="border-t border-gray-200 dark:border-gray-600 p-3 space-y-3 animate-fade-in">
+                                        {/* Mnemonic */}
+                                        <div className="bg-white dark:bg-gray-800 rounded p-2">
+                                            <div className={`text-xs font-bold ${typeColor.text} mb-1`}>💡 Mnemonic:</div>
+                                            <div className="text-xs text-gray-700 dark:text-gray-300">
+                                                {pos.vocab.mnemonic}
+                                            </div>
+                                        </div>
+
+                                        {/* Example */}
+                                        <div className="bg-white dark:bg-gray-800 rounded p-2">
+                                            <div className={`text-xs font-bold ${typeColor.text} mb-1`}>📝 Contoh:</div>
+                                            <div className="jp-font text-gray-700 dark:text-gray-300 leading-tight text-xs">
+                                                <Furigana 
+                                                    htmlString={pos.vocab.example.jp} 
+                                                    className="text-sm" 
+                                                    rtClass="furigana-bold" 
+                                                    boldMain={true} 
+                                                />
+                                            </div>
+                                            <div className="text-xs text-gray-600 dark:text-gray-400 mt-1">
+                                                {pos.vocab.example.romaji}
+                                            </div>
+                                            {pos.vocab.example.id && (
+                                                <div className="text-xs text-green-700 dark:text-green-400 mt-1 italic">
+                                                    {pos.vocab.example.id}
+                                                </div>
+                                            )}
+                                        </div>
+
+                                        {/* Kanji used */}
+                                        {pos.vocab.kanji_bushu && pos.vocab.kanji_bushu.length > 0 && (
+                                            <div className="bg-white dark:bg-gray-800 rounded p-2">
+                                                <div className={`text-xs font-bold ${typeColor.text} mb-1`}>🔤 Kanji:</div>
+                                                <div className="flex flex-wrap gap-1">
+                                                    {pos.vocab.kanji_bushu.map((kanji, kanjiIndex) => (
+                                                        <span 
+                                                            key={kanjiIndex}
+                                                            className={`inline-block px-1 py-0.5 rounded text-xs cursor-pointer hover:scale-110 transition-transform ${
+                                                                kanji === selectedKanji 
+                                                                    ? 'bg-orange-200 dark:bg-orange-800 text-orange-700 dark:text-orange-300 font-bold' 
+                                                                    : 'bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-orange-100 dark:hover:bg-orange-900'
+                                                            }`}
+                                                            onClick={(e) => {
+                                                                e.stopPropagation();
+                                                                onKanjiSelect(kanji);
+                                                            }}
+                                                        >
+                                                            {kanji}
+                                                        </span>
+                                                    ))}
+                                                </div>
+                                            </div>
+                                        )}
+                                    </div>
+                                )}
+                            </div>
+                        </div>
+                    );
+                })}
+
+                {/* Legend */}
+                <div className="absolute bottom-4 left-4 z-40">
+                    <div className="bg-white dark:bg-gray-800 rounded-lg p-3 shadow-lg border border-gray-200 dark:border-gray-700">
+                        <div className="text-sm font-bold text-gray-700 dark:text-gray-300 mb-2">Legenda:</div>
+                        <div className="space-y-1 text-xs">
+                            {Object.entries(typeColors).map(([type, color]) => (
+                                <div key={type} className="flex items-center gap-2">
+                                    <div className={`w-3 h-3 rounded-full`} style={{ backgroundColor: color.color }}></div>
+                                    <span className="text-gray-600 dark:text-gray-400">{type} {color.name}</span>
+                                </div>
+                            ))}
+                        </div>
+                        <div className="mt-2 pt-2 border-t border-gray-200 dark:border-gray-600">
+                            <div className="text-xs text-gray-500 dark:text-gray-400 mb-2">
+                                💡 Klik card untuk detail lengkap
+                            </div>
+                            <div className="text-xs text-gray-500 dark:text-gray-400 mb-2">
+                                🖱️ Drag card untuk menggeser posisi
+                            </div>
+                            <button
+                                onClick={() => setCardPositions({})}
+                                className="text-xs bg-orange-100 dark:bg-orange-900 text-orange-700 dark:text-orange-300 px-2 py-1 rounded hover:bg-orange-200 dark:hover:bg-orange-800 transition-colors"
+                            >
+                                🔄 Reset Posisi
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Connection info */}
+                <div className="absolute bottom-4 right-4 z-40">
+                    <div className="bg-white dark:bg-gray-800 rounded-lg p-3 shadow-lg border border-gray-200 dark:border-gray-700">
+                        <div className="text-sm font-bold text-gray-700 dark:text-gray-300 mb-2">Koneksi:</div>
+                        <div className="space-y-1 text-xs text-gray-600 dark:text-gray-400">
+                            <div className="flex items-center gap-2">
+                                <svg width="20" height="8" viewBox="0 0 20 8">
+                                    <line x1="2" y1="4" x2="18" y2="4" stroke="#f97316" strokeWidth="2" strokeDasharray="3,2"/>
+                                </svg>
+                                <span>Kanji → Kosakata</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            {/* Vocabulary grouped by type */}
-            <div className="space-y-8">
+            {/* Statistics */}
+            <div className="mt-6 grid grid-cols-2 md:grid-cols-5 gap-4">
                 {Object.entries(vocabByType).map(([type, vocabs]) => {
                     const typeColor = typeColors[type as keyof typeof typeColors] || typeColors['🟡'];
-                    
                     return (
-                        <div key={type} className="space-y-4">
-                            {/* Type Header */}
-                            <div className="flex items-center gap-3">
-                                <div className={`${typeColor.bg} ${typeColor.border} border-2 rounded-lg px-4 py-2`}>
-                                    <span className="text-2xl mr-2">{type}</span>
-                                    <span className={`font-bold ${typeColor.text}`}>
-                                        {typeColor.name} ({vocabs.length})
-                                    </span>
-                                </div>
-                                <div className="flex-1 h-px bg-gray-300 dark:bg-gray-600"></div>
-                            </div>
-
-                            {/* Vocabulary Cards */}
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                {vocabs.map((vocab, index) => {
-                                    const meaning = (() => {
-                                        const match = vocab.reading_meaning.match(/\((.*)\)/);
-                                        return match ? match[1] : vocab.reading_meaning;
-                                    })();
-
-                                    return (
-                                        <div 
-                                            key={index}
-                                            className={`${typeColor.bg} ${typeColor.border} border-l-4 rounded-lg p-4 space-y-3`}
-                                        >
-                                            {/* Vocabulary Header */}
-                                            <div className="flex items-start justify-between">
-                                                <div className="flex-1">
-                                                    <div 
-                                                        className={`text-xl font-bold ${typeColor.text} jp-font leading-tight`}
-                                                        dangerouslySetInnerHTML={{ __html: vocab.vocab }}
-                                                    />
-                                                    <div className={`text-lg ${typeColor.text} mt-1`}>
-                                                        {meaning}
-                                                    </div>
-                                                </div>
-                                                <span className="text-lg">{type}</span>
-                                            </div>
-
-                                            {/* Mnemonic */}
-                                            <div className="bg-white dark:bg-gray-800 rounded-lg p-3">
-                                                <span className={`text-sm font-bold ${typeColor.text} block mb-1`}>
-                                                    💡 Mnemonic:
-                                                </span>
-                                                <span className="text-sm text-gray-700 dark:text-gray-300">
-                                                    {vocab.mnemonic}
-                                                </span>
-                                            </div>
-
-                                            {/* Example */}
-                                            <div className="bg-white dark:bg-gray-800 rounded-lg p-3">
-                                                <span className={`text-sm font-bold ${typeColor.text} block mb-1`}>
-                                                    📝 Contoh:
-                                                </span>
-                                                <div className="jp-font text-gray-700 dark:text-gray-300 leading-tight">
-                                                    <Furigana 
-                                                        htmlString={vocab.example.jp} 
-                                                        className="text-base" 
-                                                        rtClass="furigana-bold" 
-                                                        boldMain={true} 
-                                                    />
-                                                </div>
-                                                <div className="text-sm text-gray-600 dark:text-gray-400 mt-1">
-                                                    {vocab.example.romaji}
-                                                </div>
-                                                {vocab.example.id && (
-                                                    <div className="text-sm text-green-700 dark:text-green-400 mt-1 italic">
-                                                        {vocab.example.id}
-                                                    </div>
-                                                )}
-                                            </div>
-
-                                            {/* Kanji Used */}
-                                            {vocab.kanji_bushu && vocab.kanji_bushu.length > 0 && (
-                                                <div className="bg-white dark:bg-gray-800 rounded-lg p-3">
-                                                    <span className={`text-sm font-bold ${typeColor.text} block mb-1`}>
-                                                        🔤 Kanji yang digunakan:
-                                                    </span>
-                                                    <div className="flex flex-wrap gap-2">
-                                                        {vocab.kanji_bushu.map((kanji, kanjiIndex) => (
-                                                            <span 
-                                                                key={kanjiIndex}
-                                                                className={`inline-block px-2 py-1 rounded cursor-pointer hover:scale-105 transition-transform ${
-                                                                    kanji === selectedKanji 
-                                                                        ? 'bg-orange-200 dark:bg-orange-800 text-orange-700 dark:text-orange-300 font-bold' 
-                                                                        : 'bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-orange-100 dark:hover:bg-orange-900'
-                                                                }`}
-                                                                onClick={() => onKanjiSelect(kanji)}
-                                                                title={`Klik untuk lihat kosakata dengan kanji ${kanji}`}
-                                                            >
-                                                                {kanji}
-                                                            </span>
-                                                        ))}
-                                                    </div>
-                                                </div>
-                                            )}
-                                        </div>
-                                    );
-                                })}
-                            </div>
+                        <div key={type} className={`${typeColor.bg} ${typeColor.border} border-2 rounded-lg p-3 text-center hover:shadow-md transition-shadow`}>
+                            <div className="text-2xl mb-1">{type}</div>
+                            <div className={`text-sm font-bold ${typeColor.text}`}>{typeColor.name}</div>
+                            <div className={`text-lg font-bold ${typeColor.text}`}>{vocabs.length}</div>
                         </div>
                     );
                 })}
