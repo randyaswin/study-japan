@@ -1284,24 +1284,34 @@ const KanjiVocabDiagram: React.FC<KanjiVocabDiagramProps> = ({
         const touch = e.touches[0];
         const card = e.currentTarget as HTMLElement;
         const cardRect = card.getBoundingClientRect();
+        const container = document.querySelector('[data-diagram-container]');
         
-        // Calculate offset from touch to card center
-        const cardCenterX = cardRect.left + cardRect.width / 2;
-        const cardCenterY = cardRect.top + cardRect.height / 2;
-        
-        const offsetX = touch.clientX - cardCenterX;
-        const offsetY = touch.clientY - cardCenterY;
-        
-        setTouchState({
-            isTouching: true,
-            touchStartTime: Date.now(),
-            touchTarget: 'card',
-            initialTouchPos: { x: touch.clientX, y: touch.clientY },
-            lastTouchPos: { x: touch.clientX, y: touch.clientY },
-            touchCardId: cardId,
-            touchCardOffset: { x: offsetX, y: offsetY },
-            hasTouchMoved: false
-        });
+        if (container) {
+            const containerRect = container.getBoundingClientRect();
+            
+            // Account for current pan/zoom transform when calculating offset
+            const transformedX = (touch.clientX - containerRect.left - panZoomState.translateX) / panZoomState.scale;
+            const transformedY = (touch.clientY - containerRect.top - panZoomState.translateY) / panZoomState.scale;
+            
+            // Get card's current position in the transformed space
+            const currentPosition = cardPositions[cardId];
+            const cardX = currentPosition ? currentPosition.x : cardRect.left - containerRect.left;
+            const cardY = currentPosition ? currentPosition.y : cardRect.top - containerRect.top;
+            
+            const offsetX = transformedX - cardX;
+            const offsetY = transformedY - cardY;
+            
+            setTouchState({
+                isTouching: true,
+                touchStartTime: Date.now(),
+                touchTarget: 'card',
+                initialTouchPos: { x: touch.clientX, y: touch.clientY },
+                lastTouchPos: { x: touch.clientX, y: touch.clientY },
+                touchCardId: cardId,
+                touchCardOffset: { x: offsetX, y: offsetY },
+                hasTouchMoved: false
+            });
+        }
     };
 
     const handleTouchMove = useCallback((e: TouchEvent) => {
@@ -1322,19 +1332,25 @@ const KanjiVocabDiagram: React.FC<KanjiVocabDiagramProps> = ({
         }
         
         if (touchState.touchTarget === 'card' && touchState.touchCardId) {
-            // Handle card dragging
+            // Handle card dragging - account for current transform
             const container = document.querySelector('[data-diagram-container]');
             if (container) {
                 const containerRect = container.getBoundingClientRect();
                 
-                // Calculate new position relative to container, accounting for offset
-                const newX = touch.clientX - containerRect.left - touchState.touchCardOffset.x;
-                const newY = touch.clientY - containerRect.top - touchState.touchCardOffset.y;
+                // Transform touch coordinates to diagram space
+                const transformedX = (touch.clientX - containerRect.left - panZoomState.translateX) / panZoomState.scale;
+                const transformedY = (touch.clientY - containerRect.top - panZoomState.translateY) / panZoomState.scale;
                 
-                // Constrain to container bounds
+                // Calculate new position accounting for offset
+                const newX = transformedX - touchState.touchCardOffset.x;
+                const newY = transformedY - touchState.touchCardOffset.y;
+                
+                // Constrain to reasonable bounds in diagram space
                 const margin = 75;
-                const maxX = containerRect.width - margin;
-                const maxY = containerRect.height - margin;
+                const diagramWidth = 800; // Approximate diagram width
+                const diagramHeight = 600; // Approximate diagram height
+                const maxX = diagramWidth - margin;
+                const maxY = diagramHeight - margin;
                 const minX = margin;
                 const minY = margin;
                 
@@ -1435,13 +1451,19 @@ const KanjiVocabDiagram: React.FC<KanjiVocabDiagramProps> = ({
         const container = document.querySelector('[data-diagram-container]');
         
         if (container) {
+            const containerRect = container.getBoundingClientRect();
             
-            // Calculate offset from mouse to card center
-            const cardCenterX = cardRect.left + cardRect.width / 2;
-            const cardCenterY = cardRect.top + cardRect.height / 2;
+            // Account for current pan/zoom transform when calculating offset
+            const transformedX = (e.clientX - containerRect.left - panZoomState.translateX) / panZoomState.scale;
+            const transformedY = (e.clientY - containerRect.top - panZoomState.translateY) / panZoomState.scale;
             
-            const offsetX = e.clientX - cardCenterX;
-            const offsetY = e.clientY - cardCenterY;
+            // Get card's current position in the transformed space
+            const currentPosition = cardPositions[cardId];
+            const cardX = currentPosition ? currentPosition.x : cardRect.left - containerRect.left;
+            const cardY = currentPosition ? currentPosition.y : cardRect.top - containerRect.top;
+            
+            const offsetX = transformedX - cardX;
+            const offsetY = transformedY - cardY;
             
             setDragState({
                 isDragging: true,
@@ -1476,14 +1498,20 @@ const KanjiVocabDiagram: React.FC<KanjiVocabDiagramProps> = ({
             if (container) {
                 const containerRect = container.getBoundingClientRect();
                 
-                // Calculate new position relative to container, accounting for offset
-                const newX = e.clientX - containerRect.left - dragState.offset.x;
-                const newY = e.clientY - containerRect.top - dragState.offset.y;
+                // Transform mouse coordinates to diagram space
+                const transformedX = (e.clientX - containerRect.left - panZoomState.translateX) / panZoomState.scale;
+                const transformedY = (e.clientY - containerRect.top - panZoomState.translateY) / panZoomState.scale;
                 
-                // Constrain to container bounds (with margins for card size)
-                const margin = 75; // Half of card width/height
-                const maxX = containerRect.width - margin;
-                const maxY = containerRect.height - margin;
+                // Calculate new position accounting for offset
+                const newX = transformedX - dragState.offset.x;
+                const newY = transformedY - dragState.offset.y;
+                
+                // Constrain to reasonable bounds in diagram space
+                const margin = 75;
+                const diagramWidth = 800; // Approximate diagram width
+                const diagramHeight = 600; // Approximate diagram height
+                const maxX = diagramWidth - margin;
+                const maxY = diagramHeight - margin;
                 const minX = margin;
                 const minY = margin;
                 
@@ -1688,8 +1716,14 @@ const KanjiVocabDiagram: React.FC<KanjiVocabDiagramProps> = ({
                 
                 {/* SVG for connection lines */}
                 <svg 
-                    className="absolute inset-0 w-full h-full pointer-events-none z-10" 
-                    style={{ zIndex: 1 }}
+                    className="absolute inset-0 pointer-events-none z-10" 
+                    style={{ 
+                        zIndex: 1,
+                        width: '800px',
+                        height: '600px',
+                        left: 0,
+                        top: 0
+                    }}
                 >
                     {/* Connection lines from kanji to vocabulary */}
                     {positions.map((pos, index) => {
