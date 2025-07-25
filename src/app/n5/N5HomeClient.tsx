@@ -1267,8 +1267,28 @@ const KanjiVocabDiagram: React.FC<KanjiVocabDiagramProps> = ({
         lastTouchPos: { x: 0, y: 0 },
         touchCardId: null as string | null,
         touchCardOffset: { x: 0, y: 0 },
-        hasTouchMoved: false
+        hasTouchMoved: false,
+        // Pinch zoom state
+        isPinching: false,
+        initialDistance: 0,
+        initialScale: 1,
+        pinchCenter: { x: 0, y: 0 }
     });
+
+    // Helper function to calculate distance between two touches
+    const getTouchDistance = (touch1: React.Touch | Touch, touch2: React.Touch | Touch) => {
+        const dx = touch1.clientX - touch2.clientX;
+        const dy = touch1.clientY - touch2.clientY;
+        return Math.sqrt(dx * dx + dy * dy);
+    };
+
+    // Helper function to get center point between two touches
+    const getTouchCenter = (touch1: React.Touch | Touch, touch2: React.Touch | Touch) => {
+        return {
+            x: (touch1.clientX + touch2.clientX) / 2,
+            y: (touch1.clientY + touch2.clientY) / 2
+        };
+    };
 
     // Handle card click - expand/collapse (only if not dragging/touching)
     const handleCardClick = (vocabId: string) => {
@@ -1309,7 +1329,11 @@ const KanjiVocabDiagram: React.FC<KanjiVocabDiagramProps> = ({
                 lastTouchPos: { x: touch.clientX, y: touch.clientY },
                 touchCardId: cardId,
                 touchCardOffset: { x: offsetX, y: offsetY },
-                hasTouchMoved: false
+                hasTouchMoved: false,
+                isPinching: false,
+                initialDistance: 0,
+                initialScale: 1,
+                pinchCenter: { x: 0, y: 0 }
             });
         }
     };
@@ -1318,6 +1342,50 @@ const KanjiVocabDiagram: React.FC<KanjiVocabDiagramProps> = ({
         if (!touchState.isTouching) return;
         
         e.preventDefault(); // Prevent scrolling
+        
+        // Handle two-finger pinch zoom
+        if (e.touches.length === 2 && touchState.touchTarget === 'diagram') {
+            const touch1 = e.touches[0];
+            const touch2 = e.touches[1];
+            const currentDistance = getTouchDistance(touch1, touch2);
+            const currentCenter = getTouchCenter(touch1, touch2);
+            
+            if (!touchState.isPinching) {
+                // Start pinch
+                setTouchState(prev => ({
+                    ...prev,
+                    isPinching: true,
+                    initialDistance: currentDistance,
+                    initialScale: panZoomState.scale,
+                    pinchCenter: currentCenter,
+                    hasTouchMoved: true
+                }));
+                return;
+            }
+            
+            // Calculate scale change
+            const scaleChange = currentDistance / touchState.initialDistance;
+            const newScale = Math.max(0.5, Math.min(3, touchState.initialScale * scaleChange));
+            
+            // Calculate translation to keep pinch center in place
+            const container = document.querySelector('[data-diagram-container]');
+            if (container) {
+                const containerRect = container.getBoundingClientRect();
+                const centerInContainer = {
+                    x: currentCenter.x - containerRect.left,
+                    y: currentCenter.y - containerRect.top
+                };
+                
+                setPanZoomState(prev => ({
+                    ...prev,
+                    scale: newScale,
+                    isPanning: false
+                }));
+            }
+            return;
+        }
+        
+        // Single touch handling
         const touch = e.touches[0];
         
         // Calculate movement distance
@@ -1331,7 +1399,7 @@ const KanjiVocabDiagram: React.FC<KanjiVocabDiagramProps> = ({
             setTouchState(prev => ({ ...prev, hasTouchMoved: true }));
         }
         
-        if (touchState.touchTarget === 'card' && touchState.touchCardId) {
+        if (touchState.touchTarget === 'card' && touchState.touchCardId && !touchState.isPinching) {
             // Handle card dragging - account for current transform
             const container = document.querySelector('[data-diagram-container]');
             if (container) {
@@ -1362,8 +1430,8 @@ const KanjiVocabDiagram: React.FC<KanjiVocabDiagramProps> = ({
                     }
                 }));
             }
-        } else if (touchState.touchTarget === 'diagram') {
-            // Handle diagram panning
+        } else if (touchState.touchTarget === 'diagram' && !touchState.isPinching) {
+            // Handle diagram panning (single finger)
             const deltaX = touch.clientX - touchState.lastTouchPos.x;
             const deltaY = touch.clientY - touchState.lastTouchPos.y;
             
@@ -1379,7 +1447,7 @@ const KanjiVocabDiagram: React.FC<KanjiVocabDiagramProps> = ({
             ...prev,
             lastTouchPos: { x: touch.clientX, y: touch.clientY }
         }));
-    }, [touchState, setCardPositions]);
+    }, [touchState, setCardPositions, panZoomState.scale, panZoomState.translateX, panZoomState.translateY, getTouchDistance, getTouchCenter]);
 
     const handleTouchEnd = useCallback(() => {
         if (!touchState.isTouching) return;
@@ -1403,29 +1471,62 @@ const KanjiVocabDiagram: React.FC<KanjiVocabDiagramProps> = ({
             lastTouchPos: { x: 0, y: 0 },
             touchCardId: null,
             touchCardOffset: { x: 0, y: 0 },
-            hasTouchMoved: false
+            hasTouchMoved: false,
+            isPinching: false,
+            initialDistance: 0,
+            initialScale: 1,
+            pinchCenter: { x: 0, y: 0 }
         });
         
         // Reset panning state
         setPanZoomState(prev => ({ ...prev, isPanning: false }));
     }, [touchState, handleCardClick]);
 
-    // Touch event handlers for diagram panning
+    // Touch event handlers for diagram panning and zooming
     const handleDiagramTouchStart = (e: React.TouchEvent) => {
         // Only handle if no card is being touched
         if (touchState.isTouching) return;
         
         const touch = e.touches[0];
-        setTouchState({
-            isTouching: true,
-            touchStartTime: Date.now(),
-            touchTarget: 'diagram',
-            initialTouchPos: { x: touch.clientX, y: touch.clientY },
-            lastTouchPos: { x: touch.clientX, y: touch.clientY },
-            touchCardId: null,
-            touchCardOffset: { x: 0, y: 0 },
-            hasTouchMoved: false
-        });
+        
+        // Check if it's a pinch gesture (2 fingers)
+        if (e.touches.length === 2) {
+            const touch1 = e.touches[0];
+            const touch2 = e.touches[1];
+            const initialDistance = getTouchDistance(touch1, touch2);
+            const pinchCenter = getTouchCenter(touch1, touch2);
+            
+            setTouchState({
+                isTouching: true,
+                touchStartTime: Date.now(),
+                touchTarget: 'diagram',
+                initialTouchPos: { x: touch.clientX, y: touch.clientY },
+                lastTouchPos: { x: touch.clientX, y: touch.clientY },
+                touchCardId: null,
+                touchCardOffset: { x: 0, y: 0 },
+                hasTouchMoved: false,
+                isPinching: true,
+                initialDistance: initialDistance,
+                initialScale: panZoomState.scale,
+                pinchCenter: pinchCenter
+            });
+        } else {
+            // Single touch for panning
+            setTouchState({
+                isTouching: true,
+                touchStartTime: Date.now(),
+                touchTarget: 'diagram',
+                initialTouchPos: { x: touch.clientX, y: touch.clientY },
+                lastTouchPos: { x: touch.clientX, y: touch.clientY },
+                touchCardId: null,
+                touchCardOffset: { x: 0, y: 0 },
+                hasTouchMoved: false,
+                isPinching: false,
+                initialDistance: 0,
+                initialScale: panZoomState.scale,
+                pinchCenter: { x: 0, y: 0 }
+            });
+        }
     };
 
     // Add global touch event listeners
@@ -1946,10 +2047,41 @@ const KanjiVocabDiagram: React.FC<KanjiVocabDiagramProps> = ({
                                 🖱️ {isMobile ? 'Tap & drag' : 'Drag'} card untuk menggeser posisi
                             </div>
                             {isMobile && (
-                                <div className="text-xs text-gray-500 dark:text-gray-400 mb-2">
-                                    👆 Drag area kosong untuk menggeser diagram
-                                </div>
+                                <>
+                                    <div className="text-xs text-gray-500 dark:text-gray-400 mb-2">
+                                        👆 Drag area kosong untuk menggeser diagram
+                                    </div>
+                                    <div className="text-xs text-gray-500 dark:text-gray-400 mb-2">
+                                        🤏 Pinch dengan 2 jari untuk zoom in/out
+                                    </div>
+                                </>
                             )}
+                            
+                            {/* Zoom Controls */}
+                            <div className="flex items-center gap-2 mb-2">
+                                <button
+                                    onClick={() => {
+                                        const newScale = Math.max(0.5, panZoomState.scale - 0.2);
+                                        setPanZoomState(prev => ({ ...prev, scale: newScale }));
+                                    }}
+                                    className="text-xs bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-1 rounded hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
+                                >
+                                    🔍- Zoom Out
+                                </button>
+                                <span className="text-xs text-gray-500 dark:text-gray-400">
+                                    {Math.round(panZoomState.scale * 100)}%
+                                </span>
+                                <button
+                                    onClick={() => {
+                                        const newScale = Math.min(3, panZoomState.scale + 0.2);
+                                        setPanZoomState(prev => ({ ...prev, scale: newScale }));
+                                    }}
+                                    className="text-xs bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-1 rounded hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
+                                >
+                                    🔍+ Zoom In
+                                </button>
+                            </div>
+                            
                             <button
                                 onClick={() => {
                                     setCardPositions({});
