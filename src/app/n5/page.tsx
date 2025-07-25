@@ -86,7 +86,7 @@ export default function HomePage() {
             />
             
             <footer className="text-center text-xs text-gray-400 dark:text-gray-500 py-4">
-                &copy; {new Date().getFullYear()} Study Japan Journey
+                &copy; {new Date().getFullYear()} M. Randy Aswin
             </footer>
             <InstallPrompt />
         </>

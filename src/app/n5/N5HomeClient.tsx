@@ -1675,12 +1675,16 @@ const KanjiVocabDiagram: React.FC<KanjiVocabDiagramProps> = ({
                 className={`relative bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 rounded-xl p-8 min-h-[700px] overflow-hidden diagram-container ${
                     panZoomState.isPanning ? 'pan-zoom-container dragging' : 'pan-zoom-container'
                 }`}
-                style={{
-                    transform: `translate(${panZoomState.translateX}px, ${panZoomState.translateY}px) scale(${panZoomState.scale})`,
-                    transformOrigin: 'center center'
-                }}
                 onTouchStart={handleDiagramTouchStart}
             >
+                {/* Diagram Content Wrapper - this is what gets transformed */}
+                <div 
+                    className="diagram-content-wrapper relative w-full h-full"
+                    style={{
+                        transform: `translate(${panZoomState.translateX}px, ${panZoomState.translateY}px) scale(${panZoomState.scale})`,
+                        transformOrigin: 'center center'
+                    }}
+                >
                 
                 {/* SVG for connection lines */}
                 <svg 
@@ -1946,6 +1950,8 @@ const KanjiVocabDiagram: React.FC<KanjiVocabDiagramProps> = ({
                         </div>
                     </div>
                 </div>
+                
+                </div> {/* Close diagram-content-wrapper */}
             </div>
 
             {/* Statistics */}
