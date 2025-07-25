@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useQuiz } from '../../lib/StudyContext';
 import { ChevronLeftIcon, PlayIcon, PauseIcon, SpeakerWaveIcon } from '@heroicons/react/24/outline';
 
@@ -676,9 +677,11 @@ export default function QuizPage() {
 
                                                         {question.image_file && (
                                                             <div className="mb-4">
-                                                                <img 
+                                                                <Image 
                                                                     src={`/${question.image_file}`}
                                                                     alt="Quiz question"
+                                                                    width={800}
+                                                                    height={600}
                                                                     className="max-w-full h-auto rounded-lg border border-gray-200 dark:border-gray-600"
                                                                     onError={(e) => {
                                                                         // Don't hide the image, show a placeholder instead

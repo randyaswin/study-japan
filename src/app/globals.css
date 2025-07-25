@@ -1,5 +1,26 @@
 @import "tailwindcss";
 
+/* Tab Animation Styles */
+@keyframes fadeIn {
+  from { 
+    opacity: 0; 
+    transform: translateY(10px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Floating tabs smooth transition */
+.tabs-floating-transition {
+  transition: all 0.3s ease-in-out;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;

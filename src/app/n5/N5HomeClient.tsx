@@ -1,29 +1,12 @@
 "use client";
 
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, useMemo } from 'react';
 import Link from 'next/link';
 import { useSettings, useN5, useFlipMode, useMultipleChoice } from '@/lib/StudyContext';
 import Furigana from '@/components/Furigana';
 import BushuPosition from '@/components/BushuPosition';
 
 
-// Palet warna untuk konsistensi
-const colors = {
-    kanji: 'orange',
-    noun: 'blue',
-    verb: 'green',
-    adjective: 'purple',
-    grammar: 'yellow',
-};
-
-const getHeaderBgColor = (type: string) => {
-    switch (type) {
-        case 'kanji': return `bg-${colors.kanji}-100 dark:bg-${colors.kanji}-900`;
-        case 'vocabulary': return `bg-${colors.noun}-100 dark:bg-${colors.noun}-900`;
-        case 'grammar': return `bg-${colors.grammar}-100 dark:bg-${colors.grammar}-900`;
-        default: return 'bg-gray-100 dark:bg-gray-800';
-    }
-};
 
 interface ExampleObj {
     jp: string;
@@ -48,6 +31,8 @@ interface VocabItem {
     type: string;
     mnemonic: string;
     example: ExampleObj;
+    kanji_bushu?: string[];
+    level?: string;
 }
 
 interface GrammarVisualLabel {
@@ -101,6 +86,9 @@ export default function N5HomeClient({ kanjiData, vocabData, grammarData }: N5Ho
     const [isSettingsCollapsed, setIsSettingsCollapsed] = useState(true);
     const [selectedBushu, setSelectedBushu] = useState<string>('all');
     const [sortByBushu, setSortByBushu] = useState<boolean>(false);
+    const [activeTab, setActiveTab] = useState<'kanji' | 'vocabulary' | 'grammar' | 'kanji-diagram'>('kanji');
+    const [isTabsFloating, setIsTabsFloating] = useState(false);
+    const [selectedKanjiBushu, setSelectedKanjiBushu] = useState<string>('all');
 
     const allBushu = React.useMemo(() => {
         const bushuSet = new Set<string>();
@@ -112,11 +100,24 @@ export default function N5HomeClient({ kanjiData, vocabData, grammarData }: N5Ho
         return ['all', ...Array.from(bushuSet).sort()];
     }, [kanjiData]);
 
+    // Get all kanji bushu from vocabulary data
+    const allKanjiBushu = useMemo(() => {
+        const kanjiBushuSet = new Set<string>();
+        vocabData.forEach(item => {
+            if (item.kanji_bushu && item.kanji_bushu.length > 0) {
+                item.kanji_bushu.forEach(kanji => {
+                    kanjiBushuSet.add(kanji);
+                });
+            }
+        });
+        return ['all', ...Array.from(kanjiBushuSet).sort()];
+    }, [vocabData]);
+
     // Calculate current page data based on settings and current page
     const getCurrentPageData = useCallback((): SprintData => {
         const currentPage = n5Data.currentPage;
         
-        let filteredKanji = selectedBushu === 'all' 
+        const filteredKanji = selectedBushu === 'all' 
             ? [...kanjiData] 
             : kanjiData.filter(k => k.bushu === selectedBushu);
 
@@ -222,6 +223,109 @@ export default function N5HomeClient({ kanjiData, vocabData, grammarData }: N5Ho
         resetVocabAnswers();
     }, [n5Data.currentPage, resetFlipModes, resetKanjiAnswers, resetVocabAnswers]);
 
+    // Set initial active tab based on available data
+    useEffect(() => {
+        const currentPageData = getCurrentPageData();
+        if (currentPageData.kanji && currentPageData.kanji.length > 0) {
+            setActiveTab('kanji');
+        } else if (currentPageData.vocabulary && currentPageData.vocabulary.length > 0) {
+            setActiveTab('vocabulary');
+        } else if (currentPageData.grammar && currentPageData.grammar.length > 0) {
+            setActiveTab('grammar');
+        }
+    }, [n5Data.currentPage, getCurrentPageData]);
+
+    // Handle scroll for floating tabs
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollPosition = window.scrollY;
+            const threshold = 200; // Adjust this value as needed
+            setIsTabsFloating(scrollPosition > threshold);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
+    // Get filtered vocabulary data for the diagram
+    const getFilteredVocabData = useCallback(() => {
+        if (selectedKanjiBushu === 'all') {
+            return vocabData;
+        }
+        return vocabData.filter(item => 
+            item.kanji_bushu && item.kanji_bushu.includes(selectedKanjiBushu)
+        );
+    }, [selectedKanjiBushu, vocabData]);
+
+    // Function to navigate to a specific kanji
+    const navigateToKanji = useCallback((targetKanji: string) => {
+        // First, switch to kanji tab
+        setActiveTab('kanji');
+        
+        // Find the kanji in the data (considering current filter)
+        const filteredKanji = selectedBushu === 'all' 
+            ? [...kanjiData] 
+            : kanjiData.filter(k => k.bushu === selectedBushu);
+
+        if (sortByBushu) {
+            filteredKanji.sort((a, b) => {
+                if (a.bushu && b.bushu) {
+                    return a.bushu.localeCompare(b.bushu);
+                }
+                if (a.bushu) return -1;
+                if (b.bushu) return 1;
+                return 0;
+            });
+        }
+
+        // Find the index of the target kanji
+        const kanjiIndex = filteredKanji.findIndex(k => k.kanji === targetKanji);
+        
+        if (kanjiIndex !== -1) {
+            // Calculate which page contains this kanji
+            const targetPage = Math.floor(kanjiIndex / settings.kanjiPerPage) + 1;
+            
+            // Navigate to that page
+            setN5CurrentPage(targetPage);
+            
+            // Scroll to top of kanji section after a short delay to ensure page change is processed
+            setTimeout(() => {
+                const kanjiSection = document.getElementById('kanji-section');
+                if (kanjiSection) {
+                    kanjiSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            }, 100);
+        } else {
+            // If kanji not found in current filter, reset filter to 'all' and try again
+            if (selectedBushu !== 'all') {
+                setSelectedBushu('all');
+                // The kanji should be found on the next render with 'all' filter
+                // We'll navigate on the next effect
+                setTimeout(() => {
+                    navigateToKanji(targetKanji);
+                }, 100);
+            }
+        }
+    }, [selectedBushu, kanjiData, sortByBushu, settings.kanjiPerPage, setN5CurrentPage]);
+
+    // Enhanced kanji select handler for diagram
+    const handleKanjiSelectFromDiagram = useCallback((kanji: string) => {
+        if (kanji === 'all') {
+            setSelectedKanjiBushu(kanji);
+        } else {
+            // Check if this kanji exists in our kanji data
+            const kanjiExists = kanjiData.some(k => k.kanji === kanji);
+            
+            if (kanjiExists) {
+                // Navigate to the kanji section
+                navigateToKanji(kanji);
+            } else {
+                // Just update the diagram view if kanji not in our main data
+                setSelectedKanjiBushu(kanji);
+            }
+        }
+    }, [kanjiData, navigateToKanji]);
+
     if (n5Data.viewMode === 'study') {
         const sprintData = getCurrentPageData();
         return (
@@ -293,13 +397,74 @@ export default function N5HomeClient({ kanjiData, vocabData, grammarData }: N5Ho
                         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 dark:text-gray-100">Belajar JLPT N5</h1>
                         <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 mt-2">Halaman {sprintData.day} - Membangun Fondasi JLPT {sprintData.type}</p>
                     </header>
-                    {/* Kanji Section */}
-                    {sprintData.kanji && sprintData.kanji.length > 0 && (
-                        <section id="kanji" className="mb-12">
-                            <div className="mb-4">
-                                <h2 className="text-2xl sm:text-3xl font-bold border-l-8 border-orange-500 pl-4 text-gray-700 dark:text-gray-300 mb-4">
-                                    <span className="text-orange-500 text-2xl">🟠</span> Kanji
-                                </h2>
+
+                    {/* Tabs Navigation */}
+                    <div className={`tabs-floating-transition ${isTabsFloating ? 'fixed top-0 left-0 right-0 z-40 bg-white dark:bg-gray-900 shadow-lg' : 'relative'}`}>
+                        <div className="container mx-auto px-4">
+                            <div className="flex justify-center border-b border-gray-200 dark:border-gray-700">
+                                {sprintData.kanji && sprintData.kanji.length > 0 && (
+                                    <button
+                                        onClick={() => setActiveTab('kanji')}
+                                        className={`px-4 py-3 font-semibold text-sm sm:text-base transition-colors relative ${
+                                            activeTab === 'kanji'
+                                                ? 'text-orange-500 border-b-2 border-orange-500'
+                                                : 'text-gray-600 dark:text-gray-400 hover:text-orange-500'
+                                        }`}
+                                    >
+                                        <span className="text-orange-500 mr-1">🟠</span>
+                                        Kanji ({sprintData.kanji.length})
+                                    </button>
+                                )}
+                                {sprintData.vocabulary && sprintData.vocabulary.length > 0 && (
+                                    <button
+                                        onClick={() => setActiveTab('vocabulary')}
+                                        className={`px-4 py-3 font-semibold text-sm sm:text-base transition-colors relative ${
+                                            activeTab === 'vocabulary'
+                                                ? 'text-blue-500 border-b-2 border-blue-500'
+                                                : 'text-gray-600 dark:text-gray-400 hover:text-blue-500'
+                                        }`}
+                                    >
+                                        <span className="text-blue-500 mr-1">🔵</span>
+                                        Kosakata ({sprintData.vocabulary.length})
+                                    </button>
+                                )}
+                                {sprintData.grammar && sprintData.grammar.length > 0 && (
+                                    <button
+                                        onClick={() => setActiveTab('grammar')}
+                                        className={`px-4 py-3 font-semibold text-sm sm:text-base transition-colors relative ${
+                                            activeTab === 'grammar'
+                                                ? 'text-yellow-500 border-b-2 border-yellow-500'
+                                                : 'text-gray-600 dark:text-gray-400 hover:text-yellow-500'
+                                        }`}
+                                    >
+                                        <span className="text-yellow-500 mr-1">🟡</span>
+                                        Tata Bahasa ({sprintData.grammar.length})
+                                    </button>
+                                )}
+                                <button
+                                    onClick={() => setActiveTab('kanji-diagram')}
+                                    className={`px-4 py-3 font-semibold text-sm sm:text-base transition-colors relative ${
+                                        activeTab === 'kanji-diagram'
+                                            ? 'text-purple-500 border-b-2 border-purple-500'
+                                            : 'text-gray-600 dark:text-gray-400 hover:text-purple-500'
+                                    }`}
+                                >
+                                    <span className="text-purple-500 mr-1">🔗</span>
+                                    Diagram Kanji ({allKanjiBushu.length - 1})
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Add padding when tabs are floating */}
+                    {isTabsFloating && <div className="h-16"></div>}
+
+                    {/* Tab Content */}
+                    <div className="mt-8">
+                    {/* Kanji Tab */}
+                    {activeTab === 'kanji' && sprintData.kanji && sprintData.kanji.length > 0 && (
+                        <section id="kanji-section" className="animate-fade-in">
+                            <div className="mb-6">
                                 <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4">
                                     <div className="flex items-center gap-2">
                                         <span className="text-sm text-gray-600 dark:text-gray-400 hidden sm:inline">Mode Hafalan:</span>
@@ -506,11 +671,11 @@ export default function N5HomeClient({ kanjiData, vocabData, grammarData }: N5Ho
                             </div>
                         </section>
                     )}
-                    {/* Vocabulary Section */}
-                    {sprintData.vocabulary && sprintData.vocabulary.length > 0 && (
-                        <section id="vocabulary" className={`mb-12 rounded-xl p-4 sm:p-6 ${getHeaderBgColor('vocabulary')} dark:bg-gray-800`}>
-                            <div className="mb-4">
-                                <h2 className={`text-2xl sm:text-3xl font-bold border-l-8 border-${colors.noun}-500 pl-4 text-gray-700 dark:text-gray-300 mb-4`}>🔵🟢 Kosakata</h2>
+
+                    {/* Vocabulary Tab */}
+                    {activeTab === 'vocabulary' && sprintData.vocabulary && sprintData.vocabulary.length > 0 && (
+                        <section className="animate-fade-in">
+                            <div className="mb-6">
                                 <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4">
                                     <div className="flex items-center gap-2">
                                         <span className="text-sm text-gray-600 dark:text-gray-400 hidden sm:inline">Mode Hafalan:</span>
@@ -578,6 +743,16 @@ export default function N5HomeClient({ kanjiData, vocabData, grammarData }: N5Ho
                                         typeLabel = 'Kata Sifat-i';
                                         typeLabelColor = 'bg-orange-100 text-orange-700';
                                         textColor = 'text-orange-700 dark:text-orange-300';
+                                    } else if (item.type === '🟤') {
+                                        borderColor = 'border-brown-400';
+                                        typeLabel = 'Kata Ganti Orang';
+                                        typeLabelColor = 'bg-brown-100 text-brown-700';
+                                        textColor = 'text-brown-700 dark:text-brown-300';
+                                    } else if (item.type === '🟡') {
+                                        borderColor = 'border-yellow-400';
+                                        typeLabel = 'Kata Keterangan';
+                                        typeLabelColor = 'bg-yellow-100 text-yellow-700';
+                                        textColor = 'text-yellow-700 dark:text-yellow-300';
                                     } else {
                                         borderColor = 'border-gray-300';
                                         typeLabel = 'Lainnya';
@@ -739,12 +914,10 @@ export default function N5HomeClient({ kanjiData, vocabData, grammarData }: N5Ho
                             </div>
                         </section>
                     )}
-                    {/* Tata Bahasa */}
-                    {sprintData.grammar && sprintData.grammar.length > 0 && (
-                        <section id="grammar" className="mb-12">
-                            <h2 className="text-2xl sm:text-3xl font-bold mb-4 border-l-8 border-yellow-400 pl-4 text-gray-700 dark:text-gray-300 flex items-center gap-2">
-                                <span className="text-yellow-400 text-2xl">🟡</span> Tata Bahasa
-                            </h2>
+
+                    {/* Grammar Tab */}
+                    {activeTab === 'grammar' && sprintData.grammar && sprintData.grammar.length > 0 && (
+                        <section className="animate-fade-in">
                             <div className="flex flex-col gap-8">
                                 {sprintData.grammar.map((item, index) => (
                                     <div key={index} className="bg-white dark:bg-gray-800 rounded-xl shadow p-6 border-t-4 border-yellow-300">
@@ -808,6 +981,51 @@ export default function N5HomeClient({ kanjiData, vocabData, grammarData }: N5Ho
                             </div>
                         </section>
                     )}
+
+                    {/* Kanji Diagram Tab */}
+                    {activeTab === 'kanji-diagram' && (
+                        <section className="animate-fade-in">
+                            <div className="mb-6">
+                                <div className="flex items-center gap-4 mb-4">
+                                    <h3 className="text-xl font-bold text-purple-600">
+                                        🔗 Diagram Hubungan Kanji-Kosakata
+                                    </h3>
+                                    <select
+                                        value={selectedKanjiBushu}
+                                        onChange={(e) => setSelectedKanjiBushu(e.target.value)}
+                                        className="px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300"
+                                    >
+                                        {allKanjiBushu.map(kanji => (
+                                            <option key={kanji} value={kanji}>
+                                                {kanji === 'all' ? 'Semua Kanji (Overview)' : kanji}
+                                            </option>
+                                        ))}
+                                    </select>
+                                </div>
+                                
+                                {selectedKanjiBushu !== 'all' && (
+                                    <div className="bg-purple-50 dark:bg-purple-900 border border-purple-200 dark:border-purple-700 rounded-lg p-4 mb-4">
+                                        <p className="text-sm text-purple-700 dark:text-purple-300">
+                                            <strong>Legenda:</strong> Diagram menunjukkan kanji <span className="font-bold">{selectedKanjiBushu}</span> di tengah, 
+                                            dikelompokkan berdasarkan jenis kata (verba, nomina, adjektiva, dll.), 
+                                            dan kosakata yang menggunakan kanji tersebut.
+                                        </p>
+                                    </div>
+                                )}
+                            </div>
+                            
+                            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
+                                <KanjiVocabDiagram 
+                                    selectedKanji={selectedKanjiBushu}
+                                    allKanji={allKanjiBushu}
+                                    vocabData={vocabData}
+                                    getFilteredData={getFilteredVocabData}
+                                    onKanjiSelect={handleKanjiSelectFromDiagram}
+                                />
+                            </div>
+                        </section>
+                    )}
+                    </div>
                 </div>
                 {/* Floating Back to Top Button */}
                 <a
@@ -834,9 +1052,9 @@ export default function N5HomeClient({ kanjiData, vocabData, grammarData }: N5Ho
                 </header>
                 {/* Back to Home navigation */}
                 <div className="mb-6 flex justify-start">
-                <Link href="/" className="inline-flex items-center gap-2 px-4 py-2 rounded bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200 font-semibold hover:bg-gray-300 dark:hover:bg-gray-600 transition">
-                    <span>←</span> Back to Home
-                </Link>
+                    <Link href="/" className="inline-flex items-center gap-2 px-4 py-2 rounded bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200 font-semibold hover:bg-gray-300 dark:hover:bg-gray-600 transition">
+                        <span>←</span> Back to Home
+                    </Link>
                 </div>
 
                 {/* Settings Section */}
@@ -995,3 +1213,242 @@ export default function N5HomeClient({ kanjiData, vocabData, grammarData }: N5Ho
         </div>
     );
 }
+
+// Kanji Vocabulary Diagram Component
+interface KanjiVocabDiagramProps {
+    selectedKanji: string;
+    allKanji: string[];
+    vocabData: VocabItem[];
+    getFilteredData: () => VocabItem[];
+    onKanjiSelect: (kanji: string) => void;
+}
+
+const KanjiVocabDiagram: React.FC<KanjiVocabDiagramProps> = ({ 
+    selectedKanji, 
+    allKanji, 
+    vocabData, 
+    getFilteredData,
+    onKanjiSelect
+}) => {
+    const filteredVocab = getFilteredData();
+
+    // Color mapping for vocabulary types
+    const typeColors = {
+        '🟢': { bg: 'bg-green-100 dark:bg-green-900', border: 'border-green-400', text: 'text-green-700 dark:text-green-300', name: 'Verba' },
+        '🔵': { bg: 'bg-blue-100 dark:bg-blue-900', border: 'border-blue-400', text: 'text-blue-700 dark:text-blue-300', name: 'Nomina' },
+        '🟠': { bg: 'bg-orange-100 dark:bg-orange-900', border: 'border-orange-400', text: 'text-orange-700 dark:text-orange-300', name: 'Adjektiva' },
+        '🟣': { bg: 'bg-purple-100 dark:bg-purple-900', border: 'border-purple-400', text: 'text-purple-700 dark:text-purple-300', name: 'Adverbia' },
+        '🟡': { bg: 'bg-yellow-100 dark:bg-yellow-900', border: 'border-yellow-400', text: 'text-yellow-700 dark:text-yellow-300', name: 'Lainnya' }
+    };
+
+    if (selectedKanji === 'all') {
+        // Overview of all kanji
+        return (
+            <div className="p-6">
+                <h4 className="text-lg font-bold text-gray-800 dark:text-gray-200 mb-6">
+                    📊 Overview Semua Kanji
+                </h4>
+                <div className="mb-6 text-sm text-gray-600 dark:text-gray-400">
+                    Klik pada kanji untuk melihat detail kosakata yang menggunakan kanji tersebut.
+                </div>
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                    {allKanji.slice(1).map((kanji) => {
+                        const kanjiVocabCount = vocabData.filter(item => 
+                            item.kanji_bushu && item.kanji_bushu.includes(kanji)
+                        ).length;
+                        
+                        // Group by type for this kanji
+                        const kanjiVocabByType = vocabData
+                            .filter(item => item.kanji_bushu && item.kanji_bushu.includes(kanji))
+                            .reduce((acc, item) => {
+                                const type = item.type;
+                                if (!acc[type]) acc[type] = 0;
+                                acc[type]++;
+                                return acc;
+                            }, {} as Record<string, number>);
+                        
+                        return (
+                            <div 
+                                key={kanji}
+                                className="bg-white dark:bg-gray-700 border-2 border-orange-300 rounded-lg p-4 text-center hover:shadow-lg hover:border-orange-400 transition-all cursor-pointer group"
+                                onClick={() => onKanjiSelect(kanji)}
+                            >
+                                <div className="text-3xl font-bold text-orange-500 mb-2 group-hover:scale-110 transition-transform">{kanji}</div>
+                                <div className="text-xs text-gray-600 dark:text-gray-400 mb-2">
+                                    {kanjiVocabCount} kosakata
+                                </div>
+                                
+                                {/* Mini type breakdown */}
+                                <div className="flex flex-wrap justify-center gap-1 mt-2">
+                                    {Object.entries(kanjiVocabByType).map(([type, count]) => (
+                                        <span 
+                                            key={type}
+                                            className="text-xs px-1 py-0.5 rounded bg-gray-100 dark:bg-gray-600 text-gray-600 dark:text-gray-300"
+                                        >
+                                            {type}{count}
+                                        </span>
+                                    ))}
+                                </div>
+                            </div>
+                        );
+                    })}
+                </div>
+                
+                {/* Statistics */}
+                <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div className="bg-blue-50 dark:bg-blue-900 border border-blue-200 dark:border-blue-700 rounded-lg p-4 text-center">
+                        <div className="text-2xl font-bold text-blue-600 dark:text-blue-300">
+                            {vocabData.length}
+                        </div>
+                        <div className="text-sm text-blue-600 dark:text-blue-300">Total Kosakata</div>
+                    </div>
+                    <div className="bg-orange-50 dark:bg-orange-900 border border-orange-200 dark:border-orange-700 rounded-lg p-4 text-center">
+                        <div className="text-2xl font-bold text-orange-600 dark:text-orange-300">
+                            {allKanji.length - 1}
+                        </div>
+                        <div className="text-sm text-orange-600 dark:text-orange-300">Total Kanji</div>
+                    </div>
+                    <div className="bg-purple-50 dark:bg-purple-900 border border-purple-200 dark:border-purple-700 rounded-lg p-4 text-center">
+                        <div className="text-2xl font-bold text-purple-600 dark:text-purple-300">
+                            {Math.round((vocabData.filter(item => item.kanji_bushu && item.kanji_bushu.length > 0).length / vocabData.length) * 100)}%
+                        </div>
+                        <div className="text-sm text-purple-600 dark:text-purple-300">Menggunakan Kanji</div>
+                    </div>
+                </div>
+            </div>
+        );
+    }
+
+    // Detailed view for selected kanji
+    const vocabByType = filteredVocab.reduce((acc, item) => {
+        const type = item.type;
+        if (!acc[type]) acc[type] = [];
+        acc[type].push(item);
+        return acc;
+    }, {} as Record<string, VocabItem[]>);
+
+    return (
+        <div className="p-6">
+            {/* Central Kanji */}
+            <div className="text-center mb-8">
+                <div className="inline-block bg-orange-100 dark:bg-orange-900 border-4 border-orange-400 rounded-xl p-6">
+                    <div className="text-6xl font-bold text-orange-500 mb-2">{selectedKanji}</div>
+                    <div className="text-sm text-gray-600 dark:text-gray-400">
+                        漢字 ({filteredVocab.length} kosakata)
+                    </div>
+                </div>
+            </div>
+
+            {/* Vocabulary grouped by type */}
+            <div className="space-y-8">
+                {Object.entries(vocabByType).map(([type, vocabs]) => {
+                    const typeColor = typeColors[type as keyof typeof typeColors] || typeColors['🟡'];
+                    
+                    return (
+                        <div key={type} className="space-y-4">
+                            {/* Type Header */}
+                            <div className="flex items-center gap-3">
+                                <div className={`${typeColor.bg} ${typeColor.border} border-2 rounded-lg px-4 py-2`}>
+                                    <span className="text-2xl mr-2">{type}</span>
+                                    <span className={`font-bold ${typeColor.text}`}>
+                                        {typeColor.name} ({vocabs.length})
+                                    </span>
+                                </div>
+                                <div className="flex-1 h-px bg-gray-300 dark:bg-gray-600"></div>
+                            </div>
+
+                            {/* Vocabulary Cards */}
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                {vocabs.map((vocab, index) => {
+                                    const meaning = (() => {
+                                        const match = vocab.reading_meaning.match(/\((.*)\)/);
+                                        return match ? match[1] : vocab.reading_meaning;
+                                    })();
+
+                                    return (
+                                        <div 
+                                            key={index}
+                                            className={`${typeColor.bg} ${typeColor.border} border-l-4 rounded-lg p-4 space-y-3`}
+                                        >
+                                            {/* Vocabulary Header */}
+                                            <div className="flex items-start justify-between">
+                                                <div className="flex-1">
+                                                    <div 
+                                                        className={`text-xl font-bold ${typeColor.text} jp-font leading-tight`}
+                                                        dangerouslySetInnerHTML={{ __html: vocab.vocab }}
+                                                    />
+                                                    <div className={`text-lg ${typeColor.text} mt-1`}>
+                                                        {meaning}
+                                                    </div>
+                                                </div>
+                                                <span className="text-lg">{type}</span>
+                                            </div>
+
+                                            {/* Mnemonic */}
+                                            <div className="bg-white dark:bg-gray-800 rounded-lg p-3">
+                                                <span className={`text-sm font-bold ${typeColor.text} block mb-1`}>
+                                                    💡 Mnemonic:
+                                                </span>
+                                                <span className="text-sm text-gray-700 dark:text-gray-300">
+                                                    {vocab.mnemonic}
+                                                </span>
+                                            </div>
+
+                                            {/* Example */}
+                                            <div className="bg-white dark:bg-gray-800 rounded-lg p-3">
+                                                <span className={`text-sm font-bold ${typeColor.text} block mb-1`}>
+                                                    📝 Contoh:
+                                                </span>
+                                                <div className="jp-font text-gray-700 dark:text-gray-300 leading-tight">
+                                                    <Furigana 
+                                                        htmlString={vocab.example.jp} 
+                                                        className="text-base" 
+                                                        rtClass="furigana-bold" 
+                                                        boldMain={true} 
+                                                    />
+                                                </div>
+                                                <div className="text-sm text-gray-600 dark:text-gray-400 mt-1">
+                                                    {vocab.example.romaji}
+                                                </div>
+                                                {vocab.example.id && (
+                                                    <div className="text-sm text-green-700 dark:text-green-400 mt-1 italic">
+                                                        {vocab.example.id}
+                                                    </div>
+                                                )}
+                                            </div>
+
+                                            {/* Kanji Used */}
+                                            {vocab.kanji_bushu && vocab.kanji_bushu.length > 0 && (
+                                                <div className="bg-white dark:bg-gray-800 rounded-lg p-3">
+                                                    <span className={`text-sm font-bold ${typeColor.text} block mb-1`}>
+                                                        🔤 Kanji yang digunakan:
+                                                    </span>
+                                                    <div className="flex flex-wrap gap-2">
+                                                        {vocab.kanji_bushu.map((kanji, kanjiIndex) => (
+                                                            <span 
+                                                                key={kanjiIndex}
+                                                                className={`inline-block px-2 py-1 rounded cursor-pointer hover:scale-105 transition-transform ${
+                                                                    kanji === selectedKanji 
+                                                                        ? 'bg-orange-200 dark:bg-orange-800 text-orange-700 dark:text-orange-300 font-bold' 
+                                                                        : 'bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-orange-100 dark:hover:bg-orange-900'
+                                                                }`}
+                                                                onClick={() => onKanjiSelect(kanji)}
+                                                                title={`Klik untuk lihat kosakata dengan kanji ${kanji}`}
+                                                            >
+                                                                {kanji}
+                                                            </span>
+                                                        ))}
+                                                    </div>
+                                                </div>
+                                            )}
+                                        </div>
+                                    );
+                                })}
+                            </div>
+                        </div>
+                    );
+                })}
+            </div>
+        </div>
+    );
+};
