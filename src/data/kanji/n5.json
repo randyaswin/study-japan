@@ -1,1762 +1,1982 @@
 [
     {
-        "kanji":"一",
-        "onyomi":"いち (ichi), いつ (itsu)",
-        "kunyomi":"ひと (hito)",
-        "arti":"Satu",
-        "mnemonic":"Kanji ini adalah yang paling dasar, hanya satu garis horizontal (一). Bayangkan Anda sedang menghitung dan membuat satu goresan di kertas untuk menandai angka 'satu'. Tidak ada yang lebih sederhana dari ini.",
-        "example":{
-            "jp":"これは<ruby>一つ<rt>ひとつ<\/rt><\/ruby>いくらですか。",
-            "romaji":"Kore wa hitotsu ikura desu ka.",
-            "id":"Berapa harga untuk satu ini?"
-        },
-        "level":"N5",
-        "bushu":"一",
-        "bushu_position":"kamae",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"二",
-        "onyomi":"に (ni)",
-        "kunyomi":"ふた (futa)",
-        "arti":"Dua",
-        "mnemonic":"Terdiri dari dua garis horizontal (二). Garis atas sedikit lebih pendek dari yang bawah. Bayangkan ini adalah tanda sama dengan (=) yang sedikit miring, mewakili keseimbangan antara dua hal.",
-        "example":{
-            "jp":"そこに<ruby>猫<rt>ねこ<\/rt><\/ruby>が<ruby>二<rt>に<\/rt><\/ruby>ひきいます。",
-            "romaji":"Soko ni neko ga ni-hiki imasu.",
-            "id":"Di sana ada dua ekor kucing."
-        },
-        "level":"N5",
-        "bushu":"二",
-        "bushu_position":"kamae",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"三",
-        "onyomi":"さん (san)",
-        "kunyomi":"み (mi)",
-        "arti":"Tiga",
-        "mnemonic":"Terdiri dari tiga garis horizontal (三). Sama seperti kanji satu dan dua, ini adalah representasi langsung dari jumlahnya. Bayangkan tiga benda yang ditumpuk.",
-        "example":{
-            "jp":"<ruby>三<rt>さん<\/rt><\/ruby><ruby>月<rt>がつ<\/rt><\/ruby>に<ruby>日本<rt>にほん<\/rt><\/ruby>へ<ruby>行<rt>い<\/rt><\/ruby>きます。",
-            "romaji":"San-gatsu ni nihon e ikimasu.",
-            "id":"Saya akan pergi ke Jepang pada bulan Maret (bulan ketiga)."
-        },
-        "level":"N5",
-        "bushu":"一",
-        "bushu_position":"kamae",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"人",
-        "onyomi":"じん (jin), にん (nin)",
-        "kunyomi":"ひと (hito)",
-        "arti":"Orang",
-        "mnemonic":"Bentuknya menyerupai siluet seseorang yang sedang berdiri dan melangkah dengan dua kaki. Kaki kiri dan kanan. Ini adalah gambaran paling sederhana dari 'orang'.",
-        "example":{
-            "jp":"あの<ruby>人<rt>ひと<\/rt><\/ruby>は<ruby>日本人<rt>にほんじん<\/rt><\/ruby>です。",
-            "romaji":"Ano hito wa nihonjin desu.",
-            "id":"Orang itu adalah orang Jepang."
-        },
-        "level":"N5",
-        "bushu":"人",
-        "bushu_position":"kamae",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"日",
-        "onyomi":"にち (nichi), じつ (jitsu)",
-        "kunyomi":"ひ (hi), -び (-bi), -か (-ka)",
-        "arti":"Hari, Matahari",
-        "mnemonic":"Kanji ini terlihat seperti jendela (口) dengan garis di tengahnya. Bayangkan Anda melihat matahari (garis tengah) melalui jendela. Ini melambangkan 'hari' atau 'matahari'.",
-        "example":{
-            "jp":"<ruby>今日<rt>きょう<\/rt><\/ruby>は<ruby>日曜日<rt>にちようび<\/rt><\/ruby>です。",
-            "romaji":"Kyou wa nichiyoubi desu.",
-            "id":"Hari ini adalah hari Minggu."
-        },
-        "level":"N5",
-        "bushu":"日",
-        "bushu_position":"kamae",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"半",
-        "onyomi":"はん (han)",
-        "kunyomi":"なか.ば (naka.ba)",
-        "arti":"Setengah",
-        "mnemonic":"Kanji ini terlihat seperti kanji 'sapi' (牛) yang dibelah dua secara vertikal. Bayangkan seekor sapi yang dibagi menjadi dua bagian yang sama besar, atau 'setengah-setengah'.",
-        "example":{
-            "jp":"<ruby>今<rt>いま<\/rt><\/ruby>、<ruby>九時半<rt>くじはん<\/rt><\/ruby>です。",
-            "romaji":"Ima, ku-ji han desu.",
-            "id":"Sekarang jam setengah sepuluh (9:30)."
-        },
-        "level":"N5",
-        "bushu":"十",
-        "bushu_position":"tare",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"分",
-        "onyomi":"ふん (fun), ぷん (pun), ぶん (bun)",
-        "kunyomi":"わ.ける (wa.keru), わ.かる (wa.karu)",
-        "arti":"Menit, Membagi, Mengerti",
-        "mnemonic":"Terdiri dari 'delapan' (八) dan 'pedang' (刀). Ini menggambarkan aksi 'membagi' sesuatu dengan pedang menjadi delapan (banyak) bagian. Dari 'membagi' informasi, muncul arti 'mengerti'.",
-        "example":{
-            "jp":"この<ruby>仕事<rt>しごと<\/rt><\/ruby>は<ruby>十分<rt>じゅっぷん<\/rt><\/ruby>で<ruby>終<rt>お<\/rt><\/ruby>わります。",
-            "romaji":"Kono shigoto wa juppun de owarimasu.",
-            "id":"Pekerjaan ini akan selesai dalam 10 menit."
-        },
-        "level":"N5",
-        "bushu":"刀",
-        "bushu_position":"tsukuri",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"国",
-        "onyomi":"こく (koku)",
-        "kunyomi":"くに (kuni)",
-        "arti":"Negara",
-        "mnemonic":"Kanji ini adalah sebuah 'perbatasan' (囗) yang mengelilingi 'permata' (玉). Ini melambangkan 'harta' atau 'raja' di dalam sebuah wilayah, yang merupakan sebuah 'negara'.",
-        "example":{
-            "jp":"お<ruby>国<rt>くに<\/rt><\/ruby>はどちらですか。",
-            "romaji":"O-kuni wa dochira desu ka.",
-            "id":"Negara Anda di mana?"
-        },
-        "level":"N5",
-        "bushu":"囗",
-        "bushu_position":"kamae",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"車",
-        "onyomi":"しゃ (sha)",
-        "kunyomi":"くるま (kuruma)",
-        "arti":"Mobil, Kendaraan",
-        "mnemonic":"Ini adalah piktograf dari sebuah 'gerobak' atau 'kereta' jika dilihat dari atas. Kotak di tengah adalah badan gerobak, garis vertikal adalah porosnya, dan garis horizontal atas dan bawah adalah rodanya.",
-        "example":{
-            "jp":"<ruby>電車<rt>でんしゃ<\/rt><\/ruby>で<ruby>会社<rt>かいしゃ<\/rt><\/ruby>へ<ruby>行<rt>い<\/rt><\/ruby>きます。",
-            "romaji":"Densha de kaisha e ikimasu.",
-            "id":"Saya pergi ke kantor dengan kereta listrik."
-        },
-        "level":"N5",
-        "bushu":"車",
-        "bushu_position":"kamae",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"何",
-        "onyomi":"か (ka)",
-        "kunyomi":"なに (nani), なん (nan)",
-        "arti":"Apa",
-        "mnemonic":"Terdiri dari radikal 'orang' (亻) dan sebuah gambar yang melambangkan 'beban' di punggungnya. Bayangkan seseorang bertanya-tanya, 'beban APA ini?' atau 'APA yang sedang dia bawa?'.",
-        "example":{
-            "jp":"これは<ruby>何<rt>なん<\/rt><\/ruby>ですか。",
-            "romaji":"Kore wa nan desu ka.",
-            "id":"Ini apa?"
-        },
-        "level":"N5",
-        "bushu":"亻",
-        "bushu_position":"hen",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"天",
-        "onyomi":"てん (ten)",
-        "kunyomi":"あめ (ame), あま (ama)",
-        "arti":"Langit, Surga",
-        "mnemonic":"Kanji ini terlihat seperti kanji 'orang besar' (大) dengan satu garis di atasnya. Bayangkan 'langit' yang maha luas berada di atas segalanya, bahkan di atas orang yang paling besar sekalipun.",
-        "example":{
-            "jp":"いいお<ruby>天気<rt>てんき<\/rt><\/ruby>ですね。",
-            "romaji":"Ii o-tenki desu ne.",
-            "id":"Cuacanya bagus ya."
-        },
-        "level":"N5",
-        "bushu":"大",
-        "bushu_position":"kamae",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"気",
-        "onyomi":"き (ki), け (ke)",
-        "kunyomi":"-",
-        "arti":"Roh, Energi, Perasaan",
-        "mnemonic":"Kanji ini menggambarkan 'uap' (气) yang naik dari 'nasi' (米) yang sedang dimasak. Uap ini melambangkan 'energi', 'spirit', atau 'atmosfer' yang tak terlihat namun bisa dirasakan.",
-        "example":{
-            "jp":"わたしは<ruby>元気<rt>げんき<\/rt><\/ruby>です。",
-            "romaji":"Watashi wa genki desu.",
-            "id":"Saya sehat\/baik-baik saja."
-        },
-        "level":"N5",
-        "bushu":"气",
-        "bushu_position":"kamae",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"雨",
-        "onyomi":"う (u)",
-        "kunyomi":"あめ (ame)",
-        "arti":"Hujan",
-        "mnemonic":"Ini adalah piktograf. Garis horizontal di atas adalah awan, dan empat titik di dalamnya adalah tetesan 'hujan' yang jatuh dari langit.",
-        "example":{
-            "jp":"<ruby>雨<rt>あめ<\/rt><\/ruby>が<ruby>降<rt>ふ<\/rt><\/ruby>っています。",
-            "romaji":"Ame ga futte imasu.",
-            "id":"Hujan sedang turun."
-        },
-        "level":"N5",
-        "bushu":"雨",
-        "bushu_position":"kamae",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"電",
-        "onyomi":"でん (den)",
-        "kunyomi":"-",
-        "arti":"Listrik",
-        "mnemonic":"Gabungan dari 'hujan' (雨) dan sebuah bentuk yang melambangkan 'petir' atau 'sambaran' (乚). Petir yang muncul saat hujan adalah manifestasi alam dari 'listrik'.",
-        "example":{
-            "jp":"<ruby>電話<rt>でんわ<\/rt><\/ruby>をかけてもいいですか。",
-            "romaji":"Denwa o kakete mo ii desu ka.",
-            "id":"Bolehkah saya menelepon?"
-        },
-        "level":"N5",
-        "bushu":"雨",
-        "bushu_position":"kanmuri",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"食",
-        "onyomi":"しょく (shoku), じき (jiki)",
-        "kunyomi":"く.う (ku.u), た.べる (ta.beru)",
-        "arti":"Makan",
-        "mnemonic":"Kanji ini terlihat seperti atap (人) di atas sebuah wadah (良, bentuk sederhana). Bayangkan seseorang di bawah atap sedang menikmati makanan 'baik' (良) dari wadahnya. Ini adalah aksi 'makan'.",
-        "example":{
-            "jp":"この<ruby>食堂<rt>しょくどう<\/rt><\/ruby>は<ruby>安<rt>やす<\/rt><\/ruby>くて、おいしいです。",
-            "romaji":"Kono shokudou wa yasukute, oishii desu.",
-            "id":"Kantin ini murah dan enak."
-        },
-        "level":"N5",
-        "bushu":"食",
-        "bushu_position":"kamae",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"飲",
-        "onyomi":"いん (in)",
-        "kunyomi":"の.む (no.mu)",
-        "arti":"Minum",
-        "mnemonic":"Terdiri dari radikal 'makan\/makanan' (食) dan 'kekurangan' (欠). Bayangkan saat Anda 'kekurangan' cairan, Anda harus 'minum' sesuatu yang bisa 'dimakan' (dalam arti luas, dikonsumsi).",
-        "example":{
-            "jp":"なにか<ruby>飲<rt>の<\/rt><\/ruby>み<ruby>物<rt>もの<\/rt><\/ruby>はいかがですか。",
-            "romaji":"Nani ka nomimono wa ikaga desu ka.",
-            "id":"Bagaimana kalau minum sesuatu?"
-        },
-        "level":"N5",
-        "bushu":"食",
-        "bushu_position":"hen",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"会",
-        "onyomi":"かい (kai), え (e)",
-        "kunyomi":"あ.う (a.u)",
-        "arti":"Bertemu, Perkumpulan",
-        "mnemonic":"Kanji ini menggambarkan sebuah 'topi' (人) di atas 'awan' atau 'wadah' (云). Bayangkan orang-orang berkumpul di bawah satu atap atau payung untuk 'bertemu' dan membentuk 'perkumpulan'.",
-        "example":{
-            "jp":"あした、<ruby>会議<rt>かいぎ<\/rt><\/ruby>があります。",
-            "romaji":"Ashita, kaigi ga arimasu.",
-            "id":"Besok ada rapat (pertemuan untuk diskusi)."
-        },
-        "level":"N5",
-        "bushu":"人",
-        "bushu_position":"kanmuri",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"聞",
-        "onyomi":"ぶん (bun), もん (mon)",
-        "kunyomi":"き.く (ki.ku)",
-        "arti":"Mendengar, Bertanya",
-        "mnemonic":"Ini adalah piktograf yang sangat jelas: sebuah 'telinga' (耳) di dalam sebuah 'gerbang' (門). Bayangkan Anda menempelkan telinga ke gerbang untuk 'mendengar' apa yang terjadi di dalam.",
-        "example":{
-            "jp":"この<ruby>新聞<rt>しんぶん<\/rt><\/ruby>を<ruby>読<rt>よ<\/rt><\/ruby>みましたか。",
-            "romaji":"Kono shinbun o yomimashita ka.",
-            "id":"Apakah kamu sudah membaca koran ini? (Koran berisi hal-hal yang baru didengar)."
-        },
-        "level":"N5",
-        "bushu":"門",
-        "bushu_position":"kamae",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"読",
-        "onyomi":"どく (doku), とく (toku)",
-        "kunyomi":"よ.む (yo.mu)",
-        "arti":"Membaca",
-        "mnemonic":"Terdiri dari radikal 'kata-kata' (言) dan 'menjual' (売). Bayangkan seorang penjual yang 'membaca' daftar barang dagangannya dengan lantang untuk menarik pembeli.",
-        "example":{
-            "jp":"<ruby>読書<rt>どくしょ<\/rt><\/ruby>はわたしの<ruby>趣味<rt>しゅみ<\/rt><\/ruby>です。",
-            "romaji":"Dokusho wa watashi no shumi desu.",
-            "id":"Membaca buku adalah hobi saya."
-        },
-        "level":"N5",
-        "bushu":"言",
-        "bushu_position":"hen",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"書",
-        "onyomi":"しょ (sho)",
-        "kunyomi":"か.く (ka.ku)",
-        "arti":"Menulis",
-        "mnemonic":"Kanji ini menggambarkan sebuah 'kuas' (聿, bentuk kuno) di atas 'matahari\/hari' (日). Bayangkan seorang juru tulis yang 'menulis' catatan harian dengan kuas setiap hari.",
-        "example":{
-            "jp":"<ruby>図書館<rt>としょかん<\/rt><\/ruby>で<ruby>本<rt>ほん<\/rt><\/ruby>を<ruby>借<rt>か<\/rt><\/ruby>りました。",
-            "romaji":"Toshokan de hon o karimashita.",
-            "id":"Saya meminjam buku (benda tulisan) di perpustakaan."
-        },
-        "level":"N5",
-        "bushu":"曰",
-        "bushu_position":"kanmuri",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"行",
-        "onyomi":"こう (kou), ぎょう (gyou)",
-        "kunyomi":"い.く (i.ku)",
-        "arti":"Pergi",
-        "mnemonic":"Kanji ini adalah piktograf dari sebuah 'persimpangan jalan'. Ini melambangkan perjalanan, barisan, atau aksi 'pergi' ke suatu tempat.",
-        "example":{
-            "jp":"<ruby>銀行<rt>ぎんこう<\/rt><\/ruby>へ<ruby>行<rt>い<\/rt><\/ruby>きます。",
-            "romaji":"Ginkou e ikimasu.",
-            "id":"Saya pergi ke bank."
-        },
-        "level":"N5",
-        "bushu":"行",
-        "bushu_position":"kamae",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"来",
-        "onyomi":"らい (rai)",
-        "kunyomi":"く.る (ku.ru)",
-        "arti":"Datang",
-        "mnemonic":"Piktograf aslinya menggambarkan sebatang gandum, yang melambangkan panen yang 'datang' setiap tahun. Ini berevolusi menjadi arti 'datang' atau 'masa depan'.",
-        "example":{
-            "jp":"<ruby>来週<rt>らいしゅう<\/rt><\/ruby>、<ruby>友<rt>とも<\/rt><\/ruby>だちが<ruby>来<rt>き<\/rt><\/ruby>ます。",
-            "romaji":"Raishuu, tomodachi ga kimasu.",
-            "id":"Minggu depan, teman saya akan datang."
-        },
-        "level":"N5",
-        "bushu":"木",
-        "bushu_position":"kamae",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"帰",
-        "onyomi":"き (ki)",
-        "kunyomi":"かえ.る (kae.ru)",
-        "arti":"Pulang, Kembali",
-        "mnemonic":"Terdiri dari radikal 'langkah kaki' (彳) dan sebuah bentuk kompleks yang mengandung 'sapu' (帚). Bayangkan setelah melangkah jauh, seseorang 'kembali' atau 'pulang' ke rumah untuk bersih-bersih.",
-        "example":{
-            "jp":"<ruby>毎日<rt>まいにち<\/rt><\/ruby><ruby>五時<rt>ごじ<\/rt><\/ruby>にうちへ<ruby>帰<rt>かえ<\/rt><\/ruby>ります。",
-            "romaji":"Mainichi go-ji ni uchi e kaerimasu.",
-            "id":"Setiap hari saya pulang ke rumah jam 5."
-        },
-        "level":"N5",
-        "bushu":"巾",
-        "bushu_position":"tsukuri",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"見",
-        "onyomi":"けん (ken)",
-        "kunyomi":"み.る (mi.ru)",
-        "arti":"Melihat",
-        "mnemonic":"Kanji ini adalah sebuah 'mata' (目) besar yang ditopang oleh sepasang 'kaki' (儿). Bayangkan sebuah mata raksasa yang berjalan-jalan untuk 'melihat' dunia.",
-        "example":{
-            "jp":"きのう、おもしろい<ruby>映画<rt>えいが<\/rt><\/ruby>を<ruby>見<rt>み<\/rt><\/ruby>ました。",
-            "romaji":"Kinou, omoshiroi eiga o mimashita.",
-            "id":"Kemarin, saya menonton film yang menarik."
-        },
-        "level":"N5",
-        "bushu":"見",
-        "bushu_position":"kamae",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"言",
-        "onyomi":"げん (gen), ごん (gon)",
-        "kunyomi":"い.う (i.u)",
-        "arti":"Berkata, Kata",
-        "mnemonic":"Piktograf ini menggambarkan sebuah 'mulut' (口) dengan sebuah 'lidah' atau garis di atasnya yang melambangkan suara atau 'kata' yang keluar. Ini adalah dasar dari 'berkata'.",
-        "example":{
-            "jp":"もう<ruby>一度<rt>いちど<\/rt><\/ruby><ruby>言<rt>い<\/rt><\/ruby>ってください。",
-            "romaji":"Mou ichido itte kudasai.",
-            "id":"Tolong katakan sekali lagi."
-        },
-        "level":"N5",
-        "bushu":"言",
-        "bushu_position":"kamae",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"町",
-        "onyomi":"ちょう (chou)",
-        "kunyomi":"まち (machi)",
-        "arti":"Kota",
-        "mnemonic":"Kanji ini terdiri dari 'sawah' (田) dan 'paku jalan' (丁). Bayangkan sebuah 'kota' yang terbentuk dari area persawahan yang dihubungkan oleh jalan-jalan.",
-        "example":{
-            "jp":"この<ruby>町<rt>まち<\/rt><\/ruby>は<ruby>静<rt>しず<\/rt><\/ruby>かで、きれいです。",
-            "romaji":"Kono machi wa shizuka de, kirei desu.",
-            "id":"Kota ini tenang dan bersih."
-        },
-        "level":"N5",
-        "bushu":"田",
-        "bushu_position":"hen",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"住",
-        "onyomi":"じゅう (juu)",
-        "kunyomi":"す.む (su.mu)",
-        "arti":"Tinggal",
-        "mnemonic":"Terdiri dari radikal 'orang' (亻) dan 'tuan' (主). Bayangkan seseorang yang 'tinggal' di suatu tempat sebagai tuan rumah atau sebagai bawahan dari seorang tuan.",
-        "example":{
-            "jp":"どこに<ruby>住<rt>す<\/rt><\/ruby>んでいますか。",
-            "romaji":"Doko ni sunde imasu ka.",
-            "id":"Di mana Anda tinggal?"
-        },
-        "level":"N5",
-        "bushu":"亻",
-        "bushu_position":"hen",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"売",
-        "onyomi":"ばい (bai)",
-        "kunyomi":"う.る (u.ru)",
-        "arti":"Menjual",
-        "mnemonic":"Bagian atasnya mirip kanji 'samurai' (士). Bayangkan seorang samurai yang berkeliling untuk 'menjual' barang-barangnya. 'U-RUSAN jual beli'.",
-        "example":{
-            "jp":"えきのそばの<ruby>店<rt>みせ<\/rt><\/ruby>で<ruby>花<rt>はな<\/rt><\/ruby>を<ruby>売<rt>う<\/rt><\/ruby>っています。",
-            "romaji":"Eki no soba no mise de hana o utte imasu.",
-            "id":"Mereka menjual bunga di toko dekat stasiun."
-        },
-        "level":"N5",
-        "bushu":"士",
-        "bushu_position":"kanmuri",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"立",
-        "onyomi":"りつ (ritsu)",
-        "kunyomi":"た.つ (ta.tsu)",
-        "arti":"Berdiri",
-        "mnemonic":"Ini adalah piktograf dari seseorang yang 'berdiri' tegak di atas tanah (garis horizontal). Sangat mudah untuk divisualisasikan.",
-        "example":{
-            "jp":"あそこに<ruby>立<rt>た<\/rt><\/ruby>っている<ruby>人<rt>ひと<\/rt><\/ruby>はだれですか。",
-            "romaji":"Asoko ni tatteiru hito wa dare desu ka.",
-            "id":"Siapa orang yang sedang berdiri di sana?"
-        },
-        "level":"N5",
-        "bushu":"立",
-        "bushu_position":"kamae",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"員",
-        "onyomi":"いん (in)",
-        "kunyomi":"-",
-        "arti":"Anggota",
-        "mnemonic":"Terdiri dari 'mulut' (口) dan 'kerang' (貝) yang dulu digunakan sebagai uang. Bayangkan seorang 'anggota' (員) sebuah kelompok adalah 'mulut' yang harus diberi makan, yang berarti memerlukan 'uang'.",
-        "example":{
-            "jp":"IMCの<ruby>社員<rt>しゃいん<\/rt><\/ruby>はみんな<ruby>親切<rt>しんせつ<\/rt><\/ruby>です。",
-            "romaji":"IMC no shain wa minna shinsetsu desu.",
-            "id":"Semua karyawan (anggota perusahaan) IMC baik hati."
-        },
-        "level":"N5",
-        "bushu":"口",
-        "bushu_position":"kanmuri",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"体",
-        "onyomi":"たい (tai), てい (tei)",
-        "kunyomi":"からだ (karada)",
-        "arti":"Badan, Tubuh",
-        "mnemonic":"Terdiri dari radikal 'orang' (亻) dan 'asal' (本). Ini melambangkan 'asal' dari seseorang, yaitu 'tubuh' atau 'badannya'.",
-        "example":{
-            "jp":"お<ruby>体<rt>からだ<\/rt><\/ruby>を<ruby>大事<rt>だいじ<\/rt><\/ruby>にしてください。",
-            "romaji":"O-karada o daiji ni shite kudasai.",
-            "id":"Tolong jaga baik-baik tubuh Anda."
-        },
-        "level":"N5",
-        "bushu":"亻",
-        "bushu_position":"hen",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"頭",
-        "onyomi":"とう (tou), ず (zu)",
-        "kunyomi":"あたま (atama)",
-        "arti":"Kepala",
-        "mnemonic":"Terdiri dari 'kacang' (豆) dan 'halaman' (頁, yang sering berhubungan dengan kepala). Bayangkan 'kepala' Anda seperti kacang besar yang ada di atas leher.",
-        "example":{
-            "jp":"<ruby>彼<rt>かれ<\/rt><\/ruby>は<ruby>頭<rt>あたま<\/rt><\/ruby>がいいです。",
-            "romaji":"Kare wa atama ga ii desu.",
-            "id":"Dia (laki-laki) pintar (kepalanya bagus)."
-        },
-        "level":"N5",
-        "bushu":"頁",
-        "bushu_position":"tsukuri",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"顔",
-        "onyomi":"がん (gan)",
-        "kunyomi":"かお (kao)",
-        "arti":"Wajah",
-        "mnemonic":"Kanji ini terdiri dari 'dahi' (彦, bentuk sederhananya) dan 'kepala' (頁). Gabungan dari semua fitur di 'kepala' membentuk 'wajah'.",
-        "example":{
-            "jp":"まいあさ、<ruby>顔<rt>かお<\/rt><\/ruby>をあらいます。",
-            "romaji":"Maiasa, kao o araimasu.",
-            "id":"Setiap pagi saya mencuci muka."
-        },
-        "level":"N5",
-        "bushu":"顔",
-        "bushu_position":"kamae",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"高",
-        "onyomi":"こう (kou)",
-        "kunyomi":"たか.い (taka.i)",
-        "arti":"Tinggi, Mahal",
-        "mnemonic":"Ini adalah piktograf dari sebuah 'bangunan tinggi' dengan atap, jendela, dan dasar yang menjulang. Melambangkan sesuatu yang 'tinggi' atau 'mahal'.",
-        "example":{
-            "jp":"わたしの<ruby>兄<rt>あに<\/rt><\/ruby>は<ruby>背<rt>せ<\/rt><\/ruby>が<ruby>高<rt>たか<\/rt><\/ruby>いです。",
-            "romaji":"Watashi no ani wa se ga takai desu.",
-            "id":"Kakak laki-laki saya badannya tinggi."
-        },
-        "level":"N5",
-        "bushu":"高",
-        "bushu_position":"kamae",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"安",
-        "onyomi":"あん (an)",
-        "kunyomi":"やす.い (yasu.i)",
-        "arti":"Murah, Aman, Damai",
-        "mnemonic":"Kanji ini menggambarkan seorang 'wanita' (女) di bawah sebuah 'atap' (宀). Ini melambangkan kondisi 'aman' dan 'damai' di rumah, yang juga berkonotasi pada kestabilan ekonomi atau harga 'murah'.",
-        "example":{
-            "jp":"この<ruby>店<rt>みせ<\/rt><\/ruby>のパンは<ruby>安<rt>やす<\/rt><\/ruby>くておいしいです。",
-            "romaji":"Kono mise no pan wa yasukute oishii desu.",
-            "id":"Roti di toko ini murah dan enak."
-        },
-        "level":"N5",
-        "bushu":"宀",
-        "bushu_position":"kanmuri",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"院",
-        "onyomi":"いん (in)",
-        "kunyomi":"-",
-        "arti":"Institusi",
-        "mnemonic":"Terdiri dari radikal 'bangunan' (阝) dan 'awal\/pokok' (元). Bayangkan sebuah bangunan yang menjadi pusat atau pokok dari suatu kegiatan, seperti 'rumah sakit' (病院) atau 'pascasarjana' (大学院).",
-        "example":{
-            "jp":"きのう、<ruby>病院<rt>びょういん<\/rt><\/ruby>へ<ruby>行<rt>い<\/rt><\/ruby>きました。",
-            "romaji":"Kinou, byouin e ikimashita.",
-            "id":"Kemarin saya pergi ke rumah sakit."
-        },
-        "level":"N5",
-        "bushu":"阝",
-        "bushu_position":"hen",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"病",
-        "onyomi":"びょう (byou)",
-        "kunyomi":"やまい (yamai)",
-        "arti":"Sakit",
-        "mnemonic":"Terdiri dari radikal 'sakit' (疒) yang terlihat seperti orang berbaring di tempat tidur, dan 'api' (丙, bentuk lain). Ini menggambarkan kondisi 'sakit' seperti demam yang panasnya seperti api.",
-        "example":{
-            "jp":"この<ruby>薬<rt>くすり<\/rt><\/ruby>は<ruby>病気<rt>びょうき<\/rt><\/ruby>に<ruby>良<rt>よ<\/rt><\/ruby>くききます。",
-            "romaji":"Kono kusuri wa byouki ni yoku kikimasu.",
-            "id":"Obat ini berkhasiat baik untuk penyakit."
-        },
-        "level":"N5",
-        "bushu":"疒",
-        "bushu_position":"tare",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"勉",
-        "onyomi":"べん (ben)",
-        "kunyomi":"つと.める (tsuto.meru)",
-        "arti":"Berusaha",
-        "mnemonic":"Terdiri dari 'menghindari' (免) dan 'kekuatan' (力). Untuk bisa 'menghindari' kebodohan, kita harus 'berusaha' sekuat 'tenaga'. Muncul dalam kata 勉強 (benkyou - belajar).",
-        "example":{
-            "jp":"<ruby>毎日<rt>まいにち<\/rt><\/ruby>3<ruby>時間<rt>じかん<\/rt><\/ruby><ruby>勉強<rt>べんきょう<\/rt><\/ruby>します。",
-            "romaji":"Mainichi san-jikan benkyou shimasu.",
-            "id":"Setiap hari saya belajar selama 3 jam."
-        },
-        "level":"N5",
-        "bushu":"力",
-        "bushu_position":"tsukuri",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"強",
-        "onyomi":"きょう (kyou), ごう (gou)",
-        "kunyomi":"つよ.い (tsuyo.i)",
-        "arti":"Kuat",
-        "mnemonic":"Terdiri dari 'busur panah' (弓) dan 'pribadi\/siku' (厶) serta 'serangga' (虫). Bayangkan seekor serangga yang bisa menarik busur panah, dia pasti sangat 'kuat'.",
-        "example":{
-            "jp":"<ruby>勉強<rt>べんきょう<\/rt><\/ruby>は<ruby>大切<rt>たいせつ<\/rt><\/ruby>です。",
-            "romaji":"Benkyou wa taisetsu desu.",
-            "id":"Belajar itu penting (usaha yang kuat)."
-        },
-        "level":"N5",
-        "bushu":"弓",
-        "bushu_position":"hen",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"映",
-        "onyomi":"えい (ei)",
-        "kunyomi":"うつ.る (utsu.ru)",
-        "arti":"Memproyeksikan, Tercermin",
-        "mnemonic":"Terdiri dari 'matahari' (日) dan 'tengah' (央). Ini menggambarkan cahaya matahari yang 'diproyeksikan' dari pusatnya, seperti dalam kata 'film' (映画 - gambar yang diproyeksikan).",
-        "example":{
-            "jp":"<ruby>映画館<rt>えいがか<\/rt><\/ruby>で<ruby>映画<rt>えいが<\/rt><\/ruby>を<ruby>見<rt>み<\/rt><\/ruby>ます。",
-            "romaji":"Eigakan de eiga o mimasu.",
-            "id":"Saya menonton film di bioskop."
-        },
-        "level":"N5",
-        "bushu":"日",
-        "bushu_position":"hen",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"親",
-        "onyomi":"しん (shin)",
-        "kunyomi":"おや (oya)",
-        "arti":"Orang Tua, Intim",
-        "mnemonic":"Terdiri dari 'berdiri' (立), 'pohon' (木), dan 'melihat' (見). Bayangkan seorang 'orang tua' yang 'berdiri' di atas 'pohon' untuk 'melihat' dan mengawasi anaknya. Menunjukkan kedekatan dan perhatian.",
-        "example":{
-            "jp":"わたしの<ruby>両親<rt>りょうしん<\/rt><\/ruby>は<ruby>大阪<rt>おおさか<\/rt><\/ruby>に<ruby>住<rt>す<\/rt><\/ruby>んでいます。",
-            "romaji":"Watashi no ryoushin wa Oosaka ni sunde imasu.",
-            "id":"Kedua orang tua saya tinggal di Osaka."
-        },
-        "level":"N5",
-        "bushu":"見",
-        "bushu_position":"tsukuri",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"兄",
-        "onyomi":"けい (kei), きょう (kyou)",
-        "kunyomi":"あに (ani)",
-        "arti":"Kakak Laki-Laki",
-        "mnemonic":"Kanji ini menggambarkan sebuah 'mulut' (口) di atas 'kaki manusia' (儿). Ini melambangkan orang yang berbicara dengan otoritas dan memimpin jalan, yaitu 'kakak laki-laki'.",
-        "example":{
-            "jp":"わたしたちは<ruby>兄弟<rt>きょうだい<\/rt><\/ruby>です。",
-            "romaji":"Watashitachi wa kyoudai desu.",
-            "id":"Kami adalah saudara (laki-laki)."
-        },
-        "level":"N5",
-        "bushu":"儿",
-        "bushu_position":"ashi",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"姉",
-        "onyomi":"し (shi)",
-        "kunyomi":"あね (ane)",
-        "arti":"Kakak Perempuan",
-        "mnemonic":"Terdiri dari radikal 'wanita' (女) dan 'pasar\/kota' (市). Bayangkan seorang wanita yang memimpin di pasar atau mengurus rumah tangga seperti mengurus kota, yaitu 'kakak perempuan'.",
-        "example":{
-            "jp":"わたしの<ruby>姉<rt>あね<\/rt><\/ruby>は<ruby>銀行員<rt>ぎんこういん<\/rt><\/ruby>です。",
-            "romaji":"Watashi no ane wa ginkouin desu.",
-            "id":"Kakak perempuan saya adalah pegawai bank."
-        },
-        "level":"N5",
-        "bushu":"女",
-        "bushu_position":"hen",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"弟",
-        "onyomi":"てい (tei), だい (dai)",
-        "kunyomi":"おとうと (otouto)",
-        "arti":"Adik Laki-Laki",
-        "mnemonic":"Kanji ini menggambarkan seutas tali yang diikatkan secara berurutan pada sebuah tiang. Ini melambangkan 'urutan' atau 'tingkatan', dan dalam keluarga, dia adalah yang datang setelahnya, yaitu 'adik laki-laki'.",
-        "example":{
-            "jp":"<ruby>弟<rt>おとうと<\/rt><\/ruby>はまだ<ruby>学生<rt>がくせい<\/rt><\/ruby>です。",
-            "romaji":"Otouto wa mada gakusei desu.",
-            "id":"Adik laki-laki saya masih seorang pelajar."
-        },
-        "level":"N5",
-        "bushu":"弓",
-        "bushu_position":"kamae",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"妹",
-        "onyomi":"まい (mai)",
-        "kunyomi":"いもうと (imouto)",
-        "arti":"Adik Perempuan",
-        "mnemonic":"Terdiri dari radikal 'wanita' (女) dan 'belum' (未). Ini melambangkan seorang wanita yang 'belum' dewasa, yaitu 'adik perempuan'.",
-        "example":{
-            "jp":"わたしには<ruby>妹<rt>いもうと<\/rt><\/ruby>が一人います。",
-            "romaji":"Watashi ni wa imouto ga hitori imasu.",
-            "id":"Saya punya seorang adik perempuan."
-        },
-        "level":"N5",
-        "bushu":"女",
-        "bushu_position":"hen",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"待",
-        "onyomi":"たい (tai)",
-        "kunyomi":"ま.つ (ma.tsu)",
-        "arti":"Menunggu",
-        "mnemonic":"Terdiri dari radikal 'langkah' (彳) dan 'kuil' (寺). Bayangkan Anda melangkahkan kaki ke kuil, lalu 'menunggu' giliran untuk berdoa.",
-        "example":{
-            "jp":"ここでちょっと<ruby>待<rt>ま<\/rt><\/ruby>ってください。",
-            "romaji":"Koko de chotto matte kudasai.",
-            "id":"Tolong tunggu sebentar di sini."
-        },
-        "level":"N5",
-        "bushu":"彳",
-        "bushu_position":"hen",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"持",
-        "onyomi":"じ (ji)",
-        "kunyomi":"も.つ (mo.tsu)",
-        "arti":"Membawa, Memegang",
-        "mnemonic":"Terdiri dari radikal 'tangan' (扌) dan 'kuil' (寺). Bayangkan Anda 'memegang' atau 'membawa' persembahan dengan tangan ke kuil.",
-        "example":{
-            "jp":"にもつを<ruby>持<rt>も<\/rt><\/ruby>ちましょうか。",
-            "romaji":"Nimotsu o mochimashou ka.",
-            "id":"Perlukah saya bawakan barang bawaan Anda?"
-        },
-        "level":"N5",
-        "bushu":"扌",
-        "bushu_position":"hen",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"始",
-        "onyomi":"し (shi)",
-        "kunyomi":"はじ.める (haji.meru)",
-        "arti":"Mulai",
-        "mnemonic":"Terdiri dari radikal 'wanita' (女) dan 'panggung' (台). Bayangkan seorang wanita naik ke atas panggung untuk 'memulai' sebuah pertunjukan.",
-        "example":{
-            "jp":"さあ、<ruby>始<rt>はじ<\/rt><\/ruby>めましょう。",
-            "romaji":"Saa, hajimemashou.",
-            "id":"Baiklah, ayo kita mulai."
-        },
-        "level":"N5",
-        "bushu":"女",
-        "bushu_position":"hen",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"終",
-        "onyomi":"しゅう (shuu)",
-        "kunyomi":"お.わる (o.waru)",
-        "arti":"Selesai, Berakhir",
-        "mnemonic":"Terdiri dari radikal 'benang' (糸) dan 'musim dingin' (冬). Bayangkan gulungan 'benang' yang 'berakhir' atau habis dipakai saat 'musim dingin' tiba.",
-        "example":{
-            "jp":"これで<ruby>授業<rt>じゅぎょう<\/rt><\/ruby>を<ruby>終<rt>お<\/rt><\/ruby>わります。",
-            "romaji":"Kore de jugyou o owarimasu.",
-            "id":"Dengan ini, pelajaran selesai."
-        },
-        "level":"N5",
-        "bushu":"糸",
-        "bushu_position":"hen",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"薬",
-        "onyomi":"やく (yaku)",
-        "kunyomi":"くすり (kusuri)",
-        "arti":"Obat",
-        "mnemonic":"Terdiri dari radikal 'tanaman' (艹) dan 'mudah\/senang' (楽). Ini melambangkan 'tanaman' yang membuat tubuh menjadi 'mudah' atau 'senang' kembali, yaitu 'obat'.",
-        "example":{
-            "jp":"この<ruby>薬<rt>くすり<\/rt><\/ruby>は<ruby>一日<rt>いちにち<\/rt><\/ruby><ruby>三回<rt>さんかい<\/rt><\/ruby><ruby>飲<rt>の<\/rt><\/ruby>んでください。",
-            "romaji":"Kono kusuri wa ichinichi sankai nonde kudasai.",
-            "id":"Tolong minum obat ini tiga kali sehari."
-        },
-        "level":"N5",
-        "bushu":"艹",
-        "bushu_position":"kanmuri",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"方",
-        "onyomi":"ほう (hou)",
-        "kunyomi":"かた (kata)",
-        "arti":"Arah, Cara, Orang (sopan)",
-        "mnemonic":"Kanji ini aslinya adalah piktograf dari bajak sawah, yang digunakan untuk menentukan 'arah' saat membajak. Dari situ berkembang arti 'cara' melakukan sesuatu, dan juga bentuk sopan untuk 'orang' (kata).",
-        "example":{
-            "jp":"あちらの<ruby>方<rt>かた<\/rt><\/ruby>はどなたですか。",
-            "romaji":"Achira no kata wa donata desu ka.",
-            "id":"Siapakah orang yang di sebelah sana itu (sopan)?"
-        },
-        "level":"N5",
-        "bushu":"方",
-        "bushu_position":"kamae",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"旅",
-        "onyomi":"りょ (ryo)",
-        "kunyomi":"たび (tabi)",
-        "arti":"Perjalanan, Wisata",
-        "mnemonic":"Terdiri dari radikal 'bendera' (方) dan 'orang-orang' (从). Bayangkan sekelompok orang yang melakukan 'perjalanan' bersama di bawah satu panji atau bendera.",
-        "example":{
-            "jp":"<ruby>旅行<rt>りょこう<\/rt><\/ruby>の<ruby>準備<rt>じゅんび<\/rt><\/ruby>をします。",
-            "romaji":"Ryokou no junbi o shimasu.",
-            "id":"Saya akan melakukan persiapan untuk perjalanan."
-        },
-        "level":"N5",
-        "bushu":"方",
-        "bushu_position":"hen",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"教",
-        "onyomi":"きょう (kyou)",
-        "kunyomi":"おし.える (oshi.eru)",
-        "arti":"Mengajar",
-        "mnemonic":"Terdiri dari 'berbakti' (孝) dan radikal 'memukul dengan tongkat' (攵). Ini melambangkan proses 'mengajar' di mana seorang guru dengan sabar (berbakti) membimbing muridnya (terkadang dengan tongkat).",
-        "example":{
-            "jp":"<ruby>教室<rt>きょうしつ<\/rt><\/ruby>に<ruby>学生<rt>がくせい<\/rt><\/ruby>がいます。",
-            "romaji":"Kyoushitsu ni gakusei ga imasu.",
-            "id":"Ada siswa di dalam ruang kelas (ruang mengajar)."
-        },
-        "level":"N5",
-        "bushu":"攵",
-        "bushu_position":"tsukuri",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"室",
-        "onyomi":"しつ (shitsu)",
-        "kunyomi":"むろ (muro)",
-        "arti":"Ruangan",
-        "mnemonic":"Terdiri dari 'atap' (宀) dan 'sampai\/tiba' (至). Sebuah 'ruangan' adalah tempat di mana kita 'tiba' di bawah 'atap' sebuah bangunan.",
-        "example":{
-            "jp":"<ruby>会議室<rt>かいぎしつ<\/rt><\/ruby>はどこですか。",
-            "romaji":"Kaigishitsu wa doko desu ka.",
-            "id":"Di mana ruang rapat?"
-        },
-        "level":"N5",
-        "bushu":"宀",
-        "bushu_position":"kanmuri",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"漢",
-        "onyomi":"かん (kan)",
-        "kunyomi":"-",
-        "arti":"Han, Tiongkok",
-        "mnemonic":"Terdiri dari radikal 'air' (氵) dan komponen fonetik (漢). Berasal dari nama Sungai Han dan Dinasti Han di Tiongkok. Paling sering muncul dalam kata 'Kanji'.",
-        "example":{
-            "jp":"<ruby>漢字<rt>かんじ<\/rt><\/ruby>の<ruby>勉強<rt>べんきょう<\/rt><\/ruby>は<ruby>難<rt>むずか<\/rt><\/ruby>しいですが、おもしろいです。",
-            "romaji":"Kanji no benkyou wa muzukashii desu ga, omoshiroi desu.",
-            "id":"Belajar Kanji itu sulit, tetapi menarik."
-        },
-        "level":"N5",
-        "bushu":"氵",
-        "bushu_position":"hen",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"四",
-        "onyomi":"し (shi)",
-        "kunyomi":"よん (yon), よ (yo)",
-        "arti":"Empat",
-        "mnemonic":"Kanji ini terlihat seperti sebuah kotak (口) dengan 'kaki' (儿) di dalamnya. Bayangkan sebuah ruangan atau tirai jendela yang memiliki empat sudut. Anda bisa mengingatnya sebagai 'tirai dengan empat sudut'.",
-        "example":{
-            "jp":"この<ruby>部屋<rt>へや<\/rt><\/ruby>にはいすが<ruby>四<rt>よっ<\/rt><\/ruby>つあります。",
-            "romaji":"Kono heya niwa isu ga yottsu arimasu.",
-            "id":"Di ruangan ini ada empat kursi."
-        },
-        "level":"N5",
-        "bushu":"囗",
-        "bushu_position":"kamae",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"五",
-        "onyomi":"ご (go)",
-        "kunyomi":"いつ (itsu)",
-        "arti":"Lima",
-        "mnemonic":"Bentuknya sedikit kompleks. Bayangkan angka romawi V (lima) yang 'terjebak' di antara dua garis. Atau, bayangkan lima jari tangan Anda yang disilangkan.",
-        "example":{
-            "jp":"<ruby>五<rt>ご<\/rt><\/ruby><ruby>時<rt>じ<\/rt><\/ruby>に<ruby>帰<rt>かえ<\/rt><\/ruby>ります。",
-            "romaji":"Go-ji ni kaerimasu.",
-            "id":"Saya akan pulang jam lima."
-        },
-        "level":"N5",
-        "bushu":"二",
-        "bushu_position":"kamae",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"六",
-        "onyomi":"ろく (roku)",
-        "kunyomi":"む (mu)",
-        "arti":"Enam",
-        "mnemonic":"Kanji ini terlihat seperti orang yang berdiri dengan dua tangan dan dua kaki, ditambah 'topi' di atasnya. Total ada enam 'titik': kepala, topi, dua tangan, dua kaki. Atau, bayangkan kata 'rokok' yang mirip 'roku', lalu pikirkan peringatan bahaya di bungkus rokok yang memiliki enam sisi (jika dibayangkan sebagai balok).",
-        "example":{
-            "jp":"えんぴつを<ruby>六<rt>ろっ<\/rt><\/ruby><ruby>本<rt>ぽん<\/rt><\/ruby>ください。",
-            "romaji":"Enpitsu o roppon kudasai.",
-            "id":"Tolong beri saya enam buah pensil."
-        },
-        "level":"N5",
-        "bushu":"八",
-        "bushu_position":"kanmuri",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"七",
-        "onyomi":"しち (shichi)",
-        "kunyomi":"なな (nana)",
-        "arti":"Tujuh",
-        "mnemonic":"Bentuknya sangat mirip angka 7 yang diputar atau terbalik. Ini adalah cara termudah untuk mengingatnya. Garis horizontal memotong garis vertikal yang sedikit melengkung.",
-        "example":{
-            "jp":"<ruby>七<rt>しち<\/rt><\/ruby><ruby>月<rt>がつ<\/rt><\/ruby>は<ruby>暑<rt>あつ<\/rt><\/ruby>いです。",
-            "romaji":"Shichi-gatsu wa atsui desu.",
-            "id":"Bulan Juli (bulan ketujuh) itu panas."
-        },
-        "level":"N5",
-        "bushu":"一",
-        "bushu_position":"kamae",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"八",
-        "onyomi":"はち (hachi)",
-        "kunyomi":"や (ya)",
-        "arti":"Delapan",
-        "mnemonic":"Terdiri dari dua goresan yang terbuka ke bawah, melambangkan sesuatu yang menyebar atau tak terbatas. Bentuknya mirip atap rumah atau gunung Fuji. Bayangkan 'HACHI-HATCHI' saat bersin, suaranya menyebar ke mana-mana, seperti bentuk kanji ini.",
-        "example":{
-            "jp":"わたしは<ruby>八<rt>はっ<\/rt><\/ruby>さいです。",
-            "romaji":"Watashi wa hassai desu.",
-            "id":"Umur saya delapan tahun."
-        },
-        "level":"N5",
-        "bushu":"八",
-        "bushu_position":"kamae",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"肉",
-        "onyomi":"にく (niku)",
-        "kunyomi":"-",
-        "arti":"Daging",
-        "mnemonic":"Piktograf ini terlihat seperti sepotong 'daging' dengan serat-seratnya. Bayangkan dua orang (人) di dalam sebuah bingkai (冂), berbagi sepotong daging.",
-        "example":{
-            "jp":"わたしは<ruby>鶏肉<rt>とりにく<\/rt><\/ruby>が<ruby>好<rt>す<\/rt><\/ruby>きです。",
-            "romaji":"Watashi wa toriniku ga suki desu.",
-            "id":"Saya suka daging ayam."
-        },
-        "level":"N5",
-        "bushu":"肉",
-        "bushu_position":"kamae",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"茶",
-        "onyomi":"ちゃ (cha), さ (sa)",
-        "kunyomi":"-",
-        "arti":"Teh",
-        "mnemonic":"Terdiri dari radikal 'tumbuhan' (艹) di atas. Bagian bawahnya menggambarkan 'pohon' (木) dan 'orang' (人). Bayangkan seseorang yang memetik daun 'teh' dari tanaman untuk diseduh.",
-        "example":{
-            "jp":"お<ruby>茶<rt>ちゃ<\/rt><\/ruby>を<ruby>飲<rt>の<\/rt><\/ruby>みましょう。",
-            "romaji":"O-cha o nomimashou.",
-            "id":"Ayo kita minum teh."
-        },
-        "level":"N5",
-        "bushu":"艹",
-        "bushu_position":"kanmuri",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"飯",
-        "onyomi":"はん (han)",
-        "kunyomi":"めし (meshi)",
-        "arti":"Nasi (matang), Makanan",
-        "mnemonic":"Terdiri dari radikal 'makanan' (食) dan 'berlawanan' (反) sebagai komponen fonetik. Ini adalah kanji utama untuk 'makanan' atau 'nasi matang' dalam banyak kata.",
-        "example":{
-            "jp":"ご<ruby>飯<rt>はん<\/rt><\/ruby>を<ruby>食<rt>た<\/rt><\/ruby>べましたか。",
-            "romaji":"Gohan o tabemashita ka.",
-            "id":"Apakah kamu sudah makan (nasi)?"
-        },
-        "level":"N5",
-        "bushu":"食",
-        "bushu_position":"hen",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"牛",
-        "onyomi":"ぎゅう (gyuu)",
-        "kunyomi":"うし (ushi)",
-        "arti":"Sapi",
-        "mnemonic":"Ini adalah piktograf sederhana dari kepala 'sapi' jika dilihat dari depan, dengan dua tanduk yang menonjol ke atas.",
-        "example":{
-            "jp":"<ruby>牛肉<rt>ぎゅうにく<\/rt><\/ruby>と<ruby>豚肉<rt>ぶたにく<\/rt><\/ruby>とどちらが<ruby>好<rt>す<\/rt><\/ruby>きですか。",
-            "romaji":"Gyuuniku to butaniku to dochira ga suki desu ka.",
-            "id":"Antara daging sapi dan daging babi, mana yang lebih kamu suka?"
-        },
-        "level":"N5",
-        "bushu":"牛",
-        "bushu_position":"hen",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"鳥",
-        "onyomi":"ちょう (chou)",
-        "kunyomi":"とり (tori)",
-        "arti":"Burung",
-        "mnemonic":"Piktograf ini menggambarkan seekor 'burung' yang sedang bertengger, dengan jambul, mata, badan, dan ekornya yang terlihat jelas.",
-        "example":{
-            "jp":"あそこにきれいな<ruby>鳥<rt>とり<\/rt><\/ruby>がいます。",
-            "romaji":"Asoko ni kirei na tori ga imasu.",
-            "id":"Di sana ada burung yang cantik."
-        },
-        "level":"N5",
-        "bushu":"鳥",
-        "bushu_position":"kamae",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"字",
-        "onyomi":"じ (ji)",
-        "kunyomi":"あざ (aza)",
-        "arti":"Huruf, Karakter",
-        "mnemonic":"Terdiri dari 'atap' (宀) dan 'anak' (子). Bayangkan seorang 'anak' di bawah 'atap' (sekolah) sedang belajar 'huruf' dan 'karakter'.",
-        "example":{
-            "jp":"きれいな<ruby>字<rt>じ<\/rt><\/ruby>を<ruby>書<rt>か<\/rt><\/ruby>きますね。",
-            "romaji":"Kirei na ji o kakimasu ne.",
-            "id":"Anda menulis huruf yang indah ya."
-        },
-        "level":"N5",
-        "bushu":"子",
-        "bushu_position":"tsukuri",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"犬",
-        "onyomi":"けん (ken)",
-        "kunyomi":"いぬ (inu)",
-        "arti":"Anjing",
-        "mnemonic":"Piktograf ini adalah bentuk yang disederhanakan dari seekor 'anjing'. Bayangkan kanji 大 (besar) dengan satu titik di atasnya, seperti seekor anjing besar yang setia.",
-        "example":{
-            "jp":"わたしは<ruby>犬<rt>いぬ<\/rt><\/ruby>を<ruby>飼<rt>か<\/rt><\/ruby>っています。",
-            "romaji":"Watashi wa inu o katte imasu.",
-            "id":"Saya memelihara anjing."
-        },
-        "level":"N5",
-        "bushu":"犬",
-        "bushu_position":"kamae",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"寺",
-        "onyomi":"じ (ji)",
-        "kunyomi":"てら (tera)",
-        "arti":"Kuil",
-        "mnemonic":"Terdiri dari 'tanah' (土) dan 'inci' (寸). Bayangkan sebuah 'kuil' yang dibangun di atas tanah suci yang diukur dengan sangat teliti.",
-        "example":{
-            "jp":"この<ruby>町<rt>まち<\/rt><\/ruby>に<ruby>古<rt>ふる<\/rt><\/ruby>いお<ruby>寺<rt>てら<\/rt><\/ruby>があります。",
-            "romaji":"Kono machi ni furui o-tera ga arimasu.",
-            "id":"Di kota ini ada kuil tua."
-        },
-        "level":"N5",
-        "bushu":"寸",
-        "bushu_position":"tsukuri",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"道",
-        "onyomi":"どう (dou), とう (tou)",
-        "kunyomi":"みち (michi)",
-        "arti":"Jalan, Cara",
-        "mnemonic":"Terdiri dari radikal 'gerakan' (辶) dan 'kepala' (首). Ini melambangkan 'kepala' yang memimpin 'gerakan' ke suatu arah, yaitu menelusuri 'jalan' atau 'cara'.",
-        "example":{
-            "jp":"この<ruby>道<rt>みち<\/rt><\/ruby>をまっすぐ<ruby>行<rt>い<\/rt><\/ruby>ってください。",
-            "romaji":"Kono michi o massugu itte kudasai.",
-            "id":"Tolong lurus terus di jalan ini."
-        },
-        "level":"N5",
-        "bushu":"辶",
-        "bushu_position":"nyou",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"田",
-        "onyomi":"でん (den)",
-        "kunyomi":"た (ta)",
-        "arti":"Sawah",
-        "mnemonic":"Ini adalah piktograf yang sangat jelas dari sepetak 'sawah' yang dibagi menjadi empat bagian untuk ditanami.",
-        "example":{
-            "jp":"わたしの<ruby>国<rt>くに<\/rt><\/ruby>には<ruby>田<rt>た<\/rt><\/ruby>んぼがたくさんあります。",
-            "romaji":"Watashi no kuni ni wa tanbo ga takusan arimasu.",
-            "id":"Di negara saya ada banyak sawah."
-        },
-        "level":"N5",
-        "bushu":"田",
-        "bushu_position":"kamae",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"山",
-        "onyomi":"さん (san)",
-        "kunyomi":"やま (yama)",
-        "arti":"Gunung",
-        "mnemonic":"Ini adalah piktograf yang sangat jelas, menggambarkan sebuah 'gunung' dengan tiga puncaknya yang menonjol.",
-        "example":{
-            "jp":"<ruby>富士山<rt>ふじさん<\/rt><\/ruby>に<ruby>登<rt>のぼ<\/rt><\/ruby>ったことがありますか。",
-            "romaji":"Fujisan ni nobotta koto ga arimasu ka.",
-            "id":"Apakah Anda pernah mendaki Gunung Fuji?"
-        },
-        "level":"N5",
-        "bushu":"山",
-        "bushu_position":"kamae",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"川",
-        "onyomi":"せん (sen)",
-        "kunyomi":"かわ (kawa)",
-        "arti":"Sungai",
-        "mnemonic":"Ini adalah piktograf dari aliran 'sungai' dengan tiga garis vertikal yang melambangkan air yang mengalir.",
-        "example":{
-            "jp":"この<ruby>川<rt>かわ<\/rt><\/ruby>はきれいです。",
-            "romaji":"Kono kawa wa kirei desu.",
-            "id":"Sungai ini bersih."
-        },
-        "level":"N5",
-        "bushu":"川",
-        "bushu_position":"kamae",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"元",
-        "onyomi":"げん (gen), がん (gan)",
-        "kunyomi":"もと (moto)",
-        "arti":"Asal, Sumber",
-        "mnemonic":"Kanji ini menggambarkan 'kaki manusia' (儿) di bawah 'dua' (二). Ini melambangkan fondasi atau 'asal' dari mana sesuatu dimulai.",
-        "example":{
-            "jp":"お<ruby>元気<rt>げんき<\/rt><\/ruby>ですか。",
-            "romaji":"O-genki desu ka.",
-            "id":"Apa kabar? (Apakah sumber energi Anda baik?)"
-        },
-        "level":"N5",
-        "bushu":"二",
-        "bushu_position":"kamae",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"花",
-        "onyomi":"か (ka)",
-        "kunyomi":"はな (hana)",
-        "arti":"Bunga",
-        "mnemonic":"Terdiri dari radikal 'tumbuhan' (艹) dan 'perubahan' (化). Ini melambangkan 'perubahan' dari kuncup menjadi 'bunga' pada sebuah 'tumbuhan'.",
-        "example":{
-            "jp":"<ruby>庭<rt>にわ<\/rt><\/ruby>にきれいな<ruby>花<rt>はな<\/rt><\/ruby>がさいています。",
-            "romaji":"Niwa ni kirei na hana ga saite imasu.",
-            "id":"Di taman sedang mekar bunga yang cantik."
-        },
-        "level":"N5",
-        "bushu":"艹",
-        "bushu_position":"kanmuri",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"空",
-        "onyomi":"くう (kuu)",
-        "kunyomi":"そら (sora), あ.く (a.ku)",
-        "arti":"Langit, Kosong",
-        "mnemonic":"Terdiri dari 'lubang' (穴) dan 'pekerjaan' (工). Bayangkan seorang pekerja yang membuat lubang di atap untuk melihat 'langit' atau membuat ruangan menjadi 'kosong'.",
-        "example":{
-            "jp":"<ruby>空<rt>そら<\/rt><\/ruby>に<ruby>飛行機<rt>ひこうき<\/rt><\/ruby>がとんでいます。",
-            "romaji":"Sora ni hikouki ga tonde imasu.",
-            "id":"Di langit ada pesawat yang sedang terbang."
-        },
-        "level":"N5",
-        "bushu":"穴",
-        "bushu_position":"kanmuri",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"男",
-        "onyomi":"だん (dan), なん (nan)",
-        "kunyomi":"おとこ (otoko)",
-        "arti":"Laki-laki",
-        "mnemonic":"Kanji ini terdiri dari 'sawah' (田) dan 'kekuatan' (力). Secara tradisional, 'kekuatan' yang bekerja di 'sawah' adalah 'laki-laki'.",
-        "example":{
-            "jp":"あの<ruby>男<rt>おとこ<\/rt><\/ruby>の<ruby>人<rt>ひと<\/rt><\/ruby>はだれですか。",
-            "romaji":"Ano otoko no hito wa dare desu ka.",
-            "id":"Siapakah laki-laki itu?"
-        },
-        "level":"N5",
-        "bushu":"口",
-        "bushu_position":"tsukuri",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"女",
-        "onyomi":"じょ (jo), にょ (nyo)",
-        "kunyomi":"おんな (onna), め (me)",
-        "arti":"Perempuan",
-        "mnemonic":"Ini adalah piktograf dari seorang 'perempuan' yang sedang duduk atau berlutut dengan anggun, menunjukkan postur yang feminin.",
-        "example":{
-            "jp":"このクラスには<ruby>女<rt>おんな<\/rt><\/ruby>の<ruby>子<rt>こ<\/rt><\/ruby>が<ruby>多<rt>おお<\/rt><\/ruby>いです。",
-            "romaji":"Kono kurasu ni wa onna no ko ga ooi desu.",
-            "id":"Di kelas ini ada banyak anak perempuan."
-        },
-        "level":"N5",
-        "bushu":"女",
-        "bushu_position":"kamae",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"子",
-        "onyomi":"し (shi), す (su)",
-        "kunyomi":"こ (ko)",
-        "arti":"Anak",
-        "mnemonic":"Ini adalah piktograf dari seorang 'anak' atau bayi yang dibedong, dengan kepala besar dan tangan yang terentang.",
-        "example":{
-            "jp":"わたしには<ruby>子<rt>こ<\/rt><\/ruby>どもが<ruby>二人<rt>ふたり<\/rt><\/ruby>います。",
-            "romaji":"Watashi ni wa kodomo ga futari imasu.",
-            "id":"Saya punya dua orang anak."
-        },
-        "level":"N5",
-        "bushu":"子",
-        "bushu_position":"tsukuri",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"父",
-        "onyomi":"ふ (fu)",
-        "kunyomi":"ちち (chichi)",
-        "arti":"Ayah",
-        "mnemonic":"Piktograf ini menggambarkan dua tangan yang sedang memegang sebuah kapak batu, melambangkan figur 'ayah' sebagai pekerja atau figur otoritas dalam keluarga.",
-        "example":{
-            "jp":"わたしの<ruby>父<rt>ちち<\/rt><\/ruby>は<ruby>医者<rt>いしゃ<\/rt><\/ruby>です。",
-            "romaji":"Watashi no chichi wa isha desu.",
-            "id":"Ayah saya adalah seorang dokter."
-        },
-        "level":"N5",
-        "bushu":"父",
-        "bushu_position":"kamae",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"母",
-        "onyomi":"ぼ (bo)",
-        "kunyomi":"はは (haha)",
-        "arti":"Ibu",
-        "mnemonic":"Kanji ini berasal dari kanji 'perempuan' (女) dengan tambahan dua titik yang melambangkan payudara, sebagai simbol dari seorang 'ibu' yang menyusui.",
-        "example":{
-            "jp":"<ruby>母<rt>はは<\/rt><\/ruby>の<ruby>日<rt>ひ<\/rt><\/ruby>にプレゼントをあげます。",
-            "romaji":"Haha no hi ni purezento o agemasu.",
-            "id":"Saya akan memberikan hadiah pada hari Ibu."
-        },
-        "level":"N5",
-        "bushu":"女",
-        "bushu_position":"hen",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"九",
-        "onyomi":"きゅう (kyuu), く (ku)",
-        "kunyomi":"ここの (kokono)",
-        "arti":"Sembilan",
-        "mnemonic":"Kanji ini terlihat seperti naga kecil atau cacing yang melengkung. Bayangkan cerita tentang 'sembilan' naga. Atau, perhatikan lekukannya yang mirip angka 9 yang ditulis dengan gaya kaligrafi.",
-        "example":{
-            "jp":"わたしの<ruby>電話番号<rt>でんわばんごう<\/rt><\/ruby>に<ruby>九<rt>きゅう<\/rt><\/ruby>があります。",
-            "romaji":"Watashi no denwa bangou ni kyuu ga arimasu.",
-            "id":"Di nomor telepon saya ada angka sembilan."
-        },
-        "level":"N5",
-        "bushu":"九",
-        "bushu_position":"kamae",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"十",
-        "onyomi":"じゅう (juu)",
-        "kunyomi":"とお (too)",
-        "arti":"Sepuluh",
-        "mnemonic":"Kanji ini berbentuk seperti tanda tambah (+). Pikirkan saja 5 + 5 = 10, atau bayangkan ini adalah tiang vertikal (seperti angka 1) dan garis horizontal (seperti angka 0 yang dipipihkan) yang digabung menjadi 'sepuluh'.",
-        "example":{
-            "jp":"このクラスに<ruby>学生<rt>がくせい<\/rt><\/ruby>が<ruby>十<rt>じゅう<\/rt><\/ruby><ruby>人<rt>にん<\/rt><\/ruby>います。",
-            "romaji":"Kono kurasu ni gakusei ga juu-nin imasu.",
-            "id":"Di kelas ini ada sepuluh orang siswa."
-        },
-        "level":"N5",
-        "bushu":"十",
-        "bushu_position":"kamae",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"百",
-        "onyomi":"ひゃく (hyaku)",
-        "kunyomi":"-",
-        "arti":"Seratus",
-        "mnemonic":"Kanji ini terdiri dari 'satu' (一) di atas 'putih' (白). Bayangkan Anda punya 'seratus' (百) lembar kertas 'putih' (白), tapi satu (一) lembar hilang, jadi ada goresan di atasnya. 'Seratus' kurang satu.",
-        "example":{
-            "jp":"この<ruby>本<rt>ほん<\/rt><\/ruby>は<ruby>三百<rt>さんびゃく<\/rt><\/ruby>円です。",
-            "romaji":"Kono hon wa sanbyaku-en desu.",
-            "id":"Buku ini harganya tiga ratus yen."
-        },
-        "level":"N5",
-        "bushu":"白",
-        "bushu_position":"kamae",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"千",
-        "onyomi":"せん (sen)",
-        "kunyomi":"ち (chi)",
-        "arti":"Seribu",
-        "mnemonic":"Terlihat seperti gabungan dari kanji 'sepuluh' (十) dan sebuah 'orang' (人) di atasnya. Bayangkan satu 'orang' yang memiliki kekuatan 'sepuluh' kali lipat, hingga menjadi 'seribu'. Atau, 'SEN-dirian punya uang seribu'.",
-        "example":{
-            "jp":"このかばんは<ruby>八<rt>はっ<\/rt><\/ruby><ruby>千<rt>せん<\/rt><\/ruby>円です。",
-            "romaji":"Kono kaban wa hassen-en desu.",
-            "id":"Tas ini harganya delapan ribu yen."
-        },
-        "level":"N5",
-        "bushu":"千",
-        "bushu_position":"kamae",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"円",
-        "onyomi":"えん (en)",
-        "kunyomi":"まる (maru)",
-        "arti":"Yen, Lingkaran",
-        "mnemonic":"Kanji ini terlihat seperti kotak yang melambangkan gerbang atau negara, dengan permata (玉 tanpa satu titik) di dalamnya. Ini melambangkan 'mata uang' atau 'harta' sebuah negara. Bentuknya yang cenderung kotak juga mengingatkan pada bentuk koin kuno.",
-        "example":{
-            "jp":"コーヒーは<ruby>五百円<rt>ごひゃくえん<\/rt><\/ruby>です。",
-            "romaji":"Koohii wa gohyaku-en desu.",
-            "id":"Kopi harganya lima ratus yen."
-        },
-        "level":"N5",
-        "bushu":"囗",
-        "bushu_position":"kamae",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"万",
-        "onyomi":"まん (man), ばん (ban)",
-        "kunyomi":"-",
-        "arti":"Sepuluh Ribu",
-        "mnemonic":"Kanji ini terdiri dari 'satu' (一) dan sebuah bentuk yang melambangkan 'banyak'. Bayangkan satu orang yang tangannya terentang luas, mencoba memegang 'sepuluh ribu' koin. Ingat saja 'MAN-tap, punya uang sepuluh ribu'.",
-        "example":{
-            "jp":"このカメラは<ruby>一万円<rt>いちまんえん<\/rt><\/ruby>です。",
-            "romaji":"Kono kamera wa ichi-man en desu.",
-            "id":"Kamera ini harganya sepuluh ribu yen."
-        },
-        "level":"N5",
-        "bushu":"十",
-        "bushu_position":"kamae",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"口",
-        "onyomi":"こう (kou), く (ku)",
-        "kunyomi":"くち (kuchi)",
-        "arti":"Mulut",
-        "mnemonic":"Ini adalah salah satu piktograf paling sederhana. Bentuknya adalah gambaran langsung dari sebuah 'mulut' (口) yang sedang terbuka. Mudah diingat sebagai kotak.",
-        "example":{
-            "jp":"<ruby>人口<rt>じんこう<\/rt><\/ruby>はどのぐらいですか。",
-            "romaji":"Jinkou wa donogurai desu ka.",
-            "id":"Berapa jumlah penduduknya? (Mulut orang)"
-        },
-        "level":"N5",
-        "bushu":"口",
-        "bushu_position":"kamae",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"目",
-        "onyomi":"もく (moku)",
-        "kunyomi":"め (me)",
-        "arti":"Mata",
-        "mnemonic":"Ini adalah piktograf dari 'mata' (目) yang dilihat dari samping atau digambar secara vertikal. Kotak luarnya adalah kelopak mata, dan dua garis di dalamnya adalah pupil atau bola mata.",
-        "example":{
-            "jp":"これは<ruby>何<rt>なん<\/rt><\/ruby>番目<rt>ばんめ<\/rt><\/ruby>ですか。",
-            "romaji":"Kore wa nan-banme desu ka.",
-            "id":"Ini urutan keberapa?"
-        },
-        "level":"N5",
-        "bushu":"目",
-        "bushu_position":"kamae",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"月",
-        "onyomi":"げつ (getsu), がつ (gatsu)",
-        "kunyomi":"つき (tsuki)",
-        "arti":"Bulan, Bulan (kalender)",
-        "mnemonic":"Ini adalah piktograf dari bulan sabit. Bayangkan bentuk bulan sabit (月) dengan dua awan tipis yang melintas di depannya. Digunakan untuk hari Senin (月曜日) dan nama-nama bulan (e.g., 一月).",
-        "example":{
-            "jp":"<ruby>今日<rt>きょう<\/rt><\/ruby>は<ruby>何月<rt>なんがつ<\/rt><\/ruby><ruby>何日<rt>なんにち<\/rt><\/ruby>ですか。",
-            "romaji":"Kyou wa nan-gatsu nan-nichi desu ka.",
-            "id":"Hari ini tanggal berapa bulan apa?"
-        },
-        "level":"N5",
-        "bushu":"月",
-        "bushu_position":"kamae",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"火",
-        "onyomi":"か (ka)",
-        "kunyomi":"ひ (hi)",
-        "arti":"Api",
-        "mnemonic":"Ini adalah piktograf dari 'api' (火) yang sedang berkobar. Garis tengahnya adalah batang kayu, dan dua percikan di sampingnya adalah kobaran api yang menyala ke atas.",
-        "example":{
-            "jp":"<ruby>火曜日<rt>かようび<\/rt><\/ruby>にテストがあります。",
-            "romaji":"Kayoubi ni tesuto ga arimasu.",
-            "id":"Ada ujian pada hari Selasa."
-        },
-        "level":"N5",
-        "bushu":"火",
-        "bushu_position":"kamae",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"水",
-        "onyomi":"すい (sui)",
-        "kunyomi":"みず (mizu)",
-        "arti":"Air",
-        "mnemonic":"Kanji ini adalah piktograf dari aliran air. Garis vertikal di tengah adalah aliran utama, dan goresan di sampingnya adalah percikan atau riak 'air' (水). Bayangkan suara air 'SUIIIR'.",
-        "example":{
-            "jp":"<ruby>水<rt>みず<\/rt><\/ruby>を<ruby>飲<rt>の<\/rt><\/ruby>みます。",
-            "romaji":"Mizu o nomimasu.",
-            "id":"Saya minum air."
-        },
-        "level":"N5",
-        "bushu":"水",
-        "bushu_position":"kamae",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"木",
-        "onyomi":"もく (moku), ぼく (boku)",
-        "kunyomi":"き (ki)",
-        "arti":"Pohon, Kayu",
-        "mnemonic":"Ini adalah piktograf sederhana dari sebuah 'pohon' (木). Garis horizontal adalah dahan-dahannya dan garis vertikal ke bawah adalah batang dan akarnya. Sangat mudah dikenali.",
-        "example":{
-            "jp":"<ruby>木曜日<rt>もくようび<\/rt><\/ruby>に<ruby>会<rt>あ<\/rt><\/ruby>いましょう。",
-            "romaji":"Mokuyoubi ni aimashou.",
-            "id":"Ayo bertemu di hari Kamis."
-        },
-        "level":"N5",
-        "bushu":"木",
-        "bushu_position":"kamae",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"金",
-        "onyomi":"きん (kin)",
-        "kunyomi":"かね (kane)",
-        "arti":"Emas, Uang, Logam",
-        "mnemonic":"Bayangkan sebuah atap (人) di atas gunung (土) yang di dalamnya terkandung dua bongkahan 'emas' (点々). Kanji ini melambangkan kekayaan. 'KANE' adalah kata untuk uang.",
-        "example":{
-            "jp":"お<ruby>金<rt>かね<\/rt><\/ruby>がありますか。",
-            "romaji":"Okane ga arimasu ka.",
-            "id":"Apakah kamu punya uang?"
-        },
-        "level":"N5",
-        "bushu":"金",
-        "bushu_position":"kamae",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"土",
-        "onyomi":"ど (do), と (to)",
-        "kunyomi":"つち (tsuchi)",
-        "arti":"Tanah, Bumi",
-        "mnemonic":"Piktograf ini menggambarkan gundukan 'tanah' (土) atau tanaman yang tumbuh dari tanah. Garis bawah adalah permukaan bumi, dan bentuk tambah di atasnya adalah gundukan atau tanaman itu sendiri.",
-        "example":{
-            "jp":"<ruby>土曜日<rt>どようび<\/rt><\/ruby>は<ruby>休<rt>やす<\/rt><\/ruby>みです。",
-            "romaji":"Doyoubi wa yasumi desu.",
-            "id":"Hari Sabtu adalah hari libur."
-        },
-        "level":"N5",
-        "bushu":"土",
-        "bushu_position":"kamae",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"本",
-        "onyomi":"ほん (hon)",
-        "kunyomi":"もと (moto)",
-        "arti":"Buku, Asal",
-        "mnemonic":"Kanji ini adalah 'pohon' (木) dengan satu goresan horizontal di bagian bawah. Goresan ini menunjuk ke 'akar' atau 'asal' (もと, moto). Karena kertas terbuat dari pohon, kanji ini juga berarti 'buku' (ほん, hon).",
-        "example":{
-            "jp":"これは<ruby>日本語<rt>にほんご<\/rt><\/ruby>の<ruby>本<rt>ほん<\/rt><\/ruby>です。",
-            "romaji":"Kore wa nihongo no hon desu.",
-            "id":"Ini adalah buku bahasa Jepang."
-        },
-        "level":"N5",
-        "bushu":"木",
-        "bushu_position":"kamae",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"年",
-        "onyomi":"ねん (nen)",
-        "kunyomi":"とし (toshi)",
-        "arti":"Tahun",
-        "mnemonic":"Kanji ini terlihat seperti seseorang (人) yang membungkuk untuk memanen padi (禾). Panen raya terjadi setahun sekali, menandakan siklus 'tahun'. Ingat 'NEN-ekku sudah berumur 70 tahun'.",
-        "example":{
-            "jp":"わたしは1998<ruby>年<rt>ねん<\/rt><\/ruby>に<ruby>生<rt>う<\/rt><\/ruby>まれました。",
-            "romaji":"Watashi wa sen-kyuuhyaku-kyuujuu-hachi-nen ni umaremashita.",
-            "id":"Saya lahir pada tahun 1998."
-        },
-        "level":"N5",
-        "bushu":"禾",
-        "bushu_position":"kamae",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"私",
-        "onyomi":"し (shi)",
-        "kunyomi":"わたくし (watakushi), わたし (watashi)",
-        "arti":"Saya, Privat",
-        "mnemonic":"Kanji ini terdiri dari 'padi' (禾) dan 'siku' atau 'diri sendiri' (ム). Ini melambangkan jatah padi pribadi seseorang, jadi berarti 'milikku' atau 'saya'. 'Watashi' adalah cara umum untuk mengatakan 'Saya'.",
-        "example":{
-            "jp":"<ruby>私<rt>わたし<\/rt><\/ruby>の<ruby>名前<rt>なまえ<\/rt><\/ruby>はアンナです。",
-            "romaji":"Watashi no namae wa Anna desu.",
-            "id":"Nama saya adalah Anna."
-        },
-        "level":"N5",
-        "bushu":"禾",
-        "bushu_position":"kamae",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"先",
-        "onyomi":"せん (sen)",
-        "kunyomi":"さき (saki)",
-        "arti":"Dahulu, Depan, Sebelumnya",
-        "mnemonic":"Terdiri dari gambar 'tanah' (土) dan 'kaki manusia' (儿) di atasnya. Ini menggambarkan seseorang yang melangkah maju atau berjalan 'di depan' yang lain. Ingat 'Sensei' (先生), orang yang lahir 'terdahulu'.",
-        "example":{
-            "jp":"<ruby>先生<rt>せんせい<\/rt><\/ruby>、<ruby>先<rt>さき<\/rt><\/ruby>に<ruby>失礼<rt>しつれい<\/rt><\/ruby>します。",
-            "romaji":"Sensei, saki ni shitsurei shimasu.",
-            "id":"Guru, saya permisi duluan."
-        },
-        "level":"N5",
-        "bushu":"土",
-        "bushu_position":"kamae",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"生",
-        "onyomi":"せい (sei), しょう (shou)",
-        "kunyomi":"い.きる (i.kiru), う.まれる (u.mareru)",
-        "arti":"Hidup, Lahir",
-        "mnemonic":"Ini adalah piktograf dari sebuah tanaman yang tumbuh dari 'tanah' (土). Ini melambangkan 'kehidupan', 'kelahiran', dan pertumbuhan. Muncul dalam kata 'sensei' (先生) dan 'gakusei' (学生).",
-        "example":{
-            "jp":"<ruby>学生<rt>がくせい<\/rt><\/ruby>は<ruby>何人<rt>なんにん<\/rt><\/ruby>いますか。",
-            "romaji":"Gakusei wa nan-nin imasu ka.",
-            "id":"Ada berapa banyak siswa? (Orang yang hidup untuk belajar)"
-        },
-        "level":"N5",
-        "bushu":"生",
-        "bushu_position":"kamae",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"学",
-        "onyomi":"がく (gaku)",
-        "kunyomi":"まな.ぶ (mana.bu)",
-        "arti":"Belajar",
-        "mnemonic":"Kanji ini memiliki atap (宀) di atasnya, di bawahnya ada simbol 'X X' dan 'anak' (子). Bayangkan seorang 'anak' di bawah 'atap' (sekolah) sedang 'belajar' hal-hal yang rumit (X X).",
-        "example":{
-            "jp":"わたしは<ruby>大学<rt>だいがく<\/rt><\/ruby>で<ruby>日本語<rt>にほんご<\/rt><\/ruby>を<ruby>学<rt>まな<\/rt><\/ruby>んでいます。",
-            "romaji":"Watashi wa daigaku de nihongo o manande imasu.",
-            "id":"Saya belajar bahasa Jepang di universitas."
-        },
-        "level":"N5",
-        "bushu":"宀",
-        "bushu_position":"kanmuri",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"上",
-        "onyomi":"じょう (jou)",
-        "kunyomi":"うえ (ue), あ.がる (a.garu)",
-        "arti":"Atas, Naik",
-        "mnemonic":"Ini adalah piktograf sederhana. Garis horizontal bawah adalah sebuah permukaan (misalnya, meja), dan garis vertikal serta garis pendek di atasnya menunjukkan posisi 'di atas' permukaan tersebut.",
-        "example":{
-            "jp":"<ruby>机<rt>つくえ<\/rt><\/ruby>の<ruby>上<rt>うえ<\/rt><\/ruby>に<ruby>本<rt>ほん<\/rt><\/ruby>があります。",
-            "romaji":"Tsukue no ue ni hon ga arimasu.",
-            "id":"Ada buku di atas meja."
-        },
-        "level":"N5",
-        "bushu":"一",
-        "bushu_position":"kamae",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"下",
-        "onyomi":"か (ka), げ (ge)",
-        "kunyomi":"した (shita), さ.がる (sa.garu)",
-        "arti":"Bawah, Turun",
-        "mnemonic":"Kebalikan dari 上 (ue). Garis horizontal atas adalah permukaan, dan garis vertikal serta titik di bawahnya menunjukkan posisi 'di bawah' permukaan tersebut.",
-        "example":{
-            "jp":"<ruby>椅子<rt>いす<\/rt><\/ruby>の<ruby>下<rt>した<\/rt><\/ruby>に<ruby>猫<rt>ねこ<\/rt><\/ruby>がいます。",
-            "romaji":"Isu no shita ni neko ga imasu.",
-            "id":"Ada kucing di bawah kursi."
-        },
-        "level":"N5",
-        "bushu":"一",
-        "bushu_position":"kamae",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"中",
-        "onyomi":"ちゅう (chuu)",
-        "kunyomi":"なか (naka)",
-        "arti":"Dalam, Tengah",
-        "mnemonic":"Sebuah garis vertikal (丨) yang membelah sebuah 'mulut' atau 'kotak' (口) tepat di 'tengah'-nya.",
-        "example":{
-            "jp":"<ruby>箱<rt>はこ<\/rt><\/ruby>の<ruby>中<rt>なか<\/rt><\/ruby>に<ruby>何<rt>なに<\/rt><\/ruby>がありますか。",
-            "romaji":"Hako no naka ni nani ga arimasu ka.",
-            "id":"Di dalam kotak ada apa?"
-        },
-        "level":"N5",
-        "bushu":"口",
-        "bushu_position":"kamae",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"大",
-        "onyomi":"だい (dai), たい (tai)",
-        "kunyomi":"おお.きい (oo.kii)",
-        "arti":"Besar",
-        "mnemonic":"Piktograf ini menggambarkan sosok 'orang' (人) yang merentangkan kedua tangannya lebar-lebar untuk menunjukkan betapa 'besar' sesuatu itu.",
-        "example":{
-            "jp":"わたしは<ruby>大学<rt>だいがく<\/rt><\/ruby>の<ruby>先生<rt>せんせい<\/rt><\/ruby>です。",
-            "romaji":"Watashi wa daigaku no sensei desu.",
-            "id":"Saya adalah dosen universitas (sekolah besar)."
-        },
-        "level":"N5",
-        "bushu":"大",
-        "bushu_position":"kamae",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"小",
-        "onyomi":"しょう (shou)",
-        "kunyomi":"ちい.さい (chii.sai), こ (ko)",
-        "arti":"Kecil",
-        "mnemonic":"Kanji ini terlihat seperti kanji 大 (besar) yang 'terbelah' atau 'terbagi' menjadi bagian-bagian yang lebih 'kecil' oleh garis di tengah.",
-        "example":{
-            "jp":"わたしは<ruby>小<rt>ちい<\/rt><\/ruby>さい<ruby>家<rt>いえ<\/rt><\/ruby>に<ruby>住<rt>す<\/rt><\/ruby>んでいます。",
-            "romaji":"Watashi wa chiisai ie ni sunde imasu.",
-            "id":"Saya tinggal di rumah yang kecil."
-        },
-        "level":"N5",
-        "bushu":"小",
-        "bushu_position":"kamae",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"話",
-        "onyomi":"わ (wa)",
-        "kunyomi":"はな(す) (hanasu), はなし (hanashi)",
-        "arti":"Berbicara, Cerita",
-        "mnemonic":"Bagian kiri adalah 'kata', kanan seperti lidah yang bergerak. Berbicara dengan kata-kata.",
-        "example":{
-            "jp":"<ruby>日本語<rt>にほんご<\/rt><\/ruby>で<ruby>話<rt>はな<\/rt><\/ruby>します。",
-            "romaji":"Nihongo de hanashimasu.",
-            "id":"Saya berbicara dalam bahasa Jepang."
-        },
-        "bushu": "言",
-        "bushu_position":"kamae",
-        "level":"N5",
-        "visual_bridge":"Bayangkan seseorang berbicara dengan lidah yang bergerak dan kata-kata keluar dari mulut."
-    },
-    {
-        "kanji":"語",
-        "onyomi":"ご (go)",
-        "kunyomi":"かた(る) (kataru)",
-        "arti":"Bahasa, Kata",
-        "mnemonic":"Bagian kiri adalah 'kata', kanan seperti lima mulut yang berbicara bersama.",
-        "example":{
-            "jp":"<ruby>英語<rt>えいご<\/rt><\/ruby>を<ruby>勉強<rt>べんきょう<\/rt><\/ruby>します。",
-            "romaji":"Eigo o benkyou shimasu.",
-            "id":"Saya belajar bahasa Inggris."
-        },
-        "bushu":"言",
-        "bushu_position":"kamae",
-        "level":"N5",
-        "visual_bridge":"Bayangkan banyak mulut berbicara, membentuk sebuah bahasa."
-    },
-    {
-        "kanji":"名",
-        "onyomi":"めい (mei), みょう (myou)",
-        "kunyomi":"な (na)",
-        "arti":"Nama, Terkenal",
-        "mnemonic":"Kanji ini gabungan dari 'malam' (夕) dan 'mulut' (口). Bayangkan di 'malam' hari yang gelap, Anda tidak bisa melihat wajah orang, jadi Anda harus memanggil 'nama' mereka dengan 'mulut' untuk identifikasi.",
-        "example":{
-            "jp":"お<ruby>名前<rt>なまえ<\/rt><\/ruby>はなんですか。",
-            "romaji":"O-namae wa nan desu ka.",
-            "id":"Siapa nama Anda?"
-        },
-        "level":"N5",
-        "bushu":"夕",
-        "bushu_position":"kamae",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"時",
-        "onyomi":"じ (ji)",
-        "kunyomi":"とき (toki)",
-        "arti":"Waktu, Jam",
-        "mnemonic":"Terdiri dari 'matahari' (日) di sebelah kiri dan 'kuil' (寺) di sebelah kanan. Pada zaman dahulu, orang mengukur 'waktu' dengan melihat posisi 'matahari' relatif terhadap 'kuil' atau bangunan lain.",
-        "example":{
-            "jp":"<ruby>時間<rt>じかん<\/rt><\/ruby>がありませんから、<ruby>急<rt>いそ<\/rt><\/ruby>ぎましょう。",
-            "romaji":"Jikan ga arimasen kara, isogimashou.",
-            "id":"Karena tidak ada waktu, ayo cepat."
-        },
-        "level":"N5",
-        "bushu":"日",
-        "bushu_position":"hen",
-        "visual_bridge":null
-    },
-    {
-        "kanji":"間",
-        "onyomi":"かん (kan), けん (ken)",
-        "kunyomi":"あいだ (aida), ま (ma)",
-        "arti":"Antara, Selang Waktu",
-        "mnemonic":"Kanji ini menggambarkan 'matahari' (日) atau 'bulan' (月) yang terlihat dari celah 'gerbang' (門). Ini melambangkan 'ruang' atau 'waktu' di 'antara' dua pilar gerbang.",
-        "example":{
-            "jp":"ぎんこうとゆうびんきょくの<ruby>間<rt>あいだ<\/rt><\/ruby>にスーパーがあります。",
-            "romaji":"Ginkou to yuubinkyoku no aida ni suupaa ga arimasu.",
-            "id":"Ada supermarket di antara bank dan kantor pos."
-        },
-        "level":"N5",
-        "bushu":"門",
-        "bushu_position":"kamae",
-        "visual_bridge":null
+        "kanji": "一",
+        "onyomi": "いち (ichi), いつ (itsu)",
+        "kunyomi": "ひと (hito)",
+        "arti": "Satu",
+        "mnemonic": "Kanji ini adalah yang paling dasar, hanya satu garis horizontal (一). Bayangkan Anda sedang menghitung dan membuat satu goresan di kertas untuk menandai angka 'satu'. Tidak ada yang lebih sederhana dari ini.",
+        "example": {
+            "jp": "これは<ruby>一つ<rt>ひとつ</rt></ruby>いくらですか。",
+            "romaji": "Kore wa hitotsu ikura desu ka.",
+            "id": "Berapa harga untuk satu ini?"
+        },
+        "level": "N5",
+        "bushu": [
+            "一"
+        ],
+        "bushu_position": "kamae",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "二",
+        "onyomi": "に (ni)",
+        "kunyomi": "ふた (futa)",
+        "arti": "Dua",
+        "mnemonic": "Terdiri dari dua garis horizontal (二). Garis atas sedikit lebih pendek dari yang bawah. Bayangkan ini adalah tanda sama dengan (=) yang sedikit miring, mewakili keseimbangan antara dua hal.",
+        "example": {
+            "jp": "そこに<ruby>猫<rt>ねこ</rt></ruby>が<ruby>二<rt>に</rt></ruby>ひきいます。",
+            "romaji": "Soko ni neko ga ni-hiki imasu.",
+            "id": "Di sana ada dua ekor kucing."
+        },
+        "level": "N5",
+        "bushu": [
+            "二"
+        ],
+        "bushu_position": "kamae",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "三",
+        "onyomi": "さん (san)",
+        "kunyomi": "み (mi)",
+        "arti": "Tiga",
+        "mnemonic": "Terdiri dari tiga garis horizontal (三). Sama seperti kanji satu dan dua, ini adalah representasi langsung dari jumlahnya. Bayangkan tiga benda yang ditumpuk.",
+        "example": {
+            "jp": "<ruby>三<rt>さん</rt></ruby><ruby>月<rt>がつ</rt></ruby>に<ruby>日本<rt>にほん</rt></ruby>へ<ruby>行<rt>い</rt></ruby>きます。",
+            "romaji": "San-gatsu ni nihon e ikimasu.",
+            "id": "Saya akan pergi ke Jepang pada bulan Maret (bulan ketiga)."
+        },
+        "level": "N5",
+        "bushu": [
+            "一"
+        ],
+        "bushu_position": "kamae",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "人",
+        "onyomi": "じん (jin), にん (nin)",
+        "kunyomi": "ひと (hito)",
+        "arti": "Orang",
+        "mnemonic": "Bentuknya menyerupai siluet seseorang yang sedang berdiri dan melangkah dengan dua kaki. Kaki kiri dan kanan. Ini adalah gambaran paling sederhana dari 'orang'.",
+        "example": {
+            "jp": "あの<ruby>人<rt>ひと</rt></ruby>は<ruby>日本人<rt>にほんじん</rt></ruby>です。",
+            "romaji": "Ano hito wa nihonjin desu.",
+            "id": "Orang itu adalah orang Jepang."
+        },
+        "level": "N5",
+        "bushu": [
+            "人"
+        ],
+        "bushu_position": "kamae",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "日",
+        "onyomi": "にち (nichi), じつ (jitsu)",
+        "kunyomi": "ひ (hi), -び (-bi), -か (-ka)",
+        "arti": "Hari, Matahari",
+        "mnemonic": "Kanji ini terlihat seperti jendela (口) dengan garis di tengahnya. Bayangkan Anda melihat matahari (garis tengah) melalui jendela. Ini melambangkan 'hari' atau 'matahari'.",
+        "example": {
+            "jp": "<ruby>今日<rt>きょう</rt></ruby>は<ruby>日曜日<rt>にちようび</rt></ruby>です。",
+            "romaji": "Kyou wa nichiyoubi desu.",
+            "id": "Hari ini adalah hari Minggu."
+        },
+        "level": "N5",
+        "bushu": [
+            "日"
+        ],
+        "bushu_position": "kamae",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "半",
+        "onyomi": "はん (han)",
+        "kunyomi": "なか.ば (naka.ba)",
+        "arti": "Setengah",
+        "mnemonic": "Kanji ini terlihat seperti kanji 'sapi' (牛) yang dibelah dua secara vertikal. Bayangkan seekor sapi yang dibagi menjadi dua bagian yang sama besar, atau 'setengah-setengah'.",
+        "example": {
+            "jp": "<ruby>今<rt>いま</rt></ruby>、<ruby>九時半<rt>くじはん</rt></ruby>です。",
+            "romaji": "Ima, ku-ji han desu.",
+            "id": "Sekarang jam setengah sepuluh (9:30)."
+        },
+        "level": "N5",
+        "bushu": [
+            "十"
+        ],
+        "bushu_position": "tare",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "分",
+        "onyomi": "ふん (fun), ぷん (pun), ぶん (bun)",
+        "kunyomi": "わ.ける (wa.keru), わ.かる (wa.karu)",
+        "arti": "Menit, Membagi, Mengerti",
+        "mnemonic": "Terdiri dari 'delapan' (八) dan 'pedang' (刀). Ini menggambarkan aksi 'membagi' sesuatu dengan pedang menjadi delapan (banyak) bagian. Dari 'membagi' informasi, muncul arti 'mengerti'.",
+        "example": {
+            "jp": "この<ruby>仕事<rt>しごと</rt></ruby>は<ruby>十分<rt>じゅっぷん</rt></ruby>で<ruby>終<rt>お</rt></ruby>わります。",
+            "romaji": "Kono shigoto wa juppun de owarimasu.",
+            "id": "Pekerjaan ini akan selesai dalam 10 menit."
+        },
+        "level": "N5",
+        "bushu": [
+            "刀"
+        ],
+        "bushu_position": "tsukuri",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "国",
+        "onyomi": "こく (koku)",
+        "kunyomi": "くに (kuni)",
+        "arti": "Negara",
+        "mnemonic": "Kanji ini adalah sebuah 'perbatasan' (囗) yang mengelilingi 'permata' (玉). Ini melambangkan 'harta' atau 'raja' di dalam sebuah wilayah, yang merupakan sebuah 'negara'.",
+        "example": {
+            "jp": "お<ruby>国<rt>くに</rt></ruby>はどちらですか。",
+            "romaji": "O-kuni wa dochira desu ka.",
+            "id": "Negara Anda di mana?"
+        },
+        "level": "N5",
+        "bushu": [
+            "囗"
+        ],
+        "bushu_position": "kamae",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "車",
+        "onyomi": "しゃ (sha)",
+        "kunyomi": "くるま (kuruma)",
+        "arti": "Mobil, Kendaraan",
+        "mnemonic": "Ini adalah piktograf dari sebuah 'gerobak' atau 'kereta' jika dilihat dari atas. Kotak di tengah adalah badan gerobak, garis vertikal adalah porosnya, dan garis horizontal atas dan bawah adalah rodanya.",
+        "example": {
+            "jp": "<ruby>電車<rt>でんしゃ</rt></ruby>で<ruby>会社<rt>かいしゃ</rt></ruby>へ<ruby>行<rt>い</rt></ruby>きます。",
+            "romaji": "Densha de kaisha e ikimasu.",
+            "id": "Saya pergi ke kantor dengan kereta listrik."
+        },
+        "level": "N5",
+        "bushu": [
+            "車"
+        ],
+        "bushu_position": "kamae",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "何",
+        "onyomi": "か (ka)",
+        "kunyomi": "なに (nani), なん (nan)",
+        "arti": "Apa",
+        "mnemonic": "Terdiri dari radikal 'orang' (亻) dan sebuah gambar yang melambangkan 'beban' di punggungnya. Bayangkan seseorang bertanya-tanya, 'beban APA ini?' atau 'APA yang sedang dia bawa?'.",
+        "example": {
+            "jp": "これは<ruby>何<rt>なん</rt></ruby>ですか。",
+            "romaji": "Kore wa nan desu ka.",
+            "id": "Ini apa?"
+        },
+        "level": "N5",
+        "bushu": [
+            "亻"
+        ],
+        "bushu_position": "hen",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "天",
+        "onyomi": "てん (ten)",
+        "kunyomi": "あめ (ame), あま (ama)",
+        "arti": "Langit, Surga",
+        "mnemonic": "Kanji ini terlihat seperti kanji 'orang besar' (大) dengan satu garis di atasnya. Bayangkan 'langit' yang maha luas berada di atas segalanya, bahkan di atas orang yang paling besar sekalipun.",
+        "example": {
+            "jp": "いいお<ruby>天気<rt>てんき</rt></ruby>ですね。",
+            "romaji": "Ii o-tenki desu ne.",
+            "id": "Cuacanya bagus ya."
+        },
+        "level": "N5",
+        "bushu": [
+            "大"
+        ],
+        "bushu_position": "kamae",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "気",
+        "onyomi": "き (ki), け (ke)",
+        "kunyomi": "-",
+        "arti": "Roh, Energi, Perasaan",
+        "mnemonic": "Kanji ini menggambarkan 'uap' (气) yang naik dari 'nasi' (米) yang sedang dimasak. Uap ini melambangkan 'energi', 'spirit', atau 'atmosfer' yang tak terlihat namun bisa dirasakan.",
+        "example": {
+            "jp": "わたしは<ruby>元気<rt>げんき</rt></ruby>です。",
+            "romaji": "Watashi wa genki desu.",
+            "id": "Saya sehat/baik-baik saja."
+        },
+        "level": "N5",
+        "bushu": [
+            "气"
+        ],
+        "bushu_position": "kamae",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "雨",
+        "onyomi": "う (u)",
+        "kunyomi": "あめ (ame)",
+        "arti": "Hujan",
+        "mnemonic": "Ini adalah piktograf. Garis horizontal di atas adalah awan, dan empat titik di dalamnya adalah tetesan 'hujan' yang jatuh dari langit.",
+        "example": {
+            "jp": "<ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>っています。",
+            "romaji": "Ame ga futte imasu.",
+            "id": "Hujan sedang turun."
+        },
+        "level": "N5",
+        "bushu": [
+            "雨"
+        ],
+        "bushu_position": "kamae",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "電",
+        "onyomi": "でん (den)",
+        "kunyomi": "-",
+        "arti": "Listrik",
+        "mnemonic": "Gabungan dari 'hujan' (雨) dan sebuah bentuk yang melambangkan 'petir' atau 'sambaran' (乚). Petir yang muncul saat hujan adalah manifestasi alam dari 'listrik'.",
+        "example": {
+            "jp": "<ruby>電話<rt>でんわ</rt></ruby>をかけてもいいですか。",
+            "romaji": "Denwa o kakete mo ii desu ka.",
+            "id": "Bolehkah saya menelepon?"
+        },
+        "level": "N5",
+        "bushu": [
+            "雨"
+        ],
+        "bushu_position": "kanmuri",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "食",
+        "onyomi": "しょく (shoku), じき (jiki)",
+        "kunyomi": "く.う (ku.u), た.べる (ta.beru)",
+        "arti": "Makan",
+        "mnemonic": "Kanji ini terlihat seperti atap (人) di atas sebuah wadah (良, bentuk sederhana). Bayangkan seseorang di bawah atap sedang menikmati makanan 'baik' (良) dari wadahnya. Ini adalah aksi 'makan'.",
+        "example": {
+            "jp": "この<ruby>食堂<rt>しょくどう</rt></ruby>は<ruby>安<rt>やす</rt></ruby>くて、おいしいです。",
+            "romaji": "Kono shokudou wa yasukute, oishii desu.",
+            "id": "Kantin ini murah dan enak."
+        },
+        "level": "N5",
+        "bushu": [
+            "食"
+        ],
+        "bushu_position": "kamae",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "飲",
+        "onyomi": "いん (in)",
+        "kunyomi": "の.む (no.mu)",
+        "arti": "Minum",
+        "mnemonic": "Terdiri dari radikal 'makan/makanan' (食) dan 'kekurangan' (欠). Bayangkan saat Anda 'kekurangan' cairan, Anda harus 'minum' sesuatu yang bisa 'dimakan' (dalam arti luas, dikonsumsi).",
+        "example": {
+            "jp": "なにか<ruby>飲<rt>の</rt></ruby>み<ruby>物<rt>もの</rt></ruby>はいかがですか。",
+            "romaji": "Nani ka nomimono wa ikaga desu ka.",
+            "id": "Bagaimana kalau minum sesuatu?"
+        },
+        "level": "N5",
+        "bushu": [
+            "食"
+        ],
+        "bushu_position": "hen",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "会",
+        "onyomi": "かい (kai), え (e)",
+        "kunyomi": "あ.う (a.u)",
+        "arti": "Bertemu, Perkumpulan",
+        "mnemonic": "Kanji ini menggambarkan sebuah 'topi' (人) di atas 'awan' atau 'wadah' (云). Bayangkan orang-orang berkumpul di bawah satu atap atau payung untuk 'bertemu' dan membentuk 'perkumpulan'.",
+        "example": {
+            "jp": "あした、<ruby>会議<rt>かいぎ</rt></ruby>があります。",
+            "romaji": "Ashita, kaigi ga arimasu.",
+            "id": "Besok ada rapat (pertemuan untuk diskusi)."
+        },
+        "level": "N5",
+        "bushu": [
+            "人"
+        ],
+        "bushu_position": "kanmuri",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "聞",
+        "onyomi": "ぶん (bun), もん (mon)",
+        "kunyomi": "き.く (ki.ku)",
+        "arti": "Mendengar, Bertanya",
+        "mnemonic": "Ini adalah piktograf yang sangat jelas: sebuah 'telinga' (耳) di dalam sebuah 'gerbang' (門). Bayangkan Anda menempelkan telinga ke gerbang untuk 'mendengar' apa yang terjadi di dalam.",
+        "example": {
+            "jp": "この<ruby>新聞<rt>しんぶん</rt></ruby>を<ruby>読<rt>よ</rt></ruby>みましたか。",
+            "romaji": "Kono shinbun o yomimashita ka.",
+            "id": "Apakah kamu sudah membaca koran ini? (Koran berisi hal-hal yang baru didengar)."
+        },
+        "level": "N5",
+        "bushu": [
+            "門"
+        ],
+        "bushu_position": "kamae",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "読",
+        "onyomi": "どく (doku), とく (toku)",
+        "kunyomi": "よ.む (yo.mu)",
+        "arti": "Membaca",
+        "mnemonic": "Terdiri dari radikal 'kata-kata' (言) dan 'menjual' (売). Bayangkan seorang penjual yang 'membaca' daftar barang dagangannya dengan lantang untuk menarik pembeli.",
+        "example": {
+            "jp": "<ruby>読書<rt>どくしょ</rt></ruby>はわたしの<ruby>趣味<rt>しゅみ</rt></ruby>です。",
+            "romaji": "Dokusho wa watashi no shumi desu.",
+            "id": "Membaca buku adalah hobi saya."
+        },
+        "level": "N5",
+        "bushu": [
+            "言"
+        ],
+        "bushu_position": "hen",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "書",
+        "onyomi": "しょ (sho)",
+        "kunyomi": "か.く (ka.ku)",
+        "arti": "Menulis",
+        "mnemonic": "Kanji ini menggambarkan sebuah 'kuas' (聿, bentuk kuno) di atas 'matahari/hari' (日). Bayangkan seorang juru tulis yang 'menulis' catatan harian dengan kuas setiap hari.",
+        "example": {
+            "jp": "<ruby>図書館<rt>としょかん</rt></ruby>で<ruby>本<rt>ほん</rt></ruby>を<ruby>借<rt>か</rt></ruby>りました。",
+            "romaji": "Toshokan de hon o karimashita.",
+            "id": "Saya meminjam buku (benda tulisan) di perpustakaan."
+        },
+        "level": "N5",
+        "bushu": [
+            "曰"
+        ],
+        "bushu_position": "kanmuri",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "行",
+        "onyomi": "こう (kou), ぎょう (gyou)",
+        "kunyomi": "い.く (i.ku)",
+        "arti": "Pergi",
+        "mnemonic": "Kanji ini adalah piktograf dari sebuah 'persimpangan jalan'. Ini melambangkan perjalanan, barisan, atau aksi 'pergi' ke suatu tempat.",
+        "example": {
+            "jp": "<ruby>銀行<rt>ぎんこう</rt></ruby>へ<ruby>行<rt>い</rt></ruby>きます。",
+            "romaji": "Ginkou e ikimasu.",
+            "id": "Saya pergi ke bank."
+        },
+        "level": "N5",
+        "bushu": [
+            "行"
+        ],
+        "bushu_position": "kamae",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "来",
+        "onyomi": "らい (rai)",
+        "kunyomi": "く.る (ku.ru)",
+        "arti": "Datang",
+        "mnemonic": "Piktograf aslinya menggambarkan sebatang gandum, yang melambangkan panen yang 'datang' setiap tahun. Ini berevolusi menjadi arti 'datang' atau 'masa depan'.",
+        "example": {
+            "jp": "<ruby>来週<rt>らいしゅう</rt></ruby>、<ruby>友<rt>とも</rt></ruby>だちが<ruby>来<rt>き</rt></ruby>ます。",
+            "romaji": "Raishuu, tomodachi ga kimasu.",
+            "id": "Minggu depan, teman saya akan datang."
+        },
+        "level": "N5",
+        "bushu": [
+            "木"
+        ],
+        "bushu_position": "kamae",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "帰",
+        "onyomi": "き (ki)",
+        "kunyomi": "かえ.る (kae.ru)",
+        "arti": "Pulang, Kembali",
+        "mnemonic": "Terdiri dari radikal 'langkah kaki' (彳) dan sebuah bentuk kompleks yang mengandung 'sapu' (帚). Bayangkan setelah melangkah jauh, seseorang 'kembali' atau 'pulang' ke rumah untuk bersih-bersih.",
+        "example": {
+            "jp": "<ruby>毎日<rt>まいにち</rt></ruby><ruby>五時<rt>ごじ</rt></ruby>にうちへ<ruby>帰<rt>かえ</rt></ruby>ります。",
+            "romaji": "Mainichi go-ji ni uchi e kaerimasu.",
+            "id": "Setiap hari saya pulang ke rumah jam 5."
+        },
+        "level": "N5",
+        "bushu": [
+            "巾"
+        ],
+        "bushu_position": "tsukuri",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "見",
+        "onyomi": "けん (ken)",
+        "kunyomi": "み.る (mi.ru)",
+        "arti": "Melihat",
+        "mnemonic": "Kanji ini adalah sebuah 'mata' (目) besar yang ditopang oleh sepasang 'kaki' (儿). Bayangkan sebuah mata raksasa yang berjalan-jalan untuk 'melihat' dunia.",
+        "example": {
+            "jp": "きのう、おもしろい<ruby>映画<rt>えいが</rt></ruby>を<ruby>見<rt>み</rt></ruby>ました。",
+            "romaji": "Kinou, omoshiroi eiga o mimashita.",
+            "id": "Kemarin, saya menonton film yang menarik."
+        },
+        "level": "N5",
+        "bushu": [
+            "見"
+        ],
+        "bushu_position": "kamae",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "言",
+        "onyomi": "げん (gen), ごん (gon)",
+        "kunyomi": "い.う (i.u)",
+        "arti": "Berkata, Kata",
+        "mnemonic": "Piktograf ini menggambarkan sebuah 'mulut' (口) dengan sebuah 'lidah' atau garis di atasnya yang melambangkan suara atau 'kata' yang keluar. Ini adalah dasar dari 'berkata'.",
+        "example": {
+            "jp": "もう<ruby>一度<rt>いちど</rt></ruby><ruby>言<rt>い</rt></ruby>ってください。",
+            "romaji": "Mou ichido itte kudasai.",
+            "id": "Tolong katakan sekali lagi."
+        },
+        "level": "N5",
+        "bushu": [
+            "言"
+        ],
+        "bushu_position": "kamae",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "町",
+        "onyomi": "ちょう (chou)",
+        "kunyomi": "まち (machi)",
+        "arti": "Kota",
+        "mnemonic": "Kanji ini terdiri dari 'sawah' (田) dan 'paku jalan' (丁). Bayangkan sebuah 'kota' yang terbentuk dari area persawahan yang dihubungkan oleh jalan-jalan.",
+        "example": {
+            "jp": "この<ruby>町<rt>まち</rt></ruby>は<ruby>静<rt>しず</rt></ruby>かで、きれいです。",
+            "romaji": "Kono machi wa shizuka de, kirei desu.",
+            "id": "Kota ini tenang dan bersih."
+        },
+        "level": "N5",
+        "bushu": [
+            "田"
+        ],
+        "bushu_position": "hen",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "住",
+        "onyomi": "じゅう (juu)",
+        "kunyomi": "す.む (su.mu)",
+        "arti": "Tinggal",
+        "mnemonic": "Terdiri dari radikal 'orang' (亻) dan 'tuan' (主). Bayangkan seseorang yang 'tinggal' di suatu tempat sebagai tuan rumah atau sebagai bawahan dari seorang tuan.",
+        "example": {
+            "jp": "どこに<ruby>住<rt>す</rt></ruby>んでいますか。",
+            "romaji": "Doko ni sunde imasu ka.",
+            "id": "Di mana Anda tinggal?"
+        },
+        "level": "N5",
+        "bushu": [
+            "亻"
+        ],
+        "bushu_position": "hen",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "売",
+        "onyomi": "ばい (bai)",
+        "kunyomi": "う.る (u.ru)",
+        "arti": "Menjual",
+        "mnemonic": "Bagian atasnya mirip kanji 'samurai' (士). Bayangkan seorang samurai yang berkeliling untuk 'menjual' barang-barangnya. 'U-RUSAN jual beli'.",
+        "example": {
+            "jp": "えきのそばの<ruby>店<rt>みせ</rt></ruby>で<ruby>花<rt>はな</rt></ruby>を<ruby>売<rt>う</rt></ruby>っています。",
+            "romaji": "Eki no soba no mise de hana o utte imasu.",
+            "id": "Mereka menjual bunga di toko dekat stasiun."
+        },
+        "level": "N5",
+        "bushu": [
+            "士"
+        ],
+        "bushu_position": "kanmuri",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "立",
+        "onyomi": "りつ (ritsu)",
+        "kunyomi": "た.つ (ta.tsu)",
+        "arti": "Berdiri",
+        "mnemonic": "Ini adalah piktograf dari seseorang yang 'berdiri' tegak di atas tanah (garis horizontal). Sangat mudah untuk divisualisasikan.",
+        "example": {
+            "jp": "あそこに<ruby>立<rt>た</rt></ruby>っている<ruby>人<rt>ひと</rt></ruby>はだれですか。",
+            "romaji": "Asoko ni tatteiru hito wa dare desu ka.",
+            "id": "Siapa orang yang sedang berdiri di sana?"
+        },
+        "level": "N5",
+        "bushu": [
+            "立"
+        ],
+        "bushu_position": "kamae",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "員",
+        "onyomi": "いん (in)",
+        "kunyomi": "-",
+        "arti": "Anggota",
+        "mnemonic": "Terdiri dari 'mulut' (口) dan 'kerang' (貝) yang dulu digunakan sebagai uang. Bayangkan seorang 'anggota' (員) sebuah kelompok adalah 'mulut' yang harus diberi makan, yang berarti memerlukan 'uang'.",
+        "example": {
+            "jp": "IMCの<ruby>社員<rt>しゃいん</rt></ruby>はみんな<ruby>親切<rt>しんせつ</rt></ruby>です。",
+            "romaji": "IMC no shain wa minna shinsetsu desu.",
+            "id": "Semua karyawan (anggota perusahaan) IMC baik hati."
+        },
+        "level": "N5",
+        "bushu": [
+            "口"
+        ],
+        "bushu_position": "kanmuri",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "体",
+        "onyomi": "たい (tai), てい (tei)",
+        "kunyomi": "からだ (karada)",
+        "arti": "Badan, Tubuh",
+        "mnemonic": "Terdiri dari radikal 'orang' (亻) dan 'asal' (本). Ini melambangkan 'asal' dari seseorang, yaitu 'tubuh' atau 'badannya'.",
+        "example": {
+            "jp": "お<ruby>体<rt>からだ</rt></ruby>を<ruby>大事<rt>だいじ</rt></ruby>にしてください。",
+            "romaji": "O-karada o daiji ni shite kudasai.",
+            "id": "Tolong jaga baik-baik tubuh Anda."
+        },
+        "level": "N5",
+        "bushu": [
+            "亻"
+        ],
+        "bushu_position": "hen",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "頭",
+        "onyomi": "とう (tou), ず (zu)",
+        "kunyomi": "あたま (atama)",
+        "arti": "Kepala",
+        "mnemonic": "Terdiri dari 'kacang' (豆) dan 'halaman' (頁, yang sering berhubungan dengan kepala). Bayangkan 'kepala' Anda seperti kacang besar yang ada di atas leher.",
+        "example": {
+            "jp": "<ruby>彼<rt>かれ</rt></ruby>は<ruby>頭<rt>あたま</rt></ruby>がいいです。",
+            "romaji": "Kare wa atama ga ii desu.",
+            "id": "Dia (laki-laki) pintar (kepalanya bagus)."
+        },
+        "level": "N5",
+        "bushu": [
+            "頁"
+        ],
+        "bushu_position": "tsukuri",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "顔",
+        "onyomi": "がん (gan)",
+        "kunyomi": "かお (kao)",
+        "arti": "Wajah",
+        "mnemonic": "Kanji ini terdiri dari 'dahi' (彦, bentuk sederhananya) dan 'kepala' (頁). Gabungan dari semua fitur di 'kepala' membentuk 'wajah'.",
+        "example": {
+            "jp": "まいあさ、<ruby>顔<rt>かお</rt></ruby>をあらいます。",
+            "romaji": "Maiasa, kao o araimasu.",
+            "id": "Setiap pagi saya mencuci muka."
+        },
+        "level": "N5",
+        "bushu": [
+            "顔"
+        ],
+        "bushu_position": "kamae",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "高",
+        "onyomi": "こう (kou)",
+        "kunyomi": "たか.い (taka.i)",
+        "arti": "Tinggi, Mahal",
+        "mnemonic": "Ini adalah piktograf dari sebuah 'bangunan tinggi' dengan atap, jendela, dan dasar yang menjulang. Melambangkan sesuatu yang 'tinggi' atau 'mahal'.",
+        "example": {
+            "jp": "わたしの<ruby>兄<rt>あに</rt></ruby>は<ruby>背<rt>せ</rt></ruby>が<ruby>高<rt>たか</rt></ruby>いです。",
+            "romaji": "Watashi no ani wa se ga takai desu.",
+            "id": "Kakak laki-laki saya badannya tinggi."
+        },
+        "level": "N5",
+        "bushu": [
+            "高"
+        ],
+        "bushu_position": "kamae",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "安",
+        "onyomi": "あん (an)",
+        "kunyomi": "やす.い (yasu.i)",
+        "arti": "Murah, Aman, Damai",
+        "mnemonic": "Kanji ini menggambarkan seorang 'wanita' (女) di bawah sebuah 'atap' (宀). Ini melambangkan kondisi 'aman' dan 'damai' di rumah, yang juga berkonotasi pada kestabilan ekonomi atau harga 'murah'.",
+        "example": {
+            "jp": "この<ruby>店<rt>みせ</rt></ruby>のパンは<ruby>安<rt>やす</rt></ruby>くておいしいです。",
+            "romaji": "Kono mise no pan wa yasukute oishii desu.",
+            "id": "Roti di toko ini murah dan enak."
+        },
+        "level": "N5",
+        "bushu": [
+            "宀"
+        ],
+        "bushu_position": "kanmuri",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "院",
+        "onyomi": "いん (in)",
+        "kunyomi": "-",
+        "arti": "Institusi",
+        "mnemonic": "Terdiri dari radikal 'bangunan' (阝) dan 'awal/pokok' (元). Bayangkan sebuah bangunan yang menjadi pusat atau pokok dari suatu kegiatan, seperti 'rumah sakit' (病院) atau 'pascasarjana' (大学院).",
+        "example": {
+            "jp": "きのう、<ruby>病院<rt>びょういん</rt></ruby>へ<ruby>行<rt>い</rt></ruby>きました。",
+            "romaji": "Kinou, byouin e ikimashita.",
+            "id": "Kemarin saya pergi ke rumah sakit."
+        },
+        "level": "N5",
+        "bushu": [
+            "阝"
+        ],
+        "bushu_position": "hen",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "病",
+        "onyomi": "びょう (byou)",
+        "kunyomi": "やまい (yamai)",
+        "arti": "Sakit",
+        "mnemonic": "Terdiri dari radikal 'sakit' (疒) yang terlihat seperti orang berbaring di tempat tidur, dan 'api' (丙, bentuk lain). Ini menggambarkan kondisi 'sakit' seperti demam yang panasnya seperti api.",
+        "example": {
+            "jp": "この<ruby>薬<rt>くすり</rt></ruby>は<ruby>病気<rt>びょうき</rt></ruby>に<ruby>良<rt>よ</rt></ruby>くききます。",
+            "romaji": "Kono kusuri wa byouki ni yoku kikimasu.",
+            "id": "Obat ini berkhasiat baik untuk penyakit."
+        },
+        "level": "N5",
+        "bushu": [
+            "疒"
+        ],
+        "bushu_position": "tare",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "勉",
+        "onyomi": "べん (ben)",
+        "kunyomi": "つと.める (tsuto.meru)",
+        "arti": "Berusaha",
+        "mnemonic": "Terdiri dari 'menghindari' (免) dan 'kekuatan' (力). Untuk bisa 'menghindari' kebodohan, kita harus 'berusaha' sekuat 'tenaga'. Muncul dalam kata 勉強 (benkyou - belajar).",
+        "example": {
+            "jp": "<ruby>毎日<rt>まいにち</rt></ruby>3<ruby>時間<rt>じかん</rt></ruby><ruby>勉強<rt>べんきょう</rt></ruby>します。",
+            "romaji": "Mainichi san-jikan benkyou shimasu.",
+            "id": "Setiap hari saya belajar selama 3 jam."
+        },
+        "level": "N5",
+        "bushu": [
+            "力"
+        ],
+        "bushu_position": "tsukuri",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "強",
+        "onyomi": "きょう (kyou), ごう (gou)",
+        "kunyomi": "つよ.い (tsuyo.i)",
+        "arti": "Kuat",
+        "mnemonic": "Terdiri dari 'busur panah' (弓) dan 'pribadi/siku' (厶) serta 'serangga' (虫). Bayangkan seekor serangga yang bisa menarik busur panah, dia pasti sangat 'kuat'.",
+        "example": {
+            "jp": "<ruby>勉強<rt>べんきょう</rt></ruby>は<ruby>大切<rt>たいせつ</rt></ruby>です。",
+            "romaji": "Benkyou wa taisetsu desu.",
+            "id": "Belajar itu penting (usaha yang kuat)."
+        },
+        "level": "N5",
+        "bushu": [
+            "弓"
+        ],
+        "bushu_position": "hen",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "映",
+        "onyomi": "えい (ei)",
+        "kunyomi": "うつ.る (utsu.ru)",
+        "arti": "Memproyeksikan, Tercermin",
+        "mnemonic": "Terdiri dari 'matahari' (日) dan 'tengah' (央). Ini menggambarkan cahaya matahari yang 'diproyeksikan' dari pusatnya, seperti dalam kata 'film' (映画 - gambar yang diproyeksikan).",
+        "example": {
+            "jp": "<ruby>映画館<rt>えいがか</rt></ruby>で<ruby>映画<rt>えいが</rt></ruby>を<ruby>見<rt>み</rt></ruby>ます。",
+            "romaji": "Eigakan de eiga o mimasu.",
+            "id": "Saya menonton film di bioskop."
+        },
+        "level": "N5",
+        "bushu": [
+            "日"
+        ],
+        "bushu_position": "hen",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "親",
+        "onyomi": "しん (shin)",
+        "kunyomi": "おや (oya)",
+        "arti": "Orang Tua, Intim",
+        "mnemonic": "Terdiri dari 'berdiri' (立), 'pohon' (木), dan 'melihat' (見). Bayangkan seorang 'orang tua' yang 'berdiri' di atas 'pohon' untuk 'melihat' dan mengawasi anaknya. Menunjukkan kedekatan dan perhatian.",
+        "example": {
+            "jp": "わたしの<ruby>両親<rt>りょうしん</rt></ruby>は<ruby>大阪<rt>おおさか</rt></ruby>に<ruby>住<rt>す</rt></ruby>んでいます。",
+            "romaji": "Watashi no ryoushin wa Oosaka ni sunde imasu.",
+            "id": "Kedua orang tua saya tinggal di Osaka."
+        },
+        "level": "N5",
+        "bushu": [
+            "見"
+        ],
+        "bushu_position": "tsukuri",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "兄",
+        "onyomi": "けい (kei), きょう (kyou)",
+        "kunyomi": "あに (ani)",
+        "arti": "Kakak Laki-Laki",
+        "mnemonic": "Kanji ini menggambarkan sebuah 'mulut' (口) di atas 'kaki manusia' (儿). Ini melambangkan orang yang berbicara dengan otoritas dan memimpin jalan, yaitu 'kakak laki-laki'.",
+        "example": {
+            "jp": "わたしたちは<ruby>兄弟<rt>きょうだい</rt></ruby>です。",
+            "romaji": "Watashitachi wa kyoudai desu.",
+            "id": "Kami adalah saudara (laki-laki)."
+        },
+        "level": "N5",
+        "bushu": [
+            "儿"
+        ],
+        "bushu_position": "ashi",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "姉",
+        "onyomi": "し (shi)",
+        "kunyomi": "あね (ane)",
+        "arti": "Kakak Perempuan",
+        "mnemonic": "Terdiri dari radikal 'wanita' (女) dan 'pasar/kota' (市). Bayangkan seorang wanita yang memimpin di pasar atau mengurus rumah tangga seperti mengurus kota, yaitu 'kakak perempuan'.",
+        "example": {
+            "jp": "わたしの<ruby>姉<rt>あね</rt></ruby>は<ruby>銀行員<rt>ぎんこういん</rt></ruby>です。",
+            "romaji": "Watashi no ane wa ginkouin desu.",
+            "id": "Kakak perempuan saya adalah pegawai bank."
+        },
+        "level": "N5",
+        "bushu": [
+            "女"
+        ],
+        "bushu_position": "hen",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "弟",
+        "onyomi": "てい (tei), だい (dai)",
+        "kunyomi": "おとうと (otouto)",
+        "arti": "Adik Laki-Laki",
+        "mnemonic": "Kanji ini menggambarkan seutas tali yang diikatkan secara berurutan pada sebuah tiang. Ini melambangkan 'urutan' atau 'tingkatan', dan dalam keluarga, dia adalah yang datang setelahnya, yaitu 'adik laki-laki'.",
+        "example": {
+            "jp": "<ruby>弟<rt>おとうと</rt></ruby>はまだ<ruby>学生<rt>がくせい</rt></ruby>です。",
+            "romaji": "Otouto wa mada gakusei desu.",
+            "id": "Adik laki-laki saya masih seorang pelajar."
+        },
+        "level": "N5",
+        "bushu": [
+            "弓"
+        ],
+        "bushu_position": "kamae",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "妹",
+        "onyomi": "まい (mai)",
+        "kunyomi": "いもうと (imouto)",
+        "arti": "Adik Perempuan",
+        "mnemonic": "Terdiri dari radikal 'wanita' (女) dan 'belum' (未). Ini melambangkan seorang wanita yang 'belum' dewasa, yaitu 'adik perempuan'.",
+        "example": {
+            "jp": "わたしには<ruby>妹<rt>いもうと</rt></ruby>が一人います。",
+            "romaji": "Watashi ni wa imouto ga hitori imasu.",
+            "id": "Saya punya seorang adik perempuan."
+        },
+        "level": "N5",
+        "bushu": [
+            "女"
+        ],
+        "bushu_position": "hen",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "待",
+        "onyomi": "たい (tai)",
+        "kunyomi": "ま.つ (ma.tsu)",
+        "arti": "Menunggu",
+        "mnemonic": "Terdiri dari radikal 'langkah' (彳) dan 'kuil' (寺). Bayangkan Anda melangkahkan kaki ke kuil, lalu 'menunggu' giliran untuk berdoa.",
+        "example": {
+            "jp": "ここでちょっと<ruby>待<rt>ま</rt></ruby>ってください。",
+            "romaji": "Koko de chotto matte kudasai.",
+            "id": "Tolong tunggu sebentar di sini."
+        },
+        "level": "N5",
+        "bushu": [
+            "彳"
+        ],
+        "bushu_position": "hen",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "持",
+        "onyomi": "じ (ji)",
+        "kunyomi": "も.つ (mo.tsu)",
+        "arti": "Membawa, Memegang",
+        "mnemonic": "Terdiri dari radikal 'tangan' (扌) dan 'kuil' (寺). Bayangkan Anda 'memegang' atau 'membawa' persembahan dengan tangan ke kuil.",
+        "example": {
+            "jp": "にもつを<ruby>持<rt>も</rt></ruby>ちましょうか。",
+            "romaji": "Nimotsu o mochimashou ka.",
+            "id": "Perlukah saya bawakan barang bawaan Anda?"
+        },
+        "level": "N5",
+        "bushu": [
+            "扌"
+        ],
+        "bushu_position": "hen",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "始",
+        "onyomi": "し (shi)",
+        "kunyomi": "はじ.める (haji.meru)",
+        "arti": "Mulai",
+        "mnemonic": "Terdiri dari radikal 'wanita' (女) dan 'panggung' (台). Bayangkan seorang wanita naik ke atas panggung untuk 'memulai' sebuah pertunjukan.",
+        "example": {
+            "jp": "さあ、<ruby>始<rt>はじ</rt></ruby>めましょう。",
+            "romaji": "Saa, hajimemashou.",
+            "id": "Baiklah, ayo kita mulai."
+        },
+        "level": "N5",
+        "bushu": [
+            "女"
+        ],
+        "bushu_position": "hen",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "終",
+        "onyomi": "しゅう (shuu)",
+        "kunyomi": "お.わる (o.waru)",
+        "arti": "Selesai, Berakhir",
+        "mnemonic": "Terdiri dari radikal 'benang' (糸) dan 'musim dingin' (冬). Bayangkan gulungan 'benang' yang 'berakhir' atau habis dipakai saat 'musim dingin' tiba.",
+        "example": {
+            "jp": "これで<ruby>授業<rt>じゅぎょう</rt></ruby>を<ruby>終<rt>お</rt></ruby>わります。",
+            "romaji": "Kore de jugyou o owarimasu.",
+            "id": "Dengan ini, pelajaran selesai."
+        },
+        "level": "N5",
+        "bushu": [
+            "糸"
+        ],
+        "bushu_position": "hen",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "薬",
+        "onyomi": "やく (yaku)",
+        "kunyomi": "くすり (kusuri)",
+        "arti": "Obat",
+        "mnemonic": "Terdiri dari radikal 'tanaman' (艹) dan 'mudah/senang' (楽). Ini melambangkan 'tanaman' yang membuat tubuh menjadi 'mudah' atau 'senang' kembali, yaitu 'obat'.",
+        "example": {
+            "jp": "この<ruby>薬<rt>くすり</rt></ruby>は<ruby>一日<rt>いちにち</rt></ruby><ruby>三回<rt>さんかい</rt></ruby><ruby>飲<rt>の</rt></ruby>んでください。",
+            "romaji": "Kono kusuri wa ichinichi sankai nonde kudasai.",
+            "id": "Tolong minum obat ini tiga kali sehari."
+        },
+        "level": "N5",
+        "bushu": [
+            "艹"
+        ],
+        "bushu_position": "kanmuri",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "方",
+        "onyomi": "ほう (hou)",
+        "kunyomi": "かた (kata)",
+        "arti": "Arah, Cara, Orang (sopan)",
+        "mnemonic": "Kanji ini aslinya adalah piktograf dari bajak sawah, yang digunakan untuk menentukan 'arah' saat membajak. Dari situ berkembang arti 'cara' melakukan sesuatu, dan juga bentuk sopan untuk 'orang' (kata).",
+        "example": {
+            "jp": "あちらの<ruby>方<rt>かた</rt></ruby>はどなたですか。",
+            "romaji": "Achira no kata wa donata desu ka.",
+            "id": "Siapakah orang yang di sebelah sana itu (sopan)?"
+        },
+        "level": "N5",
+        "bushu": [
+            "方"
+        ],
+        "bushu_position": "kamae",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "旅",
+        "onyomi": "りょ (ryo)",
+        "kunyomi": "たび (tabi)",
+        "arti": "Perjalanan, Wisata",
+        "mnemonic": "Terdiri dari radikal 'bendera' (方) dan 'orang-orang' (从). Bayangkan sekelompok orang yang melakukan 'perjalanan' bersama di bawah satu panji atau bendera.",
+        "example": {
+            "jp": "<ruby>旅行<rt>りょこう</rt></ruby>の<ruby>準備<rt>じゅんび</rt></ruby>をします。",
+            "romaji": "Ryokou no junbi o shimasu.",
+            "id": "Saya akan melakukan persiapan untuk perjalanan."
+        },
+        "level": "N5",
+        "bushu": [
+            "方"
+        ],
+        "bushu_position": "hen",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "教",
+        "onyomi": "きょう (kyou)",
+        "kunyomi": "おし.える (oshi.eru)",
+        "arti": "Mengajar",
+        "mnemonic": "Terdiri dari 'berbakti' (孝) dan radikal 'memukul dengan tongkat' (攵). Ini melambangkan proses 'mengajar' di mana seorang guru dengan sabar (berbakti) membimbing muridnya (terkadang dengan tongkat).",
+        "example": {
+            "jp": "<ruby>教室<rt>きょうしつ</rt></ruby>に<ruby>学生<rt>がくせい</rt></ruby>がいます。",
+            "romaji": "Kyoushitsu ni gakusei ga imasu.",
+            "id": "Ada siswa di dalam ruang kelas (ruang mengajar)."
+        },
+        "level": "N5",
+        "bushu": [
+            "攵"
+        ],
+        "bushu_position": "tsukuri",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "室",
+        "onyomi": "しつ (shitsu)",
+        "kunyomi": "むろ (muro)",
+        "arti": "Ruangan",
+        "mnemonic": "Terdiri dari 'atap' (宀) dan 'sampai/tiba' (至). Sebuah 'ruangan' adalah tempat di mana kita 'tiba' di bawah 'atap' sebuah bangunan.",
+        "example": {
+            "jp": "<ruby>会議室<rt>かいぎしつ</rt></ruby>はどこですか。",
+            "romaji": "Kaigishitsu wa doko desu ka.",
+            "id": "Di mana ruang rapat?"
+        },
+        "level": "N5",
+        "bushu": [
+            "宀"
+        ],
+        "bushu_position": "kanmuri",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "漢",
+        "onyomi": "かん (kan)",
+        "kunyomi": "-",
+        "arti": "Han, Tiongkok",
+        "mnemonic": "Terdiri dari radikal 'air' (氵) dan komponen fonetik (漢). Berasal dari nama Sungai Han dan Dinasti Han di Tiongkok. Paling sering muncul dalam kata 'Kanji'.",
+        "example": {
+            "jp": "<ruby>漢字<rt>かんじ</rt></ruby>の<ruby>勉強<rt>べんきょう</rt></ruby>は<ruby>難<rt>むずか</rt></ruby>しいですが、おもしろいです。",
+            "romaji": "Kanji no benkyou wa muzukashii desu ga, omoshiroi desu.",
+            "id": "Belajar Kanji itu sulit, tetapi menarik."
+        },
+        "level": "N5",
+        "bushu": [
+            "氵"
+        ],
+        "bushu_position": "hen",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "四",
+        "onyomi": "し (shi)",
+        "kunyomi": "よん (yon), よ (yo)",
+        "arti": "Empat",
+        "mnemonic": "Kanji ini terlihat seperti sebuah kotak (口) dengan 'kaki' (儿) di dalamnya. Bayangkan sebuah ruangan atau tirai jendela yang memiliki empat sudut. Anda bisa mengingatnya sebagai 'tirai dengan empat sudut'.",
+        "example": {
+            "jp": "この<ruby>部屋<rt>へや</rt></ruby>にはいすが<ruby>四<rt>よっ</rt></ruby>つあります。",
+            "romaji": "Kono heya niwa isu ga yottsu arimasu.",
+            "id": "Di ruangan ini ada empat kursi."
+        },
+        "level": "N5",
+        "bushu": [
+            "囗"
+        ],
+        "bushu_position": "kamae",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "五",
+        "onyomi": "ご (go)",
+        "kunyomi": "いつ (itsu)",
+        "arti": "Lima",
+        "mnemonic": "Bentuknya sedikit kompleks. Bayangkan angka romawi V (lima) yang 'terjebak' di antara dua garis. Atau, bayangkan lima jari tangan Anda yang disilangkan.",
+        "example": {
+            "jp": "<ruby>五<rt>ご</rt></ruby><ruby>時<rt>じ</rt></ruby>に<ruby>帰<rt>かえ</rt></ruby>ります。",
+            "romaji": "Go-ji ni kaerimasu.",
+            "id": "Saya akan pulang jam lima."
+        },
+        "level": "N5",
+        "bushu": [
+            "二"
+        ],
+        "bushu_position": "kamae",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "六",
+        "onyomi": "ろく (roku)",
+        "kunyomi": "む (mu)",
+        "arti": "Enam",
+        "mnemonic": "Kanji ini terlihat seperti orang yang berdiri dengan dua tangan dan dua kaki, ditambah 'topi' di atasnya. Total ada enam 'titik': kepala, topi, dua tangan, dua kaki. Atau, bayangkan kata 'rokok' yang mirip 'roku', lalu pikirkan peringatan bahaya di bungkus rokok yang memiliki enam sisi (jika dibayangkan sebagai balok).",
+        "example": {
+            "jp": "えんぴつを<ruby>六<rt>ろっ</rt></ruby><ruby>本<rt>ぽん</rt></ruby>ください。",
+            "romaji": "Enpitsu o roppon kudasai.",
+            "id": "Tolong beri saya enam buah pensil."
+        },
+        "level": "N5",
+        "bushu": [
+            "八"
+        ],
+        "bushu_position": "kanmuri",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "七",
+        "onyomi": "しち (shichi)",
+        "kunyomi": "なな (nana)",
+        "arti": "Tujuh",
+        "mnemonic": "Bentuknya sangat mirip angka 7 yang diputar atau terbalik. Ini adalah cara termudah untuk mengingatnya. Garis horizontal memotong garis vertikal yang sedikit melengkung.",
+        "example": {
+            "jp": "<ruby>七<rt>しち</rt></ruby><ruby>月<rt>がつ</rt></ruby>は<ruby>暑<rt>あつ</rt></ruby>いです。",
+            "romaji": "Shichi-gatsu wa atsui desu.",
+            "id": "Bulan Juli (bulan ketujuh) itu panas."
+        },
+        "level": "N5",
+        "bushu": [
+            "一"
+        ],
+        "bushu_position": "kamae",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "八",
+        "onyomi": "はち (hachi)",
+        "kunyomi": "や (ya)",
+        "arti": "Delapan",
+        "mnemonic": "Terdiri dari dua goresan yang terbuka ke bawah, melambangkan sesuatu yang menyebar atau tak terbatas. Bentuknya mirip atap rumah atau gunung Fuji. Bayangkan 'HACHI-HATCHI' saat bersin, suaranya menyebar ke mana-mana, seperti bentuk kanji ini.",
+        "example": {
+            "jp": "わたしは<ruby>八<rt>はっ</rt></ruby>さいです。",
+            "romaji": "Watashi wa hassai desu.",
+            "id": "Umur saya delapan tahun."
+        },
+        "level": "N5",
+        "bushu": [
+            "八"
+        ],
+        "bushu_position": "kamae",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "肉",
+        "onyomi": "にく (niku)",
+        "kunyomi": "-",
+        "arti": "Daging",
+        "mnemonic": "Piktograf ini terlihat seperti sepotong 'daging' dengan serat-seratnya. Bayangkan dua orang (人) di dalam sebuah bingkai (冂), berbagi sepotong daging.",
+        "example": {
+            "jp": "わたしは<ruby>鶏肉<rt>とりにく</rt></ruby>が<ruby>好<rt>す</rt></ruby>きです。",
+            "romaji": "Watashi wa toriniku ga suki desu.",
+            "id": "Saya suka daging ayam."
+        },
+        "level": "N5",
+        "bushu": [
+            "肉"
+        ],
+        "bushu_position": "kamae",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "茶",
+        "onyomi": "ちゃ (cha), さ (sa)",
+        "kunyomi": "-",
+        "arti": "Teh",
+        "mnemonic": "Terdiri dari radikal 'tumbuhan' (艹) di atas. Bagian bawahnya menggambarkan 'pohon' (木) dan 'orang' (人). Bayangkan seseorang yang memetik daun 'teh' dari tanaman untuk diseduh.",
+        "example": {
+            "jp": "お<ruby>茶<rt>ちゃ</rt></ruby>を<ruby>飲<rt>の</rt></ruby>みましょう。",
+            "romaji": "O-cha o nomimashou.",
+            "id": "Ayo kita minum teh."
+        },
+        "level": "N5",
+        "bushu": [
+            "艹"
+        ],
+        "bushu_position": "kanmuri",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "飯",
+        "onyomi": "はん (han)",
+        "kunyomi": "めし (meshi)",
+        "arti": "Nasi (matang), Makanan",
+        "mnemonic": "Terdiri dari radikal 'makanan' (食) dan 'berlawanan' (反) sebagai komponen fonetik. Ini adalah kanji utama untuk 'makanan' atau 'nasi matang' dalam banyak kata.",
+        "example": {
+            "jp": "ご<ruby>飯<rt>はん</rt></ruby>を<ruby>食<rt>た</rt></ruby>べましたか。",
+            "romaji": "Gohan o tabemashita ka.",
+            "id": "Apakah kamu sudah makan (nasi)?"
+        },
+        "level": "N5",
+        "bushu": [
+            "食"
+        ],
+        "bushu_position": "hen",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "牛",
+        "onyomi": "ぎゅう (gyuu)",
+        "kunyomi": "うし (ushi)",
+        "arti": "Sapi",
+        "mnemonic": "Ini adalah piktograf sederhana dari kepala 'sapi' jika dilihat dari depan, dengan dua tanduk yang menonjol ke atas.",
+        "example": {
+            "jp": "<ruby>牛肉<rt>ぎゅうにく</rt></ruby>と<ruby>豚肉<rt>ぶたにく</rt></ruby>とどちらが<ruby>好<rt>す</rt></ruby>きですか。",
+            "romaji": "Gyuuniku to butaniku to dochira ga suki desu ka.",
+            "id": "Antara daging sapi dan daging babi, mana yang lebih kamu suka?"
+        },
+        "level": "N5",
+        "bushu": [
+            "牛"
+        ],
+        "bushu_position": "hen",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "鳥",
+        "onyomi": "ちょう (chou)",
+        "kunyomi": "とり (tori)",
+        "arti": "Burung",
+        "mnemonic": "Piktograf ini menggambarkan seekor 'burung' yang sedang bertengger, dengan jambul, mata, badan, dan ekornya yang terlihat jelas.",
+        "example": {
+            "jp": "あそこにきれいな<ruby>鳥<rt>とり</rt></ruby>がいます。",
+            "romaji": "Asoko ni kirei na tori ga imasu.",
+            "id": "Di sana ada burung yang cantik."
+        },
+        "level": "N5",
+        "bushu": [
+            "鳥"
+        ],
+        "bushu_position": "kamae",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "字",
+        "onyomi": "じ (ji)",
+        "kunyomi": "あざ (aza)",
+        "arti": "Huruf, Karakter",
+        "mnemonic": "Terdiri dari 'atap' (宀) dan 'anak' (子). Bayangkan seorang 'anak' di bawah 'atap' (sekolah) sedang belajar 'huruf' dan 'karakter'.",
+        "example": {
+            "jp": "きれいな<ruby>字<rt>じ</rt></ruby>を<ruby>書<rt>か</rt></ruby>きますね。",
+            "romaji": "Kirei na ji o kakimasu ne.",
+            "id": "Anda menulis huruf yang indah ya."
+        },
+        "level": "N5",
+        "bushu": [
+            "子"
+        ],
+        "bushu_position": "tsukuri",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "犬",
+        "onyomi": "けん (ken)",
+        "kunyomi": "いぬ (inu)",
+        "arti": "Anjing",
+        "mnemonic": "Piktograf ini adalah bentuk yang disederhanakan dari seekor 'anjing'. Bayangkan kanji 大 (besar) dengan satu titik di atasnya, seperti seekor anjing besar yang setia.",
+        "example": {
+            "jp": "わたしは<ruby>犬<rt>いぬ</rt></ruby>を<ruby>飼<rt>か</rt></ruby>っています。",
+            "romaji": "Watashi wa inu o katte imasu.",
+            "id": "Saya memelihara anjing."
+        },
+        "level": "N5",
+        "bushu": [
+            "犬"
+        ],
+        "bushu_position": "kamae",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "寺",
+        "onyomi": "じ (ji)",
+        "kunyomi": "てら (tera)",
+        "arti": "Kuil",
+        "mnemonic": "Terdiri dari 'tanah' (土) dan 'inci' (寸). Bayangkan sebuah 'kuil' yang dibangun di atas tanah suci yang diukur dengan sangat teliti.",
+        "example": {
+            "jp": "この<ruby>町<rt>まち</rt></ruby>に<ruby>古<rt>ふる</rt></ruby>いお<ruby>寺<rt>てら</rt></ruby>があります。",
+            "romaji": "Kono machi ni furui o-tera ga arimasu.",
+            "id": "Di kota ini ada kuil tua."
+        },
+        "level": "N5",
+        "bushu": [
+            "寸"
+        ],
+        "bushu_position": "tsukuri",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "道",
+        "onyomi": "どう (dou), とう (tou)",
+        "kunyomi": "みち (michi)",
+        "arti": "Jalan, Cara",
+        "mnemonic": "Terdiri dari radikal 'gerakan' (辶) dan 'kepala' (首). Ini melambangkan 'kepala' yang memimpin 'gerakan' ke suatu arah, yaitu menelusuri 'jalan' atau 'cara'.",
+        "example": {
+            "jp": "この<ruby>道<rt>みち</rt></ruby>をまっすぐ<ruby>行<rt>い</rt></ruby>ってください。",
+            "romaji": "Kono michi o massugu itte kudasai.",
+            "id": "Tolong lurus terus di jalan ini."
+        },
+        "level": "N5",
+        "bushu": [
+            "辶"
+        ],
+        "bushu_position": "nyou",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "田",
+        "onyomi": "でん (den)",
+        "kunyomi": "た (ta)",
+        "arti": "Sawah",
+        "mnemonic": "Ini adalah piktograf yang sangat jelas dari sepetak 'sawah' yang dibagi menjadi empat bagian untuk ditanami.",
+        "example": {
+            "jp": "わたしの<ruby>国<rt>くに</rt></ruby>には<ruby>田<rt>た</rt></ruby>んぼがたくさんあります。",
+            "romaji": "Watashi no kuni ni wa tanbo ga takusan arimasu.",
+            "id": "Di negara saya ada banyak sawah."
+        },
+        "level": "N5",
+        "bushu": [
+            "田"
+        ],
+        "bushu_position": "kamae",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "山",
+        "onyomi": "さん (san)",
+        "kunyomi": "やま (yama)",
+        "arti": "Gunung",
+        "mnemonic": "Ini adalah piktograf yang sangat jelas, menggambarkan sebuah 'gunung' dengan tiga puncaknya yang menonjol.",
+        "example": {
+            "jp": "<ruby>富士山<rt>ふじさん</rt></ruby>に<ruby>登<rt>のぼ</rt></ruby>ったことがありますか。",
+            "romaji": "Fujisan ni nobotta koto ga arimasu ka.",
+            "id": "Apakah Anda pernah mendaki Gunung Fuji?"
+        },
+        "level": "N5",
+        "bushu": [
+            "山"
+        ],
+        "bushu_position": "kamae",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "川",
+        "onyomi": "せん (sen)",
+        "kunyomi": "かわ (kawa)",
+        "arti": "Sungai",
+        "mnemonic": "Ini adalah piktograf dari aliran 'sungai' dengan tiga garis vertikal yang melambangkan air yang mengalir.",
+        "example": {
+            "jp": "この<ruby>川<rt>かわ</rt></ruby>はきれいです。",
+            "romaji": "Kono kawa wa kirei desu.",
+            "id": "Sungai ini bersih."
+        },
+        "level": "N5",
+        "bushu": [
+            "川"
+        ],
+        "bushu_position": "kamae",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "元",
+        "onyomi": "げん (gen), がん (gan)",
+        "kunyomi": "もと (moto)",
+        "arti": "Asal, Sumber",
+        "mnemonic": "Kanji ini menggambarkan 'kaki manusia' (儿) di bawah 'dua' (二). Ini melambangkan fondasi atau 'asal' dari mana sesuatu dimulai.",
+        "example": {
+            "jp": "お<ruby>元気<rt>げんき</rt></ruby>ですか。",
+            "romaji": "O-genki desu ka.",
+            "id": "Apa kabar? (Apakah sumber energi Anda baik?)"
+        },
+        "level": "N5",
+        "bushu": [
+            "二"
+        ],
+        "bushu_position": "kamae",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "花",
+        "onyomi": "か (ka)",
+        "kunyomi": "はな (hana)",
+        "arti": "Bunga",
+        "mnemonic": "Terdiri dari radikal 'tumbuhan' (艹) dan 'perubahan' (化). Ini melambangkan 'perubahan' dari kuncup menjadi 'bunga' pada sebuah 'tumbuhan'.",
+        "example": {
+            "jp": "<ruby>庭<rt>にわ</rt></ruby>にきれいな<ruby>花<rt>はな</rt></ruby>がさいています。",
+            "romaji": "Niwa ni kirei na hana ga saite imasu.",
+            "id": "Di taman sedang mekar bunga yang cantik."
+        },
+        "level": "N5",
+        "bushu": [
+            "艹"
+        ],
+        "bushu_position": "kanmuri",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "空",
+        "onyomi": "くう (kuu)",
+        "kunyomi": "そら (sora), あ.く (a.ku)",
+        "arti": "Langit, Kosong",
+        "mnemonic": "Terdiri dari 'lubang' (穴) dan 'pekerjaan' (工). Bayangkan seorang pekerja yang membuat lubang di atap untuk melihat 'langit' atau membuat ruangan menjadi 'kosong'.",
+        "example": {
+            "jp": "<ruby>空<rt>そら</rt></ruby>に<ruby>飛行機<rt>ひこうき</rt></ruby>がとんでいます。",
+            "romaji": "Sora ni hikouki ga tonde imasu.",
+            "id": "Di langit ada pesawat yang sedang terbang."
+        },
+        "level": "N5",
+        "bushu": [
+            "穴"
+        ],
+        "bushu_position": "kanmuri",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "男",
+        "onyomi": "だん (dan), なん (nan)",
+        "kunyomi": "おとこ (otoko)",
+        "arti": "Laki-laki",
+        "mnemonic": "Kanji ini terdiri dari 'sawah' (田) dan 'kekuatan' (力). Secara tradisional, 'kekuatan' yang bekerja di 'sawah' adalah 'laki-laki'.",
+        "example": {
+            "jp": "あの<ruby>男<rt>おとこ</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>はだれですか。",
+            "romaji": "Ano otoko no hito wa dare desu ka.",
+            "id": "Siapakah laki-laki itu?"
+        },
+        "level": "N5",
+        "bushu": [
+            "口"
+        ],
+        "bushu_position": "tsukuri",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "女",
+        "onyomi": "じょ (jo), にょ (nyo)",
+        "kunyomi": "おんな (onna), め (me)",
+        "arti": "Perempuan",
+        "mnemonic": "Ini adalah piktograf dari seorang 'perempuan' yang sedang duduk atau berlutut dengan anggun, menunjukkan postur yang feminin.",
+        "example": {
+            "jp": "このクラスには<ruby>女<rt>おんな</rt></ruby>の<ruby>子<rt>こ</rt></ruby>が<ruby>多<rt>おお</rt></ruby>いです。",
+            "romaji": "Kono kurasu ni wa onna no ko ga ooi desu.",
+            "id": "Di kelas ini ada banyak anak perempuan."
+        },
+        "level": "N5",
+        "bushu": [
+            "女"
+        ],
+        "bushu_position": "kamae",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "子",
+        "onyomi": "し (shi), す (su)",
+        "kunyomi": "こ (ko)",
+        "arti": "Anak",
+        "mnemonic": "Ini adalah piktograf dari seorang 'anak' atau bayi yang dibedong, dengan kepala besar dan tangan yang terentang.",
+        "example": {
+            "jp": "わたしには<ruby>子<rt>こ</rt></ruby>どもが<ruby>二人<rt>ふたり</rt></ruby>います。",
+            "romaji": "Watashi ni wa kodomo ga futari imasu.",
+            "id": "Saya punya dua orang anak."
+        },
+        "level": "N5",
+        "bushu": [
+            "子"
+        ],
+        "bushu_position": "tsukuri",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "父",
+        "onyomi": "ふ (fu)",
+        "kunyomi": "ちち (chichi)",
+        "arti": "Ayah",
+        "mnemonic": "Piktograf ini menggambarkan dua tangan yang sedang memegang sebuah kapak batu, melambangkan figur 'ayah' sebagai pekerja atau figur otoritas dalam keluarga.",
+        "example": {
+            "jp": "わたしの<ruby>父<rt>ちち</rt></ruby>は<ruby>医者<rt>いしゃ</rt></ruby>です。",
+            "romaji": "Watashi no chichi wa isha desu.",
+            "id": "Ayah saya adalah seorang dokter."
+        },
+        "level": "N5",
+        "bushu": [
+            "父"
+        ],
+        "bushu_position": "kamae",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "母",
+        "onyomi": "ぼ (bo)",
+        "kunyomi": "はは (haha)",
+        "arti": "Ibu",
+        "mnemonic": "Kanji ini berasal dari kanji 'perempuan' (女) dengan tambahan dua titik yang melambangkan payudara, sebagai simbol dari seorang 'ibu' yang menyusui.",
+        "example": {
+            "jp": "<ruby>母<rt>はは</rt></ruby>の<ruby>日<rt>ひ</rt></ruby>にプレゼントをあげます。",
+            "romaji": "Haha no hi ni purezento o agemasu.",
+            "id": "Saya akan memberikan hadiah pada hari Ibu."
+        },
+        "level": "N5",
+        "bushu": [
+            "女"
+        ],
+        "bushu_position": "hen",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "九",
+        "onyomi": "きゅう (kyuu), く (ku)",
+        "kunyomi": "ここの (kokono)",
+        "arti": "Sembilan",
+        "mnemonic": "Kanji ini terlihat seperti naga kecil atau cacing yang melengkung. Bayangkan cerita tentang 'sembilan' naga. Atau, perhatikan lekukannya yang mirip angka 9 yang ditulis dengan gaya kaligrafi.",
+        "example": {
+            "jp": "わたしの<ruby>電話番号<rt>でんわばんごう</rt></ruby>に<ruby>九<rt>きゅう</rt></ruby>があります。",
+            "romaji": "Watashi no denwa bangou ni kyuu ga arimasu.",
+            "id": "Di nomor telepon saya ada angka sembilan."
+        },
+        "level": "N5",
+        "bushu": [
+            "九"
+        ],
+        "bushu_position": "kamae",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "十",
+        "onyomi": "じゅう (juu)",
+        "kunyomi": "とお (too)",
+        "arti": "Sepuluh",
+        "mnemonic": "Kanji ini berbentuk seperti tanda tambah (+). Pikirkan saja 5 + 5 = 10, atau bayangkan ini adalah tiang vertikal (seperti angka 1) dan garis horizontal (seperti angka 0 yang dipipihkan) yang digabung menjadi 'sepuluh'.",
+        "example": {
+            "jp": "このクラスに<ruby>学生<rt>がくせい</rt></ruby>が<ruby>十<rt>じゅう</rt></ruby><ruby>人<rt>にん</rt></ruby>います。",
+            "romaji": "Kono kurasu ni gakusei ga juu-nin imasu.",
+            "id": "Di kelas ini ada sepuluh orang siswa."
+        },
+        "level": "N5",
+        "bushu": [
+            "十"
+        ],
+        "bushu_position": "kamae",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "百",
+        "onyomi": "ひゃく (hyaku)",
+        "kunyomi": "-",
+        "arti": "Seratus",
+        "mnemonic": "Kanji ini terdiri dari 'satu' (一) di atas 'putih' (白). Bayangkan Anda punya 'seratus' (百) lembar kertas 'putih' (白), tapi satu (一) lembar hilang, jadi ada goresan di atasnya. 'Seratus' kurang satu.",
+        "example": {
+            "jp": "この<ruby>本<rt>ほん</rt></ruby>は<ruby>三百<rt>さんびゃく</rt></ruby>円です。",
+            "romaji": "Kono hon wa sanbyaku-en desu.",
+            "id": "Buku ini harganya tiga ratus yen."
+        },
+        "level": "N5",
+        "bushu": [
+            "白"
+        ],
+        "bushu_position": "kamae",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "千",
+        "onyomi": "せん (sen)",
+        "kunyomi": "ち (chi)",
+        "arti": "Seribu",
+        "mnemonic": "Terlihat seperti gabungan dari kanji 'sepuluh' (十) dan sebuah 'orang' (人) di atasnya. Bayangkan satu 'orang' yang memiliki kekuatan 'sepuluh' kali lipat, hingga menjadi 'seribu'. Atau, 'SEN-dirian punya uang seribu'.",
+        "example": {
+            "jp": "このかばんは<ruby>八<rt>はっ</rt></ruby><ruby>千<rt>せん</rt></ruby>円です。",
+            "romaji": "Kono kaban wa hassen-en desu.",
+            "id": "Tas ini harganya delapan ribu yen."
+        },
+        "level": "N5",
+        "bushu": [
+            "千"
+        ],
+        "bushu_position": "kamae",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "円",
+        "onyomi": "えん (en)",
+        "kunyomi": "まる (maru)",
+        "arti": "Yen, Lingkaran",
+        "mnemonic": "Kanji ini terlihat seperti kotak yang melambangkan gerbang atau negara, dengan permata (玉 tanpa satu titik) di dalamnya. Ini melambangkan 'mata uang' atau 'harta' sebuah negara. Bentuknya yang cenderung kotak juga mengingatkan pada bentuk koin kuno.",
+        "example": {
+            "jp": "コーヒーは<ruby>五百円<rt>ごひゃくえん</rt></ruby>です。",
+            "romaji": "Koohii wa gohyaku-en desu.",
+            "id": "Kopi harganya lima ratus yen."
+        },
+        "level": "N5",
+        "bushu": [
+            "囗"
+        ],
+        "bushu_position": "kamae",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "万",
+        "onyomi": "まん (man), ばん (ban)",
+        "kunyomi": "-",
+        "arti": "Sepuluh Ribu",
+        "mnemonic": "Kanji ini terdiri dari 'satu' (一) dan sebuah bentuk yang melambangkan 'banyak'. Bayangkan satu orang yang tangannya terentang luas, mencoba memegang 'sepuluh ribu' koin. Ingat saja 'MAN-tap, punya uang sepuluh ribu'.",
+        "example": {
+            "jp": "このカメラは<ruby>一万円<rt>いちまんえん</rt></ruby>です。",
+            "romaji": "Kono kamera wa ichi-man en desu.",
+            "id": "Kamera ini harganya sepuluh ribu yen."
+        },
+        "level": "N5",
+        "bushu": [
+            "十"
+        ],
+        "bushu_position": "kamae",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "口",
+        "onyomi": "こう (kou), く (ku)",
+        "kunyomi": "くち (kuchi)",
+        "arti": "Mulut",
+        "mnemonic": "Ini adalah salah satu piktograf paling sederhana. Bentuknya adalah gambaran langsung dari sebuah 'mulut' (口) yang sedang terbuka. Mudah diingat sebagai kotak.",
+        "example": {
+            "jp": "<ruby>人口<rt>じんこう</rt></ruby>はどのぐらいですか。",
+            "romaji": "Jinkou wa donogurai desu ka.",
+            "id": "Berapa jumlah penduduknya? (Mulut orang)"
+        },
+        "level": "N5",
+        "bushu": [
+            "口"
+        ],
+        "bushu_position": "kamae",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "目",
+        "onyomi": "もく (moku)",
+        "kunyomi": "め (me)",
+        "arti": "Mata",
+        "mnemonic": "Ini adalah piktograf dari 'mata' (目) yang dilihat dari samping atau digambar secara vertikal. Kotak luarnya adalah kelopak mata, dan dua garis di dalamnya adalah pupil atau bola mata.",
+        "example": {
+            "jp": "これは<ruby>何<rt>なん</rt></ruby>番目<rt>ばんめ</rt></ruby>ですか。",
+            "romaji": "Kore wa nan-banme desu ka.",
+            "id": "Ini urutan keberapa?"
+        },
+        "level": "N5",
+        "bushu": [
+            "目"
+        ],
+        "bushu_position": "kamae",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "月",
+        "onyomi": "げつ (getsu), がつ (gatsu)",
+        "kunyomi": "つき (tsuki)",
+        "arti": "Bulan, Bulan (kalender)",
+        "mnemonic": "Ini adalah piktograf dari bulan sabit. Bayangkan bentuk bulan sabit (月) dengan dua awan tipis yang melintas di depannya. Digunakan untuk hari Senin (月曜日) dan nama-nama bulan (e.g., 一月).",
+        "example": {
+            "jp": "<ruby>今日<rt>きょう</rt></ruby>は<ruby>何月<rt>なんがつ</rt></ruby><ruby>何日<rt>なんにち</rt></ruby>ですか。",
+            "romaji": "Kyou wa nan-gatsu nan-nichi desu ka.",
+            "id": "Hari ini tanggal berapa bulan apa?"
+        },
+        "level": "N5",
+        "bushu": [
+            "月"
+        ],
+        "bushu_position": "kamae",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "火",
+        "onyomi": "か (ka)",
+        "kunyomi": "ひ (hi)",
+        "arti": "Api",
+        "mnemonic": "Ini adalah piktograf dari 'api' (火) yang sedang berkobar. Garis tengahnya adalah batang kayu, dan dua percikan di sampingnya adalah kobaran api yang menyala ke atas.",
+        "example": {
+            "jp": "<ruby>火曜日<rt>かようび</rt></ruby>にテストがあります。",
+            "romaji": "Kayoubi ni tesuto ga arimasu.",
+            "id": "Ada ujian pada hari Selasa."
+        },
+        "level": "N5",
+        "bushu": [
+            "火"
+        ],
+        "bushu_position": "kamae",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "水",
+        "onyomi": "すい (sui)",
+        "kunyomi": "みず (mizu)",
+        "arti": "Air",
+        "mnemonic": "Kanji ini adalah piktograf dari aliran air. Garis vertikal di tengah adalah aliran utama, dan goresan di sampingnya adalah percikan atau riak 'air' (水). Bayangkan suara air 'SUIIIR'.",
+        "example": {
+            "jp": "<ruby>水<rt>みず</rt></ruby>を<ruby>飲<rt>の</rt></ruby>みます。",
+            "romaji": "Mizu o nomimasu.",
+            "id": "Saya minum air."
+        },
+        "level": "N5",
+        "bushu": [
+            "水"
+        ],
+        "bushu_position": "kamae",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "木",
+        "onyomi": "もく (moku), ぼく (boku)",
+        "kunyomi": "き (ki)",
+        "arti": "Pohon, Kayu",
+        "mnemonic": "Ini adalah piktograf sederhana dari sebuah 'pohon' (木). Garis horizontal adalah dahan-dahannya dan garis vertikal ke bawah adalah batang dan akarnya. Sangat mudah dikenali.",
+        "example": {
+            "jp": "<ruby>木曜日<rt>もくようび</rt></ruby>に<ruby>会<rt>あ</rt></ruby>いましょう。",
+            "romaji": "Mokuyoubi ni aimashou.",
+            "id": "Ayo bertemu di hari Kamis."
+        },
+        "level": "N5",
+        "bushu": [
+            "木"
+        ],
+        "bushu_position": "kamae",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "金",
+        "onyomi": "きん (kin)",
+        "kunyomi": "かね (kane)",
+        "arti": "Emas, Uang, Logam",
+        "mnemonic": "Bayangkan sebuah atap (人) di atas gunung (土) yang di dalamnya terkandung dua bongkahan 'emas' (点々). Kanji ini melambangkan kekayaan. 'KANE' adalah kata untuk uang.",
+        "example": {
+            "jp": "お<ruby>金<rt>かね</rt></ruby>がありますか。",
+            "romaji": "Okane ga arimasu ka.",
+            "id": "Apakah kamu punya uang?"
+        },
+        "level": "N5",
+        "bushu": [
+            "金"
+        ],
+        "bushu_position": "kamae",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "土",
+        "onyomi": "ど (do), と (to)",
+        "kunyomi": "つち (tsuchi)",
+        "arti": "Tanah, Bumi",
+        "mnemonic": "Piktograf ini menggambarkan gundukan 'tanah' (土) atau tanaman yang tumbuh dari tanah. Garis bawah adalah permukaan bumi, dan bentuk tambah di atasnya adalah gundukan atau tanaman itu sendiri.",
+        "example": {
+            "jp": "<ruby>土曜日<rt>どようび</rt></ruby>は<ruby>休<rt>やす</rt></ruby>みです。",
+            "romaji": "Doyoubi wa yasumi desu.",
+            "id": "Hari Sabtu adalah hari libur."
+        },
+        "level": "N5",
+        "bushu": [
+            "土"
+        ],
+        "bushu_position": "kamae",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "本",
+        "onyomi": "ほん (hon)",
+        "kunyomi": "もと (moto)",
+        "arti": "Buku, Asal",
+        "mnemonic": "Kanji ini adalah 'pohon' (木) dengan satu goresan horizontal di bagian bawah. Goresan ini menunjuk ke 'akar' atau 'asal' (もと, moto). Karena kertas terbuat dari pohon, kanji ini juga berarti 'buku' (ほん, hon).",
+        "example": {
+            "jp": "これは<ruby>日本語<rt>にほんご</rt></ruby>の<ruby>本<rt>ほん</rt></ruby>です。",
+            "romaji": "Kore wa nihongo no hon desu.",
+            "id": "Ini adalah buku bahasa Jepang."
+        },
+        "level": "N5",
+        "bushu": [
+            "木"
+        ],
+        "bushu_position": "kamae",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "年",
+        "onyomi": "ねん (nen)",
+        "kunyomi": "とし (toshi)",
+        "arti": "Tahun",
+        "mnemonic": "Kanji ini terlihat seperti seseorang (人) yang membungkuk untuk memanen padi (禾). Panen raya terjadi setahun sekali, menandakan siklus 'tahun'. Ingat 'NEN-ekku sudah berumur 70 tahun'.",
+        "example": {
+            "jp": "わたしは1998<ruby>年<rt>ねん</rt></ruby>に<ruby>生<rt>う</rt></ruby>まれました。",
+            "romaji": "Watashi wa sen-kyuuhyaku-kyuujuu-hachi-nen ni umaremashita.",
+            "id": "Saya lahir pada tahun 1998."
+        },
+        "level": "N5",
+        "bushu": [
+            "禾"
+        ],
+        "bushu_position": "kamae",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "私",
+        "onyomi": "し (shi)",
+        "kunyomi": "わたくし (watakushi), わたし (watashi)",
+        "arti": "Saya, Privat",
+        "mnemonic": "Kanji ini terdiri dari 'padi' (禾) dan 'siku' atau 'diri sendiri' (ム). Ini melambangkan jatah padi pribadi seseorang, jadi berarti 'milikku' atau 'saya'. 'Watashi' adalah cara umum untuk mengatakan 'Saya'.",
+        "example": {
+            "jp": "<ruby>私<rt>わたし</rt></ruby>の<ruby>名前<rt>なまえ</rt></ruby>はアンナです。",
+            "romaji": "Watashi no namae wa Anna desu.",
+            "id": "Nama saya adalah Anna."
+        },
+        "level": "N5",
+        "bushu": [
+            "禾"
+        ],
+        "bushu_position": "kamae",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "先",
+        "onyomi": "せん (sen)",
+        "kunyomi": "さき (saki)",
+        "arti": "Dahulu, Depan, Sebelumnya",
+        "mnemonic": "Terdiri dari gambar 'tanah' (土) dan 'kaki manusia' (儿) di atasnya. Ini menggambarkan seseorang yang melangkah maju atau berjalan 'di depan' yang lain. Ingat 'Sensei' (先生), orang yang lahir 'terdahulu'.",
+        "example": {
+            "jp": "<ruby>先生<rt>せんせい</rt></ruby>、<ruby>先<rt>さき</rt></ruby>に<ruby>失礼<rt>しつれい</rt></ruby>します。",
+            "romaji": "Sensei, saki ni shitsurei shimasu.",
+            "id": "Guru, saya permisi duluan."
+        },
+        "level": "N5",
+        "bushu": [
+            "土"
+        ],
+        "bushu_position": "kamae",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "生",
+        "onyomi": "せい (sei), しょう (shou)",
+        "kunyomi": "い.きる (i.kiru), う.まれる (u.mareru)",
+        "arti": "Hidup, Lahir",
+        "mnemonic": "Ini adalah piktograf dari sebuah tanaman yang tumbuh dari 'tanah' (土). Ini melambangkan 'kehidupan', 'kelahiran', dan pertumbuhan. Muncul dalam kata 'sensei' (先生) dan 'gakusei' (学生).",
+        "example": {
+            "jp": "<ruby>学生<rt>がくせい</rt></ruby>は<ruby>何人<rt>なんにん</rt></ruby>いますか。",
+            "romaji": "Gakusei wa nan-nin imasu ka.",
+            "id": "Ada berapa banyak siswa? (Orang yang hidup untuk belajar)"
+        },
+        "level": "N5",
+        "bushu": [
+            "生"
+        ],
+        "bushu_position": "kamae",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "学",
+        "onyomi": "がく (gaku)",
+        "kunyomi": "まな.ぶ (mana.bu)",
+        "arti": "Belajar",
+        "mnemonic": "Kanji ini memiliki atap (宀) di atasnya, di bawahnya ada simbol 'X X' dan 'anak' (子). Bayangkan seorang 'anak' di bawah 'atap' (sekolah) sedang 'belajar' hal-hal yang rumit (X X).",
+        "example": {
+            "jp": "わたしは<ruby>大学<rt>だいがく</rt></ruby>で<ruby>日本語<rt>にほんご</rt></ruby>を<ruby>学<rt>まな</rt></ruby>んでいます。",
+            "romaji": "Watashi wa daigaku de nihongo o manande imasu.",
+            "id": "Saya belajar bahasa Jepang di universitas."
+        },
+        "level": "N5",
+        "bushu": [
+            "宀"
+        ],
+        "bushu_position": "kanmuri",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "上",
+        "onyomi": "じょう (jou)",
+        "kunyomi": "うえ (ue), あ.がる (a.garu)",
+        "arti": "Atas, Naik",
+        "mnemonic": "Ini adalah piktograf sederhana. Garis horizontal bawah adalah sebuah permukaan (misalnya, meja), dan garis vertikal serta garis pendek di atasnya menunjukkan posisi 'di atas' permukaan tersebut.",
+        "example": {
+            "jp": "<ruby>机<rt>つくえ</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>に<ruby>本<rt>ほん</rt></ruby>があります。",
+            "romaji": "Tsukue no ue ni hon ga arimasu.",
+            "id": "Ada buku di atas meja."
+        },
+        "level": "N5",
+        "bushu": [
+            "一"
+        ],
+        "bushu_position": "kamae",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "下",
+        "onyomi": "か (ka), げ (ge)",
+        "kunyomi": "した (shita), さ.がる (sa.garu)",
+        "arti": "Bawah, Turun",
+        "mnemonic": "Kebalikan dari 上 (ue). Garis horizontal atas adalah permukaan, dan garis vertikal serta titik di bawahnya menunjukkan posisi 'di bawah' permukaan tersebut.",
+        "example": {
+            "jp": "<ruby>椅子<rt>いす</rt></ruby>の<ruby>下<rt>した</rt></ruby>に<ruby>猫<rt>ねこ</rt></ruby>がいます。",
+            "romaji": "Isu no shita ni neko ga imasu.",
+            "id": "Ada kucing di bawah kursi."
+        },
+        "level": "N5",
+        "bushu": [
+            "一"
+        ],
+        "bushu_position": "kamae",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "中",
+        "onyomi": "ちゅう (chuu)",
+        "kunyomi": "なか (naka)",
+        "arti": "Dalam, Tengah",
+        "mnemonic": "Sebuah garis vertikal (丨) yang membelah sebuah 'mulut' atau 'kotak' (口) tepat di 'tengah'-nya.",
+        "example": {
+            "jp": "<ruby>箱<rt>はこ</rt></ruby>の<ruby>中<rt>なか</rt></ruby>に<ruby>何<rt>なに</rt></ruby>がありますか。",
+            "romaji": "Hako no naka ni nani ga arimasu ka.",
+            "id": "Di dalam kotak ada apa?"
+        },
+        "level": "N5",
+        "bushu": [
+            "口"
+        ],
+        "bushu_position": "kamae",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "大",
+        "onyomi": "だい (dai), たい (tai)",
+        "kunyomi": "おお.きい (oo.kii)",
+        "arti": "Besar",
+        "mnemonic": "Piktograf ini menggambarkan sosok 'orang' (人) yang merentangkan kedua tangannya lebar-lebar untuk menunjukkan betapa 'besar' sesuatu itu.",
+        "example": {
+            "jp": "わたしは<ruby>大学<rt>だいがく</rt></ruby>の<ruby>先生<rt>せんせい</rt></ruby>です。",
+            "romaji": "Watashi wa daigaku no sensei desu.",
+            "id": "Saya adalah dosen universitas (sekolah besar)."
+        },
+        "level": "N5",
+        "bushu": [
+            "大"
+        ],
+        "bushu_position": "kamae",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "小",
+        "onyomi": "しょう (shou)",
+        "kunyomi": "ちい.さい (chii.sai), こ (ko)",
+        "arti": "Kecil",
+        "mnemonic": "Kanji ini terlihat seperti kanji 大 (besar) yang 'terbelah' atau 'terbagi' menjadi bagian-bagian yang lebih 'kecil' oleh garis di tengah.",
+        "example": {
+            "jp": "わたしは<ruby>小<rt>ちい</rt></ruby>さい<ruby>家<rt>いえ</rt></ruby>に<ruby>住<rt>す</rt></ruby>んでいます。",
+            "romaji": "Watashi wa chiisai ie ni sunde imasu.",
+            "id": "Saya tinggal di rumah yang kecil."
+        },
+        "level": "N5",
+        "bushu": [
+            "小"
+        ],
+        "bushu_position": "kamae",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "話",
+        "onyomi": "わ (wa)",
+        "kunyomi": "はな(す) (hanasu), はなし (hanashi)",
+        "arti": "Berbicara, Cerita",
+        "mnemonic": "Bagian kiri adalah 'kata', kanan seperti lidah yang bergerak. Berbicara dengan kata-kata.",
+        "example": {
+            "jp": "<ruby>日本語<rt>にほんご</rt></ruby>で<ruby>話<rt>はな</rt></ruby>します。",
+            "romaji": "Nihongo de hanashimasu.",
+            "id": "Saya berbicara dalam bahasa Jepang."
+        },
+        "bushu": [
+            "言"
+        ],
+        "bushu_position": "kamae",
+        "level": "N5",
+        "visual_bridge": "Bayangkan seseorang berbicara dengan lidah yang bergerak dan kata-kata keluar dari mulut."
+    },
+    {
+        "kanji": "語",
+        "onyomi": "ご (go)",
+        "kunyomi": "かた(る) (kataru)",
+        "arti": "Bahasa, Kata",
+        "mnemonic": "Bagian kiri adalah 'kata', kanan seperti lima mulut yang berbicara bersama.",
+        "example": {
+            "jp": "<ruby>英語<rt>えいご</rt></ruby>を<ruby>勉強<rt>べんきょう</rt></ruby>します。",
+            "romaji": "Eigo o benkyou shimasu.",
+            "id": "Saya belajar bahasa Inggris."
+        },
+        "bushu": [
+            "言"
+        ],
+        "bushu_position": "kamae",
+        "level": "N5",
+        "visual_bridge": "Bayangkan banyak mulut berbicara, membentuk sebuah bahasa."
+    },
+    {
+        "kanji": "名",
+        "onyomi": "めい (mei), みょう (myou)",
+        "kunyomi": "な (na)",
+        "arti": "Nama, Terkenal",
+        "mnemonic": "Kanji ini gabungan dari 'malam' (夕) dan 'mulut' (口). Bayangkan di 'malam' hari yang gelap, Anda tidak bisa melihat wajah orang, jadi Anda harus memanggil 'nama' mereka dengan 'mulut' untuk identifikasi.",
+        "example": {
+            "jp": "お<ruby>名前<rt>なまえ</rt></ruby>はなんですか。",
+            "romaji": "O-namae wa nan desu ka.",
+            "id": "Siapa nama Anda?"
+        },
+        "level": "N5",
+        "bushu": [
+            "夕"
+        ],
+        "bushu_position": "kamae",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "時",
+        "onyomi": "じ (ji)",
+        "kunyomi": "とき (toki)",
+        "arti": "Waktu, Jam",
+        "mnemonic": "Terdiri dari 'matahari' (日) di sebelah kiri dan 'kuil' (寺) di sebelah kanan. Pada zaman dahulu, orang mengukur 'waktu' dengan melihat posisi 'matahari' relatif terhadap 'kuil' atau bangunan lain.",
+        "example": {
+            "jp": "<ruby>時間<rt>じかん</rt></ruby>がありませんから、<ruby>急<rt>いそ</rt></ruby>ぎましょう。",
+            "romaji": "Jikan ga arimasen kara, isogimashou.",
+            "id": "Karena tidak ada waktu, ayo cepat."
+        },
+        "level": "N5",
+        "bushu": [
+            "日"
+        ],
+        "bushu_position": "hen",
+        "visual_bridge": null
+    },
+    {
+        "kanji": "間",
+        "onyomi": "かん (kan), けん (ken)",
+        "kunyomi": "あいだ (aida), ま (ma)",
+        "arti": "Antara, Selang Waktu",
+        "mnemonic": "Kanji ini menggambarkan 'matahari' (日) atau 'bulan' (月) yang terlihat dari celah 'gerbang' (門). Ini melambangkan 'ruang' atau 'waktu' di 'antara' dua pilar gerbang.",
+        "example": {
+            "jp": "ぎんこうとゆうびんきょくの<ruby>間<rt>あいだ</rt></ruby>にスーパーがあります。",
+            "romaji": "Ginkou to yuubinkyoku no aida ni suupaa ga arimasu.",
+            "id": "Ada supermarket di antara bank dan kantor pos."
+        },
+        "level": "N5",
+        "bushu": [
+            "門"
+        ],
+        "bushu_position": "kamae",
+        "visual_bridge": null
     }
 ]
