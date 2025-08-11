@@ -75,8 +75,8 @@ export default function HomePage() {
     return (
         <>
             <Head>
-                <title>Study Japan Journey - JLPT N5</title>
-                <meta name="description" content="Landing page belajar JLPT N5 dengan pengaturan items per halaman" />
+                <title>Study Japan Journey - MATERI</title>
+                <meta name="description" content="Landing page belajar MATERI dengan pengaturan items per halaman" />
             </Head>
             
             <N5HomeClient 

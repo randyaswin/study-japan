@@ -23,6 +23,7 @@ interface KanjiItem {
     example: ExampleObj;
     bushu?: string[];
     bushu_position?: 'hen' | 'tsukuri' | 'kanmuri' | 'ashi' | 'kamae' | 'tare' | 'nyou';
+    level?: string;
 }
 
 interface VocabItem {
@@ -86,10 +87,12 @@ export default function N5HomeClient({ kanjiData, vocabData, grammarData }: N5Ho
     const [isSettingsCollapsed, setIsSettingsCollapsed] = useState(true);
     const [selectedBushu, setSelectedBushu] = useState<string>('all');
     const [sortByBushu, setSortByBushu] = useState<boolean>(false);
+    const [selectedLevels, setSelectedLevels] = useState<string[]>(['N1', 'N2', 'N3', 'N4', 'N5']);
     const [activeTab, setActiveTab] = useState<'kanji' | 'vocabulary' | 'grammar' | 'kanji-diagram' | 'bushu-diagram'>('kanji');
     const [isTabsFloating, setIsTabsFloating] = useState(false);
     const [selectedKanjiBushu, setSelectedKanjiBushu] = useState<string>('all');
     const [selectedBushuForDiagram, setSelectedBushuForDiagram] = useState<string>('all');
+    const [selectedVocabLevels, setSelectedVocabLevels] = useState<string[]>(['N1', 'N2', 'N3', 'N4', 'N5']);
     
     // Home tab state for the main homepage
     const [homeActiveTab, setHomeActiveTab] = useState<'semua-materi' | 'diagram-kanji' | 'diagram-bushu'>('semua-materi');
@@ -148,6 +151,17 @@ export default function N5HomeClient({ kanjiData, vocabData, grammarData }: N5Ho
         return ['all', ...Array.from(bushuSet).sort()];
     }, [kanjiData]);
 
+    // Get all levels from kanji data
+    const allKanjiLevels = React.useMemo(() => {
+        const levelSet = new Set<string>();
+        kanjiData.forEach(item => {
+            if (item.level) {
+                levelSet.add(item.level);
+            }
+        });
+        return Array.from(levelSet).sort();
+    }, [kanjiData]);
+
     // Get all kanji bushu from vocabulary data
     const allKanjiBushu = useMemo(() => {
         const kanjiBushuSet = new Set<string>();
@@ -159,6 +173,17 @@ export default function N5HomeClient({ kanjiData, vocabData, grammarData }: N5Ho
             }
         });
         return ['all', ...Array.from(kanjiBushuSet).sort()];
+    }, [vocabData]);
+
+    // Get all levels from vocabulary data
+    const allVocabLevels = useMemo(() => {
+        const levelSet = new Set<string>();
+        vocabData.forEach(item => {
+            if (item.level) {
+                levelSet.add(item.level);
+            }
+        });
+        return Array.from(levelSet).sort();
     }, [vocabData]);
 
     // Mobile detection effect
@@ -177,9 +202,12 @@ export default function N5HomeClient({ kanjiData, vocabData, grammarData }: N5Ho
     const getCurrentPageData = useCallback((): SprintData => {
         const currentPage = n5Data.currentPage;
         
-        const filteredKanji = selectedBushu === 'all' 
-            ? [...kanjiData] 
-            : kanjiData.filter(k => k.bushu && k.bushu.includes(selectedBushu));
+        // Filter kanji by bushu and level
+        const filteredKanji = kanjiData.filter(k => {
+            const bushuMatch = selectedBushu === 'all' || (k.bushu && k.bushu.includes(selectedBushu));
+            const levelMatch = !k.level || selectedLevels.includes(k.level);
+            return bushuMatch && levelMatch;
+        });
 
         if (sortByBushu) {
             filteredKanji.sort((a, b) => {
@@ -194,6 +222,12 @@ export default function N5HomeClient({ kanjiData, vocabData, grammarData }: N5Ho
             });
         }
 
+        // Filter vocabulary by level
+        const filteredVocab = vocabData.filter(v => {
+            const levelMatch = !v.level || selectedVocabLevels.includes(v.level);
+            return levelMatch;
+        });
+
         // Get paginated data for each section
         const kanjiStartIndex = (currentPage - 1) * settings.kanjiPerPage;
         const kanjiEndIndex = kanjiStartIndex + settings.kanjiPerPage;
@@ -201,7 +235,7 @@ export default function N5HomeClient({ kanjiData, vocabData, grammarData }: N5Ho
         
         const vocabularyStartIndex = (currentPage - 1) * settings.vocabularyPerPage;
         const vocabularyEndIndex = vocabularyStartIndex + settings.vocabularyPerPage;
-        const paginatedVocab = vocabData.slice(vocabularyStartIndex, vocabularyEndIndex);
+        const paginatedVocab = filteredVocab.slice(vocabularyStartIndex, vocabularyEndIndex);
         
         const grammarStartIndex = (currentPage - 1) * settings.grammarPerPage;
         const grammarEndIndex = grammarStartIndex + settings.grammarPerPage;
@@ -214,7 +248,7 @@ export default function N5HomeClient({ kanjiData, vocabData, grammarData }: N5Ho
             vocabulary: paginatedVocab,
             grammar: paginatedGrammar
         };
-    }, [n5Data.currentPage, settings.kanjiPerPage, settings.vocabularyPerPage, settings.grammarPerPage, kanjiData, vocabData, grammarData, selectedBushu, sortByBushu]);
+    }, [n5Data.currentPage, settings.kanjiPerPage, settings.vocabularyPerPage, settings.grammarPerPage, kanjiData, vocabData, grammarData, selectedBushu, sortByBushu, selectedLevels, selectedVocabLevels]);
 
     // Helper function to generate multiple choice options for kanji
     const generateKanjiOptions = (correctItem: KanjiItem, allKanjiMeanings: string[]) => {
@@ -315,9 +349,11 @@ export default function N5HomeClient({ kanjiData, vocabData, grammarData }: N5Ho
         setActiveTab('kanji');
         
         // Find the kanji in the data (considering current filter)
-        const filteredKanji = selectedBushu === 'all' 
-            ? [...kanjiData] 
-            : kanjiData.filter(k => k.bushu && k.bushu.includes(selectedBushu));
+        const filteredKanji = kanjiData.filter(k => {
+            const bushuMatch = selectedBushu === 'all' || (k.bushu && k.bushu.includes(selectedBushu));
+            const levelMatch = !k.level || selectedLevels.includes(k.level);
+            return bushuMatch && levelMatch;
+        });
 
         if (sortByBushu) {
             filteredKanji.sort((a, b) => {
@@ -360,7 +396,7 @@ export default function N5HomeClient({ kanjiData, vocabData, grammarData }: N5Ho
                 }, 100);
             }
         }
-    }, [selectedBushu, kanjiData, sortByBushu, settings.kanjiPerPage, setN5CurrentPage]);
+    }, [selectedBushu, kanjiData, sortByBushu, settings.kanjiPerPage, setN5CurrentPage, selectedLevels]);
 
     if (n5Data.viewMode === 'study') {
         const sprintData = getCurrentPageData();
@@ -430,7 +466,7 @@ export default function N5HomeClient({ kanjiData, vocabData, grammarData }: N5Ho
                         })()}
                     </nav>
                     <header className="text-center mb-10">
-                        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 dark:text-gray-100">Belajar JLPT N5</h1>
+                        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 dark:text-gray-100">Belajar MATERI</h1>
                         <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 mt-2">Halaman {sprintData.day} - Membangun Fondasi JLPT {sprintData.type}</p>
                     </header>
 
@@ -1032,7 +1068,7 @@ export default function N5HomeClient({ kanjiData, vocabData, grammarData }: N5Ho
             
             <div className="container mx-auto p-4 sm:p-8 font-sans">
                 <header className="text-center mb-10">
-                    <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 dark:text-gray-100">Belajar JLPT N5</h1>
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 dark:text-gray-100">Belajar MATERI</h1>
                     <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 mt-2">Pilih halaman dan pengaturan untuk mulai belajar</p>
                 </header>
                 {/* Back to Home navigation */}
@@ -1173,6 +1209,92 @@ export default function N5HomeClient({ kanjiData, vocabData, grammarData }: N5Ho
                                                     </label>
                                                 </div>
                                                 
+                                                {/* Level Filter for Kanji */}
+                                                <div className="space-y-2 md:col-span-2 lg:col-span-1">
+                                                    <label className="text-sm font-medium text-gray-700 dark:text-gray-300">
+                                                        Filter Level Kanji:
+                                                    </label>
+                                                    <div className="space-y-2 max-h-32 overflow-y-auto">
+                                                        <div className="flex items-center gap-2 mb-2">
+                                                            <button
+                                                                onClick={() => {
+                                                                    if (selectedLevels.length === allKanjiLevels.length) {
+                                                                        setSelectedLevels([]);
+                                                                    } else {
+                                                                        setSelectedLevels(allKanjiLevels);
+                                                                    }
+                                                                }}
+                                                                className="text-xs px-2 py-1 rounded bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 hover:bg-blue-200 dark:hover:bg-blue-800 transition"
+                                                            >
+                                                                {selectedLevels.length === allKanjiLevels.length ? 'Unselect All' : 'Select All'}
+                                                            </button>
+                                                        </div>
+                                                        {allKanjiLevels.map(level => (
+                                                            <div key={level} className="flex items-center gap-2">
+                                                                <input
+                                                                    type="checkbox"
+                                                                    id={`kanji-level-${level}`}
+                                                                    checked={selectedLevels.includes(level)}
+                                                                    onChange={(e) => {
+                                                                        if (e.target.checked) {
+                                                                            setSelectedLevels([...selectedLevels, level]);
+                                                                        } else {
+                                                                            setSelectedLevels(selectedLevels.filter(l => l !== level));
+                                                                        }
+                                                                    }}
+                                                                    className="h-4 w-4 rounded border-gray-300 text-orange-600 focus:ring-orange-500"
+                                                                />
+                                                                <label htmlFor={`kanji-level-${level}`} className="text-sm text-gray-700 dark:text-gray-300 cursor-pointer">
+                                                                    {level}
+                                                                </label>
+                                                            </div>
+                                                        ))}
+                                                    </div>
+                                                </div>
+
+                                                {/* Level Filter for Vocabulary */}
+                                                <div className="space-y-2 md:col-span-2 lg:col-span-1">
+                                                    <label className="text-sm font-medium text-gray-700 dark:text-gray-300">
+                                                        Filter Level Vocabulary:
+                                                    </label>
+                                                    <div className="space-y-2 max-h-32 overflow-y-auto">
+                                                        <div className="flex items-center gap-2 mb-2">
+                                                            <button
+                                                                onClick={() => {
+                                                                    if (selectedVocabLevels.length === allVocabLevels.length) {
+                                                                        setSelectedVocabLevels([]);
+                                                                    } else {
+                                                                        setSelectedVocabLevels(allVocabLevels);
+                                                                    }
+                                                                }}
+                                                                className="text-xs px-2 py-1 rounded bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 hover:bg-blue-200 dark:hover:bg-blue-800 transition"
+                                                            >
+                                                                {selectedVocabLevels.length === allVocabLevels.length ? 'Unselect All' : 'Select All'}
+                                                            </button>
+                                                        </div>
+                                                        {allVocabLevels.map(level => (
+                                                            <div key={level} className="flex items-center gap-2">
+                                                                <input
+                                                                    type="checkbox"
+                                                                    id={`vocab-level-${level}`}
+                                                                    checked={selectedVocabLevels.includes(level)}
+                                                                    onChange={(e) => {
+                                                                        if (e.target.checked) {
+                                                                            setSelectedVocabLevels([...selectedVocabLevels, level]);
+                                                                        } else {
+                                                                            setSelectedVocabLevels(selectedVocabLevels.filter(l => l !== level));
+                                                                        }
+                                                                    }}
+                                                                    className="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                                                                />
+                                                                <label htmlFor={`vocab-level-${level}`} className="text-sm text-gray-700 dark:text-gray-300 cursor-pointer">
+                                                                    {level}
+                                                                </label>
+                                                            </div>
+                                                        ))}
+                                                    </div>
+                                                </div>
+                                                
                                                 <div className="flex items-end">
                                                     <button
                                                         onClick={resetSettings}
@@ -1292,12 +1414,23 @@ export default function N5HomeClient({ kanjiData, vocabData, grammarData }: N5Ho
                                 selectedBushu={selectedBushuForDiagram}
                                 allBushu={allBushu}
                                 kanjiData={kanjiData}
-                                getFilteredData={() => 
-                                    selectedBushuForDiagram === 'all' 
-                                        ? kanjiData 
-                                        : kanjiData.filter(k => k.bushu && k.bushu.includes(selectedBushuForDiagram))
-                                }
+                                getFilteredData={() => {
+                                    let filtered = kanjiData;
+                                    
+                                    // Filter by bushu
+                                    if (selectedBushuForDiagram !== 'all') {
+                                        filtered = filtered.filter(k => k.bushu && k.bushu.includes(selectedBushuForDiagram));
+                                    }
+                                    
+                                    // Filter by level
+                                    filtered = filtered.filter(k => !k.level || selectedLevels.includes(k.level));
+                                    
+                                    return filtered;
+                                }}
                                 onBushuSelect={setSelectedBushuForDiagram}
+                                selectedLevels={selectedLevels}
+                                allLevels={allKanjiLevels}
+                                onLevelsChange={setSelectedLevels}
                                 expandedCard={bushuExpandedCard}
                                 setExpandedCard={setBushuExpandedCard}
                                 cardPositions={bushuCardPositions}
@@ -1363,12 +1496,23 @@ export default function N5HomeClient({ kanjiData, vocabData, grammarData }: N5Ho
                                 selectedKanji={selectedKanjiBushu}
                                 allKanji={allKanjiBushu}
                                 vocabData={vocabData}
-                                getFilteredData={() => 
-                                    selectedKanjiBushu === 'all' 
-                                        ? vocabData 
-                                        : vocabData.filter(v => v.kanji_bushu && v.kanji_bushu.includes(selectedKanjiBushu))
-                                }
+                                getFilteredData={() => {
+                                    let filtered = vocabData;
+                                    
+                                    // Filter by kanji
+                                    if (selectedKanjiBushu !== 'all') {
+                                        filtered = filtered.filter(v => v.kanji_bushu && v.kanji_bushu.includes(selectedKanjiBushu));
+                                    }
+                                    
+                                    // Filter by level
+                                    filtered = filtered.filter(v => !v.level || selectedVocabLevels.includes(v.level));
+                                    
+                                    return filtered;
+                                }}
                                 onKanjiSelect={setSelectedKanjiBushu}
+                                selectedLevels={selectedVocabLevels}
+                                allLevels={allVocabLevels}
+                                onLevelsChange={setSelectedVocabLevels}
                             />
                         </div>
                     )}
@@ -1385,6 +1529,10 @@ interface BushuKanjiDiagramProps {
     kanjiData: KanjiItem[];
     getFilteredData: () => KanjiItem[];
     onBushuSelect: (bushu: string) => void;
+    // Level filter props
+    selectedLevels: string[];
+    allLevels: string[];
+    onLevelsChange: (levels: string[]) => void;
     // Pass diagram states as props to avoid conditional hooks
     expandedCard: string | null;
     setExpandedCard: (card: string | null) => void;
@@ -1417,7 +1565,10 @@ const BushuKanjiDiagram: React.FC<BushuKanjiDiagramProps> = ({
     allBushu, 
     kanjiData, 
     getFilteredData,
-    onBushuSelect
+    onBushuSelect,
+    selectedLevels,
+    allLevels,
+    onLevelsChange
 }) => {
     const filteredKanji = getFilteredData();
     
@@ -1946,10 +2097,85 @@ const BushuKanjiDiagram: React.FC<BushuKanjiDiagramProps> = ({
                         Klik pada bushu mana pun untuk melihat diagram detail kanji yang menggunakan bushu tersebut
                     </p>
                 </div>
+
+                {/* Level Filter for Diagram */}
+                <div className="mb-6 bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
+                    <h5 className="text-lg font-semibold text-gray-700 dark:text-gray-300 mb-3">
+                        🎯 Filter Level Kanji
+                    </h5>
+                    <div className="flex flex-wrap gap-2 items-center">
+                        <button
+                            onClick={() => {
+                                if (selectedLevels.length === allLevels.length) {
+                                    onLevelsChange([]);
+                                } else {
+                                    onLevelsChange(allLevels);
+                                }
+                            }}
+                            className="px-3 py-1 rounded-full bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 hover:bg-blue-200 dark:hover:bg-blue-800 transition text-sm font-medium"
+                        >
+                            {selectedLevels.length === allLevels.length ? 'Unselect All' : 'Select All'}
+                        </button>
+                        {allLevels.map(level => (
+                            <label key={level} className="flex items-center gap-2 cursor-pointer">
+                                <input
+                                    type="checkbox"
+                                    checked={selectedLevels.includes(level)}
+                                    onChange={(e) => {
+                                        if (e.target.checked) {
+                                            onLevelsChange([...selectedLevels, level]);
+                                        } else {
+                                            onLevelsChange(selectedLevels.filter(l => l !== level));
+                                        }
+                                    }}
+                                    className="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                                />
+                                <span className="text-sm font-medium text-gray-700 dark:text-gray-300 px-2 py-1 bg-gray-200 dark:bg-gray-700 rounded">
+                                    {level}
+                                </span>
+                            </label>
+                        ))}
+                    </div>
+                </div>
                 
+                {/* Check if any bushu have kanji after filtering */}
+                {(() => {
+                    const visibleBushu = allBushu.filter(b => {
+                        if (b === 'all') return false;
+                        const kanjiCount = kanjiData.filter(k => 
+                            k.bushu && k.bushu.includes(b) && 
+                            (!k.level || selectedLevels.includes(k.level))
+                        ).length;
+                        return kanjiCount > 0;
+                    });
+                    
+                    if (visibleBushu.length === 0) {
+                        return (
+                            <div className="bg-yellow-50 dark:bg-yellow-900 border border-yellow-200 dark:border-yellow-700 rounded-lg p-6 text-center">
+                                <div className="text-4xl mb-2">🔍</div>
+                                <h5 className="text-lg font-bold text-yellow-700 dark:text-yellow-300 mb-2">
+                                    Tidak Ada Bushu yang Tersedia
+                                </h5>
+                                <p className="text-sm text-yellow-600 dark:text-yellow-400">
+                                    Dengan filter level yang dipilih, tidak ada bushu yang memiliki kanji. 
+                                    Coba pilih level tambahan atau klik &quot;Select All&quot; untuk melihat semua bushu.
+                                </p>
+                            </div>
+                        );
+                    }
+                    return null;
+                })()}
+
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 mb-8">
                     {allBushu.filter(b => b !== 'all').map(bushu => {
-                        const kanjiCount = kanjiData.filter(k => k.bushu && k.bushu.includes(bushu)).length;
+                        const kanjiCount = kanjiData.filter(k => 
+                            k.bushu && k.bushu.includes(bushu) && 
+                            (!k.level || selectedLevels.includes(k.level))
+                        ).length;
+                        
+                        // Don't render bushu with 0 kanji after filtering
+                        if (kanjiCount === 0) return null;
+                        
                         return (
                             <button
                                 key={bushu}
@@ -2121,6 +2347,46 @@ const BushuKanjiDiagram: React.FC<BushuKanjiDiagramProps> = ({
                 <p className="text-sm text-gray-600 dark:text-gray-400">
                     Kanji yang menggunakan bushu ini: <span className="font-semibold">{filteredKanji.length} kanji</span>
                 </p>
+            </div>
+
+            {/* Level Filter for Selected Bushu */}
+            <div className="mb-6 bg-blue-50 dark:bg-blue-900 rounded-lg p-4">
+                <h5 className="text-lg font-semibold text-blue-700 dark:text-blue-300 mb-3">
+                    🎯 Filter Level Kanji
+                </h5>
+                <div className="flex flex-wrap gap-2 items-center">
+                    <button
+                        onClick={() => {
+                            if (selectedLevels.length === allLevels.length) {
+                                onLevelsChange([]);
+                            } else {
+                                onLevelsChange(allLevels);
+                            }
+                        }}
+                        className="px-3 py-1 rounded-full bg-blue-100 dark:bg-blue-800 text-blue-700 dark:text-blue-300 hover:bg-blue-200 dark:hover:bg-blue-700 transition text-sm font-medium"
+                    >
+                        {selectedLevels.length === allLevels.length ? 'Unselect All' : 'Select All'}
+                    </button>
+                    {allLevels.map(level => (
+                        <label key={level} className="flex items-center gap-2 cursor-pointer">
+                            <input
+                                type="checkbox"
+                                checked={selectedLevels.includes(level)}
+                                onChange={(e) => {
+                                    if (e.target.checked) {
+                                        onLevelsChange([...selectedLevels, level]);
+                                    } else {
+                                        onLevelsChange(selectedLevels.filter(l => l !== level));
+                                    }
+                                }}
+                                className="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                            />
+                            <span className="text-sm font-medium text-blue-700 dark:text-blue-300 px-2 py-1 bg-blue-100 dark:bg-blue-800 rounded">
+                                {level}
+                            </span>
+                        </label>
+                    ))}
+                </div>
             </div>
 
             {/* Legend */}
@@ -2385,6 +2651,10 @@ interface KanjiVocabDiagramProps {
     vocabData: VocabItem[];
     getFilteredData: () => VocabItem[];
     onKanjiSelect: (kanji: string) => void;
+    // Level filter props
+    selectedLevels: string[];
+    allLevels: string[];
+    onLevelsChange: (levels: string[]) => void;
 }
 
 const KanjiVocabDiagram: React.FC<KanjiVocabDiagramProps> = ({ 
@@ -2392,7 +2662,10 @@ const KanjiVocabDiagram: React.FC<KanjiVocabDiagramProps> = ({
     allKanji, 
     vocabData, 
     getFilteredData,
-    onKanjiSelect
+    onKanjiSelect,
+    selectedLevels,
+    allLevels,
+    onLevelsChange
 }) => {
     const filteredVocab = getFilteredData();
     
@@ -2930,21 +3203,96 @@ const KanjiVocabDiagram: React.FC<KanjiVocabDiagramProps> = ({
         // Overview of all kanji
         return (
             <div className="p-6">
-                <h4 className="text-lg font-bold text-gray-800 dark:text-gray-200 mb-6">
+                <h4 className="text-lg font-bold text-gray-800 dark:text-gray-200 mb-4">
                     📊 Overview Semua Kanji
                 </h4>
-                <div className="mb-6 text-sm text-gray-600 dark:text-gray-400">
+                <div className="mb-4 text-sm text-gray-600 dark:text-gray-400">
                     Klik pada kanji untuk melihat detail kosakata yang menggunakan kanji tersebut.
                 </div>
+
+                {/* Level Filter for Vocabulary */}
+                <div className="mb-6 bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
+                    <h5 className="text-lg font-semibold text-gray-700 dark:text-gray-300 mb-3">
+                        🎯 Filter Level Vocabulary
+                    </h5>
+                    <div className="flex flex-wrap gap-2 items-center">
+                        <button
+                            onClick={() => {
+                                if (selectedLevels.length === allLevels.length) {
+                                    onLevelsChange([]);
+                                } else {
+                                    onLevelsChange(allLevels);
+                                }
+                            }}
+                            className="px-3 py-1 rounded-full bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 hover:bg-blue-200 dark:hover:bg-blue-800 transition text-sm font-medium"
+                        >
+                            {selectedLevels.length === allLevels.length ? 'Unselect All' : 'Select All'}
+                        </button>
+                        {allLevels.map(level => (
+                            <label key={level} className="flex items-center gap-2 cursor-pointer">
+                                <input
+                                    type="checkbox"
+                                    checked={selectedLevels.includes(level)}
+                                    onChange={(e) => {
+                                        if (e.target.checked) {
+                                            onLevelsChange([...selectedLevels, level]);
+                                        } else {
+                                            onLevelsChange(selectedLevels.filter(l => l !== level));
+                                        }
+                                    }}
+                                    className="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                                />
+                                <span className="text-sm font-medium text-gray-700 dark:text-gray-300 px-2 py-1 bg-gray-200 dark:bg-gray-700 rounded">
+                                    {level}
+                                </span>
+                            </label>
+                        ))}
+                    </div>
+                </div>
+
+                {/* Check if any kanji have vocabulary after filtering */}
+                {(() => {
+                    const visibleKanji = allKanji.slice(1).filter(kanji => {
+                        const kanjiVocabCount = vocabData.filter(item => 
+                            item.kanji_bushu && item.kanji_bushu.includes(kanji) &&
+                            (!item.level || selectedLevels.includes(item.level))
+                        ).length;
+                        return kanjiVocabCount > 0;
+                    });
+                    
+                    if (visibleKanji.length === 0) {
+                        return (
+                            <div className="bg-yellow-50 dark:bg-yellow-900 border border-yellow-200 dark:border-yellow-700 rounded-lg p-6 text-center">
+                                <div className="text-4xl mb-2">🔍</div>
+                                <h5 className="text-lg font-bold text-yellow-700 dark:text-yellow-300 mb-2">
+                                    Tidak Ada Kanji yang Tersedia
+                                </h5>
+                                <p className="text-sm text-yellow-600 dark:text-yellow-400">
+                                    Dengan filter level yang dipilih, tidak ada kanji yang memiliki vocabulary. 
+                                    Coba pilih level tambahan atau klik &quot;Select All&quot; untuk melihat semua kanji.
+                                </p>
+                            </div>
+                        );
+                    }
+                    return null;
+                })()}
+
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
                     {allKanji.slice(1).map((kanji) => {
                         const kanjiVocabCount = vocabData.filter(item => 
-                            item.kanji_bushu && item.kanji_bushu.includes(kanji)
+                            item.kanji_bushu && item.kanji_bushu.includes(kanji) &&
+                            (!item.level || selectedLevels.includes(item.level))
                         ).length;
                         
-                        // Group by type for this kanji
+                        // Don't render kanji with 0 vocabulary after filtering
+                        if (kanjiVocabCount === 0) return null;
+                        
+                        // Group by type for this kanji (with level filtering)
                         const kanjiVocabByType = vocabData
-                            .filter(item => item.kanji_bushu && item.kanji_bushu.includes(kanji))
+                            .filter(item => 
+                                item.kanji_bushu && item.kanji_bushu.includes(kanji) &&
+                                (!item.level || selectedLevels.includes(item.level))
+                            )
                             .reduce((acc, item) => {
                                 const type = item.type;
                                 if (!acc[type]) acc[type] = 0;
@@ -2983,19 +3331,29 @@ const KanjiVocabDiagram: React.FC<KanjiVocabDiagramProps> = ({
                 <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-4">
                     <div className="bg-blue-50 dark:bg-blue-900 border border-blue-200 dark:border-blue-700 rounded-lg p-4 text-center">
                         <div className="text-2xl font-bold text-blue-600 dark:text-blue-300">
-                            {vocabData.length}
+                            {vocabData.filter(item => !item.level || selectedLevels.includes(item.level)).length}
                         </div>
-                        <div className="text-sm text-blue-600 dark:text-blue-300">Total Kosakata</div>
+                        <div className="text-sm text-blue-600 dark:text-blue-300">Kosakata (Filtered)</div>
                     </div>
                     <div className="bg-orange-50 dark:bg-orange-900 border border-orange-200 dark:border-orange-700 rounded-lg p-4 text-center">
                         <div className="text-2xl font-bold text-orange-600 dark:text-orange-300">
-                            {allKanji.length - 1}
+                            {allKanji.slice(1).filter(kanji => {
+                                const count = vocabData.filter(item => 
+                                    item.kanji_bushu && item.kanji_bushu.includes(kanji) &&
+                                    (!item.level || selectedLevels.includes(item.level))
+                                ).length;
+                                return count > 0;
+                            }).length}
                         </div>
-                        <div className="text-sm text-orange-600 dark:text-orange-300">Total Kanji</div>
+                        <div className="text-sm text-orange-600 dark:text-orange-300">Kanji (Visible)</div>
                     </div>
                     <div className="bg-purple-50 dark:bg-purple-900 border border-purple-200 dark:border-purple-700 rounded-lg p-4 text-center">
                         <div className="text-2xl font-bold text-purple-600 dark:text-purple-300">
-                            {Math.round((vocabData.filter(item => item.kanji_bushu && item.kanji_bushu.length > 0).length / vocabData.length) * 100)}%
+                            {(() => {
+                                const filteredVocab = vocabData.filter(item => !item.level || selectedLevels.includes(item.level));
+                                const withKanji = filteredVocab.filter(item => item.kanji_bushu && item.kanji_bushu.length > 0).length;
+                                return filteredVocab.length > 0 ? Math.round((withKanji / filteredVocab.length) * 100) : 0;
+                            })()}%
                         </div>
                         <div className="text-sm text-purple-600 dark:text-purple-300">Menggunakan Kanji</div>
                     </div>
@@ -3061,6 +3419,70 @@ const KanjiVocabDiagram: React.FC<KanjiVocabDiagramProps> = ({
 
     return (
         <div className="p-6">
+            {/* Breadcrumb and Current Kanji Info */}
+            <div className="mb-6 flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400">
+                <button
+                    onClick={() => onKanjiSelect('all')}
+                    className="hover:text-blue-600 dark:hover:text-blue-400 transition"
+                >
+                    🏠 Overview
+                </button>
+                <span>›</span>
+                <span className="text-blue-600 dark:text-blue-400 font-medium">
+                    Kanji: <span className="jp-font text-lg">{selectedKanji}</span>
+                </span>
+            </div>
+
+            {/* Current Kanji Info */}
+            <div className="mb-6 text-center">
+                <h4 className="text-2xl font-bold text-blue-600 mb-2">
+                    📊 Diagram Vocabulary: <span className="jp-font text-4xl">{selectedKanji}</span>
+                </h4>
+                <p className="text-sm text-gray-600 dark:text-gray-400">
+                    Vocabulary yang menggunakan kanji ini: <span className="font-semibold">{filteredVocab.length} vocabulary</span>
+                </p>
+            </div>
+
+            {/* Level Filter for Selected Kanji */}
+            <div className="mb-6 bg-blue-50 dark:bg-blue-900 rounded-lg p-4">
+                <h5 className="text-lg font-semibold text-blue-700 dark:text-blue-300 mb-3">
+                    🎯 Filter Level Vocabulary
+                </h5>
+                <div className="flex flex-wrap gap-2 items-center">
+                    <button
+                        onClick={() => {
+                            if (selectedLevels.length === allLevels.length) {
+                                onLevelsChange([]);
+                            } else {
+                                onLevelsChange(allLevels);
+                            }
+                        }}
+                        className="px-3 py-1 rounded-full bg-blue-100 dark:bg-blue-800 text-blue-700 dark:text-blue-300 hover:bg-blue-200 dark:hover:bg-blue-700 transition text-sm font-medium"
+                    >
+                        {selectedLevels.length === allLevels.length ? 'Unselect All' : 'Select All'}
+                    </button>
+                    {allLevels.map(level => (
+                        <label key={level} className="flex items-center gap-2 cursor-pointer">
+                            <input
+                                type="checkbox"
+                                checked={selectedLevels.includes(level)}
+                                onChange={(e) => {
+                                    if (e.target.checked) {
+                                        onLevelsChange([...selectedLevels, level]);
+                                    } else {
+                                        onLevelsChange(selectedLevels.filter(l => l !== level));
+                                    }
+                                }}
+                                className="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                            />
+                            <span className="text-sm font-medium text-blue-700 dark:text-blue-300 px-2 py-1 bg-blue-100 dark:bg-blue-800 rounded">
+                                {level}
+                            </span>
+                        </label>
+                    ))}
+                </div>
+            </div>
+
             {/* Legend */}
             <div className="mb-6 bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
                 <div className="flex justify-between items-start mb-3">

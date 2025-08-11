@@ -77,9 +77,9 @@
       "icons": [{ "src": "/icons/icon-96x96.png", "sizes": "96x96" }]
     },
     {
-      "name": "JLPT N5",
+      "name": "MATERI",
       "short_name": "N5",
-      "description": "Materi JLPT N5",
+      "description": "Materi",
       "url": "/n5/",
       "icons": [{ "src": "/icons/icon-96x96.png", "sizes": "96x96" }]
     },
