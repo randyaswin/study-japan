@@ -2494,9 +2494,6 @@ const BushuKanjiDiagram: React.FC<BushuKanjiDiagramProps> = ({
                                                     : pos.kanji.arti
                                                 }
                                             </div>
-                                            <div className="text-xs opacity-60 text-gray-500 dark:text-gray-400 truncate">
-                                                {pos.position}
-                                            </div>
                                         </div>
                                     ) : (
                                         /* Expanded content */
