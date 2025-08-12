@@ -1400,14 +1400,7 @@ export default function N5HomeClient({ kanjiData, vocabData, grammarData }: N5Ho
                                     </select>
                                 </div>
                                 
-                                {selectedBushuForDiagram !== 'all' && (
-                                    <div className="bg-purple-50 dark:bg-purple-900 border border-purple-200 dark:border-purple-700 rounded-lg p-4 mt-4">
-                                        <p className="text-sm text-purple-700 dark:text-purple-300">
-                                            <strong>Legenda:</strong> Diagram menunjukkan bushu <span className="font-bold">{selectedBushuForDiagram}</span> di tengah, 
-                                            dengan kanji-kanji yang menggunakan bushu tersebut dikelompokkan dalam diagram interaktif.
-                                        </p>
-                                    </div>
-                                )}
+                               
                             </div>
                             
                             <BushuKanjiDiagram
@@ -2063,19 +2056,6 @@ const BushuKanjiDiagram: React.FC<BushuKanjiDiagramProps> = ({
         }));
     };
 
-    // Reset zoom and pan
-    const resetView = () => {
-        setPanZoomState({
-            scale: 1,
-            translateX: 0,
-            translateY: 0,
-            isPanning: false,
-            startPanPosition: { x: 0, y: 0 },
-            lastPanPosition: { x: 0, y: 0 }
-        });
-        setCardPositions({});
-    };
-
     // Color mapping for bushu positions
     const positionColors = {
         'hen': { bg: 'bg-blue-100 dark:bg-blue-900', border: 'border-blue-400', text: 'text-blue-700 dark:text-blue-300', name: 'Hen (左)', color: '#3b82f6' },
@@ -2341,16 +2321,6 @@ const BushuKanjiDiagram: React.FC<BushuKanjiDiagramProps> = ({
                 </span>
             </div>
 
-            {/* Current Bushu Info */}
-            <div className="mb-6 text-center">
-                <h4 className="text-2xl font-bold text-green-600 mb-2">
-                    📊 Diagram Bushu: <span className="jp-font text-4xl">{selectedBushu}</span>
-                </h4>
-                <p className="text-sm text-gray-600 dark:text-gray-400">
-                    Kanji yang menggunakan bushu ini: <span className="font-semibold">{filteredKanji.length} kanji</span>
-                </p>
-            </div>
-
             {/* Level Filter for Selected Bushu */}
             <div className="mb-6 bg-blue-50 dark:bg-blue-900 rounded-lg p-4">
                 <h5 className="text-lg font-semibold text-blue-700 dark:text-blue-300 mb-3">
@@ -2391,51 +2361,6 @@ const BushuKanjiDiagram: React.FC<BushuKanjiDiagramProps> = ({
                 </div>
             </div>
 
-            {/* Legend */}
-            <div className="mb-6 bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
-                <div className="flex justify-between items-start mb-3">
-                    <h5 className="font-bold text-gray-700 dark:text-gray-300">Legenda Posisi Bushu:</h5>
-                    <div className="flex gap-2">
-                        <button
-                            onClick={() => setPanZoomState(prev => ({ ...prev, scale: Math.max(0.5, prev.scale * 0.8) }))}
-                            className="px-3 py-1 bg-blue-500 text-white rounded text-xs hover:bg-blue-600 transition"
-                            title="Zoom Out"
-                        >
-                            🔍−
-                        </button>
-                        <button
-                            onClick={() => setPanZoomState(prev => ({ ...prev, scale: Math.min(3, prev.scale * 1.2) }))}
-                            className="px-3 py-1 bg-blue-500 text-white rounded text-xs hover:bg-blue-600 transition"
-                            title="Zoom In"
-                        >
-                            🔍+
-                        </button>
-                        <button
-                            onClick={resetView}
-                            className="px-3 py-1 bg-green-500 text-white rounded text-xs hover:bg-green-600 transition"
-                            title="Reset View"
-                        >
-                            Reset View
-                        </button>
-                        <div className="text-xs text-gray-600 dark:text-gray-400 flex items-center gap-2">
-                            <span>Zoom: {Math.round(panZoomState.scale * 100)}%</span>
-                        </div>
-                    </div>
-                </div>
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 text-xs">
-                    {Object.entries(positionColors).map(([key, config]) => (
-                        <div key={key} className="flex items-center gap-2">
-                            <div className={`w-4 h-4 rounded ${config.bg} ${config.border} border`}></div>
-                            <span className="text-gray-600 dark:text-gray-400">{config.name}</span>
-                        </div>
-                    ))}
-                </div>
-                <div className="mt-3 text-xs text-gray-600 dark:text-gray-400">
-                    💡 Tips Desktop: Mouse wheel untuk zoom, drag background untuk pan, drag kartu untuk pindah posisi
-                    <br />
-                    📱 Tips Mobile: Pinch untuk zoom, satu jari drag untuk pan, drag kartu untuk pindah posisi
-                </div>
-            </div>
 
             {/* Interactive Diagram */}
             <div 
