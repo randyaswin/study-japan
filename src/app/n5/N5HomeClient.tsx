@@ -1759,8 +1759,9 @@ const BushuKanjiDiagram: React.FC<BushuKanjiDiagramProps> = ({
             Math.pow(touch.clientY - touchState.initialTouchPos.y, 2)
         );
         
-        // Mark as moved if distance > 10 pixels
-        if (distance > 10 && !touchState.hasTouchMoved) {
+        // Mark as moved if distance > threshold (more forgiving on mobile)
+        const moveThreshold = isMobile ? 15 : 10;
+        if (distance > moveThreshold && !touchState.hasTouchMoved) {
             setTouchState(prev => ({ ...prev, hasTouchMoved: true }));
         }
         
@@ -1812,7 +1813,8 @@ const BushuKanjiDiagram: React.FC<BushuKanjiDiagramProps> = ({
         if (!touchState.isTouching) return;
         
         const touchDuration = Date.now() - touchState.touchStartTime;
-        const wasTap = !touchState.hasTouchMoved && touchDuration < 300;
+        const maxTapDuration = isMobile ? 500 : 300; // More time for mobile
+        const wasTap = !touchState.hasTouchMoved && touchDuration < maxTapDuration;
         
         // If it was a tap on a card, handle click
         if (wasTap && touchState.touchTarget === 'card' && touchState.touchCardId) {
@@ -2518,37 +2520,56 @@ const BushuKanjiDiagram: React.FC<BushuKanjiDiagramProps> = ({
                         return (
                             <div
                                 key={pos.id}
-                                className={`absolute vocab-card-mobile touch-draggable ${isExpanded ? 'expanded' : ''} ${positionConfig.bg} ${positionConfig.border} border-2 rounded-lg shadow-lg p-3 cursor-pointer transition-all duration-300 hover:shadow-xl pointer-events-auto`}
+                                className={`absolute vocab-card-mobile touch-draggable ${isExpanded ? 'expanded' : ''} ${positionConfig.bg} ${positionConfig.border} border-2 rounded-lg shadow-lg cursor-pointer transition-all duration-300 hover:shadow-xl pointer-events-auto ${isMobile ? 'p-2' : 'p-3'}`}
                                 style={{
                                     left: `${actualPosition.x}px`,
                                     top: `${actualPosition.y}px`,
                                     transform: 'translate(-50%, -50%)',
                                     transformOrigin: 'center center',
                                     zIndex: isExpanded ? 60 : 30,
-                                    minWidth: isExpanded ? (isMobile ? '300px' : '350px') : (isMobile ? '120px' : '140px'),
-                                    maxWidth: isExpanded ? (isMobile ? '350px' : '400px') : (isMobile ? '140px' : '160px'),
-                                    minHeight: isExpanded ? 'auto' : (isMobile ? '100px' : '120px')
+                                    minWidth: isExpanded ? (isMobile ? '300px' : '350px') : (isMobile ? '140px' : '140px'),
+                                    maxWidth: isExpanded ? (isMobile ? '350px' : '400px') : (isMobile ? '160px' : '160px'),
+                                    minHeight: isExpanded ? 'auto' : (isMobile ? '120px' : '120px'),
+                                    maxHeight: isExpanded ? 'none' : (isMobile ? '140px' : '140px')
                                 }}
                                 onClick={() => handleCardClick(pos.id)}
                                 onMouseDown={(e) => handleMouseDown(e, pos.id)}
                                 onTouchStart={(e) => handleTouchStart(e, pos.id)}
+                                // Fallback for mobile - direct touch handling
+                                onTouchEnd={(e) => {
+                                    if (isMobile && !dragState.hasMoved && !touchState.hasTouchMoved) {
+                                        e.preventDefault();
+                                        e.stopPropagation();
+                                        handleCardClick(pos.id);
+                                    }
+                                }}
                             >
                                 {/* Drag Handle */}
                                 <div className={`drag-handle-mobile absolute top-1 right-1 w-6 h-6 bg-gray-300 dark:bg-gray-600 rounded-full opacity-50 hover:opacity-80 cursor-move flex items-center justify-center text-xs`}>
                                     ⋮⋮
                                 </div>
+                                
+                                {/* Mobile tap indicator */}
+                                {isMobile && !isExpanded && (
+                                    <div className="absolute bottom-1 left-1 w-4 h-4 bg-blue-500 rounded-full opacity-60 flex items-center justify-center">
+                                        <span className="text-white text-xs">👆</span>
+                                    </div>
+                                )}
 
                                 <div className="card-content">
                                     {/* Minimized view - Kanji and Meaning */}
                                     {!isExpanded ? (
-                                        <div className="text-center flex flex-col justify-center h-full">
-                                            <div className={`jp-font font-bold mb-1 ${positionConfig.text} ${isMobile ? 'text-xl' : 'text-2xl'}`}>
+                                        <div className="text-center flex flex-col justify-center h-full py-1">
+                                            <div className={`jp-font font-bold mb-1 ${positionConfig.text} ${isMobile ? 'text-lg leading-tight' : 'text-2xl'}`}>
                                                 {pos.kanji.kanji}
                                             </div>
-                                            <div className={`text-xs font-medium ${positionConfig.text} opacity-90 mb-1 px-2 leading-tight`}>
-                                                {pos.kanji.arti}
+                                            <div className={`text-xs font-medium ${positionConfig.text} opacity-90 mb-1 px-1 leading-tight break-words line-clamp-2`}>
+                                                {pos.kanji.arti.length > 15 && isMobile 
+                                                    ? pos.kanji.arti.substring(0, 15) + '...' 
+                                                    : pos.kanji.arti
+                                                }
                                             </div>
-                                            <div className="text-xs opacity-60 text-gray-500 dark:text-gray-400">
+                                            <div className="text-xs opacity-60 text-gray-500 dark:text-gray-400 truncate">
                                                 {pos.position}
                                             </div>
                                         </div>
@@ -2859,8 +2880,9 @@ const KanjiVocabDiagram: React.FC<KanjiVocabDiagramProps> = ({
             Math.pow(touch.clientY - touchState.initialTouchPos.y, 2)
         );
         
-        // Mark as moved if distance > 10 pixels
-        if (distance > 10 && !touchState.hasTouchMoved) {
+        // Mark as moved if distance > threshold (more forgiving on mobile)
+        const moveThreshold = isMobile ? 15 : 10;
+        if (distance > moveThreshold && !touchState.hasTouchMoved) {
             setTouchState(prev => ({ ...prev, hasTouchMoved: true }));
         }
         
@@ -2918,7 +2940,8 @@ const KanjiVocabDiagram: React.FC<KanjiVocabDiagramProps> = ({
         if (!touchState.isTouching) return;
         
         const touchDuration = Date.now() - touchState.touchStartTime;
-        const wasTap = !touchState.hasTouchMoved && touchDuration < 300;
+        const maxTapDuration = isMobile ? 500 : 300; // More time for mobile
+        const wasTap = !touchState.hasTouchMoved && touchDuration < maxTapDuration;
         
         // If it was a tap on a card, handle click
         if (wasTap && touchState.touchTarget === 'card' && touchState.touchCardId) {
@@ -3666,6 +3689,14 @@ const KanjiVocabDiagram: React.FC<KanjiVocabDiagramProps> = ({
                             }}
                             onMouseDown={(e) => handleMouseDown(e, pos.id)}
                             onTouchStart={(e) => handleTouchStart(e, pos.id)}
+                            // Fallback for mobile - direct touch handling
+                            onTouchEnd={(e) => {
+                                if (isMobile && !dragState.hasMoved && !touchState.hasTouchMoved) {
+                                    e.preventDefault();
+                                    e.stopPropagation();
+                                    handleCardClick(pos.id);
+                                }
+                            }}
                             onMouseUp={() => {
                                 // Handle click only if card wasn't dragged
                                 setTimeout(() => {
