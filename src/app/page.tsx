@@ -80,6 +80,13 @@ export default function HomePage() {
                         <span className="block text-2xl font-bold text-yellow-600 dark:text-yellow-300 mb-2">MATERI</span>
                         <span className="text-gray-700 dark:text-gray-300 text-sm">Materi</span>
                     </Link>
+                    <Link
+                        href="/iradori"
+                        className="block bg-indigo-50 dark:bg-indigo-900 rounded-xl shadow-lg px-8 py-6 min-w-[160px] text-center border-4 border-indigo-200 dark:border-indigo-600 hover:border-indigo-400 dark:hover:border-indigo-500 hover:bg-indigo-100 dark:hover:bg-indigo-800 transition-all"
+                    >
+                        <span className="block text-2xl font-bold text-indigo-600 dark:text-indigo-300 mb-2">🌸 いらどり</span>
+                        <span className="text-gray-700 dark:text-gray-300 text-sm">語彙暗記ツール</span>
+                    </Link>
                     {/* Link ke halaman Quiz */}
                     <Link
                         href="/quiz"
