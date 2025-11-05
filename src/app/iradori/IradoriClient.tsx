@@ -519,8 +519,8 @@ export default function IradoriClient() {
     const currentItem = filteredVocab[currentIndex];
     
     return (
-        <div className="min-h-screen h-screen flex flex-col bg-gray-50 dark:bg-gray-900">
-            <div className="container mx-auto p-4 flex-1 flex flex-col">
+        <div className="min-h-screen h-screen flex flex-col overflow-hidden bg-gray-50 dark:bg-gray-900">
+            <div className="container mx-auto p-4 flex-1 flex flex-col overflow-hidden">
                 {/* Header */}
                 <header className="mb-8">
                     <h1 className="text-3xl font-bold text-gray-800 dark:text-gray-200 mb-2">
@@ -552,7 +552,7 @@ export default function IradoriClient() {
                 
                 {/* Settings Panel */}
                 {showSettings && (
-                    <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md mb-6">
+                    <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md mb-6 max-h-[50vh] overflow-y-auto sm:max-h-none">
                         <h3 className="text-lg font-semibold mb-4">{translations.settings}</h3>
                         
                         {/* Study Mode */}
