@@ -519,8 +519,8 @@ export default function IradoriClient() {
     const currentItem = filteredVocab[currentIndex];
     
     return (
-        <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
-            <div className="container mx-auto p-4">
+        <div className="min-h-screen h-screen flex flex-col bg-gray-50 dark:bg-gray-900">
+            <div className="container mx-auto p-4 flex-1 flex flex-col">
                 {/* Header */}
                 <header className="mb-8">
                     <h1 className="text-3xl font-bold text-gray-800 dark:text-gray-200 mb-2">
@@ -721,8 +721,10 @@ export default function IradoriClient() {
                     </div>
                 )}
                 
-                {/* Study Card */}
-                <div className="max-w-2xl mx-auto">
+                {/* Content Area (scrollable on mobile, leaves space for fixed footer) */}
+                <div className="flex-1 overflow-y-auto pb-24 sm:pb-0">
+                    {/* Study Card */}
+                    <div className="max-w-2xl mx-auto">
                     {studyMode === 'flipcard' ? (
                         <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 min-h-[400px]">
                             <div 
@@ -868,24 +870,48 @@ export default function IradoriClient() {
                         </div>
                     )}
                     
-                    {/* Navigation */}
-                    <div className="flex justify-between items-center mt-6">
+                        {/* Navigation (desktop/tablet) */}
+                        <div className="hidden sm:flex justify-between items-center mt-6">
+                            <button
+                                onClick={handlePrevious}
+                                disabled={currentIndex === 0}
+                                className="px-6 py-3 bg-gray-500 text-white rounded-lg hover:bg-gray-600 disabled:opacity-50 disabled:cursor-not-allowed transition"
+                            >
+                                ← 前
+                            </button>
+                            
+                            <div className="text-sm text-gray-500 dark:text-gray-400">
+                                {currentIndex + 1} / {filteredVocab.length}
+                            </div>
+                            
+                            <button
+                                onClick={handleNext}
+                                disabled={currentIndex === filteredVocab.length - 1}
+                                className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed transition"
+                            >
+                                次 →
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                {/* Mobile Fixed Footer Navigation */}
+                <div className="sm:hidden fixed bottom-0 left-0 right-0 z-50 bg-white/95 dark:bg-gray-800/95 border-t border-gray-200 dark:border-gray-700 backdrop-blur supports-[backdrop-filter]:bg-white/60">
+                    <div className="max-w-2xl mx-auto px-4 py-3 flex items-center justify-between gap-3">
                         <button
                             onClick={handlePrevious}
                             disabled={currentIndex === 0}
-                            className="px-6 py-3 bg-gray-500 text-white rounded-lg hover:bg-gray-600 disabled:opacity-50 disabled:cursor-not-allowed transition"
+                            className="flex-1 px-4 py-3 bg-gray-600 text-white rounded-lg disabled:opacity-50 disabled:cursor-not-allowed"
                         >
                             ← 前
                         </button>
-                        
-                        <div className="text-sm text-gray-500 dark:text-gray-400">
+                        <div className="w-28 text-center text-sm text-gray-600 dark:text-gray-300">
                             {currentIndex + 1} / {filteredVocab.length}
                         </div>
-                        
                         <button
                             onClick={handleNext}
                             disabled={currentIndex === filteredVocab.length - 1}
-                            className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed transition"
+                            className="flex-1 px-4 py-3 bg-blue-600 text-white rounded-lg disabled:opacity-50 disabled:cursor-not-allowed"
                         >
                             次 →
                         </button>
